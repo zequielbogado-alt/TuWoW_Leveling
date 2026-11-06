@@ -1,0 +1,33 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="Compat335.lua"/>
+	<Script file="Init.lua"/>
+	<Script file="ErrorLog.lua"/>
+	<Script file="CompatMaps.lua"/>
+	<Script file="Compat.lua"/>
+	<Script file="LuaChunks.lua"/>
+	<Script file="Data.lua"/>
+	<Script file="Credits.lua"/>
+	<Script file="Names.lua"/>
+	<Script file="Hooks.lua"/>
+	<Script file="GuideTexts.lua"/>
+	<Script file="GuidesValidate.lua"/>
+	<Script file="Guides.lua"/>
+	<Script file="Levels.lua"/>
+	<Script file="Import.lua"/>
+	<Script file="Search.lua"/>
+	<Script file="EngineState.lua"/>
+	<Script file="EnginePredicates.lua"/>
+	<Script file="EngineDone.lua"/>
+	<Script file="EngineViews.lua"/>
+	<Script file="EngineTabs.lua"/>
+	<Script file="EngineEval.lua"/>
+	<Script file="EngineAPI.lua"/>
+	<Script file="EnginePinned.lua"/>
+	<Script file="Engine.lua"/>
+	<Script file="RoutePlan.lua"/>
+	<Script file="ClassTrainers.lua"/>
+	<Script file="Closes.lua"/>
+	<Script file="Automation.lua"/>
+	<Script file="Commands.lua"/>
+</Ui>
+

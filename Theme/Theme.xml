@@ -1,0 +1,13 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="GameArt.lua"/>
+	<Script file="Palettes.lua"/>
+	<Script file="Theme.lua"/>
+	<Script file="SkinForever.lua"/>
+	<Script file="GameSkins.lua"/>
+	<Script file="Anim.lua"/>
+	<Script file="WidgetsBase.lua"/>
+	<Script file="WidgetsControls.lua"/>
+	<Script file="WidgetsContainers.lua"/>
+	<Script file="WidgetsShell.lua"/>
+</Ui>
+

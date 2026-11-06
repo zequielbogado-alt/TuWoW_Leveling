@@ -1,0 +1,7 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="enUS.lua"/>
+	<Script file="esES_Base1.lua"/>
+	<Script file="esES_Base2.lua"/>
+	<Script file="esES_Base3.lua"/>
+	<Script file="esES.lua"/>
+</Ui>

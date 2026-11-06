@@ -1,0 +1,24 @@
+## Interface: 30300
+## Title: |cffffd24aTuWoW|r Leveling
+## Notes: Guías paso a paso 1-60, Mazmorras, Profesiones y Buscador para TuWoW 3.3.5a (Polestar Shell + Widget TuWoW Leveling estilo ForeverUI/Zygor).
+## Notes-esES: Guías paso a paso 1-60, Mazmorras, Profesiones y Buscador para TuWoW 3.3.5a (Polestar Shell + Widget TuWoW Leveling estilo ForeverUI/Zygor).
+## Notes-esMX: Guías paso a paso 1-60, Mazmorras, Profesiones y Buscador para TuWoW 3.3.5a (Polestar Shell + Widget TuWoW Leveling estilo ForeverUI/Zygor).
+## Author: TuWoW
+## Version: 1.0.0
+## OptionalDeps: ServerSystems, Questie
+## SavedVariables: TuWoWLevelingDB, PolestarDB
+## SavedVariablesPerCharacter: TuWoWLevelingCharDB, PolestarCharDB
+
+Core\Core.xml
+Locales\Locales.xml
+Theme\Theme.xml
+Nav\Nav.xml
+Quests\Quests.xml
+Gear\Gear.xml
+QoL\QoL.xml
+Lookup\Lookup.xml
+Dungeons\Dungeons.xml
+UI\UI.xml
+Rares\Rares.xml
+Guides\Guides.xml
+
