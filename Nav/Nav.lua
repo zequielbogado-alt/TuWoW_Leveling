@@ -24,7 +24,7 @@ local Nav = {}
 ns.Nav = Nav
 
 Nav.MEDIA = "Interface\\AddOns\\" .. ADDON .. "\\Media\\Nav\\"
-Nav.DEFAULT_RADIUS = 8 -- yards, matches the guide format's goto default
+Nav.DEFAULT_RADIUS = 10 -- yards, matches standard Zygor arrival threshold
 -- Yards of height between the player's floor and the target's beyond which
 -- they stand on different floors (an Undercity level, a tower storey), more
 -- than a slope gives within arrival range.
@@ -394,6 +394,13 @@ function Nav.Sample()
 	end
 	if arrived and target.search then return "search", dist, angle, dn, dw end
 	if arrived then return "arrived", dist, angle, dn, dw end
+
+	-- Al estar cerca del objetivo (<= 45 yardas), apuntar en línea recta directa con distancia exacta
+	-- estilo Zygor en lugar de desviarse hacia nodos de caminos o mallas en campamentos/ciudades:
+	if dist <= 45 then
+		return "travel", dist, angle, dn, dw
+	end
+
 	-- Along the walking engine's path when it has one (Nav/Walk.lua); the
 	-- distance is then what is left of it (an area target: to its edge, straight).
 	local W = Nav.walk

@@ -1,696 +1,506 @@
 -- TuWoW_Leveling — Guides/Leveling_Alliance_09.lua
--- Compilado desde ZygorGuidesViewerForever y depurado para TuWoW 3.3.5a.
+-- Compilado desde Zygor Guides WotLK 3.3.5a oficial para TuWoW.
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/a-night-elf-starter-1-13-part-3",
+		id = "zygor/leveling/a-draenei-1-13",
 		pack = "guides",
-		title = "Night Elf Starter (Parte 3/3)",
+		title = "Draenei (1-13) (Parte 1/3)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-westfall-13-15",
+		next = "zygor/leveling/a-draenei-1-13-part-2",
 		author = "TuWoW & Zygor",
 		minLevel = 1,
 		maxLevel = 13,
-		zone = 1438,
+		zone = 1941,
 		version = 1,
-		races = { "NightElf" },
+		races = { "Draenei" },
 		steps = {
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "use", item = 8155, itemName = "Sathrah's Sacrifice" },
-					{ t = "complete", quest = 2520, title = "Sathrah's Sacrifice", note = "Offer the Sacrifice at the Fountain", map = 1457, x = 39.21, y = 84.57, f = "e" },
+					{ t = "accept", quest = 9279, title = "You Survived!", npc = 16475, npcName = "Megelon", map = 1941, x = 84.2, y = 43.0, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
 				goals = {
-					{ t = "turnin", quest = 2520, title = "Sathrah's Sacrifice", npc = 7313, npcName = "Priestess A'moora", map = 1457, x = 36.64, y = 85.93, f = "e" },
+					{ t = "turnin", quest = 9279, title = "You Survived!", npc = 16477, npcName = "Proenitus", map = 1941, x = 80.4, y = 45.9, f = "e" },
+					{ t = "accept", quest = 9280, title = "Replenishing the Healing Crystals", npc = 16477, npcName = "Proenitus", map = 1941, x = 80.4, y = 45.9, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
-				only = { classes = { "PRIEST" } },
 				goals = {
-					{ t = "turnin", quest = 5629, title = "Returning Home", npc = 11401, npcName = "Priestess Alathea", map = 1457, x = 39.53, y = 81.18, f = "e" },
-					{ t = "accept", quest = 5627, title = "Stars of Elune", npc = 11401, npcName = "Priestess Alathea", map = 1457, x = 39.53, y = 81.18, f = "e" },
+					{ t = "accept", quest = 10302, title = "Volatile Mutations", npc = 16514, npcName = "Botanist Taerix", map = 1941, x = 79.1, y = 46.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 6344, title = "Nessa Shadowsong", npc = 10118, npcName = "Nessa Shadowsong", map = 1438, x = 56.25, y = 92.43, f = "e" },
-					{ t = "accept", quest = 6341, title = "The Bounty of Teldrassil", npc = 10118, npcName = "Nessa Shadowsong", map = 1438, x = 56.25, y = 92.43, f = "e" },
+					{ t = "kill", quest = 10302, target = "Volatile Mutation", count = 8, oi = 1, map = 1941, x = 78.6, y = 45.4, f = "e" },
+					{ t = "collect", quest = 9280, itemName = "Vial of Moth Blood", count = 8, oi = 1, map = 1941, x = 78.6, y = 45.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 6341, title = "The Bounty of Teldrassil", npc = 3838, npcName = "Vesprystus", map = 1438, x = 58.4, y = 94.01, f = "e" },
-					{ t = "accept", quest = 6342, title = "Flight to Auberdine", npc = 3838, npcName = "Vesprystus", map = 1438, x = 58.4, y = 94.01, f = "e" },
+					{ t = "level", level = 2, f = "e" },
 				},
 			},
 			{
-				note = "Open the flight map. Allows guide to learn your flight paths.",
 				goals = {
-					{ t = "getfp", location = "Auberdine", map = 1438, x = 58.4, y = 94.01, f = "e" },
+					{ t = "turnin", quest = 10302, title = "Volatile Mutations", npc = 16514, npcName = "Botanist Taerix", map = 1941, x = 79.1, y = 46.5, f = "e" },
+					{ t = "accept", quest = 9293, title = "What Must Be Done...", npc = 16514, npcName = "Botanist Taerix", map = 1941, x = 79.1, y = 46.5, f = "e" },
+					{ t = "accept", quest = 9799, title = "Botanical Legwork", npc = 20233, npcName = "Apprentice Vishael", map = 1941, x = 79.1, y = 46.5, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "turnin", quest = 6342, title = "Flight to Auberdine", npc = 4200, npcName = "Laird", map = 1439, x = 36.77, y = 44.29, f = "e" },
-					{ t = "accept", quest = 6343, title = "Return to Nessa", npc = 4200, npcName = "Laird", map = 1439, x = 36.77, y = 44.29, f = "e" },
+					{ t = "turnin", quest = 9280, title = "Replenishing the Healing Crystals", npc = 16477, npcName = "Proenitus", map = 1941, x = 80.4, y = 45.9, f = "e" },
+					{ t = "accept", quest = 9409, title = "Urgent Delivery!", npc = 16477, npcName = "Proenitus", map = 1941, x = 80.4, y = 45.9, f = "e" },
 				},
 			},
 			{
-				note = "Inside the small cave.",
-				only = { classes = { "DRUID" } },
 				goals = {
-					{ t = "use", item = 15208, itemName = "Cenarion Moondust" },
-					{ t = "complete", quest = 6001, title = "Body and Heart", note = "Face Lunaclaw and Earn the Strength of Body and Heart it Possesses", map = 1439, x = 43.48, y = 45.96, f = "e" },
+					{ t = "turnin", quest = 9409, title = "Urgent Delivery!", npc = 16502, npcName = "Zalduun", map = 1941, x = 80.1, y = 48.8, f = "e" },
+					{ t = "accept", quest = 9283, title = "Rescue the Survivors!", npc = 16502, npcName = "Zalduun", map = 1941, x = 80.1, y = 48.8, f = "e" },
 				},
 			},
 			{
-				note = "We will train Mining and Blacksmithing. Allows you to make and use Sharpening Stones. Increases damage. Mine Copper Ore as you see it. Use the Rough Stones to make sharpening stones.",
-				only = { classes = { "WARRIOR", "ROGUE" } },
+				only = { races = { "Draenei" }, classes = { "MAGE" } },
 				goals = {
-					{ t = "complete", quest = 983, title = "Buzzbox 827", note = "Click Here to Continue" },
+					{ t = "accept", quest = 9290, title = "Mage Training", npc = 16500, npcName = "Valaatu", map = 1941, x = 79.6, y = 48.8, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "WARRIOR", "ROGUE" } },
+				only = { races = { "Draenei" }, classes = { "WARRIOR" } },
 				goals = {
-					{ t = "skill", level = 75, skill = "Blacksmithing" },
+					{ t = "accept", quest = 9289, title = "Warrior Training", npc = 16503, npcName = "Kore", map = 1941, x = 79.6, y = 49.4, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "WARRIOR", "ROGUE" } },
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
 				goals = {
-					{ t = "skill", level = 75, skill = "Mining" },
+					{ t = "accept", quest = 9421, title = "Shaman Training", npc = 17089, npcName = "Firmanvaar", map = 1941, x = 79.3, y = 49.1, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "WARRIOR", "ROGUE" } },
+				only = { races = { "Draenei" }, classes = { "PRIEST" } },
 				goals = {
-					{ t = "buy", item = 2901, itemName = "Mining Pick", map = 1439, x = 38.22, y = 41.19, f = "e" },
+					{ t = "accept", quest = 9291, title = "Priest Training", npc = 16502, npcName = "Zalduun", map = 1941, x = 80.1, y = 48.8, f = "e" },
 				},
 			},
 			{
+				only = { races = { "Draenei" }, classes = { "PALADIN" } },
 				goals = {
-					{ t = "turnin", quest = 6343, title = "Return to Nessa", npc = 10118, npcName = "Nessa Shadowsong", map = 1438, x = 56.25, y = 92.44, f = "e" },
+					{ t = "accept", quest = 9287, title = "Paladin Training", npc = 16501, npcName = "Aurelon", map = 1941, x = 79.7, y = 48.2, f = "e" },
 				},
 			},
 			{
-				note = "Ground floor inside the building.",
-				only = { classes = { "DRUID" } },
+				only = { races = { "Draenei" }, classes = { "HUNTER" } },
 				goals = {
-					{ t = "train", npc = 4218, npcName = "Denatharion", map = 1457, x = 34.77, y = 7.37, f = "e" },
+					{ t = "accept", quest = 9288, title = "Hunter Training", npc = 16499, npcName = "Keilnei", map = 1941, x = 79.9, y = 49.7, f = "e" },
 				},
 			},
 			{
-				note = "Middle floor inside the building.",
-				only = { classes = { "DRUID" } },
 				goals = {
-					{ t = "turnin", quest = 6001, title = "Body and Heart", npc = 4217, npcName = "Mathrengyl Bearwalker", map = 1457, x = 35.38, y = 8.41, f = "e" },
+					{ t = "accept", quest = 9305, title = "Spare Parts", npc = 17071, npcName = "Technician Zhanaa", map = 1941, x = 79.5, y = 51.4, f = "e" },
+					{ t = "accept", quest = 9303, title = "Inoculation", npc = 16535, npcName = "Vindicator Aldar", map = 1941, x = 79.5, y = 51.4, f = "e" },
 				},
 			},
 			{
-				note = "Walks around. Inside the building.",
-				only = { classes = { "PRIEST" } },
 				goals = {
-					{ t = "goto", text = "Enter the building", map = 1453, x = 52.97, y = 51.06 },
-					{ t = "train", npc = 5484, npcName = "Brother Benjamin", map = 1453, x = 51.61, y = 46.35, f = "e" },
+					{ t = "goto", map = 1941, x = 80.3, y = 42.4, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
-				only = { classes = { "WARRIOR" } },
 				goals = {
-					{ t = "train", npc = 5479, npcName = "Wu Shen", map = 1453, x = 80.5, y = 59.86, f = "e" },
+					{ t = "turnin", quest = 9283, title = "Rescue the Survivors!", npc = 16502, npcName = "Zalduun", map = 1941, x = 80.1, y = 48.8, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
-				only = { classes = { "WARRIOR" } },
 				goals = {
-					{ t = "accept", quest = 1638, title = "A Warrior's Training", npc = 5480, npcName = "Ilsa Corbin", map = 1453, x = 80.36, y = 59.79, f = "e" },
+					{ t = "level", level = 3, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "WARRIOR" } },
 				goals = {
-					{ t = "turnin", quest = 1638, title = "A Warrior's Training", npc = 6089, npcName = "Harry Burlguard", map = 1453, x = 77.08, y = 53.25, f = "e" },
-					{ t = "accept", quest = 1639, title = "Bartleby the Drunk", npc = 6089, npcName = "Harry Burlguard", map = 1453, x = 77.08, y = 53.25, f = "e" },
+					{ t = "collect", quest = 9293, itemName = "Lasher Sample", count = 10, oi = 1, map = 1941, x = 74.9, y = 50.4, f = "e" },
+					{ t = "collect", quest = 9799, itemName = "Corrupted Flower", count = 3, oi = 1, map = 1941, x = 74.9, y = 50.4, f = "e" },
 				},
 			},
 			{
-				note = "Walks around. Inside the building. You will be attacked.",
-				only = { classes = { "WARRIOR" } },
 				goals = {
-					{ t = "turnin", quest = 1639, title = "Bartleby the Drunk", npc = 6090, npcName = "Bartleby", map = 1453, x = 76.76, y = 53.18, f = "e" },
-					{ t = "accept", quest = 1640, title = "Beat Bartleby", npc = 6090, npcName = "Bartleby", map = 1453, x = 76.76, y = 53.18, f = "e" },
+					{ t = "turnin", quest = 9293, title = "What Must Be Done...", npc = 16514, npcName = "Botanist Taerix", map = 1941, x = 79.1, y = 46.5, f = "e" },
+					{ t = "accept", quest = 9294, title = "Healing the Lake", npc = 16514, npcName = "Botanist Taerix", map = 1941, x = 79.1, y = 46.5, f = "e" },
+					{ t = "turnin", quest = 9799, title = "Botanical Legwork", npc = 20233, npcName = "Apprentice Vishael", map = 1941, x = 79.1, y = 46.5, f = "e" },
 				},
 			},
 			{
-				note = "Walks around. Inside the building.",
-				only = { classes = { "WARRIOR" } },
 				goals = {
-					{ t = "complete", quest = 1640, title = "Beat Bartleby", map = 1453, x = 76.76, y = 53.18, f = "e" },
+					{ t = "goto", map = 1941, x = 77.3, y = 58.7, f = "e" },
 				},
 			},
 			{
-				note = "Walks around. Inside the building.",
-				only = { classes = { "WARRIOR" } },
 				goals = {
-					{ t = "turnin", quest = 1640, title = "Beat Bartleby", npc = 6090, npcName = "Bartleby", map = 1453, x = 76.76, y = 53.18, f = "e" },
-					{ t = "accept", quest = 1665, title = "Bartleby's Mug", npc = 6090, npcName = "Bartleby", map = 1453, x = 76.76, y = 53.18, f = "e" },
+					{ t = "goto", map = 1941, x = 78.4, y = 60.4, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "WARRIOR" } },
 				goals = {
-					{ t = "turnin", quest = 1665, title = "Bartleby's Mug", npc = 6089, npcName = "Harry Burlguard", map = 1453, x = 77.08, y = 53.25, f = "e" },
+					{ t = "collect", quest = 9305, itemName = "Emitter Spare Part", count = 4, oi = 1, map = 1941, x = 84.7, y = 65.6, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "ROGUE" } },
 				goals = {
-					{ t = "train", npc = 918, npcName = "Osborne the Night Man", map = 1453, x = 77.38, y = 65.3, f = "e" },
+					{ t = "turnin", quest = 9294, title = "Healing the Lake", npc = 16514, npcName = "Botanist Taerix", map = 1941, x = 79.1, y = 46.5, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "train", npc = 5515, npcName = "Einris Brightspear", map = 1453, x = 67.32, y = 36.23, f = "e" },
+					{ t = "level", level = 4, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "HUNTER" } },
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
 				goals = {
-					{ t = "train", npc = 2879, npcName = "Karrina Mekenda", map = 1453, x = 67.28, y = 36.78, f = "e" },
+					{ t = "accept", quest = 9449, title = "Call of Earth (1)", npc = 17089, npcName = "Firmanvaar", map = 1941, x = 79.3, y = 49.1, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
 				goals = {
-					{ t = "accept", quest = 353, title = "Stormpike's Delivery", npc = 1416, npcName = "Grimand Elmore", map = 1453, x = 59.72, y = 33.78, f = "e" },
+					{ t = "goto", map = 1941, x = 74.0, y = 42.0, f = "e" },
 				},
 			},
 			{
-				note = "Walk into the portal.",
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
 				goals = {
-					{ t = "goto", text = "Enter the Deeprun Tram", map = 1453, x = 69.31, y = 30.56 },
+					{ t = "turnin", quest = 9449, title = "Call of Earth (1)", npc = 17087, npcName = "Spirit of the Vale", map = 1941, x = 71.3, y = 39.0, f = "e" },
+					{ t = "accept", quest = 9450, title = "Call of Earth (2)", npc = 17087, npcName = "Spirit of the Vale", map = 1941, x = 71.3, y = 39.0, f = "e" },
 				},
 			},
 			{
-				note = "Ride the tram to Ironforge. Middle platform, near the wall. Ironforge section of the Deeprun Tram.",
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
 				goals = {
-					{ t = "accept", quest = 6661, title = "Deeprun Rat Roundup", npc = 12997, npcName = "Monty" },
+					{ t = "kill", quest = 9450, target = "Restless Spirit of Earth", count = 4, oi = 1, map = 1941, x = 70.8, y = 37.8, f = "e" },
 				},
 			},
 			{
-				note = "On Deeprun Rats. Small grey rats. Ironforge section of the Deeprun Tram.",
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
 				goals = {
-					{ t = "use", item = 17117, itemName = "Rat Catcher's Flute" },
-					{ t = "complete", quest = 6661, title = "Deeprun Rat Roundup", note = "Capture #5# Rats" },
+					{ t = "turnin", quest = 9450, title = "Call of Earth (2)", npc = 17087, npcName = "Spirit of the Vale", map = 1941, x = 71.3, y = 39.0, f = "e" },
+					{ t = "accept", quest = 9451, title = "Call of Earth (3)", npc = 17087, npcName = "Spirit of the Vale", map = 1941, x = 71.3, y = 39.0, f = "e" },
 				},
 			},
 			{
-				note = "Middle platform, near the wall. Ironforge section of the Deeprun Tram.",
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
 				goals = {
-					{ t = "turnin", quest = 6661, title = "Deeprun Rat Roundup", npc = 12997, npcName = "Monty" },
-					{ t = "accept", quest = 6662, title = "Me Brother, Nipsy", npc = 12997, npcName = "Monty" },
+					{ t = "turnin", quest = 9451, title = "Call of Earth (3)", npc = 17089, npcName = "Firmanvaar", map = 1941, x = 79.3, y = 49.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "getfp", location = "Ironforge", map = 1455, x = 55.5, y = 47.75, f = "e" },
+					{ t = "turnin", quest = 9305, title = "Spare Parts", npc = 17071, npcName = "Technician Zhanaa", map = 1941, x = 79.5, y = 51.4, f = "e" },
+					{ t = "turnin", quest = 9303, title = "Inoculation", npc = 16535, npcName = "Vindicator Aldar", map = 1941, x = 79.5, y = 51.4, f = "e" },
+					{ t = "accept", quest = 9309, title = "The Missing Scout", npc = 16535, npcName = "Vindicator Aldar", map = 1941, x = 79.5, y = 51.4, f = "e" },
 				},
 			},
 			{
-				note = "Cast Tame Beast on an Ice Claw Bear. Try to find one that's level 9. Abandon your pet first. New permanent pet.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "goto", text = "Dun Morogh", map = 1426, x = 51.8, y = 44.4 },
+					{ t = "turnin", quest = 9309, title = "The Missing Scout", npc = 16546, npcName = "Tolaan", map = 1941, x = 72.0, y = 60.8, f = "e" },
+					{ t = "accept", quest = 10303, title = "The Blood Elves", npc = 16546, npcName = "Tolaan", map = 1941, x = 72.0, y = 60.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 433, title = "The Public Servant", npc = 1977, npcName = "Senator Mehr Stonehallow", map = 1426, x = 68.67, y = 55.97, f = "e" },
+					{ t = "kill", quest = 10303, target = "Blood Elf Scout", count = 10, oi = 1, map = 1941, x = 71.3, y = 60.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 432, title = "Those Blasted Troggs!", npc = 1254, npcName = "Foreman Stonebrow", map = 1426, x = 69.08, y = 56.33, f = "e" },
+					{ t = "turnin", quest = 10303, title = "The Blood Elves", npc = 16546, npcName = "Tolaan", map = 1941, x = 72.0, y = 60.8, f = "e" },
+					{ t = "accept", quest = 9311, title = "Blood Elf Spy", npc = 16546, npcName = "Tolaan", map = 1941, x = 72.0, y = 60.8, f = "e" },
 				},
 			},
 			{
-				note = "More inside the cave nearby.",
 				goals = {
-					{ t = "kill", quest = 432, npc = 1115, target = "Rockjaw Skullthumper", count = 6, oi = 1, map = 1426, x = 69.17, y = 58.42, f = "e" },
+					{ t = "kill", quest = 9311, npc = 16522, target = "Surveyor Candress", count = 1, oi = 1, map = 1941, x = 69.3, y = 65.7, f = "e" },
+					{ t = "accept", quest = 9798, title = "Blood Elf Plans", map = 1941, x = 69.3, y = 65.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", text = "Leave the cave", map = 1426, x = 70.7, y = 56.49 },
-					{ t = "turnin", quest = 432, title = "Those Blasted Troggs!", npc = 1254, npcName = "Foreman Stonebrow", map = 1426, x = 69.08, y = 56.33, f = "e" },
+					{ t = "turnin", quest = 9311, title = "Blood Elf Spy", npc = 16535, npcName = "Vindicator Aldar", map = 1941, x = 79.5, y = 51.4, f = "e" },
+					{ t = "turnin", quest = 9798, title = "Blood Elf Plans", npc = 16535, npcName = "Vindicator Aldar", map = 1941, x = 79.5, y = 51.4, f = "e" },
+					{ t = "accept", quest = 9312, title = "The Emitter", npc = 16535, npcName = "Vindicator Aldar", map = 1941, x = 79.5, y = 51.4, f = "e" },
+					{ t = "turnin", quest = 9312, title = "The Emitter", npc = 17071, npcName = "Technician Zhanaa", map = 1941, x = 79.5, y = 51.4, f = "e" },
+					{ t = "accept", quest = 9313, title = "Travel to Azure Watch", npc = 17071, npcName = "Technician Zhanaa", map = 1941, x = 79.5, y = 51.4, f = "e" },
 				},
 			},
 			{
-				label = "Kill_Rockjaw_Bonesnappers",
-				along = true,
 				goals = {
-					{ t = "kill", quest = 433, npc = 1117, target = "Rockjaw Bonesnapper", count = 10, oi = 1, map = 1426, x = 75.24, y = 56.91, f = "e" },
+					{ t = "level", level = 5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 433, title = "The Public Servant", npc = 1977, npcName = "Senator Mehr Stonehallow", map = 1426, x = 68.67, y = 55.97, f = "e" },
+					{ t = "accept", quest = 9314, title = "Word from Azure Watch", npc = 16554, npcName = "Aeun", map = 1941, x = 64.5, y = 54.0, f = "e" },
 				},
 			},
 			{
-				note = "Follow the road through the tunnel.",
 				goals = {
-					{ t = "accept", quest = 419, title = "The Lost Pilot", npc = 1960, npcName = "Pilot Hammerfoot", map = 1426, x = 83.89, y = 39.19, f = "e" },
+					{ t = "accept", quest = 9452, title = "Red Snapper - Very Tasty!", npc = 17101, npcName = "Diktynna", map = 1941, x = 61.1, y = 54.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 419, title = "The Lost Pilot", map = 1426, x = 79.67, y = 36.17, f = "e" },
-					{ t = "accept", quest = 417, title = "A Pilot's Revenge", map = 1426, x = 79.67, y = 36.17, f = "e" },
+					{ t = "collect", quest = 9452, itemName = "Red Snapper", count = 10, oi = 1, map = 1941, x = 61.9, y = 51.6, f = "e" },
 				},
 			},
 			{
-				note = "White bear. Walks around.",
 				goals = {
-					{ t = "collect", quest = 417, item = 3183, itemName = "Mangy Claw", oi = 1, map = 1426, x = 78.97, y = 37.02, f = "e" },
+					{ t = "turnin", quest = 9452, title = "Red Snapper - Very Tasty!", npc = 17101, npcName = "Diktynna", map = 1941, x = 61.1, y = 54.2, f = "e" },
+					{ t = "accept", quest = 9453, title = "Find Acteon!", npc = 17101, npcName = "Diktynna", map = 1941, x = 61.1, y = 54.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 417, title = "A Pilot's Revenge", npc = 1960, npcName = "Pilot Hammerfoot", map = 1426, x = 83.89, y = 39.19, f = "e" },
+					{ t = "turnin", quest = 9453, title = "Find Acteon!", npc = 17110, npcName = "Acteon", map = 1941, x = 49.8, y = 51.9, f = "e" },
+					{ t = "accept", quest = 9454, title = "The Great Moongraze Hunt (1)", npc = 17110, npcName = "Acteon", map = 1941, x = 49.8, y = 51.9, f = "e" },
 				},
 			},
 			{
-				note = "Run through the tunnel. Upstairs inside the building.",
 				goals = {
-					{ t = "turnin", quest = 353, title = "Stormpike's Delivery", npc = 1343, npcName = "Mountaineer Stormpike", map = 1432, x = 24.76, y = 18.4, f = "e" },
+					{ t = "accept", quest = 9463, title = "Medicinal Purpose", npc = 17214, npcName = "Anchorite Fateema", map = 1941, x = 48.4, y = 51.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "getfp", location = "Thelsamar", map = 1432, x = 33.94, y = 50.95, f = "e" },
+					{ t = "turnin", quest = 9313, title = "Travel to Azure Watch", npc = 16551, npcName = "Technician Dyvuun", map = 1941, x = 48.7, y = 50.3, f = "e" },
 				},
 			},
 			{
-				label = "Accept_Mountaineer_Stormpikes_Task",
-				along = true,
-				note = "Walks a large path.",
 				goals = {
-					{ t = "accept", quest = 416, title = "Rat Catching", npc = 1340, npcName = "Mountaineer Kadrell", map = 1426, x = 95.4, y = 46.5, f = "e" },
-					{ t = "accept", quest = 1339, title = "Mountaineer Stormpike's Task", npc = 1340, npcName = "Mountaineer Kadrell", map = 1426, x = 95.4, y = 46.5, f = "e" },
+					{ t = "turnin", quest = 9314, title = "Word from Azure Watch", npc = 16553, npcName = "Caregiver Chellan", map = 1941, x = 48.3, y = 49.2, f = "e" },
 				},
 			},
 			{
-				note = "Rat people.",
 				goals = {
-					{ t = "collect", quest = 416, item = 3110, itemName = "Tunnel Rat Ear", count = 12, oi = 1, map = 1432, x = 26.99, y = 43.26, f = "e" },
+					{ t = "home", text = "Azure Watch", f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
 				goals = {
-					{ t = "turnin", quest = 1339, title = "Mountaineer Stormpike's Task", npc = 1343, npcName = "Mountaineer Stormpike", map = 1432, x = 24.76, y = 18.4, f = "e" },
-					{ t = "accept", quest = 1338, title = "Stormpike's Order", npc = 1343, npcName = "Mountaineer Stormpike", map = 1432, x = 24.76, y = 18.4, f = "e" },
-					{ t = "accept", quest = 307, title = "Filthy Paws", npc = 1343, npcName = "Mountaineer Stormpike", map = 1432, x = 24.76, y = 18.4, f = "e" },
+					{ t = "collect", quest = 9454, itemName = "Moongraze Stag Tenderloin", count = 6, oi = 1, map = 1941, x = 50.3, y = 56.6, f = "e" },
+					{ t = "collect", quest = 9463, itemName = "Root Trapper Vine", count = 8, oi = 1, map = 1941, x = 50.3, y = 56.6, f = "e" },
 				},
 			},
 			{
-				note = "Walks a large path.",
 				goals = {
-					{ t = "turnin", quest = 416, title = "Rat Catching", npc = 1340, npcName = "Mountaineer Kadrell", map = 1426, x = 95.4, y = 46.5, f = "e" },
+					{ t = "level", level = 6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 224, title = "In Defense of the King's Lands", npc = 1089, npcName = "Mountaineer Cobbleflint", map = 1432, x = 22.07, y = 73.12, f = "e" },
+					{ t = "accept", quest = 9506, title = "A Small Start", npc = 17240, npcName = "Admiral Odesyus", map = 1941, x = 47.0, y = 70.2, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
 				goals = {
-					{ t = "accept", quest = 267, title = "The Trogg Threat", npc = 1092, npcName = "Captain Rugelfuss", map = 1432, x = 23.23, y = 73.67, f = "e" },
+					{ t = "accept", quest = 9512, title = "Cookie's Jumbo Gumbo", npc = 17246, npcName = "\"Cookie\" McWeaksauce", map = 1941, x = 46.7, y = 70.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", text = "Follow the road to the path here", map = 1432, x = 29.32, y = 66.73 },
-					{ t = "collect", quest = 267, item = 2536, itemName = "Trogg Stone Tooth", count = 8, oi = 1, map = 1432, x = 32.79, y = 74.99, f = "e" },
+					{ t = "collect", quest = 9512, itemName = "Skittering Crawler Meat", count = 6, oi = 1, map = 1941, x = 47.6, y = 73.0, f = "e" },
 				},
 			},
 			{
-				label = "Kill_Stonesplinter_Troggs_And_Scouts",
-				along = true,
 				goals = {
-					{ t = "kill", quest = 224, npc = 1161, target = "Stonesplinter Trogg", count = 10, oi = 1, map = 1432, x = 32.79, y = 74.99, f = "e" },
-					{ t = "kill", quest = 224, npc = 1162, target = "Stonesplinter Scout", count = 10, oi = 2, map = 1432, x = 32.79, y = 74.99, f = "e" },
+					{ t = "turnin", quest = 9512, title = "Cookie's Jumbo Gumbo", npc = 17246, npcName = "\"Cookie\" McWeaksauce", map = 1941, x = 46.7, y = 70.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", text = "Leave Stonesplinter Valley and follow the road", map = 1432, x = 30.57, y = 69.69 },
-					{ t = "turnin", quest = 224, title = "In Defense of the King's Lands", npc = 1089, npcName = "Mountaineer Cobbleflint", map = 1432, x = 22.07, y = 73.13, f = "e" },
+					{ t = "accept", quest = 9513, title = "Reclaiming the Ruins", npc = 17241, npcName = "Priestess Kyleen Il'dinare", map = 1941, x = 47.0, y = 70.2, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
 				goals = {
-					{ t = "turnin", quest = 267, title = "The Trogg Threat", npc = 1092, npcName = "Captain Rugelfuss", map = 1432, x = 23.23, y = 73.67, f = "e" },
+					{ t = "accept", quest = 9523, title = "Precious and Fragile Things Need Special Handling", npc = 17242, npcName = "Archaeologist Adamant Ironheart", map = 1941, x = 47.2, y = 70.0, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "WARRIOR" } },
 				goals = {
-					{ t = "goto", text = "Train Two-Handed Axes", map = 1455, x = 61.17, y = 89.52 },
-					{ t = "goto", text = "Train Two-Handed Maces", map = 1455, x = 61.17, y = 89.52 },
+					{ t = "collect", quest = 9506, item = 23739, itemName = "Nautical Map", count = 1, oi = 2, map = 1941, x = 58.6, y = 66.4, f = "e" },
 				},
 			},
 			{
-				note = "Walk into the portal.",
 				goals = {
-					{ t = "complete", quest = 1338, title = "Stormpike's Order", note = "Enter the Deeprun Tram", map = 1455, x = 76.58, y = 51.14, f = "e" },
+					{ t = "collect", quest = 9506, item = 23738, itemName = "Nautical Compass", count = 1, oi = 1, map = 1941, x = 59.6, y = 67.6, f = "e" },
 				},
 			},
 			{
-				note = "Ride the tram to Stormwind City. Middle platform, near the wall. Stormwind City section of the Deeprun Tram.",
 				goals = {
-					{ t = "turnin", quest = 6662, title = "Me Brother, Nipsy", npc = 13018, npcName = "Nipsy" },
+					{ t = "turnin", quest = 9506, title = "A Small Start", npc = 17240, npcName = "Admiral Odesyus", map = 1941, x = 47.0, y = 70.2, f = "e" },
+					{ t = "accept", quest = 9530, title = "I've Got a Plant", npc = 17240, npcName = "Admiral Odesyus", map = 1941, x = 47.0, y = 70.2, f = "e" },
 				},
 			},
 			{
-				note = "Walk into the portal.",
 				goals = {
-					{ t = "complete", quest = 1338, title = "Stormpike's Order", note = "Enter Stormwind City" },
+					{ t = "level", level = 7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 1338, title = "Stormpike's Order", npc = 5413, npcName = "Furen Longbeard", map = 1453, x = 64.6, y = 37.22, f = "e" },
+					{ t = "collect", quest = 9530, itemName = "Hollowed Out Tree", count = 1, oi = 1, map = 1941, x = 45.9, y = 65.7, f = "e" },
+					{ t = "collect", quest = 9530, itemName = "Pile of Leaves", count = 5, oi = 2, map = 1941, x = 45.9, y = 65.7, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "WARRIOR", "HUNTER", "ROGUE", "PRIEST" } },
 				goals = {
-					{ t = "goto", text = "Train Two-Handed Swords", map = 1453, x = 63.85, y = 69.08, only = { classes = { "WARRIOR", "HUNTER" } } },
-					{ t = "goto", text = "Train One-Handed Swords", map = 1453, x = 63.85, y = 69.08, only = { classes = { "ROGUE" } } },
-					{ t = "goto", text = "Train Staves", map = 1453, x = 63.85, y = 69.08, only = { classes = { "PRIEST" } } },
+					{ t = "turnin", quest = 9530, title = "I've Got a Plant", npc = 17240, npcName = "Admiral Odesyus", map = 1941, x = 47.0, y = 70.2, f = "e" },
+					{ t = "accept", quest = 9531, title = "Tree's Company", npc = 17240, npcName = "Admiral Odesyus", map = 1941, x = 47.0, y = 70.2, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "sethome", location = "Stormwind City", map = 1453, x = 60.39, y = 75.27, f = "e" },
+					{ t = "collect", quest = 9523, itemName = "Ancient Relic", count = 8, oi = 1, map = 1941, x = 36.1, y = 77.0, f = "e" },
+					{ t = "kill", quest = 9513, target = "Wrathscale Myrmidon", count = 5, oi = 1, map = 1941, x = 36.1, y = 77.0, f = "e" },
+					{ t = "kill", quest = 9513, target = "Wrathscale Naga", count = 5, oi = 2, map = 1941, x = 36.1, y = 77.0, f = "e" },
+					{ t = "kill", quest = 9513, target = "Wrathscale Siren", count = 5, oi = 3, map = 1941, x = 36.1, y = 77.0, f = "e" },
+					{ t = "accept", quest = 9514, title = "Rune Covered Tablet", map = 1941, x = 36.1, y = 77.0, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "goto", text = "Run up the ramp", map = 1453, x = 67.92, y = 72.64 },
-					{ t = "getfp", location = "Stormwind", map = 1453, x = 70.91, y = 72.51, f = "e" },
+					{ t = "goto", map = 1941, x = 18.5, y = 84.3, f = "e" },
 				},
 			},
-		},
-	})
-end
-
-do
-	Polestar.RegisterGuide({
-		id = "zygor/leveling/a-westfall-13-15",
-		pack = "guides",
-		title = "Westfall",
-		category = "Leveling",
-		faction = "Alliance",
-		next = "zygor/leveling/a-darkshore-15-18",
-		author = "TuWoW & Zygor",
-		minLevel = 13,
-		maxLevel = 15,
-		zone = 1436,
-		version = 1,
-		steps = {
 			{
-				only = { races = { "Dwarf", "NightElf", "Gnome" } },
 				goals = {
-					{ t = "turnin", quest = 184, title = "Furlbrow's Deed", npc = 237, npcName = "Farmer Furlbrow", map = 1436, x = 59.96, y = 19.36, f = "e" },
-					{ t = "accept", quest = 64, title = "The Forgotten Heirloom", npc = 237, npcName = "Farmer Furlbrow", map = 1436, x = 59.96, y = 19.36, f = "e" },
-					{ t = "accept", quest = 109, title = "Report to Gryan Stoutmantle", npc = 237, npcName = "Farmer Furlbrow", map = 1436, x = 59.96, y = 19.36, f = "e", only = { races = { "NightElf" } } },
+					{ t = "turnin", quest = 9463, title = "Medicinal Purpose", npc = 17214, npcName = "Anchorite Fateema", map = 1941, x = 48.4, y = 51.8, f = "e" },
+					{ t = "accept", quest = 9473, title = "An Alternative Alternative", npc = 17215, npcName = "Daedal", map = 1941, x = 48.4, y = 51.8, f = "e" },
 				},
 			},
 			{
-				only = { races = { "Dwarf", "NightElf", "Gnome" } },
 				goals = {
-					{ t = "accept", quest = 36, title = "Westfall Stew", npc = 238, npcName = "Verna Furlbrow", map = 1436, x = 59.92, y = 19.42, f = "e" },
-					{ t = "accept", quest = 151, title = "Poor Old Blanchy", npc = 238, npcName = "Verna Furlbrow", map = 1436, x = 59.92, y = 19.42, f = "e" },
+					{ t = "turnin", quest = 9454, title = "The Great Moongraze Hunt (1)", npc = 17110, npcName = "Acteon", map = 1941, x = 49.8, y = 51.9, f = "e" },
+					{ t = "accept", quest = 10324, title = "The Great Moongraze Hunt (2)", npc = 17110, npcName = "Acteon", map = 1941, x = 49.8, y = 51.9, f = "e" },
 				},
 			},
 			{
-				only = { races = { "Dwarf", "NightElf", "Gnome" } },
 				goals = {
-					{ t = "accept", quest = 9, title = "The Killing Fields", npc = 233, npcName = "Farmer Saldean", map = 1436, x = 56.05, y = 31.22, f = "e" },
+					{ t = "collect", quest = 10324, itemName = "Moongraze Buck Hide", count = 6, oi = 1, map = 1941, x = 50.6, y = 46.2, f = "e" },
+					{ t = "accept", quest = 9455, title = "Strange Findings", map = 1941, x = 50.6, y = 46.2, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { races = { "Dwarf", "NightElf", "Gnome" } },
 				goals = {
-					{ t = "turnin", quest = 36, title = "Westfall Stew", npc = 235, npcName = "Salma Saldean", map = 1436, x = 56.42, y = 30.52, f = "e" },
-					{ t = "accept", quest = 38, title = "Westfall Stew", npc = 235, npcName = "Salma Saldean", map = 1436, x = 56.42, y = 30.52, f = "e" },
-					{ t = "accept", quest = 22, title = "Goretusk Liver Pie", npc = 235, npcName = "Salma Saldean", map = 1436, x = 56.42, y = 30.52, f = "e" },
+					{ t = "collect", quest = 9473, itemName = "Azure Snapdragon Bulb", count = 5, oi = 1, map = 1941, x = 50.4, y = 37.1, f = "e" },
 				},
 			},
 			{
-				only = { races = { "Dwarf", "NightElf", "Gnome" } },
 				goals = {
-					{ t = "turnin", quest = 109, title = "Report to Gryan Stoutmantle", npc = 234, npcName = "Gryan Stoutmantle", map = 1436, x = 56.33, y = 47.52, f = "e" },
-					{ t = "accept", quest = 12, title = "The People's Militia", npc = 234, npcName = "Gryan Stoutmantle", map = 1436, x = 56.33, y = 47.52, f = "e" },
+					{ t = "turnin", quest = 9455, title = "Strange Findings", npc = 17116, npcName = "Exarch Menelaous", map = 1941, x = 47.1, y = 50.6, f = "e" },
+					{ t = "accept", quest = 9456, title = "Nightstalker Clean Up, Isle 2...", npc = 17116, npcName = "Exarch Menelaous", map = 1941, x = 47.1, y = 50.6, f = "e" },
 				},
 			},
 			{
-				only = { races = { "Dwarf", "NightElf", "Gnome" } },
 				goals = {
-					{ t = "accept", quest = 102, title = "Patrolling Westfall", npc = 821, npcName = "Captain Danuvin", map = 1436, x = 56.42, y = 47.62, f = "e" },
+					{ t = "turnin", quest = 9473, title = "An Alternative Alternative", npc = 17215, npcName = "Daedal", map = 1941, x = 48.4, y = 51.8, f = "e" },
 				},
 			},
 			{
-				only = { races = { "Dwarf", "NightElf", "Gnome" } },
 				goals = {
-					{ t = "getfp", location = "Sentinel Hill", map = 1436, x = 56.55, y = 52.64, f = "e" },
+					{ t = "level", level = 8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 153, title = "Red Leather Bandanas", npc = 878, npcName = "Scout Galiaan", map = 1436, x = 53.98, y = 52.98, f = "e" },
+					{ t = "accept", quest = 10428, title = "The Missing Fisherman", npc = 17488, npcName = "Dulvi", map = 1941, x = 49.0, y = 51.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 153, item = 829, itemName = "Red Leather Bandana", count = 15, oi = 1, map = 1436, x = 48.85, y = 46.57, f = "e" },
+					{ t = "turnin", quest = 10324, title = "The Great Moongraze Hunt (2)", npc = 17110, npcName = "Acteon", map = 1941, x = 49.8, y = 51.9, f = "e" },
 				},
 			},
 			{
-				label = "Kill_Defias_Trappers_And_Smugglers",
-				along = true,
 				goals = {
-					{ t = "kill", quest = 12, npc = 504, target = "Defias Trapper", count = 15, oi = 1, map = 1436, x = 48.85, y = 46.57, f = "e" },
-					{ t = "kill", quest = 12, npc = 95, target = "Defias Smuggler", count = 15, oi = 2, map = 1436, x = 48.85, y = 46.57, f = "e" },
+					{ t = "kill", quest = 9456, target = "Infected Nightstalker Runt", count = 8, oi = 1, map = 1941, x = 45.7, y = 43.9, f = "e" },
 				},
 			},
 			{
-				note = "Stand outside the building here. Zoom your camera out. Angle your camera to see Furlbrow's Wardrobe. Loot it from outside the building.",
 				goals = {
-					{ t = "collect", quest = 64, item = 841, itemName = "Furlbrow's Pocket Watch", oi = 1, map = 1436, x = 49.32, y = 19.4, f = "e" },
+					{ t = "turnin", quest = 9456, title = "Nightstalker Clean Up, Isle 2...", npc = 17116, npcName = "Exarch Menelaous", map = 1941, x = 47.1, y = 50.6, f = "e" },
 				},
 			},
 			{
-				note = "Gnolls.",
 				goals = {
-					{ t = "collect", quest = 102, item = 725, itemName = "Gnoll Paw", count = 8, oi = 1, map = 1436, x = 43.68, y = 16.73, f = "e" },
+					{ t = "turnin", quest = 9531, title = "Tree's Company", npc = 17240, npcName = "Admiral Odesyus", map = 1941, x = 47.0, y = 70.2, f = "e" },
+					{ t = "accept", quest = 9537, title = "Show Gnomercy", npc = 17240, npcName = "Admiral Odesyus", map = 1941, x = 47.0, y = 70.2, f = "e" },
+					{ t = "turnin", quest = 9513, title = "Reclaiming the Ruins", npc = 17241, npcName = "Priestess Kyleen Il'dinare", map = 1941, x = 47.0, y = 70.2, f = "e" },
+					{ t = "turnin", quest = 9514, title = "Rune Covered Tablet", npc = 17241, npcName = "Priestess Kyleen Il'dinare", map = 1941, x = 47.0, y = 70.2, f = "e" },
+					{ t = "accept", quest = 9515, title = "Warlord Sriss'tiz", npc = 17241, npcName = "Priestess Kyleen Il'dinare", map = 1941, x = 47.0, y = 70.2, f = "e" },
 				},
 			},
 			{
-				note = "Don't vendor them.",
 				goals = {
-					{ t = "collect", quest = 38, item = 730, itemName = "Murloc Eye", count = 3, oi = 2, map = 1436, x = 54.37, y = 9.28, f = "e" },
+					{ t = "turnin", quest = 9523, title = "Precious and Fragile Things Need Special Handling", npc = 17242, npcName = "Archaeologist Adamant Ironheart", map = 1941, x = 47.2, y = 70.0, f = "e" },
 				},
 			},
 			{
-				label = "Collect_Handfuls_Of_Oats",
-				along = true,
-				note = "Tan bags. Next to objects and buildings.",
 				goals = {
-					{ t = "collect", quest = 151, item = 1528, itemName = "Handful of Oats", count = 8, oi = 1, map = 1436, x = 56.6, y = 18.4, f = "e" },
+					{ t = "collect", quest = 9537, itemName = "Traitor's Communication", count = 1, oi = 1, map = 1941, x = 48.2, y = 72.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 64, title = "The Forgotten Heirloom", npc = 237, npcName = "Farmer Furlbrow", map = 1436, x = 59.96, y = 19.36, f = "e" },
+					{ t = "turnin", quest = 9537, title = "Show Gnomercy", npc = 17240, npcName = "Admiral Odesyus", map = 1941, x = 47.0, y = 70.2, f = "e" },
+					{ t = "accept", quest = 9602, title = "Deliver Them From Evil...", npc = 17240, npcName = "Admiral Odesyus", map = 1941, x = 47.0, y = 70.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 151, title = "Poor Old Blanchy", npc = 238, npcName = "Verna Furlbrow", map = 1436, x = 59.92, y = 19.42, f = "e" },
+					{ t = "turnin", quest = 9602, title = "Deliver Them From Evil...", npc = 17116, npcName = "Exarch Menelaous", map = 1941, x = 47.1, y = 50.6, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "turnin", quest = 22, title = "Goretusk Liver Pie", npc = 235, npcName = "Salma Saldean", map = 1436, x = 56.42, y = 30.52, f = "e" },
+					{ t = "level", level = 9, f = "e" },
 				},
 			},
 			{
-				note = "Multiple locations. Don't vendor them.",
 				goals = {
-					{ t = "collect", quest = 38, item = 732, itemName = "Okra", count = 3, oi = 4, map = 1436, x = 53.98, y = 32.33, f = "e" },
+					{ t = "accept", quest = 9538, title = "Learning the Language", npc = 17232, npcName = "Cryptographer Aurren", map = 1941, x = 49.4, y = 51.0, f = "e" },
+					{ t = "turnin", quest = 9538, title = "Learning the Language", npc = 17232, npcName = "Cryptographer Aurren", map = 1941, x = 49.4, y = 51.0, f = "e" },
+					{ t = "accept", quest = 9539, title = "Totem of Coo", npc = 17232, npcName = "Cryptographer Aurren", map = 1941, x = 49.4, y = 51.0, f = "e" },
 				},
 			},
 			{
-				label = "Kill_Harvest_Watchers",
-				along = true,
-				note = "Multiple locations. notinsticky",
+				note = "Follow the ghost furbolg as he runs up the hill northeast to 55.2,41.6",
 				goals = {
-					{ t = "kill", quest = 9, npc = 114, target = "Harvest Watcher", count = 20, oi = 1, map = 1436, x = 53.98, y = 32.33, f = "e" },
+					{ t = "turnin", quest = 9539, title = "Totem of Coo", map = 1941, x = 55.2, y = 41.6, f = "e" },
+					{ t = "accept", quest = 9540, title = "Totem of Tikti", map = 1941, x = 55.2, y = 41.6, f = "e" },
 				},
 			},
 			{
-				label = "Collect_Stringy_Vulture_Meat",
-				along = true,
-				note = "Vultures. Concentrated spawns around here. notinsticky Spread out throughout elsewhere. notinsticky Don't vendor them.",
+				note = "Follow the ghost furbolg to the edge of the cliff",
 				goals = {
-					{ t = "collect", quest = 38, item = 729, itemName = "Stringy Vulture Meat", count = 3, oi = 1, map = 1436, x = 61.6, y = 44.6, f = "e" },
+					{ t = "turnin", quest = 9540, title = "Totem of Tikti", f = "e" },
+					{ t = "accept", quest = 9541, title = "Totem of Yor", f = "e" },
 				},
 			},
 			{
-				label = "Collect_Goretusk_Snouts_And_Livers",
-				along = true,
-				note = "Boars. Don't vendor them.",
+				note = "Follow the ghost furbolg to the river",
 				goals = {
-					{ t = "collect", quest = 38, item = 731, itemName = "Goretusk Snout", count = 3, oi = 3, map = 1436, x = 52.2, y = 42.6, f = "e" },
-					{ t = "collect", quest = 22, item = 723, itemName = "Goretusk Liver", count = 8, oi = 1, map = 1436, x = 52.2, y = 42.6, f = "e" },
+					{ t = "turnin", quest = 9541, title = "Totem of Yor", f = "e" },
+					{ t = "accept", quest = 9542, title = "Totem of Vark", f = "e" },
 				},
 			},
 			{
+				note = "Follow the ghost furbolg out of the water",
 				goals = {
-					{ t = "turnin", quest = 9, title = "The Killing Fields", npc = 233, npcName = "Farmer Saldean", map = 1436, x = 56.05, y = 31.22, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 38, title = "Westfall Stew", npc = 235, npcName = "Salma Saldean", map = 1436, x = 56.42, y = 30.52, f = "e" },
-					{ t = "turnin", quest = 22, title = "Goretusk Liver Pie", npc = 235, npcName = "Salma Saldean", map = 1436, x = 56.42, y = 30.52, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 12, title = "The People's Militia", npc = 234, npcName = "Gryan Stoutmantle", map = 1436, x = 56.33, y = 47.52, f = "e" },
-					{ t = "accept", quest = 65, title = "The Defias Brotherhood", npc = 234, npcName = "Gryan Stoutmantle", map = 1436, x = 56.33, y = 47.52, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 102, title = "Patrolling Westfall", npc = 821, npcName = "Captain Danuvin", map = 1436, x = 56.42, y = 47.62, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 153, title = "Red Leather Bandanas", npc = 878, npcName = "Scout Galiaan", map = 1436, x = 53.98, y = 52.98, f = "e" },
-				},
-			},
-			{
-				only = { classes = { "DRUID" } },
-				goals = {
-					{ t = "train", npc = 12042, npcName = "Loganaar", map = 1450, x = 52.53, y = 40.57, f = "e" },
-				},
-			},
-			{
-				note = "Top of the tower.",
-				only = { classes = { "MAGE" } },
-				goals = {
-					{ t = "train", npc = 5498, npcName = "Elsharin", map = 1453, x = 48.2, y = 87.21, f = "e" },
-				},
-			},
-			{
-				note = "Downstairs inside the building.",
-				only = { classes = { "WARLOCK" } },
-				goals = {
-					{ t = "goto", text = "Enter the building", map = 1453, x = 42.25, y = 81.81 },
-					{ t = "train", npc = 461, npcName = "Demisette Cloyce", map = 1453, x = 39.25, y = 84.96, f = "e" },
-				},
-			},
-			{
-				note = "Buy available Grimoires. Downstairs inside the building.",
-				only = { classes = { "WARLOCK" } },
-				goals = {
-					{ t = "vendor", npc = 5520, npcName = "Spackle Thornberry", map = 1453, x = 39.54, y = 84.52, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				only = { classes = { "PALADIN" } },
-				goals = {
-					{ t = "goto", text = "Enter the building", map = 1453, x = 52.98, y = 51.1 },
-					{ t = "train", npc = 5492, npcName = "Katherine the Pure", map = 1453, x = 48.47, y = 49.06, f = "e" },
-				},
-			},
-			{
-				note = "Walks around. Inside the building.",
-				only = { classes = { "PRIEST" } },
-				goals = {
-					{ t = "goto", text = "Enter the building", map = 1453, x = 52.98, y = 51.1 },
-					{ t = "train", npc = 5484, npcName = "Brother Benjamin", map = 1453, x = 51.64, y = 46.42, f = "e" },
-				},
-			},
-			{
-				only = { classes = { "ROGUE" } },
-				goals = {
-					{ t = "train", npc = 918, npcName = "Osborne the Night Man", map = 1453, x = 77.38, y = 65.3, f = "e" },
-				},
-			},
-			{
-				note = "Upstairs inside the building.",
-				only = { classes = { "WARRIOR" } },
-				goals = {
-					{ t = "train", npc = 5479, npcName = "Wu Shen", map = 1453, x = 80.5, y = 59.86, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				only = { classes = { "HUNTER" } },
-				goals = {
-					{ t = "train", npc = 5515, npcName = "Einris Brightspear", map = 1453, x = 67.32, y = 36.23, f = "e" },
-				},
-			},
-			{
-				only = { classes = { "SHAMAN" } },
-				goals = {
-					{ t = "train", map = 1455, x = 47.15, y = 13.87, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "getfp", location = "Rut'theran Village", map = 1438, x = 58.4, y = 94.02, f = "e" },
-				},
-			},
-			{
-				only = { classes = { "HUNTER" } },
-				goals = {
-					{ t = "goto", text = "Train Bows", map = 1457, x = 57.56, y = 46.73 },
-					{ t = "goto", text = "Train Staves", map = 1457, x = 57.56, y = 46.73 },
+					{ t = "turnin", quest = 9542, title = "Totem of Vark", f = "e" },
+					{ t = "accept", quest = 9544, title = "The Prophecy of Akida", f = "e" },
 				},
 			},
 		},

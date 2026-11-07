@@ -453,3 +453,13 @@ L["Hide window"] = "Ocultar ventana"
 L["Show window"] = "Mostrar ventana"
 L["Report a problem"] = "Informar de un error"
 
+-- Bienvenida y Onboarding
+L["Leveling guides for World of Warcraft: Forever"] = "Guías y Leveo para TuWoW"
+L["Leveling guides for World of Warcraft: Forever."] = "Guías y Leveo para TuWoW."
+L["Leveling guides for TuWoW"] = "Guías y Leveo para TuWoW"
+L["Welcome to Polestar"] = "Te damos la bienvenida a TuWoW Leveling"
+L["Welcome to TuWoW Leveling"] = "Te damos la bienvenida a TuWoW Leveling"
+L["The background of every Polestar window. It changes as you pick."] = "El fondo de cada ventana de TuWoW Leveling. Cambia según elijas."
+L["The background of every TuWoW Leveling window. It changes as you pick."] = "El fondo de cada ventana de TuWoW Leveling. Cambia según elijas."
+L["Three choices to start with. Everything else is in %s."] = "Tres opciones para empezar. Todo lo demás está en %s."
+

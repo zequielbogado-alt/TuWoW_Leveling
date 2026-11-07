@@ -1,484 +1,491 @@
 -- TuWoW_Leveling — Guides/Leveling_Horde_38.lua
--- Compilado desde ZygorGuidesViewerForever y depurado para TuWoW 3.3.5a.
+-- Compilado desde Zygor Guides WotLK 3.3.5a oficial para TuWoW.
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/h-cenarion-field-duty-combat-assignments",
+		id = "zygor/leveling/h-outland-68-70-part-2",
 		pack = "guides",
-		title = "Cenarion Field Duty Combat Assignments",
+		title = "Outland (68-70) (Parte 2/3)",
 		category = "Leveling",
 		faction = "Horde",
+		next = "zygor/leveling/h-outland-68-70-part-3",
 		author = "TuWoW & Zygor",
-		zone = 1451,
+		minLevel = 68,
+		maxLevel = 70,
+		zone = 1953,
 		version = 1,
 		steps = {
 			{
-				label = "Accept_Field_Duty",
 				goals = {
-					{ t = "accept", quest = 8731, title = "Field Duty", npc = 15540, npcName = "Windcaller Kaldon", map = 1451, x = 49.98, y = 36.34, f = "e" },
+					{ t = "turnin", quest = 10785, title = "It's a Trap!", npc = 21984, npcName = "Rexxar", x = 51.9, y = 58.4, f = "e" },
+					{ t = "accept", quest = 10723, title = "Gorgrom the Dragon-Eater", npc = 21984, npcName = "Rexxar", x = 51.9, y = 58.4, f = "e" },
+					{ t = "accept", quest = 10786, title = "Slaughter at Boulder'mok", npc = 21147, npcName = "Tor'chunk Twoclaws", x = 51.9, y = 58.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21143, itemName = "Unsigned Field Duty Papers" },
-					{ t = "collect", quest = 8507, item = 23024, itemName = "Prepared Field Duty Papers" },
+					{ t = "turnin", quest = 10894, title = "Wyrmskull Watcher", npc = 22386, npcName = "Watcher Moonshade", x = 49.9, y = 35.9, f = "e" },
+					{ t = "accept", quest = 10893, title = "Longtail is the Lynchpin", npc = 22386, npcName = "Watcher Moonshade", x = 49.9, y = 35.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 8732, title = "Field Duty Papers", npc = 15612, npcName = "Krug Skullsplit", map = 1451, x = 52.21, y = 68.43, f = "e" },
+					{ t = "kill", quest = 10893, target = "Draaca Longtail", count = 1, oi = 1, x = 46.7, y = 32.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 8507, item = 20810, itemName = "Signed Field Duty Papers", oi = 1 },
+					{ t = "turnin", quest = 10893, title = "Longtail is the Lynchpin", npc = 22386, npcName = "Watcher Moonshade", x = 49.9, y = 35.9, f = "e" },
+					{ t = "accept", quest = 10722, title = "Meeting at the Blackwing Coven", npc = 22386, npcName = "Watcher Moonshade", x = 49.9, y = 35.9, f = "e" },
 				},
 			},
 			{
-				note = "Choose a combat assignment. Combat Assignments require you to kill various elite silithid in Silithus hives.",
 				goals = {
-					{ t = "turnin", quest = 8507, title = "Field Duty", npc = 15540, npcName = "Windcaller Kaldon", map = 1451, x = 49.98, y = 36.34, f = "e" },
+					{ t = "kill", target = "arakkoas", count = 1, x = 40.9, y = 20.4, f = "e" },
 				},
 			},
 			{
-				label = "Begin_Combat_Assignment",
 				goals = {
-					{ t = "use", item = 20808, itemName = "Combat Assignment" },
+					{ t = "goto", x = 40.7, y = 18.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 22650, itemName = "Hive'Zora Dossier" },
-					{ t = "use", item = 22648, itemName = "Hive'Ashi Dossier" },
-					{ t = "use", item = 22649, itemName = "Hive'Regal Dossier" },
+					{ t = "goto", x = 39.0, y = 17.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21749, itemName = "Combat Task Briefing I" },
-					{ t = "accept", quest = 8770, title = "Target: Hive'Ashi Defenders" },
+					{ t = "goto", x = 42.5, y = 21.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21750, itemName = "Combat Task Briefing II" },
-					{ t = "accept", quest = 8771, title = "Target: Hive'Ashi Sandstalkers" },
+					{ t = "collect", itemName = "the Orb of the Grishna", count = 1, x = 40.2, y = 23.0, f = "e" },
+					{ t = "accept", quest = 10825, title = "The Truth Unorbed", x = 40.2, y = 23.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 20942, itemName = "Combat Task Briefing III" },
-					{ t = "accept", quest = 8502, title = "Target: Hive'Ashi Workers" },
+					{ t = "collect", quest = 10722, item = 31121, itemName = "Costume Scraps", count = 5, x = 32.3, y = 34.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21248, itemName = "Combat Task Briefing IV" },
-					{ t = "accept", quest = 8773, title = "Target: Hive'Zora Reavers" },
+					{ t = "talk", npc = 22019, npcName = "Kolphis Darkscale", x = 32.6, y = 37.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21249, itemName = "Combat Task Briefing V" },
-					{ t = "accept", quest = 8539, title = "Target: Hive'Zora Hive Sisters" },
+					{ t = "kill", quest = 10786, target = "Boulder'mok Brute", count = 5, oi = 1, x = 30.3, y = 24.6, f = "e" },
+					{ t = "kill", quest = 10786, target = "Boulder'mok Shaman", count = 3, oi = 2, x = 30.3, y = 24.6, f = "e" },
+					{ t = "collect", quest = 10723, item = 31754, itemName = "Grisly Totem", count = 3, x = 30.3, y = 24.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21250, itemName = "Combat Task Briefing VI" },
-					{ t = "accept", quest = 8772, title = "Target: Hive'Zora Waywatchers" },
+					{ t = "goto", x = 30.6, y = 22.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21251, itemName = "Combat Task Briefing VII" },
-					{ t = "accept", quest = 8687, title = "Target: Hive'Zora Tunnelers" },
+					{ t = "turnin", quest = 10747, title = "Whelps of the Wyrmcult", npc = 21983, npcName = "Samia Inkling", x = 62.0, y = 39.5, f = "e" },
+					{ t = "turnin", quest = 10722, title = "Meeting at the Blackwing Coven", npc = 22007, npcName = "Tree Warden Chawn", x = 62.0, y = 39.5, f = "e" },
+					{ t = "accept", quest = 10748, title = "Maxnar Must Die!", npc = 22007, npcName = "Tree Warden Chawn", x = 62.0, y = 39.5, f = "e" },
+					{ t = "turnin", quest = 10825, title = "The Truth Unorbed", npc = 22007, npcName = "Tree Warden Chawn", x = 62.0, y = 39.5, f = "e" },
+					{ t = "accept", quest = 10829, title = "Treebole Must Know", npc = 22007, npcName = "Tree Warden Chawn", x = 62.0, y = 39.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21252, itemName = "Combat Task Briefing VIII" },
-					{ t = "accept", quest = 8774, title = "Target: Hive'Regal Ambushers" },
+					{ t = "turnin", quest = 10607, title = "Whispers of the Raven God", npc = 21782, npcName = "Timeon", x = 62.2, y = 39.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21253, itemName = "Combat Task Briefing IX" },
-					{ t = "accept", quest = 8775, title = "Target: Hive'Regal Spitfires" },
+					{ t = "turnin", quest = 10723, title = "Gorgrom the Dragon-Eater", npc = 21984, npcName = "Rexxar", x = 51.9, y = 58.4, f = "e" },
+					{ t = "turnin", quest = 10786, title = "Slaughter at Boulder'mok", npc = 21147, npcName = "Tor'chunk Twoclaws", x = 51.9, y = 58.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21255, itemName = "Combat Task Briefing X" },
-					{ t = "accept", quest = 8776, title = "Target: Hive'Regal Slavemakers" },
+					{ t = "turnin", quest = 10829, title = "Treebole Must Know", npc = 22215, npcName = "Treebole", x = 36.9, y = 22.5, f = "e" },
+					{ t = "accept", quest = 10830, title = "Exorcising the Trees", npc = 22215, npcName = "Treebole", x = 36.9, y = 22.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21256, itemName = "Combat Task Briefing XI" },
-					{ t = "accept", quest = 8777, title = "Target: Hive'Regal Burrowers" },
+					{ t = "collect", quest = 10830, item = 31495, itemName = "Grishnath Orb", count = 5, x = 39.3, y = 20.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 20941, itemName = "Combat Task Briefing XII" },
-					{ t = "accept", quest = 8501, title = "Target: Hive'Ashi Stingers" },
+					{ t = "collect", quest = 10830, item = 31517, itemName = "Dire Pinfeather", count = 5, x = 30.1, y = 28.6, f = "e" },
 				},
 			},
 			{
-				note = "These enemies are elite and may require a group to kill.",
 				goals = {
-					{ t = "kill", quest = 8770, npc = 11722, target = "Hive'Ashi Defender", count = 30, oi = 1, map = 1451, x = 45.06, y = 25.78, f = "e" },
+					{ t = "goto", x = 33.8, y = 29.4, f = "e" },
 				},
 			},
 			{
-				label = "Kill_30_Hive'Ashi_Sandstalkers",
-				along = true,
-				note = "These enemies are elite and may require a group to kill. notinsticky They are stealthed all over the hive.",
 				goals = {
-					{ t = "kill", quest = 8771, npc = 11723, target = "Hive'Ashi Sandstalker", count = 30, oi = 1, map = 1451, x = 45.06, y = 25.78, f = "e" },
+					{ t = "turnin", quest = 10830, title = "Exorcising the Trees", npc = 22215, npcName = "Treebole", x = 36.9, y = 22.5, f = "e" },
 				},
 			},
 			{
-				label = "Kill_30_Hive'Ashi_Workers",
-				along = true,
-				note = "These enemies are elite and may require a group to kill. notinsticky",
 				goals = {
-					{ t = "kill", quest = 8502, npc = 11721, target = "Hive'Ashi Worker", count = 30, oi = 1, map = 1451, x = 45.06, y = 25.78, f = "e" },
+					{ t = "kill", quest = 10748, target = "Maxnar the Ashmaw", count = 1, oi = 1, x = 33.9, y = 35.4, f = "e" },
 				},
 			},
 			{
-				label = "Kill_30_Hive'Zora_Reavers",
-				along = true,
-				note = "These enemies are elite and may require a group to kill. notinsticky",
 				goals = {
-					{ t = "kill", quest = 8773, npc = 11728, target = "Hive'Zora Reaver", count = 30, oi = 1, map = 1451, x = 25.15, y = 59.72, f = "e" },
+					{ t = "turnin", quest = 10748, title = "Maxnar Must Die!", npc = 22007, npcName = "Tree Warden Chawn", x = 62.0, y = 39.5, f = "e" },
 				},
 			},
 			{
-				label = "Kill_30_Hive'Zora_Hive_Sisters",
-				along = true,
-				note = "These enemies are elite and may require a group to kill. notinsticky",
 				goals = {
-					{ t = "kill", quest = 8539, npc = 11729, target = "Hive'Zora Hive Sister", count = 30, oi = 1, map = 1451, x = 25.15, y = 59.72, f = "e" },
+					{ t = "accept", quest = 10183, title = "Off To Area 52", npc = 19569, npcName = "Netherologist Coppernickels", map = 1953, x = 21.3, y = 55.6, f = "e" },
 				},
 			},
 			{
-				label = "Kill_30_Hive'Zora_Waywatchers",
-				along = true,
-				note = "These enemies are elite and may require a group to kill. notinsticky",
 				goals = {
-					{ t = "kill", quest = 8772, npc = 11725, target = "Hive'Zora Waywatcher", count = 30, oi = 1, map = 1451, x = 25.15, y = 59.72, f = "e" },
+					{ t = "accept", quest = 10190, title = "Recharging the Batteries", npc = 19578, npcName = "Bot-Specialist Alley", map = 1953, x = 31.5, y = 56.6, f = "e" },
 				},
 			},
 			{
-				label = "Kill_30_Hive'Zora_Tunnelers",
-				along = true,
-				note = "These enemies are elite and may require a group to kill. notinsticky They only spawn inside the hive.",
 				goals = {
-					{ t = "kill", quest = 8687, npc = 11726, target = "Hive'Zora Tunneler", count = 30, oi = 1, map = 1451, x = 25.2, y = 55.37, f = "e" },
+					{ t = "goto", map = 1953, x = 26.5, y = 51.9, f = "e" },
 				},
 			},
 			{
-				label = "Kill_30_Hive'Regal_Ambushers",
-				along = true,
-				note = "These enemies are elite and may require a group to kill. notinsticky They are stealthed all over the hive.",
 				goals = {
-					{ t = "kill", quest = 8774, npc = 11730, target = "Hive'Regal Ambusher", count = 30, oi = 1, map = 1451, x = 57.57, y = 80.69, f = "e" },
+					{ t = "turnin", quest = 10190, title = "Recharging the Batteries", npc = 19578, npcName = "Bot-Specialist Alley", map = 1953, x = 31.5, y = 56.6, f = "e" },
 				},
 			},
 			{
-				label = "Kill_30_Hive'Regal_Spitfires",
-				along = true,
-				note = "These enemies are elite and may require a group to kill. notinsticky",
 				goals = {
-					{ t = "kill", quest = 8775, npc = 11732, target = "Hive'Regal Spitfire", count = 30, oi = 1, map = 1451, x = 57.57, y = 80.69, f = "e" },
+					{ t = "level", level = 69, f = "e" },
 				},
 			},
 			{
-				label = "Kill_30_Hive'Regal_Slavemakers",
-				along = true,
-				note = "These enemies are elite and may require a group to kill. notinsticky",
 				goals = {
-					{ t = "kill", quest = 8776, npc = 11733, target = "Hive'Regal Slavemaker", count = 30, oi = 1, map = 1451, x = 57.57, y = 80.69, f = "e" },
+					{ t = "accept", quest = 10342, title = "Securing the Shaleskin Shale", npc = 19617, npcName = "Boots", map = 1953, x = 32.3, y = 63.9, f = "e" },
 				},
 			},
 			{
-				label = "Kill_30_Hive'Regal_Burrowers",
-				along = true,
-				note = "These enemies are elite and may require a group to kill. notinsticky They only spawn inside the hive.",
 				goals = {
-					{ t = "kill", quest = 8777, npc = 11731, target = "Hive'Regal Burrower", count = 30, oi = 1, map = 1451, x = 62.05, y = 80.4, f = "e" },
+					{ t = "accept", quest = 10265, title = "Consortium Crystal Collection", npc = 19880, npcName = "Nether-Stalker Khay'ji", map = 1953, x = 32.4, y = 64.2, f = "e" },
 				},
 			},
 			{
-				label = "Kill_30_Hive'Ashi_Stingers",
-				along = true,
-				note = "These enemies are elite and may require a group to kill. notinsticky They only spawn inside the hive.",
 				goals = {
-					{ t = "kill", quest = 8501, npc = 11698, target = "Hive'Ashi Stinger", count = 30, oi = 1, map = 1451, x = 47.91, y = 26.31, f = "e" },
+					{ t = "accept", quest = 10189, title = "Manaforge B'naar", npc = 19468, npcName = "Spymaster Thalodien", map = 1953, x = 32.0, y = 64.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8770, title = "Target: Hive'Ashi Defenders", npc = 15181, npcName = "Commander Mar'alith", map = 1451, x = 49.2, y = 34.19, f = "e" },
-					{ t = "turnin", quest = 8771, title = "Target: Hive'Ashi Sandstalkers", npc = 15181, npcName = "Commander Mar'alith", map = 1451, x = 49.2, y = 34.19, f = "e" },
-					{ t = "turnin", quest = 8502, title = "Target: Hive'Ashi Workers", npc = 15181, npcName = "Commander Mar'alith", map = 1451, x = 49.2, y = 34.19, f = "e" },
-					{ t = "turnin", quest = 8773, title = "Target: Hive'Zora Reavers", npc = 15181, npcName = "Commander Mar'alith", map = 1451, x = 49.2, y = 34.19, f = "e" },
-					{ t = "turnin", quest = 8539, title = "Target: Hive'Zora Hive Sisters", npc = 15181, npcName = "Commander Mar'alith", map = 1451, x = 49.2, y = 34.19, f = "e" },
-					{ t = "turnin", quest = 8772, title = "Target: Hive'Zora Waywatchers", npc = 15181, npcName = "Commander Mar'alith", map = 1451, x = 49.2, y = 34.19, f = "e" },
-					{ t = "turnin", quest = 8687, title = "Target: Hive'Zora Tunnelers", npc = 15181, npcName = "Commander Mar'alith", map = 1451, x = 49.2, y = 34.19, f = "e" },
-					{ t = "turnin", quest = 8774, title = "Target: Hive'Regal Ambushers", npc = 15181, npcName = "Commander Mar'alith", map = 1451, x = 49.2, y = 34.19, f = "e" },
-					{ t = "turnin", quest = 8775, title = "Target: Hive'Regal Spitfires", npc = 15181, npcName = "Commander Mar'alith", map = 1451, x = 49.2, y = 34.19, f = "e" },
-					{ t = "turnin", quest = 8776, title = "Target: Hive'Regal Slavemakers", npc = 15181, npcName = "Commander Mar'alith", map = 1451, x = 49.2, y = 34.19, f = "e" },
-					{ t = "turnin", quest = 8777, title = "Target: Hive'Regal Burrowers", npc = 15181, npcName = "Commander Mar'alith", map = 1451, x = 49.2, y = 34.19, f = "e" },
-					{ t = "turnin", quest = 8501, title = "Target: Hive'Ashi Stingers", npc = 15181, npcName = "Commander Mar'alith", map = 1451, x = 49.2, y = 34.19, f = "e" },
+					{ t = "home", text = "Area 52", f = "e" },
 				},
 			},
-		},
-	})
-end
-
-do
-	Polestar.RegisterGuide({
-		id = "zygor/leveling/h-cenarion-field-duty-tactical-assignments",
-		pack = "guides",
-		title = "Cenarion Field Duty Tactical Assignments",
-		category = "Leveling",
-		faction = "Horde",
-		author = "TuWoW & Zygor",
-		zone = 1451,
-		version = 1,
-		steps = {
 			{
-				label = "Accept_Field_Duty",
 				goals = {
-					{ t = "accept", quest = 8731, title = "Field Duty", npc = 15540, npcName = "Windcaller Kaldon", map = 1451, x = 49.98, y = 36.34, f = "e" },
+					{ t = "turnin", quest = 10183, title = "Off To Area 52", npc = 19570, npcName = "Rocket-Chief Fuselage", map = 1953, x = 32.7, y = 65.0, f = "e" },
+					{ t = "accept", quest = 10186, title = "You're Hired!", npc = 19570, npcName = "Rocket-Chief Fuselage", map = 1953, x = 32.7, y = 65.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21143, itemName = "Unsigned Field Duty Papers" },
-					{ t = "collect", quest = 8507, item = 23024, itemName = "Prepared Field Duty Papers" },
+					{ t = "accept", quest = 10173, title = "The Archmage's Staff", npc = 19217, npcName = "Ravandwyr", map = 1953, x = 31.4, y = 66.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 8732, title = "Field Duty Papers", npc = 15612, npcName = "Krug Skullsplit", map = 1451, x = 52.21, y = 68.43, f = "e" },
+					{ t = "fpath", text = "Area 52", map = 1953, x = 33.7, y = 64.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 8507, item = 20810, itemName = "Signed Field Duty Papers", oi = 1 },
+					{ t = "collect", quest = 10342, itemName = "Shaleskin Shale", count = 5, oi = 1, map = 1953, x = 33.1, y = 60.0, f = "e" },
 				},
 			},
 			{
-				note = "Choose a tactical assignment. Tactical Assignments require you to fight Twilight Hammer elementals or collect reports from Silithus hives.",
 				goals = {
-					{ t = "turnin", quest = 8507, title = "Field Duty", npc = 15540, npcName = "Windcaller Kaldon", map = 1451, x = 49.98, y = 36.34, f = "e" },
+					{ t = "accept", quest = 10191, title = "Mark V is Alive!", npc = 19589, npcName = "Maxx A. Million Mk. V", map = 1953, x = 31.5, y = 56.6, f = "e" },
+					{ t = "collect", quest = 10186, itemName = "Etherlithium Matrix Crystal", count = 10, oi = 1, map = 1953, x = 31.5, y = 56.6, f = "e" },
 				},
 			},
 			{
-				label = "Begin_Tactical_Assignment",
 				goals = {
-					{ t = "use", item = 20809, itemName = "Tactical Assignment" },
+					{ t = "turnin", quest = 10191, title = "Mark V is Alive!", npc = 19578, npcName = "Bot-Specialist Alley", map = 1953, x = 31.5, y = 56.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21245, itemName = "Tactical Task Briefing I" },
-					{ t = "accept", quest = 8737, title = "Azure Templar" },
+					{ t = "turnin", quest = 10342, title = "Securing the Shaleskin Shale", npc = 19617, npcName = "Boots", map = 1953, x = 32.3, y = 63.9, f = "e" },
+					{ t = "accept", quest = 10199, title = "That Little Extra Kick", npc = 19617, npcName = "Boots", map = 1953, x = 32.3, y = 63.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21751, itemName = "Tactical Task Briefing III" },
-					{ t = "accept", quest = 8536, title = "Earthen Templar" },
+					{ t = "turnin", quest = 10186, title = "You're Hired!", npc = 19570, npcName = "Rocket-Chief Fuselage", map = 1953, x = 32.7, y = 65.0, f = "e" },
+					{ t = "accept", quest = 10203, title = "Invaluable Asset Zapping", npc = 19570, npcName = "Rocket-Chief Fuselage", map = 1953, x = 32.7, y = 65.0, f = "e" },
+					{ t = "accept", quest = 10225, title = "Report to Engineering", npc = 19570, npcName = "Rocket-Chief Fuselage", map = 1953, x = 32.7, y = 65.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21165, itemName = "Tactical Task Briefing VI" },
-					{ t = "accept", quest = 8534, title = "Hive'Zora Scout Report" },
+					{ t = "turnin", quest = 10225, title = "Report to Engineering", npc = 19709, npcName = "Chief Engineer Trep", map = 1953, x = 32.4, y = 66.8, f = "e" },
+					{ t = "accept", quest = 10224, title = "Essence for the Engines", npc = 19709, npcName = "Chief Engineer Trep", map = 1953, x = 32.4, y = 66.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21166, itemName = "Tactical Task Briefing VII" },
-					{ t = "accept", quest = 8738, title = "Hive'Regal Scout Report" },
+					{ t = "collect", quest = 10224, itemName = "Mana Wraith Essence", count = 7, oi = 1, map = 1953, x = 34.8, y = 59.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 20944, itemName = "Tactical Task Briefing IX" },
-					{ t = "accept", quest = 8740, title = "Twilight Marauders" },
+					{ t = "turnin", quest = 10224, title = "Essence for the Engines", npc = 19709, npcName = "Chief Engineer Trep", map = 1953, x = 32.4, y = 66.8, f = "e" },
+					{ t = "accept", quest = 10226, title = "Elemental Power Extraction", npc = 19709, npcName = "Chief Engineer Trep", map = 1953, x = 32.4, y = 66.8, f = "e" },
 				},
 			},
 			{
-				note = "Kill Twilight enemies around the area until you collect a Twilight Cultist robe, cowl, and mantle. Equip all three pieces and interact with the Lesser Wind Stone to summon a Templar. The Templar is random, so you may need to do this more than one time.",
 				goals = {
-					{ t = "kill", quest = 8737, npc = 15211, target = "Azure Templar", oi = 1, map = 1451, x = 38.29, y = 46.46, f = "e" },
+					{ t = "collect", quest = 10189, itemName = "B'naar Personnel Roster", count = 1, oi = 1, map = 1953, x = 27.8, y = 65.0, f = "e" },
 				},
 			},
 			{
-				note = "Kill Twilight enemies around the area until you collect a Twilight Cultist robe, cowl, and mantle. Equip all three pieces and interact with the Lesser Wind Stone to summon a Templar. The Templar is random, so you may need to do this more than one time.",
 				goals = {
-					{ t = "kill", quest = 8536, npc = 15307, target = "Earthen Templar", oi = 1, map = 1451, x = 38.29, y = 46.46, f = "e" },
+					{ t = "collect", quest = 10226, itemName = "Elemental Power", count = 5, oi = 1, map = 1953, x = 35.4, y = 76.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", text = "Enter the cave", map = 1451, x = 25.37, y = 55.22 },
-					{ t = "goto", text = "Follow the path", map = 1451, x = 26.51, y = 56.73 },
-					{ t = "goto", text = "Follow the path down", map = 1451, x = 25.56, y = 61.87 },
-					{ t = "collect", quest = 8534, item = 21158, itemName = "Hive'Zora Scout Report", oi = 1, map = 1451, x = 23.63, y = 62.43, f = "e" },
+					{ t = "goto", map = 1953, x = 40.3, y = 72.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", text = "Enter the cave", map = 1451, x = 54.88, y = 88.05 },
-					{ t = "goto", text = "Follow the path down", map = 1451, x = 53.57, y = 88.96 },
-					{ t = "goto", text = "Follow the path down", map = 1451, x = 53.12, y = 93.24 },
-					{ t = "collect", quest = 8738, item = 21160, itemName = "Hive'Regal Scout Report", oi = 1, map = 1451, x = 53.71, y = 97.48, f = "e" },
+					{ t = "goto", map = 1953, x = 41.0, y = 73.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 8740, npc = 15541, target = "Twilight Marauder Morna", oi = 1, map = 1451, x = 57.6, y = 17.9, f = "e" },
+					{ t = "collect", quest = 10265, itemName = "Arklon Crystal Artifact", count = 1, oi = 1, map = 1953, x = 42.4, y = 72.8, f = "e" },
 				},
 			},
 			{
-				label = "Kill_Twilight_Marauders",
-				along = true,
-				note = "They spawn with Twilight Marauder Morna.",
 				goals = {
-					{ t = "kill", quest = 8740, npc = 15542, target = "Twilight Marauder", count = 5, oi = 2, map = 1451, x = 68.76, y = 35.99, f = "e" },
+					{ t = "goto", map = 1953, x = 42.5, y = 72.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8737, title = "Azure Templar", npc = 15306, npcName = "Bor Wildmane", map = 1451, x = 48.57, y = 37.78, f = "e" },
-					{ t = "turnin", quest = 8536, title = "Earthen Templar", npc = 15306, npcName = "Bor Wildmane", map = 1451, x = 48.57, y = 37.78, f = "e" },
+					{ t = "goto", map = 1953, x = 41.4, y = 71.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8534, title = "Hive'Zora Scout Report", npc = 15191, npcName = "Windcaller Proudhorn", map = 1451, x = 51.15, y = 38.29, f = "e" },
-					{ t = "turnin", quest = 8738, title = "Hive'Regal Scout Report", npc = 15191, npcName = "Windcaller Proudhorn", map = 1451, x = 51.15, y = 38.29, f = "e" },
-					{ t = "turnin", quest = 8740, title = "Twilight Marauders", npc = 15191, npcName = "Windcaller Proudhorn", map = 1451, x = 51.15, y = 38.29, f = "e" },
+					{ t = "collect", quest = 10173, itemName = "Archmage Vargoth's Staff", count = 1, oi = 1, map = 1953, x = 40.9, y = 72.5, f = "e" },
 				},
 			},
 			{
-				label = "Open_Followup_Tactical_Assignment",
 				goals = {
-					{ t = "use", item = 21133, itemName = "Followup Tactical Assignment" },
+					{ t = "kill", target = "Nether Rays", count = 1, map = 1953, x = 44.6, y = 72.1, f = "e" },
+					{ t = "collect", quest = 10199, itemName = "Nether Ray Stinger", count = 5, oi = 1, map = 1953, x = 44.6, y = 72.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 20945, itemName = "Tactical Task Briefing II" },
-					{ t = "accept", quest = 8537, title = "Crimson Templar" },
+					{ t = "turnin", quest = 10203, title = "Invaluable Asset Zapping", npc = 19634, npcName = "Lead Sapper Blastfizzle", map = 1953, x = 34.2, y = 68.1, f = "e" },
+					{ t = "accept", quest = 10221, title = "Dr. Boom!", npc = 19634, npcName = "Lead Sapper Blastfizzle", map = 1953, x = 34.2, y = 68.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 20947, itemName = "Tactical Task Briefing IV" },
-					{ t = "accept", quest = 8535, title = "Hoary Templar" },
+					{ t = "turnin", quest = 10226, title = "Elemental Power Extraction", npc = 19709, npcName = "Chief Engineer Trep", map = 1953, x = 32.4, y = 66.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 20948, itemName = "Tactical Task Briefing V" },
-					{ t = "accept", quest = 8538, title = "The Four Dukes" },
+					{ t = "turnin", quest = 10173, title = "The Archmage's Staff", npc = 19217, npcName = "Ravandwyr", map = 1953, x = 31.4, y = 66.2, f = "e" },
+					{ t = "accept", quest = 10300, title = "Rebuilding the Staff", npc = 19217, npcName = "Ravandwyr", map = 1953, x = 31.4, y = 66.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21167, itemName = "Tactical Task Briefing VIII" },
-					{ t = "accept", quest = 8739, title = "Hive'Ashi Scout Report" },
+					{ t = "turnin", quest = 10265, title = "Consortium Crystal Collection", npc = 19880, npcName = "Nether-Stalker Khay'ji", map = 1953, x = 32.4, y = 64.2, f = "e" },
+					{ t = "accept", quest = 10262, title = "A Heap of Ethereals", npc = 19880, npcName = "Nether-Stalker Khay'ji", map = 1953, x = 32.4, y = 64.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 20943, itemName = "Tactical Task Briefing X" },
-					{ t = "accept", quest = 8498, title = "Twilight Battle Orders" },
+					{ t = "turnin", quest = 10199, title = "That Little Extra Kick", npc = 19617, npcName = "Boots", map = 1953, x = 32.3, y = 63.9, f = "e" },
 				},
 			},
 			{
-				note = "Kill Twilight enemies around the area until you collect a Twilight Cultist robe, cowl, and mantle. Equip all three pieces and interact with the Lesser Wind Stone to summon a Templar. The Templar is random, so you may need to do this more than one time.",
 				goals = {
-					{ t = "kill", quest = 8537, npc = 15209, target = "Crimson Templar", oi = 1, map = 1451, x = 38.29, y = 46.46, f = "e" },
+					{ t = "accept", quest = 10206, title = "Pick Your Part", npc = 19645, npcName = "Papa Wheeler", map = 1953, x = 33.0, y = 64.7, f = "e" },
 				},
 			},
 			{
-				note = "Kill Twilight enemies around the area until you collect a Twilight Cultist robe, cowl, and mantle. Equip all three pieces and interact with the Lesser Wind Stone to summon a Templar. The Templar is random, so you may need to do this more than one time.",
 				goals = {
-					{ t = "kill", quest = 8535, npc = 15212, target = "Hoary Templar", oi = 1, map = 1451, x = 38.29, y = 46.46, f = "e" },
+					{ t = "turnin", quest = 10189, title = "Manaforge B'naar", npc = 19468, npcName = "Spymaster Thalodien", map = 1953, x = 32.0, y = 64.0, f = "e" },
+					{ t = "accept", quest = 10193, title = "High Value Targets", npc = 19468, npcName = "Spymaster Thalodien", map = 1953, x = 32.0, y = 64.0, f = "e" },
+					{ t = "accept", quest = 10204, title = "Bloodgem Crystals", npc = 19469, npcName = "Magistrix Larynna", map = 1953, x = 32.0, y = 64.0, f = "e" },
 				},
 			},
 			{
-				note = "Dukes are level 62 elites and will require a group. Kill Twilight enemies around the area until you collect a Twilight Cultist robe, cowl, and mantle. Equip all three pieces along with a Medallion of Station and interact with the Wind Stone to summon a Duke. You can acquire a Medalion of Station by bringing 3 Abyssal Crests and 1 Large Brilliant Shard to Aurel Goldleaf next to the mailbox in Cenarion Hold. Abyssal Crests are dropped by templars summoned with a Twilight Cultist set at a Lesser Windstone. The duke is random, so you may need to do this more than one time.",
 				goals = {
-					{ t = "kill", quest = 8538, npc = 15206, target = "The Duke of Cynders", oi = 1, map = 1451, x = 37.63, y = 44.8, f = "e" },
+					{ t = "kill", target = "Disembodied Ghosts", count = 1, map = 1953, x = 33.5, y = 53.0, f = "e" },
+					{ t = "collect", quest = 10300, itemName = "Flawless Crystal Shard", count = 4, oi = 1, map = 1953, x = 33.5, y = 53.0, f = "e" },
 				},
 			},
 			{
-				label = "Kill_The_Duke_of_Fathoms",
-				along = true,
-				note = "Dukes are level 62 elites and will require a group. notinsticky Kill Twilight enemies around the area until you collect a Twilight Cultist robe, cowl, and mantle. notinsticky Equip all three pieces along with a Medallion of Station and interact with the Wind Stone to summon a Duke. notinsticky You can acquire a Medalion of Station by bringing 3 Abyssal Crests and 1 Large Brilliant Shard to Aurel Goldleaf next to the mailbox in Cenarion Hold. notinsticky Abyssal Crests are dropped by templars summoned with a Twilight Cultist set at a Lesser Windstone. notinsticky The duke is random, so you may need to do this more than one time. notinsticky",
 				goals = {
-					{ t = "kill", quest = 8538, npc = 15207, target = "The Duke of Fathoms", oi = 2, map = 1451, x = 37.63, y = 44.8, f = "e" },
+					{ t = "kill", quest = 10221, target = "Dr. Boom", count = 1, oi = 1, map = 1953, x = 35.0, y = 59.6, f = "e" },
 				},
 			},
 			{
-				label = "Kill_The_Duke_of_Zephyrs",
-				along = true,
-				note = "Dukes are level 62 elites and will require a group. notinsticky Kill Twilight enemies around the area until you collect a Twilight Cultist robe, cowl, and mantle. notinsticky Equip all three pieces along with a Medallion of Station and interact with the Wind Stone to summon a Duke. notinsticky You can acquire a Medalion of Station by bringing 3 Abyssal Crests and 1 Large Brilliant Shard to Aurel Goldleaf next to the mailbox in Cenarion Hold. notinsticky Abyssal Crests are dropped by templars summoned with a Twilight Cultist set at a Lesser Windstone. notinsticky The duke is random, so you may need to do this more than one time. notinsticky",
 				goals = {
-					{ t = "kill", quest = 8538, npc = 15220, target = "The Duke of Zephyrs", oi = 3, map = 1451, x = 37.63, y = 44.8, f = "e" },
+					{ t = "turnin", quest = 10300, title = "Rebuilding the Staff", npc = 19217, npcName = "Ravandwyr", map = 1953, x = 31.4, y = 66.2, f = "e" },
+					{ t = "accept", quest = 10174, title = "Curse of the Violet Tower", npc = 19217, npcName = "Ravandwyr", map = 1953, x = 31.4, y = 66.2, f = "e" },
 				},
 			},
 			{
-				label = "Kill_The_Duke_of_Shards",
-				along = true,
-				note = "Dukes are level 62 elites and will require a group. notinsticky Kill Twilight enemies around the area until you collect a Twilight Cultist robe, cowl, and mantle. notinsticky Equip all three pieces along with a Medallion of Station and interact with the Wind Stone to summon a Duke. notinsticky You can acquire a Medalion of Station by bringing 3 Abyssal Crests and 1 Large Brilliant Shard to Aurel Goldleaf next to the mailbox in Cenarion Hold. notinsticky Abyssal Crests are dropped by templars summoned with a Twilight Cultist set at a Lesser Windstone. notinsticky The duke is random, so you may need to do this more than one time. notinsticky",
 				goals = {
-					{ t = "kill", quest = 8538, npc = 15208, target = "The Duke of Shards", oi = 4, map = 1451, x = 37.63, y = 44.8, f = "e" },
+					{ t = "turnin", quest = 10221, title = "Dr. Boom!", npc = 19634, npcName = "Lead Sapper Blastfizzle", map = 1953, x = 34.2, y = 68.1, f = "e" },
 				},
 			},
 			{
-				note = "She is stealthed.",
 				goals = {
-					{ t = "goto", text = "Enter the cave", map = 1451, x = 43.95, y = 16.03 },
-					{ t = "collect", quest = 8739, item = 21161, itemName = "Hive'Ashi Scout Report", oi = 1, map = 1451, x = 43.94, y = 13.81, f = "e" },
+					{ t = "collect", itemName = "a Bloodgem Shard", count = 1, map = 1953, x = 26.3, y = 66.7, f = "e" },
 				},
 			},
 			{
-				note = "She patrols in and between the points indicated with a group of bodyguards. You may need to search around for her, especially during peak hours. She is elite, so you may need a group.",
 				goals = {
-					{ t = "collect", quest = 8498, item = 20803, itemName = "Twilight Battle Orders", oi = 1, map = 1451, x = 39.29, y = 42.97, f = "e" },
+					{ t = "kill", quest = 10193, target = "Sunfury Warp-Master", count = 2, oi = 1, map = 1953, x = 26.9, y = 70.5, f = "e" },
+					{ t = "kill", quest = 10193, target = "Sunfury Warp-Engineer", count = 6, oi = 2, map = 1953, x = 26.9, y = 70.5, f = "e" },
+					{ t = "kill", quest = 10193, target = "Sunfury Geologist", count = 8, oi = 3, map = 1953, x = 26.9, y = 70.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8537, title = "Crimson Templar", npc = 15306, npcName = "Bor Wildmane", map = 1451, x = 48.57, y = 37.78, f = "e" },
-					{ t = "turnin", quest = 8535, title = "Hoary Templar", npc = 15306, npcName = "Bor Wildmane", map = 1451, x = 48.57, y = 37.78, f = "e" },
+					{ t = "collect", quest = 10262, itemName = "Zaxxis Insignia", count = 10, oi = 1, map = 1953, x = 30.2, y = 75.5, f = "e" },
+					{ t = "collect", quest = 10206, itemName = "Ethereal Technology", count = 10, oi = 1, map = 1953, x = 30.2, y = 75.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8538, title = "The Four Dukes", npc = 15181, npcName = "Commander Mar'alith", map = 1451, x = 49.2, y = 34.19, f = "e" },
-					{ t = "turnin", quest = 8498, title = "Twilight Battle Orders", npc = 15181, npcName = "Commander Mar'alith", map = 1451, x = 49.2, y = 34.19, f = "e" },
+					{ t = "turnin", quest = 10206, title = "Pick Your Part", npc = 19645, npcName = "Papa Wheeler", map = 1953, x = 33.0, y = 64.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8739, title = "Hive'Ashi Scout Report", npc = 15191, npcName = "Windcaller Proudhorn", map = 1451, x = 51.15, y = 38.29, f = "e" },
+					{ t = "turnin", quest = 10262, title = "A Heap of Ethereals", npc = 19880, npcName = "Nether-Stalker Khay'ji", map = 1953, x = 32.4, y = 64.2, f = "e" },
+					{ t = "accept", quest = 10205, title = "Warp-Raider Nesaad", npc = 19880, npcName = "Nether-Stalker Khay'ji", map = 1953, x = 32.4, y = 64.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", item = 20809, itemName = "Tactical Assignment" },
+					{ t = "turnin", quest = 10193, title = "High Value Targets", npc = 19468, npcName = "Spymaster Thalodien", map = 1953, x = 32.0, y = 64.0, f = "e" },
+					{ t = "accept", quest = 10329, title = "Shutting Down Manaforge B'naar", npc = 19468, npcName = "Spymaster Thalodien", map = 1953, x = 32.0, y = 64.0, f = "e" },
+					{ t = "turnin", quest = 10204, title = "Bloodgem Crystals", npc = 19469, npcName = "Magistrix Larynna", map = 1953, x = 32.0, y = 64.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 10329, itemName = "B'naar Access Crystal", count = 1, oi = 1, map = 1953, x = 23.9, y = 70.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1953, x = 23.2, y = 68.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10329, title = "Shutting Down Manaforge B'naar", npc = 19468, npcName = "Spymaster Thalodien", map = 1953, x = 32.0, y = 64.0, f = "e" },
+					{ t = "accept", quest = 10194, title = "Stealth Flight", npc = 19468, npcName = "Spymaster Thalodien", map = 1953, x = 32.0, y = 64.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 10205, target = "Warp-Raider Nesaad", count = 1, oi = 1, map = 1953, x = 28.2, y = 79.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10205, title = "Warp-Raider Nesaad", npc = 19880, npcName = "Nether-Stalker Khay'ji", map = 1953, x = 32.4, y = 64.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10194, title = "Stealth Flight", npc = 20162, npcName = "Veronia", map = 1953, x = 33.8, y = 64.2, f = "e" },
+					{ t = "accept", quest = 10652, title = "Behind Enemy Lines", npc = 20162, npcName = "Veronia", map = 1953, x = 33.8, y = 64.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10652, title = "Behind Enemy Lines", npc = 19840, npcName = "Caledis Brightdawn", map = 1953, x = 48.2, y = 86.6, f = "e" },
+					{ t = "accept", quest = 10197, title = "A Convincing Disguise", npc = 19840, npcName = "Caledis Brightdawn", map = 1953, x = 48.2, y = 86.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", target = "Sunfury Arcanists", count = 1, map = 1953, x = 47.7, y = 84.9, f = "e" },
+					{ t = "collect", quest = 10197, itemName = "Sunfury Arcanist Robes", count = 1, oi = 3, map = 1953, x = 47.7, y = 84.9, f = "e" },
+				},
+			},
+			{
+				note = "Go inside Manaforge Coruu to 49,81.5",
+				goals = {
+					{ t = "kill", target = "Sunfury Researchers", count = 1, map = 1953, x = 49.0, y = 81.5, f = "e" },
+					{ t = "collect", quest = 10197, itemName = "Sunfury Researcher Gloves", count = 1, oi = 1, map = 1953, x = 49.0, y = 81.5, f = "e" },
+				},
+			},
+			{
+				note = "Go outside to 50.8,83.2",
+				goals = {
+					{ t = "kill", target = "Sunfury Guardsmen", count = 1, map = 1953, x = 50.8, y = 83.2, f = "e" },
+					{ t = "collect", quest = 10197, itemName = "Sunfury Guardsman Medallion", count = 1, oi = 2, map = 1953, x = 50.8, y = 83.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10197, title = "A Convincing Disguise", npc = 19840, npcName = "Caledis Brightdawn", map = 1953, x = 48.2, y = 86.6, f = "e" },
+					{ t = "accept", quest = 10198, title = "Information Gathering", npc = 19840, npcName = "Caledis Brightdawn", map = 1953, x = 48.2, y = 86.6, f = "e" },
+				},
+			},
+			{
+				note = "Go inside Manaforge Coruu to 48.2,84.1",
+				goals = {
+					{ t = "goto", map = 1953, x = 48.2, y = 84.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10198, title = "Information Gathering", npc = 19840, npcName = "Caledis Brightdawn", f = "e" },
+					{ t = "accept", quest = 10330, title = "Shutting Down Manaforge Coruu", npc = 19840, npcName = "Caledis Brightdawn", f = "e" },
+				},
+			},
+			{
+				note = "Go inside Manaforge Coruu to 49,81.5",
+				goals = {
+					{ t = "collect", quest = 10330, itemName = "Coruu Access Crystal", count = 1, oi = 1, map = 1953, x = 49.0, y = 81.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10330, title = "Shutting Down Manaforge Coruu", npc = 19840, npcName = "Caledis Brightdawn", f = "e" },
+					{ t = "accept", quest = 10200, title = "Return to Thalodien", npc = 19840, npcName = "Caledis Brightdawn", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 10334, title = "Needs More Cowbell", npc = 20464, npcName = "Thadell", map = 1953, x = 57.7, y = 85.2, f = "e" },
+					{ t = "accept", quest = 10331, title = "Indispensable Tools", npc = 20463, npcName = "Apprentice Andrethan", map = 1953, x = 57.7, y = 85.2, f = "e" },
 				},
 			},
 		},

@@ -1,566 +1,508 @@
 -- TuWoW_Leveling — Guides/Leveling_Alliance_05.lua
--- Compilado desde ZygorGuidesViewerForever y depurado para TuWoW 3.3.5a.
+-- Compilado desde Zygor Guides WotLK 3.3.5a oficial para TuWoW.
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/a-dwarf-and-gnome-starter-1-13-part-2",
+		id = "zygor/leveling/a-gnome-1-13",
 		pack = "guides",
-		title = "Dwarf & Gnome Starter (Parte 2/3)",
+		title = "Gnome (1-13) (Parte 1/2)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-dwarf-and-gnome-starter-1-13-part-3",
+		next = "zygor/leveling/a-gnome-1-13-part-2",
 		author = "TuWoW & Zygor",
 		minLevel = 1,
 		maxLevel = 13,
 		zone = 1426,
 		version = 1,
-		races = { "Dwarf", "Gnome" },
+		races = { "Gnome" },
 		steps = {
 			{
 				goals = {
-					{ t = "accept", quest = 5541, title = "Ammo for Rumbleshot", npc = 1694, npcName = "Loslor Rudge", map = 1426, x = 50.08, y = 49.42, f = "e" },
+					{ t = "accept", quest = 179, title = "Dwarven Outfitters", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.9, y = 71.9, f = "e" },
 				},
 			},
 			{
-				note = "Downstairs inside the building.",
-				only = { classes = { "WARRIOR", "PALADIN", "ROGUE" } },
 				goals = {
-					{ t = "skill", level = 75, skill = "Mining" },
+					{ t = "collect", quest = 179, itemName = "Tough Wolf Meat", count = 8, oi = 1, map = 1426, x = 29.0, y = 74.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 5541, item = 13850, itemName = "Rumbleshot's Ammo", oi = 1, map = 1426, x = 44.14, y = 56.94, f = "e" },
+					{ t = "level", level = 2, f = "e" },
 				},
 			},
 			{
-				note = "Inside the cave.",
+				only = { races = { "Gnome" }, classes = { "MAGE" } },
 				goals = {
-					{ t = "goto", text = "Enter the cave", map = 1426, x = 42.2, y = 54.13 },
+					{ t = "turnin", quest = 179, title = "Dwarven Outfitters", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
+					{ t = "accept", quest = 233, title = "Coldridge Valley Mail Delivery (1)", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
+					{ t = "accept", quest = 3114, title = "Glyphic Memorandum", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
+					{ t = "accept", quest = 170, title = "A New Threat", npc = 713, npcName = "Balir Frosthammer", map = 1426, x = 29.8, y = 71.3, f = "e" },
 				},
 			},
 			{
-				label = "Collect_Wendigo_Manes",
-				along = true,
-				note = "Yetis. Inside and outside the cave.",
+				only = { races = { "Gnome" }, classes = { "WARRIOR" } },
 				goals = {
-					{ t = "collect", quest = 313, item = 2671, itemName = "Wendigo Mane", count = 8, oi = 1, map = 1426, x = 42.33, y = 54.03, f = "e" },
+					{ t = "turnin", quest = 179, title = "Dwarven Outfitters", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
+					{ t = "accept", quest = 233, title = "Coldridge Valley Mail Delivery (1)", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
+					{ t = "accept", quest = 3112, title = "Simple Memorandum", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
+					{ t = "accept", quest = 170, title = "A New Threat", npc = 713, npcName = "Balir Frosthammer", map = 1426, x = 29.8, y = 71.3, f = "e" },
 				},
 			},
 			{
+				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
 				goals = {
-					{ t = "goto", text = "Leave the cave", map = 1426, x = 42.2, y = 54.13 },
+					{ t = "turnin", quest = 179, title = "Dwarven Outfitters", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
+					{ t = "accept", quest = 233, title = "Coldridge Valley Mail Delivery (1)", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
+					{ t = "accept", quest = 3115, title = "Tainted Memorandum", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
+					{ t = "accept", quest = 170, title = "A New Threat", npc = 713, npcName = "Balir Frosthammer", map = 1426, x = 29.8, y = 71.3, f = "e" },
 				},
 			},
 			{
+				only = { races = { "Gnome" }, classes = { "ROGUE" } },
 				goals = {
-					{ t = "turnin", quest = 5541, title = "Ammo for Rumbleshot", npc = 1243, npcName = "Hegnar Rumbleshot", map = 1426, x = 40.68, y = 65.13, f = "e" },
+					{ t = "turnin", quest = 179, title = "Dwarven Outfitters", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
+					{ t = "accept", quest = 233, title = "Coldridge Valley Mail Delivery (1)", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
+					{ t = "accept", quest = 3113, title = "Encrypted Memorandum", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
+					{ t = "accept", quest = 170, title = "A New Threat", npc = 713, npcName = "Balir Frosthammer", map = 1426, x = 29.8, y = 71.3, f = "e" },
 				},
 			},
 			{
-				label = "Collect_Thick_Bear_Fur",
-				along = true,
 				goals = {
-					{ t = "collect", quest = 317, item = 6952, itemName = "Thick Bear Fur", count = 2, oi = 2, map = 1426, x = 41.4, y = 59.2, f = "e" },
+					{ t = "kill", quest = 170, target = "Rockjaw Trogg", count = 6, oi = 1, map = 1426, x = 31.0, y = 75.0, f = "e" },
+					{ t = "kill", quest = 170, target = "Burly Rockjaw Trogg", count = 6, oi = 2, map = 1426, x = 31.0, y = 75.0, f = "e" },
 				},
 			},
 			{
-				label = "Collect_Chunks_Of_Boar_Meat_And_Crag_Boar_Ribs",
-				along = true,
-				note = "Don't vendor them.",
 				goals = {
-					{ t = "collect", quest = 317, item = 769, itemName = "Chunk of Boar Meat", count = 4, map = 1426, x = 41.4, y = 59.2, f = "e" },
-					{ t = "collect", quest = 384, item = 2886, itemName = "Crag Boar Rib", count = 6, map = 1426, x = 41.4, y = 59.2, f = "e" },
+					{ t = "turnin", quest = 170, title = "A New Threat", npc = 713, npcName = "Balir Frosthammer", map = 1426, x = 29.8, y = 71.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 287, title = "Frostmane Hold", npc = 1252, npcName = "Senir Whitebeard", map = 1426, x = 46.77, y = 53.81, f = "e" },
+					{ t = "level", level = 3, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
+				note = "Go inside Anvilmar to 28.5,67.7",
 				goals = {
-					{ t = "buy", item = 2894, itemName = "Rhapsody Malt", map = 1426, x = 47.38, y = 52.52, f = "e" },
+					{ t = "accept", quest = 3361, title = "A Refugee's Quandary", npc = 8416, npcName = "Felix Whindlebolt", map = 1426, x = 28.5, y = 67.7, f = "e" },
 				},
 			},
 			{
+				only = { races = { "Gnome" }, classes = { "MAGE" } },
 				goals = {
-					{ t = "turnin", quest = 384, title = "Beer Basted Boar Ribs", npc = 1267, npcName = "Ragnar Thunderbrew", map = 1426, x = 46.83, y = 52.36, f = "e" },
+					{ t = "turnin", quest = 3114, title = "Glyphic Memorandum", npc = 944, npcName = "Marryk Nurribit", map = 1426, x = 28.7, y = 66.4, f = "e" },
 				},
 			},
 			{
+				only = { races = { "Gnome" }, classes = { "WARRIOR" } },
 				goals = {
-					{ t = "turnin", quest = 317, title = "Stocking Jetsteam", npc = 1378, npcName = "Pilot Bellowfiz", map = 1426, x = 49.43, y = 48.41, f = "e" },
-					{ t = "accept", quest = 318, title = "Evershine", npc = 1378, npcName = "Pilot Bellowfiz", map = 1426, x = 49.43, y = 48.41, f = "e" },
+					{ t = "turnin", quest = 3112, title = "Simple Memorandum", npc = 912, npcName = "Thran Khorman", map = 1426, x = 28.8, y = 67.2, f = "e" },
 				},
 			},
 			{
+				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
 				goals = {
-					{ t = "turnin", quest = 313, title = "The Grizzled Den", npc = 1377, npcName = "Pilot Stonegear", map = 1426, x = 49.62, y = 48.61, f = "e" },
+					{ t = "turnin", quest = 3115, title = "Tainted Memorandum", npc = 460, npcName = "Alamar Grimm", map = 1426, x = 28.7, y = 66.1, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "HUNTER" } },
+				only = { races = { "Gnome" }, classes = { "ROGUE" } },
 				goals = {
-					{ t = "train", npc = 1231, npcName = "Grif Wildheart", map = 1426, x = 45.81, y = 53.04, f = "e" },
+					{ t = "turnin", quest = 3113, title = "Encrypted Memorandum", npc = 916, npcName = "Solm Hargrin", map = 1426, x = 28.4, y = 67.5, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "WARLOCK" } },
 				goals = {
-					{ t = "train", npc = 5612, npcName = "Gimrizz Shadowcog", map = 1426, x = 47.33, y = 53.69, f = "e" },
+					{ t = "turnin", quest = 233, title = "Coldridge Valley Mail Delivery (1)", npc = 714, npcName = "Talin Keeneye", map = 1426, x = 22.6, y = 71.4, f = "e" },
+					{ t = "accept", quest = 234, title = "Coldridge Valley Mail Delivery (2)", npc = 714, npcName = "Talin Keeneye", map = 1426, x = 22.6, y = 71.4, f = "e" },
+					{ t = "accept", quest = 183, title = "The Boar Hunter", npc = 714, npcName = "Talin Keeneye", map = 1426, x = 22.6, y = 71.4, f = "e" },
 				},
 			},
 			{
-				note = "Buy available Grimoires.",
-				only = { classes = { "WARLOCK" } },
 				goals = {
-					{ t = "vendor", npc = 6328, npcName = "Dannie Fizzwizzle", map = 1426, x = 47.28, y = 53.67, f = "e" },
+					{ t = "kill", quest = 183, target = "Small Crag Boar", count = 12, oi = 1, map = 1426, x = 22.0, y = 70.0, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
-				only = { classes = { "MAGE" } },
 				goals = {
-					{ t = "train", npc = 1228, npcName = "Magis Sparkmantle", map = 1426, x = 47.5, y = 52.08, f = "e" },
+					{ t = "turnin", quest = 183, title = "The Boar Hunter", npc = 714, npcName = "Talin Keeneye", map = 1426, x = 22.6, y = 71.4, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
-				only = { classes = { "PALADIN" } },
 				goals = {
-					{ t = "train", npc = 1232, npcName = "Azar Stronghammer", map = 1426, x = 47.6, y = 52.07, f = "e" },
+					{ t = "turnin", quest = 234, title = "Coldridge Valley Mail Delivery (2)", npc = 786, npcName = "Grelin Whitebeard", map = 1426, x = 25.0, y = 76.0, f = "e" },
+					{ t = "accept", quest = 182, title = "The Troll Cave", npc = 786, npcName = "Grelin Whitebeard", map = 1426, x = 25.0, y = 76.0, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
-				only = { classes = { "SHAMAN" } },
 				goals = {
-					{ t = "train", map = 1426, x = 47.59, y = 51.95, f = "e" },
+					{ t = "collect", quest = 3361, itemName = "Felix's Bucket of Bolts", count = 1, oi = 3, map = 1426, x = 26.3, y = 79.3, f = "e" },
+					{ t = "kill", quest = 182, target = "Frostmane Troll Whelp", count = 14, oi = 1, map = 1426, x = 26.3, y = 79.3, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "PRIEST" } },
 				goals = {
-					{ t = "train", npc = 1226, npcName = "Maxan Anvol", map = 1426, x = 47.34, y = 52.19, f = "e" },
+					{ t = "level", level = 4, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "ROGUE" } },
 				goals = {
-					{ t = "train", npc = 1234, npcName = "Hogral Bakkan", map = 1426, x = 47.56, y = 52.61, f = "e" },
+					{ t = "turnin", quest = 182, title = "The Troll Cave", npc = 786, npcName = "Grelin Whitebeard", map = 1426, x = 25.1, y = 75.7, f = "e" },
+					{ t = "accept", quest = 218, title = "The Stolen Journal", npc = 786, npcName = "Grelin Whitebeard", map = 1426, x = 25.1, y = 75.7, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "WARRIOR" } },
+				note = "Enter the troll cave at 26.8,79.8|c",
 				goals = {
-					{ t = "train", npc = 1229, npcName = "Granis Swiftaxe", map = 1426, x = 47.36, y = 52.65, f = "e" },
+					{ t = "goto", map = 1426, x = 26.8, y = 79.8, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building. If possible.",
-				only = { classes = { "WARRIOR", "ROGUE" } },
+				note = "Follow the path on the left to 30.5,80.2",
 				goals = {
-					{ t = "skill", level = 75, skill = "First Aid" },
+					{ t = "collect", quest = 218, itemName = "Grelin Whitebeard's Journal", count = 1, oi = 1, map = 1426, x = 30.5, y = 80.2, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
+				note = "Go outside to 22.8,79.9",
 				goals = {
-					{ t = "accept", quest = 412, title = "Operation Recombobulation", npc = 1269, npcName = "Razzle Sprysprocket", map = 1426, x = 45.85, y = 49.37, f = "e" },
+					{ t = "collect", quest = 3361, itemName = "Felix's Chest", count = 1, oi = 2, map = 1426, x = 22.8, y = 79.9, f = "e" },
 				},
 			},
 			{
-				note = "Avoid the elite yeti that walks nearby. Top of the mountain.",
 				goals = {
-					{ t = "goto", text = "Follow the path", map = 1426, x = 39.61, y = 48.01 },
-					{ t = "accept", quest = 312, title = "Tundra MacGrann's Stolen Stash", npc = 1266, npcName = "Tundra MacGrann", map = 1426, x = 34.57, y = 51.65, f = "e" },
+					{ t = "collect", quest = 3361, itemName = "Felix's Box", count = 1, oi = 1, map = 1426, x = 20.9, y = 76.1, f = "e" },
 				},
 			},
 			{
-				note = "Wait for the elite yeti to walk away. Inside the small cave. HURRY. Yeti runs back quickly.",
 				goals = {
-					{ t = "collect", quest = 312, item = 2667, itemName = "MacGrann's Dried Meats", oi = 1, map = 1426, x = 38.51, y = 53.93, f = "e" },
+					{ t = "turnin", quest = 218, title = "The Stolen Journal", npc = 786, npcName = "Grelin Whitebeard", map = 1426, x = 25.0, y = 76.0, f = "e" },
+					{ t = "accept", quest = 282, title = "Senir's Observations (1)", npc = 786, npcName = "Grelin Whitebeard", map = 1426, x = 25.0, y = 76.0, f = "e" },
+					{ t = "accept", quest = 3364, title = "Scalding Mornbrew Delivery", npc = 12738, npcName = "Nori Pridedrift", map = 1426, x = 25.0, y = 76.0, f = "e" },
 				},
 			},
 			{
-				note = "Avoid the elite yeti that walks nearby. Top of the mountain.",
 				goals = {
-					{ t = "turnin", quest = 312, title = "Tundra MacGrann's Stolen Stash", npc = 1266, npcName = "Tundra MacGrann", map = 1426, x = 34.57, y = 51.65, f = "e" },
+					{ t = "turnin", quest = 3361, title = "A Refugee's Quandary", npc = 8416, npcName = "Felix Whindlebolt", map = 1426, x = 28.5, y = 67.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 318, title = "Evershine", npc = 1374, npcName = "Rejold Barleybrew", map = 1426, x = 30.19, y = 45.73, f = "e" },
-					{ t = "accept", quest = 319, title = "A Favor for Evershine", npc = 1374, npcName = "Rejold Barleybrew", map = 1426, x = 30.19, y = 45.73, f = "e" },
-					{ t = "accept", quest = 315, title = "The Perfect Stout", npc = 1374, npcName = "Rejold Barleybrew", map = 1426, x = 30.19, y = 45.73, f = "e" },
+					{ t = "turnin", quest = 3364, title = "Scalding Mornbrew Delivery", npc = 836, npcName = "Durnan Furcutter", map = 1426, x = 28.8, y = 66.4, f = "e" },
+					{ t = "accept", quest = 3365, title = "Bring Back the Mug", npc = 836, npcName = "Durnan Furcutter", map = 1426, x = 28.8, y = 66.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 310, title = "Bitter Rivals", npc = 1375, npcName = "Marleth Barleybrew", map = 1426, x = 30.19, y = 45.53, f = "e" },
+					{ t = "level", level = 5, f = "e" },
 				},
 			},
 			{
-				note = "Wooden baskets. Top of the mountain.",
 				goals = {
-					{ t = "collect", quest = 315, item = 2676, itemName = "Shimmerweed", count = 6, oi = 1, map = 1426, x = 41.33, y = 44.27, f = "e" },
+					{ t = "turnin", quest = 3365, title = "Bring Back the Mug", npc = 12738, npcName = "Nori Pridedrift", map = 1426, x = 25.0, y = 76.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 319, npc = 1196, target = "Ice Claw Bear", count = 6, oi = 1, map = 1426, x = 32.61, y = 37.37, f = "e" },
-					{ t = "kill", quest = 319, npc = 1127, target = "Elder Crag Boar", count = 8, oi = 2, map = 1426, x = 32.61, y = 37.37, f = "e" },
-					{ t = "kill", quest = 319, npc = 1201, target = "Snow Leopard", count = 8, oi = 3, map = 1426, x = 32.61, y = 37.37, f = "e" },
+					{ t = "turnin", quest = 282, title = "Senir's Observations (1)", npc = 1965, npcName = "Mountaineer Thalos", map = 1426, x = 33.5, y = 71.8, f = "e" },
+					{ t = "accept", quest = 420, title = "Senir's Observations (2)", npc = 1965, npcName = "Mountaineer Thalos", map = 1426, x = 33.5, y = 71.8, f = "e" },
+					{ t = "accept", quest = 2160, title = "Supplies to Tannok", npc = 6782, npcName = "Hands Springsprocket", map = 1426, x = 33.5, y = 71.8, f = "e" },
 				},
 			},
 			{
-				note = "Anywhere near Brewnall Village. No death penalty at this level. Fast travel.",
 				goals = {
-					{ t = "complete", quest = 319, title = "A Favor for Evershine", note = "Die on Purpose", map = 1426, x = 32.61, y = 37.37, f = "e" },
+					{ t = "turnin", quest = 420, title = "Senir's Observations (2)", npc = 1252, npcName = "Senir Whitebeard", map = 1426, x = 46.7, y = 53.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "complete", quest = 319, title = "A Favor for Evershine", note = "Resurrect at the Spirit Healer", map = 1426, x = 47.05, y = 55.1, f = "e" },
+					{ t = "accept", quest = 384, title = "Beer Basted Boar Ribs", npc = 1267, npcName = "Ragnar Thunderbrew", map = 1426, x = 46.8, y = 52.4, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "buy", item = 2686, itemName = "Thunder Ale", map = 1426, x = 47.38, y = 52.52, f = "e" },
+					{ t = "turnin", quest = 2160, title = "Supplies to Tannok", npc = 6806, npcName = "Tannok Frosthammer", map = 1426, x = 47.3, y = 52.3, f = "e" },
+					{ t = "buy", npc = 1247, npcName = "Innkeeper Belm", itemName = "Rhapsody Malt", count = 1, map = 1426, x = 47.3, y = 52.3, f = "e" },
 				},
 			},
 			{
-				note = "Downstairs inside the building.",
 				goals = {
-					{ t = "accept", quest = 308, title = "Distracting Jarven", npc = 1373, npcName = "Jarven Thunderbrew", map = 1426, x = 47.64, y = 52.66, f = "e" },
+					{ t = "home", text = "Kharanos", f = "e" },
 				},
 			},
 			{
-				note = "Takes a moment. Downstairs inside the building.",
 				goals = {
-					{ t = "turnin", quest = 310, title = "Bitter Rivals", map = 1426, x = 47.7, y = 52.69, f = "e" },
-					{ t = "accept", quest = 311, title = "Return to Marleth", map = 1426, x = 47.7, y = 52.69, f = "e" },
+					{ t = "accept", quest = 400, title = "Tools for Steelgrill", npc = 1872, npcName = "Tharek Blackstone", map = 1426, x = 46.0, y = 51.7, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "sethome", location = "Thunderbrew Distillery", map = 1426, x = 47.38, y = 52.52, f = "e" },
+					{ t = "turnin", quest = 400, title = "Tools for Steelgrill", npc = 1376, npcName = "Beldin Steelgrill", map = 1426, x = 50.4, y = 49.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", text = "Follow the path", map = 1426, x = 41.9, y = 47.23 },
-					{ t = "turnin", quest = 311, title = "Return to Marleth", npc = 1375, npcName = "Marleth Barleybrew", map = 1426, x = 30.19, y = 45.53, f = "e" },
+					{ t = "accept", quest = 317, title = "Stocking Jetsteam", npc = 1378, npcName = "Pilot Bellowfiz", map = 1426, x = 49.6, y = 48.5, f = "e" },
+					{ t = "accept", quest = 313, title = "The Grizzled Den", npc = 1377, npcName = "Pilot Stonegear", map = 1426, x = 49.6, y = 48.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 319, title = "A Favor for Evershine", npc = 1374, npcName = "Rejold Barleybrew", map = 1426, x = 30.19, y = 45.73, f = "e" },
-					{ t = "accept", quest = 320, title = "Return to Bellowfiz", npc = 1374, npcName = "Rejold Barleybrew", map = 1426, x = 30.19, y = 45.73, f = "e" },
-					{ t = "turnin", quest = 315, title = "The Perfect Stout", npc = 1374, npcName = "Rejold Barleybrew", map = 1426, x = 30.19, y = 45.73, f = "e" },
-					{ t = "accept", quest = 413, title = "Shimmer Stout", npc = 1374, npcName = "Rejold Barleybrew", map = 1426, x = 30.19, y = 45.73, f = "e" },
+					{ t = "accept", quest = 5541, title = "Ammo for Rumbleshot", npc = 1694, npcName = "Loslor Rudge", map = 1426, x = 50.1, y = 49.4, f = "e" },
 				},
 			},
 			{
-				note = "Inside the cave.",
 				goals = {
-					{ t = "goto", text = "Enter the cave", map = 1426, x = 24.84, y = 50.89 },
-					{ t = "complete", quest = 287, title = "Frostmane Hold", note = "Fully Explore Frostmane Hold", map = 1426, x = 21.2, y = 54.0, f = "e" },
+					{ t = "collect", quest = 317, itemName = "Chunk of Boar Meat", count = 4, oi = 1, map = 1426, x = 49.7, y = 50.8, f = "e" },
+					{ t = "collect", quest = 384, itemName = "Crag Boar Rib", count = 6, oi = 1, map = 1426, x = 49.7, y = 50.8, f = "e" },
+					{ t = "collect", quest = 317, itemName = "Thick Bear Fur", count = 2, oi = 2, map = 1426, x = 49.7, y = 50.8, f = "e" },
 				},
 			},
 			{
-				label = "Kill_Frostmane_Headhunters",
-				along = true,
-				note = "Inside and outside the cave. notinsticky",
 				goals = {
-					{ t = "kill", quest = 287, npc = 1123, target = "Frostmane Headhunter", count = 5, oi = 1, map = 1426, x = 24.87, y = 50.9, f = "e" },
+					{ t = "level", level = 6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", text = "Leave the cave", map = 1426, x = 25.07, y = 50.99 },
-					{ t = "collect", quest = 412, item = 3083, itemName = "Restabilization Cog", count = 8, oi = 1, map = 1426, x = 26.1, y = 39.86, f = "e" },
-					{ t = "collect", quest = 412, item = 3084, itemName = "Gyromechanic Gear", count = 8, oi = 2, map = 1426, x = 26.1, y = 39.86, f = "e" },
+					{ t = "collect", quest = 5541, itemName = "Rumbleshot's Ammo", count = 1, oi = 1, map = 1426, x = 44.1, y = 57.0, f = "e" },
 				},
 			},
 			{
-				note = "Helps reach level 10 after quest turnins.",
 				goals = {
-					{ t = "goto", text = "ding 9,5900", map = 1426, x = 26.1, y = 39.86 },
+					{ t = "collect", quest = 313, itemName = "Wendigo Mane", count = 8, oi = 1, map = 1426, x = 42.4, y = 54.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 287, title = "Frostmane Hold", npc = 1252, npcName = "Senir Whitebeard", map = 1426, x = 46.77, y = 53.81, f = "e" },
-					{ t = "accept", quest = 291, title = "The Reports", npc = 1252, npcName = "Senir Whitebeard", map = 1426, x = 46.77, y = 53.81, f = "e" },
+					{ t = "turnin", quest = 5541, title = "Ammo for Rumbleshot", npc = 1243, npcName = "Hegnar Rumbleshot", map = 1426, x = 40.7, y = 65.1, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "WARLOCK" } },
 				goals = {
-					{ t = "train", npc = 5612, npcName = "Gimrizz Shadowcog", map = 1426, x = 47.33, y = 53.69, f = "e" },
+					{ t = "turnin", quest = 384, title = "Beer Basted Boar Ribs", npc = 1267, npcName = "Ragnar Thunderbrew", map = 1426, x = 46.8, y = 52.4, f = "e" },
 				},
 			},
 			{
-				note = "Buy available Grimoires.",
-				only = { classes = { "WARLOCK" } },
 				goals = {
-					{ t = "vendor", npc = 6328, npcName = "Dannie Fizzwizzle", map = 1426, x = 47.28, y = 53.67, f = "e" },
+					{ t = "turnin", quest = 317, title = "Stocking Jetsteam", npc = 1378, npcName = "Pilot Bellowfiz", map = 1426, x = 49.6, y = 48.5, f = "e" },
+					{ t = "accept", quest = 318, title = "Evershine", npc = 1378, npcName = "Pilot Bellowfiz", map = 1426, x = 49.6, y = 48.5, f = "e" },
+					{ t = "turnin", quest = 313, title = "The Grizzled Den", npc = 1377, npcName = "Pilot Stonegear", map = 1426, x = 49.6, y = 48.5, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
-				only = { classes = { "MAGE" } },
 				goals = {
-					{ t = "train", npc = 1228, npcName = "Magis Sparkmantle", map = 1426, x = 47.5, y = 52.08, f = "e" },
+					{ t = "level", level = 7, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
-				only = { classes = { "PALADIN" } },
 				goals = {
-					{ t = "train", npc = 1232, npcName = "Azar Stronghammer", map = 1426, x = 47.6, y = 52.07, f = "e" },
+					{ t = "turnin", quest = 318, title = "Evershine", npc = 1374, npcName = "Rejold Barleybrew", map = 1426, x = 30.2, y = 45.6, f = "e" },
+					{ t = "accept", quest = 319, title = "A Favor for Evershine", npc = 1374, npcName = "Rejold Barleybrew", map = 1426, x = 30.2, y = 45.6, f = "e" },
+					{ t = "accept", quest = 315, title = "The Perfect Stout", npc = 1374, npcName = "Rejold Barleybrew", map = 1426, x = 30.2, y = 45.6, f = "e" },
+					{ t = "accept", quest = 310, title = "Bitter Rivals", npc = 1375, npcName = "Marleth Barleybrew", map = 1426, x = 30.2, y = 45.6, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
-				only = { classes = { "SHAMAN" } },
 				goals = {
-					{ t = "train", map = 1426, x = 47.59, y = 51.95, f = "e" },
+					{ t = "kill", quest = 319, target = "Ice Claw Bear", count = 6, oi = 1, map = 1426, x = 27.8, y = 48.3, f = "e" },
+					{ t = "kill", quest = 319, target = "Elder Crag Boar", count = 8, oi = 2, map = 1426, x = 27.8, y = 48.3, f = "e" },
+					{ t = "kill", quest = 319, target = "Snow Leopard", count = 8, oi = 3, map = 1426, x = 27.8, y = 48.3, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "PRIEST" } },
 				goals = {
-					{ t = "train", npc = 1226, npcName = "Maxan Anvol", map = 1426, x = 47.34, y = 52.19, f = "e" },
+					{ t = "turnin", quest = 319, title = "A Favor for Evershine", npc = 1374, npcName = "Rejold Barleybrew", map = 1426, x = 30.2, y = 45.6, f = "e" },
+					{ t = "accept", quest = 320, title = "Return to Bellowfiz", npc = 1374, npcName = "Rejold Barleybrew", map = 1426, x = 30.2, y = 45.6, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "PRIEST" } },
 				goals = {
-					{ t = "accept", quest = 5637, title = "Desperate Prayer", npc = 1226, npcName = "Maxan Anvol", map = 1426, x = 47.34, y = 52.19, f = "e" },
+					{ t = "goto", map = 1426, x = 37.9, y = 42.1, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "ROGUE" } },
 				goals = {
-					{ t = "train", npc = 1234, npcName = "Hogral Bakkan", map = 1426, x = 47.56, y = 52.61, f = "e" },
+					{ t = "collect", quest = 315, itemName = "Shimmerweed", count = 6, oi = 1, map = 1426, x = 41.2, y = 36.4, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "WARRIOR" } },
 				goals = {
-					{ t = "train", npc = 1229, npcName = "Granis Swiftaxe", map = 1426, x = 47.36, y = 52.65, f = "e" },
+					{ t = "turnin", quest = 320, title = "Return to Bellowfiz", npc = 1378, npcName = "Pilot Bellowfiz", map = 1426, x = 49.6, y = 48.5, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "train", npc = 1231, npcName = "Grif Wildheart", map = 1426, x = 45.81, y = 53.04, f = "e" },
+					{ t = "level", level = 8, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "accept", quest = 6064, title = "Taming the Beast", npc = 1231, npcName = "Grif Wildheart", map = 1426, x = 45.81, y = 53.03, f = "e" },
+					{ t = "buy", npc = 1247, npcName = "Innkeeper Belm", itemName = "Thunder Ale", count = 1, map = 1426, x = 47.3, y = 52.3, f = "e" },
 				},
 			},
 			{
-				note = "On a Large Crag Boar.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "use", item = 15911, itemName = "Taming Rod" },
-					{ t = "complete", quest = 6064, title = "Taming the Beast", note = "Tame a Large Crag Boar", map = 1426, x = 49.8, y = 53.4, f = "e" },
+					{ t = "turnin", quest = 310, title = "Bitter Rivals", npc = 1373, npcName = "Jarven Thunderbrew", map = 1426, x = 47.6, y = 52.7, f = "e" },
+					{ t = "accept", quest = 311, title = "Return to Marleth", npc = 1373, npcName = "Jarven Thunderbrew", map = 1426, x = 47.6, y = 52.7, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "turnin", quest = 6064, title = "Taming the Beast", npc = 1231, npcName = "Grif Wildheart", map = 1426, x = 45.81, y = 53.04, f = "e" },
-					{ t = "accept", quest = 6084, title = "Taming the Beast", npc = 1231, npcName = "Grif Wildheart", map = 1426, x = 45.81, y = 53.04, f = "e" },
+					{ t = "accept", quest = 287, title = "Frostmane Hold", npc = 1252, npcName = "Senir Whitebeard", map = 1426, x = 46.7, y = 53.8, f = "e" },
 				},
 			},
 			{
-				note = "On a Snow Leopard. Dismiss your pet first.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "use", item = 15913, itemName = "Taming Rod" },
-					{ t = "complete", quest = 6084, title = "Taming the Beast", note = "Tame a Snow Leopard", map = 1426, x = 48.2, y = 57.4, f = "e" },
+					{ t = "accept", quest = 412, title = "Operation Recombobulation", npc = 1269, npcName = "Razzle Sprysprocket", map = 1426, x = 45.8, y = 49.4, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "turnin", quest = 6084, title = "Taming the Beast", npc = 1231, npcName = "Grif Wildheart", map = 1426, x = 45.81, y = 53.04, f = "e" },
-					{ t = "accept", quest = 6085, title = "Taming the Beast", npc = 1231, npcName = "Grif Wildheart", map = 1426, x = 45.81, y = 53.04, f = "e" },
+					{ t = "turnin", quest = 315, title = "The Perfect Stout", npc = 1374, npcName = "Rejold Barleybrew", map = 1426, x = 30.2, y = 45.6, f = "e" },
+					{ t = "accept", quest = 413, title = "Shimmer Stout", npc = 1374, npcName = "Rejold Barleybrew", map = 1426, x = 30.2, y = 45.6, f = "e" },
+					{ t = "turnin", quest = 311, title = "Return to Marleth", npc = 1375, npcName = "Marleth Barleybrew", map = 1426, x = 30.2, y = 45.6, f = "e" },
 				},
 			},
 			{
-				note = "On an Ice Claw Bear. Dismiss your pet first.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "use", item = 15908, itemName = "Taming Rod" },
-					{ t = "complete", quest = 6085, title = "Taming the Beast", note = "Tame an Ice Claw Bear", map = 1426, x = 50.2, y = 53.0, f = "e" },
+					{ t = "kill", quest = 287, target = "Frostmane Headhunter", count = 5, oi = 2, map = 1426, x = 25.0, y = 51.0, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "turnin", quest = 6085, title = "Taming the Beast", npc = 1231, npcName = "Grif Wildheart", map = 1426, x = 45.81, y = 53.04, f = "e" },
-					{ t = "accept", quest = 6086, title = "Training the Beast", npc = 1231, npcName = "Grif Wildheart", map = 1426, x = 45.81, y = 53.04, f = "e" },
+					{ t = "goto", map = 1426, x = 21.2, y = 52.3, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "turnin", quest = 6086, title = "Training the Beast", npc = 10090, npcName = "Belia Thundergranite", map = 1455, x = 70.87, y = 85.8, f = "e" },
+					{ t = "collect", quest = 412, itemName = "Restabilization Cog", count = 8, oi = 1, map = 1426, x = 25.9, y = 43.2, f = "e" },
+					{ t = "collect", quest = 412, itemName = "Gyromechanic Gear", count = 8, oi = 2, map = 1426, x = 25.9, y = 43.2, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "train", npc = 10090, npcName = "Belia Thundergranite", map = 1455, x = 70.86, y = 85.85, f = "e" },
+					{ t = "level", level = 9, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "turnin", quest = 412, title = "Operation Recombobulation", npc = 1269, npcName = "Razzle Sprysprocket", map = 1426, x = 45.85, y = 49.37, f = "e" },
+					{ t = "turnin", quest = 412, title = "Operation Recombobulation", npc = 1269, npcName = "Razzle Sprysprocket", map = 1426, x = 45.8, y = 49.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 320, title = "Return to Bellowfiz", npc = 1378, npcName = "Pilot Bellowfiz", map = 1426, x = 49.43, y = 48.41, f = "e" },
+					{ t = "turnin", quest = 287, title = "Frostmane Hold", npc = 1252, npcName = "Senir Whitebeard", map = 1426, x = 46.7, y = 53.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 433, title = "The Public Servant", npc = 1977, npcName = "Senator Mehr Stonehallow", map = 1426, x = 68.67, y = 55.97, f = "e" },
+					{ t = "turnin", quest = 287, title = "Frostmane Hold", npc = 1252, npcName = "Senir Whitebeard", map = 1426, x = 46.7, y = 53.8, f = "e" },
+					{ t = "accept", quest = 291, title = "The Reports", npc = 1252, npcName = "Senir Whitebeard", map = 1426, x = 46.7, y = 53.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 432, title = "Those Blasted Troggs!", npc = 1254, npcName = "Foreman Stonebrow", map = 1426, x = 69.08, y = 56.33, f = "e" },
+					{ t = "accept", quest = 314, title = "Protecting the Herd", npc = 1265, npcName = "Rudra Amberstill", map = 1426, x = 63.1, y = 49.9, f = "e" },
 				},
 			},
 			{
-				note = "More inside the cave nearby.",
 				goals = {
-					{ t = "kill", quest = 432, npc = 1115, target = "Rockjaw Skullthumper", count = 6, oi = 1, map = 1426, x = 69.17, y = 58.42, f = "e" },
+					{ t = "goto", map = 1426, x = 59.8, y = 50.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", text = "Leave the cave", map = 1426, x = 70.7, y = 56.49 },
-					{ t = "turnin", quest = 432, title = "Those Blasted Troggs!", npc = 1254, npcName = "Foreman Stonebrow", map = 1426, x = 69.08, y = 56.33, f = "e" },
+					{ t = "collect", quest = 314, itemName = "Fang of Vagash", count = 1, oi = 1, map = 1426, x = 62.6, y = 46.1, f = "e" },
 				},
 			},
 			{
-				label = "Kill_Rockjaw_Bonesnappers",
-				along = true,
 				goals = {
-					{ t = "kill", quest = 433, npc = 1117, target = "Rockjaw Bonesnapper", count = 10, oi = 1, map = 1426, x = 75.24, y = 56.91, f = "e" },
+					{ t = "turnin", quest = 314, title = "Protecting the Herd", npc = 1265, npcName = "Rudra Amberstill", map = 1426, x = 63.1, y = 49.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 433, title = "The Public Servant", npc = 1977, npcName = "Senator Mehr Stonehallow", map = 1426, x = 68.67, y = 55.97, f = "e" },
+					{ t = "accept", quest = 433, title = "The Public Servant", npc = 1977, npcName = "Senator Mehr Stonehallow", map = 1426, x = 68.7, y = 56.0, f = "e" },
 				},
 			},
 			{
-				note = "Follow the road through the tunnel.",
 				goals = {
-					{ t = "accept", quest = 419, title = "The Lost Pilot", npc = 1960, npcName = "Pilot Hammerfoot", map = 1426, x = 83.89, y = 39.19, f = "e" },
+					{ t = "accept", quest = 432, title = "Those Blasted Troggs!", npc = 1254, npcName = "Foreman Stonebrow", map = 1426, x = 69.1, y = 56.3, f = "e" },
 				},
 			},
 			{
+				note = "Go inside the cave to 70.7,56.5",
 				goals = {
-					{ t = "turnin", quest = 419, title = "The Lost Pilot", map = 1426, x = 79.67, y = 36.17, f = "e" },
-					{ t = "accept", quest = 417, title = "A Pilot's Revenge", map = 1426, x = 79.67, y = 36.17, f = "e" },
+					{ t = "kill", quest = 432, target = "Rockjaw Skullthumper", count = 6, oi = 1, map = 1426, x = 70.7, y = 56.5, f = "e" },
+					{ t = "kill", quest = 433, target = "Rockjaw Bonesnapper", count = 10, oi = 1, map = 1426, x = 70.7, y = 56.5, f = "e" },
 				},
 			},
 			{
-				note = "White bear. Walks around.",
+				note = "Go outside to 68.7,56.0",
 				goals = {
-					{ t = "collect", quest = 417, item = 3183, itemName = "Mangy Claw", oi = 1, map = 1426, x = 78.97, y = 37.02, f = "e" },
+					{ t = "turnin", quest = 433, title = "The Public Servant", npc = 1977, npcName = "Senator Mehr Stonehallow", map = 1426, x = 68.7, y = 56.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 417, title = "A Pilot's Revenge", npc = 1960, npcName = "Pilot Hammerfoot", map = 1426, x = 83.89, y = 39.19, f = "e" },
+					{ t = "turnin", quest = 432, title = "Those Blasted Troggs!", npc = 1254, npcName = "Foreman Stonebrow", map = 1426, x = 69.1, y = 56.3, f = "e" },
 				},
 			},
 			{
-				note = "Follow the road through the tunnels.",
 				goals = {
-					{ t = "turnin", quest = 413, title = "Shimmer Stout", npc = 1959, npcName = "Mountaineer Barleybrew", map = 1426, x = 86.28, y = 48.81, f = "e" },
-					{ t = "accept", quest = 414, title = "Stout to Kadrell", npc = 1959, npcName = "Mountaineer Barleybrew", map = 1426, x = 86.28, y = 48.81, f = "e" },
+					{ t = "level", level = 10, f = "e" },
 				},
 			},
 			{
-				note = "Inside the small cave. Top of the mountain.",
-				only = { classes = { "SHAMAN" } },
+				only = { races = { "Gnome" }, classes = { "WARRIOR" } },
 				goals = {
-					{ t = "goto", text = "Follow the path up", map = 1426, x = 86.9, y = 46.97 },
+					{ t = "accept", quest = 1679, title = "Muren Stormpike", npc = 1229, npcName = "Granis Swiftaxe", map = 1426, x = 47.4, y = 52.6, f = "e" },
 				},
 			},
 			{
+				only = { races = { "Gnome" }, classes = { "WARRIOR" } },
 				goals = {
-					{ t = "accept", quest = 224, title = "In Defense of the King's Lands", npc = 1089, npcName = "Mountaineer Cobbleflint", map = 1432, x = 22.07, y = 73.12, f = "e" },
+					{ t = "turnin", quest = 1679, title = "Muren Stormpike", npc = 6114, npcName = "Muren Stormpike", map = 1455, x = 70.8, y = 90.3, f = "e" },
+					{ t = "accept", quest = 1678, title = "Vejrek", npc = 6114, npcName = "Muren Stormpike", map = 1455, x = 70.8, y = 90.3, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
+				only = { races = { "Gnome" }, classes = { "WARRIOR" } },
 				goals = {
-					{ t = "accept", quest = 267, title = "The Trogg Threat", npc = 1092, npcName = "Captain Rugelfuss", map = 1432, x = 23.23, y = 73.67, f = "e" },
+					{ t = "collect", quest = 1678, itemName = "Vejrek's Head", count = 1, oi = 1, map = 1426, x = 27.8, y = 58.0, f = "e" },
 				},
 			},
 			{
+				only = { races = { "Gnome" }, classes = { "WARRIOR" } },
 				goals = {
-					{ t = "goto", text = "Follow the road to the path here", map = 1432, x = 29.32, y = 66.73 },
-					{ t = "collect", quest = 267, item = 2536, itemName = "Trogg Stone Tooth", count = 8, oi = 1, map = 1432, x = 32.79, y = 74.99, f = "e" },
+					{ t = "turnin", quest = 1678, title = "Vejrek", npc = 6114, npcName = "Muren Stormpike", map = 1455, x = 70.8, y = 90.3, f = "e" },
 				},
 			},
 			{
-				label = "Kill_Stonesplinter_Troggs_And_Scouts",
-				along = true,
 				goals = {
-					{ t = "kill", quest = 224, npc = 1161, target = "Stonesplinter Trogg", count = 10, oi = 1, map = 1432, x = 32.79, y = 74.99, f = "e" },
-					{ t = "kill", quest = 224, npc = 1162, target = "Stonesplinter Scout", count = 10, oi = 2, map = 1432, x = 32.79, y = 74.99, f = "e" },
+					{ t = "turnin", quest = 413, title = "Shimmer Stout", npc = 1959, npcName = "Mountaineer Barleybrew", map = 1426, x = 86.3, y = 48.8, f = "e" },
+					{ t = "accept", quest = 414, title = "Stout to Kadrell", npc = 1959, npcName = "Mountaineer Barleybrew", map = 1426, x = 86.3, y = 48.8, f = "e" },
 				},
 			},
 			{
-				label = "Collect_Linen_Cloth_Paladin",
-				along = true,
-				note = "Needed for class quest soon. Don't vendor them.",
-				only = { classes = { "PALADIN" } },
 				goals = {
-					{ t = "collect", quest = 1648, item = 2589, itemName = "Linen Cloth", count = 10, map = 1432, x = 32.79, y = 74.99, f = "e" },
+					{ t = "fpath", text = "Thelsamar", map = 1432, x = 33.9, y = 51.0, f = "e" },
 				},
 			},
 			{
+				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
 				goals = {
-					{ t = "goto", text = "Leave Stonesplinter Valley and follow the road", map = 1432, x = 30.57, y = 69.69 },
-					{ t = "turnin", quest = 224, title = "In Defense of the King's Lands", npc = 1089, npcName = "Mountaineer Cobbleflint", map = 1432, x = 22.07, y = 73.13, f = "e" },
+					{ t = "accept", quest = 1715, title = "The Slaughtered Lamb", npc = 6120, npcName = "Lago Blackwrench", map = 1455, x = 47.6, y = 9.3, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
+				note = "Ride the tram to Stormwind City|goto Stormwind City|noway|c",
+				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
 				goals = {
-					{ t = "turnin", quest = 267, title = "The Trogg Threat", npc = 1092, npcName = "Captain Rugelfuss", map = 1432, x = 23.23, y = 73.67, f = "e" },
+					{ t = "goto", map = 1455, x = 76.9, y = 51.2, f = "e" },
 				},
 			},
 		},

@@ -1,406 +1,516 @@
 -- TuWoW_Leveling — Guides/Leveling_Horde_13.lua
--- Compilado desde ZygorGuidesViewerForever y depurado para TuWoW 3.3.5a.
+-- Compilado desde Zygor Guides WotLK 3.3.5a oficial para TuWoW.
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/h-hillsbrad-foothills-22-24",
+		id = "zygor/leveling/h-main-guide-13-20",
 		pack = "guides",
-		title = "Hillsbrad Foothills",
+		title = "Main Guide (13-20) (Parte 1/2)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-the-barrens-24-25",
+		next = "zygor/leveling/h-main-guide-13-20-part-2",
 		author = "TuWoW & Zygor",
-		minLevel = 22,
-		maxLevel = 24,
-		zone = 1458,
+		minLevel = 13,
+		maxLevel = 20,
+		zone = 1413,
 		version = 1,
 		steps = {
 			{
-				note = "Up on the platform.",
-				only = { classes = { "MAGE" } },
 				goals = {
-					{ t = "goto", text = "learnspell Teleport: Undercity##3563", map = 1458, x = 84.19, y = 15.58 },
+					{ t = "turnin", quest = 840, title = "Conscript of the Horde", npc = 3337, npcName = "Kargal Battlescar", map = 1413, x = 62.3, y = 19.4, f = "e" },
+					{ t = "accept", quest = 842, title = "Crossroads Conscription", npc = 3337, npcName = "Kargal Battlescar", map = 1413, x = 62.3, y = 19.4, f = "e" },
 				},
 			},
 			{
-				only = { races = { "Scourge" }, classes = { "PRIEST" } },
+				only = { races = { "Orc", "Troll" } },
 				goals = {
-					{ t = "turnin", quest = 5644, title = "Dark Sacrifice", npc = 4606, npcName = "Aelthalyste", map = 1458, x = 49.26, y = 17.12, f = "e" },
+					{ t = "turnin", quest = 809, title = "Ak'Zeloth", npc = 3521, npcName = "Ak'Zeloth", map = 1413, x = 62.3, y = 20.1, f = "e" },
 				},
 			},
 			{
-				note = "Underwater.",
-				only = { classes = { "DRUID" } },
+				only = { races = { "Orc", "Troll" } },
 				goals = {
-					{ t = "collect", quest = 30, item = 15882, itemName = "Half Pendant of Aquatic Endurance", map = 1421, x = 29.54, y = 29.5, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", text = "Leave the cave", map = 1456, x = 29.81, y = 29.82 },
-					{ t = "turnin", quest = 264, title = "Until Death Do Us Part", map = 1421, x = 44.18, y = 42.67, f = "e" },
+					{ t = "accept", quest = 6365, title = "Meats to Orgrimmar", npc = 3489, npcName = "Zargh", map = 1413, x = 52.6, y = 29.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 3301, title = "Mura Runetotem", npc = 8385, npcName = "Mura Runetotem", map = 1421, x = 42.91, y = 41.99, f = "e" },
+					{ t = "accept", quest = 869, title = "Raptor Thieves", npc = 3464, npcName = "Gazrog", map = 1413, x = 51.9, y = 30.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 493, title = "Journey to Hillsbrad Foothills", npc = 1937, npcName = "Apothecary Renferrel", map = 1421, x = 42.8, y = 40.87, f = "e" },
+					{ t = "home", text = "the Crossroads", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 516, title = "Beren's Peril", npc = 2121, npcName = "Shadow Priest Allister", map = 1421, x = 43.98, y = 40.93, f = "e" },
+					{ t = "fpath", text = "Crossroads", map = 1413, x = 51.5, y = 30.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Orc", "Troll" } },
+				goals = {
+					{ t = "turnin", quest = 6365, title = "Meats to Orgrimmar", npc = 3615, npcName = "Devrak", map = 1413, x = 51.5, y = 30.3, f = "e" },
+					{ t = "accept", quest = 6384, title = "Ride to Orgrimmar", npc = 3615, npcName = "Devrak", map = 1413, x = 51.5, y = 30.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 494, title = "Time To Strike", npc = 2214, npcName = "Deathstalker Lesh", map = 1424, x = 20.78, y = 47.4, f = "e" },
+					{ t = "accept", quest = 1492, title = "Wharfmaster Dizzywig", npc = 3390, npcName = "Apothecary Helbrim", map = 1413, x = 51.4, y = 30.2, f = "e" },
+					{ t = "accept", quest = 848, title = "Fungal Spores", npc = 3390, npcName = "Apothecary Helbrim", map = 1413, x = 51.4, y = 30.2, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Orc", "Troll" } },
+				goals = {
+					{ t = "turnin", quest = 6384, title = "Ride to Orgrimmar", npc = 6929, npcName = "Innkeeper Gryshka", map = 1454, x = 54.1, y = 68.4, f = "e" },
+					{ t = "accept", quest = 6385, title = "Doras the Wind Rider Master", npc = 6929, npcName = "Innkeeper Gryshka", map = 1454, x = 54.1, y = 68.4, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Orc", "Troll" } },
+				goals = {
+					{ t = "turnin", quest = 6385, title = "Doras the Wind Rider Master", npc = 3310, npcName = "Doras", map = 1454, x = 45.1, y = 63.9, f = "e" },
+					{ t = "accept", quest = 6386, title = "Return to the Crossroads.", npc = 3310, npcName = "Doras", map = 1454, x = 45.1, y = 63.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "getfp", location = "Tarren Mill", map = 1424, x = 60.14, y = 18.62, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 493, title = "Journey to Hillsbrad Foothills", npc = 2216, npcName = "Apothecary Lydon", map = 1424, x = 61.44, y = 19.06, f = "e" },
-					{ t = "turnin", quest = 1065, title = "Journey to Tarren Mill", npc = 2216, npcName = "Apothecary Lydon", map = 1424, x = 61.44, y = 19.06, f = "e" },
-					{ t = "accept", quest = 1066, title = "Blood of Innocents", npc = 2216, npcName = "Apothecary Lydon", map = 1424, x = 61.44, y = 19.06, f = "e" },
-					{ t = "accept", quest = 496, title = "Elixir of Suffering", npc = 2216, npcName = "Apothecary Lydon", map = 1424, x = 61.44, y = 19.06, f = "e" },
-					{ t = "accept", quest = 501, title = "Elixir of Pain", npc = 2216, npcName = "Apothecary Lydon", map = 1424, x = 61.44, y = 19.06, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				only = { classes = { "ROGUE" } },
-				goals = {
-					{ t = "turnin", quest = 2479, title = "Hinott's Assistance", npc = 2391, npcName = "Serge Hinott", map = 1424, x = 61.63, y = 19.19, f = "e" },
-					{ t = "accept", quest = 2480, title = "Hinott's Assistance", npc = 2391, npcName = "Serge Hinott", map = 1424, x = 61.63, y = 19.19, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				only = { classes = { "ROGUE" } },
-				goals = {
-					{ t = "complete", quest = 2480, title = "Hinott's Assistance", note = "Complete the Cure", map = 1424, x = 61.58, y = 18.97, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				only = { classes = { "ROGUE" } },
-				goals = {
-					{ t = "turnin", quest = 2480, title = "Hinott's Assistance", npc = 2391, npcName = "Serge Hinott", map = 1424, x = 61.58, y = 18.97, f = "e" },
-				},
-			},
-			{
-				only = { classes = { "ROGUE" } },
-				goals = {
-					{ t = "use", item = 8095, itemName = "Hinott's Oil" },
-				},
-			},
-			{
-				note = "Walks around.",
-				goals = {
-					{ t = "turnin", quest = 494, title = "Time To Strike", npc = 2215, npcName = "High Executor Darthalia", map = 1424, x = 62.33, y = 20.46, f = "e" },
-					{ t = "accept", quest = 527, title = "Battle of Hillsbrad", npc = 2215, npcName = "High Executor Darthalia", map = 1424, x = 62.33, y = 20.46, f = "e" },
-				},
-			},
-			{
-				note = "Taming a temporary pet soon. Learning Claw (Rank 3).",
-				only = { classes = { "HUNTER" } },
-				goals = {
-					{ t = "complete", quest = 496, title = "Elixir of Suffering", note = "Stable Your Pet", map = 1424, x = 62.31, y = 19.7, f = "e" },
-				},
-			},
-			{
-				note = "Wanted poster.",
-				goals = {
-					{ t = "accept", quest = 567, title = "Dangerous!", map = 1424, x = 62.55, y = 19.69, f = "e" },
-				},
-			},
-			{
-				note = "Wanted poster.",
-				goals = {
-					{ t = "accept", quest = 549, title = "WANTED: Syndicate Personnel", map = 1424, x = 62.62, y = 20.74, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "accept", quest = 498, title = "The Rescue", npc = 2229, npcName = "Krusk", map = 1424, x = 63.23, y = 20.66, f = "e" },
-				},
-			},
-			{
-				only = { classes = { "SHAMAN" } },
-				goals = {
-					{ t = "use", item = 7768, itemName = "Empty Red Waterskin" },
-					{ t = "collect", quest = 1536, item = 7771, itemName = "Filled Red Waterskin", oi = 1, map = 1424, x = 62.15, y = 20.75, f = "e" },
-				},
-			},
-			{
-				note = "Cast Tame Beast on a Gray Bear. Kill enemies nearby.",
-				only = { classes = { "HUNTER" } },
-				goals = {
-					{ t = "complete", quest = 496, title = "Elixir of Suffering", note = "Learn the Claw (Rank 3) Pet Ability", map = 1424, x = 66.4, y = 19.0, f = "e" },
-				},
-			},
-			{
-				note = "Abandon your temporary pet.",
-				only = { classes = { "HUNTER" } },
-				goals = {
-					{ t = "complete", quest = 496, title = "Elixir of Suffering", note = "Retrieve Your Pet", map = 1424, x = 62.31, y = 19.7, f = "e" },
-				},
-			},
-			{
-				note = "Use Beast Training ability.",
-				only = { classes = { "HUNTER" } },
-				goals = {
-					{ t = "complete", quest = 496, title = "Elixir of Suffering", note = "Teach Claw (Rank 3) to Your Pet" },
-				},
-			},
-			{
-				note = "Walks around. Multiple locations.",
-				goals = {
-					{ t = "goto", text = "Enter Durnholde Keep and cross the bridge", map = 1424, x = 76.57, y = 46.48 },
-					{ t = "collect", quest = 498, item = 3499, itemName = "Burnished Gold Key", map = 1424, x = 78.8, y = 42.0, f = "e" },
-				},
-			},
-			{
-				note = "Tied to the orc's leg.",
-				goals = {
-					{ t = "complete", quest = 498, title = "The Rescue", note = "Rescue Tog'thar", map = 1424, x = 79.79, y = 39.66, f = "e" },
-				},
-			},
-			{
-				note = "Walks around. Multiple locations.",
-				goals = {
-					{ t = "collect", quest = 498, item = 3467, itemName = "Dull Iron Key", map = 1424, x = 79.6, y = 41.83, f = "e" },
-				},
-			},
-			{
-				note = "Tied to the orc's leg. Inside the building.",
-				goals = {
-					{ t = "complete", quest = 498, title = "The Rescue", note = "Rescue Drull", map = 1424, x = 75.33, y = 41.5, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Vials_of_Innocent_Blood",
-				along = true,
-				goals = {
-					{ t = "collect", quest = 1066, item = 5620, itemName = "Vial of Innocent Blood", count = 5, oi = 1, map = 1424, x = 79.7, y = 42.49, f = "e" },
-				},
-			},
-			{
-				label = "Kill_Syndicate_Rogues_And_Watchmen",
-				along = true,
-				goals = {
-					{ t = "kill", quest = 549, npc = 2260, target = "Syndicate Rogue", count = 10, oi = 1, map = 1424, x = 78.99, y = 43.13, f = "e" },
-					{ t = "kill", quest = 549, npc = 2261, target = "Syndicate Watchman", count = 10, oi = 2, map = 1424, x = 78.99, y = 43.13, f = "e" },
+					{ t = "accept", quest = 871, title = "Disrupt the Attacks", npc = 3429, npcName = "Thork", map = 1413, x = 51.5, y = 30.9, f = "e" },
+					{ t = "accept", quest = 5041, title = "Supplies for the Crossroads", npc = 3429, npcName = "Thork", map = 1413, x = 51.5, y = 30.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "complete", quest = 498, title = "The Rescue", note = "Cross the bridge and leave Durnholde Keep", map = 1424, x = 76.57, y = 46.48, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Creeper_Ichor",
-				along = true,
-				note = "Green spiders.",
-				goals = {
-					{ t = "collect", quest = 496, item = 3477, itemName = "Creeper Ichor", oi = 2, map = 1424, x = 62.8, y = 34.2, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Gray_Bear_Tongues",
-				along = true,
-				goals = {
-					{ t = "collect", quest = 496, item = 3476, itemName = "Gray Bear Tongue", count = 10, oi = 1, map = 1424, x = 62.8, y = 34.2, f = "e" },
-				},
-			},
-			{
-				note = "Helps reach level 23 after quest turnins.",
-				goals = {
-					{ t = "goto", text = "ding 22,19570", map = 1424, x = 62.8, y = 34.2 },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 1066, title = "Blood of Innocents", npc = 2216, npcName = "Apothecary Lydon", map = 1424, x = 61.44, y = 19.06, f = "e" },
-					{ t = "turnin", quest = 496, title = "Elixir of Suffering", npc = 2216, npcName = "Apothecary Lydon", map = 1424, x = 61.44, y = 19.06, f = "e" },
-					{ t = "accept", quest = 499, title = "Elixir of Suffering", npc = 2216, npcName = "Apothecary Lydon", map = 1424, x = 61.44, y = 19.06, f = "e" },
-					{ t = "accept", quest = 1067, title = "Return to Thunder Bluff", npc = 2216, npcName = "Apothecary Lydon", map = 1424, x = 61.44, y = 19.06, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 499, title = "Elixir of Suffering", npc = 2230, npcName = "Umpi", map = 1424, x = 61.52, y = 19.2, f = "e" },
-				},
-			},
-			{
-				note = "Walks around.",
-				goals = {
-					{ t = "turnin", quest = 549, title = "WANTED: Syndicate Personnel", npc = 2215, npcName = "High Executor Darthalia", map = 1424, x = 62.33, y = 20.46, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 498, title = "The Rescue", npc = 2229, npcName = "Krusk", map = 1424, x = 63.23, y = 20.6, f = "e" },
-				},
-			},
-			{
-				note = "Multiple locations. Inside buildings or in the field.",
-				goals = {
-					{ t = "kill", quest = 527, npc = 2403, target = "Farmer Getz", oi = 4, map = 1424, x = 36.74, y = 39.44, f = "e" },
-				},
-			},
-			{
-				note = "Both floors inside the building. Can also be outside.",
-				goals = {
-					{ t = "kill", quest = 527, npc = 232, target = "Farmer Ray", oi = 3, map = 1424, x = 33.68, y = 35.42, f = "e" },
-				},
-			},
-			{
-				label = "Kill_Hillsbrad_Farmers_Farmhands",
-				along = true,
-				goals = {
-					{ t = "kill", quest = 527, npc = 2266, target = "Hillsbrad Farmer", count = 6, oi = 1, map = 1424, x = 33.4, y = 40.8, f = "e" },
-					{ t = "kill", quest = 527, npc = 2360, target = "Hillsbrad Farmhand", count = 6, oi = 2, map = 1424, x = 33.4, y = 40.8, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Mountain_Lion_Blood",
-				along = true,
-				goals = {
-					{ t = "collect", quest = 501, item = 3496, itemName = "Mountain Lion Blood", count = 10, oi = 1, map = 1424, x = 43.98, y = 37.68, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 501, title = "Elixir of Pain", npc = 2216, npcName = "Apothecary Lydon", map = 1424, x = 61.44, y = 19.06, f = "e" },
-					{ t = "accept", quest = 502, title = "Elixir of Pain", npc = 2216, npcName = "Apothecary Lydon", map = 1424, x = 61.44, y = 19.06, f = "e" },
-				},
-			},
-			{
-				note = "Walks around.",
-				goals = {
-					{ t = "turnin", quest = 527, title = "Battle of Hillsbrad", npc = 2215, npcName = "High Executor Darthalia", map = 1424, x = 62.33, y = 20.45, f = "e" },
-					{ t = "accept", quest = 528, title = "Battle of Hillsbrad", npc = 2215, npcName = "High Executor Darthalia", map = 1424, x = 62.33, y = 20.45, f = "e" },
+					{ t = "accept", quest = 867, title = "Harpy Raiders", npc = 3449, npcName = "Darsok Swiftdagger", map = 1413, x = 51.6, y = 30.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 546, title = "Souvenirs of Death", npc = 2418, npcName = "Deathguard Samsa", map = 1424, x = 62.1, y = 19.73, f = "e" },
-				},
-			},
-			{
-				note = "Kill enemies as you walk. Reduces grinding later.",
-				goals = {
-					{ t = "complete", quest = 502, title = "Elixir of Pain", note = "Click Here to Continue" },
-				},
-			},
-			{
-				note = "Small wolf. Walks around. Enrages and attacks after quest turnin. Kill him for 1000+ xp.",
-				goals = {
-					{ t = "turnin", quest = 502, title = "Elixir of Pain", npc = 2274, npcName = "Stanley", map = 1424, x = 32.66, y = 35.32, f = "e" },
-				},
-			},
-			{
-				note = "Female carrying a pitchfork. Walks around.",
-				goals = {
-					{ t = "kill", quest = 567, npc = 2451, target = "Farmer Kalaba", oi = 4, map = 1424, x = 34.4, y = 45.8, f = "e" },
-				},
-			},
-			{
-				label = "Kill_Citizen_Wilkes",
-				along = true,
-				note = "Walks the path between buildings.",
-				goals = {
-					{ t = "kill", quest = 567, npc = 2449, target = "Citizen Wilkes", oi = 2, map = 1424, x = 32.6, y = 39.8, f = "e" },
-				},
-			},
-			{
-				label = "Kill_Hillsbrad_Peasants",
-				along = true,
-				goals = {
-					{ t = "kill", quest = 528, npc = 2267, target = "Hillsbrad Peasant", count = 15, oi = 1, map = 1424, x = 35.32, y = 45.42, f = "e" },
-				},
-			},
-			{
-				note = "Helps reach level 24 after quest turnins. Higher level enemies soon.",
-				goals = {
-					{ t = "goto", text = "ding 23,24600", map = 1424, x = 41.8, y = 37.6 },
-				},
-			},
-			{
-				note = "Walks around.",
-				goals = {
-					{ t = "turnin", quest = 528, title = "Battle of Hillsbrad", npc = 2215, npcName = "High Executor Darthalia", map = 1424, x = 62.33, y = 20.45, f = "e" },
-					{ t = "accept", quest = 529, title = "Battle of Hillsbrad", npc = 2215, npcName = "High Executor Darthalia", map = 1424, x = 62.33, y = 20.45, f = "e" },
+					{ t = "turnin", quest = 842, title = "Crossroads Conscription", npc = 3338, npcName = "Sergra Darkthorn", map = 1413, x = 52.2, y = 31.0, f = "e" },
+					{ t = "accept", quest = 844, title = "Plainstrider Menace", npc = 3338, npcName = "Sergra Darkthorn", map = 1413, x = 52.2, y = 31.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 516, title = "Beren's Peril", npc = 2121, npcName = "Shadow Priest Allister", map = 1421, x = 43.98, y = 40.93, f = "e" },
+					{ t = "accept", quest = 870, title = "The Forgotten Pools", npc = 3448, npcName = "Tonga Runetotem", map = 1413, x = 52.3, y = 31.9, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
+				only = { races = { "Orc", "Troll" } },
 				goals = {
-					{ t = "collect", quest = 529, item = 3564, itemName = "Shipment of Iron", oi = 3, map = 1424, x = 32.01, y = 45.45, f = "e" },
+					{ t = "turnin", quest = 6386, title = "Return to the Crossroads.", npc = 3489, npcName = "Zargh", map = 1413, x = 52.6, y = 29.8, f = "e" },
 				},
 			},
 			{
-				label = "Kill_Blacksmith_Verrington",
-				along = true,
-				note = "Walks around. Multiple locations. Can be inside the blacksmith building.",
 				goals = {
-					{ t = "kill", quest = 529, npc = 2404, target = "Blacksmith Verringtan", oi = 1, map = 1424, x = 32.41, y = 44.81, f = "e" },
+					{ t = "collect", quest = 844, itemName = "Plainstrider Beak", count = 7, oi = 1, map = 1413, x = 53.3, y = 29.1, f = "e" },
 				},
 			},
 			{
-				label = "Kill_Hillsbrad_Apprentice_Blacksmiths",
-				along = true,
 				goals = {
-					{ t = "kill", quest = 529, npc = 2265, target = "Hillsbrad Apprentice Blacksmith", count = 4, oi = 2, map = 1424, x = 32.41, y = 44.81, f = "e" },
+					{ t = "kill", quest = 871, target = "Razormane Water Seeker", count = 8, oi = 1, map = 1413, x = 54.2, y = 25.3, f = "e" },
+					{ t = "kill", quest = 871, target = "Razormane Thornweaver", count = 8, oi = 2, map = 1413, x = 54.2, y = 25.3, f = "e" },
+					{ t = "kill", quest = 871, target = "Razormane Hunter", count = 3, oi = 3, map = 1413, x = 54.2, y = 25.3, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "DRUID" } },
 				goals = {
-					{ t = "use", item = 15883, itemName = "Half Pendant of Aquatic Agility" },
-					{ t = "collect", quest = 30, item = 15885, itemName = "Pendant of the Sea Lion", oi = 1, map = 1450, x = 35.92, y = 41.42, f = "e" },
+					{ t = "collect", quest = 5041, itemName = "Crossroads' Supply Crates", count = 1, oi = 1, map = 1413, x = 59.2, y = 24.4, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
-				only = { classes = { "DRUID" } },
 				goals = {
-					{ t = "turnin", quest = 30, title = "Trial of the Sea Lion", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.21, y = 30.64, f = "e" },
-					{ t = "accept", quest = 31, title = "Aquatic Form", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.21, y = 30.64, f = "e" },
+					{ t = "kill", target = "raptors", count = 1, map = 1413, x = 52.7, y = 16.5, f = "e" },
+					{ t = "collect", quest = 869, itemName = "Raptor Head", count = 12, oi = 1, map = 1413, x = 52.7, y = 16.5, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "DRUID" } },
 				goals = {
-					{ t = "train", npc = 12042, npcName = "Loganaar", map = 1450, x = 52.53, y = 40.57, f = "e" },
+					{ t = "level", level = 14, f = "e" },
 				},
 			},
 			{
-				label = "Collect_Hillsbrad_Human_Skulls",
-				along = true,
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
 				goals = {
-					{ t = "collect", quest = 546, item = 3692, itemName = "Hillsbrad Human Skull", count = 30, oi = 1, map = 1416, x = 26.3, y = 99.1, f = "e" },
+					{ t = "accept", quest = 6126, title = "Lessons Anew", npc = 3033, npcName = "Turak Runetotem", map = 1456, x = 76.0, y = 27.0, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "turnin", quest = 6126, title = "Lessons Anew", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.4, y = 30.5, f = "e" },
+					{ t = "accept", quest = 6127, title = "The Principal Source", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.4, y = 30.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "talk", npc = 11798, npcName = "Bunthen Plainswind", map = 1450, x = 44.3, y = 45.9, f = "e" },
+				},
+			},
+			{
+				note = "Buy the following from the Auction House:",
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "buy", itemName = "Earthroot", count = 5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "goto", map = 1413, x = 47.4, y = 16.1, f = "e" },
+				},
+			},
+			{
+				note = "Go up the hill to 48,19",
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "collect", quest = 6127, itemName = "Filled Dreadmist Peak Sampler", count = 1, oi = 1, map = 1413, x = 48.4, y = 18.9, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "turnin", quest = 6127, title = "The Principal Source", npc = 3448, npcName = "Tonga Runetotem", map = 1413, x = 52.3, y = 31.9, f = "e" },
+					{ t = "accept", quest = 6128, title = "Gathering the Cure", npc = 3448, npcName = "Tonga Runetotem", map = 1413, x = 52.3, y = 31.9, f = "e" },
+				},
+			},
+			{
+				note = "Find and kill 5 Lost Barrens Kodos around the Barrens",
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "collect", quest = 6128, itemName = "Kodo Horn", count = 5, oi = 2, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "turnin", quest = 6128, title = "Gathering the Cure", npc = 3448, npcName = "Tonga Runetotem", map = 1413, x = 52.3, y = 31.9, f = "e" },
+					{ t = "accept", quest = 6129, title = "Curing the Sick", npc = 3448, npcName = "Tonga Runetotem", map = 1413, x = 52.3, y = 31.9, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "turnin", quest = 6129, title = "Curing the Sick", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.4, y = 30.5, f = "e" },
+					{ t = "accept", quest = 6130, title = "Power over Poison", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.4, y = 30.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "talk", npc = 11798, npcName = "Bunthen Plainswind", map = 1450, x = 44.3, y = 45.9, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "turnin", quest = 6130, title = "Power over Poison", npc = 3033, npcName = "Turak Runetotem", map = 1456, x = 76.4, y = 27.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 869, title = "Raptor Thieves", npc = 3464, npcName = "Gazrog", map = 1413, x = 51.9, y = 30.3, f = "e" },
+					{ t = "accept", quest = 3281, title = "Stolen Silver", npc = 3464, npcName = "Gazrog", map = 1413, x = 51.9, y = 30.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 871, title = "Disrupt the Attacks", npc = 3429, npcName = "Thork", map = 1413, x = 51.5, y = 30.9, f = "e" },
+					{ t = "turnin", quest = 5041, title = "Supplies for the Crossroads", npc = 3429, npcName = "Thork", map = 1413, x = 51.5, y = 30.9, f = "e" },
+					{ t = "accept", quest = 872, title = "The Disruption Ends", npc = 3429, npcName = "Thork", map = 1413, x = 51.5, y = 30.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 844, title = "Plainstrider Menace", npc = 3338, npcName = "Sergra Darkthorn", map = 1413, x = 52.2, y = 31.0, f = "e" },
+					{ t = "accept", quest = 845, title = "The Zhevra", npc = 3338, npcName = "Sergra Darkthorn", map = 1413, x = 52.2, y = 31.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 899, title = "Consumed by Hatred", npc = 3432, npcName = "Mankrik", map = 1413, x = 52.0, y = 31.6, f = "e" },
+					{ t = "accept", quest = 4921, title = "Lost in Battle", npc = 3432, npcName = "Mankrik", map = 1413, x = 52.0, y = 31.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 855, title = "Centaur Bracers", npc = 3389, npcName = "Regthar Deathgate", map = 1413, x = 45.3, y = 28.4, f = "e" },
+					{ t = "accept", quest = 850, title = "Kolkar Leaders", npc = 3389, npcName = "Regthar Deathgate", map = 1413, x = 45.3, y = 28.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 845, itemName = "Zhevra Hooves", count = 4, oi = 1, map = 1413, x = 46.0, y = 27.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 848, itemName = "Fungal Spores", count = 4, oi = 1, map = 1413, x = 45.3, y = 22.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 850, itemName = "Barak's Head", count = 1, oi = 1, map = 1413, x = 42.6, y = 23.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 855, itemName = "Centaur Bracers", count = 15, oi = 1, map = 1413, x = 46.1, y = 26.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 867, itemName = "Witchwing Talon", count = 8, oi = 1, map = 1413, x = 40.7, y = 19.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 848, title = "Fungal Spores", npc = 3390, npcName = "Apothecary Helbrim", map = 1413, x = 51.4, y = 30.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 867, title = "Harpy Raiders", npc = 3449, npcName = "Darsok Swiftdagger", map = 1413, x = 51.6, y = 30.9, f = "e" },
+					{ t = "accept", quest = 875, title = "Harpy Lieutenants", npc = 3449, npcName = "Darsok Swiftdagger", map = 1413, x = 51.6, y = 30.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 870, title = "The Forgotten Pools", npc = 3448, npcName = "Tonga Runetotem", map = 1413, x = 52.3, y = 31.9, f = "e" },
+					{ t = "accept", quest = 877, title = "The Stagnant Oasis", npc = 3448, npcName = "Tonga Runetotem", map = 1413, x = 52.3, y = 31.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 845, title = "The Zhevra", npc = 3338, npcName = "Sergra Darkthorn", map = 1413, x = 52.2, y = 31.0, f = "e" },
+					{ t = "accept", quest = 903, title = "Prowlers of the Barrens", npc = 3338, npcName = "Sergra Darkthorn", map = 1413, x = 52.2, y = 31.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 15, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 872, target = "Razormane Geomancer", count = 8, oi = 1, map = 1413, x = 56.4, y = 24.2, f = "e" },
+					{ t = "kill", quest = 872, target = "Razormane Defender", count = 8, oi = 2, map = 1413, x = 56.4, y = 24.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 872, itemName = "Kreenig Snarlsnout's Tusk", count = 1, oi = 3, map = 1413, x = 58.8, y = 26.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 887, title = "Southsea Freebooters", npc = 3391, npcName = "Gazlowe", map = 1413, x = 62.7, y = 36.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "fpath", text = "Ratchet", map = 1413, x = 63.1, y = 37.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 894, title = "Samophlange (1)", npc = 3442, npcName = "Sputtervalve", map = 1413, x = 63.0, y = 37.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 895, title = "WANTED: Baron Longshore", map = 1413, x = 62.6, y = 37.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 865, title = "Raptor Horns", npc = 3446, npcName = "Mebok Mizzyrix", map = 1413, x = 62.4, y = 37.6, f = "e" },
+					{ t = "accept", quest = 1069, title = "Deepmoss Spider Eggs", npc = 3446, npcName = "Mebok Mizzyrix", map = 1413, x = 62.4, y = 37.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 1492, title = "Wharfmaster Dizzywig", npc = 3453, npcName = "Wharfmaster Dizzywig", map = 1413, x = 63.4, y = 38.5, f = "e" },
+					{ t = "accept", quest = 896, title = "Miner's Fortune", npc = 3453, npcName = "Wharfmaster Dizzywig", map = 1413, x = 63.4, y = 38.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 891, title = "The Guns of Northwatch", npc = 3339, npcName = "Captain Thalo'thas Brightsun", map = 1413, x = 62.3, y = 39.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 887, target = "Southsea Brigand", count = 12, oi = 1, map = 1413, x = 63.7, y = 43.5, f = "e" },
+					{ t = "kill", quest = 887, target = "Southsea Cannoneer", count = 6, oi = 2, map = 1413, x = 63.7, y = 43.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 895, itemName = "Baron Longshore's Head", count = 1, oi = 1, map = 1413, x = 63.3, y = 49.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 887, title = "Southsea Freebooters", npc = 3391, npcName = "Gazlowe", map = 1413, x = 62.7, y = 36.2, f = "e" },
+					{ t = "accept", quest = 890, title = "The Missing Shipment (1)", npc = 3391, npcName = "Gazlowe", map = 1413, x = 62.7, y = 36.2, f = "e" },
+					{ t = "turnin", quest = 895, title = "WANTED: Baron Longshore", npc = 3391, npcName = "Gazlowe", map = 1413, x = 62.7, y = 36.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 890, title = "The Missing Shipment (1)", npc = 3453, npcName = "Wharfmaster Dizzywig", map = 1413, x = 63.4, y = 38.5, f = "e" },
+					{ t = "accept", quest = 892, title = "The Missing Shipment (2)", npc = 3453, npcName = "Wharfmaster Dizzywig", map = 1413, x = 63.4, y = 38.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 892, title = "The Missing Shipment (2)", npc = 3391, npcName = "Gazlowe", map = 1413, x = 62.7, y = 36.2, f = "e" },
+					{ t = "accept", quest = 888, title = "Stolen Booty", npc = 3391, npcName = "Gazlowe", map = 1413, x = 62.7, y = 36.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 888, itemName = "Telescopic Lens", count = 1, oi = 2, map = 1413, x = 63.6, y = 49.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 888, itemName = "Shipment of Boots", count = 1, oi = 1, map = 1413, x = 62.6, y = 49.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 888, title = "Stolen Booty", npc = 3391, npcName = "Gazlowe", map = 1413, x = 62.7, y = 36.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 872, title = "The Disruption Ends", npc = 3429, npcName = "Thork", map = 1413, x = 51.5, y = 30.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 850, title = "Kolkar Leaders", npc = 3389, npcName = "Regthar Deathgate", map = 1413, x = 45.3, y = 28.4, f = "e" },
+					{ t = "turnin", quest = 855, title = "Centaur Bracers", npc = 3389, npcName = "Regthar Deathgate", map = 1413, x = 45.3, y = 28.4, f = "e" },
+					{ t = "accept", quest = 851, title = "Verog the Dervish", npc = 3389, npcName = "Regthar Deathgate", map = 1413, x = 45.3, y = 28.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 1062, title = "Goblin Invaders", npc = 4049, npcName = "Seereth Stonebreak", map = 1413, x = 35.2, y = 27.8, f = "e" },
+					{ t = "accept", quest = 6548, title = "Avenge My Village", npc = 11857, npcName = "Makaba Flathoof", map = 1413, x = 35.2, y = 27.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 6548, target = "Grimtotem Ruffian", count = 8, oi = 1, map = 1442, x = 80.6, y = 90.3, f = "e" },
+					{ t = "kill", quest = 6548, target = "Grimtotem Mercenary", count = 6, oi = 2, map = 1442, x = 80.6, y = 90.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 6548, title = "Avenge My Village", npc = 11857, npcName = "Makaba Flathoof", map = 1413, x = 35.2, y = 27.8, f = "e" },
+					{ t = "accept", quest = 6629, title = "Kill Grundig Darkcloud", npc = 11857, npcName = "Makaba Flathoof", map = 1413, x = 35.2, y = 27.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 6629, target = "Grimtotem Brute", count = 6, oi = 2, map = 1442, x = 71.5, y = 88.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 6629, target = "Grundig Darkcloud", count = 1, oi = 1, map = 1442, x = 73.7, y = 86.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 6629, title = "Kill Grundig Darkcloud", npc = 11857, npcName = "Makaba Flathoof", map = 1413, x = 35.2, y = 27.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 16, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "accept", quest = 26, title = "A Lesson to Learn", npc = 3033, npcName = "Turak Runetotem", map = 1456, x = 76.4, y = 27.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "turnin", quest = 26, title = "A Lesson to Learn", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.4, y = 30.5, f = "e" },
+					{ t = "accept", quest = 28, title = "Trial of the Lake", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.4, y = 30.5, f = "e" },
+				},
+			},
+			{
+				note = "Go south in the lake to 58,58",
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "collect", quest = 28, item = 15877, itemName = "Shrine Bauble", count = 1, map = 1450, x = 57.6, y = 57.8, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "goto", map = 1450, x = 36.1, y = 41.6, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "turnin", quest = 28, title = "Trial of the Lake", npc = 11799, npcName = "Tajarri", map = 1450, x = 36.5, y = 41.8, f = "e" },
+					{ t = "accept", quest = 30, title = "Trial of the Sea Lion", npc = 11799, npcName = "Tajarri", map = 1450, x = 36.5, y = 41.8, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "talk", npc = 11798, npcName = "Bunthen Plainswind", map = 1450, x = 44.3, y = 45.9, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "collect", quest = 30, item = 15883, itemName = "Half Pendant of Aquatic Agility", count = 1, map = 1413, x = 56.7, y = 8.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "goto", map = 1411, x = 51.0, y = 14.0, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "collect", quest = 30, item = 15882, itemName = "Half Pendant of Aquatic Endurance", count = 1, map = 1415, x = 39.0, y = 38.0, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "collect", quest = 30, itemName = "Pendant of the Sea Lion", count = 1, oi = 1, map = 1450, x = 36.1, y = 41.6, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "turnin", quest = 30, title = "Trial of the Sea Lion", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.4, y = 30.5, f = "e" },
+					{ t = "accept", quest = 31, title = "Aquatic Form", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.4, y = 30.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "talk", npc = 11798, npcName = "Bunthen Plainswind", map = 1450, x = 44.3, y = 45.9, f = "e" },
 				},
 			},
 		},

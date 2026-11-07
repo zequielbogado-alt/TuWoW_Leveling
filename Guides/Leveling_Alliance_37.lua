@@ -1,557 +1,499 @@
 -- TuWoW_Leveling — Guides/Leveling_Alliance_37.lua
--- Compilado desde ZygorGuidesViewerForever y depurado para TuWoW 3.3.5a.
+-- Compilado desde Zygor Guides WotLK 3.3.5a oficial para TuWoW.
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/a-western-and-eastern-plaguelands-57-58",
+		id = "zygor/leveling/a-levels-68-70",
 		pack = "guides",
-		title = "Western & Eastern Plaguelands (Parte 1/2)",
+		title = "Levels (68-70) (Parte 1/3)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-western-and-eastern-plaguelands-57-58-part-2",
+		next = "zygor/leveling/a-levels-68-70-part-2",
 		author = "TuWoW & Zygor",
-		minLevel = 57,
-		maxLevel = 58,
-		zone = 1455,
+		minLevel = 68,
+		maxLevel = 70,
+		zone = 1949,
 		version = 1,
 		steps = {
 			{
 				goals = {
-					{ t = "accept", quest = 7261, title = "The Sovereign Imperative", npc = 13843, npcName = "Lieutenant Rotimer", map = 1455, x = 32.21, y = 63.25, f = "e" },
+					{ t = "talk", npc = 21981, npcName = "Overseer Nuaar", map = 1949, x = 58.8, y = 39.1, f = "e" },
 				},
 			},
 			{
-				note = "Collect from the bank. Inside the building.",
 				goals = {
-					{ t = "collect", quest = 6028, item = 15788, itemName = "Everlook Report", map = 1455, x = 35.92, y = 60.14, f = "e" },
-					{ t = "collect", quest = 6030, item = 15790, itemName = "Studies in Spirit Speaking", map = 1455, x = 35.92, y = 60.14, f = "e" },
-					{ t = "collect", quest = 5245, item = 12891, itemName = "Jaron's Pick", map = 1455, x = 35.92, y = 60.14, f = "e" },
-					{ t = "collect", quest = 5245, item = 12896, itemName = "First Relic Fragment", map = 1455, x = 35.92, y = 60.14, f = "e" },
-					{ t = "collect", quest = 5245, item = 12897, itemName = "Second Relic Fragment", map = 1455, x = 35.92, y = 60.14, f = "e" },
-					{ t = "collect", quest = 5245, item = 12898, itemName = "Third Relic Fragment", map = 1455, x = 35.92, y = 60.14, f = "e" },
-					{ t = "collect", quest = 5245, item = 12899, itemName = "Fourth Relic Fragment", map = 1455, x = 35.92, y = 60.14, f = "e" },
+					{ t = "turnin", quest = 10682, title = "A Time for Negotiation...", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
+					{ t = "accept", quest = 10713, title = "...and a Time for Action", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
+					{ t = "accept", quest = 10717, title = "Poaching from Poachers", npc = 21983, npcName = "Samia Inkling", map = 1949, x = 62.0, y = 39.5, f = "e" },
 				},
 			},
 			{
-				note = "Deposit into the bank. Inside the building.",
 				goals = {
-					{ t = "complete", quest = 4808, title = "Felnok Steelspring", note = "bank Tinkee's Letter##12438", map = 1455, x = 35.92, y = 60.14, f = "e" },
+					{ t = "kill", quest = 10713, target = "Wyrmcult Hewer", count = 10, oi = 1, map = 1949, x = 59.9, y = 37.8, f = "e" },
+					{ t = "collect", quest = 10717, itemName = "Wyrmcult Net", count = 5, oi = 1, map = 1949, x = 59.9, y = 37.8, f = "e" },
+					{ t = "collect", itemName = "Meeting Note", count = 1, map = 1949, x = 59.9, y = 37.8, f = "e" },
+					{ t = "accept", quest = 10719, title = "Did You Get The Note?", map = 1949, x = 59.9, y = 37.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", text = "Follow the path", map = 1455, x = 44.51, y = 49.57 },
-					{ t = "turnin", quest = 3701, title = "The Smoldering Ruins of Thaurissan", npc = 8879, npcName = "Royal Historian Archesonus", map = 1455, x = 38.37, y = 55.31, f = "e" },
+					{ t = "turnin", quest = 10717, title = "Poaching from Poachers", npc = 21983, npcName = "Samia Inkling", map = 1949, x = 62.0, y = 39.5, f = "e" },
+					{ t = "accept", quest = 10747, title = "Whelps of the Wyrmcult", npc = 21983, npcName = "Samia Inkling", map = 1949, x = 62.0, y = 39.5, f = "e" },
+					{ t = "turnin", quest = 10713, title = "...and a Time for Action", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
+					{ t = "turnin", quest = 10719, title = "Did You Get The Note?", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
+					{ t = "accept", quest = 10894, title = "Wyrmskull Watcher", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
+				note = "Put on your Felsworn Gas Mask|use Felsworn Gas Mask##31366",
 				goals = {
-					{ t = "sethome", location = "Southshore", map = 1424, x = 51.17, y = 58.93, f = "e" },
+					{ t = "turnin", quest = 10819, title = "Felsworn Gas Mask", map = 1949, x = 73.2, y = 40.0, f = "e" },
+					{ t = "accept", quest = 10820, title = "Deceive thy Enemy", map = 1949, x = 73.2, y = 40.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 7261, title = "The Sovereign Imperative", npc = 13841, npcName = "Lieutenant Haggerdin", map = 1416, x = 39.46, y = 81.23, f = "e" },
+					{ t = "kill", quest = 10820, target = "Doomforge Attendant", count = 4, oi = 1, map = 1949, x = 74.9, y = 39.9, f = "e" },
+					{ t = "kill", quest = 10820, target = "Doomforge Engineer", count = 4, oi = 2, map = 1949, x = 74.9, y = 39.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 5219, title = "Target: Dalson's Tears", npc = 11053, npcName = "High Priestess MacDonnell", map = 1422, x = 42.97, y = 84.5, f = "e" },
+					{ t = "turnin", quest = 10820, title = "Deceive thy Enemy", map = 1949, x = 73.2, y = 40.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 5097, title = "All Along the Watchtowers", npc = 10838, npcName = "Commander Ashlam Valorfist", map = 1422, x = 42.7, y = 84.03, f = "e" },
+					{ t = "kill", quest = 10795, target = "Dorgok", count = 1, oi = 1, map = 1949, x = 55.2, y = 24.0, f = "e" },
+					{ t = "collect", itemName = "Gorgrom's Favor", count = 1, map = 1949, x = 55.2, y = 24.0, f = "e" },
+					{ t = "accept", quest = 10797, title = "Favor of the Gronn", map = 1949, x = 55.2, y = 24.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 6028, title = "The Everlook Report", npc = 10840, npcName = "Argent Officer Pureheart", map = 1422, x = 42.97, y = 83.55, f = "e" },
+					{ t = "kill", quest = 10796, target = "Bloodmaul Mauler", count = 10, oi = 1, map = 1949, x = 56.2, y = 26.7, f = "e" },
+					{ t = "kill", quest = 10796, target = "Bloodmaul Warlock", count = 5, oi = 2, map = 1949, x = 56.2, y = 26.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 6184, title = "Flint Shadowmore", npc = 12425, npcName = "Flint Shadowmore", map = 1422, x = 43.61, y = 84.51, f = "e" },
+					{ t = "turnin", quest = 10796, title = "Crush the Bloodmaul Camp!", npc = 22150, npcName = "Lieutenant Fairweather", map = 1949, x = 62.0, y = 38.0, f = "e" },
+					{ t = "turnin", quest = 10795, title = "A Date with Dorgok", npc = 22149, npcName = "Commander Haephus Stonewall", map = 1949, x = 62.0, y = 38.0, f = "e" },
+					{ t = "turnin", quest = 10797, title = "Favor of the Gronn", npc = 22149, npcName = "Commander Haephus Stonewall", map = 1949, x = 62.0, y = 38.0, f = "e" },
+					{ t = "accept", quest = 10798, title = "Pay the Baron a Visit", npc = 22149, npcName = "Commander Haephus Stonewall", map = 1949, x = 62.0, y = 38.0, f = "e" },
 				},
 			},
 			{
-				note = "Walks around. Both floors inside the building.",
 				goals = {
-					{ t = "accept", quest = 5142, title = "Little Pamela", npc = 10927, npcName = "Marlene Redpath", map = 1422, x = 49.13, y = 78.52, f = "e" },
+					{ t = "turnin", quest = 10798, title = "Pay the Baron a Visit", npc = 22103, npcName = "Baron Sablemane", map = 1949, x = 53.3, y = 41.2, f = "e" },
+					{ t = "accept", quest = 10799, title = "Into the Churning Gulch", npc = 22103, npcName = "Baron Sablemane", map = 1949, x = 53.3, y = 41.2, f = "e" },
 				},
 			},
 			{
-				note = "Tower entrance. Avoid the elite enemy inside.",
 				goals = {
-					{ t = "use", item = 12815, itemName = "Beacon Torch" },
-					{ t = "complete", quest = 5097, title = "All Along the Watchtowers", note = "Mark Tower Four", map = 1422, x = 46.7, y = 71.1, f = "e" },
+					{ t = "collect", quest = 10799, itemName = "Crust Burster Venom Gland", count = 7, oi = 1, map = 1949, x = 49.0, y = 44.5, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "accept", quest = 4984, title = "The Wildlife Suffers Too", npc = 10739, npcName = "Mulgris Deepriver", map = 1422, x = 53.72, y = 64.67, f = "e" },
+					{ t = "turnin", quest = 10799, title = "Into the Churning Gulch", npc = 22103, npcName = "Baron Sablemane", map = 1949, x = 53.3, y = 41.2, f = "e" },
+					{ t = "accept", quest = 10800, title = "Goodnight, Gronn", npc = 22103, npcName = "Baron Sablemane", map = 1949, x = 53.3, y = 41.2, f = "e" },
 				},
 			},
 			{
-				note = "Tower entrance. Avoid the elite enemy inside.",
 				goals = {
-					{ t = "use", item = 12815, itemName = "Beacon Torch" },
-					{ t = "complete", quest = 5097, title = "All Along the Watchtowers", note = "Mark Tower Three", map = 1422, x = 44.22, y = 63.37, f = "e" },
+					{ t = "goto", map = 1949, x = 60.2, y = 47.6, f = "e" },
 				},
 			},
 			{
-				label = "Kill_Diseased_Wolves",
-				along = true,
-				note = "Shared spawns with spiders.",
 				goals = {
-					{ t = "kill", quest = 4984, npc = 1817, target = "Diseased Wolf", count = 8, oi = 1, map = 1422, x = 44.2, y = 59.6, f = "e" },
+					{ t = "turnin", quest = 10800, title = "Goodnight, Gronn", npc = 22103, npcName = "Baron Sablemane", map = 1949, x = 53.3, y = 41.2, f = "e" },
+					{ t = "accept", quest = 10801, title = "It's a Trap!", npc = 22103, npcName = "Baron Sablemane", map = 1949, x = 53.3, y = 41.2, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "accept", quest = 5058, title = "Mrs. Dalson's Diary", map = 1422, x = 47.79, y = 50.67, f = "e" },
+					{ t = "turnin", quest = 10801, title = "It's a Trap!", npc = 22149, npcName = "Commander Haephus Stonewall", map = 1949, x = 62.0, y = 38.0, f = "e" },
+					{ t = "accept", quest = 10802, title = "Gorgrom the Dragon-Eater", npc = 22149, npcName = "Commander Haephus Stonewall", map = 1949, x = 62.0, y = 38.0, f = "e" },
+					{ t = "accept", quest = 10803, title = "Slaughter at Boulder'mok", npc = 22150, npcName = "Lieutenant Fairweather", map = 1949, x = 62.0, y = 38.0, f = "e" },
 				},
 			},
 			{
-				note = "White skeleton. Walks around. Multiple spawn locations.",
 				goals = {
-					{ t = "collect", quest = 5060, item = 12738, itemName = "Dalson Outhouse Key", map = 1422, x = 48.34, y = 49.27, f = "e" },
+					{ t = "turnin", quest = 10894, title = "Wyrmskull Watcher", npc = 22386, npcName = "Watcher Moonshade", map = 1949, x = 49.9, y = 35.9, f = "e" },
+					{ t = "accept", quest = 10893, title = "Longtail is the Lynchpin", npc = 22386, npcName = "Watcher Moonshade", map = 1949, x = 49.9, y = 35.9, f = "e" },
 				},
 			},
 			{
-				note = "Complete the Locked Away quest.",
 				goals = {
-					{ t = "collect", quest = 5060, item = 12739, itemName = "Dalson Cabinet Key", map = 1422, x = 48.11, y = 49.71, f = "e" },
+					{ t = "kill", quest = 10893, npc = 22396, target = "Draaca Longtail", count = 1, oi = 1, map = 1949, x = 46.7, y = 32.9, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
 				goals = {
-					{ t = "accept", quest = 5060, title = "Locked Away", map = 1422, x = 47.37, y = 49.65, f = "e" },
+					{ t = "turnin", quest = 10893, title = "Longtail is the Lynchpin", npc = 22386, npcName = "Watcher Moonshade", map = 1949, x = 49.9, y = 35.9, f = "e" },
+					{ t = "accept", quest = 10722, title = "Meeting at the Blackwing Coven", npc = 22386, npcName = "Watcher Moonshade", map = 1949, x = 49.9, y = 35.9, f = "e" },
 				},
 			},
 			{
+				note = "Kill arakkoas",
 				goals = {
-					{ t = "collect", quest = 5219, item = 13195, itemName = "Dalson's Tears Cauldron Key", oi = 1, map = 1422, x = 46.18, y = 52.38, f = "e" },
+					{ t = "goto", map = 1949, x = 42.2, y = 25.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5219, title = "Target: Dalson's Tears", map = 1422, x = 46.18, y = 52.02, f = "e" },
-					{ t = "accept", quest = 5220, title = "Return to Chillwind Camp", map = 1422, x = 46.18, y = 52.02, f = "e" },
+					{ t = "goto", map = 1949, x = 40.7, y = 18.7, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
 				goals = {
-					{ t = "turnin", quest = 5050, title = "Good Luck Charm", npc = 10778, npcName = "Janice Felstone", map = 1422, x = 38.4, y = 54.05, f = "e" },
-					{ t = "accept", quest = 5051, title = "Two Halves Become One", npc = 10778, npcName = "Janice Felstone", map = 1422, x = 38.4, y = 54.05, f = "e" },
+					{ t = "goto", map = 1949, x = 39.0, y = 17.2, f = "e" },
 				},
 			},
 			{
-				note = "Ghoul with a pitchfork. Walks around. Multiple spawn locations.",
 				goals = {
-					{ t = "collect", item = 12722, itemName = "Good Luck Other-Half-Charm", map = 1422, x = 37.5, y = 56.6, f = "e" },
-					{ t = "use", item = 12722, itemName = "Good Luck Other-Half-Charm" },
-					{ t = "collect", quest = 5051, item = 12723, itemName = "Good Luck Charm", oi = 1, map = 1422, x = 37.8, y = 57.6, f = "e" },
+					{ t = "goto", map = 1949, x = 42.5, y = 21.6, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
 				goals = {
-					{ t = "turnin", quest = 5051, title = "Two Halves Become One", npc = 10778, npcName = "Janice Felstone", map = 1422, x = 38.4, y = 54.05, f = "e" },
+					{ t = "collect", itemName = "Orb of the Grishna", count = 1, map = 1949, x = 40.2, y = 23.0, f = "e" },
+					{ t = "accept", quest = 10825, title = "The Truth Unorbed", map = 1949, x = 40.2, y = 23.0, f = "e" },
 				},
 			},
 			{
-				note = "Tower entrance. Avoid the elite enemy inside.",
 				goals = {
-					{ t = "use", item = 12815, itemName = "Beacon Torch" },
-					{ t = "complete", quest = 5097, title = "All Along the Watchtowers", note = "Mark Tower Two", map = 1422, x = 42.44, y = 66.27, f = "e" },
+					{ t = "collect", quest = 10722, item = 31121, itemName = "Costume Scraps", count = 5, map = 1949, x = 32.3, y = 34.9, f = "e" },
 				},
 			},
 			{
-				note = "Tower entrance. Avoid the elite enemy inside.",
 				goals = {
-					{ t = "use", item = 12815, itemName = "Beacon Torch" },
-					{ t = "complete", quest = 5097, title = "All Along the Watchtowers", note = "Mark Tower One", map = 1422, x = 40.13, y = 71.52, f = "e" },
+					{ t = "talk", npc = 22019, npcName = "Kolphis Darkscale", map = 1949, x = 32.6, y = 37.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5097, title = "All Along the Watchtowers", npc = 10838, npcName = "Commander Ashlam Valorfist", map = 1422, x = 42.7, y = 84.03, f = "e" },
-					{ t = "accept", quest = 5533, title = "Scholomance", npc = 10838, npcName = "Commander Ashlam Valorfist", map = 1422, x = 42.7, y = 84.03, f = "e" },
+					{ t = "kill", quest = 10803, target = "Boulder'mok Brute", count = 5, oi = 1, map = 1949, x = 30.3, y = 24.6, f = "e" },
+					{ t = "kill", quest = 10803, target = "Boulder'mok Shaman", count = 3, oi = 2, map = 1949, x = 30.3, y = 24.6, f = "e" },
+					{ t = "collect", quest = 10803, item = 31754, itemName = "Grisly Totem", count = 3, map = 1949, x = 30.3, y = 24.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5533, title = "Scholomance", npc = 11056, npcName = "Alchemist Arbington", map = 1422, x = 42.66, y = 83.77, f = "e" },
+					{ t = "goto", map = 1949, x = 30.6, y = 22.2, f = "e" },
 				},
 			},
 			{
+				note = "Go through the tunnel to 62,39.5",
 				goals = {
-					{ t = "turnin", quest = 5220, title = "Return to Chillwind Camp", npc = 11053, npcName = "High Priestess MacDonnell", map = 1422, x = 42.97, y = 84.5, f = "e" },
-					{ t = "accept", quest = 5222, title = "Target: Writhing Haunt", npc = 11053, npcName = "High Priestess MacDonnell", map = 1422, x = 42.97, y = 84.5, f = "e" },
+					{ t = "turnin", quest = 10747, title = "Whelps of the Wyrmcult", npc = 21983, npcName = "Samia Inkling", map = 1949, x = 62.0, y = 39.5, f = "e" },
+					{ t = "turnin", quest = 10722, title = "Meeting at the Blackwing Coven", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
+					{ t = "accept", quest = 10748, title = "Maxnar Must Die!", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
+					{ t = "turnin", quest = 10825, title = "The Truth Unorbed", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
+					{ t = "accept", quest = 10829, title = "Treebole Must Know", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 5903, title = "A Plague Upon Thee", npc = 11616, npcName = "Nathaniel Dumah", map = 1422, x = 43.42, y = 84.84, f = "e" },
+					{ t = "turnin", quest = 10607, title = "Whispers of the Raven God", npc = 21782, npcName = "Timeon", map = 1949, x = 62.2, y = 39.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 6185, title = "The Eastern Plagues", npc = 12425, npcName = "Flint Shadowmore", map = 1422, x = 43.61, y = 84.51, f = "e" },
+					{ t = "turnin", quest = 10802, title = "Gorgrom the Dragon-Eater", npc = 22149, npcName = "Commander Haephus Stonewall", map = 1949, x = 62.0, y = 38.0, f = "e" },
+					{ t = "accept", quest = 10818, title = "Baron Sablemane Has Requested Your Presence", npc = 22149, npcName = "Commander Haephus Stonewall", map = 1949, x = 62.0, y = 38.0, f = "e" },
+					{ t = "turnin", quest = 10803, title = "Slaughter at Boulder'mok", npc = 22150, npcName = "Lieutenant Fairweather", map = 1949, x = 62.0, y = 38.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 5222, item = 13197, itemName = "Writhing Haunt Cauldron Key", oi = 1, map = 1422, x = 53.02, y = 66.06, f = "e" },
+					{ t = "turnin", quest = 10818, title = "Baron Sablemane Has Requested Your Presence", npc = 22103, npcName = "Baron Sablemane", map = 1949, x = 53.3, y = 41.2, f = "e" },
 				},
 			},
 			{
+				note = "Go through the tunnel to 36.9,22.5",
 				goals = {
-					{ t = "turnin", quest = 5222, title = "Target: Writhing Haunt", map = 1422, x = 53.02, y = 65.72, f = "e" },
-					{ t = "accept", quest = 5223, title = "Return to Chillwind Camp", map = 1422, x = 53.02, y = 65.72, f = "e" },
+					{ t = "turnin", quest = 10829, title = "Treebole Must Know", npc = 22215, npcName = "Treebole", map = 1949, x = 36.9, y = 22.5, f = "e" },
+					{ t = "accept", quest = 10830, title = "Exorcising the Trees", npc = 22215, npcName = "Treebole", map = 1949, x = 36.9, y = 22.5, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "turnin", quest = 4984, title = "The Wildlife Suffers Too", npc = 10739, npcName = "Mulgris Deepriver", map = 1422, x = 53.72, y = 64.67, f = "e" },
-					{ t = "accept", quest = 4985, title = "The Wildlife Suffers Too", npc = 10739, npcName = "Mulgris Deepriver", map = 1422, x = 53.72, y = 64.67, f = "e" },
+					{ t = "collect", quest = 10830, item = 31495, itemName = "Grishnath Orb", count = 5, map = 1949, x = 39.3, y = 20.2, f = "e" },
 				},
 			},
 			{
-				note = "Walks around.",
 				goals = {
-					{ t = "accept", quest = 5542, title = "Demon Dogs", npc = 1855, npcName = "Tirion Fordring", map = 1423, x = 5.16, y = 35.57, f = "e" },
-					{ t = "accept", quest = 5543, title = "Blood Tinged Skies", npc = 1855, npcName = "Tirion Fordring", map = 1423, x = 5.16, y = 35.57, f = "e" },
-					{ t = "accept", quest = 5544, title = "Carrion Grubbage", npc = 1855, npcName = "Tirion Fordring", map = 1423, x = 5.16, y = 35.57, f = "e" },
+					{ t = "collect", quest = 10830, item = 31517, itemName = "Dire Pinfeather", count = 5, map = 1949, x = 30.1, y = 28.6, f = "e" },
 				},
 			},
 			{
-				note = "Human skeleton.",
 				goals = {
-					{ t = "collect", quest = 6185, item = 16002, itemName = "SI:7 Insignia (Turyen)", oi = 3, map = 1423, x = 24.28, y = 63.65, f = "e" },
+					{ t = "goto", map = 1949, x = 33.8, y = 29.4, f = "e" },
 				},
 			},
 			{
-				note = "Avoid the elite enemies nearby.",
 				goals = {
-					{ t = "complete", quest = 6185, title = "The Eastern Plagues", note = "Uncover the Blightcaller", map = 1423, x = 22.79, y = 63.73, f = "e" },
+					{ t = "turnin", quest = 10830, title = "Exorcising the Trees", npc = 22215, npcName = "Treebole", map = 1949, x = 36.9, y = 22.5, f = "e" },
 				},
 			},
 			{
-				note = "Human skeleton. Avoid the elite enemies nearby.",
 				goals = {
-					{ t = "collect", quest = 6185, item = 16001, itemName = "SI:7 Insignia (Fredo)", oi = 2, map = 1423, x = 22.79, y = 63.73, f = "e" },
+					{ t = "collect", quest = 10748, item = 31121, itemName = "Costume Scraps", count = 5, map = 1949, x = 32.3, y = 34.9, f = "e" },
 				},
 			},
 			{
-				note = "Human skeleton.",
+				note = "Go inside the cave to 33.9,35.4",
 				goals = {
-					{ t = "collect", quest = 6185, item = 16003, itemName = "SI:7 Insignia (Rutger)", oi = 1, map = 1423, x = 24.28, y = 68.12, f = "e" },
+					{ t = "kill", quest = 10748, npc = 21389, target = "Maxnar the Ashmaw", count = 1, oi = 1, map = 1949, x = 33.9, y = 35.4, f = "e" },
 				},
 			},
 			{
-				note = "Walks around. Inside the crumbled house.",
 				goals = {
-					{ t = "turnin", quest = 5142, title = "Little Pamela", npc = 10926, npcName = "Pamela Redpath", map = 1423, x = 31.15, y = 77.98, f = "e" },
-					{ t = "accept", quest = 5149, title = "Pamela's Doll", npc = 10926, npcName = "Pamela Redpath", map = 1423, x = 31.15, y = 77.98, f = "e" },
+					{ t = "turnin", quest = 10748, title = "Maxnar Must Die!", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
 				},
 			},
 			{
-				note = "Inside the buildings. You will be attacked.",
 				goals = {
-					{ t = "collect", quest = 5149, item = 12886, itemName = "Pamela's Doll's Head", map = 1423, x = 32.63, y = 79.33, f = "e" },
+					{ t = "accept", quest = 10183, title = "Off To Area 52", npc = 19569, npcName = "Netherologist Coppernickels", map = 1953, x = 21.3, y = 55.6, f = "e" },
 				},
 			},
 			{
-				label = "Collect_Pamelas_Dolls_Left_Side",
-				along = true,
-				note = "Inside the buildings. notinsticky You will be attacked. notinsticky",
 				goals = {
-					{ t = "collect", quest = 5149, item = 12887, itemName = "Pamela's Doll's Left Side", map = 1423, x = 32.63, y = 79.33, f = "e" },
+					{ t = "accept", quest = 10190, title = "Recharging the Batteries", npc = 19578, npcName = "Bot-Specialist Alley", map = 1953, x = 31.5, y = 56.6, f = "e" },
 				},
 			},
 			{
-				label = "Collect_Pamelas_Dolls_Right_Side",
-				along = true,
-				note = "Inside the buildings. notinsticky You will be attacked. notinsticky",
 				goals = {
-					{ t = "collect", quest = 5149, item = 12888, itemName = "Pamela's Doll's Right Side", map = 1423, x = 32.63, y = 79.33, f = "e" },
+					{ t = "goto", map = 1953, x = 26.5, y = 51.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 12886, itemName = "Pamela's Doll's Head" },
-					{ t = "collect", quest = 5149, item = 12885, itemName = "Pamela's Doll", oi = 1 },
+					{ t = "turnin", quest = 10190, title = "Recharging the Batteries", npc = 19578, npcName = "Bot-Specialist Alley", map = 1953, x = 31.5, y = 56.6, f = "e" },
 				},
 			},
 			{
-				note = "Walks around. Inside the crumbled house.",
 				goals = {
-					{ t = "turnin", quest = 5149, title = "Pamela's Doll", npc = 10926, npcName = "Pamela Redpath", map = 1423, x = 31.15, y = 77.98, f = "e" },
-					{ t = "accept", quest = 5152, title = "Auntie Marlene", npc = 10926, npcName = "Pamela Redpath", map = 1423, x = 31.15, y = 77.98, f = "e" },
-					{ t = "accept", quest = 5241, title = "Uncle Carlin", npc = 10926, npcName = "Pamela Redpath", map = 1423, x = 31.15, y = 77.98, f = "e" },
+					{ t = "accept", quest = 10342, title = "Securing the Shaleskin Shale", npc = 19617, npcName = "Boots", map = 1953, x = 32.3, y = 63.9, f = "e" },
 				},
 			},
 			{
-				label = "Collect_Slabs_Of_Carrion_Worm_Meat",
-				along = true,
-				note = "Large yellow worms.",
 				goals = {
-					{ t = "collect", quest = 5544, item = 13853, itemName = "Slab of Carrion Worm Meat", count = 15, oi = 1, map = 1423, x = 34.52, y = 71.5, f = "e" },
+					{ t = "accept", quest = 10265, title = "Consortium Crystal Collection", npc = 19880, npcName = "Nether-Stalker Khay'ji", map = 1953, x = 32.4, y = 64.2, f = "e" },
 				},
 			},
 			{
-				label = "Kill_Plaguehound_Runts_And_Plaguebats",
-				along = true,
 				goals = {
-					{ t = "kill", quest = 5542, npc = 8596, target = "Plaguehound Runt", count = 20, oi = 1, map = 1423, x = 34.52, y = 71.5, f = "e" },
-					{ t = "kill", quest = 5543, npc = 8600, target = "Plaguebat", count = 30, oi = 1, map = 1423, x = 34.52, y = 71.5, f = "e" },
+					{ t = "accept", quest = 10241, title = "Distraction at Manaforge B'naar", npc = 19466, npcName = "Exarch Orelis", map = 1953, x = 32.1, y = 64.2, f = "e" },
 				},
 			},
 			{
-				note = "Helps reach level 58 after quest turnins.",
 				goals = {
-					{ t = "goto", text = "ding 57,189550", map = 1423, x = 34.52, y = 71.5 },
+					{ t = "home", text = "Area 52", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 5542, npc = 8597, target = "Plaguehound", count = 5, oi = 2, map = 1423, x = 59.54, y = 64.29, f = "e" },
+					{ t = "turnin", quest = 10183, title = "Off To Area 52", npc = 19570, npcName = "Rocket-Chief Fuselage", map = 1953, x = 32.7, y = 65.0, f = "e" },
+					{ t = "accept", quest = 10186, title = "You're Hired!", npc = 19570, npcName = "Rocket-Chief Fuselage", map = 1953, x = 32.7, y = 65.0, f = "e" },
 				},
 			},
 			{
-				note = "Walks around.",
 				goals = {
-					{ t = "accept", quest = 6021, title = "Zaeldarr the Outcast", npc = 11038, npcName = "Caretaker Alen", map = 1423, x = 69.92, y = 53.64, f = "e" },
-					{ t = "accept", quest = 5281, title = "The Restless Souls", npc = 11038, npcName = "Caretaker Alen", map = 1423, x = 69.92, y = 53.64, f = "e" },
+					{ t = "accept", quest = 10173, title = "The Archmage's Staff", npc = 19217, npcName = "Ravandwyr", map = 1953, x = 31.4, y = 66.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 6030, title = "Duke Nicholas Zverenhoff", npc = 11039, npcName = "Duke Nicholas Zverenhoff", map = 1423, x = 71.62, y = 50.09, f = "e" },
+					{ t = "fpath", text = "Area 52", map = 1953, x = 33.7, y = 64.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5241, title = "Uncle Carlin", npc = 11063, npcName = "Carlin Redpath", map = 1423, x = 71.7, y = 50.04, f = "e" },
-					{ t = "accept", quest = 5211, title = "Defenders of Darrowshire", npc = 11063, npcName = "Carlin Redpath", map = 1423, x = 71.7, y = 50.04, f = "e" },
+					{ t = "collect", quest = 10342, itemName = "Shaleskin Shale", count = 5, oi = 1, map = 1953, x = 33.1, y = 60.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "getfp", location = "Light's Hope Chapel", map = 1423, x = 71.8, y = 49.6, f = "e" },
+					{ t = "accept", quest = 10191, title = "Mark V is Alive!", npc = 19589, npcName = "Maxx A. Million Mk. V", map = 1953, x = 31.5, y = 56.6, f = "e" },
+					{ t = "collect", quest = 10186, itemName = "Etherlithium Matrix Crystal", count = 10, oi = 1, map = 1953, x = 31.5, y = 56.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5245, title = "Troubled Spirits of Kel'Theril", npc = 10304, npcName = "Aurora Skycaller", map = 1423, x = 46.5, y = 16.03, f = "e" },
+					{ t = "turnin", quest = 10191, title = "Mark V is Alive!", npc = 19578, npcName = "Bot-Specialist Alley", map = 1953, x = 31.5, y = 56.6, f = "e" },
 				},
 			},
 			{
-				note = "Large stones leaking green ooze. Work your way west.",
 				goals = {
-					{ t = "collect", quest = 5903, item = 15043, itemName = "Plagueland Termites", count = 100, oi = 1, map = 1423, x = 39.65, y = 26.93, f = "e" },
+					{ t = "turnin", quest = 10342, title = "Securing the Shaleskin Shale", npc = 19617, npcName = "Boots", map = 1953, x = 32.3, y = 63.9, f = "e" },
+					{ t = "accept", quest = 10199, title = "That Little Extra Kick", npc = 19617, npcName = "Boots", map = 1953, x = 32.3, y = 63.9, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "turnin", quest = 5281, title = "The Restless Souls", npc = 11140, npcName = "Egan", map = 1423, x = 11.36, y = 26.6, f = "e" },
+					{ t = "turnin", quest = 10186, title = "You're Hired!", npc = 19570, npcName = "Rocket-Chief Fuselage", map = 1953, x = 32.7, y = 65.0, f = "e" },
+					{ t = "accept", quest = 10203, title = "Invaluable Asset Zapping", npc = 19570, npcName = "Rocket-Chief Fuselage", map = 1953, x = 32.7, y = 65.0, f = "e" },
+					{ t = "accept", quest = 10225, title = "Report to Engineering", npc = 19570, npcName = "Rocket-Chief Fuselage", map = 1953, x = 32.7, y = 65.0, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "accept", quest = 6164, title = "Augustus' Receipt Book", npc = 12384, npcName = "Augustus the Touched", map = 1423, x = 11.36, y = 26.37, f = "e" },
+					{ t = "turnin", quest = 10225, title = "Report to Engineering", npc = 19709, npcName = "Chief Engineer Trep", map = 1953, x = 32.4, y = 66.8, f = "e" },
+					{ t = "accept", quest = 10224, title = "Essence for the Engines", npc = 19709, npcName = "Chief Engineer Trep", map = 1953, x = 32.4, y = 66.8, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
 				goals = {
-					{ t = "collect", quest = 6164, item = 15884, itemName = "Augustus' Receipt Book", oi = 1, map = 1423, x = 14.04, y = 24.22, f = "e" },
+					{ t = "collect", quest = 10224, itemName = "Mana Wraith Essence", count = 7, oi = 1, map = 1953, x = 33.8, y = 58.5, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "turnin", quest = 6164, title = "Augustus' Receipt Book", npc = 12384, npcName = "Augustus the Touched", map = 1423, x = 11.36, y = 26.37, f = "e" },
+					{ t = "turnin", quest = 10224, title = "Essence for the Engines", npc = 19709, npcName = "Chief Engineer Trep", map = 1953, x = 32.4, y = 66.8, f = "e" },
+					{ t = "accept", quest = 10226, title = "Elemental Power Extraction", npc = 19709, npcName = "Chief Engineer Trep", map = 1953, x = 32.4, y = 66.8, f = "e" },
 				},
 			},
 			{
-				label = "Kill_Frenzied_Plaguehounds",
-				along = true,
 				goals = {
-					{ t = "kill", quest = 5542, npc = 8598, target = "Frenzied Plaguehound", count = 5, oi = 3, map = 1423, x = 38.84, y = 30.98, f = "e" },
+					{ t = "kill", quest = 10241, target = "Sunfury Magister", count = 8, oi = 1, map = 1953, x = 26.3, y = 66.7, f = "e" },
+					{ t = "kill", quest = 10241, target = "Sunfury Bloodwarder", count = 8, oi = 2, map = 1953, x = 26.3, y = 66.7, f = "e" },
 				},
 			},
 			{
-				label = "Free_Darrowshire_Spirits",
-				along = true,
-				note = "Ghouls. Shared spawns with other undead. Appear at their corpses.",
 				goals = {
-					{ t = "complete", quest = 5211, title = "Defenders of Darrowshire", note = "Free #15# Darrowshire Spirits", map = 1423, x = 58.64, y = 32.96, f = "e" },
+					{ t = "collect", quest = 10226, itemName = "Elemental Power", count = 5, oi = 1, map = 1953, x = 35.4, y = 76.5, f = "e" },
 				},
 			},
 			{
-				note = "Downstairs inside the crypt.",
 				goals = {
-					{ t = "goto", text = "Enter the crypt", map = 1423, x = 23.42, y = 73.19 },
-					{ t = "collect", quest = 6021, item = 15785, itemName = "Zaeldarr's Head", oi = 1, map = 1423, x = 23.06, y = 72.65, f = "e" },
+					{ t = "goto", map = 1953, x = 40.3, y = 72.9, f = "e" },
 				},
 			},
 			{
-				note = "Walks around.",
 				goals = {
-					{ t = "turnin", quest = 5542, title = "Demon Dogs", npc = 1855, npcName = "Tirion Fordring", map = 1423, x = 5.16, y = 35.57, f = "e" },
-					{ t = "turnin", quest = 5543, title = "Blood Tinged Skies", npc = 1855, npcName = "Tirion Fordring", map = 1423, x = 5.16, y = 35.57, f = "e" },
-					{ t = "turnin", quest = 5544, title = "Carrion Grubbage", npc = 1855, npcName = "Tirion Fordring", map = 1423, x = 5.16, y = 35.57, f = "e" },
-					{ t = "accept", quest = 5742, title = "Redemption", npc = 1855, npcName = "Tirion Fordring", map = 1423, x = 5.16, y = 35.57, f = "e" },
+					{ t = "goto", map = 1953, x = 41.0, y = 73.8, f = "e" },
 				},
 			},
 			{
-				note = "Walks around. Must be sitting. Type /sit in chat. macro /sit",
 				goals = {
-					{ t = "complete", quest = 5742, title = "Redemption", note = "Listen to Tirion's Tale", map = 1423, x = 5.16, y = 35.57, f = "e" },
+					{ t = "collect", quest = 10265, itemName = "Arklon Crystal Artifact", count = 1, oi = 1, map = 1953, x = 42.4, y = 72.8, f = "e" },
 				},
 			},
 			{
-				note = "Walks around.",
 				goals = {
-					{ t = "turnin", quest = 5742, title = "Redemption", npc = 1855, npcName = "Tirion Fordring", map = 1423, x = 5.16, y = 35.57, f = "e" },
+					{ t = "goto", map = 1953, x = 42.5, y = 72.2, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "DRUID" } },
 				goals = {
-					{ t = "train", npc = 12042, npcName = "Loganaar", map = 1450, x = 52.53, y = 40.57, f = "e" },
+					{ t = "goto", map = 1953, x = 41.4, y = 71.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5223, title = "Return to Chillwind Camp", npc = 11053, npcName = "High Priestess MacDonnell", map = 1422, x = 42.97, y = 84.5, f = "e" },
-					{ t = "accept", quest = 5225, title = "Target: Gahrron's Withering", npc = 11053, npcName = "High Priestess MacDonnell", map = 1422, x = 42.97, y = 84.5, f = "e" },
+					{ t = "collect", quest = 10173, itemName = "Archmage Vargoth's Staff", count = 1, oi = 1, map = 1953, x = 40.9, y = 72.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 5537, title = "Skeletal Fragments", npc = 11056, npcName = "Alchemist Arbington", map = 1422, x = 42.66, y = 83.77, f = "e" },
+					{ t = "kill", target = "Nether Rays", count = 1, map = 1953, x = 44.6, y = 72.1, f = "e" },
+					{ t = "collect", quest = 10199, itemName = "Nether Ray Stinger", count = 5, oi = 1, map = 1953, x = 44.6, y = 72.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 6185, title = "The Eastern Plagues", npc = 12425, npcName = "Flint Shadowmore", map = 1422, x = 43.61, y = 84.51, f = "e" },
-					{ t = "accept", quest = 6186, title = "The Blightcaller Cometh", npc = 12425, npcName = "Flint Shadowmore", map = 1422, x = 43.61, y = 84.51, f = "e" },
+					{ t = "turnin", quest = 10203, title = "Invaluable Asset Zapping", npc = 19634, npcName = "Lead Sapper Blastfizzle", map = 1953, x = 34.2, y = 68.1, f = "e" },
+					{ t = "accept", quest = 10221, title = "Dr. Boom!", npc = 19634, npcName = "Lead Sapper Blastfizzle", map = 1953, x = 34.2, y = 68.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5903, title = "A Plague Upon Thee", npc = 11616, npcName = "Nathaniel Dumah", map = 1422, x = 43.42, y = 84.84, f = "e" },
-					{ t = "accept", quest = 5904, title = "A Plague Upon Thee", npc = 11616, npcName = "Nathaniel Dumah", map = 1422, x = 43.42, y = 84.84, f = "e" },
+					{ t = "turnin", quest = 10226, title = "Elemental Power Extraction", npc = 19709, npcName = "Chief Engineer Trep", map = 1953, x = 32.4, y = 66.8, f = "e" },
 				},
 			},
 			{
-				note = "Walks around. Both floors inside the building.",
 				goals = {
-					{ t = "turnin", quest = 5152, title = "Auntie Marlene", npc = 10927, npcName = "Marlene Redpath", map = 1422, x = 49.13, y = 78.52, f = "e" },
-					{ t = "accept", quest = 5153, title = "A Strange Historian", npc = 10927, npcName = "Marlene Redpath", map = 1422, x = 49.13, y = 78.52, f = "e" },
+					{ t = "turnin", quest = 10173, title = "The Archmage's Staff", npc = 19217, npcName = "Ravandwyr", map = 1953, x = 31.4, y = 66.2, f = "e" },
+					{ t = "accept", quest = 10300, title = "Rebuilding the Staff", npc = 19217, npcName = "Ravandwyr", map = 1953, x = 31.4, y = 66.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 5153, item = 12894, itemName = "Joseph's Wedding Ring", oi = 1, map = 1422, x = 49.68, y = 76.77, f = "e" },
+					{ t = "turnin", quest = 10241, title = "Distraction at Manaforge B'naar", npc = 19466, npcName = "Exarch Orelis", map = 1953, x = 32.1, y = 64.2, f = "e" },
+					{ t = "accept", quest = 10313, title = "Measuring Warp Energies", npc = 19466, npcName = "Exarch Orelis", map = 1953, x = 32.1, y = 64.2, f = "e" },
+					{ t = "accept", quest = 10243, title = "Naaru Technology", npc = 19467, npcName = "Anchorite Karja", map = 1953, x = 32.1, y = 64.2, f = "e" },
 				},
 			},
 			{
-				label = "Collect_Skeletal_Fragments",
-				along = true,
 				goals = {
-					{ t = "collect", quest = 5537, item = 14619, itemName = "Skeletal Fragments", count = 15, oi = 1, map = 1422, x = 50.8, y = 79.4, f = "e" },
+					{ t = "turnin", quest = 10265, title = "Consortium Crystal Collection", npc = 19880, npcName = "Nether-Stalker Khay'ji", map = 1953, x = 32.4, y = 64.2, f = "e" },
+					{ t = "accept", quest = 10262, title = "A Heap of Ethereals", npc = 19880, npcName = "Nether-Stalker Khay'ji", map = 1953, x = 32.4, y = 64.2, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
 				goals = {
-					{ t = "turnin", quest = 5153, title = "A Strange Historian", npc = 10667, npcName = "Chromie", map = 1422, x = 39.45, y = 66.76, f = "e" },
-					{ t = "accept", quest = 5154, title = "The Annals of Darrowshire", npc = 10667, npcName = "Chromie", map = 1422, x = 39.45, y = 66.76, f = "e" },
-					{ t = "accept", quest = 4971, title = "A Matter of Time", npc = 10667, npcName = "Chromie", map = 1422, x = 39.45, y = 66.76, f = "e" },
+					{ t = "turnin", quest = 10199, title = "That Little Extra Kick", npc = 19617, npcName = "Boots", map = 1953, x = 32.3, y = 63.9, f = "e" },
 				},
 			},
 			{
-				note = "Enemies near the building entrance. Run on the ledge of the building. Hug the building outside wall to reach the entrance.",
 				goals = {
-					{ t = "complete", quest = 5154, title = "The Annals of Darrowshire", note = "Click Here to Continue" },
+					{ t = "accept", quest = 10206, title = "Pick Your Part", npc = 19645, npcName = "Papa Wheeler", map = 1953, x = 33.0, y = 64.7, f = "e" },
 				},
 			},
 			{
-				note = "Find the real book by zooming in and looking. Fake books spawn enemies. Real book has two appearances: Sharper pages and even shading on both halves. Or Uneven shading with large brown spot on the pages. If no real book, click fakes to get it to spawn. Inside the building.",
 				goals = {
-					{ t = "collect", quest = 5154, item = 12900, itemName = "Annals of Darrowshire", oi = 1, map = 1422, x = 43.52, y = 69.55, f = "e" },
+					{ t = "collect", quest = 10300, itemName = "Flawless Crystal Shard", count = 4, oi = 1, map = 1953, x = 33.5, y = 53.0, f = "e" },
 				},
 			},
 			{
-				note = "Near large structures with blue lights. Another can spawn when they die.",
 				goals = {
-					{ t = "use", item = 12627, itemName = "Temporal Displacer" },
-					{ t = "kill", quest = 4971, npc = 10717, target = "Temporal Parasite", count = 15, oi = 1, map = 1422, x = 45.0, y = 63.0, f = "e" },
+					{ t = "kill", quest = 10221, target = "Dr. Boom", count = 1, oi = 1, map = 1953, x = 35.0, y = 59.6, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
 				goals = {
-					{ t = "turnin", quest = 5154, title = "The Annals of Darrowshire", npc = 10667, npcName = "Chromie", map = 1422, x = 39.45, y = 66.76, f = "e" },
-					{ t = "accept", quest = 5210, title = "Brother Carlin", npc = 10667, npcName = "Chromie", map = 1422, x = 39.45, y = 66.76, f = "e" },
-					{ t = "turnin", quest = 4971, title = "A Matter of Time", npc = 10667, npcName = "Chromie", map = 1422, x = 39.45, y = 66.76, f = "e" },
-					{ t = "accept", quest = 4972, title = "Counting Out Time", npc = 10667, npcName = "Chromie", map = 1422, x = 39.45, y = 66.76, f = "e" },
+					{ t = "turnin", quest = 10300, title = "Rebuilding the Staff", npc = 19217, npcName = "Ravandwyr", map = 1953, x = 31.4, y = 66.2, f = "e" },
+					{ t = "accept", quest = 10174, title = "Curse of the Violet Tower", npc = 19217, npcName = "Ravandwyr", map = 1953, x = 31.4, y = 66.2, f = "e" },
 				},
 			},
 			{
-				label = "Collect_Andorhal_Watches",
-				note = "Small grey metal chests. Inside crumbled buildings.",
 				goals = {
-					{ t = "collect", quest = 4972, item = 12638, itemName = "Andorhal Watch", count = 5, oi = 1, map = 1422, x = 42.3, y = 68.8, f = "e" },
+					{ t = "turnin", quest = 10221, title = "Dr. Boom!", npc = 19634, npcName = "Lead Sapper Blastfizzle", map = 1953, x = 34.2, y = 68.1, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
 				goals = {
-					{ t = "turnin", quest = 4972, title = "Counting Out Time", npc = 10667, npcName = "Chromie", map = 1422, x = 39.45, y = 66.76, f = "e" },
+					{ t = "goto", map = 1953, x = 25.7, y = 60.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5537, title = "Skeletal Fragments", npc = 11056, npcName = "Alchemist Arbington", map = 1422, x = 42.66, y = 83.77, f = "e" },
+					{ t = "goto", map = 1953, x = 20.9, y = 66.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5210, title = "Brother Carlin", npc = 11063, npcName = "Carlin Redpath", map = 1423, x = 71.7, y = 50.03, f = "e" },
-					{ t = "accept", quest = 5181, title = "Villains of Darrowshire", npc = 11063, npcName = "Carlin Redpath", map = 1423, x = 71.7, y = 50.03, f = "e" },
-					{ t = "turnin", quest = 5211, title = "Defenders of Darrowshire", npc = 11063, npcName = "Carlin Redpath", map = 1423, x = 71.7, y = 50.03, f = "e" },
+					{ t = "goto", map = 1953, x = 20.7, y = 70.7, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "sethome", location = "Light's Hope Chapel", map = 1423, x = 71.8, y = 48.52, f = "e" },
+					{ t = "turnin", quest = 10243, title = "Naaru Technology", map = 1953, x = 23.2, y = 68.2, f = "e" },
+					{ t = "accept", quest = 10245, title = "B'naar Console Transcription", map = 1953, x = 23.2, y = 68.2, f = "e" },
 				},
 			},
 			{
-				note = "Walks around.",
 				goals = {
-					{ t = "turnin", quest = 6021, title = "Zaeldarr the Outcast", npc = 11038, npcName = "Caretaker Alen", map = 1423, x = 69.92, y = 53.64, f = "e" },
+					{ t = "goto", map = 1953, x = 29.0, y = 72.7, f = "e" },
 				},
 			},
 			{
-				note = "Underwater.",
 				goals = {
-					{ t = "collect", quest = 5181, item = 12956, itemName = "Skull of Horgus", oi = 1, map = 1423, x = 44.34, y = 41.18, f = "e" },
+					{ t = "collect", quest = 10262, itemName = "Zaxxis Insignia", count = 10, oi = 1, map = 1953, x = 30.2, y = 75.5, f = "e" },
+					{ t = "collect", quest = 10206, itemName = "Ethereal Technology", count = 10, oi = 1, map = 1953, x = 30.2, y = 75.5, f = "e" },
 				},
 			},
 		},

@@ -1,164 +1,501 @@
 -- TuWoW_Leveling — Guides/Leveling_Alliance_32.lua
--- Compilado desde ZygorGuidesViewerForever y depurado para TuWoW 3.3.5a.
+-- Compilado desde Zygor Guides WotLK 3.3.5a oficial para TuWoW.
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/a-western-plaguelands-51-52",
+		id = "zygor/leveling/a-levels-62-64",
 		pack = "guides",
-		title = "Western Plaguelands",
+		title = "Levels (62-64) (Parte 1/2)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-azshara-and-felwood-52-52",
+		next = "zygor/leveling/a-levels-62-64-part-2",
 		author = "TuWoW & Zygor",
-		minLevel = 51,
-		maxLevel = 52,
-		zone = 1422,
+		minLevel = 62,
+		maxLevel = 64,
+		zone = 1946,
 		version = 1,
 		steps = {
 			{
 				goals = {
-					{ t = "turnin", quest = 5066, title = "A Call to Arms: The Plaguelands!", npc = 10838, npcName = "Commander Ashlam Valorfist", map = 1422, x = 42.7, y = 84.03, f = "e" },
-					{ t = "turnin", quest = 5090, title = "A Call to Arms: The Plaguelands!", npc = 10838, npcName = "Commander Ashlam Valorfist", map = 1422, x = 42.7, y = 84.03, f = "e" },
-					{ t = "turnin", quest = 5091, title = "A Call to Arms: The Plaguelands!", npc = 10838, npcName = "Commander Ashlam Valorfist", map = 1422, x = 42.7, y = 84.03, f = "e" },
-					{ t = "accept", quest = 5092, title = "Clear the Way", npc = 10838, npcName = "Commander Ashlam Valorfist", map = 1422, x = 42.7, y = 84.03, f = "e" },
+					{ t = "turnin", quest = 10057, title = "Looking to the Leadership", npc = 16827, npcName = "Honor Guard Wesilow", x = 50.9, y = 60.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 5401, title = "Argent Dawn Commission", npc = 10840, npcName = "Argent Officer Pureheart", map = 1422, x = 42.97, y = 83.55, f = "e" },
+					{ t = "kill", target = "Bleeding Hollow Orcs", count = 1, x = 64.2, y = 71.8, f = "e" },
+					{ t = "collect", quest = 10484, itemName = "Cursed Talisman", count = 12, oi = 1, x = 64.2, y = 71.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 5092, npc = 1783, target = "Skeletal Flayer", count = 10, oi = 1, map = 1422, x = 50.8, y = 79.4, f = "e" },
-					{ t = "kill", quest = 5092, npc = 1791, target = "Slavering Ghoul", count = 10, oi = 2, map = 1422, x = 50.8, y = 79.4, f = "e" },
-				},
-			},
-			{
-				note = "Helps reach level 52 after quest turnins.",
-				goals = {
-					{ t = "goto", text = "ding 51,148800", map = 1422, x = 50.8, y = 79.4 },
+					{ t = "turnin", quest = 10484, title = "Cursed Talismans", npc = 21133, npcName = "Corporal Ironridge", x = 71.0, y = 63.4, f = "e" },
+					{ t = "accept", quest = 10485, title = "Warlord of the Bleeding Hollow", npc = 21133, npcName = "Corporal Ironridge", x = 71.0, y = 63.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5092, title = "Clear the Way", npc = 10838, npcName = "Commander Ashlam Valorfist", map = 1422, x = 42.7, y = 84.03, f = "e" },
-					{ t = "accept", quest = 5215, title = "The Scourge Cauldrons", npc = 10838, npcName = "Commander Ashlam Valorfist", map = 1422, x = 42.7, y = 84.03, f = "e" },
+					{ t = "accept", quest = 10895, title = "Zeth'Gor Must Burn!", npc = 19409, npcName = "Wing Commander Dabir'ee", x = 71.3, y = 62.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5215, title = "The Scourge Cauldrons", npc = 11053, npcName = "High Priestess MacDonnell", map = 1422, x = 42.97, y = 84.5, f = "e" },
-					{ t = "accept", quest = 5216, title = "Target: Felstone Field", npc = 11053, npcName = "High Priestess MacDonnell", map = 1422, x = 42.97, y = 84.5, f = "e" },
+					{ t = "goto", x = 70.1, y = 69.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 5216, item = 13194, itemName = "Felstone Field Cauldron Key", oi = 1, map = 1422, x = 37.03, y = 57.11, f = "e" },
+					{ t = "goto", x = 70.9, y = 71.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5216, title = "Target: Felstone Field", map = 1422, x = 37.19, y = 56.87, f = "e" },
-					{ t = "accept", quest = 5217, title = "Return to Chillwind Camp", map = 1422, x = 37.19, y = 56.87, f = "e" },
-				},
-			},
-			{
-				note = "Upstairs inside the building.",
-				goals = {
-					{ t = "accept", quest = 5021, title = "Better Late Than Never", npc = 10778, npcName = "Janice Felstone", map = 1422, x = 38.4, y = 54.05, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 5021, title = "Better Late Than Never", map = 1422, x = 38.73, y = 55.24, f = "e" },
-					{ t = "accept", quest = 5022, title = "Better Late Than Never", map = 1422, x = 38.73, y = 55.24, f = "e" },
+					{ t = "collect", quest = 10485, itemName = "Morkh's Shattered Armor", count = 1, oi = 1, x = 70.1, y = 76.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5217, title = "Return to Chillwind Camp", npc = 11053, npcName = "High Priestess MacDonnell", map = 1422, x = 42.97, y = 84.5, f = "e" },
+					{ t = "goto", x = 66.4, y = 76.6, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "DRUID" } },
 				goals = {
-					{ t = "train", npc = 12042, npcName = "Loganaar", map = 1450, x = 52.53, y = 40.57, f = "e" },
+					{ t = "goto", x = 67.9, y = 67.0, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "MAGE" } },
 				goals = {
-					{ t = "train", npc = 7312, npcName = "Dink", map = 1455, x = 27.16, y = 8.56, f = "e" },
+					{ t = "turnin", quest = 10485, title = "Warlord of the Bleeding Hollow", npc = 21133, npcName = "Corporal Ironridge", x = 71.0, y = 63.4, f = "e" },
+					{ t = "accept", quest = 10903, title = "Return to Honor Hold", npc = 21133, npcName = "Corporal Ironridge", x = 71.0, y = 63.4, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "WARRIOR" } },
 				goals = {
-					{ t = "train", npc = 5114, npcName = "Bilban Tosslespanner", map = 1455, x = 65.9, y = 88.41, f = "e" },
+					{ t = "turnin", quest = 10895, title = "Zeth'Gor Must Burn!", npc = 19409, npcName = "Wing Commander Dabir'ee", x = 71.3, y = 62.8, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "train", npc = 5117, npcName = "Regnus Thundergranite", map = 1455, x = 69.87, y = 82.9, f = "e" },
+					{ t = "turnin", quest = 10903, title = "Return to Honor Hold", npc = 22430, npcName = "Assistant Klatu", x = 54.3, y = 63.6, f = "e" },
+					{ t = "accept", quest = 10909, title = "Fel Spirits", npc = 22430, npcName = "Assistant Klatu", x = 54.3, y = 63.6, f = "e" },
+					{ t = "accept", quest = 10916, title = "Digging for Prayer Beads", npc = 22430, npcName = "Assistant Klatu", x = 54.3, y = 63.6, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "ROGUE" } },
+				note = "Go outside and behind the inn to 54.2,63.3",
 				goals = {
-					{ t = "train", npc = 5167, npcName = "Fenthwick", map = 1455, x = 65.9, y = 88.41, f = "e" },
+					{ t = "collect", quest = 10916, itemName = "Draenei Prayer Beads", count = 1, oi = 1, x = 54.2, y = 63.3, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "WARLOCK" } },
 				goals = {
-					{ t = "train", npc = 5172, npcName = "Briarthorn", map = 1455, x = 50.35, y = 5.66, f = "e" },
+					{ t = "goto", x = 45.0, y = 75.0, f = "e" },
 				},
 			},
 			{
-				note = "Buy available Grimoires. Inside the building.",
-				only = { classes = { "WARLOCK" } },
 				goals = {
-					{ t = "vendor", npc = 6382, npcName = "Jubahl Corpseseeker", map = 1455, x = 50.35, y = 5.66, f = "e" },
+					{ t = "turnin", quest = 10909, title = "Fel Spirits", npc = 22430, npcName = "Assistant Klatu", x = 54.3, y = 63.6, f = "e" },
+					{ t = "turnin", quest = 10916, title = "Digging for Prayer Beads", npc = 22430, npcName = "Assistant Klatu", x = 54.3, y = 63.6, f = "e" },
+					{ t = "accept", quest = 10935, title = "The Exorcism of Colonel Jules", npc = 22430, npcName = "Assistant Klatu", x = 54.3, y = 63.6, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "PALADIN" } },
 				goals = {
-					{ t = "train", npc = 5148, npcName = "Beldruk Doombrow", map = 1455, x = 24.54, y = 4.5, f = "e" },
+					{ t = "talk", npc = 22431, npcName = "Anchorite Barada", x = 54.0, y = 63.5, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "PRIEST" } },
 				goals = {
-					{ t = "train", npc = 5143, npcName = "Toldren Deepiron", map = 1455, x = 25.21, y = 10.74, f = "e" },
+					{ t = "turnin", quest = 10935, title = "The Exorcism of Colonel Jules", npc = 22430, npcName = "Assistant Klatu", x = 54.3, y = 63.6, f = "e" },
+					{ t = "accept", quest = 10936, title = "Trollbane is Looking for You", npc = 22430, npcName = "Assistant Klatu", x = 54.3, y = 63.6, f = "e" },
 				},
 			},
 			{
-				only = { races = { "Dwarf" } },
 				goals = {
-					{ t = "goto", text = "Train Ram Riding", map = 1426, x = 63.94, y = 50.1 },
+					{ t = "turnin", quest = 10936, title = "Trollbane is Looking for You", npc = 16819, npcName = "Force Commander Danath Trollbane", x = 56.6, y = 66.7, f = "e" },
 				},
 			},
 			{
-				only = { races = { "Gnome" } },
 				goals = {
-					{ t = "goto", text = "Train Mechanostrider Piloting", map = 1426, x = 49.15, y = 48.13 },
+					{ t = "accept", quest = 9912, title = "The Cenarion Expedition", npc = 16885, npcName = "Amythiel Mistwalker", x = 15.7, y = 52.0, f = "e" },
+					{ t = "accept", quest = 10159, title = "Keep Thornfang Hill Clear!", npc = 16888, npcName = "Mahuram Stouthoof", x = 15.7, y = 52.0, f = "e" },
 				},
 			},
 			{
-				only = { races = { "Human" } },
 				goals = {
-					{ t = "goto", text = "Train Horse Riding", map = 1429, x = 84.32, y = 64.87 },
+					{ t = "kill", quest = 10159, target = "Thornfang Ravager", count = 8, oi = 1, x = 12.3, y = 49.9, f = "e" },
+					{ t = "kill", quest = 10159, target = "Thornfang Venomspitter", count = 8, oi = 2, x = 12.3, y = 49.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10159, title = "Keep Thornfang Hill Clear!", npc = 16888, npcName = "Mahuram Stouthoof", x = 15.7, y = 52.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 9802, title = "Plants of Zangarmarsh", npc = 17909, npcName = "Lauranna Thar'well", map = 1946, x = 80.4, y = 64.2, f = "e" },
+					{ t = "accept", quest = 9747, title = "The Umbrafen Tribe", npc = 17956, npcName = "Ikeyen", map = 1946, x = 80.4, y = 64.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 9728, title = "A Warm Welcome", npc = 17858, npcName = "Warden Hamoot", map = 1946, x = 79.1, y = 65.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 9895, title = "The Dying Balance", npc = 17834, npcName = "Lethyn Moonfire", map = 1946, x = 78.5, y = 63.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9912, title = "The Cenarion Expedition", npc = 17841, npcName = "Ysiel Windsinger", map = 1946, x = 78.4, y = 62.0, f = "e" },
+					{ t = "accept", quest = 9716, title = "Disturbance at Umbrafen Lake", npc = 17841, npcName = "Ysiel Windsinger", map = 1946, x = 78.4, y = 62.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 9895, target = "Boglash", count = 1, oi = 1, map = 1946, x = 80.1, y = 73.3, f = "e" },
+					{ t = "kill", target = "Boglash and Fen Striders", count = 1, map = 1946, x = 80.1, y = 73.3, f = "e" },
+					{ t = "collect", quest = 9806, item = 24449, itemName = "Fertile Spores", count = 6, oi = 1, map = 1946, x = 80.1, y = 73.3, f = "e" },
+					{ t = "kill", target = "all mobs in this area", count = 1, map = 1946, x = 80.1, y = 73.3, f = "e" },
+					{ t = "collect", quest = 9802, itemName = "Unidentified Plant Parts", count = 10, oi = 1, map = 1946, x = 80.1, y = 73.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9802, title = "Plants of Zangarmarsh", npc = 17909, npcName = "Lauranna Thar'well", map = 1946, x = 80.4, y = 64.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9895, title = "The Dying Balance", npc = 17834, npcName = "Lethyn Moonfire", map = 1946, x = 78.5, y = 63.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 9747, target = "Kataru", count = 1, oi = 1, map = 1946, x = 85.3, y = 90.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 9747, target = "Umbrafen Oracle", count = 6, oi = 2, map = 1946, x = 84.8, y = 84.4, f = "e" },
+					{ t = "kill", quest = 9747, target = "Umbrafen Seer", count = 8, oi = 3, map = 1946, x = 84.8, y = 84.4, f = "e" },
+					{ t = "kill", quest = 9747, target = "Umbrafen Witchdoctor", count = 6, oi = 4, map = 1946, x = 84.8, y = 84.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 9752, title = "Escape from Umbrafen", npc = 17969, npcName = "Kayra Longmane", map = 1946, x = 83.4, y = 85.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9747, title = "The Umbrafen Tribe", npc = 17956, npcName = "Ikeyen", map = 1946, x = 80.4, y = 64.2, f = "e" },
+					{ t = "accept", quest = 9788, title = "A Damp, Dark Place", npc = 17956, npcName = "Ikeyen", map = 1946, x = 80.4, y = 64.2, f = "e" },
+					{ t = "accept", quest = 10096, title = "Saving the Sporeloks", npc = 17909, npcName = "Lauranna Thar'well", map = 1946, x = 80.4, y = 64.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 9894, title = "Safeguarding the Watchers", npc = 18070, npcName = "Windcaller Blackhoof", map = 1946, x = 80.4, y = 64.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9752, title = "Escape from Umbrafen", npc = 17841, npcName = "Ysiel Windsinger", map = 1946, x = 78.4, y = 62.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1946, x = 74.7, y = 91.6, f = "e" },
+				},
+			},
+			{
+				note = "Go southwest inside the cave to 70.5,97.9",
+				goals = {
+					{ t = "collect", quest = 9788, itemName = "Ikeyen's Belongings", count = 1, oi = 1, map = 1946, x = 70.5, y = 97.9, f = "e" },
+				},
+			},
+			{
+				note = "Go northeast inside the cave to 72.5,94.0",
+				goals = {
+					{ t = "kill", quest = 9894, target = "Lord Klaq", count = 1, oi = 1, map = 1946, x = 72.5, y = 94.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 10096, target = "Marsh Lurker", count = 10, oi = 2, map = 1946, x = 75.7, y = 90.2, f = "e" },
+					{ t = "kill", quest = 10096, target = "Marsh Dredger", count = 10, oi = 1, map = 1946, x = 75.7, y = 90.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", target = "nagas", count = 1, map = 1946, x = 70.9, y = 82.1, f = "e" },
+					{ t = "collect", quest = 9728, itemName = "Naga Claws", count = 30, oi = 1, map = 1946, x = 70.9, y = 82.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9894, title = "Safeguarding the Watchers", npc = 18070, npcName = "Windcaller Blackhoof", map = 1946, x = 80.4, y = 64.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9788, title = "A Damp, Dark Place", npc = 17956, npcName = "Ikeyen", map = 1946, x = 80.4, y = 64.2, f = "e" },
+					{ t = "turnin", quest = 10096, title = "Saving the Sporeloks", npc = 17909, npcName = "Lauranna Thar'well", map = 1946, x = 80.4, y = 64.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9728, title = "A Warm Welcome", npc = 17858, npcName = "Warden Hamoot", map = 1946, x = 79.1, y = 65.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 9785, title = "Blessings of the Ancients", npc = 18070, npcName = "Windcaller Blackhoof", map = 1946, x = 80.4, y = 64.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 9697, title = "Watcher Leesa'oh", npc = 17834, npcName = "Lethyn Moonfire", map = 1946, x = 78.5, y = 63.1, f = "e" },
+					{ t = "accept", quest = 9957, title = "What's Wrong at Cenarion Thicket?", npc = 17834, npcName = "Lethyn Moonfire", map = 1946, x = 78.5, y = 63.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9716, title = "Disturbance at Umbrafen Lake", npc = 17841, npcName = "Ysiel Windsinger", map = 1946, x = 78.4, y = 62.0, f = "e" },
+					{ t = "accept", quest = 9718, title = "As the Crow Flies", npc = 17841, npcName = "Ysiel Windsinger", map = 1946, x = 78.4, y = 62.0, f = "e" },
+					{ t = "turnin", quest = 9718, title = "As the Crow Flies", npc = 17841, npcName = "Ysiel Windsinger", map = 1946, x = 78.4, y = 62.0, f = "e" },
+					{ t = "accept", quest = 9720, title = "Balance Must Be Preserved", npc = 17841, npcName = "Ysiel Windsinger", map = 1946, x = 78.4, y = 62.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "talk", npc = 17901, npcName = "Keleth", map = 1946, x = 78.1, y = 63.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "talk", npc = 17900, npcName = "Ashyen", map = 1946, x = 81.1, y = 63.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9785, title = "Blessings of the Ancients", npc = 18070, npcName = "Windcaller Blackhoof", map = 1946, x = 80.4, y = 64.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1946, x = 70.6, y = 80.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1946, x = 63.1, y = 64.1, f = "e" },
+				},
+			},
+			{
+				note = "Ride the elevator up into Telredor and go to 68.3,50.1",
+				goals = {
+					{ t = "accept", quest = 9793, title = "The Fate of Tuurem", npc = 18004, npcName = "Vindicator Idaar", map = 1946, x = 68.3, y = 50.1, f = "e" },
+					{ t = "accept", quest = 9782, title = "The Dead Mire", npc = 18004, npcName = "Vindicator Idaar", map = 1946, x = 68.3, y = 50.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 9776, title = "The Orebor Harborage", npc = 18003, npcName = "Anchorite Ahuurn", map = 1946, x = 68.2, y = 49.4, f = "e" },
+					{ t = "accept", quest = 9786, title = "The Boha'mu Ruins", npc = 18003, npcName = "Anchorite Ahuurn", map = 1946, x = 68.2, y = 49.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 9901, title = "Unfinished Business", npc = 18295, npcName = "Prospector Conall", map = 1946, x = 68.6, y = 49.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 9777, title = "Fulgor Spores", npc = 18007, npcName = "Ruam", map = 1946, x = 68.6, y = 48.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 9781, title = "Too Many Mouths to Feed", npc = 18005, npcName = "Haalrun", map = 1946, x = 67.7, y = 48.0, f = "e" },
+					{ t = "accept", quest = 9791, title = "Menacing Marshfangs", npc = 18006, npcName = "Noraani", map = 1946, x = 67.7, y = 48.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "fpath", text = "Telredor", map = 1946, x = 67.8, y = 51.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 9777, itemName = "Fulgor Spore", count = 6, oi = 1, map = 1946, x = 71.3, y = 46.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 9791, target = "Marshfang Ripper", count = 10, oi = 1, map = 1946, x = 73.2, y = 41.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 9901, target = "Sporewing", count = 1, oi = 1, map = 1946, x = 77.2, y = 45.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 9782, itemName = "Dead Mire Soil Sample", count = 1, oi = 1, map = 1946, x = 80.7, y = 43.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9782, title = "The Dead Mire", npc = 18004, npcName = "Vindicator Idaar", map = 1946, x = 68.3, y = 50.1, f = "e" },
+					{ t = "accept", quest = 9783, title = "An Unnatural Drought", npc = 18004, npcName = "Vindicator Idaar", map = 1946, x = 68.3, y = 50.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9901, title = "Unfinished Business", npc = 18295, npcName = "Prospector Conall", map = 1946, x = 68.6, y = 49.4, f = "e" },
+					{ t = "accept", quest = 9896, title = "Blacksting's Bane", npc = 18295, npcName = "Prospector Conall", map = 1946, x = 68.6, y = 49.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9777, title = "Fulgor Spores", npc = 18007, npcName = "Ruam", map = 1946, x = 68.6, y = 48.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9791, title = "Menacing Marshfangs", npc = 18006, npcName = "Noraani", map = 1946, x = 67.7, y = 48.0, f = "e" },
+					{ t = "accept", quest = 9780, title = "Umbrafen Eel Filets", npc = 18006, npcName = "Noraani", map = 1946, x = 67.7, y = 48.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 63, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 9783, target = "Withered Giant", count = 12, oi = 1, map = 1946, x = 78.3, y = 45.2, f = "e" },
+					{ t = "kill", target = "Withered Bog Lords", count = 1, map = 1946, x = 78.3, y = 45.2, f = "e" },
+					{ t = "kill", target = "Withered mobs", count = 1, map = 1946, x = 78.3, y = 45.2, f = "e" },
+					{ t = "collect", itemName = "Withered Basidium", count = 1, map = 1946, x = 78.3, y = 45.2, f = "e" },
+					{ t = "accept", quest = 9827, title = "Withered Basidium", map = 1946, x = 78.3, y = 45.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 9781, target = "Mire Hydra", count = 10, oi = 1, map = 1946, x = 74.2, y = 60.7, f = "e" },
+					{ t = "kill", target = "Umbrafen Eels", count = 1, map = 1946, x = 74.2, y = 60.7, f = "e" },
+					{ t = "collect", quest = 9780, itemName = "Eel Filet", count = 8, oi = 1, map = 1946, x = 74.2, y = 60.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9783, title = "An Unnatural Drought", npc = 18004, npcName = "Vindicator Idaar", map = 1946, x = 68.3, y = 50.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9827, title = "Withered Basidium", npc = 18007, npcName = "Ruam", map = 1946, x = 68.6, y = 48.7, f = "e" },
+					{ t = "accept", quest = 10355, title = "Withered Flesh", npc = 18007, npcName = "Ruam", map = 1946, x = 68.6, y = 48.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9780, title = "Umbrafen Eel Filets", npc = 18006, npcName = "Noraani", map = 1946, x = 67.7, y = 48.0, f = "e" },
+					{ t = "turnin", quest = 9781, title = "Too Many Mouths to Feed", npc = 18005, npcName = "Haalrun", map = 1946, x = 67.7, y = 48.0, f = "e" },
+					{ t = "accept", quest = 9790, title = "Diaphanous Wings", npc = 18005, npcName = "Haalrun", map = 1946, x = 67.7, y = 48.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", target = "Umbraglow Stingers", count = 1, map = 1946, x = 79.7, y = 70.1, f = "e" },
+					{ t = "collect", quest = 9790, itemName = "Diaphanous Wing", count = 8, oi = 1, map = 1946, x = 79.7, y = 70.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", target = "Parched Hydras", count = 1, map = 1946, x = 82.6, y = 43.7, f = "e" },
+					{ t = "collect", quest = 10355, itemName = "Parched Hydra Sample", count = 5, oi = 1, map = 1946, x = 82.6, y = 43.7, f = "e" },
+					{ t = "kill", target = "Withered Bog Lords", count = 1, map = 1946, x = 82.6, y = 43.7, f = "e" },
+					{ t = "collect", quest = 10355, itemName = "Withered Bog Lord Sample", count = 5, oi = 2, map = 1946, x = 82.6, y = 43.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10355, title = "Withered Flesh", npc = 18007, npcName = "Ruam", map = 1946, x = 68.6, y = 48.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9790, title = "Diaphanous Wings", npc = 18005, npcName = "Haalrun", map = 1946, x = 67.7, y = 48.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", itemName = "Drain Schematics", count = 1, map = 1946, x = 62.0, y = 40.8, f = "e" },
+					{ t = "accept", quest = 9731, title = "Drain Schematics", map = 1946, x = 62.0, y = 40.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 9896, itemName = "Blacksting's Stinger", count = 1, oi = 1, map = 1946, x = 49.5, y = 59.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1946, x = 44.5, y = 66.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1946, x = 44.1, y = 68.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", itemName = "\"Count\" Ungula's Mandible", count = 1, map = 1946, x = 32.8, y = 59.1, f = "e" },
+					{ t = "accept", quest = 9911, title = "The Count of the Marshes", map = 1946, x = 32.8, y = 59.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9697, title = "Watcher Leesa'oh", npc = 17831, npcName = "Watcher Leesa'oh", map = 1946, x = 23.3, y = 66.2, f = "e" },
+					{ t = "accept", quest = 9701, title = "Observing the Sporelings", npc = 17831, npcName = "Watcher Leesa'oh", map = 1946, x = 23.3, y = 66.2, f = "e" },
+					{ t = "turnin", quest = 9911, title = "The Count of the Marshes", npc = 17831, npcName = "Watcher Leesa'oh", map = 1946, x = 23.3, y = 66.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 9739, title = "The Sporelings' Plight", npc = 17923, npcName = "Fahssn", map = 1946, x = 19.1, y = 63.9, f = "e" },
+					{ t = "accept", quest = 9743, title = "Natural Enemies", npc = 17923, npcName = "Fahssn", map = 1946, x = 19.1, y = 63.9, f = "e" },
+					{ t = "turnin", quest = 9743, title = "Natural Enemies", npc = 17923, npcName = "Fahssn", map = 1946, x = 19.1, y = 63.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 9739, item = 24290, itemName = "Mature Spore Sac", count = 40, map = 1946, x = 14.5, y = 61.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1946, x = 13.6, y = 59.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9739, title = "The Sporelings' Plight", npc = 17923, npcName = "Fahssn", map = 1946, x = 19.1, y = 63.9, f = "e" },
+					{ t = "accept", quest = 9919, title = "Sporeggar", npc = 17923, npcName = "Fahssn", map = 1946, x = 19.1, y = 63.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9701, title = "Observing the Sporelings", npc = 17831, npcName = "Watcher Leesa'oh", map = 1946, x = 23.3, y = 66.2, f = "e" },
+					{ t = "accept", quest = 9702, title = "A Question of Gluttony", npc = 17831, npcName = "Watcher Leesa'oh", map = 1946, x = 23.3, y = 66.2, f = "e" },
 				},
 			},
 		},
@@ -167,361 +504,206 @@ end
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/a-azshara-and-felwood-52-52",
+		id = "zygor/leveling/a-levels-62-64-part-2",
 		pack = "guides",
-		title = "Azshara & Felwood",
+		title = "Levels (62-64) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-feralas-and-azshara-52-53",
+		next = "zygor/leveling/a-levels-64-66",
 		author = "TuWoW & Zygor",
-		minLevel = 52,
-		maxLevel = 52,
-		zone = 1438,
+		minLevel = 62,
+		maxLevel = 64,
+		zone = 1946,
 		version = 1,
 		steps = {
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "turnin", quest = 3661, title = "Favored of Elune?", npc = 7916, npcName = "Erelas Ambersky", map = 1438, x = 55.5, y = 92.05, f = "e" },
-					{ t = "accept", quest = 978, title = "Moontouched Wildkin", npc = 7916, npcName = "Erelas Ambersky", map = 1438, x = 55.5, y = 92.05, f = "e" },
-				},
-			},
-			{
-				note = "Upstairs inside the building.",
-				goals = {
-					{ t = "turnin", quest = 2944, title = "The Super Snapper FX", npc = 7907, npcName = "Daryn Lightwind", map = 1438, x = 55.41, y = 92.23, f = "e" },
-					{ t = "accept", quest = 2943, title = "Return to Troyas", npc = 7907, npcName = "Daryn Lightwind", map = 1438, x = 55.41, y = 92.23, f = "e" },
-				},
-			},
-			{
-				note = "Collect from the bank. Inside the building.",
-				goals = {
-					{ t = "collect", quest = 162, item = 8594, itemName = "Insect Analysis Report", map = 1457, x = 39.6, y = 41.98, f = "e" },
-					{ t = "collect", quest = 3908, item = 11133, itemName = "Linken's Training Sword", map = 1457, x = 39.6, y = 41.98, f = "e" },
-					{ t = "collect", quest = 4142, item = 11316, itemName = "Bloodpetal", map = 1457, x = 39.6, y = 41.98, f = "e" },
-					{ t = "collect", quest = 3764, item = 11018, itemName = "Un'Goro Soil", count = 20, map = 1457, x = 39.6, y = 41.98, f = "e" },
-				},
-			},
-			{
-				note = "Deposit into the bank. Inside the building.",
-				goals = {
-					{ t = "complete", quest = 5022, title = "Better Late Than Never", note = "bank Janice's Parcel##12724", map = 1457, x = 39.6, y = 41.98, f = "e" },
-					{ t = "complete", quest = 3449, title = "Arcane Runes", note = "bank Standard Issue Flare Gun##10444", map = 1457, x = 39.6, y = 41.98, f = "e" },
-					{ t = "complete", quest = 2641, title = "Sprinkle's Secret Ingredient", note = "bank Violet Tragan##8526", map = 1457, x = 39.6, y = 41.98, f = "e" },
-				},
-			},
-			{
-				note = "Walks around. Top floor inside the building.",
-				goals = {
-					{ t = "turnin", quest = 3763, title = "Assisting Arch Druid Staghelm", npc = 3516, npcName = "Arch Druid Fandral Staghelm", map = 1457, x = 34.82, y = 9.25, f = "e" },
-					{ t = "turnin", quest = 3789, title = "Assisting Arch Druid Staghelm", npc = 3516, npcName = "Arch Druid Fandral Staghelm", map = 1457, x = 34.82, y = 9.25, f = "e" },
-					{ t = "turnin", quest = 3790, title = "Assisting Arch Druid Staghelm", npc = 3516, npcName = "Arch Druid Fandral Staghelm", map = 1457, x = 34.82, y = 9.25, f = "e" },
-					{ t = "accept", quest = 3764, title = "Un'Goro Soil", npc = 3516, npcName = "Arch Druid Fandral Staghelm", map = 1457, x = 34.82, y = 9.25, f = "e" },
-				},
-			},
-			{
-				note = "Outside the building.",
-				goals = {
-					{ t = "turnin", quest = 3764, title = "Un'Goro Soil", npc = 9047, npcName = "Jenal", map = 1457, x = 31.49, y = 8.23, f = "e" },
-				},
-			},
-			{
-				only = { races = { "NightElf" } },
-				goals = {
-					{ t = "goto", text = "Train Tiger Riding", map = 1457, x = 38.69, y = 15.84 },
-				},
-			},
-			{
-				note = "Upstairs inside the building.",
-				goals = {
-					{ t = "turnin", quest = 162, title = "Rise of the Silithid", npc = 7740, npcName = "Gracina Spiritmight", map = 1457, x = 41.84, y = 85.62, f = "e" },
-					{ t = "accept", quest = 4493, title = "March of the Silithid", npc = 7740, npcName = "Gracina Spiritmight", map = 1457, x = 41.84, y = 85.62, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "sethome", location = "Auberdine", map = 1439, x = 37.04, y = 44.13, f = "e" },
+					{ t = "collect", quest = 9702, itemName = "Discarded Nutriment", count = 10, oi = 1, map = 1946, x = 27.0, y = 63.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 5535, title = "Spiritual Unrest", npc = 11548, npcName = "Loh'atu", map = 1447, x = 11.37, y = 78.16, f = "e" },
-					{ t = "accept", quest = 5536, title = "A Land Filled with Hatred", npc = 11548, npcName = "Loh'atu", map = 1447, x = 11.37, y = 78.16, f = "e" },
+					{ t = "turnin", quest = 9702, title = "A Question of Gluttony", npc = 17831, npcName = "Watcher Leesa'oh", map = 1946, x = 23.3, y = 66.2, f = "e" },
+					{ t = "accept", quest = 9708, title = "Familiar Fungi", npc = 17831, npcName = "Watcher Leesa'oh", map = 1946, x = 23.3, y = 66.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 5535, npc = 6116, target = "Highborne Apparition", count = 6, oi = 1, map = 1447, x = 13.4, y = 73.4, f = "e" },
-					{ t = "kill", quest = 5535, npc = 6117, target = "Highborne Lichling", count = 6, oi = 2, map = 1447, x = 13.4, y = 73.4, f = "e" },
+					{ t = "turnin", quest = 9919, title = "Sporeggar", npc = 17924, npcName = "Msshi'fn", map = 1946, x = 19.7, y = 52.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 5536, npc = 6126, target = "Haldarr Trickster", count = 2, oi = 2, map = 1447, x = 19.8, y = 64.6, f = "e" },
-					{ t = "kill", quest = 5536, npc = 6127, target = "Haldarr Felsworn", count = 2, oi = 3, map = 1447, x = 19.8, y = 64.6, f = "e" },
-					{ t = "kill", quest = 5536, npc = 6125, target = "Haldarr Satyr", count = 6, oi = 1, map = 1447, x = 19.8, y = 64.6, f = "e" },
+					{ t = "accept", quest = 9726, title = "Now That We're Friends...", npc = 17856, npcName = "Gzhun'tt", map = 1946, x = 19.5, y = 50.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5535, title = "Spiritual Unrest", npc = 11548, npcName = "Loh'atu", map = 1447, x = 11.37, y = 78.17, f = "e" },
-					{ t = "turnin", quest = 5536, title = "A Land Filled with Hatred", npc = 11548, npcName = "Loh'atu", map = 1447, x = 11.37, y = 78.17, f = "e" },
-				},
-			},
-			{
-				note = "Long questing session. No ammo vendor.",
-				only = { classes = { "HUNTER" } },
-				goals = {
-					{ t = "vendor", npc = 14301, npcName = "Brinna Valanaar", map = 1447, x = 12.0, y = 78.38, f = "e" },
-				},
-			},
-			{
-				note = "Walks around.",
-				goals = {
-					{ t = "accept", quest = 4101, title = "Cleansing Felwood", npc = 9528, npcName = "Arathandris Silversky", map = 1448, x = 54.15, y = 86.83, f = "e" },
-				},
-			},
-			{
-				note = "Walks around.",
-				goals = {
-					{ t = "accept", quest = 5155, title = "Forces of Jaedenar", npc = 10922, npcName = "Greta Mosshoof", map = 1448, x = 51.21, y = 82.11, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "accept", quest = 4421, title = "The Corruption of the Jadefire", npc = 9116, npcName = "Eridan Bluewind", map = 1448, x = 51.35, y = 81.51, f = "e" },
+					{ t = "accept", quest = 9806, title = "Fertile Spores", npc = 17925, npcName = "Gshaff", map = 1946, x = 19.2, y = 49.4, f = "e" },
+					{ t = "turnin", quest = 9806, title = "Fertile Spores", npc = 17925, npcName = "Gshaff", map = 1946, x = 19.2, y = 49.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 8460, title = "Timbermaw Ally", npc = 11554, npcName = "Grazle", map = 1448, x = 50.93, y = 85.01, f = "e" },
+					{ t = "goto", map = 1946, x = 25.4, y = 42.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 8460, npc = 7153, target = "Deadwood Warrior", count = 6, oi = 1, map = 1448, x = 48.4, y = 89.2, f = "e" },
-					{ t = "kill", quest = 8460, npc = 7155, target = "Deadwood Pathfinder", count = 6, oi = 2, map = 1448, x = 48.4, y = 89.2, f = "e" },
-					{ t = "kill", quest = 8460, npc = 7154, target = "Deadwood Gardener", count = 6, oi = 3, map = 1448, x = 48.4, y = 89.2, f = "e" },
+					{ t = "kill", quest = 9726, target = "Bloodscale Slavedriver", count = 12, oi = 1, map = 1946, x = 26.8, y = 43.0, f = "e" },
+					{ t = "kill", quest = 9726, target = "Bloodscale Enchantress", count = 6, oi = 2, map = 1946, x = 26.8, y = 43.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8460, title = "Timbermaw Ally", npc = 11554, npcName = "Grazle", map = 1448, x = 50.93, y = 85.02, f = "e" },
-					{ t = "accept", quest = 8462, title = "Speak to Nafien", npc = 11554, npcName = "Grazle", map = 1448, x = 50.93, y = 85.02, f = "e" },
-				},
-			},
-			{
-				note = "Don't vendor them. Can be turned in later for xp and reputation.",
-				goals = {
-					{ t = "collect", item = 21377, itemName = "Deadwood Headdress Feather", map = 1448, x = 48.7, y = 91.0, f = "e" },
-					{ t = "goto", text = "Reach Unfriendly Reputation with the Timbermaw Hold Faction", map = 1448, x = 48.4, y = 89.2 },
+					{ t = "turnin", quest = 9726, title = "Now That We're Friends...", npc = 17856, npcName = "Gzhun'tt", map = 1946, x = 19.5, y = 50.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 11912, itemName = "Package of Empty Ooze Containers" },
-					{ t = "collect", quest = 4512, item = 11914, itemName = "Empty Cursed Ooze Jar", count = 6 },
-					{ t = "collect", quest = 4512, item = 11948, itemName = "Empty Tainted Ooze Jar", count = 6 },
-				},
-			},
-			{
-				note = "On their corpses.",
-				goals = {
-					{ t = "use", item = 11914, itemName = "Empty Cursed Ooze Jar" },
-					{ t = "collect", quest = 4512, item = 11947, itemName = "Filled Cursed Ooze Jar", count = 6, oi = 1, map = 1448, x = 41.6, y = 71.6, f = "e" },
+					{ t = "fpath", text = "Orebor Harborage", map = 1946, x = 41.3, y = 29.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", text = "Follow the path", map = 1448, x = 36.85, y = 66.92 },
-					{ t = "kill", quest = 4421, npc = 9454, target = "Xavathras", oi = 4, map = 1448, x = 32.24, y = 67.1, f = "e" },
-				},
-			},
-			{
-				label = "Kill_Jadefire_Enemies",
-				along = true,
-				note = "Stealthed.",
-				goals = {
-					{ t = "kill", quest = 4421, npc = 7110, target = "Jadefire Shadowstalker", count = 9, oi = 2, map = 1448, x = 34.4, y = 66.4, f = "e" },
-					{ t = "kill", quest = 4421, npc = 7106, target = "Jadefire Rogue", count = 9, oi = 3, map = 1448, x = 34.4, y = 66.4, f = "e" },
-					{ t = "kill", quest = 4421, npc = 7109, target = "Jadefire Felsworn", count = 11, oi = 1, map = 1448, x = 34.4, y = 66.4, f = "e" },
-				},
-			},
-			{
-				note = "On their corpses.",
-				goals = {
-					{ t = "use", item = 11948, itemName = "Empty Tainted Ooze Jar" },
-					{ t = "collect", quest = 4512, item = 11949, itemName = "Filled Tainted Ooze Jar", count = 6, oi = 2, map = 1448, x = 40.8, y = 59.0, f = "e" },
-				},
-			},
-			{
-				note = "More inside the caves.",
-				goals = {
-					{ t = "kill", quest = 5155, npc = 7125, target = "Jaedenar Hound", count = 4, oi = 1, map = 1448, x = 40.4, y = 57.6, f = "e" },
-					{ t = "kill", quest = 5155, npc = 7113, target = "Jaedenar Guardian", count = 4, oi = 2, map = 1448, x = 40.4, y = 57.6, f = "e" },
-					{ t = "kill", quest = 5155, npc = 7115, target = "Jaedenar Adept", count = 6, oi = 3, map = 1448, x = 40.4, y = 57.6, f = "e" },
-					{ t = "kill", quest = 5155, npc = 7112, target = "Jaedenar Cultist", count = 6, oi = 4, map = 1448, x = 40.4, y = 57.6, f = "e" },
-				},
-			},
-			{
-				note = "Walks around.",
-				goals = {
-					{ t = "turnin", quest = 5155, title = "Forces of Jaedenar", npc = 10922, npcName = "Greta Mosshoof", map = 1448, x = 51.21, y = 82.11, f = "e" },
-					{ t = "accept", quest = 5157, title = "Collection of the Corrupt Water", npc = 10922, npcName = "Greta Mosshoof", map = 1448, x = 51.21, y = 82.11, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 4421, title = "The Corruption of the Jadefire", npc = 9116, npcName = "Eridan Bluewind", map = 1448, x = 51.35, y = 81.51, f = "e" },
-					{ t = "accept", quest = 4906, title = "Further Corruption", npc = 9116, npcName = "Eridan Bluewind", map = 1448, x = 51.35, y = 81.51, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "accept", quest = 5156, title = "Verifying the Corruption", npc = 10921, npcName = "Taronn Redfeather", map = 1448, x = 50.89, y = 81.62, f = "e" },
+					{ t = "accept", quest = 9848, title = "Secrets of the Daggerfen", npc = 18019, npcName = "Timothy Daniels", map = 1946, x = 41.2, y = 28.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", text = "Follow the path into Jaedenar", map = 1448, x = 38.37, y = 59.85 },
-					{ t = "use", item = 12922, itemName = "Empty Canteen" },
-					{ t = "collect", quest = 5157, item = 12907, itemName = "Corrupt Moonwell Water", oi = 1, map = 1448, x = 35.2, y = 59.87, f = "e" },
+					{ t = "accept", quest = 10116, title = "Wanted: Chieftain Mummaki", map = 1946, x = 41.7, y = 27.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "complete", quest = 5156, title = "Verifying the Corruption", note = "Explore the Craters in Shatter Scar Vale", map = 1448, x = 41.54, y = 42.98, f = "e" },
-				},
-			},
-			{
-				label = "Kill_Entropic_Beasts_And_Horrors",
-				along = true,
-				goals = {
-					{ t = "kill", quest = 5156, npc = 9878, target = "Entropic Beast", count = 2, oi = 1, map = 1448, x = 42.6, y = 41.4, f = "e" },
-					{ t = "kill", quest = 5156, npc = 9879, target = "Entropic Horror", count = 2, oi = 2, map = 1448, x = 42.6, y = 41.4, f = "e" },
-				},
-			},
-			{
-				note = "Walks around.",
-				goals = {
-					{ t = "goto", text = "Follow the path up into Jadefire Run", map = 1448, x = 43.07, y = 21.32 },
-					{ t = "kill", quest = 4906, npc = 10648, target = "Xavaric", oi = 4, map = 1448, x = 39.07, y = 22.35, f = "e" },
-					{ t = "collect", quest = 939, item = 11668, itemName = "Flute of Xavaric", map = 1448, x = 39.07, y = 22.35, f = "e" },
+					{ t = "turnin", quest = 9776, title = "The Orebor Harborage", npc = 18008, npcName = "Ikuti", map = 1946, x = 41.9, y = 27.2, f = "e" },
+					{ t = "accept", quest = 9835, title = "Ango'rosh Encroachment", npc = 18008, npcName = "Ikuti", map = 1946, x = 41.9, y = 27.2, f = "e" },
+					{ t = "accept", quest = 10115, title = "Daggerfen Deviance", npc = 18008, npcName = "Ikuti", map = 1946, x = 41.9, y = 27.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 11668, itemName = "Flute of Xavaric" },
-					{ t = "accept", quest = 939, title = "Flute of Xavaric" },
+					{ t = "collect", quest = 9848, itemName = "Daggerfen Poison Vial", count = 1, oi = 2, map = 1946, x = 26.4, y = 22.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 939, item = 11674, itemName = "Jadefire Felbind", count = 5, oi = 1, map = 1448, x = 40.4, y = 20.0, f = "e" },
-				},
-			},
-			{
-				label = "Kill_Jadefire_Enemies_4906",
-				along = true,
-				goals = {
-					{ t = "kill", quest = 4906, npc = 7111, target = "Jadefire Hellcaller", count = 8, oi = 1, map = 1448, x = 40.4, y = 20.0, f = "e" },
-					{ t = "kill", quest = 4906, npc = 7108, target = "Jadefire Betrayer", count = 8, oi = 2, map = 1448, x = 40.4, y = 20.0, f = "e" },
-					{ t = "kill", quest = 4906, npc = 7107, target = "Jadefire Trickster", count = 8, oi = 3, map = 1448, x = 40.4, y = 20.0, f = "e" },
-				},
-			},
-			{
-				note = "Swamp elementals. Inside and outside the cave.",
-				goals = {
-					{ t = "collect", quest = 4101, item = 11503, itemName = "Blood Amber", count = 15, oi = 1, map = 1448, x = 55.78, y = 16.85, f = "e" },
-				},
-			},
-			{
-				note = "Follow the road.",
-				goals = {
-					{ t = "goto", text = "Leave the cave", map = 1448, x = 55.88, y = 17.15 },
-					{ t = "getfp", location = "Talonbranch Glade", map = 1448, x = 62.49, y = 24.24, f = "e" },
-				},
-			},
-			{
-				note = "Follow the road.",
-				goals = {
-					{ t = "turnin", quest = 8462, title = "Speak to Nafien", npc = 15395, npcName = "Nafien", map = 1448, x = 64.77, y = 8.13, f = "e" },
+					{ t = "collect", quest = 9848, itemName = "Daggerfen Poison Manual", count = 1, oi = 1, map = 1946, x = 24.4, y = 27.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 3909, title = "The Videre Elixir", npc = 9298, npcName = "Donova Snowden", map = 1452, x = 31.27, y = 45.16, f = "e" },
-					{ t = "turnin", quest = 3908, title = "It's a Secret to Everybody", npc = 9298, npcName = "Donova Snowden", map = 1452, x = 31.27, y = 45.16, f = "e" },
+					{ t = "collect", quest = 10116, itemName = "Chieftain Mummaki's Totem", count = 1, oi = 1, map = 1946, x = 23.8, y = 26.8, f = "e" },
 				},
 			},
 			{
-				note = "Large blue feathers. Make your way east.",
 				goals = {
-					{ t = "collect", quest = 978, item = 12383, itemName = "Moontouched Feather", count = 10, oi = 1, map = 1452, x = 29.4, y = 46.7, f = "e" },
+					{ t = "kill", quest = 10115, target = "Daggerfen Assassin", count = 3, oi = 1, map = 1946, x = 28.2, y = 22.1, f = "e" },
+					{ t = "kill", quest = 10115, target = "Daggerfen Muckdweller", count = 15, oi = 2, map = 1946, x = 28.2, y = 22.1, f = "e" },
 				},
 			},
 			{
-				note = "Taming a temporary pet soon. Learning Claw (Rank 7).",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "complete", quest = 4101, title = "Cleansing Felwood", note = "Stable Your Pet", map = 1452, x = 60.39, y = 37.92, f = "e" },
+					{ t = "kill", quest = 9835, target = "Ango'rosh Shaman", count = 5, oi = 1, map = 1946, x = 29.6, y = 28.3, f = "e" },
+					{ t = "kill", quest = 9835, target = "Ango'rosh Ogre", count = 10, oi = 2, map = 1946, x = 29.6, y = 28.3, f = "e" },
+					{ t = "collect", quest = 9708, itemName = "Mushroom Sample", count = 15, oi = 1, map = 1946, x = 29.6, y = 28.3, f = "e" },
 				},
 			},
 			{
-				note = "Outside the walls.",
 				goals = {
-					{ t = "getfp", location = "Everlook", map = 1452, x = 62.33, y = 36.61, f = "e" },
+					{ t = "turnin", quest = 9848, title = "Secrets of the Daggerfen", npc = 18019, npcName = "Timothy Daniels", map = 1946, x = 41.2, y = 28.7, f = "e" },
 				},
 			},
 			{
-				note = "Cast Tame Beast on an Angerclaw Mauler. Diseased brown bears. Kill enemies nearby.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "complete", quest = 4101, title = "Cleansing Felwood", note = "Learn the Claw (Rank 7) Pet Ability", map = 1448, x = 47.4, y = 15.4, f = "e" },
+					{ t = "turnin", quest = 9835, title = "Ango'rosh Encroachment", npc = 18008, npcName = "Ikuti", map = 1946, x = 41.9, y = 27.2, f = "e" },
+					{ t = "accept", quest = 9839, title = "Overlord Gorefist", npc = 18008, npcName = "Ikuti", map = 1946, x = 41.9, y = 27.2, f = "e" },
+					{ t = "turnin", quest = 10116, title = "Wanted: Chieftain Mummaki", npc = 18008, npcName = "Ikuti", map = 1946, x = 41.9, y = 27.2, f = "e" },
+					{ t = "turnin", quest = 10115, title = "Daggerfen Deviance", npc = 18008, npcName = "Ikuti", map = 1946, x = 41.9, y = 27.2, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "turnin", quest = 5156, title = "Verifying the Corruption", npc = 10921, npcName = "Taronn Redfeather", map = 1448, x = 50.89, y = 81.62, f = "e" },
+					{ t = "home", text = "Orebor Harborage", f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "turnin", quest = 939, title = "Flute of Xavaric", npc = 9116, npcName = "Eridan Bluewind", map = 1448, x = 51.35, y = 81.51, f = "e" },
-					{ t = "accept", quest = 4441, title = "Felbound Ancients", npc = 9116, npcName = "Eridan Bluewind", map = 1448, x = 51.35, y = 81.51, f = "e" },
-					{ t = "turnin", quest = 4906, title = "Further Corruption", npc = 9116, npcName = "Eridan Bluewind", map = 1448, x = 51.35, y = 81.51, f = "e" },
+					{ t = "accept", quest = 9834, title = "Natural Armor", npc = 18010, npcName = "Maktu", map = 1946, x = 41.6, y = 27.3, f = "e" },
 				},
 			},
 			{
-				note = "Walks around.",
 				goals = {
-					{ t = "turnin", quest = 5157, title = "Collection of the Corrupt Water", npc = 10922, npcName = "Greta Mosshoof", map = 1448, x = 51.21, y = 82.11, f = "e" },
-					{ t = "accept", quest = 5158, title = "Seeking Spiritual Aid", npc = 10922, npcName = "Greta Mosshoof", map = 1448, x = 51.21, y = 82.11, f = "e" },
+					{ t = "accept", quest = 9830, title = "Stinger Venom", npc = 18009, npcName = "Puluu", map = 1946, x = 40.8, y = 28.7, f = "e" },
+					{ t = "accept", quest = 9833, title = "Lines of Communication", npc = 18009, npcName = "Puluu", map = 1946, x = 40.8, y = 28.7, f = "e" },
+					{ t = "accept", quest = 9902, title = "The Terror of Marshlight Lake", npc = 18009, npcName = "Puluu", map = 1946, x = 40.8, y = 28.7, f = "e" },
 				},
 			},
 			{
-				note = "Walks around.",
 				goals = {
-					{ t = "turnin", quest = 4101, title = "Cleansing Felwood", npc = 9528, npcName = "Arathandris Silversky", map = 1448, x = 54.15, y = 86.83, f = "e" },
+					{ t = "kill", target = "Fenclaw Thrashers", count = 1, map = 1946, x = 48.1, y = 38.4, f = "e" },
+					{ t = "collect", quest = 9834, itemName = "Fenclaw Hide", count = 8, oi = 1, map = 1946, x = 48.1, y = 38.4, f = "e" },
 				},
 			},
 			{
-				note = "Walks around.",
 				goals = {
-					{ t = "collect", quest = 5882, item = 11511, itemName = "Cenarion Beacon", map = 1448, x = 54.15, y = 86.83, f = "e" },
+					{ t = "goto", map = 1946, x = 50.4, y = 40.8, f = "e" },
 				},
 			},
 			{
-				note = "Abandon your temporary pet.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "goto", text = "Retrieve Your Pet", map = 1439, x = 37.4, y = 44.28 },
+					{ t = "kill", quest = 9833, target = "Marshfang Slicer", count = 12, oi = 1, map = 1946, x = 35.9, y = 58.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9708, title = "Familiar Fungi", npc = 17831, npcName = "Watcher Leesa'oh", map = 1946, x = 23.3, y = 66.2, f = "e" },
+					{ t = "accept", quest = 9709, title = "Stealing Back the Mushrooms", npc = 17831, npcName = "Watcher Leesa'oh", map = 1946, x = 23.3, y = 66.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 9902, target = "Terrorclaw", count = 1, oi = 1, map = 1946, x = 22.4, y = 46.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", target = "Marshlight Bleeders", count = 1, map = 1946, x = 17.3, y = 38.4, f = "e" },
+					{ t = "collect", quest = 9830, itemName = "Marshlight Bleeder Venom", count = 6, oi = 1, map = 1946, x = 17.3, y = 38.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 9839, target = "Ango'rosh Mauler", count = 10, oi = 2, map = 1946, x = 17.3, y = 10.2, f = "e" },
+					{ t = "collect", quest = 9709, itemName = "Box of Mushrooms", count = 10, oi = 1, map = 1946, x = 17.3, y = 10.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 9839, target = "Overlord Gorefist", count = 1, oi = 1, map = 1946, x = 18.3, y = 7.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9830, title = "Stinger Venom", npc = 18009, npcName = "Puluu", map = 1946, x = 40.8, y = 28.7, f = "e" },
+					{ t = "turnin", quest = 9833, title = "Lines of Communication", npc = 18009, npcName = "Puluu", map = 1946, x = 40.8, y = 28.7, f = "e" },
+					{ t = "turnin", quest = 9902, title = "The Terror of Marshlight Lake", npc = 18009, npcName = "Puluu", map = 1946, x = 40.8, y = 28.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9834, title = "Natural Armor", npc = 18010, npcName = "Maktu", map = 1946, x = 41.6, y = 27.3, f = "e" },
+					{ t = "accept", quest = 9905, title = "Maktu's Revenge", npc = 18010, npcName = "Maktu", map = 1946, x = 41.6, y = 27.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9839, title = "Overlord Gorefist", npc = 18008, npcName = "Ikuti", map = 1946, x = 41.9, y = 27.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 64, f = "e" },
 				},
 			},
 		},

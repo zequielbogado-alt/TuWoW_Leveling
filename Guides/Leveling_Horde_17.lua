@@ -1,347 +1,468 @@
 -- TuWoW_Leveling — Guides/Leveling_Horde_17.lua
--- Compilado desde ZygorGuidesViewerForever y depurado para TuWoW 3.3.5a.
+-- Compilado desde Zygor Guides WotLK 3.3.5a oficial para TuWoW.
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/h-hillsbrad-foothills-30-32",
+		id = "zygor/leveling/h-levels-25-30",
 		pack = "guides",
-		title = "Hillsbrad Foothills",
+		title = "Levels (25-30) (Parte 1/2)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-arathi-highlands-32-33",
+		next = "zygor/leveling/h-levels-25-30-part-2",
 		author = "TuWoW & Zygor",
-		minLevel = 30,
-		maxLevel = 32,
-		zone = 1458,
+		minLevel = 25,
+		maxLevel = 30,
+		zone = 1456,
 		version = 1,
 		steps = {
 			{
-				note = "Deposit into the bank.",
 				goals = {
-					{ t = "complete", quest = 1146, title = "The Swarm Grows", note = "bank Belgrom's Sealed Note##5850", map = 1458, x = 65.97, y = 44.75, f = "e" },
-				},
-			},
-			{
-				note = "Collect from the bank.",
-				goals = {
-					{ t = "collect", quest = 529, item = 3564, itemName = "Shipment of Iron", map = 1458, x = 65.97, y = 44.75, f = "e" },
-					{ t = "collect", quest = 546, item = 3692, itemName = "Hillsbrad Human Skull", map = 1458, x = 65.97, y = 44.75, f = "e" },
-				},
-			},
-			{
-				note = "Needed to accept a quest soon.",
-				goals = {
-					{ t = "skill", level = 75, skill = "Cooking" },
-				},
-			},
-			{
-				only = { classes = { "HUNTER" } },
-				goals = {
-					{ t = "goto", text = "Train Crossbows", map = 1458, x = 57.31, y = 32.77 },
-					{ t = "goto", text = "Train Two-Handed Swords", map = 1458, x = 57.31, y = 32.77 },
+					{ t = "accept", quest = 1195, title = "The Sacred Flame (1)", npc = 4721, npcName = "Zangen Stonehoof", map = 1456, x = 55.0, y = 51.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 1164, title = "To Steal From Thieves", npc = 4486, npcName = "Genavie Callow", map = 1458, x = 63.83, y = 49.45, f = "e" },
-				},
-			},
-			{
-				only = { classes = { "SHAMAN" } },
-				goals = {
-					{ t = "goto", text = "Jump up and follow the path behind the tree", map = 1421, x = 42.03, y = 40.66 },
-					{ t = "use", item = 6637, itemName = "Water Sapta" },
-					{ t = "collect", quest = 63, item = 7812, itemName = "Corrupt Manifestation's Bracers", oi = 1, map = 1421, x = 38.28, y = 44.56, f = "e" },
-				},
-			},
-			{
-				only = { classes = { "SHAMAN" } },
-				goals = {
-					{ t = "turnin", quest = 63, title = "Call of Water", map = 1421, x = 38.28, y = 44.56, f = "e" },
-					{ t = "accept", quest = 100, title = "Call of Water", map = 1421, x = 38.28, y = 44.56, f = "e" },
-				},
-			},
-			{
-				only = { classes = { "SHAMAN" } },
-				goals = {
-					{ t = "turnin", quest = 100, title = "Call of Water", npc = 5895, npcName = "Minor Manifestation of Water", map = 1421, x = 38.75, y = 44.62, f = "e" },
-					{ t = "accept", quest = 96, title = "Call of Water", npc = 5895, npcName = "Minor Manifestation of Water", map = 1421, x = 38.75, y = 44.62, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "accept", quest = 509, title = "Elixir of Agony", npc = 2216, npcName = "Apothecary Lydon", map = 1424, x = 61.44, y = 19.06, f = "e" },
-				},
-			},
-			{
-				note = "Walks around.",
-				goals = {
-					{ t = "turnin", quest = 529, title = "Battle of Hillsbrad", npc = 2215, npcName = "High Executor Darthalia", map = 1424, x = 62.33, y = 20.45, f = "e" },
-					{ t = "accept", quest = 532, title = "Battle of Hillsbrad", npc = 2215, npcName = "High Executor Darthalia", map = 1424, x = 62.33, y = 20.45, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "accept", quest = 7321, title = "Soothing Turtle Bisque", npc = 2393, npcName = "Christoph Jeffcoat", map = 1424, x = 62.29, y = 19.04, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "accept", quest = 533, title = "Infiltration", npc = 2229, npcName = "Krusk", map = 1424, x = 63.24, y = 20.65, f = "e" },
+					{ t = "goto", map = 1456, x = 37.8, y = 66.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 552, title = "Helcular's Revenge", npc = 2429, npcName = "Novice Thaivand", map = 1424, x = 63.88, y = 19.66, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building. Follow the river north to travel to this location.",
-				only = { classes = { "WARRIOR" } },
-				goals = {
-					{ t = "turnin", quest = 1791, title = "The Windwatcher", npc = 6176, npcName = "Bath'rah the Windwatcher", map = 1416, x = 80.5, y = 66.92, f = "e" },
-					{ t = "accept", quest = 1712, title = "Cyclonian", npc = 6176, npcName = "Bath'rah the Windwatcher", map = 1416, x = 80.5, y = 66.92, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Turtle_Meat",
-				along = true,
-				note = "Turtles. Avoid Southshore. Don't vendor them.",
-				goals = {
-					{ t = "collect", quest = 7321, item = 3712, itemName = "Turtle Meat", count = 10, oi = 1, map = 1424, x = 67.8, y = 21.2, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "buy", item = 3713, itemName = "Soothing Spices", map = 1424, x = 62.29, y = 19.02, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 7321, title = "Soothing Turtle Bisque", npc = 2393, npcName = "Christoph Jeffcoat", map = 1424, x = 62.29, y = 19.04, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "accept", quest = 544, title = "Prison Break In", npc = 2410, npcName = "Magus Wordeen Voidglare", map = 1424, x = 61.6, y = 20.84, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "accept", quest = 556, title = "Stone Tokens", npc = 2437, npcName = "Keeper Bel'varil", map = 1424, x = 61.5, y = 20.93, f = "e" },
-				},
-			},
-			{
-				note = "Inside and outside the cave.",
-				goals = {
-					{ t = "collect", quest = 552, item = 3708, itemName = "Helcular's Rod", oi = 1, map = 1424, x = 46.18, y = 31.83, f = "e" },
-				},
-			},
-			{
-				note = "Difficult quest soon. Higher level enemies. Inside and outside the cave.",
-				goals = {
-					{ t = "goto", text = "ding 31", map = 1424, x = 46.18, y = 31.83 },
-				},
-			},
-			{
-				note = "Try to pull enemies individually. Avoid having to fight them all at once. Inside the building.",
-				goals = {
-					{ t = "goto", text = "Leave the cave", map = 1424, x = 46.18, y = 31.83 },
-					{ t = "kill", quest = 567, npc = 2448, target = "Clerk Horrace Whitesteed", oi = 1, map = 1424, x = 29.81, y = 42.42, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "kill", quest = 532, npc = 2335, target = "Magistrate Burnside", oi = 1, map = 1424, x = 29.67, y = 41.64, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "complete", quest = 532, title = "Battle of Hillsbrad", note = "Destroy the Hillsbrad Proclamation", map = 1424, x = 29.73, y = 41.75, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "collect", quest = 532, item = 3657, itemName = "Hillsbrad Town Registry", oi = 4, map = 1424, x = 29.52, y = 41.53, f = "e" },
-				},
-			},
-			{
-				label = "Kill_Hillsbrad_Councilmen",
-				along = true,
-				note = "Inside and outside the building. notinsticky",
-				goals = {
-					{ t = "kill", quest = 532, npc = 2387, target = "Hillsbrad Councilman", count = 4, oi = 2, map = 1424, x = 30.2, y = 42.2, f = "e" },
+					{ t = "collect", quest = 6393, itemName = "Incendrites", count = 10, oi = 1, map = 1456, x = 35.9, y = 65.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 532, title = "Battle of Hillsbrad", npc = 2215, npcName = "High Executor Darthalia", map = 1424, x = 62.33, y = 20.45, f = "e" },
-					{ t = "accept", quest = 539, title = "Battle of Hillsbrad", npc = 2215, npcName = "High Executor Darthalia", map = 1424, x = 62.33, y = 20.45, f = "e" },
+					{ t = "kill", quest = 6282, target = "Bloodfury Slayer", count = 7, oi = 3, map = 1456, x = 35.7, y = 68.7, f = "e" },
+					{ t = "kill", quest = 6282, target = "Bloodfury Roguefeather", count = 7, oi = 4, map = 1456, x = 35.7, y = 68.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 552, title = "Helcular's Revenge", npc = 2429, npcName = "Novice Thaivand", map = 1424, x = 63.88, y = 19.66, f = "e" },
-					{ t = "accept", quest = 553, title = "Helcular's Revenge", npc = 2429, npcName = "Novice Thaivand", map = 1424, x = 63.88, y = 19.66, f = "e" },
-				},
-			},
-			{
-				note = "Downstairs inside the cave.",
-				goals = {
-					{ t = "goto", text = "Enter the cave", map = 1424, x = 46.21, y = 31.86 },
-					{ t = "goto", text = "Run down the ramp and follow the path", map = 1424, x = 45.0, y = 28.07 },
-					{ t = "complete", quest = 553, title = "Helcular's Revenge", note = "Charge the Flame of Veraz", map = 1424, x = 44.04, y = 26.56, f = "e" },
-				},
-			},
-			{
-				note = "Upstairs inside the cave.",
-				goals = {
-					{ t = "goto", text = "Follow the path up to the top floor of the cave", map = 1424, x = 44.11, y = 28.54 },
-					{ t = "complete", quest = 553, title = "Helcular's Revenge", note = "Charge the Flame of Azel", map = 1424, x = 43.9, y = 28.05, f = "e" },
-				},
-			},
-			{
-				note = "Summons two guards at low health. Inside the mine.",
-				goals = {
-					{ t = "goto", text = "Leave the cave", map = 1424, x = 46.27, y = 31.94 },
-					{ t = "goto", text = "Enter the mine", map = 1424, x = 26.51, y = 58.61 },
-					{ t = "kill", quest = 539, npc = 2305, target = "Foreman Bonds", oi = 1, map = 1424, x = 31.21, y = 56.01, f = "e" },
-				},
-			},
-			{
-				note = "Multiple locations. Inside the mine.",
-				goals = {
-					{ t = "kill", quest = 567, npc = 2450, target = "Miner Hackett", oi = 3, map = 1424, x = 31.12, y = 58.62, f = "e" },
-				},
-			},
-			{
-				label = "Kill_Hillsbrad_Miners",
-				along = true,
-				note = "Inside the mine. notinsticky",
-				goals = {
-					{ t = "kill", quest = 539, npc = 2269, target = "Hillsbrad Miner", count = 10, oi = 2, map = 1424, x = 29.8, y = 54.6, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Hillsbrad_Human_Skulls",
-				along = true,
-				note = "Humans. Inside the mine. notinsticky",
-				goals = {
-					{ t = "collect", quest = 546, item = 3692, itemName = "Hillsbrad Human Skull", count = 30, oi = 1, map = 1424, x = 29.8, y = 54.6, f = "e" },
-				},
-			},
-			{
-				note = "Multiple exits. Use whichever you find first.",
-				goals = {
-					{ t = "complete", quest = 567, title = "Dangerous!", note = "Leave Azurelode Mine" },
-				},
-			},
-			{
-				note = "Walks around.",
-				goals = {
-					{ t = "collect", quest = 544, item = 3689, itemName = "Bloodstone Marble", oi = 2, map = 1416, x = 20.2, y = 84.08, f = "e" },
-				},
-			},
-			{
-				note = "Walks around. Inside the building.",
-				goals = {
-					{ t = "collect", quest = 544, item = 3690, itemName = "Bloodstone Shard", oi = 3, map = 1416, x = 20.35, y = 86.35, f = "e" },
-				},
-			},
-			{
-				note = "Walks around. Inside the building.",
-				goals = {
-					{ t = "collect", quest = 544, item = 3691, itemName = "Bloodstone Wedge", oi = 1, map = 1416, x = 20.01, y = 86.13, f = "e" },
-				},
-			},
-			{
-				note = "Guarded by Warden Belamoore. Level 36 mage. Kill Kegan while using doorways and stairs to line-of-sight her. Prevents her from casting spells and hurting you. Upstairs inside the building.",
-				goals = {
-					{ t = "collect", quest = 544, item = 3688, itemName = "Bloodstone Oval", oi = 4, map = 1416, x = 17.78, y = 83.2, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Worn_Stone_Tokens",
-				along = true,
-				note = "Don't hit Shield Guards with melee when they're glowing. Deals high damage. Humans.",
-				goals = {
-					{ t = "collect", quest = 556, item = 3714, itemName = "Worn Stone Token", count = 10, oi = 1, map = 1416, x = 20.2, y = 82.4, f = "e" },
-				},
-			},
-			{
-				note = "Inside the small cave.",
-				goals = {
-					{ t = "complete", quest = 553, title = "Helcular's Revenge", note = "Charge the Flame of Uzel", map = 1416, x = 37.54, y = 66.26, f = "e" },
+					{ t = "kill", quest = 6282, target = "Bloodfury Ambusher", count = 7, oi = 2, map = 1456, x = 32.6, y = 67.2, f = "e" },
+					{ t = "kill", quest = 6282, target = "Bloodfury Harpy", count = 7, oi = 1, map = 1456, x = 32.6, y = 67.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 533, item = 3601, itemName = "Syndicate Missive", oi = 1, map = 1416, x = 47.6, y = 82.8, f = "e" },
-				},
-			},
-			{
-				note = "Helps reach level 32 after quest turnins. Inside and outside the cave.",
-				goals = {
-					{ t = "goto", text = "ding 31,35550", map = 1424, x = 46.18, y = 31.83 },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 544, title = "Prison Break In", npc = 2410, npcName = "Magus Wordeen Voidglare", map = 1424, x = 61.6, y = 20.84, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 556, title = "Stone Tokens", npc = 2437, npcName = "Keeper Bel'varil", map = 1424, x = 61.5, y = 20.94, f = "e" },
+					{ t = "turnin", quest = 6393, title = "Elemental War", npc = 11862, npcName = "Tsunaman", map = 1456, x = 47.2, y = 64.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 676, title = "The Hammer May Fall", npc = 2770, npcName = "Tallow", map = 1424, x = 61.87, y = 19.58, f = "e" },
+					{ t = "turnin", quest = 6282, title = "Harpies Threaten", npc = 11860, npcName = "Maggran Earthbinder", map = 1456, x = 47.2, y = 61.2, f = "e" },
+					{ t = "accept", quest = 6283, title = "Bloodfury Bloodline", npc = 11860, npcName = "Maggran Earthbinder", map = 1456, x = 47.2, y = 61.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 546, title = "Souvenirs of Death", npc = 2418, npcName = "Deathguard Samsa", map = 1424, x = 62.11, y = 19.7, f = "e" },
+					{ t = "turnin", quest = 6381, title = "New Life", npc = 11864, npcName = "Tammra Windfield", map = 1456, x = 47.5, y = 58.4, f = "e" },
 				},
 			},
 			{
-				note = "Walks around.",
 				goals = {
-					{ t = "turnin", quest = 539, title = "Battle of Hillsbrad", npc = 2215, npcName = "High Executor Darthalia", map = 1424, x = 62.33, y = 20.46, f = "e" },
-					{ t = "turnin", quest = 567, title = "Dangerous!", npc = 2215, npcName = "High Executor Darthalia", map = 1424, x = 62.33, y = 20.46, f = "e" },
+					{ t = "goto", map = 1456, x = 68.7, y = 39.1, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "turnin", quest = 533, title = "Infiltration", npc = 2229, npcName = "Krusk", map = 1424, x = 63.24, y = 20.65, f = "e" },
+					{ t = "collect", quest = 1096, itemName = "Gerenzo's Mechanical Arm", count = 1, oi = 1, map = 1456, x = 64.1, y = 38.9, f = "e" },
 				},
 			},
 			{
-				note = "Avoid Southshore guards. Be extremely careful.",
 				goals = {
-					{ t = "goto", text = "Avoid Southshore", map = 1424, x = 54.96, y = 49.07 },
-					{ t = "goto", text = "Follow the path and be careful to avoid the guards", map = 1424, x = 53.54, y = 52.18 },
-					{ t = "turnin", quest = 553, title = "Helcular's Revenge", map = 1424, x = 52.78, y = 53.38, f = "e" },
+					{ t = "turnin", quest = 1096, title = "Gerenzo Wrenchwhistle", npc = 4201, npcName = "Ziz Fizziks", map = 1456, x = 59.0, y = 62.6, f = "e" },
 				},
 			},
 			{
-				note = "Large mushrooms.",
 				goals = {
-					{ t = "collect", quest = 509, item = 3502, itemName = "Mudsnout Blossoms", count = 6, oi = 1, map = 1424, x = 64.0, y = 59.9, f = "e" },
+					{ t = "home", text = "Splintertree Post", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 25, title = "Stonetalon Standstill", npc = 12737, npcName = "Mastok Wrilehiss", map = 1456, x = 73.7, y = 60.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 6441, title = "Satyr Horns", npc = 12724, npcName = "Pixel", map = 1456, x = 73.1, y = 61.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 6503, title = "Ashenvale Outrunners", npc = 12867, npcName = "Kuray'bin", map = 1456, x = 71.1, y = 68.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 6503, target = "Ashenvale Outrunner", count = 9, oi = 1, map = 1456, x = 72.0, y = 70.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 6544, title = "Torek's Assault", npc = 12858, npcName = "Torek", map = 1456, x = 68.3, y = 75.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1456, x = 48.9, y = 69.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 25, target = "Befouled Water Elemental", count = 12, oi = 2, map = 1456, x = 47.7, y = 69.7, f = "e" },
+					{ t = "collect", itemName = "the Befouled Water Globe", count = 1, map = 1456, x = 47.7, y = 69.7, f = "e" },
+					{ t = "accept", quest = 1918, title = "The Befouled Element", map = 1456, x = 47.7, y = 69.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", itemName = "Ursangous's Paw", count = 1, map = 1456, x = 42.3, y = 65.6, f = "e" },
+					{ t = "accept", quest = 23, title = "Ursangous's Paw", map = 1456, x = 42.3, y = 65.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 1195, item = 5867, itemName = "Etched Phial", count = 1, map = 1456, x = 57.9, y = 56.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 26, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 25, title = "Stonetalon Standstill", npc = 12737, npcName = "Mastok Wrilehiss", map = 1456, x = 73.7, y = 60.0, f = "e" },
+					{ t = "turnin", quest = 1918, title = "The Befouled Element", npc = 12737, npcName = "Mastok Wrilehiss", map = 1456, x = 73.7, y = 60.0, f = "e" },
+					{ t = "accept", quest = 824, title = "Je'neu of the Earthen Ring", npc = 12737, npcName = "Mastok Wrilehiss", map = 1456, x = 73.7, y = 60.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 23, title = "Ursangous's Paw", npc = 12696, npcName = "Senani Thunderheart", map = 1456, x = 73.8, y = 61.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 6544, title = "Torek's Assault", npc = 12877, npcName = "Ertog Ragetusk", map = 1456, x = 73.0, y = 62.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 6503, title = "Ashenvale Outrunners", npc = 12867, npcName = "Kuray'bin", map = 1456, x = 71.1, y = 68.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 1195, itemName = "Filled Etched Phial", count = 1, oi = 1, map = 1456, x = 60.2, y = 72.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", itemName = "Shadumbra's Head", count = 1, map = 1456, x = 58.7, y = 56.1, f = "e" },
+					{ t = "accept", quest = 24, title = "Shadumbra's Head", map = 1456, x = 58.7, y = 56.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 824, title = "Je'neu of the Earthen Ring", npc = 12736, npcName = "Je'neu Sancrea", map = 1456, x = 11.6, y = 34.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 216, title = "Between a Rock and a Thistlefur", npc = 12757, npcName = "Karang Amakkar", map = 1456, x = 11.9, y = 34.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 6462, title = "Troll Charm", npc = 12721, npcName = "Mitsuwa", map = 1456, x = 11.7, y = 34.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 6641, title = "Vorsha the Lasher", npc = 12717, npcName = "Muglash", map = 1456, x = 12.1, y = 34.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 6641, title = "Vorsha the Lasher", npc = 12863, npcName = "Warsong Runner", map = 1456, x = 12.2, y = 34.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1456, x = 31.3, y = 46.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 216, target = "Thistlefur Avenger", count = 8, oi = 1, map = 1456, x = 31.3, y = 44.8, f = "e" },
+					{ t = "kill", quest = 216, target = "Thistlefur Shaman", count = 8, oi = 2, map = 1456, x = 31.3, y = 44.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1456, x = 37.5, y = 32.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 6462, itemName = "Troll Charm", count = 8, oi = 1, map = 1456, x = 40.0, y = 32.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 6482, title = "Freedom to Ruul", npc = 12818, npcName = "Ruul Snowhoof", map = 1456, x = 41.5, y = 34.5, f = "e" },
+				},
+			},
+			{
+				note = "Leave the cave and go to 11.9,34.5",
+				goals = {
+					{ t = "turnin", quest = 216, title = "Between a Rock and a Thistlefur", npc = 12757, npcName = "Karang Amakkar", map = 1456, x = 11.9, y = 34.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 6462, title = "Troll Charm", npc = 12721, npcName = "Mitsuwa", map = 1456, x = 11.7, y = 34.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 6482, title = "Freedom to Ruul", npc = 12837, npcName = "Yama Snowhoof", map = 1456, x = 74.0, y = 61.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 24, title = "Shadumbra's Head", npc = 12696, npcName = "Senani Thunderheart", map = 1456, x = 73.8, y = 61.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 27, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 6441, itemName = "Satyr Horns", count = 16, oi = 1, map = 1456, x = 81.8, y = 52.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 6441, title = "Satyr Horns", npc = 12724, npcName = "Pixel", map = 1456, x = 73.1, y = 61.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 6283, itemName = "Bloodfury Ripper's Remains", count = 1, oi = 1, map = 1456, x = 30.8, y = 62.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 6283, title = "Bloodfury Bloodline", npc = 11860, npcName = "Maggran Earthbinder", map = 1456, x = 47.2, y = 61.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "home", text = "Sun Rock Retreat", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 1195, title = "The Sacred Flame (1)", npc = 4721, npcName = "Zangen Stonehoof", map = 1456, x = 55.0, y = 51.4, f = "e" },
+					{ t = "accept", quest = 1196, title = "The Sacred Flame (2)", npc = 4721, npcName = "Zangen Stonehoof", map = 1456, x = 55.0, y = 51.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 1196, title = "The Sacred Flame (2)", npc = 4722, npcName = "Rau Cliffrunner", map = 1441, x = 46.1, y = 51.7, f = "e" },
+					{ t = "accept", quest = 1197, title = "The Sacred Flame (3)", npc = 4722, npcName = "Rau Cliffrunner", map = 1441, x = 46.1, y = 51.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 9431, title = "A Different Approach", npc = 17093, npcName = "Magistrix Elosai", map = 1441, x = 46.2, y = 50.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 4767, title = "Wind Rider", npc = 10377, npcName = "Elu", map = 1441, x = 44.8, y = 49.0, f = "e" },
+				},
+			},
+			{
+				note = "The path to Dorn Plainstalker starts here,0.5|c",
+				goals = {
+					{ t = "goto", map = 1441, x = 54.7, y = 44.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 1149, title = "Test of Faith", npc = 2986, npcName = "Dorn Plainstalker", map = 1441, x = 53.9, y = 41.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1441, x = 26.4, y = 32.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 1149, title = "Test of Faith", npc = 2986, npcName = "Dorn Plainstalker", map = 1441, x = 53.9, y = 41.5, f = "e" },
+					{ t = "accept", quest = 1150, title = "Test of Endurance", npc = 2986, npcName = "Dorn Plainstalker", map = 1441, x = 53.9, y = 41.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 4865, title = "Serpent Wild", npc = 10428, npcName = "Motega Firemane", map = 1441, x = 21.5, y = 32.4, f = "e" },
+					{ t = "accept", quest = 5062, title = "Sacred Fire", npc = 10428, npcName = "Motega Firemane", map = 1441, x = 21.5, y = 32.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 5062, itemName = "Incendia Agave", count = 10, oi = 1, map = 1441, x = 33.6, y = 34.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1441, x = 14.5, y = 32.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 4767, itemName = "Highperch Wyvern Egg", count = 10, oi = 1, map = 1441, x = 10.7, y = 30.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1441, x = 13.2, y = 39.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 4770, title = "Homeward Bound", npc = 10427, npcName = "Pao'ka Swiftmountain", map = 1441, x = 17.9, y = 40.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 9431, itemName = "Purifying Earth", count = 2, oi = 1, map = 1441, x = 13.2, y = 26.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 5062, title = "Sacred Fire", npc = 4046, npcName = "Magatha Grimtotem", map = 1456, x = 69.9, y = 30.9, f = "e" },
+					{ t = "accept", quest = 5088, title = "Arikara", npc = 4046, npcName = "Magatha Grimtotem", map = 1456, x = 69.9, y = 30.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 4767, title = "Wind Rider", npc = 10377, npcName = "Elu", map = 1441, x = 44.8, y = 49.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "home", text = "Freewind Post", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1441, x = 31.2, y = 36.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", itemName = "Secret Note", count = 1, map = 1441, x = 31.8, y = 32.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", itemName = "Secret Note", count = 1, map = 1441, x = 33.8, y = 40.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", itemName = "Secret Note", count = 1, map = 1441, x = 39.3, y = 41.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 5088, itemName = "Arikara Serpent Skin", count = 1, oi = 2, map = 1441, x = 38.0, y = 35.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 5147, itemName = "Arnak's Hoof", count = 1, oi = 1, map = 1441, x = 38.9, y = 28.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 28, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 4904, title = "Free at Last", npc = 10646, npcName = "Lakota Windsong", map = 1441, x = 37.7, y = 26.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 4770, title = "Homeward Bound", npc = 10428, npcName = "Motega Firemane", map = 1441, x = 21.5, y = 32.4, f = "e" },
+					{ t = "turnin", quest = 5088, title = "Arikara", npc = 10428, npcName = "Motega Firemane", map = 1441, x = 21.5, y = 32.4, f = "e" },
+					{ t = "turnin", quest = 9431, title = "A Different Approach", npc = 10941, npcName = "Wizlo Bearingshiner", map = 1441, x = 21.5, y = 32.4, f = "e" },
+					{ t = "accept", quest = 9433, title = "A Dip in the Moonwell", npc = 10941, npcName = "Wizlo Bearingshiner", map = 1441, x = 21.5, y = 32.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1441, x = 44.1, y = 37.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 1197, itemName = "Cloven Hoof", count = 1, oi = 1, map = 1441, x = 42.0, y = 31.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 1131, itemName = "Steelsnap's Rib", count = 1, oi = 1, map = 1441, x = 17.6, y = 28.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 1197, title = "The Sacred Flame (3)", npc = 4722, npcName = "Rau Cliffrunner", map = 1441, x = 46.1, y = 51.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 4904, title = "Free at Last", npc = 10645, npcName = "Thalia Amberhide", map = 1441, x = 46.1, y = 51.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 5064, title = "Grimtotem Spying", npc = 10537, npcName = "Cliffwatcher Longhorn", map = 1441, x = 45.6, y = 50.8, f = "e" },
+					{ t = "turnin", quest = 5147, title = "Wanted - Arnak Grimtotem", npc = 10537, npcName = "Cliffwatcher Longhorn", map = 1441, x = 45.6, y = 50.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 1131, title = "Steelsnap", npc = 3441, npcName = "Melor Stonehoof", map = 1441, x = 61.5, y = 80.9, f = "e" },
+					{ t = "accept", quest = 1136, title = "Frostmaw", npc = 3441, npcName = "Melor Stonehoof", map = 1441, x = 61.5, y = 80.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", itemName = "the Assassination Note", count = 1, map = 1441, x = 22.1, y = 31.0, f = "e" },
+					{ t = "accept", quest = 4881, title = "Assassination Plot", map = 1441, x = 22.1, y = 31.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 4881, title = "Assassination Plot", npc = 10638, npcName = "Kanati Greycloud", map = 1441, x = 21.3, y = 32.1, f = "e" },
+					{ t = "accept", quest = 4966, title = "Protect Kanati Greycloud", npc = 10638, npcName = "Kanati Greycloud", map = 1441, x = 21.3, y = 32.1, f = "e" },
+					{ t = "turnin", quest = 4966, title = "Protect Kanati Greycloud", npc = 10638, npcName = "Kanati Greycloud", map = 1441, x = 21.3, y = 32.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1441, x = 12.0, y = 18.8, f = "e" },
 				},
 			},
 		},
@@ -350,202 +471,139 @@ end
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/h-arathi-highlands-32-33",
+		id = "zygor/leveling/h-levels-25-30-part-2",
 		pack = "guides",
-		title = "Arathi Highlands",
+		title = "Levels (25-30) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-thousand-needles-33-34",
+		next = "zygor/leveling/h-levels-30-35",
 		author = "TuWoW & Zygor",
-		minLevel = 32,
-		maxLevel = 33,
-		zone = 1417,
+		minLevel = 25,
+		maxLevel = 30,
+		zone = 1456,
 		version = 1,
 		steps = {
 			{
-				note = "Inside the cave.",
 				goals = {
-					{ t = "kill", quest = 676, npc = 2564, target = "Boulderfist Enforcer", count = 10, oi = 2, map = 1417, x = 34.81, y = 44.14, f = "e" },
-				},
-			},
-			{
-				label = "Kill_Boulderfist_Ogres",
-				along = true,
-				note = "Outside the cave. notinsticky",
-				goals = {
-					{ t = "goto", text = "Leave the cave", map = 1417, x = 34.82, y = 44.15 },
-					{ t = "kill", quest = 676, npc = 2562, target = "Boulderfist Ogre", count = 8, oi = 1, map = 1417, x = 37.6, y = 43.4, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "goto", text = "Leave the cave", map = 1417, x = 34.82, y = 44.15 },
-					{ t = "collect", quest = 1164, item = 5832, itemName = "Marcel's Head", oi = 2, map = 1417, x = 54.14, y = 38.16, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "collect", quest = 1164, item = 5830, itemName = "Kenata's Head", oi = 1, map = 1417, x = 56.37, y = 36.08, f = "e" },
+					{ t = "collect", quest = 9433, itemName = "Thalanaar Moonwell Water", count = 1, oi = 1, map = 1441, x = 9.5, y = 18.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 642, title = "The Princess Trapped", map = 1417, x = 62.48, y = 33.8, f = "e" },
+					{ t = "turnin", quest = 9433, title = "A Dip in the Moonwell", npc = 10941, npcName = "Wizlo Bearingshiner", map = 1441, x = 21.5, y = 32.4, f = "e" },
+					{ t = "accept", quest = 9434, title = "Testing the Tonic", npc = 10941, npcName = "Wizlo Bearingshiner", map = 1441, x = 21.5, y = 32.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "getfp", location = "Hammerfall", map = 1417, x = 73.06, y = 32.68, f = "e" },
+					{ t = "level", level = 29, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 676, title = "The Hammer May Fall", npc = 2771, npcName = "Drum Fel", map = 1417, x = 74.24, y = 33.91, f = "e" },
-					{ t = "accept", quest = 677, title = "Call to Arms", npc = 2771, npcName = "Drum Fel", map = 1417, x = 74.24, y = 33.91, f = "e" },
-				},
-			},
-			{
-				note = "Walks around.",
-				goals = {
-					{ t = "accept", quest = 655, title = "Hammerfall", npc = 2792, npcName = "Gor'mul", map = 1417, x = 72.67, y = 34.12, f = "e" },
+					{ t = "collect", quest = 1150, itemName = "Grenka's Claw", count = 1, oi = 1, map = 1441, x = 26.0, y = 55.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 655, title = "Hammerfall", npc = 2706, npcName = "Tor'gan", map = 1417, x = 74.71, y = 36.29, f = "e" },
-					{ t = "accept", quest = 672, title = "Raising Spirits", npc = 2706, npcName = "Tor'gan", map = 1417, x = 74.71, y = 36.29, f = "e" },
-					{ t = "accept", quest = 671, title = "Foul Magics", npc = 2706, npcName = "Tor'gan", map = 1417, x = 74.71, y = 36.29, f = "e" },
-				},
-			},
-			{
-				note = "Avoid Refuge Point. Careful, stealthed enemies. More stealthed along the ridges. Also inside buildings.",
-				goals = {
-					{ t = "collect", quest = 671, item = 4495, itemName = "Bloodstone Amulet", count = 10, oi = 1, map = 1417, x = 33.4, y = 30.0, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Highland_Raptor_Eyes",
-				along = true,
-				note = "Raptors. Avoid Refuge Pointe. notinsticky",
-				goals = {
-					{ t = "collect", quest = 672, item = 4512, itemName = "Highland Raptor Eye", count = 10, oi = 1, map = 1417, x = 42.4, y = 40.4, f = "e" },
+					{ t = "turnin", quest = 9434, title = "Testing the Tonic", npc = 17093, npcName = "Magistrix Elosai", map = 1441, x = 46.2, y = 50.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 677, npc = 2555, target = "Witherbark Witch Doctor", count = 8, oi = 3, map = 1417, x = 65.8, y = 68.0, f = "e" },
-					{ t = "kill", quest = 677, npc = 2556, target = "Witherbark Headhunter", count = 10, oi = 2, map = 1417, x = 65.8, y = 68.0, f = "e" },
-					{ t = "kill", quest = 677, npc = 2554, target = "Witherbark Axe Thrower", count = 10, oi = 1, map = 1417, x = 65.8, y = 68.0, f = "e" },
-				},
-			},
-			{
-				note = "Helps reach level 33 after quest turnins.",
-				goals = {
-					{ t = "goto", text = "ding 32,43760", map = 1417, x = 65.8, y = 68.0 },
+					{ t = "turnin", quest = 1150, title = "Test of Endurance", npc = 2986, npcName = "Dorn Plainstalker", map = 1441, x = 54.0, y = 41.0, f = "e" },
+					{ t = "accept", quest = 1151, title = "Test of Strength", npc = 2986, npcName = "Dorn Plainstalker", map = 1441, x = 54.0, y = 41.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 671, title = "Foul Magics", npc = 2706, npcName = "Tor'gan", map = 1417, x = 74.71, y = 36.29, f = "e" },
-					{ t = "turnin", quest = 672, title = "Raising Spirits", npc = 2706, npcName = "Tor'gan", map = 1417, x = 74.71, y = 36.29, f = "e" },
-					{ t = "accept", quest = 674, title = "Raising Spirits", npc = 2706, npcName = "Tor'gan", map = 1417, x = 74.71, y = 36.29, f = "e" },
-				},
-			},
-			{
-				note = "Walks around.",
-				goals = {
-					{ t = "turnin", quest = 674, title = "Raising Spirits", npc = 2792, npcName = "Gor'mul", map = 1417, x = 72.67, y = 34.12, f = "e" },
-					{ t = "accept", quest = 675, title = "Raising Spirits", npc = 2792, npcName = "Gor'mul", map = 1417, x = 72.67, y = 34.12, f = "e" },
+					{ t = "collect", quest = 1151, itemName = "Fragments of Rok'Alim", count = 1, oi = 1, map = 1441, x = 20.6, y = 39.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 675, title = "Raising Spirits", npc = 2706, npcName = "Tor'gan", map = 1417, x = 74.71, y = 36.29, f = "e" },
+					{ t = "turnin", quest = 1151, title = "Test of Strength", npc = 2986, npcName = "Dorn Plainstalker", map = 1441, x = 54.0, y = 41.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 677, title = "Call to Arms", npc = 2771, npcName = "Drum Fel", map = 1417, x = 74.24, y = 33.91, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 509, title = "Elixir of Agony", npc = 2216, npcName = "Apothecary Lydon", map = 1424, x = 61.44, y = 19.06, f = "e" },
-					{ t = "accept", quest = 513, title = "Elixir of Agony", npc = 2216, npcName = "Apothecary Lydon", map = 1424, x = 61.44, y = 19.06, f = "e" },
-				},
-			},
-			{
-				note = "Upstairs inside the building.",
-				only = { classes = { "MAGE" } },
-				goals = {
-					{ t = "train", npc = 4568, npcName = "Anastasia Hartwell", map = 1458, x = 85.14, y = 10.03, f = "e" },
+					{ t = "accept", quest = 1088, title = "Ordanus", npc = 4198, npcName = "Braelyn Firehand", map = 1441, x = 45.9, y = 60.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 1164, title = "To Steal From Thieves", npc = 4486, npcName = "Genavie Callow", map = 1458, x = 63.84, y = 49.45, f = "e" },
-				},
-			},
-			{
-				note = "Collect from the bank.",
-				goals = {
-					{ t = "collect", quest = 1112, item = 5800, itemName = "Kravel's Parts", map = 1458, x = 65.97, y = 44.75, f = "e" },
-					{ t = "collect", quest = 1146, item = 5850, itemName = "Belgrom's Sealed Note", map = 1458, x = 65.97, y = 44.75, f = "e" },
+					{ t = "accept", quest = 9534, title = "Destroy the Legion", npc = 17355, npcName = "Valusha", map = 1440, x = 73.2, y = 60.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", text = "Follow the path down", map = 1458, x = 52.84, y = 77.63 },
-					{ t = "turnin", quest = 513, title = "Elixir of Agony", npc = 2055, npcName = "Master Apothecary Faranell", map = 1458, x = 48.82, y = 69.28, f = "e" },
+					{ t = "kill", quest = 9534, target = "Mannoroc Lasher", count = 6, oi = 1, map = 1440, x = 80.0, y = 68.0, f = "e" },
+					{ t = "kill", quest = 9534, target = "Roaming Felguard", count = 6, oi = 2, map = 1440, x = 80.0, y = 68.0, f = "e" },
+					{ t = "kill", quest = 9534, target = "Searing Infernal", count = 6, oi = 3, map = 1440, x = 80.0, y = 68.0, f = "e" },
+					{ t = "accept", quest = 9535, title = "Diabolical Plans", map = 1440, x = 80.0, y = 68.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", text = "Leave the Apothecarium", map = 1458, x = 47.84, y = 76.46 },
-					{ t = "goto", text = "Follow the path down", map = 1458, x = 52.18, y = 64.42 },
-					{ t = "turnin", quest = 550, title = "Battle of Hillsbrad", npc = 2425, npcName = "Varimathras", map = 1458, x = 56.24, y = 92.22, f = "e" },
+					{ t = "turnin", quest = 9534, title = "Destroy the Legion", npc = 17355, npcName = "Valusha", map = 1440, x = 73.2, y = 60.4, f = "e" },
+					{ t = "turnin", quest = 9535, title = "Diabolical Plans", npc = 17355, npcName = "Valusha", map = 1440, x = 73.2, y = 60.4, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "PRIEST" } },
 				goals = {
-					{ t = "train", npc = 4608, npcName = "Father Lazarus", map = 1458, x = 47.57, y = 18.9, f = "e" },
+					{ t = "accept", quest = 2, title = "Sharptalon's Claw", map = 1440, x = 74.0, y = 70.0, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "ROGUE" } },
 				goals = {
-					{ t = "train", npc = 4582, npcName = "Carolyn Ward", map = 1458, x = 83.86, y = 72.07, f = "e" },
+					{ t = "collect", quest = 1088, itemName = "Ordanus' Head", count = 1, oi = 1, map = 1440, x = 62.1, y = 51.2, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "WARLOCK" } },
 				goals = {
-					{ t = "train", npc = 4563, npcName = "Kaal Soulreaper", map = 1458, x = 86.21, y = 15.93, f = "e" },
+					{ t = "turnin", quest = 2, title = "Sharptalon's Claw", npc = 12696, npcName = "Senani Thunderheart", map = 1440, x = 73.8, y = 61.5, f = "e" },
+					{ t = "accept", quest = 247, title = "The Hunt Completed", npc = 12696, npcName = "Senani Thunderheart", map = 1440, x = 73.8, y = 61.5, f = "e" },
 				},
 			},
 			{
-				note = "Buy available Grimoires. Inside the building.",
-				only = { classes = { "WARLOCK" } },
 				goals = {
-					{ t = "vendor", npc = 5753, npcName = "Martha Strain", map = 1458, x = 85.7, y = 16.08, f = "e" },
+					{ t = "turnin", quest = 1088, title = "Ordanus", npc = 4198, npcName = "Braelyn Firehand", map = 1442, x = 45.9, y = 60.4, f = "e" },
+					{ t = "accept", quest = 1089, title = "The Den", npc = 4198, npcName = "Braelyn Firehand", map = 1442, x = 45.9, y = 60.4, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "WARRIOR" } },
 				goals = {
-					{ t = "train", npc = 4595, npcName = "Baltus Fowler", map = 1458, x = 47.4, y = 17.29, f = "e" },
+					{ t = "home", text = "Sun Rock Retreat", f = "e" },
 				},
 			},
 			{
-				only = { classes = { "DRUID" } },
 				goals = {
-					{ t = "train", npc = 12042, npcName = "Loganaar", map = 1450, x = 52.53, y = 40.57, f = "e" },
+					{ t = "collect", quest = 1089, item = 5687, itemName = "Gatekeeper's Key", count = 1, map = 1442, x = 29.9, y = 15.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 1089, itemName = "Claw Key", count = 1, oi = 2, map = 1442, x = 29.5, y = 15.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 1089, itemName = "Barrow Key", count = 1, oi = 3, map = 1442, x = 28.0, y = 13.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 1089, itemName = "Sleepers' Key", count = 1, oi = 1, map = 1442, x = 25.6, y = 11.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 1089, title = "The Den", map = 1442, x = 26.6, y = 10.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 30, f = "e" },
 				},
 			},
 		},

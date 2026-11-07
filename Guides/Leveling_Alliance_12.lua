@@ -1,313 +1,562 @@
 -- TuWoW_Leveling — Guides/Leveling_Alliance_12.lua
--- Compilado desde ZygorGuidesViewerForever y depurado para TuWoW 3.3.5a.
+-- Compilado desde Zygor Guides WotLK 3.3.5a oficial para TuWoW.
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/a-darkshore-20-21",
+		id = "zygor/leveling/a-death-knight-55-60-part-2",
 		pack = "guides",
-		title = "Darkshore",
+		title = "Death Knight (55-60) (Parte 2/3)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-ashenvale-and-stonetalon-mountains-21-24",
+		next = "zygor/leveling/a-death-knight-55-60-part-3",
 		author = "TuWoW & Zygor",
-		minLevel = 20,
-		maxLevel = 21,
-		zone = 1439,
+		minLevel = 55,
+		maxLevel = 60,
+		zone = 1428,
 		version = 1,
 		steps = {
 			{
 				goals = {
-					{ t = "accept", quest = 947, title = "Cave Mushrooms", npc = 3583, npcName = "Barithras Moonshade", map = 1439, x = 37.32, y = 43.64, f = "e" },
+					{ t = "turnin", quest = 12779, title = "An End To All Things...", npc = 29110, npcName = "The Lich King", x = 53.6, y = 36.9, f = "e" },
+					{ t = "accept", quest = 12800, title = "The Lich King's Command", npc = 29110, npcName = "The Lich King", x = 53.6, y = 36.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 3765, title = "The Corruption Abroad", npc = 8997, npcName = "Gershala Nightwhisper", map = 1439, x = 38.33, y = 43.04, f = "e" },
+					{ t = "goto", x = 50.4, y = 31.9, f = "e" },
+				},
+			},
+			{
+				note = "Follow the path northwest to 33.9,30.4",
+				goals = {
+					{ t = "turnin", quest = 12800, title = "The Lich King's Command", npc = 31082, npcName = "Scourge Commander Thalanor", x = 33.9, y = 30.4, f = "e" },
+					{ t = "accept", quest = 12801, title = "The Light of Dawn", npc = 31082, npcName = "Scourge Commander Thalanor", x = 33.9, y = 30.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 2139, title = "Tharnariun's Hope", npc = 3701, npcName = "Tharnariun Treetender", map = 1439, x = 38.84, y = 43.42, f = "e" },
+					{ t = "talk", npc = 29173, npcName = "Highlord Darion Mograine", x = 34.4, y = 31.1, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
+				note = "Talk to Highlord Darion Mograine after the battle",
 				goals = {
-					{ t = "accept", quest = 986, title = "A Lost Master", npc = 3693, npcName = "Terenthis", map = 1439, x = 39.37, y = 43.48, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "accept", quest = 4763, title = "The Blackwood Corrupted", npc = 3649, npcName = "Thundris Windweaver", map = 1439, x = 37.4, y = 40.13, f = "e" },
+					{ t = "turnin", quest = 12801, title = "The Light of Dawn", f = "e" },
+					{ t = "accept", quest = 13165, title = "Taking Back Acherus", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 729, title = "The Absent Minded Prospector", npc = 2913, npcName = "Archaeologist Hollee", map = 1439, x = 37.44, y = 41.84, f = "e" },
+					{ t = "turnin", quest = 13165, title = "Taking Back Acherus", npc = 29173, npcName = "Highlord Darion Mograine", x = 83.4, y = 49.4, f = "e" },
+					{ t = "accept", quest = 13166, title = "The Battle For The Ebon Hold", npc = 29173, npcName = "Highlord Darion Mograine", x = 83.4, y = 49.4, f = "e" },
+				},
+			},
+			{
+				note = "Stand on the purple circle to teleport upstairs,0.5|noway|c",
+				goals = {
+					{ t = "goto", x = 82.7, y = 47.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 12346, itemName = "Empty Cleansing Bowl" },
-					{ t = "collect", quest = 4763, item = 12347, itemName = "Filled Cleansing Bowl", map = 1439, x = 37.78, y = 44.02, f = "e" },
+					{ t = "kill", quest = 13166, target = "Scourge", count = 10, oi = 2, x = 83.0, y = 48.0, f = "e" },
+					{ t = "kill", quest = 13166, npc = 31099, target = "Patchwerk", count = 1, oi = 1, x = 83.0, y = 48.0, f = "e" },
+				},
+			},
+			{
+				note = "Stand on the purple circle to teleport downstairs,0.5|noway|c",
+				goals = {
+					{ t = "goto", x = 83.0, y = 48.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 1003, title = "Buzzbox 525", map = 1439, x = 51.28, y = 24.58, f = "e" },
+					{ t = "turnin", quest = 13166, title = "The Battle For The Ebon Hold", npc = 31084, npcName = "Highlord Darion Mograine", x = 83.4, y = 49.4, f = "e" },
+					{ t = "accept", quest = 13188, title = "Where Kings Walk", npc = 31084, npcName = "Highlord Darion Mograine", x = 83.4, y = 49.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 2098, title = "Gyromast's Retrieval", npc = 6667, npcName = "Gelkak Gyromast", map = 1439, x = 56.65, y = 13.48, f = "e" },
-				},
-			},
-			{
-				note = "Murlocs. Underwater.",
-				goals = {
-					{ t = "collect", quest = 2098, item = 7499, itemName = "Middle of Gelkak's Key", oi = 2, map = 1439, x = 54.95, y = 12.16, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Bottom_Of_Gelkaks_Key",
-				along = true,
-				note = "Crabs.",
-				goals = {
-					{ t = "collect", quest = 2098, item = 7500, itemName = "Bottom of Gelkak's Key", oi = 3, map = 1439, x = 54.76, y = 17.34, f = "e" },
-				},
-			},
-			{
-				note = "Large walking birds.",
-				goals = {
-					{ t = "collect", quest = 2098, item = 7498, itemName = "Top of Gelkak's Key", oi = 1, map = 1439, x = 60.55, y = 12.03, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Fine_Moonstalker_Pelts",
-				along = true,
-				note = "Black tigers.",
-				goals = {
-					{ t = "collect", quest = 986, item = 5386, itemName = "Fine Moonstalker Pelt", count = 5, oi = 1, map = 1439, x = 61.41, y = 9.81, f = "e" },
+					{ t = "level", level = 58, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 2098, title = "Gyromast's Retrieval", npc = 6667, npcName = "Gelkak Gyromast", map = 1439, x = 56.65, y = 13.48, f = "e" },
-				},
-			},
-			{
-				note = "Entrance of the cave.",
-				only = { classes = { "DRUID" } },
-				goals = {
-					{ t = "use", item = 15844, itemName = "Empty Cliffspring Falls Sampler" },
-					{ t = "collect", quest = 6122, item = 15845, itemName = "Filled Cliffspring Falls Sampler", oi = 1, map = 1439, x = 54.93, y = 33.32, f = "e" },
-				},
-			},
-			{
-				note = "Brown mushrooms. Upstairs inside the cave.",
-				goals = {
-					{ t = "goto", text = "Enter the cave", map = 1439, x = 54.97, y = 33.37 },
-					{ t = "collect", quest = 947, item = 5270, itemName = "Death Cap", oi = 2, map = 1439, x = 55.75, y = 36.19, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Scaber_Stalks",
-				along = true,
-				note = "Blue mushrooms. Inside the cave. notinsticky",
-				goals = {
-					{ t = "collect", quest = 947, item = 5271, itemName = "Scaber Stalk", count = 5, oi = 1, map = 1439, x = 54.97, y = 33.37, f = "e" },
-				},
-			},
-			{
-				note = "May be attacked.",
-				goals = {
-					{ t = "goto", text = "Leave the cave", map = 1439, x = 54.97, y = 33.37 },
-					{ t = "collect", quest = 4763, item = 12341, itemName = "Blackwood Fruit Sample", map = 1439, x = 52.87, y = 33.38, f = "e" },
-				},
-			},
-			{
-				note = "Inside the small cave.",
-				goals = {
-					{ t = "goto", text = "Follow the path up", map = 1439, x = 52.4, y = 35.94 },
-					{ t = "kill", quest = 2139, npc = 6788, target = "Den Mother", oi = 1, map = 1439, x = 51.48, y = 38.26, f = "e" },
-				},
-			},
-			{
-				note = "May be attacked.",
-				goals = {
-					{ t = "collect", quest = 4763, item = 12342, itemName = "Blackwood Grain Sample", map = 1439, x = 50.67, y = 34.99, f = "e" },
-				},
-			},
-			{
-				note = "May be attacked.",
-				goals = {
-					{ t = "collect", quest = 4763, item = 12343, itemName = "Blackwood Nut Sample", map = 1439, x = 51.83, y = 33.56, f = "e" },
-				},
-			},
-			{
-				note = "Appears nearby. Appears on the ground.",
-				goals = {
-					{ t = "use", item = 12347, itemName = "Filled Cleansing Bowl" },
-					{ t = "collect", quest = 4763, item = 12355, itemName = "Talisman of Corruption", oi = 1, map = 1439, x = 52.41, y = 33.44, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				only = { classes = { "DRUID" } },
-				goals = {
-					{ t = "turnin", quest = 6122, title = "The Principal Source", npc = 3702, npcName = "Alanndarian Nightsong", map = 1439, x = 37.69, y = 40.66, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 4763, title = "The Blackwood Corrupted", npc = 3649, npcName = "Thundris Windweaver", map = 1439, x = 37.4, y = 40.13, f = "e" },
+					{ t = "turnin", quest = 13188, title = "Where Kings Walk", npc = 29611, npcName = "King Varian Wrynn", x = 80.0, y = 38.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 947, title = "Cave Mushrooms", npc = 3583, npcName = "Barithras Moonshade", map = 1439, x = 37.32, y = 43.64, f = "e" },
-					{ t = "accept", quest = 948, title = "Onu", npc = 3583, npcName = "Barithras Moonshade", map = 1439, x = 37.32, y = 43.64, f = "e" },
+					{ t = "accept", quest = 3823, title = "Extinguish the Firegut", npc = 9177, npcName = "Oralius", map = 1428, x = 84.6, y = 68.7, f = "e" },
+					{ t = "accept", quest = 4283, title = "FIFTY! YEP!", npc = 9177, npcName = "Oralius", map = 1428, x = 84.6, y = 68.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 4740, title = "WANTED: Murkdeep!", map = 1439, x = 37.23, y = 44.23, f = "e" },
+					{ t = "kill", quest = 3823, target = "Firegut Brute", count = 7, oi = 3, map = 1428, x = 74.2, y = 48.0, f = "e" },
+					{ t = "kill", quest = 3823, target = "Firegut Ogre", count = 7, oi = 2, map = 1428, x = 74.2, y = 48.0, f = "e" },
+					{ t = "kill", quest = 3823, target = "Firegut Ogre Mage", count = 15, oi = 1, map = 1428, x = 74.2, y = 48.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 2139, title = "Tharnariun's Hope", npc = 3701, npcName = "Tharnariun Treetender", map = 1439, x = 38.84, y = 43.41, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 986, title = "A Lost Master", npc = 3693, npcName = "Terenthis", map = 1439, x = 39.37, y = 43.48, f = "e" },
-					{ t = "accept", quest = 993, title = "A Lost Master", npc = 3693, npcName = "Terenthis", map = 1439, x = 39.37, y = 43.48, f = "e" },
+					{ t = "collect", quest = 4283, itemName = "Blackrock Medallion", count = 50, oi = 1, map = 1428, x = 44.4, y = 36.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 952, title = "Grove of the Ancients", npc = 3616, npcName = "Onu", map = 1439, x = 43.55, y = 76.29, f = "e" },
-					{ t = "turnin", quest = 948, title = "Onu", npc = 3616, npcName = "Onu", map = 1439, x = 43.55, y = 76.29, f = "e" },
-					{ t = "accept", quest = 944, title = "The Master's Glaive", npc = 3616, npcName = "Onu", map = 1439, x = 43.55, y = 76.29, f = "e" },
+					{ t = "turnin", quest = 3823, title = "Extinguish the Firegut", npc = 9177, npcName = "Oralius", map = 1428, x = 84.6, y = 68.7, f = "e" },
+					{ t = "accept", quest = 3824, title = "Gor'tesh the Brute Lord", npc = 9177, npcName = "Oralius", map = 1428, x = 84.6, y = 68.7, f = "e" },
+					{ t = "turnin", quest = 4283, title = "FIFTY! YEP!", npc = 9177, npcName = "Oralius", map = 1428, x = 84.6, y = 68.7, f = "e" },
 				},
 			},
 			{
-				note = "Murlocs. Groups of murlocs run appear near the water. They run into the camp. Stand away from the camp for safety. Eventually appears.",
+				note = "Go northwest to 39.3,55.4",
 				goals = {
-					{ t = "kill", quest = 4740, npc = 10323, target = "Murkdeep", oi = 1, map = 1439, x = 36.51, y = 76.59, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 4730, title = "Beached Sea Creature", map = 1439, x = 32.73, y = 80.82, f = "e" },
-				},
-			},
-			{
-				note = "Careful to not pull multiple enemies.",
-				goals = {
-					{ t = "accept", quest = 4731, title = "Beached Sea Turtle", map = 1439, x = 31.7, y = 83.7, f = "e" },
-				},
-			},
-			{
-				note = "Careful to not pull multiple enemies.",
-				goals = {
-					{ t = "accept", quest = 4732, title = "Beached Sea Turtle", map = 1439, x = 31.27, y = 85.54, f = "e" },
-				},
-			},
-			{
-				note = "Careful, enemies hidden by terrain. Try not pull multiple enemies.",
-				goals = {
-					{ t = "accept", quest = 4733, title = "Beached Sea Creature", map = 1439, x = 31.29, y = 87.54, f = "e" },
-				},
-			},
-			{
-				note = "Escort quest. Wait until he respawns, if missing.",
-				goals = {
-					{ t = "turnin", quest = 729, title = "The Absent Minded Prospector", npc = 2917, npcName = "Prospector Remtravel", map = 1439, x = 35.73, y = 83.7, f = "e" },
-				},
-			},
-			{
-				note = "Escort quest. Wait until he respawns, if missing.",
-				goals = {
-					{ t = "accept", quest = 731, title = "The Absent Minded Prospector", npc = 2917, npcName = "Prospector Remtravel", map = 1439, x = 35.73, y = 83.7, f = "e" },
-				},
-			},
-			{
-				note = "Follow and protect Prospector Remtravel. He's weak and can die easily. Get enemies off him quckly. Troggs ambush 3 times.",
-				goals = {
-					{ t = "complete", quest = 731, title = "The Absent Minded Prospector", note = "Escort Prospector Remtravel", map = 1439, x = 35.73, y = 83.7, f = "e" },
+					{ t = "collect", quest = 3824, itemName = "Gor'tesh's Lopped Off Head", count = 1, oi = 1, map = 1428, x = 39.3, y = 55.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "complete", quest = 944, title = "The Master's Glaive", note = "Enter the Master's Glaive", map = 1439, x = 39.51, y = 86.67, f = "e" },
+					{ t = "turnin", quest = 3824, title = "Gor'tesh the Brute Lord", npc = 9177, npcName = "Oralius", map = 1428, x = 84.6, y = 68.7, f = "e" },
+					{ t = "accept", quest = 3825, title = "Ogre Head On A Stick = Party", npc = 9177, npcName = "Oralius", map = 1428, x = 84.6, y = 68.7, f = "e" },
 				},
 			},
 			{
-				note = "On the table.",
+				note = "Go north to to the top of Dreadmaul Rock 81.0,46.8",
 				goals = {
-					{ t = "use", item = 5251, itemName = "Phial of Scrying" },
-					{ t = "turnin", quest = 944, title = "The Master's Glaive", map = 1439, x = 38.53, y = 86.17, f = "e" },
-					{ t = "accept", quest = 949, title = "The Twilight Camp", map = 1439, x = 38.53, y = 86.17, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 949, title = "The Twilight Camp", map = 1439, x = 38.54, y = 86.05, f = "e" },
-					{ t = "accept", quest = 950, title = "Return to Onu", map = 1439, x = 38.54, y = 86.05, f = "e" },
-				},
-			},
-			{
-				note = "Escort quest. Wait until she respawns, if missing. Walks around.",
-				goals = {
-					{ t = "accept", quest = 945, title = "Therylune's Escape", npc = 3584, npcName = "Therylune", map = 1439, x = 38.64, y = 87.34, f = "e" },
-				},
-			},
-			{
-				note = "Follow and protect Therylune.",
-				goals = {
-					{ t = "complete", quest = 945, title = "Therylune's Escape", note = "Escort Therylune Away from the Master's Glaive", map = 1439, x = 40.51, y = 87.09, f = "e" },
+					{ t = "goto", map = 1428, x = 81.0, y = 46.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 5352, itemName = "Book: The Powers Below" },
-					{ t = "accept", quest = 968, title = "The Powers Below" },
-				},
-			},
-			{
-				note = "Escort quest. Wait until he respawns, if missing. Inside the small cave.",
-				goals = {
-					{ t = "turnin", quest = 993, title = "A Lost Master", npc = 3692, npcName = "Volcor", map = 1439, x = 45.01, y = 85.3, f = "e" },
-					{ t = "accept", quest = 995, title = "Escape Through Stealth", npc = 3692, npcName = "Volcor", map = 1439, x = 45.01, y = 85.3, f = "e" },
-					{ t = "accept", quest = 994, title = "Escape Through Force", npc = 3692, npcName = "Volcor", map = 1439, x = 45.01, y = 85.3, f = "e" },
-				},
-			},
-			{
-				note = "Follow and protect Volcor. Let him get attacked first. Otherwise he won't stop to help you fight.",
-				goals = {
-					{ t = "complete", quest = 994, title = "Escape Through Force", note = "Help Volcor to the Road", map = 1439, x = 41.95, y = 81.8, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Grizzled_Scalps",
-				along = true,
-				goals = {
-					{ t = "collect", quest = 1003, item = 5414, itemName = "Grizzled Scalp", count = 4, oi = 1, map = 1439, x = 40.0, y = 80.0, f = "e" },
+					{ t = "turnin", quest = 3825, title = "Ogre Head On A Stick = Party", npc = 9177, npcName = "Oralius", map = 1428, x = 84.6, y = 68.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 1003, title = "Buzzbox 525", map = 1439, x = 41.4, y = 80.56, f = "e" },
+					{ t = "accept", quest = 8275, title = "Taking Back Silithus", npc = 15187, npcName = "Cenarion Emissary Jademoon", map = 1455, x = 58.6, y = 47.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 950, title = "Return to Onu", npc = 3616, npcName = "Onu", map = 1439, x = 43.56, y = 76.29, f = "e" },
+					{ t = "accept", quest = 8284, title = "The Twilight Mystery", npc = 15183, npcName = "Geologist Larksbane", map = 1451, x = 49.7, y = 37.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 8275, title = "Taking Back Silithus", npc = 15191, npcName = "Windcaller Proudhorn", map = 1451, x = 51.2, y = 38.3, f = "e" },
+					{ t = "accept", quest = 8280, title = "Securing the Supply Lines", npc = 15191, npcName = "Windcaller Proudhorn", map = 1451, x = 51.2, y = 38.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "home", text = "Cenarion Hold", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 8277, title = "Deadly Desert Venom", npc = 15189, npcName = "Beetix Ficklespragg", map = 1451, x = 51.6, y = 38.6, f = "e" },
+				},
+			},
+			{
+				note = "Go northeast to 54.4,30.6",
+				goals = {
+					{ t = "collect", quest = 8277, itemName = "Stonelash Scorpid Stinger", count = 8, oi = 1, map = 1451, x = 54.4, y = 30.6, f = "e" },
+					{ t = "collect", quest = 8277, itemName = "Sand Skitterer Fang", count = 8, oi = 2, map = 1451, x = 54.4, y = 30.6, f = "e" },
+					{ t = "kill", quest = 8280, target = "Dredge Striker", count = 15, oi = 1, map = 1451, x = 54.4, y = 30.6, f = "e" },
+				},
+			},
+			{
+				note = "Go west to 24.8,10.4",
+				goals = {
+					{ t = "collect", quest = 8284, itemName = "Twilight Tablet Fragment", count = 8, oi = 1, map = 1451, x = 24.8, y = 10.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 8277, title = "Deadly Desert Venom", npc = 15189, npcName = "Beetix Ficklespragg", map = 1451, x = 51.6, y = 38.6, f = "e" },
+					{ t = "accept", quest = 8278, title = "Noggle's Last Hope", npc = 15189, npcName = "Beetix Ficklespragg", map = 1451, x = 51.6, y = 38.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 8280, title = "Securing the Supply Lines", npc = 15191, npcName = "Windcaller Proudhorn", map = 1451, x = 51.2, y = 38.3, f = "e" },
+					{ t = "accept", quest = 8281, title = "Stepping Up Security", npc = 15191, npcName = "Windcaller Proudhorn", map = 1451, x = 51.2, y = 38.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 8284, title = "The Twilight Mystery", npc = 15183, npcName = "Geologist Larksbane", map = 1451, x = 49.7, y = 37.5, f = "e" },
+					{ t = "accept", quest = 8285, title = "The Deserter", npc = 15183, npcName = "Geologist Larksbane", map = 1451, x = 49.7, y = 37.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 8304, title = "Dearest Natalia", npc = 15181, npcName = "Commander Mar'alith", map = 1451, x = 49.2, y = 34.2, f = "e" },
+				},
+			},
+			{
+				note = "Go southwest to 55.1,59.7",
+				goals = {
+					{ t = "kill", quest = 8281, target = "Dredge Crusher", count = 20, oi = 1, map = 1451, x = 55.1, y = 59.7, f = "e" },
+					{ t = "collect", quest = 8278, itemName = "Stonelash Pincer Stinger", count = 3, oi = 2, map = 1451, x = 55.1, y = 59.7, f = "e" },
+				},
+			},
+			{
+				note = "Go into the cave to 67.2,69.8",
+				goals = {
+					{ t = "turnin", quest = 8285, title = "The Deserter", npc = 15194, npcName = "Hermit Ortell", map = 1451, x = 67.2, y = 69.8, f = "e" },
+				},
+			},
+			{
+				note = "Go southwest to 65.2,74.7",
+				goals = {
+					{ t = "collect", quest = 8278, itemName = "Stonelash Flayer Stinger", count = 3, oi = 1, map = 1451, x = 65.2, y = 74.7, f = "e" },
+					{ t = "collect", quest = 8278, itemName = "Rock Stalker Fang", count = 3, oi = 3, map = 1451, x = 65.2, y = 74.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "talk", npc = 15170, npcName = "Rutgar Glyphshaper", map = 1451, x = 41.3, y = 88.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "talk", npc = 15171, npcName = "Frankal Stonebridge", map = 1451, x = 40.8, y = 88.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 8278, title = "Noggle's Last Hope", npc = 15189, npcName = "Beetix Ficklespragg", map = 1451, x = 51.6, y = 38.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 8281, title = "Stepping Up Security", npc = 15191, npcName = "Windcaller Proudhorn", map = 1451, x = 51.2, y = 38.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 8304, title = "Dearest Natalia", npc = 15181, npcName = "Commander Mar'alith", map = 1451, x = 49.2, y = 34.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 59, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 5090, title = "A Call to Arms: The Plaguelands!", npc = 10877, npcName = "Courier Hammerfall", map = 1455, x = 29.4, y = 22.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "home", text = "Ironforge", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 5090, title = "A Call to Arms: The Plaguelands!", npc = 10838, npcName = "Commander Ashlam Valorfist", map = 1422, x = 42.7, y = 84.0, f = "e" },
+					{ t = "accept", quest = 5092, title = "Clear the Way", npc = 10838, npcName = "Commander Ashlam Valorfist", map = 1422, x = 42.7, y = 84.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 9474, title = "The Mark of the Lightbringer", npc = 17238, npcName = "Anchorite Truuen", map = 1422, x = 42.9, y = 84.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 5092, target = "Slavering Ghoul", count = 10, oi = 2, map = 1422, x = 48.2, y = 81.2, f = "e" },
+					{ t = "kill", quest = 5092, target = "Skeletal Flayer", count = 10, oi = 1, map = 1422, x = 48.2, y = 81.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 5092, title = "Clear the Way", npc = 10838, npcName = "Commander Ashlam Valorfist", map = 1422, x = 42.7, y = 84.0, f = "e" },
+					{ t = "accept", quest = 5215, title = "The Scourge Cauldrons", npc = 10838, npcName = "Commander Ashlam Valorfist", map = 1422, x = 42.7, y = 84.0, f = "e" },
+					{ t = "accept", quest = 5097, title = "All Along the Watchtowers", npc = 10838, npcName = "Commander Ashlam Valorfist", map = 1422, x = 42.7, y = 84.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 5215, title = "The Scourge Cauldrons", npc = 11053, npcName = "High Priestess MacDonnell", map = 1422, x = 42.9, y = 84.5, f = "e" },
+					{ t = "accept", quest = 5216, title = "Target: Felstone Field", npc = 11053, npcName = "High Priestess MacDonnell", map = 1422, x = 42.9, y = 84.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1422, x = 49.3, y = 73.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1422, x = 46.6, y = 71.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1422, x = 40.0, y = 71.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1422, x = 42.3, y = 66.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1422, x = 44.3, y = 63.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", itemName = "the Felstone Field Cauldron Key", count = 1, map = 1422, x = 37.0, y = 57.1, f = "e" },
+					{ t = "turnin", quest = 5216, title = "Target: Felstone Field", map = 1422, x = 37.0, y = 57.1, f = "e" },
+					{ t = "accept", quest = 5217, title = "Return to Chillwind Camp", map = 1422, x = 37.0, y = 57.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 5021, title = "Better Late Than Never (1)", npc = 10778, npcName = "Janice Felstone", map = 1422, x = 38.4, y = 54.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 5021, title = "Better Late Than Never (1)", map = 1422, x = 38.7, y = 55.3, f = "e" },
+					{ t = "accept", quest = 5022, title = "Better Late Than Never (2)", map = 1422, x = 38.7, y = 55.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 5097, title = "All Along the Watchtowers", npc = 10838, npcName = "Commander Ashlam Valorfist", map = 1422, x = 42.7, y = 84.0, f = "e" },
+					{ t = "accept", quest = 5533, title = "Scholomance", npc = 10838, npcName = "Commander Ashlam Valorfist", map = 1422, x = 42.7, y = 84.0, f = "e" },
+					{ t = "turnin", quest = 5533, title = "Scholomance", npc = 11056, npcName = "Alchemist Arbington", map = 1422, x = 42.7, y = 84.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 5217, title = "Return to Chillwind Camp", npc = 11053, npcName = "High Priestess MacDonnell", map = 1422, x = 42.9, y = 84.5, f = "e" },
+					{ t = "accept", quest = 5219, title = "Target: Dalson's Tears", npc = 11053, npcName = "High Priestess MacDonnell", map = 1422, x = 42.9, y = 84.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", itemName = "the Dalson's Tears Cauldron Key", count = 1, map = 1422, x = 46.2, y = 52.4, f = "e" },
+					{ t = "turnin", quest = 5219, title = "Target: Dalson's Tears", map = 1422, x = 46.2, y = 52.4, f = "e" },
+					{ t = "accept", quest = 5220, title = "Return to Chillwind Camp", map = 1422, x = 46.2, y = 52.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 5058, title = "Mrs. Dalson's Diary", map = 1422, x = 47.7, y = 50.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", itemName = "the Dalson Outhouse Key", count = 1, map = 1422, x = 48.1, y = 49.7, f = "e" },
+					{ t = "collect", quest = 5060, item = 12739, itemName = "Dalson Cabinet Key", count = 1, oi = 1, map = 1422, x = 48.1, y = 49.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 5060, title = "Locked Away", map = 1422, x = 47.4, y = 49.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1422, x = 50.0, y = 30.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 6004, title = "Unfinished Business (1)", npc = 11610, npcName = "Kirsta Deepshadow", map = 1422, x = 51.9, y = 28.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 6004, target = "Scarlet Mage", count = 2, oi = 3, map = 1422, x = 50.3, y = 41.5, f = "e" },
+					{ t = "kill", quest = 6004, target = "Scarlet Knight", count = 2, oi = 4, map = 1422, x = 50.3, y = 41.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 6004, target = "Scarlet Medic", count = 2, oi = 1, map = 1422, x = 51.1, y = 43.7, f = "e" },
+					{ t = "kill", quest = 6004, target = "Scarlet Hunter", count = 2, oi = 2, map = 1422, x = 51.1, y = 43.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 6004, title = "Unfinished Business (1)", npc = 11610, npcName = "Kirsta Deepshadow", map = 1422, x = 51.9, y = 28.0, f = "e" },
+					{ t = "accept", quest = 6023, title = "Unfinished Business (2)", npc = 11610, npcName = "Kirsta Deepshadow", map = 1422, x = 51.9, y = 28.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1422, x = 56.4, y = 34.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 6023, npc = 11613, target = "Huntsman Radley", count = 1, oi = 1, map = 1422, x = 57.7, y = 36.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 9474, itemName = "Mark of the Lightbringer", count = 1, oi = 1, map = 1422, x = 54.2, y = 24.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1422, x = 52.5, y = 25.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 6023, title = "Unfinished Business (2)", npc = 11610, npcName = "Kirsta Deepshadow", map = 1422, x = 51.9, y = 28.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 5220, title = "Return to Chillwind Camp", npc = 11053, npcName = "High Priestess MacDonnell", map = 1422, x = 42.9, y = 84.5, f = "e" },
+					{ t = "accept", quest = 5222, title = "Target: Writhing Haunt", npc = 11053, npcName = "High Priestess MacDonnell", map = 1422, x = 42.9, y = 84.5, f = "e" },
+					{ t = "turnin", quest = 9474, title = "The Mark of the Lightbringer", npc = 17238, npcName = "Anchorite Truuen", map = 1422, x = 42.9, y = 84.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 5022, title = "Better Late Than Never (2)", npc = 10782, npcName = "Royal Factor Bathrilor", map = 1453, x = 57.2, y = 48.1, f = "e" },
+					{ t = "accept", quest = 5048, title = "Good Natured Emma", npc = 10782, npcName = "Royal Factor Bathrilor", map = 1453, x = 57.2, y = 48.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 5048, title = "Good Natured Emma", npc = 3520, npcName = "Ol' Emma", map = 1453, x = 60.2, y = 57.0, f = "e" },
+					{ t = "accept", quest = 5050, title = "Good Luck Charm", npc = 3520, npcName = "Ol' Emma", map = 1453, x = 60.2, y = 57.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 6182, title = "The First and the Last", npc = 29611, npcName = "King Varian Wrynn", map = 1453, x = 80.0, y = 38.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 6182, title = "The First and the Last", npc = 332, npcName = "Master Mathias Shaw", map = 1453, x = 78.3, y = 70.7, f = "e" },
+					{ t = "accept", quest = 6183, title = "Honor the Dead", npc = 332, npcName = "Master Mathias Shaw", map = 1453, x = 78.3, y = 70.7, f = "e" },
+					{ t = "turnin", quest = 6183, title = "Honor the Dead", npc = 332, npcName = "Master Mathias Shaw", map = 1453, x = 78.3, y = 70.7, f = "e" },
+					{ t = "accept", quest = 6184, title = "Flint Shadowmore", npc = 332, npcName = "Master Mathias Shaw", map = 1453, x = 78.3, y = 70.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 6184, title = "Flint Shadowmore", npc = 12425, npcName = "Flint Shadowmore", map = 1422, x = 43.6, y = 84.5, f = "e" },
+					{ t = "accept", quest = 6185, title = "The Eastern Plagues", npc = 12425, npcName = "Flint Shadowmore", map = 1422, x = 43.6, y = 84.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 5050, title = "Good Luck Charm", npc = 10778, npcName = "Janice Felstone", map = 1422, x = 38.4, y = 54.0, f = "e" },
+					{ t = "accept", quest = 5051, title = "Two Halves Become One", npc = 10778, npcName = "Janice Felstone", map = 1422, x = 38.4, y = 54.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", itemName = "the Good Luck Other-Half-Charm", count = 1, map = 1422, x = 37.5, y = 55.0, f = "e" },
+					{ t = "collect", quest = 5051, itemName = "Good Luck Charm", count = 1, oi = 1, map = 1422, x = 37.5, y = 55.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 5051, title = "Two Halves Become One", npc = 10778, npcName = "Janice Felstone", map = 1422, x = 38.4, y = 54.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", itemName = "the Writhing Haunt Cauldron Key", count = 1, map = 1422, x = 53.0, y = 66.0, f = "e" },
+					{ t = "turnin", quest = 5222, title = "Target: Writhing Haunt", map = 1422, x = 53.0, y = 66.0, f = "e" },
+					{ t = "accept", quest = 5223, title = "Return to Chillwind Camp", map = 1422, x = 53.0, y = 66.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 5223, title = "Return to Chillwind Camp", npc = 11053, npcName = "High Priestess MacDonnell", map = 1422, x = 42.9, y = 84.5, f = "e" },
+					{ t = "accept", quest = 5225, title = "Target: Gahrron's Withering", npc = 11053, npcName = "High Priestess MacDonnell", map = 1422, x = 42.9, y = 84.5, f = "e" },
+					{ t = "accept", quest = 9446, title = "Tomb of the Lightbringer", npc = 17238, npcName = "Anchorite Truuen", map = 1422, x = 42.9, y = 84.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 4984, title = "The Wildlife Suffers Too (1)", npc = 10739, npcName = "Mulgris Deepriver", map = 1422, x = 53.7, y = 64.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 4984, target = "Diseased Wolf", count = 8, oi = 1, map = 1422, x = 42.8, y = 55.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 4984, title = "The Wildlife Suffers Too (1)", npc = 10739, npcName = "Mulgris Deepriver", map = 1422, x = 53.7, y = 64.7, f = "e" },
+					{ t = "accept", quest = 4985, title = "The Wildlife Suffers Too (2)", npc = 10739, npcName = "Mulgris Deepriver", map = 1422, x = 53.7, y = 64.7, f = "e" },
+				},
+			},
+		},
+	})
+end
+
+do
+	Polestar.RegisterGuide({
+		id = "zygor/leveling/a-death-knight-55-60-part-3",
+		pack = "guides",
+		title = "Death Knight (55-60) (Parte 3/3)",
+		category = "Leveling",
+		faction = "Alliance",
+		next = "zygor/leveling/a-outland-60-62",
+		author = "TuWoW & Zygor",
+		minLevel = 55,
+		maxLevel = 60,
+		zone = 1428,
+		version = 1,
+		steps = {
+			{
+				goals = {
+					{ t = "kill", quest = 4985, target = "Diseased Grizzly", count = 8, oi = 1, map = 1422, x = 57.9, y = 61.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", itemName = "the Gahrron's Withering Cauldron Key", count = 1, map = 1422, x = 62.6, y = 59.9, f = "e" },
+					{ t = "turnin", quest = 5225, title = "Target: Gahrron's Withering", map = 1422, x = 62.6, y = 59.9, f = "e" },
+					{ t = "accept", quest = 5226, title = "Return to Chillwind Camp", map = 1422, x = 62.6, y = 59.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 4985, title = "The Wildlife Suffers Too (2)", npc = 10739, npcName = "Mulgris Deepriver", map = 1422, x = 53.7, y = 64.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9446, title = "Tomb of the Lightbringer", npc = 11053, npcName = "High Priestess MacDonnell", map = 1422, x = 42.9, y = 84.5, f = "e" },
+					{ t = "turnin", quest = 5226, title = "Return to Chillwind Camp", npc = 11053, npcName = "High Priestess MacDonnell", map = 1422, x = 42.9, y = 84.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 5238, title = "Mission Accomplished!", npc = 10838, npcName = "Commander Ashlam Valorfist", map = 1422, x = 42.7, y = 84.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1455, x = 27.3, y = 7.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 60, f = "e" },
 				},
 			},
 		},

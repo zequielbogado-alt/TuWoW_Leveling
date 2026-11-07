@@ -1,650 +1,503 @@
 -- TuWoW_Leveling — Guides/Leveling_Alliance_11.lua
--- Compilado desde ZygorGuidesViewerForever y depurado para TuWoW 3.3.5a.
+-- Compilado desde Zygor Guides WotLK 3.3.5a oficial para TuWoW.
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/a-loch-modan-18-19",
+		id = "zygor/leveling/a-death-knight-55-60",
 		pack = "guides",
-		title = "Loch Modan",
+		title = "Death Knight (55-60) (Parte 1/3)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-redridge-and-westfall-19-20",
+		next = "zygor/leveling/a-death-knight-55-60-part-2",
 		author = "TuWoW & Zygor",
-		minLevel = 18,
-		maxLevel = 19,
-		zone = 1432,
-		version = 1,
-		steps = {
-			{
-				note = "Walks around. Inside and outside the building.",
-				goals = {
-					{ t = "accept", quest = 436, title = "Ironband's Excavation", npc = 1105, npcName = "Jern Hornhelm", map = 1432, x = 37.24, y = 47.39, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Miners_Gear",
-				along = true,
-				note = "Piles of brown boxes. Inside the mine. notinsticky",
-				goals = {
-					{ t = "collect", quest = 307, item = 2640, itemName = "Miners' Gear", count = 4, oi = 1, map = 1432, x = 35.48, y = 18.86, f = "e" },
-				},
-			},
-			{
-				note = "Upstairs inside the building.",
-				goals = {
-					{ t = "goto", text = "Leave the mine", map = 1432, x = 35.48, y = 18.86 },
-					{ t = "turnin", quest = 307, title = "Filthy Paws", npc = 1343, npcName = "Mountaineer Stormpike", map = 1432, x = 24.76, y = 18.39, f = "e" },
-				},
-			},
-			{
-				note = "On the dam.",
-				goals = {
-					{ t = "goto", text = "Run up the ramp", map = 1432, x = 40.54, y = 13.64 },
-					{ t = "accept", quest = 250, title = "A Dark Threat Looms", npc = 1093, npcName = "Chief Engineer Hinderweir VII", map = 1432, x = 46.05, y = 13.62, f = "e" },
-				},
-			},
-			{
-				note = "Next to the wall.",
-				goals = {
-					{ t = "turnin", quest = 250, title = "A Dark Threat Looms", map = 1432, x = 56.05, y = 13.24, f = "e" },
-					{ t = "accept", quest = 199, title = "A Dark Threat Looms", map = 1432, x = 56.05, y = 13.24, f = "e" },
-				},
-			},
-			{
-				note = "On the dam.",
-				goals = {
-					{ t = "goto", text = "Run up the ramp", map = 1432, x = 55.39, y = 14.84 },
-					{ t = "turnin", quest = 199, title = "A Dark Threat Looms", npc = 1093, npcName = "Chief Engineer Hinderweir VII", map = 1432, x = 46.05, y = 13.62, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "accept", quest = 385, title = "Crocolisk Hunting", npc = 1154, npcName = "Marek Ironheart", map = 1432, x = 81.76, y = 61.66, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Crocolisk_Skins_And_Meat",
-				along = true,
-				note = "Don't vendor them.",
-				goals = {
-					{ t = "collect", quest = 385, item = 2925, itemName = "Crocolisk Skin", count = 6, oi = 2, map = 1432, x = 54.49, y = 38.45, f = "e" },
-					{ t = "collect", quest = 385, item = 2924, itemName = "Crocolisk Meat", count = 5, oi = 1, map = 1432, x = 54.49, y = 38.45, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 385, title = "Crocolisk Hunting", npc = 1154, npcName = "Marek Ironheart", map = 1432, x = 81.75, y = 61.66, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "accept", quest = 257, title = "A Hunter's Boast", npc = 1187, npcName = "Daryl the Youngling", map = 1432, x = 83.49, y = 65.37, f = "e" },
-				},
-			},
-			{
-				note = "Hurry, timed quest.",
-				goals = {
-					{ t = "kill", quest = 257, npc = 1194, target = "Mountain Buzzard", count = 6, oi = 1, map = 1432, x = 75.32, y = 67.62, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 257, title = "A Hunter's Boast", npc = 1187, npcName = "Daryl the Youngling", map = 1432, x = 83.49, y = 65.37, f = "e" },
-					{ t = "accept", quest = 258, title = "A Hunter's Challenge", npc = 1187, npcName = "Daryl the Youngling", map = 1432, x = 83.49, y = 65.37, f = "e" },
-				},
-			},
-			{
-				note = "Hurry, timed quest.",
-				goals = {
-					{ t = "kill", quest = 258, npc = 1192, target = "Elder Mountain Boar", count = 5, oi = 1, map = 1432, x = 76.28, y = 44.42, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 258, title = "A Hunter's Challenge", npc = 1187, npcName = "Daryl the Youngling", map = 1432, x = 83.49, y = 65.37, f = "e" },
-				},
-			},
-			{
-				note = "Helps reach level 19 after quest turnins. Next quest can be tough.",
-				goals = {
-					{ t = "goto", text = "ding 18,19060", map = 1432, x = 75.6, y = 50.2 },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 436, title = "Ironband's Excavation", npc = 1345, npcName = "Magmar Fellhew", map = 1432, x = 64.9, y = 66.65, f = "e" },
-					{ t = "accept", quest = 297, title = "Gathering Idols", npc = 1345, npcName = "Magmar Fellhew", map = 1432, x = 64.9, y = 66.65, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 298, title = "Excavation Progress Report", npc = 1344, npcName = "Prospector Ironband", map = 1432, x = 65.93, y = 65.62, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Carved_Stone_Idols",
-				along = true,
-				note = "Troggs.",
-				goals = {
-					{ t = "collect", quest = 297, item = 2636, itemName = "Carved Stone Idol", count = 8, oi = 1, map = 1432, x = 70.29, y = 63.49, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 297, title = "Gathering Idols", npc = 1345, npcName = "Magmar Fellhew", map = 1432, x = 64.9, y = 66.65, f = "e" },
-				},
-			},
-			{
-				note = "Walks around. Inside and outside the building.",
-				goals = {
-					{ t = "turnin", quest = 298, title = "Excavation Progress Report", npc = 1105, npcName = "Jern Hornhelm", map = 1432, x = 37.24, y = 47.39, f = "e" },
-					{ t = "accept", quest = 301, title = "Report to Ironforge", npc = 1105, npcName = "Jern Hornhelm", map = 1432, x = 37.24, y = 47.39, f = "e" },
-				},
-			},
-			{
-				note = "Inside and outside the cave.",
-				only = { classes = { "SHAMAN" } },
-				goals = {
-					{ t = "goto", text = "Follow the road to the path here", map = 1432, x = 29.32, y = 66.73 },
-				},
-			},
-			{
-				note = "Top of the mountain.",
-				only = { classes = { "SHAMAN" } },
-				goals = {
-					{ t = "goto", text = "Leave the cave", map = 1432, x = 35.14, y = 84.04 },
-					{ t = "goto", text = "Leave Stonesplinter Valley and follow the road", map = 1432, x = 30.57, y = 69.69 },
-					{ t = "goto", text = "Follow the path up", map = 1432, x = 32.1, y = 58.53 },
-				},
-			},
-			{
-				note = "Top of the mountain.",
-				only = { classes = { "SHAMAN" } },
-				goals = {
-					{ t = "use", item = 6636, itemName = "Fire Sapta" },
-				},
-			},
-			{
-				note = "Inside the small cave. Top of the mountain. Follow the road.",
-				only = { classes = { "SHAMAN" } },
-				goals = {
-					{ t = "goto", text = "Follow the path up", map = 1426, x = 86.9, y = 46.97 },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 301, title = "Report to Ironforge", npc = 1356, npcName = "Prospector Stormpike", map = 1455, x = 74.65, y = 11.72, f = "e" },
-				},
-			},
-		},
-	})
-end
-
-do
-	Polestar.RegisterGuide({
-		id = "zygor/leveling/a-redridge-and-westfall-19-20",
-		pack = "guides",
-		title = "Redridge & Westfall",
-		category = "Leveling",
-		faction = "Alliance",
-		next = "zygor/leveling/a-darkshore-20-21",
-		author = "TuWoW & Zygor",
-		minLevel = 19,
-		maxLevel = 20,
-		zone = 1433,
+		minLevel = 55,
+		maxLevel = 60,
+		zone = 1428,
 		version = 1,
 		steps = {
 			{
 				goals = {
-					{ t = "accept", quest = 244, title = "Encroaching Gnolls", npc = 464, npcName = "Guard Parker", map = 1433, x = 10.37, y = 71.26, f = "e" },
+					{ t = "accept", quest = 12593, title = "In Service Of The Lich King", npc = 25462, npcName = "The Lich King", f = "e" },
 				},
 			},
 			{
-				note = "Walks around.",
 				goals = {
-					{ t = "turnin", quest = 244, title = "Encroaching Gnolls", npc = 1070, npcName = "Deputy Feldon", map = 1433, x = 25.65, y = 60.0, f = "e" },
+					{ t = "turnin", quest = 12593, title = "In Service Of The Lich King", npc = 28357, npcName = "Instructor Razuvious", x = 48.0, y = 28.5, f = "e" },
+					{ t = "accept", quest = 12619, title = "The Emblazoned Runeblade", npc = 28357, npcName = "Instructor Razuvious", x = 48.0, y = 28.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "getfp", location = "Lakeshire", map = 1433, x = 25.5, y = 59.41, f = "e" },
+					{ t = "collect", itemName = "Battle-worn Sword", count = 1, x = 47.4, y = 31.0, f = "e" },
+					{ t = "collect", quest = 12619, itemName = "Runebladed Sword", count = 1, oi = 1, x = 47.4, y = 31.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 125, title = "The Lost Tools", npc = 341, npcName = "Foreman Oslow", map = 1433, x = 27.05, y = 48.64, f = "e" },
+					{ t = "turnin", quest = 12619, title = "The Emblazoned Runeblade", npc = 28357, npcName = "Instructor Razuvious", x = 48.0, y = 28.5, f = "e" },
+					{ t = "accept", quest = 12842, title = "Runeforging: Preparation For Battle", npc = 28357, npcName = "Instructor Razuvious", x = 48.0, y = 28.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 118, title = "The Price of Shoes", npc = 415, npcName = "Verner Osgood", map = 1433, x = 25.89, y = 47.28, f = "e" },
+					{ t = "goto", x = 47.4, y = 31.0, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "accept", quest = 120, title = "Messenger to Stormwind", npc = 344, npcName = "Magistrate Solomon", map = 1433, x = 24.9, y = 44.45, f = "e" },
+					{ t = "turnin", quest = 12842, title = "Runeforging: Preparation For Battle", npc = 28357, npcName = "Instructor Razuvious", x = 48.0, y = 28.5, f = "e" },
+					{ t = "accept", quest = 12848, title = "The Endless Hunger", npc = 28357, npcName = "Instructor Razuvious", x = 48.0, y = 28.5, f = "e" },
 				},
 			},
 			{
-				note = "Walks around. Inside the building.",
 				goals = {
-					{ t = "accept", quest = 129, title = "A Free Lunch", npc = 379, npcName = "Darcy", map = 1433, x = 21.66, y = 44.35, f = "e" },
+					{ t = "goto", x = 48.9, y = 28.7, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
 				goals = {
-					{ t = "turnin", quest = 65, title = "The Defias Brotherhood", npc = 266, npcName = "Wiley the Black", map = 1433, x = 21.39, y = 45.35, f = "e" },
-					{ t = "accept", quest = 132, title = "The Defias Brotherhood", npc = 266, npcName = "Wiley the Black", map = 1433, x = 21.39, y = 45.35, f = "e" },
+					{ t = "turnin", quest = 12848, title = "The Endless Hunger", npc = 28357, npcName = "Instructor Razuvious", x = 48.0, y = 28.5, f = "e" },
+					{ t = "accept", quest = 12636, title = "The Eye Of Acherus", npc = 28357, npcName = "Instructor Razuvious", x = 48.0, y = 28.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 3741, title = "Hilary's Necklace", npc = 8965, npcName = "Shawn", map = 1433, x = 24.23, y = 53.63, f = "e" },
+					{ t = "turnin", quest = 12636, title = "The Eye Of Acherus", npc = 25462, npcName = "The Lich King", x = 51.3, y = 35.2, f = "e" },
+					{ t = "accept", quest = 12641, title = "Death Comes From On High", npc = 25462, npcName = "The Lich King", x = 51.3, y = 35.2, f = "e" },
 				},
 			},
 			{
-				note = "Large brown pile of dirt. Underwater.",
 				goals = {
-					{ t = "collect", quest = 3741, item = 10958, itemName = "Hilary's Necklace", oi = 1, map = 1433, x = 23.25, y = 53.36, f = "e" },
+					{ t = "goto", x = 52.1, y = 35.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 3741, title = "Hilary's Necklace", npc = 8962, npcName = "Hilary", map = 1433, x = 24.15, y = 53.63, f = "e" },
+					{ t = "turnin", quest = 12641, title = "Death Comes From On High", npc = 25462, npcName = "The Lich King", x = 51.3, y = 35.2, f = "e" },
+					{ t = "accept", quest = 12657, title = "The Might Of The Scourge", npc = 25462, npcName = "The Lich King", x = 51.3, y = 35.2, f = "e" },
 				},
 			},
 			{
+				note = "Stand on the pink glowing circle at the bottom of the stairs to teleport to the bottom level of Ebon Hold,0.3|noway|c",
 				goals = {
-					{ t = "turnin", quest = 132, title = "The Defias Brotherhood", npc = 234, npcName = "Gryan Stoutmantle", map = 1436, x = 56.33, y = 47.52, f = "e" },
-					{ t = "accept", quest = 135, title = "The Defias Brotherhood", npc = 234, npcName = "Gryan Stoutmantle", map = 1436, x = 56.33, y = 47.52, f = "e" },
+					{ t = "goto", x = 50.1, y = 32.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 120, title = "Messenger to Stormwind", npc = 466, npcName = "General Marcus Jonathan", map = 1453, x = 69.14, y = 82.71, f = "e" },
-					{ t = "accept", quest = 121, title = "Messenger to Stormwind", npc = 466, npcName = "General Marcus Jonathan", map = 1453, x = 69.14, y = 82.71, f = "e" },
+					{ t = "turnin", quest = 12657, title = "The Might Of The Scourge", npc = 28444, npcName = "Highlord Darion Mograine", x = 48.9, y = 29.7, f = "e" },
+					{ t = "accept", quest = 12850, title = "Report To Scourge Commander Thalanor", npc = 28444, npcName = "Highlord Darion Mograine", x = 48.9, y = 29.7, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
 				goals = {
-					{ t = "turnin", quest = 135, title = "The Defias Brotherhood", npc = 332, npcName = "Master Mathias Shaw", map = 1453, x = 78.26, y = 70.73, f = "e" },
-					{ t = "accept", quest = 141, title = "The Defias Brotherhood", npc = 332, npcName = "Master Mathias Shaw", map = 1453, x = 78.26, y = 70.73, f = "e" },
+					{ t = "accept", quest = 12849, title = "The Power Of Blood, Frost And Unholy", npc = 28472, npcName = "Lord Thorval", x = 47.5, y = 26.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 141, title = "The Defias Brotherhood", npc = 234, npcName = "Gryan Stoutmantle", map = 1436, x = 56.33, y = 47.52, f = "e" },
-					{ t = "accept", quest = 142, title = "The Defias Brotherhood", npc = 234, npcName = "Gryan Stoutmantle", map = 1436, x = 56.33, y = 47.52, f = "e" },
+					{ t = "turnin", quest = 12850, title = "Report To Scourge Commander Thalanor", npc = 28510, npcName = "Scourge Commander Thalanor", x = 51.6, y = 34.5, f = "e" },
+					{ t = "accept", quest = 12670, title = "The Scarlet Harvest", npc = 28510, npcName = "Scourge Commander Thalanor", x = 51.6, y = 34.5, f = "e" },
 				},
 			},
 			{
-				note = "Multiple locations. Don't vendor them.",
 				goals = {
-					{ t = "collect", quest = 103, item = 814, itemName = "Flask of Oil", count = 5, map = 1436, x = 53.4, y = 34.6, f = "e" },
+					{ t = "goto", x = 52.1, y = 35.0, f = "e" },
 				},
 			},
 			{
-				note = "Walks a large path along the road. Also walks deep into Gold Coast Quarry and Jangolode Mine.",
 				goals = {
-					{ t = "collect", quest = 142, item = 1381, itemName = "A Mysterious Message", oi = 1, map = 1436, x = 45.1, y = 69.3, f = "e" },
+					{ t = "turnin", quest = 12670, title = "The Scarlet Harvest", npc = 28377, npcName = "Prince Valanar", x = 52.3, y = 34.0, f = "e" },
+					{ t = "accept", quest = 12678, title = "If Chaos Drives, Let Suffering Hold The Reins", npc = 28377, npcName = "Prince Valanar", x = 52.3, y = 34.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 103, title = "Keeper of the Flame", npc = 392, npcName = "Captain Grayson", map = 1436, x = 30.01, y = 86.02, f = "e" },
-					{ t = "accept", quest = 104, title = "The Coastal Menace", npc = 392, npcName = "Captain Grayson", map = 1436, x = 30.01, y = 86.02, f = "e" },
+					{ t = "accept", quest = 12680, title = "Grand Theft Palomino", npc = 28653, npcName = "Salanar the Horseman", x = 52.5, y = 34.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 103, title = "Keeper of the Flame", npc = 392, npcName = "Captain Grayson", map = 1436, x = 30.01, y = 86.02, f = "e" },
+					{ t = "accept", quest = 12733, title = "Death's Challenge", npc = 29047, npcName = "Olrun the Battlecaller", x = 54.6, y = 34.2, f = "e" },
 				},
 			},
 			{
-				note = "Larger grey murloc. Walks along the beach.",
 				goals = {
-					{ t = "collect", quest = 104, item = 3636, itemName = "Scale of Old Murk-Eye", oi = 1, map = 1436, x = 32.4, y = 82.6, f = "e" },
+					{ t = "turnin", quest = 12733, title = "Death's Challenge", npc = 29047, npcName = "Olrun the Battlecaller", x = 54.6, y = 34.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 104, title = "The Coastal Menace", npc = 392, npcName = "Captain Grayson", map = 1436, x = 30.01, y = 86.02, f = "e" },
+					{ t = "accept", quest = 12679, title = "Tonight We Dine In Havenshire", npc = 28647, npcName = "Orithos the Sky Darkener", x = 53.2, y = 36.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 142, title = "The Defias Brotherhood", npc = 234, npcName = "Gryan Stoutmantle", map = 1436, x = 56.33, y = 47.52, f = "e" },
+					{ t = "kill", quest = 12678, target = "Scarlet Crusader", count = 10, oi = 1, x = 51.8, y = 45.2, f = "e" },
 				},
 			},
 			{
-				note = "Escort quest. Wait until he respawns, if missing.",
 				goals = {
-					{ t = "accept", quest = 155, title = "The Defias Brotherhood", npc = 467, npcName = "The Defias Traitor", map = 1436, x = 55.68, y = 47.5, f = "e" },
+					{ t = "accept", quest = 12711, title = "Abandoned Mail", x = 55.2, y = 46.2, f = "e" },
 				},
 			},
 			{
-				note = "Follow and protect The Defias Traitor.",
 				goals = {
-					{ t = "complete", quest = 155, title = "The Defias Brotherhood", note = "Escort The Defias Traitor to Discover Where VanCleef is Hiding", map = 1436, x = 42.55, y = 71.57, f = "e" },
+					{ t = "kill", quest = 12678, npc = 28660, target = "Citizen of Havenshire", count = 10, oi = 2, x = 56.4, y = 45.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 155, title = "The Defias Brotherhood", npc = 234, npcName = "Gryan Stoutmantle", map = 1436, x = 56.33, y = 47.52, f = "e" },
+					{ t = "collect", quest = 12679, itemName = "Saronite Arrow", count = 15, oi = 1, x = 56.2, y = 49.4, f = "e" },
 				},
 			},
 			{
-				note = "Walks around.",
 				goals = {
-					{ t = "accept", quest = 246, title = "Assessing the Threat", npc = 1070, npcName = "Deputy Feldon", map = 1433, x = 25.65, y = 60.0, f = "e" },
+					{ t = "goto", x = 55.6, y = 43.2, f = "e" },
 				},
 			},
 			{
-				note = "Walks around.",
 				goals = {
-					{ t = "turnin", quest = 129, title = "A Free Lunch", npc = 464, npcName = "Guard Parker", map = 1433, x = 10.37, y = 71.26, f = "e" },
-					{ t = "accept", quest = 130, title = "Visit the Herbalist", npc = 464, npcName = "Guard Parker", map = 1433, x = 10.37, y = 71.26, f = "e" },
+					{ t = "turnin", quest = 12680, title = "Grand Theft Palomino", npc = 28653, npcName = "Salanar the Horseman", x = 52.5, y = 34.6, f = "e" },
+					{ t = "accept", quest = 12687, title = "Into the Realm of Shadows", npc = 28653, npcName = "Salanar the Horseman", x = 52.5, y = 34.6, f = "e" },
 				},
 			},
 			{
-				label = "Kill_Redridge_Poachers",
-				along = true,
 				goals = {
-					{ t = "kill", quest = 246, npc = 424, target = "Redridge Poacher", count = 6, oi = 2, map = 1433, x = 25.99, y = 81.81, f = "e" },
+					{ t = "goto", x = 52.8, y = 43.7, f = "e" },
 				},
 			},
 			{
-				label = "Kill_Redridge_Mongrels",
-				along = true,
 				goals = {
-					{ t = "kill", quest = 246, npc = 423, target = "Redridge Mongrel", count = 10, oi = 1, map = 1433, x = 25.99, y = 81.81, f = "e" },
+					{ t = "goto", x = 52.5, y = 34.6, f = "e" },
 				},
 			},
 			{
-				note = "Helps reach level 20 after quest turnins. Good time to train abilities soon.",
 				goals = {
-					{ t = "goto", text = "ding 19,19400", map = 1433, x = 25.99, y = 81.81 },
+					{ t = "turnin", quest = 12687, title = "Into the Realm of Shadows", npc = 28653, npcName = "Salanar the Horseman", x = 52.5, y = 34.6, f = "e" },
 				},
 			},
 			{
-				note = "Walks around.",
 				goals = {
-					{ t = "turnin", quest = 246, title = "Assessing the Threat", npc = 1070, npcName = "Deputy Feldon", map = 1433, x = 25.65, y = 60.0, f = "e" },
+					{ t = "turnin", quest = 12678, title = "If Chaos Drives, Let Suffering Hold The Reins", npc = 28377, npcName = "Prince Valanar", x = 52.3, y = 34.0, f = "e" },
 				},
 			},
 			{
-				note = "Downstairs inside the building.",
-				only = { classes = { "WARLOCK" } },
 				goals = {
-					{ t = "goto", text = "Enter the building", map = 1453, x = 42.25, y = 81.81 },
-					{ t = "accept", quest = 1716, title = "Devourer of Souls", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.23, y = 85.22, f = "e" },
+					{ t = "turnin", quest = 12679, title = "Tonight We Dine In Havenshire", npc = 28647, npcName = "Orithos the Sky Darkener", x = 53.2, y = 36.9, f = "e" },
 				},
 			},
 			{
-				note = "Downstairs inside the building.",
-				only = { classes = { "WARLOCK" } },
 				goals = {
-					{ t = "train", npc = 461, npcName = "Demisette Cloyce", map = 1453, x = 39.25, y = 84.96, f = "e" },
+					{ t = "level", level = 56, f = "e" },
 				},
 			},
 			{
-				note = "Buy available Grimoires. Downstairs inside the building.",
-				only = { classes = { "WARLOCK" } },
 				goals = {
-					{ t = "vendor", npc = 5520, npcName = "Spackle Thornberry", map = 1453, x = 39.54, y = 84.52, f = "e" },
+					{ t = "accept", quest = 12697, title = "Gothik the Harvester", npc = 28377, npcName = "Prince Valanar", x = 52.3, y = 34.0, f = "e" },
 				},
 			},
 			{
-				note = "Top of the tower.",
-				only = { classes = { "MAGE" } },
 				goals = {
-					{ t = "train", npc = 5498, npcName = "Elsharin", map = 1453, x = 48.2, y = 87.21, f = "e" },
+					{ t = "turnin", quest = 12697, title = "Gothik the Harvester", npc = 28658, npcName = "Gothik the Harvester", x = 54.1, y = 35.0, f = "e" },
+					{ t = "accept", quest = 12698, title = "The Gift That Keeps On Giving", npc = 28658, npcName = "Gothik the Harvester", x = 54.1, y = 35.0, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the tower.",
-				only = { classes = { "MAGE" } },
 				goals = {
-					{ t = "goto", text = "learnspell Teleport: Stormwind##3561", map = 1453, x = 50.5, y = 85.91 },
+					{ t = "goto", x = 58.2, y = 31.0, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "DRUID" } },
 				goals = {
-					{ t = "train", npc = 5504, npcName = "Sheldras Moontree", map = 1453, x = 35.86, y = 67.36, f = "e" },
+					{ t = "turnin", quest = 12698, title = "The Gift That Keeps On Giving", npc = 28658, npcName = "Gothik the Harvester", x = 54.1, y = 35.0, f = "e" },
+					{ t = "accept", quest = 12700, title = "An Attack Of Opportunity", npc = 28658, npcName = "Gothik the Harvester", x = 54.1, y = 35.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 3765, title = "The Corruption Abroad", npc = 4984, npcName = "Argos Nightwhisper", map = 1453, x = 36.25, y = 67.6, f = "e" },
+					{ t = "turnin", quest = 12700, title = "An Attack Of Opportunity", npc = 28377, npcName = "Prince Valanar", x = 52.3, y = 34.0, f = "e" },
+					{ t = "accept", quest = 12701, title = "Massacre At Light's Point", npc = 28377, npcName = "Prince Valanar", x = 52.3, y = 34.0, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "PALADIN" } },
 				goals = {
-					{ t = "goto", text = "Enter the building", map = 1453, x = 52.98, y = 51.1 },
-					{ t = "accept", quest = 1793, title = "The Tome of Valor", npc = 6171, npcName = "Duthorian Rall", map = 1453, x = 50.47, y = 47.47, f = "e" },
+					{ t = "kill", quest = 12701, target = "Scarlet Defender", count = 100, oi = 1, x = 58.5, y = 33.0, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "PALADIN" } },
+				note = "Use your Skeletal Gryphon Escape ability on your hotbar to escape to Death's Breach,0.5|noway|petaction Skeletal Gryphon Escape|c",
 				goals = {
-					{ t = "use", item = 6776, itemName = "Tome of Valor" },
-					{ t = "accept", quest = 1649, title = "The Tome of Valor" },
+					{ t = "goto", x = 52.6, y = 34.5, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "PALADIN" } },
 				goals = {
-					{ t = "turnin", quest = 1649, title = "The Tome of Valor", npc = 6171, npcName = "Duthorian Rall", map = 1453, x = 50.47, y = 47.47, f = "e" },
+					{ t = "turnin", quest = 12701, title = "Massacre At Light's Point", npc = 28377, npcName = "Prince Valanar", x = 52.3, y = 34.0, f = "e" },
+					{ t = "accept", quest = 12706, title = "Victory At Death's Breach!", npc = 28377, npcName = "Prince Valanar", x = 52.3, y = 34.0, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "PALADIN" } },
 				goals = {
-					{ t = "train", npc = 5492, npcName = "Katherine the Pure", map = 1453, x = 48.47, y = 49.06, f = "e" },
+					{ t = "goto", x = 53.1, y = 32.5, f = "e" },
 				},
 			},
 			{
-				note = "Walks around. Inside the building.",
-				only = { classes = { "PRIEST" } },
 				goals = {
-					{ t = "goto", text = "Enter the building", map = 1453, x = 52.98, y = 51.1 },
-					{ t = "train", npc = 5484, npcName = "Brother Benjamin", map = 1453, x = 51.64, y = 46.42, f = "e" },
+					{ t = "turnin", quest = 12706, title = "Victory At Death's Breach!", npc = 28444, npcName = "Highlord Darion Mograine", x = 48.9, y = 29.7, f = "e" },
+					{ t = "accept", quest = 12714, title = "The Will Of The Lich King", npc = 28444, npcName = "Highlord Darion Mograine", x = 48.9, y = 29.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 343, title = "Speaking of Fortitude", npc = 1444, npcName = "Brother Kristoff", map = 1453, x = 55.03, y = 54.17, f = "e" },
+					{ t = "goto", x = 52.1, y = 35.0, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "train", npc = 5515, npcName = "Einris Brightspear", map = 1453, x = 67.32, y = 36.23, f = "e" },
+					{ t = "turnin", quest = 12714, title = "The Will Of The Lich King", npc = 28907, npcName = "Prince Valanar", x = 53.5, y = 36.6, f = "e" },
+					{ t = "accept", quest = 12715, title = "The Crypt of Remembrance", npc = 28907, npcName = "Prince Valanar", x = 53.5, y = 36.6, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "train", npc = 2879, npcName = "Karrina Mekenda", map = 1453, x = 67.29, y = 36.79, f = "e" },
+					{ t = "accept", quest = 12716, title = "The Plaguebringer's Request", npc = 28919, npcName = "Noth the Plaguebringer", x = 55.9, y = 52.4, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "ROGUE" } },
+				note = "Go southwest into the crypt to 54.3,57.3",
 				goals = {
-					{ t = "train", npc = 918, npcName = "Osborne the Night Man", map = 1453, x = 77.38, y = 65.3, f = "e" },
+					{ t = "turnin", quest = 12715, title = "The Crypt of Remembrance", npc = 28911, npcName = "Prince Keleseth", x = 54.3, y = 57.3, f = "e" },
+					{ t = "accept", quest = 12719, title = "Nowhere To Run And Nowhere To Hide", npc = 28911, npcName = "Prince Keleseth", x = 54.3, y = 57.3, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
-				only = { classes = { "ROGUE" } },
 				goals = {
-					{ t = "accept", quest = 2360, title = "Mathias and the Defias", npc = 332, npcName = "Master Mathias Shaw", map = 1453, x = 78.26, y = 70.74, f = "e" },
+					{ t = "accept", quest = 12722, title = "Lambs To The Slaughter", npc = 28910, npcName = "Baron Rivendare", x = 54.7, y = 57.4, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
-				only = { classes = { "ROGUE" } },
 				goals = {
-					{ t = "accept", quest = 2281, title = "Redridge Rendezvous", npc = 6946, npcName = "Renzik \"The Shiv\"", map = 1453, x = 78.25, y = 71.13, f = "e" },
+					{ t = "collect", quest = 12716, itemName = "Empty Cauldron", count = 1, oi = 1, x = 57.8, y = 61.8, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
-				only = { classes = { "WARRIOR" } },
 				goals = {
-					{ t = "train", npc = 5479, npcName = "Wu Shen", map = 1453, x = 80.5, y = 59.86, f = "e" },
+					{ t = "collect", quest = 12716, itemName = "Iron Chain", count = 1, oi = 2, x = 62.0, y = 60.2, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "SHAMAN" } },
+				note = "Run around the town and do the following:",
 				goals = {
-					{ t = "train", map = 1455, x = 47.15, y = 13.87, f = "e" },
+					{ t = "kill", quest = 12722, target = "Scarlet Crusade Soldier", count = 10, oi = 1, f = "e" },
+					{ t = "collect", quest = 12716, itemName = "Crusader Skull", count = 10, oi = 3, f = "e" },
+					{ t = "kill", quest = 12722, target = "Citizen of New Avalon", count = 15, oi = 2, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "goto", text = "Enter Stormwind Keep", map = 1453, x = 73.09, y = 46.62 },
+					{ t = "kill", quest = 12719, npc = 28945, target = "Mayor Quimby", count = 1, oi = 1, x = 52.2, y = 71.2, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "turnin", quest = 343, title = "Speaking of Fortitude", npc = 1440, npcName = "Milton Sheaf", map = 1453, x = 77.07, y = 30.21, f = "e" },
+					{ t = "collect", quest = 12719, itemName = "New Avalon Registry", count = 1, oi = 2, x = 52.5, y = 71.0, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
+				note = "Go northeast into the crypt to 54.3,57.3",
 				goals = {
-					{ t = "turnin", quest = 118, title = "The Price of Shoes", npc = 514, npcName = "Smith Argus", map = 1429, x = 41.71, y = 65.55, f = "e" },
-					{ t = "accept", quest = 119, title = "Return to Verner", npc = 514, npcName = "Smith Argus", map = 1429, x = 41.71, y = 65.55, f = "e" },
+					{ t = "turnin", quest = 12719, title = "Nowhere To Run And Nowhere To Hide", npc = 28911, npcName = "Prince Keleseth", x = 54.3, y = 57.3, f = "e" },
+					{ t = "accept", quest = 12720, title = "How To Win Friends And Influence Enemies", npc = 28911, npcName = "Prince Keleseth", x = 54.3, y = 57.3, f = "e" },
 				},
 			},
 			{
-				note = "Top of the tower.",
 				goals = {
-					{ t = "accept", quest = 94, title = "A Watchful Eye", npc = 313, npcName = "Theocritus", map = 1429, x = 65.22, y = 69.71, f = "e" },
+					{ t = "turnin", quest = 12722, title = "Lambs To The Slaughter", npc = 28910, npcName = "Baron Rivendare", x = 54.7, y = 57.4, f = "e" },
 				},
 			},
 			{
-				note = "Underwater.",
 				goals = {
-					{ t = "collect", quest = 125, item = 1309, itemName = "Oslow's Toolbox", oi = 1, map = 1433, x = 36.44, y = 54.67, f = "e" },
+					{ t = "turnin", quest = 12716, title = "The Plaguebringer's Request", npc = 28919, npcName = "Noth the Plaguebringer", x = 55.9, y = 52.4, f = "e" },
+					{ t = "accept", quest = 12717, title = "Noth's Special Brew", npc = 28919, npcName = "Noth the Plaguebringer", x = 55.9, y = 52.4, f = "e" },
 				},
 			},
 			{
+				note = "Click the big Plague Cauldron|tip It's a huge black pot bouncing around on the platform in the field.",
 				goals = {
-					{ t = "turnin", quest = 125, title = "The Lost Tools", npc = 341, npcName = "Foreman Oslow", map = 1433, x = 27.05, y = 48.64, f = "e" },
-					{ t = "accept", quest = 89, title = "The Everstill Bridge", npc = 341, npcName = "Foreman Oslow", map = 1433, x = 27.05, y = 48.64, f = "e" },
+					{ t = "turnin", quest = 12717, title = "Noth's Special Brew", x = 56.1, y = 52.1, f = "e" },
 				},
 			},
 			{
+				note = "Open the Ornate Jeweled Box in your bags|use Ornate Jeweled Box##39418",
 				goals = {
-					{ t = "turnin", quest = 119, title = "Return to Verner", npc = 415, npcName = "Verner Osgood", map = 1433, x = 25.88, y = 47.27, f = "e" },
-					{ t = "accept", quest = 122, title = "Underbelly Scales", npc = 415, npcName = "Verner Osgood", map = 1433, x = 25.88, y = 47.27, f = "e" },
-					{ t = "accept", quest = 124, title = "A Baying of Gnolls", npc = 415, npcName = "Verner Osgood", map = 1433, x = 25.88, y = 47.27, f = "e" },
+					{ t = "goto", x = 55.9, y = 60.5, f = "e" },
 				},
 			},
 			{
-				note = "Small flying dragons.",
+				note = "Go northwest into the crypt to 54.3,57.3",
 				goals = {
-					{ t = "collect", quest = 122, item = 1221, itemName = "Underbelly Whelp Scale", count = 6, oi = 1, map = 1433, x = 31.31, y = 74.6, f = "e" },
+					{ t = "turnin", quest = 12720, title = "How To Win Friends And Influence Enemies", npc = 28911, npcName = "Prince Keleseth", x = 54.3, y = 57.3, f = "e" },
+					{ t = "accept", quest = 12723, title = "Behind Scarlet Lines", npc = 28911, npcName = "Prince Keleseth", x = 54.3, y = 57.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 122, title = "Underbelly Scales", npc = 415, npcName = "Verner Osgood", map = 1433, x = 25.88, y = 47.27, f = "e" },
+					{ t = "turnin", quest = 12723, title = "Behind Scarlet Lines", npc = 28914, npcName = "Orbaz Bloodbane", x = 56.3, y = 79.8, f = "e" },
+					{ t = "accept", quest = 12724, title = "The Path Of The Righteous Crusader", npc = 28914, npcName = "Orbaz Bloodbane", x = 56.3, y = 79.8, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "turnin", quest = 121, title = "Messenger to Stormwind", npc = 344, npcName = "Magistrate Solomon", map = 1433, x = 24.9, y = 44.45, f = "e" },
+					{ t = "accept", quest = 12725, title = "Brothers In Death", npc = 28913, npcName = "Thassarian", x = 56.3, y = 80.2, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
+				note = "Go northeast into Scarlet Hold and into the basement to 63.0,67.8",
 				goals = {
-					{ t = "turnin", quest = 92, title = "Redridge Goulash", npc = 343, npcName = "Chef Breanna", map = 1433, x = 17.59, y = 43.84, f = "e" },
+					{ t = "turnin", quest = 12725, title = "Brothers In Death", npc = 28912, npcName = "Koltira Deathweaver", x = 63.0, y = 67.8, f = "e" },
+					{ t = "accept", quest = 12727, title = "Bloody Breakout", npc = 28912, npcName = "Koltira Deathweaver", x = 63.0, y = 67.8, f = "e" },
 				},
 			},
 			{
+				note = "Koltira Deathweaver forms a bubble and you have to fight the mobs as the come in waves",
 				goals = {
-					{ t = "turnin", quest = 130, title = "Visit the Herbalist", npc = 342, npcName = "Martie Jainrose", map = 1433, x = 16.77, y = 46.33, f = "e" },
-					{ t = "accept", quest = 131, title = "Delivering Daffodils", npc = 342, npcName = "Martie Jainrose", map = 1433, x = 16.77, y = 46.33, f = "e" },
+					{ t = "collect", quest = 12727, itemName = "Valroth's Head", count = 1, oi = 1, f = "e" },
 				},
 			},
 			{
-				note = "Walks around. Inside the building.",
 				goals = {
-					{ t = "turnin", quest = 131, title = "Delivering Daffodils", npc = 379, npcName = "Darcy", map = 1433, x = 21.66, y = 44.34, f = "e" },
+					{ t = "level", level = 57, f = "e" },
 				},
 			},
 			{
-				note = "Gnolls. Redridge Alphas won't drop them.",
+				note = "Go upstairs in the fort to 63.0,68.3",
 				goals = {
-					{ t = "collect", quest = 89, item = 2856, itemName = "Iron Pike", count = 5, oi = 1, map = 1433, x = 18.08, y = 37.27, f = "e" },
-					{ t = "collect", quest = 89, item = 1013, itemName = "Iron Rivet", count = 5, oi = 2, map = 1433, x = 18.08, y = 37.27, f = "e" },
+					{ t = "collect", quest = 12724, itemName = "New Avalon Patrol Schedule", count = 1, oi = 1, x = 63.0, y = 68.3, f = "e" },
 				},
 			},
 			{
-				label = "Kill_Redridge_Mystics_And_Brutes",
-				along = true,
 				goals = {
-					{ t = "kill", quest = 124, npc = 430, target = "Redridge Mystic", count = 8, oi = 2, map = 1433, x = 18.08, y = 37.27, f = "e" },
-					{ t = "kill", quest = 124, npc = 426, target = "Redridge Brute", count = 10, oi = 1, map = 1433, x = 18.08, y = 37.27, f = "e" },
+					{ t = "turnin", quest = 12724, title = "The Path Of The Righteous Crusader", npc = 28914, npcName = "Orbaz Bloodbane", x = 56.3, y = 79.8, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "ROGUE" } },
 				goals = {
-					{ t = "turnin", quest = 2281, title = "Redridge Rendezvous", npc = 6966, npcName = "Lucius", map = 1433, x = 22.97, y = 52.04, f = "e" },
-					{ t = "accept", quest = 2282, title = "Alther's Mill", npc = 6966, npcName = "Lucius", map = 1433, x = 22.97, y = 52.04, f = "e" },
+					{ t = "turnin", quest = 12727, title = "Bloody Breakout", npc = 28913, npcName = "Thassarian", x = 56.3, y = 80.2, f = "e" },
+					{ t = "accept", quest = 12738, title = "A Cry For Vengeance!", npc = 28913, npcName = "Thassarian", x = 56.3, y = 80.2, f = "e" },
 				},
 			},
 			{
-				note = "Small grey metal chests. Inside the building.",
-				only = { classes = { "ROGUE" } },
 				goals = {
-					{ t = "skill", level = 95, skill = "Lockpicking" },
+					{ t = "turnin", quest = 12738, title = "A Cry For Vengeance!", npc = 29053, npcName = "Knight Commander Plaguefist", x = 52.9, y = 81.5, f = "e" },
+					{ t = "accept", quest = 12742, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", x = 52.9, y = 81.5, f = "e" },
+					{ t = "accept", quest = 12743, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", x = 52.9, y = 81.5, f = "e" },
+					{ t = "accept", quest = 12744, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", x = 52.9, y = 81.5, f = "e" },
+					{ t = "accept", quest = 12745, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", x = 52.9, y = 81.5, f = "e" },
+					{ t = "accept", quest = 12746, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", x = 52.9, y = 81.5, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "ROGUE" } },
+				only = { races = { "Draenei" } },
 				goals = {
-					{ t = "collect", quest = 2282, item = 7871, itemName = "Token of Thievery", oi = 1, map = 1433, x = 46.95, y = 44.69, f = "e" },
+					{ t = "kill", quest = 12746, npc = 29070, target = "Valok the Righteous", count = 1, oi = 1, x = 54.5, y = 83.4, f = "e" },
 				},
 			},
 			{
+				only = { races = { "NightElf" } },
 				goals = {
-					{ t = "turnin", quest = 124, title = "A Baying of Gnolls", npc = 415, npcName = "Verner Osgood", map = 1433, x = 25.88, y = 47.27, f = "e" },
+					{ t = "kill", quest = 12743, npc = 29065, target = "Yazmina Oakenthorn", count = 1, oi = 1, x = 54.2, y = 83.9, f = "e" },
 				},
 			},
 			{
+				only = { races = { "Gnome" } },
 				goals = {
-					{ t = "turnin", quest = 89, title = "The Everstill Bridge", npc = 341, npcName = "Foreman Oslow", map = 1433, x = 27.05, y = 48.64, f = "e" },
+					{ t = "kill", quest = 12745, npc = 29068, target = "Goby Blastenheimer", count = 1, oi = 1, x = 53.9, y = 83.8, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "ROGUE" } },
+				only = { races = { "Human" } },
 				goals = {
-					{ t = "turnin", quest = 2282, title = "Alther's Mill", npc = 6966, npcName = "Lucius", map = 1433, x = 22.97, y = 52.04, f = "e" },
+					{ t = "kill", quest = 12742, npc = 29061, target = "Ellen Stanbridge", count = 1, oi = 1, x = 53.5, y = 83.8, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Dwarf" } },
+				goals = {
+					{ t = "kill", quest = 12744, npc = 29067, target = "Donovan Pulfrost", count = 1, oi = 1, x = 54.0, y = 83.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12742, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", x = 52.9, y = 81.5, f = "e" },
+					{ t = "turnin", quest = 12743, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", x = 52.9, y = 81.5, f = "e" },
+					{ t = "turnin", quest = 12744, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", x = 52.9, y = 81.5, f = "e" },
+					{ t = "turnin", quest = 12745, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", x = 52.9, y = 81.5, f = "e" },
+					{ t = "turnin", quest = 12746, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", x = 52.9, y = 81.5, f = "e" },
+					{ t = "accept", quest = 12751, title = "A Sort Of Homecoming", npc = 29053, npcName = "Knight Commander Plaguefist", x = 52.9, y = 81.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12751, title = "A Sort Of Homecoming", npc = 28913, npcName = "Thassarian", x = 56.3, y = 80.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 12754, title = "Ambush At The Overlook", npc = 28914, npcName = "Orbaz Bloodbane", x = 56.3, y = 79.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 12754, itemName = "Scarlet Courier's Belongings", count = 1, oi = 1, x = 60.0, y = 78.5, f = "e" },
+					{ t = "collect", quest = 12754, itemName = "Scarlet Courier's Message", count = 1, oi = 2, x = 60.0, y = 78.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12754, title = "Ambush At The Overlook", npc = 28914, npcName = "Orbaz Bloodbane", x = 56.3, y = 79.8, f = "e" },
+					{ t = "accept", quest = 12755, title = "A Meeting With Fate", npc = 28914, npcName = "Orbaz Bloodbane", x = 56.3, y = 79.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12755, title = "A Meeting With Fate", npc = 29077, npcName = "High General Abbendis", x = 65.6, y = 83.8, f = "e" },
+					{ t = "accept", quest = 12756, title = "The Scarlet Onslaught Emerges", npc = 29077, npcName = "High General Abbendis", x = 65.6, y = 83.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12756, title = "The Scarlet Onslaught Emerges", npc = 28914, npcName = "Orbaz Bloodbane", x = 56.3, y = 79.8, f = "e" },
+					{ t = "accept", quest = 12757, title = "Scarlet Armies Approach...", npc = 28914, npcName = "Orbaz Bloodbane", x = 56.3, y = 79.8, f = "e" },
+				},
+			},
+			{
+				note = "Click the Portal to Acherus to go to Ebon Hold,0.5|noway|c",
+				goals = {
+					{ t = "goto", x = 50.2, y = 32.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12757, title = "Scarlet Armies Approach...", npc = 28444, npcName = "Highlord Darion Mograine", x = 48.9, y = 29.7, f = "e" },
+					{ t = "accept", quest = 12778, title = "The Scarlet Apocalypse", npc = 28444, npcName = "Highlord Darion Mograine", x = 48.9, y = 29.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", x = 52.1, y = 35.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12778, title = "The Scarlet Apocalypse", npc = 29110, npcName = "The Lich King", x = 53.6, y = 36.9, f = "e" },
+					{ t = "accept", quest = 12779, title = "An End To All Things...", npc = 29110, npcName = "The Lich King", x = 53.6, y = 36.9, f = "e" },
+				},
+			},
+			{
+				note = "Click the Horn of the Frostbrood in your bags|use Horn of the Frostbrood##39700",
+				goals = {
+					{ t = "kill", quest = 12779, target = "Scarlet Soldiers", count = 150, oi = 1, f = "e" },
 				},
 			},
 		},

@@ -1,369 +1,484 @@
 -- TuWoW_Leveling — Guides/Leveling_Alliance_41.lua
--- Compilado desde ZygorGuidesViewerForever y depurado para TuWoW 3.3.5a.
+-- Compilado desde Zygor Guides WotLK 3.3.5a oficial para TuWoW.
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/a-cenarion-field-duty-logistics-assignments",
+		id = "zygor/leveling/a-northrend-70-72-part-3",
 		pack = "guides",
-		title = "Cenarion Field Duty Logistics Assignments",
+		title = "Northrend (70-72) (Parte 3/4)",
 		category = "Leveling",
 		faction = "Alliance",
+		next = "zygor/leveling/a-northrend-70-72-part-4",
 		author = "TuWoW & Zygor",
-		zone = 1451,
+		minLevel = 70,
+		maxLevel = 72,
 		version = 1,
 		steps = {
 			{
-				label = "Accept_Field_Duty",
 				goals = {
-					{ t = "accept", quest = 8507, title = "Field Duty", npc = 15540, npcName = "Windcaller Kaldon", map = 1451, x = 49.98, y = 36.34, f = "e" },
+					{ t = "level", level = 71, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21143, itemName = "Unsigned Field Duty Papers" },
-					{ t = "collect", quest = 8507, item = 23024, itemName = "Prepared Field Duty Papers" },
+					{ t = "goto", x = 25.4, y = 21.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 8508, title = "Field Duty Papers", npc = 15440, npcName = "Captain Blackanvil", map = 1451, x = 32.96, y = 52.08, f = "e" },
+					{ t = "turnin", quest = 11969, title = "Springing the Trap", npc = 26117, npcName = "Raelorasz", x = 33.3, y = 34.5, f = "e" },
+				},
+			},
+			{
+				note = "Fly to Amber Ledge,0.5|noway|c",
+				goals = {
+					{ t = "goto", x = 45.1, y = 34.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 8507, item = 20810, itemName = "Signed Field Duty Papers", oi = 1 },
-				},
-			},
-			{
-				note = "Choose a logistics assignment. Logistics Assignments require you to donate various materials to the Cenarion effort.",
-				goals = {
-					{ t = "turnin", quest = 8507, title = "Field Duty", npc = 15540, npcName = "Windcaller Kaldon", map = 1451, x = 49.98, y = 36.34, f = "e" },
-				},
-			},
-			{
-				label = "Begin_Logistics_Assignment",
-				goals = {
-					{ t = "use", item = 21132, itemName = "Logistics Assignment" },
+					{ t = "fpath", text = "Fizzcrank Airstrip", x = 56.6, y = 20.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21257, itemName = "Logistics Task Briefing IV" },
-					{ t = "accept", quest = 8778, title = "The Ironforge Brigade Needs Explosives!" },
+					{ t = "home", text = "Fizzcrank Airstrip", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21259, itemName = "Logistics Task Briefing V" },
-					{ t = "accept", quest = 8779, title = "Scrying Materials" },
+					{ t = "turnin", quest = 11707, title = "Distress Call", npc = 25590, npcName = "Fizzcrank Fullthrottle", x = 57.0, y = 18.7, f = "e" },
+					{ t = "accept", quest = 11708, title = "The Mechagnomes", npc = 25590, npcName = "Fizzcrank Fullthrottle", x = 57.0, y = 18.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21260, itemName = "Logistics Task Briefing VI" },
-					{ t = "accept", quest = 8781, title = "Arms for the Field" },
+					{ t = "turnin", quest = 11708, title = "The Mechagnomes", npc = 25747, npcName = "Jinky Wingnut", x = 57.4, y = 18.7, f = "e" },
+					{ t = "accept", quest = 11712, title = "Re-Cursive", npc = 25747, npcName = "Jinky Wingnut", x = 57.4, y = 18.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21263, itemName = "Logistics Task Briefing VII" },
-					{ t = "accept", quest = 8780, title = "Armor Kits for the Field" },
+					{ t = "accept", quest = 11710, title = "What's the Matter with the Transmatter?", npc = 25702, npcName = "Mordle Cogspinner", x = 57.4, y = 18.7, f = "e" },
+					{ t = "accept", quest = 11704, title = "King Mrgl-Mrgl", npc = 25702, npcName = "Mordle Cogspinner", x = 57.4, y = 18.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 20806, itemName = "Logistics Task Briefing X" },
-					{ t = "accept", quest = 8496, title = "Bandages for the Field" },
-				},
-			},
-			{
-				note = "Craft them with Alchemy or purchase them from the Auction House. You can create them with Alchemy. Each one requires 1 Firebloom, 1 Goldthorn, and 1 Crystal Vial to create.",
-				goals = {
-					{ t = "collect", quest = 8778, item = 8956, itemName = "Oil of Immolation", count = 6, oi = 1 },
-				},
-			},
-			{
-				label = "Collect_5_Goblin_Rocket_Fuel",
-				along = true,
-				note = "Craft them with Alchemy or purchase them from the Auction House. You can create them with Alchemy. Each one requires 1 Firebloom, 1 Volatile Rum, and 1 Leaded Vial to create.",
-				goals = {
-					{ t = "collect", quest = 8778, item = 9061, itemName = "Goblin Rocket Fuel", count = 5, oi = 2 },
-				},
-			},
-			{
-				label = "Collect_10_Dense_Blasting_Powder",
-				along = true,
-				note = "Craft them with Engineering or purchase them from the Auction House. Each one requires 2 Dense Stone to create.",
-				goals = {
-					{ t = "collect", quest = 8778, item = 15992, itemName = "Dense Blasting Powder", count = 10, oi = 3 },
-				},
-			},
-			{
-				note = "Disenchant item level 56-65 rare items or purchase it from the Auction House. Disenchant item level 56-65 rare items. Blackrock Depths and Dire Maul are good sources for these items.",
-				goals = {
-					{ t = "collect", quest = 8779, item = 14344, itemName = "Large Brilliant Shard", oi = 1 },
-				},
-			},
-			{
-				label = "Collect_1_Large_Radiant_Shard",
-				along = true,
-				note = "Disenchant item level 46-50 rare items or purchase it from the Auction House. Disenchant item level 46-50 rare items. Zul'Farrak, Dire Maul, and Stratholme are good sources for these items.",
-				goals = {
-					{ t = "collect", quest = 8779, item = 11178, itemName = "Large Radiant Shard", oi = 2 },
-				},
-			},
-			{
-				label = "Collect_1_Huge_Emerald",
-				along = true,
-				note = "Gather it with Mining or purchase it from the Auction House. Gather it with Mining. It can be mined from any type of Thorium vein.",
-				goals = {
-					{ t = "collect", quest = 8779, item = 12364, itemName = "Huge Emerald", oi = 3 },
-				},
-			},
-			{
-				note = "Craft them with Blacksmithing or purchase them from the Auction House. Craft them with Blacksmithing. Each one requires 8 Steel Bars, 2 Strong Flux, 2 Heavy Grinding Stones, 3 Moonstone, and 3 Heavy Leather to create.",
-				goals = {
-					{ t = "collect", quest = 8781, item = 3853, itemName = "Moonsteel Broadsword", count = 2, oi = 1 },
-				},
-			},
-			{
-				note = "Craft them with Leatherworking or purchase them from the Auction House. Craft them with Leatherworking. Each one requires 5 Rugged Leather to create.",
-				goals = {
-					{ t = "collect", quest = 8780, item = 15564, itemName = "Rugged Armor Kit", count = 8, oi = 1 },
-				},
-			},
-			{
-				label = "Collect_8_Heavy_Armor_Kits",
-				along = true,
-				note = "Craft them with Leatherworking or purchase them from the Auction House. Craft them with Leatherworking. Each one requires 5 Heavy Leather and 1 Fine Thread to create.",
-				goals = {
-					{ t = "collect", quest = 8780, item = 4265, itemName = "Heavy Armor Kit", count = 8, oi = 2 },
-				},
-			},
-			{
-				note = "Craft them with First Aid or purchase them from the Auction House. Craft them with First Aid. Each one requires 2 Runecloth to create.",
-				goals = {
-					{ t = "collect", quest = 8496, item = 14530, itemName = "Heavy Runecloth Bandage", count = 30, oi = 1 },
-				},
-			},
-			{
-				label = "Collect_30_Heavy_Mageweave_Bandage",
-				along = true,
-				note = "Craft them with First Aid or purchase them from the Auction House. Craft them with First Aid. Each one requires 2 Mageweave Cloth to create.",
-				goals = {
-					{ t = "collect", quest = 8496, item = 8545, itemName = "Heavy Mageweave Bandage", count = 30, oi = 2 },
-				},
-			},
-			{
-				label = "Collect_30_Heavy_Silk_Bandage",
-				along = true,
-				note = "Craft them with First Aid or purchase them from the Auction House. Craft them with First Aid. Each one requires 2 Silk Cloth to create.",
-				goals = {
-					{ t = "collect", quest = 8496, item = 6451, itemName = "Heavy Silk Bandage", count = 30, oi = 3 },
+					{ t = "accept", quest = 11645, title = "Dirty, Stinkin' Snobolds!", npc = 25477, npcName = "Crafty Wobblesprocket", x = 57.6, y = 18.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8779, title = "Scrying Materials", npc = 15183, npcName = "Geologist Larksbane", map = 1451, x = 49.67, y = 37.35, f = "e" },
+					{ t = "collect", quest = 11645, itemName = "Crafty's Stuff", count = 10, oi = 1, x = 53.1, y = 13.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8496, title = "Bandages for the Field", npc = 15191, npcName = "Windcaller Proudhorn", map = 1451, x = 51.15, y = 38.29, f = "e" },
+					{ t = "goto", x = 54.0, y = 13.5, f = "e" },
+				},
+			},
+			{
+				note = "Go inside the cave to 55.6,12.6",
+				goals = {
+					{ t = "accept", quest = 11673, title = "Get Me Outa Here!", npc = 25589, npcName = "Bonker Togglevolt", x = 55.6, y = 12.6, f = "e" },
+				},
+			},
+			{
+				note = "Go outside the cave to 57,18.7",
+				goals = {
+					{ t = "turnin", quest = 11673, title = "Get Me Outa Here!", npc = 25590, npcName = "Fizzcrank Fullthrottle", x = 57.0, y = 18.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8778, title = "The Ironforge Brigade Needs Explosives!", npc = 15444, npcName = "Arcanist Nozzlespring", map = 1451, x = 32.54, y = 52.03, f = "e" },
+					{ t = "turnin", quest = 11645, title = "Dirty, Stinkin' Snobolds!", npc = 25477, npcName = "Crafty Wobblesprout", x = 57.6, y = 18.7, f = "e" },
+					{ t = "accept", quest = 11650, title = "Just a Few More Things...", npc = 25477, npcName = "Crafty Wobblesprout", x = 57.6, y = 18.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8781, title = "Arms for the Field", npc = 15443, npcName = "Janela Stouthammer", map = 1451, x = 32.88, y = 52.53, f = "e" },
-					{ t = "turnin", quest = 8780, title = "Armor Kits for the Field", npc = 15443, npcName = "Janela Stouthammer", map = 1451, x = 32.88, y = 52.53, f = "e" },
-				},
-			},
-			{
-				label = "Open_Followup_Logistics_Assignment",
-				goals = {
-					{ t = "use", item = 20805, itemName = "Followup Logistics Assignment" },
+					{ t = "kill", target = "Fizzcrank Mechagnomes", count = 1, x = 58.5, y = 17.6, f = "e" },
+					{ t = "collect", quest = 11710, itemName = "Fizzcrank Spare Parts", count = 15, oi = 1, x = 58.5, y = 17.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 20807, itemName = "Logistics Task Briefing I" },
-					{ t = "accept", quest = 8497, title = "Desert Survival Kits" },
+					{ t = "kill", target = "mechanical mobs", count = 1, x = 58.5, y = 17.6, f = "e" },
+					{ t = "collect", itemName = "The Ultrasonic Screwdriver", count = 1, x = 58.5, y = 17.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 20939, itemName = "Logistics Task Briefing II" },
-					{ t = "accept", quest = 8805, title = "Boots for the Guard" },
+					{ t = "turnin", quest = 11729, title = "The Ultrasonic Screwdriver", npc = 25477, npcName = "Crafty Wobblesprout", x = 57.6, y = 18.7, f = "e" },
+					{ t = "accept", quest = 11730, title = "Master and Servant", npc = 25477, npcName = "Crafty Wobblesprout", x = 57.6, y = 18.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 20940, itemName = "Logistics Task Briefing III" },
-					{ t = "accept", quest = 8541, title = "Grinding Stones for the Guard" },
+					{ t = "turnin", quest = 11710, title = "What's the Matter with the Transmatter?", npc = 25702, npcName = "Mordle Cogspinner", x = 57.4, y = 18.7, f = "e" },
+					{ t = "accept", quest = 11692, title = "Check in With Bixie", npc = 25702, npcName = "Mordle Cogspinner", x = 57.4, y = 18.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21262, itemName = "Logistics Task Briefing VIII" },
-					{ t = "accept", quest = 8782, title = "Uniform Supplies" },
+					{ t = "turnin", quest = 11712, title = "Re-Cursive", npc = 25747, npcName = "Jinky Wingnut", x = 57.4, y = 18.7, f = "e" },
+					{ t = "accept", quest = 11788, title = "Lefty Loosey, Righty Tighty", npc = 25747, npcName = "Jinky Wingnut", x = 57.4, y = 18.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21265, itemName = "Logistics Task Briefing IX" },
-					{ t = "accept", quest = 8783, title = "Extraordinary Materials" },
+					{ t = "accept", quest = 11725, title = "Finding Pilot Tailspin", npc = 25590, npcName = "Fizzcrank Fullthrottle", x = 57.0, y = 18.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 21514, itemName = "Logistics Task Briefing XI" },
-					{ t = "accept", quest = 8829, title = "The Ultimate Deception" },
-				},
-			},
-			{
-				note = "You can also purchase these from the Auction House.",
-				goals = {
-					{ t = "collect", quest = 8497, item = 7079, itemName = "Globe of Water", count = 4, oi = 1, map = 1448, x = 48.75, y = 24.16, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Powerful_Anti-Venom",
-				along = true,
-				note = "Craft them with First Aid or purchase them from the Auction House. Craft them with First Aid. Each one requires 1 Huge Venom Sac to create.",
-				goals = {
-					{ t = "collect", quest = 8497, item = 19440, itemName = "Powerful Anti-Venom", count = 4, oi = 2 },
-				},
-			},
-			{
-				label = "Collect_Smoked_Desert_Dumplings",
-				along = true,
-				note = "Craft them with Cooking or purchase them from the Auction House. Craft them with Cooking. Each one requires 1 Sandworm Meat and 1 Soothing Spices to create.",
-				goals = {
-					{ t = "collect", quest = 8497, item = 20452, itemName = "Smoked Desert Dumplings", count = 4, oi = 3 },
-				},
-			},
-			{
-				note = "Craft them with Blacksmithing or purchase them from the Auction House. Craft them with Blacksmithing. Each one requires 14 Mithril Bars, 2 Truesilver Bars, 4 Thick Leather, 1 Solid Grinding Stone, and 1 Aquamarine to create.",
-				goals = {
-					{ t = "collect", quest = 8805, item = 7936, itemName = "Ornate Mithril Boots", count = 3, oi = 1 },
-				},
-			},
-			{
-				note = "Craft them with Blacksmithing or purchase them from the Auction House. Craft them with Blacksmithing. Each one requires 4 Dense Stone to create.",
-				goals = {
-					{ t = "collect", quest = 8541, item = 12644, itemName = "Dense Grinding Stone", count = 10, oi = 1 },
-				},
-			},
-			{
-				label = "Collect_Solid_Grinding_Stone",
-				along = true,
-				note = "Craft them with Blacksmithing or purchase them from the Auction House. Craft them with Blacksmithing. Each one requires 4 Solid Stone to create.",
-				goals = {
-					{ t = "collect", quest = 8541, item = 7966, itemName = "Solid Grinding Stone", count = 10, oi = 2 },
-				},
-			},
-			{
-				label = "Collect_Heavy_Grinding_Stone",
-				along = true,
-				note = "Craft them with Blacksmithing or purchase them from the Auction House. Craft them with Blacksmithing. Each one requires 3 Heavy Stone to create.",
-				goals = {
-					{ t = "collect", quest = 8541, item = 3486, itemName = "Heavy Grinding Stone", count = 10, oi = 3 },
-				},
-			},
-			{
-				note = "Craft it with Tailoring or purchase it from the Auction House. Craft them with Tailoring. It requires 2 Felcloth and a daily Tailoring cooldown to create.",
-				goals = {
-					{ t = "collect", quest = 8782, item = 14342, itemName = "Mooncloth", oi = 1 },
-				},
-			},
-			{
-				label = "Collect_Bolt_of_Runecloth",
-				along = true,
-				note = "Craft them with Tailoring or purchase them from the Auction House. Craft them with Tailoring. Each one requires 5 Runecloth to create.",
-				goals = {
-					{ t = "collect", quest = 8782, item = 14048, itemName = "Bolt of Runecloth", count = 2, oi = 2 },
-				},
-			},
-			{
-				label = "Collect_Ironweb_Spider_Silk",
-				along = true,
-				note = "You can also purchase it from the Auction House.",
-				goals = {
-					{ t = "collect", quest = 8782, item = 14227, itemName = "Ironweb Spider Silk", oi = 3, map = 1422, x = 62.2, y = 49.48, f = "e" },
-				},
-			},
-			{
-				note = "Craft them with Enchanting or purchase them from the Auction House. Craft them with Enchanting. Each one requires 1 Thorium Bar and 3 Dream Dust to create.",
-				goals = {
-					{ t = "collect", quest = 8783, item = 12655, itemName = "Enchanted Thorium Bar", count = 10, oi = 1 },
-				},
-			},
-			{
-				label = "Collect_Enchanted_Leather",
-				along = true,
-				note = "Craft them with Enchanting or purchase them from the Auction House. Craft them with Enchanting. Each one requires 1 Rugged Leather and 1 Lesser Eternal Essence to create.",
-				goals = {
-					{ t = "collect", quest = 8783, item = 12810, itemName = "Enchanted Leather", count = 10, oi = 2 },
-				},
-			},
-			{
-				note = "This has a chance to drop from Risen Bonewarders and Risen Constructs in the Scholomance dungeon.",
-				goals = {
-					{ t = "collect", quest = 8829, item = 12753, itemName = "Skin of Shadow", oi = 1 },
-				},
-			},
-			{
-				label = "Collect_Frayed_Abomination_Stitching",
-				along = true,
-				note = "These drop from Abomination enemies as well as Ramstein the Gorger in the Undead Stratholme dungeon.",
-				goals = {
-					{ t = "collect", quest = 8829, item = 12735, itemName = "Frayed Abomination Stitching", count = 3, oi = 2 },
-				},
-			},
-			{
-				label = "Collect_Twilight_Cultist_Robe",
-				along = true,
-				note = "You can also purchase it from the Auction House.",
-				goals = {
-					{ t = "collect", quest = 8829, item = 20407, itemName = "Twilight Cultist Robe", oi = 3, map = 1451, x = 38.64, y = 44.97, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 8497, title = "Desert Survival Kits", npc = 15174, npcName = "Calandrath", map = 1451, x = 51.87, y = 39.14, f = "e" },
-				},
-			},
-			{
-				note = "At the top of the tower.",
-				goals = {
-					{ t = "turnin", quest = 8541, title = "Grinding Stones for the Guard", npc = 15182, npcName = "Vish Kozus", map = 1451, x = 50.75, y = 33.65, f = "e" },
-					{ t = "turnin", quest = 8805, title = "Boots for the Guard", npc = 15182, npcName = "Vish Kozus", map = 1451, x = 50.75, y = 33.65, f = "e" },
+					{ t = "kill", target = "robots in this area", count = 1, x = 58.7, y = 18.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8782, title = "Uniform Supplies", npc = 15191, npcName = "Windcaller Proudhorn", map = 1451, x = 51.15, y = 38.29, f = "e" },
+					{ t = "kill", quest = 11788, target = "Twonky", count = 1, oi = 1, x = 60.2, y = 20.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8783, title = "Extraordinary Materials", npc = 15176, npcName = "Vargus", map = 1451, x = 51.23, y = 38.86, f = "e" },
+					{ t = "kill", quest = 11788, target = "ED-210", count = 1, oi = 2, x = 65.4, y = 17.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8829, title = "The Ultimate Deception", npc = 15282, npcName = "Aurel Goldleaf", map = 1451, x = 51.96, y = 38.15, f = "e" },
+					{ t = "kill", quest = 11788, target = "Max Blasto", count = 1, oi = 3, x = 63.7, y = 22.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", item = 21132, itemName = "Logistics Assignment" },
+					{ t = "collect", quest = 11650, itemName = "Crafty's Tools", count = 1, oi = 1, x = 64.4, y = 23.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 11788, target = "The Grinder", count = 1, oi = 4, x = 65.2, y = 28.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11725, title = "Finding Pilot Tailspin", npc = 25807, npcName = "Iggy \"Tailspin\" Cogtoggle", x = 61.7, y = 35.8, f = "e" },
+					{ t = "accept", quest = 11726, title = "A Little Bit of Spice", npc = 25807, npcName = "Iggy \"Tailspin\" Cogtoggle", x = 61.7, y = 35.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", target = "Gorlocs", count = 1, x = 61.1, y = 44.6, f = "e" },
+					{ t = "collect", quest = 11726, itemName = "Gorloc Spice Pouch", count = 4, oi = 1, x = 61.1, y = 44.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11726, title = "A Little Bit of Spice", npc = 25807, npcName = "Iggy \"Tailspin\" Cogtoggle", x = 61.7, y = 35.8, f = "e" },
+					{ t = "accept", quest = 11728, title = "Lupus Pupus", npc = 25807, npcName = "Iggy \"Tailspin\" Cogtoggle", x = 61.7, y = 35.8, f = "e" },
+				},
+			},
+			{
+				note = "All around this area:",
+				goals = {
+					{ t = "collect", quest = 11728, itemName = "Microfilm", count = 8, oi = 1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11728, title = "Lupus Pupus", npc = 25807, npcName = "Iggy \"Tailspin\" Cogtoggle", x = 61.7, y = 35.8, f = "e" },
+					{ t = "accept", quest = 11795, title = "Emergency Protocol: Section 8.2, Paragraph C", npc = 25807, npcName = "Iggy \"Tailspin\" Cogtoggle", x = 61.7, y = 35.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 11795, itemName = "Fizzcrank Pilot's Insignia", count = 6, oi = 1, x = 61.0, y = 37.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11795, title = "Emergency Protocol: Section 8.2, Paragraph C", npc = 25807, npcName = "Iggy \"Tailspin\" Cogtoggle", x = 61.7, y = 35.8, f = "e" },
+					{ t = "accept", quest = 11796, title = "Emergency Protocol: Section 8.2, Paragraph D", npc = 25807, npcName = "Iggy \"Tailspin\" Cogtoggle", x = 61.7, y = 35.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", x = 59.7, y = 39.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", x = 63.3, y = 37.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", x = 60.9, y = 33.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11796, title = "Emergency Protocol: Section 8.2, Paragraph D", npc = 25807, npcName = "Iggy \"Tailspin\" Cogtoggle", x = 61.7, y = 35.8, f = "e" },
+					{ t = "accept", quest = 11873, title = "Give Fizzcrank the News", npc = 25807, npcName = "Iggy \"Tailspin\" Cogtoggle", x = 61.7, y = 35.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11932, title = "Cowards and Fools", npc = 26169, npcName = "Ataika", x = 63.8, y = 46.1, f = "e" },
+					{ t = "accept", quest = 12086, title = "The Son of Karkut", npc = 26169, npcName = "Ataika", x = 63.8, y = 46.1, f = "e" },
+					{ t = "accept", quest = 11949, title = "Not Without a Fight!", npc = 26169, npcName = "Ataika", x = 63.8, y = 46.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 11945, title = "Preparing for the Worst", npc = 26213, npcName = "Utaik", x = 64.0, y = 45.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 11949, target = "Kvaldir Raider", count = 12, oi = 1, x = 65.3, y = 47.2, f = "e" },
+					{ t = "collect", quest = 11945, itemName = "Kaskala Supplies", count = 8, oi = 1, x = 65.3, y = 47.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11949, title = "Not Without a Fight!", npc = 26169, npcName = "Ataika", x = 63.8, y = 46.1, f = "e" },
+					{ t = "accept", quest = 11950, title = "Muahit's Wisdom", npc = 26169, npcName = "Ataika", x = 63.8, y = 46.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11945, title = "Preparing for the Worst", npc = 26213, npcName = "Utaik", x = 64.0, y = 45.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11950, title = "Muahit's Wisdom", npc = 26218, npcName = "Elder Muahit", x = 67.2, y = 54.9, f = "e" },
+					{ t = "accept", quest = 11961, title = "Spirits Watch Over Us", npc = 26218, npcName = "Elder Muahit", x = 67.2, y = 54.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 11961, itemName = "Issliruk's Totem", count = 1, oi = 1, x = 67.7, y = 50.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11961, title = "Spirits Watch Over Us", npc = 26218, npcName = "Elder Muahit", x = 67.2, y = 54.9, f = "e" },
+					{ t = "accept", quest = 11968, title = "The Tides Turn", npc = 26218, npcName = "Elder Muahit", x = 67.2, y = 54.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 11968, npc = 26266, target = "Heigarr the Horrible", count = 1, oi = 1, x = 67.4, y = 56.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11968, title = "The Tides Turn", npc = 26218, npcName = "Elder Muahit", x = 67.2, y = 54.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 12117, title = "Travel to Moa'ki Harbor", npc = 28382, npcName = "Hotawa", x = 67.2, y = 54.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12086, title = "The Son of Karkut", npc = 26187, npcName = "Corporal Venn", x = 82.0, y = 46.4, f = "e" },
+					{ t = "accept", quest = 11944, title = "Surrounded!", npc = 26187, npcName = "Corporal Venn", x = 82.0, y = 46.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 12157, title = "The Lost Courier", npc = 26186, npcName = "Private Casey", x = 82.0, y = 46.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 11650, itemName = "A Handful of Rocknar's Grit", count = 1, oi = 3, x = 81.5, y = 42.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 11944, target = "Ziggurat Defender", count = 7, oi = 1, x = 82.2, y = 44.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11944, title = "Surrounded!", npc = 26187, npcName = "Corporal Venn", x = 82.0, y = 46.4, f = "e" },
+					{ t = "accept", quest = 12088, title = "Thassarian, the Death Knight", npc = 26187, npcName = "Corporal Venn", x = 82.0, y = 46.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12088, title = "Thassarian, the Death Knight", npc = 26170, npcName = "Thassarian", x = 84.8, y = 41.7, f = "e" },
+					{ t = "accept", quest = 11956, title = "Finding the Phylactery", npc = 26170, npcName = "Thassarian", x = 84.8, y = 41.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", x = 82.4, y = 46.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 11956, itemName = "Tanathal's Phylactery", count = 1, oi = 1, x = 85.4, y = 33.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11956, title = "Finding the Phylactery", npc = 26170, npcName = "Thassarian", x = 84.8, y = 41.7, f = "e" },
+					{ t = "accept", quest = 11938, title = "Buying Some Time", npc = 26170, npcName = "Thassarian", x = 84.8, y = 41.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", target = "En'kilah mob", count = 20, x = 84.4, y = 31.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11938, title = "Buying Some Time", npc = 26170, npcName = "Thassarian", x = 84.8, y = 41.7, f = "e" },
+					{ t = "accept", quest = 11942, title = "Words of Power", npc = 26170, npcName = "Thassarian", x = 84.8, y = 41.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 11942, itemName = "High Priest Talet-Kha's Scroll", count = 1, oi = 3, x = 89.4, y = 28.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 11942, itemName = "High Priest Andorath's Scroll", count = 1, oi = 1, x = 88.1, y = 20.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 11942, itemName = "High Priest Naferset's Scroll", count = 1, oi = 2, x = 83.9, y = 20.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11942, title = "Words of Power", npc = 26170, npcName = "Thassarian", x = 84.8, y = 41.7, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Fizzcrank Airstrip,1|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "goto", x = 57.1, y = 18.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11873, title = "Give Fizzcrank the News", npc = 25590, npcName = "Fizzcrank Fullthrottle", x = 57.0, y = 18.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 11713, title = "Scouting the Sinkholes", npc = 25780, npcName = "Abner Fizzletorque", x = 57.1, y = 20.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11788, title = "Lefty Loosey, Righty Tighty", npc = 25747, npcName = "Jinky Wingnut", x = 57.4, y = 18.7, f = "e" },
+					{ t = "accept", quest = 11798, title = "The Gearmaster", npc = 25747, npcName = "Jinky Wingnut", x = 57.4, y = 18.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11650, title = "Just a Few More Things...", npc = 25477, npcName = "Crafty Wobblesprocket", x = 57.6, y = 18.7, f = "e" },
+					{ t = "turnin", quest = 11730, title = "Master and Servant", npc = 25477, npcName = "Crafty Wobblesprocket", x = 57.6, y = 18.7, f = "e" },
+					{ t = "accept", quest = 11653, title = "Hah... You're Not So Big Now!", npc = 25477, npcName = "Crafty Wobblesprocket", x = 57.6, y = 18.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", x = 54.2, y = 13.0, f = "e" },
+				},
+			},
+			{
+				note = "Go down into the cave to 54.2,11.2",
+				goals = {
+					{ t = "goto", x = 54.2, y = 11.2, f = "e" },
+				},
+			},
+			{
+				note = "Go outside to 57.6,18.7",
+				goals = {
+					{ t = "turnin", quest = 11653, title = "Hah... You're Not So Big Now!", npc = 25477, npcName = "Crafty Wobblesprocket", x = 57.6, y = 18.7, f = "e" },
+					{ t = "accept", quest = 11658, title = "Plan B", npc = 25477, npcName = "Crafty Wobblesprocket", x = 57.6, y = 18.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 11658, itemName = "Warsong Outfit", count = 10, oi = 1, x = 47.9, y = 21.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 11658, itemName = "Warsong Banner", count = 1, oi = 2, x = 49.6, y = 26.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11704, title = "King Mrgl-Mrgl", npc = 25197, npcName = "King Mrgl-Mrgl", x = 43.5, y = 14.0, f = "e" },
+					{ t = "accept", quest = 11571, title = "Learning to Communicate", npc = 25197, npcName = "King Mrgl-Mrgl", x = 43.5, y = 14.0, f = "e" },
+				},
+			},
+			{
+				note = "Go underwater to 42.5,15.9",
+				goals = {
+					{ t = "collect", quest = 11571, itemName = "The King's Filled Conch", count = 1, oi = 1, x = 42.5, y = 15.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11571, title = "Learning to Communicate", npc = 25197, npcName = "King Mrgl-Mrgl", x = 43.5, y = 14.0, f = "e" },
+					{ t = "accept", quest = 11559, title = "Winterfin Commerce", npc = 25197, npcName = "King Mrgl-Mrgl", x = 43.5, y = 14.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 11559, itemName = "Winterfin Clam", count = 5, oi = 1, x = 41.5, y = 13.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11559, title = "Winterfin Commerce", npc = 25206, npcName = "Ahlurglgr", x = 43.0, y = 13.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 11561, title = "Them!", npc = 25199, npcName = "Brglmurgl", x = 42.8, y = 13.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 11560, title = "Oh Noes, the Tadpoles!", npc = 25197, npcName = "King Mrgl-Mrgl", x = 43.5, y = 14.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 11561, target = "Winterfin murlocs", count = 15, oi = 1, x = 40.6, y = 17.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11561, title = "Them!", npc = 25199, npcName = "Brglmurgl", x = 42.8, y = 13.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11560, title = "Oh Noes, the Tadpoles!", npc = 25197, npcName = "King Mrgl-Mrgl", x = 43.5, y = 14.0, f = "e" },
+					{ t = "accept", quest = 11562, title = "I'm Being Blackmailed By My Cleaner", npc = 25197, npcName = "King Mrgl-Mrgl", x = 43.5, y = 14.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11562, title = "I'm Being Blackmailed By My Cleaner", npc = 25205, npcName = "Mrmrglmr", x = 42.0, y = 12.8, f = "e" },
+					{ t = "accept", quest = 11563, title = "Grmmurggll Mrllggrl Glrggl!!!", npc = 25205, npcName = "Mrmrglmr", x = 42.0, y = 12.8, f = "e" },
 				},
 			},
 		},

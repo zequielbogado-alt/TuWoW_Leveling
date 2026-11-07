@@ -1,469 +1,383 @@
 -- TuWoW_Leveling — Guides/Leveling_Horde_25.lua
--- Compilado desde ZygorGuidesViewerForever y depurado para TuWoW 3.3.5a.
+-- Compilado desde Zygor Guides WotLK 3.3.5a oficial para TuWoW.
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/h-feralas-43-44",
+		id = "zygor/leveling/h-levels-45-50-part-2",
 		pack = "guides",
-		title = "Feralas",
+		title = "Levels (45-50) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-stranglethorn-vale-44-45",
+		next = "zygor/leveling/h-levels-50-55",
 		author = "TuWoW & Zygor",
-		minLevel = 43,
-		maxLevel = 44,
-		zone = 1441,
+		minLevel = 45,
+		maxLevel = 50,
+		zone = 1446,
 		version = 1,
 		steps = {
 			{
+				note = "Slagtree's Lost Tools can be at any of these 5 spots:",
 				goals = {
-					{ t = "goto", text = "Follow the road up into Feralas", map = 1441, x = 7.68, y = 10.62 },
-					{ t = "getfp", location = "Camp Mojache", map = 1444, x = 75.45, y = 44.36, f = "e" },
+					{ t = "collect", quest = 7839, itemName = "Slagtree's Lost Tools", count = 1, oi = 1, map = 1425, x = 72.6, y = 53.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 2987, title = "Gordunni Cobalt", npc = 8021, npcName = "Orwin Gizzmick", map = 1444, x = 75.7, y = 44.3, f = "e" },
+					{ t = "kill", quest = 7844, target = "Vilebranch Scalper", count = 6, oi = 1, map = 1425, x = 70.8, y = 49.5, f = "e" },
+					{ t = "kill", quest = 7844, target = "Vilebranch Soothsayer", count = 2, oi = 2, map = 1425, x = 70.8, y = 49.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 2973, title = "A New Cloak's Sheen", npc = 4544, npcName = "Krueg Skullsplitter", map = 1444, x = 75.94, y = 42.74, f = "e" },
+					{ t = "collect", quest = 7830, itemName = "Skylord Plume", count = 1, oi = 1, map = 1425, x = 59.4, y = 53.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 2862, title = "War on the Woodpaw", npc = 7875, npcName = "Hadoken Swiftstrider", map = 1444, x = 74.91, y = 42.47, f = "e" },
+					{ t = "kill", quest = 7829, target = "Savage Owlbeast", count = 10, oi = 1, map = 1425, x = 54.1, y = 50.4, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "accept", quest = 2822, title = "The Mark of Quality", npc = 7854, npcName = "Jangdor Swiftstrider", map = 1444, x = 74.43, y = 42.91, f = "e" },
+					{ t = "level", level = 48, f = "e" },
 				},
 			},
 			{
-				label = "Accept_Ogres_Of_Feralas",
-				along = true,
-				note = "Wearing red armor. Walks around.",
 				goals = {
-					{ t = "turnin", quest = 2981, title = "A Threat in Feralas", npc = 7777, npcName = "Rok Orhan", map = 1444, x = 75.6, y = 43.6, f = "e" },
-					{ t = "accept", quest = 2975, title = "The Ogres of Feralas", npc = 7777, npcName = "Rok Orhan", map = 1444, x = 75.6, y = 43.6, f = "e" },
+					{ t = "kill", quest = 7828, target = "Silvermane Howler", count = 5, oi = 2, map = 1425, x = 43.9, y = 58.7, f = "e" },
 				},
 			},
 			{
-				note = "Gnolls.",
 				goals = {
-					{ t = "collect", quest = 2862, item = 9237, itemName = "Woodpaw Gnoll Mane", count = 10, oi = 1, map = 1444, x = 73.0, y = 39.8, f = "e" },
+					{ t = "turnin", quest = 7839, title = "Vilebranch Hooligans", npc = 14737, npcName = "Smith Slagtree", map = 1425, x = 77.5, y = 80.3, f = "e" },
 				},
 			},
 			{
-				note = "White unrolled scroll. Multiple locations.",
 				goals = {
-					{ t = "goto", text = "Follow the path up into Gordunni Outpost", map = 1444, x = 75.0, y = 35.15 },
-					{ t = "goto", text = "Follow the path", map = 1444, x = 76.29, y = 32.9 },
-					{ t = "collect", item = 9370, itemName = "Gordunni Scroll" },
-					{ t = "use", item = 9370, itemName = "Gordunni Scroll" },
-					{ t = "accept", quest = 2978, title = "The Gordunni Scroll", map = 1444, x = 75.13, y = 29.73, f = "e" },
+					{ t = "turnin", quest = 7844, title = "Cannibalistic Cousins", npc = 14739, npcName = "Mystic Yayo'jin", map = 1425, x = 78.8, y = 78.2, f = "e" },
 				},
 			},
 			{
-				label = "Collect_Gordunni_Cobalt",
-				along = true,
-				note = "Next to glowing blue circles. Piles of dirt that appear. They glow blue if containing quest item.",
 				goals = {
-					{ t = "use", item = 9466, itemName = "Orwin's Shovel" },
-					{ t = "collect", quest = 2987, item = 9463, itemName = "Gordunni Cobalt", count = 12, oi = 1, map = 1444, x = 76.7, y = 33.8, f = "e" },
+					{ t = "turnin", quest = 7828, title = "Stalking the Stalkers", npc = 14741, npcName = "Huntsman Markhor", map = 1425, x = 79.2, y = 79.5, f = "e" },
+					{ t = "turnin", quest = 7829, title = "Hunt the Savages", npc = 14741, npcName = "Huntsman Markhor", map = 1425, x = 79.2, y = 79.5, f = "e" },
+					{ t = "turnin", quest = 7830, title = "Avenging the Fallen", npc = 14741, npcName = "Huntsman Markhor", map = 1425, x = 79.2, y = 79.5, f = "e" },
 				},
 			},
 			{
-				label = "Kill_Gordunni_Brutes_Ogres_Ogre_Mages",
-				along = true,
 				goals = {
-					{ t = "kill", quest = 2975, npc = 5232, target = "Gordunni Brute", count = 5, oi = 3, map = 1444, x = 76.7, y = 33.8, f = "e" },
-					{ t = "kill", quest = 2975, npc = 5229, target = "Gordunni Ogre", count = 10, oi = 1, map = 1444, x = 76.7, y = 33.8, f = "e" },
-					{ t = "kill", quest = 2975, npc = 5237, target = "Gordunni Ogre Mage", count = 10, oi = 2, map = 1444, x = 76.7, y = 33.8, f = "e" },
+					{ t = "turnin", quest = 2933, title = "Venom Bottles", npc = 2216, npcName = "Apothecary Lydon", map = 1424, x = 61.4, y = 19.1, f = "e" },
+					{ t = "accept", quest = 2934, title = "Undamaged Venom Sac", npc = 2216, npcName = "Apothecary Lydon", map = 1424, x = 61.4, y = 19.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 2862, title = "War on the Woodpaw", npc = 7875, npcName = "Hadoken Swiftstrider", map = 1444, x = 74.91, y = 42.47, f = "e" },
-					{ t = "accept", quest = 2863, title = "Alpha Strike", npc = 7875, npcName = "Hadoken Swiftstrider", map = 1444, x = 74.91, y = 42.47, f = "e" },
+					{ t = "goto", map = 1424, x = 84.9, y = 31.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 2987, title = "Gordunni Cobalt", npc = 8021, npcName = "Orwin Gizzmick", map = 1444, x = 75.7, y = 44.31, f = "e" },
+					{ t = "turnin", quest = 77, title = "A Sticky Situation", npc = 7801, npcName = "Gilveradin Sunchaser", map = 1425, x = 26.7, y = 48.6, f = "e" },
+					{ t = "accept", quest = 81, title = "Ripple Delivery", npc = 7801, npcName = "Gilveradin Sunchaser", map = 1425, x = 26.7, y = 48.6, f = "e" },
 				},
 			},
 			{
-				label = "Accept_Dark_Ceremony",
-				along = true,
-				note = "Wearing red armor. Walks around.",
 				goals = {
-					{ t = "turnin", quest = 2975, title = "The Ogres of Feralas", npc = 7777, npcName = "Rok Orhan", map = 1444, x = 75.6, y = 43.6, f = "e" },
-					{ t = "accept", quest = 2980, title = "The Ogres of Feralas", npc = 7777, npcName = "Rok Orhan", map = 1444, x = 75.6, y = 43.6, f = "e" },
-					{ t = "turnin", quest = 2978, title = "The Gordunni Scroll", npc = 7777, npcName = "Rok Orhan", map = 1444, x = 75.6, y = 43.6, f = "e" },
-					{ t = "accept", quest = 2979, title = "Dark Ceremony", npc = 7777, npcName = "Rok Orhan", map = 1444, x = 75.6, y = 43.6, f = "e" },
+					{ t = "kill", quest = 7841, target = "Highvale Scout", count = 8, oi = 1, map = 1425, x = 29.1, y = 51.5, f = "e" },
+					{ t = "kill", quest = 7841, target = "Highvale Outrunner", count = 5, oi = 2, map = 1425, x = 29.1, y = 51.5, f = "e" },
+					{ t = "kill", quest = 7841, target = "Highvale Ranger", count = 5, oi = 3, map = 1425, x = 29.1, y = 51.5, f = "e" },
+					{ t = "kill", quest = 7841, target = "Highvale Marksman", count = 2, oi = 4, map = 1425, x = 29.1, y = 51.5, f = "e" },
 				},
 			},
 			{
-				note = "Hurry, you have a timed quest.",
 				goals = {
-					{ t = "complete", quest = 2863, title = "Alpha Strike", note = "Click Here to Continue" },
+					{ t = "kill", target = "spiders", count = 1, map = 1425, x = 35.7, y = 64.8, f = "e" },
+					{ t = "collect", quest = 2934, itemName = "Undamaged Venom Sac", count = 1, oi = 1, map = 1425, x = 35.7, y = 64.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 2973, item = 9369, itemName = "Iridescent Sprite Darter Wing", count = 10, oi = 1, map = 1444, x = 69.4, y = 46.8, f = "e" },
+					{ t = "turnin", quest = 7841, title = "Message to the Wildhammer", npc = 14738, npcName = "Otho Moji'ko", map = 1425, x = 79.4, y = 79.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 2863, npc = 5258, target = "Woodpaw Alpha", count = 5, oi = 1, map = 1444, x = 68.6, y = 54.2, f = "e" },
+					{ t = "turnin", quest = 2934, title = "Undamaged Venom Sac", npc = 2216, npcName = "Apothecary Lydon", map = 1424, x = 61.4, y = 19.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 2863, title = "Alpha Strike", npc = 7875, npcName = "Hadoken Swiftstrider", map = 1444, x = 74.91, y = 42.46, f = "e" },
-					{ t = "accept", quest = 2902, title = "Woodpaw Investigation", npc = 7875, npcName = "Hadoken Swiftstrider", map = 1444, x = 74.91, y = 42.46, f = "e" },
+					{ t = "turnin", quest = 2782, title = "Rin'ji's Secret", npc = 7825, npcName = "Oran Snakewrithe", map = 1458, x = 73.0, y = 32.9, f = "e" },
+					{ t = "turnin", quest = 2995, title = "Lines of Communication", npc = 7825, npcName = "Oran Snakewrithe", map = 1458, x = 73.0, y = 32.9, f = "e" },
+					{ t = "accept", quest = 8273, title = "Oran's Gratitude", npc = 7825, npcName = "Oran Snakewrithe", map = 1458, x = 73.0, y = 32.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 2973, title = "A New Cloak's Sheen", npc = 4544, npcName = "Krueg Skullsplitter", map = 1444, x = 75.94, y = 42.74, f = "e" },
-					{ t = "accept", quest = 2974, title = "A Grim Discovery", npc = 4544, npcName = "Krueg Skullsplitter", map = 1444, x = 75.94, y = 42.74, f = "e" },
+					{ t = "turnin", quest = 2932, title = "Grim Message", npc = 2497, npcName = "Nimboya", map = 1434, x = 32.2, y = 27.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 2902, title = "Woodpaw Investigation", map = 1444, x = 71.63, y = 55.92, f = "e" },
-					{ t = "accept", quest = 2903, title = "The Battle Plans", map = 1444, x = 71.63, y = 55.92, f = "e" },
+					{ t = "collect", quest = 197, itemName = "Talon of Tethis", count = 1, oi = 1, map = 1434, x = 29.2, y = 44.1, f = "e" },
 				},
 			},
 			{
-				note = "Tauren.",
 				goals = {
-					{ t = "collect", quest = 2974, item = 9460, itemName = "Grimtotem Horn", count = 20, oi = 1, map = 1444, x = 67.4, y = 46.4, f = "e" },
+					{ t = "turnin", quest = 197, title = "Raptor Mastery (4)", npc = 715, npcName = "Hemet Nesingwary Jr.", map = 1434, x = 35.6, y = 10.6, f = "e" },
+					{ t = "accept", quest = 208, title = "Big Game Hunter", npc = 715, npcName = "Hemet Nesingwary Jr.", map = 1434, x = 35.6, y = 10.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 2903, title = "The Battle Plans", npc = 7875, npcName = "Hadoken Swiftstrider", map = 1444, x = 74.91, y = 42.47, f = "e" },
-					{ t = "accept", quest = 7730, title = "Zukk'ash Infestation", npc = 7875, npcName = "Hadoken Swiftstrider", map = 1444, x = 74.91, y = 42.47, f = "e" },
-					{ t = "accept", quest = 7731, title = "Stinglasher", npc = 7875, npcName = "Hadoken Swiftstrider", map = 1444, x = 74.91, y = 42.47, f = "e" },
+					{ t = "collect", quest = 208, itemName = "Head of Bangalash", count = 1, oi = 1, map = 1434, x = 38.2, y = 36.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 2974, title = "A Grim Discovery", npc = 4544, npcName = "Krueg Skullsplitter", map = 1444, x = 75.94, y = 42.74, f = "e" },
-					{ t = "accept", quest = 2976, title = "A Grim Discovery", npc = 4544, npcName = "Krueg Skullsplitter", map = 1444, x = 75.94, y = 42.74, f = "e" },
+					{ t = "turnin", quest = 208, title = "Big Game Hunter", npc = 715, npcName = "Hemet Nesingwary Jr.", map = 1434, x = 35.6, y = 10.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "sethome", location = "Camp Mojache", map = 1444, x = 74.8, y = 45.18, f = "e" },
+					{ t = "accept", quest = 608, title = "The Bloodsail Buccaneers (5)", npc = 2487, npcName = "Fleet Master Seahorn", map = 1434, x = 27.2, y = 76.9, f = "e" },
 				},
 			},
 			{
-				note = "Long grind soon. Up on the balcony of the building.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "vendor", npc = 9548, npcName = "Cawind Trueaim", map = 1444, x = 74.94, y = 45.71, f = "e" },
+					{ t = "turnin", quest = 580, title = "Whiskey Slim's Lost Grog", npc = 2491, npcName = "Whiskey Slim", map = 1434, x = 27.1, y = 77.5, f = "e" },
 				},
 			},
 			{
-				note = "Kill enemies as you walk. Reduces grinding later.",
 				goals = {
-					{ t = "complete", quest = 7731, title = "Stinglasher", note = "Click Here to Continue" },
+					{ t = "home", text = "Booty Bay", f = "e" },
 				},
 			},
 			{
-				note = "Level 47 green flying insect. Should be able to kill at this level. Flies around. Also inside the insect caves, but mostly outside.",
 				goals = {
-					{ t = "collect", quest = 7731, item = 18962, itemName = "Stinglasher's Glands", oi = 1, map = 1444, x = 75.6, y = 61.6, f = "e" },
+					{ t = "turnin", quest = 2874, title = "Deliver to MacKinley", npc = 2501, npcName = "\"Sea Wolf\" MacKinley", map = 1434, x = 27.8, y = 77.1, f = "e" },
 				},
 			},
 			{
-				label = "Collect_Zukkash_Carapaces",
-				along = true,
-				note = "Insects. More inside the insect caves. notinsticky",
 				goals = {
-					{ t = "collect", quest = 7730, item = 18961, itemName = "Zukk'ash Carapace", count = 20, oi = 1, map = 1444, x = 75.4, y = 61.2, f = "e" },
+					{ t = "accept", quest = 348, title = "Stranglethorn Fever", npc = 2486, npcName = "Fin Fizracket", map = 1434, x = 27.6, y = 76.7, f = "e" },
 				},
 			},
 			{
-				note = "Red flying snakes. On their corpses. Ghosts that appear.",
 				goals = {
-					{ t = "goto", text = "Follow the road", map = 1444, x = 67.56, y = 49.82 },
-					{ t = "use", item = 10699, itemName = "Yeh'kinya's Bramble" },
-					{ t = "complete", quest = 3520, title = "Screecher Spirits", note = "Collect #3# Screecher Spirits", map = 1444, x = 57.4, y = 54.0, f = "e" },
+					{ t = "collect", quest = 348, item = 2799, itemName = "Gorilla Fang", count = 1, map = 1434, x = 31.1, y = 68.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 2980, npc = 5234, target = "Gordunni Mauler", count = 5, oi = 3, map = 1444, x = 61.8, y = 54.4, f = "e" },
+					{ t = "collect", quest = 348, itemName = "Heart of Mokk", count = 1, oi = 1, map = 1434, x = 35.3, y = 60.4, f = "e" },
 				},
 			},
 			{
-				note = "Stagwings and Skystormers won't drop. Don't vendor them. Needed for future quest.",
 				goals = {
-					{ t = "collect", quest = 7842, item = 4589, itemName = "Long Elegant Feather", count = 10, map = 1444, x = 56.99, y = 64.45, f = "e" },
+					{ t = "collect", itemName = "the Carefully Folded Note", count = 1, map = 1434, x = 35.1, y = 72.9, f = "e" },
+					{ t = "accept", quest = 594, title = "Message in a Bottle (1)", map = 1434, x = 35.1, y = 72.9, f = "e" },
 				},
 			},
 			{
-				note = "Higher level enemies soon. Helps reduce grinding later. Run dungeons, if you prefer.",
 				goals = {
-					{ t = "goto", text = "ding 44,35000", map = 1444, x = 56.99, y = 64.45 },
+					{ t = "turnin", quest = 594, title = "Message in a Bottle (1)", npc = 2634, npcName = "Princess Poobah", map = 1434, x = 38.5, y = 80.6, f = "e" },
+					{ t = "accept", quest = 630, title = "Message in a Bottle (2)", npc = 2634, npcName = "Princess Poobah", map = 1434, x = 38.5, y = 80.6, f = "e" },
 				},
 			},
 			{
-				note = "Large white egg. Multiple locations. Don't vendor it. Needed for future quest.",
 				goals = {
-					{ t = "goto", text = "Follow the path up", map = 1444, x = 54.1, y = 68.24 },
-					{ t = "collect", quest = 2741, item = 8564, itemName = "Hippogryph Egg", map = 1444, x = 56.6, y = 75.9, f = "e" },
+					{ t = "collect", quest = 630, itemName = "Shackle Key", count = 1, oi = 1, map = 1434, x = 41.0, y = 83.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 2979, item = 9371, itemName = "Gordunni Orb", oi = 1, map = 1444, x = 58.4, y = 67.6, f = "e" },
+					{ t = "turnin", quest = 630, title = "Message in a Bottle (2)", npc = 2634, npcName = "Princess Poobah", map = 1434, x = 38.5, y = 80.6, f = "e" },
 				},
 			},
 			{
-				label = "Kill_Gordunni_Shamans",
-				along = true,
+				note = "While doing the next 3 steps, look for Cortello's Riddle on the ships:",
 				goals = {
-					{ t = "kill", quest = 2980, npc = 5236, target = "Gordunni Shaman", count = 10, oi = 1, map = 1444, x = 60.4, y = 68.0, f = "e" },
+					{ t = "accept", quest = 624, title = "Cortello's Riddle (1)", f = "e" },
 				},
 			},
 			{
-				label = "Kill_Gordunni_Warlocks",
-				along = true,
 				goals = {
-					{ t = "kill", quest = 2980, npc = 5240, target = "Gordunni Warlock", count = 10, oi = 2, map = 1444, x = 58.2, y = 66.4, f = "e" },
+					{ t = "goto", map = 1434, x = 32.9, y = 88.2, f = "e" },
 				},
 			},
 			{
-				note = "Yetis. More through the tunnel.",
 				goals = {
-					{ t = "collect", quest = 2822, item = 8973, itemName = "Thick Yeti Hide", count = 10, oi = 1, map = 1444, x = 55.4, y = 57.4, f = "e" },
+					{ t = "goto", map = 1434, x = 30.6, y = 90.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 8705, itemName = "OOX-22/FE Distress Beacon" },
-					{ t = "accept", quest = 2766, title = "Find OOX-22/FE!" },
+					{ t = "goto", map = 1434, x = 29.2, y = 88.3, f = "e" },
 				},
 			},
 			{
-				note = "In the clearing between the tunnel and cave.",
 				goals = {
-					{ t = "goto", text = "Run through the tunnel", map = 1444, x = 55.22, y = 56.39 },
-					{ t = "turnin", quest = 2766, title = "Find OOX-22/FE!", npc = 7807, npcName = "Homing Robot OOX-22/FE", map = 1444, x = 53.35, y = 55.7, f = "e" },
+					{ t = "level", level = 49, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "DRUID" } },
+				note = "Make sure you have accepted the Cortello's Riddle quest:",
 				goals = {
-					{ t = "train", npc = 12042, npcName = "Loganaar", map = 1450, x = 52.53, y = 40.57, f = "e" },
+					{ t = "accept", quest = 624, title = "Cortello's Riddle (1)", f = "e" },
 				},
 			},
 			{
+				note = "Hearth to Booty Bay,0.1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "accept", quest = 3121, title = "A Strange Request", npc = 8115, npcName = "Witch Doctor Uzer'i", map = 1444, x = 74.42, y = 43.36, f = "e" },
+					{ t = "goto", map = 1434, x = 27.1, y = 77.3, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "turnin", quest = 2822, title = "The Mark of Quality", npc = 7854, npcName = "Jangdor Swiftstrider", map = 1444, x = 74.43, y = 42.91, f = "e" },
+					{ t = "turnin", quest = 608, title = "The Bloodsail Buccaneers (5)", npc = 2487, npcName = "Fleet Master Seahorn", map = 1434, x = 27.2, y = 76.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 7730, title = "Zukk'ash Infestation", npc = 7875, npcName = "Hadoken Swiftstrider", map = 1444, x = 74.91, y = 42.47, f = "e" },
-					{ t = "turnin", quest = 7731, title = "Stinglasher", npc = 7875, npcName = "Hadoken Swiftstrider", map = 1444, x = 74.91, y = 42.47, f = "e" },
-					{ t = "accept", quest = 7732, title = "Zukk'ash Report", npc = 7875, npcName = "Hadoken Swiftstrider", map = 1444, x = 74.91, y = 42.47, f = "e" },
+					{ t = "turnin", quest = 348, title = "Stranglethorn Fever", npc = 2486, npcName = "Fin Fizracket", map = 1434, x = 27.6, y = 76.7, f = "e" },
 				},
 			},
 			{
-				label = "Accept_The_Gordunni_Orb",
-				along = true,
-				note = "Wearing red armor. Walks around.",
 				goals = {
-					{ t = "turnin", quest = 2980, title = "The Ogres of Feralas", npc = 7777, npcName = "Rok Orhan", map = 1444, x = 75.6, y = 43.6, f = "e" },
-					{ t = "turnin", quest = 2979, title = "Dark Ceremony", npc = 7777, npcName = "Rok Orhan", map = 1444, x = 75.6, y = 43.6, f = "e" },
-					{ t = "accept", quest = 3002, title = "The Gordunni Orb", npc = 7777, npcName = "Rok Orhan", map = 1444, x = 75.6, y = 43.6, f = "e" },
+					{ t = "collect", quest = 3123, itemName = "Beast Muisek", count = 10, oi = 1, map = 1444, x = 70.6, y = 42.9, f = "e" },
 				},
 			},
 			{
-				note = "Collect from the bank. Inside the building.",
 				goals = {
-					{ t = "collect", quest = 1205, item = 5945, itemName = "Deadmire's Tooth", map = 1456, x = 47.13, y = 57.89, f = "e" },
+					{ t = "accept", quest = 4120, title = "The Strength of Corruption", npc = 7776, npcName = "Talo Thornhoof", map = 1444, x = 76.2, y = 43.8, f = "e" },
 				},
 			},
 			{
-				note = "Deposit into the bank. Inside the building.",
 				goals = {
-					{ t = "goto", text = "bank Long Elegant Feather##4589", map = 1456, x = 47.13, y = 57.89 },
-					{ t = "complete", quest = 3520, title = "Screecher Spirits", note = "bank Yeh'kinya's Bramble##10699", map = 1456, x = 47.13, y = 57.89, f = "e" },
-					{ t = "goto", text = "bank Hippogryph Egg##8564", map = 1456, x = 47.13, y = 57.89 },
+					{ t = "turnin", quest = 3123, title = "Testing the Vessel", npc = 8115, npcName = "Witch Doctor Uzer'i", map = 1444, x = 74.4, y = 43.4, f = "e" },
+					{ t = "accept", quest = 3124, title = "Hippogryph Muisek", npc = 8115, npcName = "Witch Doctor Uzer'i", map = 1444, x = 74.4, y = 43.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 1205, title = "Deadmire", npc = 3441, npcName = "Melor Stonehoof", map = 1456, x = 61.54, y = 80.91, f = "e" },
+					{ t = "home", text = "Camp Mojache", f = "e" },
 				},
 			},
 			{
-				only = { races = { "Tauren" } },
 				goals = {
-					{ t = "goto", text = "Train Kodo Riding", map = 1412, x = 46.78, y = 62.01 },
+					{ t = "collect", quest = 3124, itemName = "Hippogryph Muisek", count = 10, oi = 1, map = 1444, x = 56.7, y = 62.0, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "MAGE" } },
 				goals = {
-					{ t = "train", npc = 5883, npcName = "Enyo", map = 1454, x = 38.79, y = 85.65, f = "e" },
+					{ t = "turnin", quest = 3124, title = "Hippogryph Muisek", npc = 8115, npcName = "Witch Doctor Uzer'i", map = 1444, x = 74.4, y = 43.4, f = "e" },
+					{ t = "accept", quest = 3125, title = "Faerie Dragon Muisek", npc = 8115, npcName = "Witch Doctor Uzer'i", map = 1444, x = 74.4, y = 43.4, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "turnin", quest = 3002, title = "The Gordunni Orb", npc = 7311, npcName = "Uthel'nay", map = 1454, x = 39.16, y = 86.24, f = "e" },
+					{ t = "collect", quest = 3125, itemName = "Faerie Dragon Muisek", count = 8, oi = 1, map = 1444, x = 69.4, y = 46.4, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "PRIEST" } },
 				goals = {
-					{ t = "train", npc = 6018, npcName = "Ur'kyo", map = 1454, x = 35.59, y = 87.8, f = "e" },
+					{ t = "turnin", quest = 3125, title = "Faerie Dragon Muisek", npc = 8115, npcName = "Witch Doctor Uzer'i", map = 1444, x = 74.4, y = 43.4, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "SHAMAN" } },
 				goals = {
-					{ t = "train", npc = 3344, npcName = "Kardris Dreamseeker", map = 1454, x = 38.8, y = 36.38, f = "e" },
+					{ t = "accept", quest = 7003, title = "Zapped Giants", npc = 14637, npcName = "Zorbin Fandazzle", map = 1444, x = 44.8, y = 43.4, f = "e" },
+					{ t = "accept", quest = 7721, title = "Fuel for the Zapping", npc = 14637, npcName = "Zorbin Fandazzle", map = 1444, x = 44.8, y = 43.4, f = "e" },
 				},
 			},
 			{
-				note = "Inside the Cleft of Shadow.",
-				only = { classes = { "ROGUE" } },
 				goals = {
-					{ t = "train", npc = 3328, npcName = "Ormok", map = 1454, x = 43.91, y = 54.63, f = "e" },
+					{ t = "collect", quest = 7721, itemName = "Water Elemental Core", count = 10, oi = 1, map = 1444, x = 44.6, y = 51.4, f = "e" },
+					{ t = "collect", quest = 7003, itemName = "Miniaturization Residue", count = 15, oi = 1, map = 1444, x = 44.6, y = 51.4, f = "e" },
 				},
 			},
 			{
-				note = "Inside the Cleft of Shadow.",
-				only = { classes = { "WARLOCK" } },
 				goals = {
-					{ t = "train", npc = 3325, npcName = "Mirket", map = 1454, x = 48.62, y = 46.95, f = "e" },
+					{ t = "turnin", quest = 7003, title = "Zapped Giants", npc = 14637, npcName = "Zorbin Fandazzle", map = 1444, x = 44.8, y = 43.4, f = "e" },
+					{ t = "turnin", quest = 7721, title = "Fuel for the Zapping", npc = 14637, npcName = "Zorbin Fandazzle", map = 1444, x = 44.8, y = 43.4, f = "e" },
 				},
 			},
 			{
-				note = "Buy available Grimoires. Inside the Cleft of Shadow.",
-				only = { classes = { "WARLOCK" } },
 				goals = {
-					{ t = "vendor", npc = 5815, npcName = "Kurgul", map = 1454, x = 47.52, y = 46.72, f = "e" },
+					{ t = "collect", quest = 7734, itemName = "Rage Scar Yeti Hide", count = 10, oi = 1, map = 1444, x = 52.8, y = 31.8, f = "e" },
 				},
 			},
 			{
-				note = "Inside the tent. Inside the Cleft of Shadow.",
 				goals = {
-					{ t = "turnin", quest = 3121, title = "A Strange Request", npc = 3216, npcName = "Neeru Fireblade", map = 1454, x = 49.49, y = 50.59, f = "e" },
-					{ t = "accept", quest = 3122, title = "Return to Witch Doctor Uzer'i", npc = 3216, npcName = "Neeru Fireblade", map = 1454, x = 49.49, y = 50.59, f = "e" },
+					{ t = "kill", quest = 3063, target = "Northspring Harpy", count = 4, oi = 1, map = 1444, x = 41.0, y = 11.0, f = "e" },
+					{ t = "kill", quest = 3063, target = "Northspring Roguefeather", count = 4, oi = 2, map = 1444, x = 41.0, y = 11.0, f = "e" },
+					{ t = "kill", quest = 3063, target = "Northspring Slayer", count = 4, oi = 3, map = 1444, x = 41.0, y = 11.0, f = "e" },
+					{ t = "kill", quest = 3063, target = "Northspring Windcaller", count = 4, oi = 4, map = 1444, x = 41.0, y = 11.0, f = "e" },
+					{ t = "collect", quest = 3063, item = 9530, itemName = "Horn of Hatetalon", count = 1, map = 1444, x = 41.0, y = 11.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 2976, title = "A Grim Discovery", npc = 4485, npcName = "Belgrom Rockmaul", map = 1454, x = 75.23, y = 34.24, f = "e" },
+					{ t = "collect", quest = 3062, itemName = "Edana's Dark Heart", count = 1, oi = 1, map = 1444, x = 40.3, y = 8.6, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "WARRIOR" } },
 				goals = {
-					{ t = "train", npc = 3353, npcName = "Grezz Ragefist", map = 1454, x = 79.78, y = 31.42, f = "e" },
+					{ t = "turnin", quest = 7734, title = "Improved Quality", npc = 7854, npcName = "Jangdor Swiftstrider", map = 1444, x = 74.4, y = 42.9, f = "e" },
 				},
 			},
 			{
-				note = "Top of the building.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "train", npc = 3352, npcName = "Ormak Grimshot", map = 1454, x = 66.06, y = 18.54, f = "e" },
+					{ t = "turnin", quest = 3062, title = "Dark Heart", npc = 7776, npcName = "Talo Thornhoof", map = 1444, x = 76.2, y = 43.8, f = "e" },
+					{ t = "turnin", quest = 3063, title = "Vengeance on the Northspring", npc = 7776, npcName = "Talo Thornhoof", map = 1444, x = 76.2, y = 43.8, f = "e" },
 				},
 			},
 			{
-				only = { races = { "Orc" } },
 				goals = {
-					{ t = "goto", text = "Train Wolf Riding", map = 1454, x = 69.4, y = 13.1 },
+					{ t = "accept", quest = 3362, title = "Thistleshrub Valley", npc = 7876, npcName = "Tran'rek", map = 1446, x = 51.6, y = 26.8, f = "e" },
+					{ t = "accept", quest = 4504, title = "Super Sticky", npc = 7876, npcName = "Tran'rek", map = 1446, x = 51.6, y = 26.8, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
 				goals = {
-					{ t = "goto", text = "Run up the stairs", map = 1454, x = 56.33, y = 56.94 },
-					{ t = "turnin", quest = 7732, title = "Zukk'ash Report", npc = 7010, npcName = "Zilzibin Drumlore", map = 1454, x = 56.28, y = 46.67, f = "e" },
+					{ t = "accept", quest = 82, title = "Noxious Lair Investigation", npc = 7724, npcName = "Senior Surveyor Fizzledowser", map = 1446, x = 50.2, y = 27.5, f = "e" },
 				},
 			},
 			{
-				note = "Collect from the bank. Skip any missing pages. We'll buy them from the Auction House. Inside the building.",
 				goals = {
-					{ t = "collect", quest = 339, item = 2725, itemName = "Green Hills of Stranglethorn - Page 1", map = 1454, x = 49.58, y = 69.12, f = "e" },
-					{ t = "collect", quest = 339, item = 2728, itemName = "Green Hills of Stranglethorn - Page 4", map = 1454, x = 49.58, y = 69.12, f = "e" },
-					{ t = "collect", quest = 339, item = 2730, itemName = "Green Hills of Stranglethorn - Page 6", map = 1454, x = 49.58, y = 69.12, f = "e" },
-					{ t = "collect", quest = 339, item = 2732, itemName = "Green Hills of Stranglethorn - Page 8", map = 1454, x = 49.58, y = 69.12, f = "e" },
-					{ t = "collect", quest = 340, item = 2734, itemName = "Green Hills of Stranglethorn - Page 10", map = 1454, x = 49.58, y = 69.12, f = "e" },
-					{ t = "collect", quest = 340, item = 2735, itemName = "Green Hills of Stranglethorn - Page 11", map = 1454, x = 49.58, y = 69.12, f = "e" },
-					{ t = "collect", quest = 340, item = 2738, itemName = "Green Hills of Stranglethorn - Page 14", map = 1454, x = 49.58, y = 69.12, f = "e" },
-					{ t = "collect", quest = 340, item = 2740, itemName = "Green Hills of Stranglethorn - Page 16", map = 1454, x = 49.58, y = 69.12, f = "e" },
-					{ t = "collect", quest = 341, item = 2742, itemName = "Green Hills of Stranglethorn - Page 18", map = 1454, x = 49.58, y = 69.12, f = "e" },
-					{ t = "collect", quest = 341, item = 2744, itemName = "Green Hills of Stranglethorn - Page 20", map = 1454, x = 49.58, y = 69.12, f = "e" },
-					{ t = "collect", quest = 341, item = 2745, itemName = "Green Hills of Stranglethorn - Page 21", map = 1454, x = 49.58, y = 69.12, f = "e" },
-					{ t = "collect", quest = 341, item = 2748, itemName = "Green Hills of Stranglethorn - Page 24", map = 1454, x = 49.58, y = 69.12, f = "e" },
-					{ t = "collect", quest = 342, item = 2749, itemName = "Green Hills of Stranglethorn - Page 25", map = 1454, x = 49.58, y = 69.12, f = "e" },
-					{ t = "collect", quest = 342, item = 2750, itemName = "Green Hills of Stranglethorn - Page 26", map = 1454, x = 49.58, y = 69.12, f = "e" },
-					{ t = "collect", quest = 342, item = 2751, itemName = "Green Hills of Stranglethorn - Page 27", map = 1454, x = 49.58, y = 69.12, f = "e" },
+					{ t = "accept", quest = 2605, title = "The Thirsty Goblin", npc = 7564, npcName = "Marin Noggenfogger", map = 1446, x = 51.8, y = 28.6, f = "e" },
 				},
 			},
 			{
-				note = "Deposit into the bank. Inside the building.",
 				goals = {
-					{ t = "complete", quest = 3122, title = "Return to Witch Doctor Uzer'i", note = "bank Neeru's Herb Pouch##9628", map = 1454, x = 49.58, y = 69.12, f = "e" },
+					{ t = "turnin", quest = 243, title = "Into the Field", npc = 7407, npcName = "Chief Engineer Bilgewhizzle", map = 1446, x = 52.5, y = 28.5, f = "e" },
+					{ t = "accept", quest = 379, title = "Slake That Thirst", npc = 7407, npcName = "Chief Engineer Bilgewhizzle", map = 1446, x = 52.5, y = 28.5, f = "e" },
+					{ t = "turnin", quest = 379, title = "Slake That Thirst", npc = 7407, npcName = "Chief Engineer Bilgewhizzle", map = 1446, x = 52.5, y = 28.5, f = "e" },
+					{ t = "accept", quest = 654, title = "Tanaris Field Sampling", npc = 7407, npcName = "Chief Engineer Bilgewhizzle", map = 1446, x = 52.5, y = 28.5, f = "e" },
 				},
 			},
 			{
-				note = "Buy from the Auction House, if possible. Inside the building.",
 				goals = {
-					{ t = "collect", quest = 339, item = 2725, itemName = "Green Hills of Stranglethorn - Page 1", map = 1454, x = 55.68, y = 62.83, f = "e" },
-					{ t = "collect", quest = 339, item = 2728, itemName = "Green Hills of Stranglethorn - Page 4", map = 1454, x = 55.68, y = 62.83, f = "e" },
-					{ t = "collect", quest = 339, item = 2730, itemName = "Green Hills of Stranglethorn - Page 6", map = 1454, x = 55.68, y = 62.83, f = "e" },
-					{ t = "collect", quest = 339, item = 2732, itemName = "Green Hills of Stranglethorn - Page 8", map = 1454, x = 55.68, y = 62.83, f = "e" },
-					{ t = "collect", quest = 340, item = 2734, itemName = "Green Hills of Stranglethorn - Page 10", map = 1454, x = 55.68, y = 62.83, f = "e" },
-					{ t = "collect", quest = 340, item = 2735, itemName = "Green Hills of Stranglethorn - Page 11", map = 1454, x = 55.68, y = 62.83, f = "e" },
-					{ t = "collect", quest = 340, item = 2738, itemName = "Green Hills of Stranglethorn - Page 14", map = 1454, x = 55.68, y = 62.83, f = "e" },
-					{ t = "collect", quest = 340, item = 2740, itemName = "Green Hills of Stranglethorn - Page 16", map = 1454, x = 55.68, y = 62.83, f = "e" },
-					{ t = "collect", quest = 341, item = 2742, itemName = "Green Hills of Stranglethorn - Page 18", map = 1454, x = 55.68, y = 62.83, f = "e" },
-					{ t = "collect", quest = 341, item = 2744, itemName = "Green Hills of Stranglethorn - Page 20", map = 1454, x = 55.68, y = 62.83, f = "e" },
-					{ t = "collect", quest = 341, item = 2745, itemName = "Green Hills of Stranglethorn - Page 21", map = 1454, x = 55.68, y = 62.83, f = "e" },
-					{ t = "collect", quest = 341, item = 2748, itemName = "Green Hills of Stranglethorn - Page 24", map = 1454, x = 55.68, y = 62.83, f = "e" },
-					{ t = "collect", quest = 342, item = 2749, itemName = "Green Hills of Stranglethorn - Page 25", map = 1454, x = 55.68, y = 62.83, f = "e" },
-					{ t = "collect", quest = 342, item = 2750, itemName = "Green Hills of Stranglethorn - Page 26", map = 1454, x = 55.68, y = 62.83, f = "e" },
-					{ t = "collect", quest = 342, item = 2751, itemName = "Green Hills of Stranglethorn - Page 27", map = 1454, x = 55.68, y = 62.83, f = "e" },
+					{ t = "collect", quest = 654, itemName = "Acceptable Basilisk Sample", count = 8, oi = 1, map = 1446, x = 50.0, y = 34.0, f = "e" },
+					{ t = "collect", quest = 654, itemName = "Acceptable Hyena Sample", count = 8, oi = 2, map = 1446, x = 50.0, y = 34.0, f = "e" },
+					{ t = "collect", quest = 654, itemName = "Acceptable Scorpid Sample", count = 8, oi = 3, map = 1446, x = 50.0, y = 34.0, f = "e" },
 				},
 			},
 			{
-				only = { races = { "Troll" } },
 				goals = {
-					{ t = "goto", text = "Train Raptor Riding", map = 1411, x = 55.28, y = 75.49 },
+					{ t = "turnin", quest = 654, title = "Tanaris Field Sampling", npc = 7407, npcName = "Chief Engineer Bilgewhizzle", map = 1446, x = 52.5, y = 28.5, f = "e" },
+					{ t = "accept", quest = 864, title = "Return to Apothecary Zinge", npc = 7407, npcName = "Chief Engineer Bilgewhizzle", map = 1446, x = 52.5, y = 28.5, f = "e" },
 				},
 			},
 			{
-				only = { races = { "Scourge" } },
 				goals = {
-					{ t = "goto", text = "Train Undead Horsemanship", map = 1420, x = 60.08, y = 52.57 },
+					{ t = "home", text = "Gadgetzan", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 50, f = "e" },
 				},
 			},
 		},

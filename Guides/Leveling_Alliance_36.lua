@@ -1,327 +1,542 @@
 -- TuWoW_Leveling — Guides/Leveling_Alliance_36.lua
--- Compilado desde ZygorGuidesViewerForever y depurado para TuWoW 3.3.5a.
+-- Compilado desde Zygor Guides WotLK 3.3.5a oficial para TuWoW.
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/a-burning-steppes-56-57",
+		id = "zygor/leveling/a-levels-66-68-part-2",
 		pack = "guides",
-		title = "Burning Steppes",
+		title = "Levels (66-68) (Parte 2/3)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-western-and-eastern-plaguelands-57-58",
+		next = "zygor/leveling/a-levels-66-68-part-3",
 		author = "TuWoW & Zygor",
-		minLevel = 56,
-		maxLevel = 57,
-		zone = 1455,
+		minLevel = 66,
+		maxLevel = 68,
+		zone = 1946,
 		version = 1,
 		steps = {
 			{
 				goals = {
-					{ t = "goto", text = "Follow the path", map = 1455, x = 44.51, y = 49.57 },
-					{ t = "accept", quest = 3702, title = "The Smoldering Ruins of Thaurissan", npc = 8879, npcName = "Royal Historian Archesonus", map = 1455, x = 38.37, y = 55.31, f = "e" },
+					{ t = "accept", quest = 10455, title = "The Encroaching Wilderness", npc = 21066, npcName = "Rina Moonspring", map = 1949, x = 36.2, y = 67.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "complete", quest = 3702, title = "The Smoldering Ruins of Thaurissan", note = "Listen to the Story of Thaurissan", map = 1455, x = 38.37, y = 55.31, f = "e" },
+					{ t = "accept", quest = 10690, title = "The Den Mother", map = 1949, x = 36.6, y = 67.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 3702, title = "The Smoldering Ruins of Thaurissan", npc = 8879, npcName = "Royal Historian Archesonus", map = 1455, x = 38.37, y = 55.31, f = "e" },
-					{ t = "accept", quest = 3701, title = "The Smoldering Ruins of Thaurissan", npc = 8879, npcName = "Royal Historian Archesonus", map = 1455, x = 38.37, y = 55.31, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "sethome", location = "Ironforge", map = 1455, x = 18.15, y = 51.46, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				only = { classes = { "PALADIN" } },
-				goals = {
-					{ t = "train", npc = 5148, npcName = "Beldruk Doombrow", map = 1455, x = 24.54, y = 4.5, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 3461, title = "Return to Tymor", npc = 8507, npcName = "Tymor", map = 1455, x = 30.97, y = 4.82, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				only = { classes = { "WARLOCK" } },
-				goals = {
-					{ t = "train", npc = 5172, npcName = "Briarthorn", map = 1455, x = 50.35, y = 5.66, f = "e" },
-				},
-			},
-			{
-				note = "Buy available Grimoires. Inside the building.",
-				only = { classes = { "WARLOCK" } },
-				goals = {
-					{ t = "vendor", npc = 6382, npcName = "Jubahl Corpseseeker", map = 1455, x = 50.35, y = 5.66, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 4512, title = "A Little Slime Goes a Long Way", npc = 9616, npcName = "Laris Geardawdle", map = 1455, x = 75.77, y = 23.37, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Dwarf" } },
-				goals = {
-					{ t = "goto", text = "Train Ram Riding", map = 1426, x = 63.94, y = 50.1 },
-				},
-			},
-			{
-				only = { races = { "Gnome" } },
-				goals = {
-					{ t = "goto", text = "Train Mechanostrider Piloting", map = 1426, x = 49.15, y = 48.13 },
+					{ t = "turnin", quest = 10927, title = "Killing the Crawlers", npc = 21158, npcName = "Commander Skyshadow", map = 1949, x = 36.3, y = 66.2, f = "e" },
+					{ t = "accept", quest = 10502, title = "The Bloodmaul Ogres", npc = 21158, npcName = "Commander Skyshadow", map = 1949, x = 36.3, y = 66.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 3824, title = "Gor'tesh the Brute Lord", npc = 9177, npcName = "Oralius", map = 1428, x = 84.56, y = 68.68, f = "e" },
-					{ t = "accept", quest = 4283, title = "FIFTY! YEP!", npc = 9177, npcName = "Oralius", map = 1428, x = 84.56, y = 68.68, f = "e" },
+					{ t = "accept", quest = 10555, title = "Malaise", npc = 21469, npcName = "Daranelle", map = 1949, x = 37.1, y = 65.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 4182, title = "Dragonkin Menace", npc = 9562, npcName = "Helendis Riverhorn", map = 1428, x = 85.82, y = 68.94, f = "e" },
+					{ t = "home", text = "Sylvanaar|goto 35.8,63.9", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 4726, title = "Broodling Essence", npc = 10267, npcName = "Tinkee Steamboil", map = 1428, x = 65.24, y = 24.0, f = "e" },
+					{ t = "accept", quest = 10510, title = "Into the Draenethyst Mine", npc = 21197, npcName = "Bronwyn Stouthammer", map = 1949, x = 37.4, y = 65.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 4296, title = "Tablet of the Seven", npc = 9536, npcName = "Maxwort Uberglint", map = 1428, x = 65.16, y = 23.92, f = "e" },
-				},
-			},
-			{
-				note = "Elite enemies. May need help. Important to complete Dragonkin Menace quest. Unlocks more quests that give good xp. Can skip, but will need to grind later.",
-				goals = {
-					{ t = "complete", quest = 4182, title = "Dragonkin Menace", note = "Click Here to Continue" },
-				},
-			},
-			{
-				note = "Inside the small cave.",
-				goals = {
-					{ t = "accept", quest = 4022, title = "A Taste of Flame", npc = 9459, npcName = "Cyrus Therepentous", map = 1428, x = 95.06, y = 31.57, f = "e" },
-				},
-			},
-			{
-				note = "Inside the small cave. Elite enemy. May need help.",
-				goals = {
-					{ t = "collect", quest = 4022, item = 10575, itemName = "Black Dragonflight Molt", oi = 1, map = 1428, x = 95.06, y = 31.57, f = "e" },
-				},
-			},
-			{
-				note = "Inside the small cave.",
-				goals = {
-					{ t = "complete", quest = 4022, title = "A Taste of Flame", note = "Present the Proof", map = 1428, x = 95.06, y = 31.57, f = "e" },
-				},
-			},
-			{
-				note = "Inside the small cave.",
-				goals = {
-					{ t = "turnin", quest = 4022, title = "A Taste of Flame", npc = 9459, npcName = "Cyrus Therepentous", map = 1428, x = 95.06, y = 31.57, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Broodling_Essences",
-				along = true,
-				note = "On Black Broodlings. Small flying dragons. Red crystals above their corpses.",
-				goals = {
-					{ t = "use", item = 12284, itemName = "Draco-Incarcinatrix 900" },
-					{ t = "collect", quest = 4726, item = 12283, itemName = "Broodling Essence", count = 8, oi = 1, map = 1428, x = 88.6, y = 29.4, f = "e" },
-				},
-			},
-			{
-				label = "Kill_Black_Drake",
-				along = true,
-				note = "Large red dragons.",
-				goals = {
-					{ t = "kill", quest = 4182, npc = 7044, target = "Black Drake", oi = 3, map = 1428, x = 88.4, y = 32.6, f = "e" },
-				},
-			},
-			{
-				label = "Kill_Black_Wyrmkins_And_Dragonspawns",
-				along = true,
-				goals = {
-					{ t = "kill", quest = 4182, npc = 7041, target = "Black Wyrmkin", count = 4, oi = 4, map = 1428, x = 91.6, y = 47.4, f = "e" },
-					{ t = "kill", quest = 4182, npc = 7040, target = "Black Dragonspawn", count = 10, oi = 2, map = 1428, x = 91.6, y = 47.4, f = "e" },
-				},
-			},
-			{
-				label = "Kill_Black_Broodlings",
-				along = true,
-				note = "Small flying dragons.",
-				goals = {
-					{ t = "kill", quest = 4182, npc = 7047, target = "Black Broodling", count = 15, oi = 1, map = 1428, x = 90.4, y = 50.4, f = "e" },
+					{ t = "accept", quest = 10511, title = "Strange Brew", npc = 21151, npcName = "Borgrim Stouthammer", map = 1949, x = 37.4, y = 64.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 4296, item = 11470, itemName = "Tablet Transcript", oi = 1, map = 1428, x = 54.09, y = 40.73, f = "e" },
-				},
-			},
-			{
-				label = "Recover_Information",
-				along = true,
-				note = "Upright grey stones.",
-				goals = {
-					{ t = "complete", quest = 3701, title = "The Smoldering Ruins of Thaurissan", note = "Recover #12# Information", map = 1428, x = 54.1, y = 40.8, f = "e" },
-				},
-			},
-			{
-				note = "Ogre. Careful, hits hard. May need help. Walks around. In and out of the building.",
-				goals = {
-					{ t = "collect", quest = 3824, item = 11080, itemName = "Gor'tesh's Lopped Off Head", oi = 1, map = 1428, x = 39.26, y = 55.36, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Blackrock_Medallions",
-				along = true,
-				note = "Orcs and wolves.",
-				goals = {
-					{ t = "collect", quest = 4283, item = 11467, itemName = "Blackrock Medallion", count = 50, oi = 1, map = 1428, x = 41.2, y = 56.6, f = "e" },
+					{ t = "fpath", text = "Sylvanaar", map = 1949, x = 37.8, y = 61.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", text = "Follow the path up into Morgan's Vigil", map = 1428, x = 82.85, y = 63.33 },
-					{ t = "turnin", quest = 3824, title = "Gor'tesh the Brute Lord", npc = 9177, npcName = "Oralius", map = 1428, x = 84.56, y = 68.67, f = "e" },
-					{ t = "accept", quest = 3825, title = "Ogre Head On A Stick = Party", npc = 9177, npcName = "Oralius", map = 1428, x = 84.56, y = 68.67, f = "e" },
-					{ t = "turnin", quest = 4283, title = "FIFTY! YEP!", npc = 9177, npcName = "Oralius", map = 1428, x = 84.56, y = 68.67, f = "e" },
+					{ t = "kill", quest = 10455, target = "Grovestalker Lynx", count = 12, oi = 1, map = 1949, x = 37.1, y = 70.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 4182, title = "Dragonkin Menace", npc = 9562, npcName = "Helendis Riverhorn", map = 1428, x = 85.82, y = 68.95, f = "e" },
-					{ t = "accept", quest = 4183, title = "The True Masters", npc = 9562, npcName = "Helendis Riverhorn", map = 1428, x = 85.82, y = 68.95, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 4183, title = "The True Masters", npc = 344, npcName = "Magistrate Solomon", map = 1433, x = 24.9, y = 44.45, f = "e" },
-					{ t = "accept", quest = 4184, title = "The True Masters", npc = 344, npcName = "Magistrate Solomon", map = 1433, x = 24.9, y = 44.45, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "goto", text = "Enter Stormwind Keep", map = 1453, x = 73.09, y = 46.63 },
-					{ t = "turnin", quest = 4184, title = "The True Masters", npc = 1748, npcName = "Highlord Bolvar Fordragon", map = 1453, x = 80.15, y = 38.33, f = "e" },
-					{ t = "accept", quest = 4185, title = "The True Masters", npc = 1748, npcName = "Highlord Bolvar Fordragon", map = 1453, x = 80.15, y = 38.33, f = "e" },
-					{ t = "accept", quest = 6182, title = "The First and the Last", npc = 1748, npcName = "Highlord Bolvar Fordragon", map = 1453, x = 80.15, y = 38.33, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "complete", quest = 4185, title = "The True Masters", note = "Seek Advice from Lady Prestor", map = 1453, x = 80.06, y = 38.15, f = "e" },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 4185, title = "The True Masters", npc = 1748, npcName = "Highlord Bolvar Fordragon", map = 1453, x = 80.15, y = 38.33, f = "e" },
-					{ t = "accept", quest = 4186, title = "The True Masters", npc = 1748, npcName = "Highlord Bolvar Fordragon", map = 1453, x = 80.15, y = 38.33, f = "e" },
-				},
-			},
-			{
-				note = "Upstairs inside the building.",
-				goals = {
-					{ t = "turnin", quest = 6182, title = "The First and the Last", npc = 332, npcName = "Master Mathias Shaw", map = 1453, x = 78.27, y = 70.74, f = "e" },
-					{ t = "accept", quest = 6183, title = "Honor the Dead", npc = 332, npcName = "Master Mathias Shaw", map = 1453, x = 78.27, y = 70.74, f = "e" },
-				},
-			},
-			{
-				note = "Upstairs inside the building.",
-				goals = {
-					{ t = "turnin", quest = 6183, title = "Honor the Dead", npc = 332, npcName = "Master Mathias Shaw", map = 1453, x = 78.27, y = 70.74, f = "e" },
-					{ t = "accept", quest = 6184, title = "Flint Shadowmore", npc = 332, npcName = "Master Mathias Shaw", map = 1453, x = 78.27, y = 70.74, f = "e" },
-				},
-			},
-			{
-				note = "Upstairs inside the building.",
-				goals = {
-					{ t = "turnin", quest = 5022, title = "Better Late Than Never", npc = 10782, npcName = "Royal Factor Bathrilor", map = 1453, x = 57.16, y = 48.05, f = "e" },
-					{ t = "accept", quest = 5048, title = "Good Natured Emma", npc = 10782, npcName = "Royal Factor Bathrilor", map = 1453, x = 57.16, y = 48.05, f = "e" },
-				},
-			},
-			{
-				note = "Old human woman. Walks a large path.",
-				goals = {
-					{ t = "turnin", quest = 5048, title = "Good Natured Emma", npc = 3520, npcName = "Ol' Emma", map = 1453, x = 60.2, y = 57.0, f = "e" },
-					{ t = "accept", quest = 5050, title = "Good Luck Charm", npc = 3520, npcName = "Ol' Emma", map = 1453, x = 60.2, y = 57.0, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Human" } },
-				goals = {
-					{ t = "goto", text = "Train Horse Riding", map = 1429, x = 84.32, y = 64.87 },
-				},
-			},
-			{
-				note = "Inside the building.",
-				goals = {
-					{ t = "turnin", quest = 4186, title = "The True Masters", npc = 344, npcName = "Magistrate Solomon", map = 1433, x = 24.9, y = 44.45, f = "e" },
-					{ t = "accept", quest = 4223, title = "The True Masters", npc = 344, npcName = "Magistrate Solomon", map = 1433, x = 24.9, y = 44.45, f = "e" },
+					{ t = "collect", quest = 10555, itemName = "Plucked Lashh'an Feather", count = 18, oi = 1, map = 1949, x = 35.0, y = 74.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 4223, title = "The True Masters", npc = 9560, npcName = "Marshal Maxwell", map = 1428, x = 84.75, y = 69.02, f = "e" },
-					{ t = "accept", quest = 4224, title = "The True Masters", npc = 9560, npcName = "Marshal Maxwell", map = 1428, x = 84.75, y = 69.02, f = "e" },
+					{ t = "turnin", quest = 10555, title = "Malaise", map = 1949, x = 34.3, y = 77.4, f = "e" },
+					{ t = "accept", quest = 10556, title = "Scratches", map = 1949, x = 34.3, y = 77.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 4726, title = "Broodling Essence", npc = 10267, npcName = "Tinkee Steamboil", map = 1428, x = 65.23, y = 23.99, f = "e" },
-					{ t = "accept", quest = 4808, title = "Felnok Steelspring", npc = 10267, npcName = "Tinkee Steamboil", map = 1428, x = 65.23, y = 23.99, f = "e" },
+					{ t = "goto", map = 1949, x = 35.2, y = 77.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 4296, title = "Tablet of the Seven", npc = 9536, npcName = "Maxwort Uberglint", map = 1428, x = 65.15, y = 23.91, f = "e" },
+					{ t = "turnin", quest = 10455, title = "The Encroaching Wilderness", npc = 21066, npcName = "Rina Moonspring", map = 1949, x = 36.2, y = 67.1, f = "e" },
+					{ t = "accept", quest = 10456, title = "Marauding Wolves", npc = 21066, npcName = "Rina Moonspring", map = 1949, x = 36.2, y = 67.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "complete", quest = 4224, title = "The True Masters", note = "Listen to Ragged John's Story", map = 1428, x = 65.01, y = 23.76, f = "e" },
-				},
-			},
-			{
-				note = "Top of the mountain.",
-				goals = {
-					{ t = "goto", text = "Cross the hanging bridge and follow the path up", map = 1428, x = 76.13, y = 38.04 },
-					{ t = "complete", quest = 3825, title = "Ogre Head On A Stick = Party", note = "Plant Gor'tesh's Head", map = 1428, x = 80.99, y = 46.78, f = "e" },
+					{ t = "turnin", quest = 10556, title = "Scratches", npc = 21469, npcName = "Daranelle", map = 1949, x = 37.1, y = 65.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", text = "Follow the path up into Morgan's Vigil", map = 1428, x = 82.85, y = 63.33 },
-					{ t = "turnin", quest = 3825, title = "Ogre Head On A Stick = Party", npc = 9177, npcName = "Oralius", map = 1428, x = 84.56, y = 68.67, f = "e" },
+					{ t = "goto", map = 1949, x = 39.0, y = 76.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 4224, title = "The True Masters", npc = 9560, npcName = "Marshal Maxwell", map = 1428, x = 84.74, y = 69.01, f = "e" },
+					{ t = "collect", quest = 10511, itemName = "Bloodmaul Brutebane Brew", count = 16, oi = 1, map = 1949, x = 42.4, y = 79.4, f = "e" },
 				},
 			},
 			{
-				note = "Run dungeons, if you prefer.",
+				note = "Go inside the cave to 42.4,83.4",
 				goals = {
-					{ t = "goto", text = "ding 57", map = 1428, x = 75.6, y = 50.0 },
+					{ t = "collect", quest = 10510, itemName = "Draenethyst Mine Crystal", count = 5, oi = 1, map = 1949, x = 42.4, y = 83.4, f = "e" },
+				},
+			},
+			{
+				note = "Go outside to 36.3,66.2",
+				goals = {
+					{ t = "turnin", quest = 10502, title = "The Bloodmaul Ogres", npc = 21158, npcName = "Commander Skyshadow", map = 1949, x = 36.3, y = 66.2, f = "e" },
+					{ t = "accept", quest = 10504, title = "The Bladespire Ogres", npc = 21158, npcName = "Commander Skyshadow", map = 1949, x = 36.3, y = 66.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10510, title = "Into the Draenethyst Mine", npc = 21197, npcName = "Bronwyn Stouthammer", map = 1949, x = 37.4, y = 65.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10511, title = "Strange Brew", npc = 21151, npcName = "Borgrim Stouthammer", map = 1949, x = 37.4, y = 64.6, f = "e" },
+					{ t = "accept", quest = 10512, title = "Getting the Bladespire Tanked", npc = 21151, npcName = "Borgrim Stouthammer", map = 1949, x = 37.4, y = 64.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 10456, itemName = "Thunderlord Dire Wolf Tail", count = 4, oi = 1, map = 1949, x = 51.3, y = 65.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 10690, npc = 21596, target = "Rema", count = 1, oi = 1, map = 1949, x = 51.6, y = 75.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 10608, title = "Crystal Clear", npc = 21755, npcName = "Nickwinkle the Metro-Gnome", map = 1949, x = 60.2, y = 68.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 10584, title = "Picking Up Some Power Converters", npc = 21691, npcName = "Toshley", map = 1949, x = 60.5, y = 69.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1949, x = 60.7, y = 69.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "fpath", text = "Toshley's Station", map = 1949, x = 61.2, y = 70.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 10609, title = "What Came First, the Drake or the Egg?", npc = 21110, npcName = "Fizit \"Doc\" Clocktock", map = 1949, x = 61.0, y = 68.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 10557, title = "Test Flight: The Zephyrium Capacitorium", npc = 21460, npcName = "Tally Zapnabber", map = 1949, x = 60.3, y = 68.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "talk", npc = 21461, npcName = "Rally Zapnabber", map = 1949, x = 60.2, y = 68.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10557, title = "Test Flight: The Zephyrium Capacitorium", npc = 21460, npcName = "Tally Zapnabber", map = 1949, x = 60.3, y = 68.4, f = "e" },
+					{ t = "accept", quest = 10710, title = "Test Flight: The Singing Ridge", npc = 21460, npcName = "Tally Zapnabber", map = 1949, x = 60.3, y = 68.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1949, x = 58.4, y = 59.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10584, title = "Picking Up Some Power Converters", npc = 21691, npcName = "Toshley", map = 1949, x = 60.5, y = 69.0, f = "e" },
+					{ t = "accept", quest = 10657, title = "Ride the Lightning", npc = 21691, npcName = "Toshley", map = 1949, x = 60.5, y = 69.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 10620, title = "Ridgespine Menace", npc = 21824, npcName = "Dizzy Dina", map = 1949, x = 60.4, y = 68.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 10632, title = "Cutting Your Teeth", npc = 21118, npcName = "Razak Ironsides", map = 1949, x = 60.5, y = 68.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "talk", npc = 21461, npcName = "Rally Zapnabber", map = 1949, x = 60.2, y = 68.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 10657, itemName = "Scalewing Lightning Gland", count = 5, oi = 2, map = 1949, x = 67.9, y = 72.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 10608, target = "Crystal Flayer", count = 10, oi = 1, map = 1949, x = 68.2, y = 76.2, f = "e" },
+					{ t = "collect", quest = 10609, itemName = "Proto-Nether Drake Essence", count = 3, oi = 1, map = 1949, x = 68.2, y = 76.2, f = "e" },
+					{ t = "collect", quest = 10609, itemName = "Adolescent Nether Drake Essence", count = 3, oi = 2, map = 1949, x = 68.2, y = 76.2, f = "e" },
+					{ t = "collect", quest = 10609, itemName = "Mature Nether Drake Essence", count = 3, oi = 3, map = 1949, x = 68.2, y = 76.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 10632, itemName = "Extra Sharp Daggermaw Tooth", count = 5, oi = 1, map = 1949, x = 65.0, y = 55.2, f = "e" },
+					{ t = "kill", quest = 10620, target = "Ridgespine Stalker", count = 10, oi = 1, map = 1949, x = 65.0, y = 55.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10632, title = "Cutting Your Teeth", npc = 21118, npcName = "Razak Ironsides", map = 1949, x = 60.5, y = 68.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10710, title = "Test Flight: The Singing Ridge", npc = 21460, npcName = "Tally Zapnabber", map = 1949, x = 60.3, y = 68.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10609, title = "What Came First, the Drake or the Egg?", npc = 21110, npcName = "Fizit \"Doc\" Clocktock", map = 1949, x = 61.0, y = 68.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10657, title = "Ride the Lightning", npc = 21691, npcName = "Toshley", map = 1949, x = 60.5, y = 69.0, f = "e" },
+					{ t = "accept", quest = 10674, title = "Trapping the Light Fantastic", npc = 21691, npcName = "Toshley", map = 1949, x = 60.5, y = 69.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10620, title = "Ridgespine Menace", npc = 21824, npcName = "Dizzy Dina", map = 1949, x = 60.4, y = 68.8, f = "e" },
+					{ t = "accept", quest = 10671, title = "More than a Pound of Flesh", npc = 21824, npcName = "Dizzy Dina", map = 1949, x = 60.4, y = 68.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10608, title = "Crystal Clear", npc = 21755, npcName = "Nickwinkle the Metro-Gnome", map = 1949, x = 60.2, y = 68.9, f = "e" },
+					{ t = "accept", quest = 10594, title = "Gauging the Resonant Frequency", npc = 21755, npcName = "Nickwinkle the Metro-Gnome", map = 1949, x = 60.2, y = 68.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 10711, title = "Test Flight: Razaan's Landing", npc = 21460, npcName = "Tally Zapnabber", map = 1949, x = 60.3, y = 68.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "home", text = "Toshley's Station", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "talk", npc = 21460, npcName = "Tally Zapnabber", map = 1949, x = 60.2, y = 68.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1949, x = 66.4, y = 75.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10594, title = "Gauging the Resonant Frequency", npc = 21755, npcName = "Nickwinkle the Metro-Gnome", map = 1949, x = 60.2, y = 68.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "talk", npc = 21461, npcName = "Rally Zapnabber", map = 1949, x = 60.2, y = 68.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1949, x = 65.5, y = 46.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", target = "Fiendling Flesh Beasts", count = 1, map = 1949, x = 65.8, y = 45.8, f = "e" },
+					{ t = "collect", quest = 10671, itemName = "Ether-Energized Flesh", count = 5, oi = 1, map = 1949, x = 65.8, y = 45.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10711, title = "Test Flight: Razaan's Landing", npc = 21460, npcName = "Tally Zapnabber", map = 1949, x = 60.3, y = 68.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10671, title = "More than a Pound of Flesh", npc = 21824, npcName = "Dizzy Dina", map = 1949, x = 60.4, y = 68.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10674, title = "Trapping the Light Fantastic", npc = 21691, npcName = "Toshley", map = 1949, x = 60.5, y = 69.0, f = "e" },
+					{ t = "accept", quest = 10675, title = "Show Them Gnome Mercy!", npc = 21691, npcName = "Toshley", map = 1949, x = 60.5, y = 69.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 10675, itemName = "Collection of Souls", count = 1, oi = 1, map = 1949, x = 66.3, y = 44.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10675, title = "Show Them Gnome Mercy!", npc = 21691, npcName = "Toshley", map = 1949, x = 60.5, y = 69.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10690, title = "The Den Mother", npc = 21158, npcName = "Commander Skyshadow", map = 1949, x = 36.3, y = 66.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10456, title = "Marauding Wolves", npc = 21066, npcName = "Rina Moonspring", map = 1949, x = 36.2, y = 67.1, f = "e" },
+					{ t = "accept", quest = 10457, title = "Protecting Our Own", npc = 21066, npcName = "Rina Moonspring", map = 1949, x = 36.2, y = 67.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "home", text = "Sylvanaar", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1949, x = 36.7, y = 70.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10457, title = "Protecting Our Own", npc = 21066, npcName = "Rina Moonspring", map = 1949, x = 36.2, y = 67.1, f = "e" },
+					{ t = "accept", quest = 10506, title = "A Dire Situation", npc = 21066, npcName = "Rina Moonspring", map = 1949, x = 36.2, y = 67.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1949, x = 42.3, y = 79.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 10516, title = "The Trappings of a Vindicator", npc = 21277, npcName = "Vindicator Vuuleen", map = 1949, x = 44.0, y = 51.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1949, x = 40.3, y = 53.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 10516, itemName = "Vindicator Vuuleen's Blade", count = 1, oi = 1, map = 1949, x = 39.3, y = 53.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 10516, itemName = "Vindicator Vuuleen's Shield", count = 1, oi = 2, map = 1949, x = 42.1, y = 57.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10516, title = "The Trappings of a Vindicator", npc = 21277, npcName = "Vindicator Vuuleen", map = 1949, x = 44.0, y = 51.9, f = "e" },
+					{ t = "accept", quest = 10517, title = "Gorr'Dim, Your Time Has Come...", npc = 21277, npcName = "Vindicator Vuuleen", map = 1949, x = 44.0, y = 51.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1949, x = 39.9, y = 49.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10517, title = "Gorr'Dim, Your Time Has Come...", npc = 21277, npcName = "Vindicator Vuuleen", map = 1949, x = 44.0, y = 51.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10512, title = "Getting the Bladespire Tanked", npc = 21151, npcName = "Borgrim Stouthammer", map = 1949, x = 37.4, y = 64.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10504, title = "The Bladespire Ogres", npc = 21158, npcName = "Commander Skyshadow", map = 1949, x = 36.3, y = 66.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10506, title = "A Dire Situation", npc = 21066, npcName = "Rina Moonspring", map = 1949, x = 36.2, y = 67.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 10712, title = "Test Flight: Ruuan Weald", npc = 21460, npcName = "Tally Zapnabber", map = 1949, x = 60.3, y = 68.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 10712, itemName = "Spinning Nether-weather Vane", count = 1, oi = 2, map = 1949, x = 60.2, y = 68.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 10682, title = "A Time for Negotiation...", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "fpath", text = "Evergrove", map = 1949, x = 61.7, y = 39.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 10770, title = "Little Embers", npc = 22053, npcName = "Mosswood the Ancient", map = 1949, x = 61.2, y = 38.4, f = "e" },
+					{ t = "accept", quest = 10771, title = "From the Ashes", npc = 22053, npcName = "Mosswood the Ancient", map = 1949, x = 61.2, y = 38.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 10567, title = "Creating the Pendant", npc = 21782, npcName = "Timeon", map = 1949, x = 62.2, y = 39.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 10795, title = "A Date with Dorgok", npc = 22149, npcName = "Commander Haephus Stonewall", map = 1949, x = 62.0, y = 38.0, f = "e" },
+					{ t = "accept", quest = 10796, title = "Crush the Bloodmaul Camp!", npc = 22150, npcName = "Lieutenant Fairweather", map = 1949, x = 62.0, y = 38.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 10753, title = "Culling the Wild", npc = 22133, npcName = "Faradrella", map = 1949, x = 62.6, y = 38.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10712, title = "Test Flight: Ruuan Weald", npc = 22020, npcName = "O'Mally Zapnabber", map = 1949, x = 62.7, y = 40.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 10753, target = "Felsworn Scalewing", count = 4, oi = 1, map = 1949, x = 68.9, y = 35.6, f = "e" },
+					{ t = "kill", quest = 10753, target = "Felsworn Daggermaw", count = 4, oi = 2, map = 1949, x = 68.9, y = 35.6, f = "e" },
+					{ t = "kill", quest = 10753, target = "Fel Corrupter", count = 2, oi = 3, map = 1949, x = 68.9, y = 35.6, f = "e" },
+					{ t = "collect", itemName = "Damaged Mask", count = 1, map = 1949, x = 68.9, y = 35.6, f = "e" },
+					{ t = "accept", quest = 10810, title = "Damaged Mask", map = 1949, x = 68.9, y = 35.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1949, x = 71.7, y = 22.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1949, x = 71.6, y = 20.3, f = "e" },
+				},
+			},
+		},
+	})
+end
+
+do
+	Polestar.RegisterGuide({
+		id = "zygor/leveling/a-levels-66-68-part-3",
+		pack = "guides",
+		title = "Levels (66-68) (Parte 3/3)",
+		category = "Leveling",
+		faction = "Alliance",
+		next = "zygor/leveling/a-levels-68-70",
+		author = "TuWoW & Zygor",
+		minLevel = 66,
+		maxLevel = 68,
+		zone = 1946,
+		version = 1,
+		steps = {
+			{
+				goals = {
+					{ t = "goto", map = 1949, x = 71.6, y = 18.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 10770, target = "Scorch Imp", count = 8, oi = 1, map = 1949, x = 70.7, y = 20.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 10567, item = 30704, itemName = "Ruuan'ok Claw", count = 6, map = 1949, x = 63.9, y = 31.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 10567, itemName = "Harbinger's Pendant", count = 1, oi = 1, map = 1949, x = 64.5, y = 33.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10753, title = "Culling the Wild", npc = 22133, npcName = "Faradrella", map = 1949, x = 62.6, y = 38.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10567, title = "Creating the Pendant", npc = 21782, npcName = "Timeon", map = 1949, x = 62.2, y = 39.1, f = "e" },
+					{ t = "accept", quest = 10607, title = "Whispers of the Raven God", npc = 21782, npcName = "Timeon", map = 1949, x = 62.2, y = 39.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10810, title = "Damaged Mask", npc = 22020, npcName = "O'Mally Zapnabber", map = 1949, x = 62.7, y = 40.4, f = "e" },
+					{ t = "accept", quest = 10812, title = "Mystery Mask", npc = 22020, npcName = "O'Mally Zapnabber", map = 1949, x = 62.7, y = 40.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10812, title = "Mystery Mask", npc = 22127, npcName = "Wildlord Antelarion", map = 1949, x = 62.2, y = 40.1, f = "e" },
+					{ t = "accept", quest = 10819, title = "Felsworn Gas Mask", npc = 22127, npcName = "Wildlord Antelarion", map = 1949, x = 62.2, y = 40.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10770, title = "Little Embers", npc = 22053, npcName = "Mosswood the Ancient", map = 1949, x = 61.2, y = 38.4, f = "e" },
+					{ t = "turnin", quest = 10771, title = "From the Ashes", npc = 22053, npcName = "Mosswood the Ancient", map = 1949, x = 61.2, y = 38.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 68, f = "e" },
 				},
 			},
 		},

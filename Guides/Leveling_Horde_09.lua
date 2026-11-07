@@ -1,399 +1,509 @@
 -- TuWoW_Leveling — Guides/Leveling_Horde_09.lua
--- Compilado desde ZygorGuidesViewerForever y depurado para TuWoW 3.3.5a.
+-- Compilado desde Zygor Guides WotLK 3.3.5a oficial para TuWoW.
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/h-silverpine-forest-13-15",
+		id = "zygor/leveling/h-blood-elf-1-13",
 		pack = "guides",
-		title = "Silverpine Forest",
+		title = "Blood Elf (1-13) (Parte 1/2)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-the-barrens-and-stonetalon-mountain-15-21",
+		next = "zygor/leveling/h-blood-elf-1-13-part-2",
 		author = "TuWoW & Zygor",
-		minLevel = 13,
-		maxLevel = 15,
-		zone = 1421,
+		minLevel = 1,
+		maxLevel = 13,
+		zone = 1944,
 		version = 1,
+		races = { "BloodElf" },
 		steps = {
 			{
-				note = "Escort quest. Wait until he respawns, if missing. Inside the building.",
 				goals = {
-					{ t = "accept", quest = 435, title = "Escorting Erland", npc = 1978, npcName = "Deathstalker Erland", map = 1421, x = 56.19, y = 9.18, f = "e" },
-				},
-			},
-			{
-				note = "Follow and protect Deathstalker Erland.",
-				goals = {
-					{ t = "complete", quest = 435, title = "Escorting Erland", note = "Erland Must Reach Rane Yorick", map = 1421, x = 54.3, y = 13.43, f = "e" },
+					{ t = "accept", quest = 8325, title = "Reclaiming Sunstrider Isle", npc = 15278, npcName = "Magistrix Erona", map = 1944, x = 38.0, y = 21.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 435, title = "Escorting Erland", npc = 1950, npcName = "Rane Yorick", map = 1421, x = 53.46, y = 13.43, f = "e" },
-					{ t = "accept", quest = 449, title = "The Deathstalkers' Report", npc = 1950, npcName = "Rane Yorick", map = 1421, x = 53.46, y = 13.43, f = "e" },
-					{ t = "accept", quest = 429, title = "Wild Hearts", npc = 1950, npcName = "Rane Yorick", map = 1421, x = 53.46, y = 13.42, f = "e" },
-				},
-			},
-			{
-				note = "Black wolves.",
-				goals = {
-					{ t = "collect", quest = 429, item = 3164, itemName = "Discolored Worg Heart", count = 3, oi = 1, map = 1421, x = 57.4, y = 12.8, f = "e" },
-				},
-			},
-			{
-				note = "Cast Tame Beast on a Ferocious Grizzled Bear. Abandon your pet first. New permanent pet.",
-				only = { classes = { "HUNTER" } },
-				goals = {
-					{ t = "complete", quest = 449, title = "The Deathstalkers' Report", note = "Click Here to Continue", map = 1421, x = 51.2, y = 21.6, f = "e" },
+					{ t = "kill", quest = 8325, target = "Mana Wyrm", count = 8, oi = 1, map = 1944, x = 36.2, y = 20.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "getfp", location = "The Sepulcher", map = 1421, x = 45.62, y = 42.6, f = "e" },
-				},
-			},
-			{
-				note = "Open the flight map. Allows guide to learn your flight paths.",
-				only = { races = { "Scourge" } },
-				goals = {
-					{ t = "getfp", location = "Undercity", map = 1421, x = 45.62, y = 42.6, f = "e" },
-				},
-			},
-			{
-				note = "Walks around.",
-				goals = {
-					{ t = "accept", quest = 421, title = "Prove Your Worth", npc = 1938, npcName = "Dalar Dawnweaver", map = 1421, x = 44.2, y = 39.73, f = "e" },
+					{ t = "level", level = 2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 477, title = "Border Crossings", npc = 2121, npcName = "Shadow Priest Allister", map = 1421, x = 43.98, y = 40.93, f = "e" },
+					{ t = "turnin", quest = 8325, title = "Reclaiming Sunstrider Isle", npc = 15278, npcName = "Magistrix Erona", map = 1944, x = 38.0, y = 21.0, f = "e" },
+					{ t = "accept", quest = 8326, title = "Unfortunate Measures", npc = 15278, npcName = "Magistrix Erona", map = 1944, x = 38.0, y = 21.0, f = "e" },
+					{ t = "accept", quest = 8328, title = "Mage Training", npc = 15278, npcName = "Magistrix Erona", map = 1944, x = 38.0, y = 21.0, f = "e" },
+					{ t = "accept", quest = 8563, title = "Warlock Training", npc = 15278, npcName = "Magistrix Erona", map = 1944, x = 38.0, y = 21.0, f = "e" },
+					{ t = "accept", quest = 9392, title = "Rogue Training", npc = 15278, npcName = "Magistrix Erona", map = 1944, x = 38.0, y = 21.0, f = "e" },
+					{ t = "accept", quest = 8564, title = "Priest Training", npc = 15278, npcName = "Magistrix Erona", map = 1944, x = 38.0, y = 21.0, f = "e" },
+					{ t = "accept", quest = 9676, title = "Paladin Training", npc = 15278, npcName = "Magistrix Erona", map = 1944, x = 38.0, y = 21.0, f = "e" },
+					{ t = "accept", quest = 9393, title = "Hunter Training", npc = 15278, npcName = "Magistrix Erona", map = 1944, x = 38.0, y = 21.0, f = "e" },
 				},
 			},
 			{
-				only = { races = { "Scourge" } },
+				only = { races = { "BloodElf" }, classes = { "MAGE" } },
 				goals = {
-					{ t = "accept", quest = 6321, title = "Supplying the Sepulcher", npc = 6389, npcName = "Deathguard Podrig", map = 1421, x = 43.43, y = 41.68, f = "e" },
+					{ t = "turnin", quest = 8328, title = "Mage Training", npc = 15279, npcName = "Julia Sunstriker", map = 1944, x = 39.2, y = 21.5, f = "e" },
+					{ t = "accept", quest = 10068, title = "Well Watcher Solanian", npc = 15279, npcName = "Julia Sunstriker", map = 1944, x = 39.2, y = 21.5, f = "e" },
 				},
 			},
 			{
-				note = "Downstairs inside the crypt.",
+				only = { races = { "BloodElf" }, classes = { "WARLOCK" } },
 				goals = {
-					{ t = "goto", text = "Enter the crypt", map = 1421, x = 43.09, y = 41.39 },
-					{ t = "turnin", quest = 449, title = "The Deathstalkers' Report", npc = 1952, npcName = "High Executor Hadrec", map = 1421, x = 43.43, y = 40.87, f = "e" },
-					{ t = "accept", quest = 3221, title = "Speak with Renferrel", npc = 1952, npcName = "High Executor Hadrec", map = 1421, x = 43.43, y = 40.87, f = "e" },
-					{ t = "accept", quest = 437, title = "The Dead Fields", npc = 1952, npcName = "High Executor Hadrec", map = 1421, x = 43.43, y = 40.87, f = "e" },
+					{ t = "turnin", quest = 8563, title = "Warlock Training", npc = 15283, npcName = "Summoner Teli'Larien", map = 1944, x = 38.9, y = 21.4, f = "e" },
+					{ t = "accept", quest = 10073, title = "Well Watcher Solanian", npc = 15283, npcName = "Summoner Teli'Larien", map = 1944, x = 38.9, y = 21.4, f = "e" },
 				},
 			},
 			{
-				note = "Outside the crypt.",
+				only = { races = { "BloodElf" }, classes = { "ROGUE" } },
 				goals = {
-					{ t = "turnin", quest = 445, title = "Delivery to Silverpine Forest", npc = 1937, npcName = "Apothecary Renferrel", map = 1421, x = 42.8, y = 40.86, f = "e" },
-					{ t = "turnin", quest = 3221, title = "Speak with Renferrel", npc = 1937, npcName = "Apothecary Renferrel", map = 1421, x = 42.8, y = 40.86, f = "e" },
-					{ t = "accept", quest = 1359, title = "Zinge's Delivery", npc = 1937, npcName = "Apothecary Renferrel", map = 1421, x = 42.8, y = 40.86, f = "e" },
-					{ t = "turnin", quest = 429, title = "Wild Hearts", npc = 1937, npcName = "Apothecary Renferrel", map = 1421, x = 42.8, y = 40.86, f = "e" },
-					{ t = "accept", quest = 430, title = "Return to Quinn", npc = 1937, npcName = "Apothecary Renferrel", map = 1421, x = 42.8, y = 40.86, f = "e" },
-					{ t = "accept", quest = 447, title = "A Recipe For Death", npc = 1937, npcName = "Apothecary Renferrel", map = 1421, x = 42.8, y = 40.86, f = "e" },
+					{ t = "turnin", quest = 9392, title = "Rogue Training", npc = 15285, npcName = "Pathstalker Kariel", map = 1944, x = 38.9, y = 20.0, f = "e" },
+					{ t = "accept", quest = 10071, title = "Well Watcher Solanian", npc = 15285, npcName = "Pathstalker Kariel", map = 1944, x = 38.9, y = 20.0, f = "e" },
 				},
 			},
 			{
-				only = { races = { "Scourge" } },
+				only = { races = { "BloodElf" }, classes = { "PRIEST" } },
 				goals = {
-					{ t = "turnin", quest = 6321, title = "Supplying the Sepulcher", npc = 2226, npcName = "Karos Razok", map = 1421, x = 45.62, y = 42.6, f = "e" },
-					{ t = "accept", quest = 6323, title = "Ride to the Undercity", npc = 2226, npcName = "Karos Razok", map = 1421, x = 45.62, y = 42.6, f = "e" },
+					{ t = "turnin", quest = 8564, title = "Priest Training", npc = 15284, npcName = "Matron Arena", map = 1944, x = 39.4, y = 20.4, f = "e" },
+					{ t = "accept", quest = 10072, title = "Well Watcher Solanian", npc = 15284, npcName = "Matron Arena", map = 1944, x = 39.4, y = 20.4, f = "e" },
 				},
 			},
 			{
-				note = "Worgen.",
+				only = { races = { "BloodElf" }, classes = { "PALADIN" } },
 				goals = {
-					{ t = "kill", quest = 421, npc = 1769, target = "Moonrage Whitescalp", count = 5, oi = 1, map = 1421, x = 51.62, y = 39.98, f = "e" },
+					{ t = "turnin", quest = 9676, title = "Paladin Training", npc = 15280, npcName = "Jesthenis Sunstriker", map = 1944, x = 39.5, y = 20.6, f = "e" },
+					{ t = "accept", quest = 10069, title = "Well Watcher Solanian", npc = 15280, npcName = "Jesthenis Sunstriker", map = 1944, x = 39.5, y = 20.6, f = "e" },
 				},
 			},
 			{
-				note = "Walks around.",
+				only = { races = { "BloodElf" }, classes = { "HUNTER" } },
 				goals = {
-					{ t = "turnin", quest = 421, title = "Prove Your Worth", npc = 1938, npcName = "Dalar Dawnweaver", map = 1421, x = 44.2, y = 39.78, f = "e" },
-					{ t = "accept", quest = 422, title = "Arugal's Folly", npc = 1938, npcName = "Dalar Dawnweaver", map = 1421, x = 44.2, y = 39.78, f = "e" },
-				},
-			},
-			{
-				note = "You will be attacked. Upstairs inside the building.",
-				goals = {
-					{ t = "goto", text = "Cross the bridge", map = 1421, x = 49.75, y = 30.07 },
-					{ t = "collect", quest = 422, item = 3155, itemName = "Remedy of Arugal", oi = 1, map = 1421, x = 52.82, y = 28.58, f = "e" },
-				},
-			},
-			{
-				note = "Upstairs inside the building.",
-				goals = {
-					{ t = "turnin", quest = 430, title = "Return to Quinn", npc = 1951, npcName = "Quinn Yorick", map = 1421, x = 53.43, y = 12.59, f = "e" },
-				},
-			},
-			{
-				note = "Walks around.",
-				goals = {
-					{ t = "turnin", quest = 422, title = "Arugal's Folly", npc = 1938, npcName = "Dalar Dawnweaver", map = 1421, x = 44.2, y = 39.78, f = "e" },
-					{ t = "accept", quest = 423, title = "Arugal's Folly", npc = 1938, npcName = "Dalar Dawnweaver", map = 1421, x = 44.2, y = 39.78, f = "e" },
+					{ t = "turnin", quest = 9393, title = "Hunter Training", npc = 15513, npcName = "Ranger Sallina", map = 1944, x = 39.0, y = 20.0, f = "e" },
+					{ t = "accept", quest = 10070, title = "Well Watcher Solanian", npc = 15513, npcName = "Ranger Sallina", map = 1944, x = 39.0, y = 20.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 477, title = "Border Crossings", map = 1421, x = 49.91, y = 60.32, f = "e" },
-					{ t = "accept", quest = 478, title = "Maps and Runes", map = 1421, x = 49.91, y = 60.32, f = "e" },
-				},
-			},
-			{
-				note = "Outside the building.",
-				goals = {
-					{ t = "accept", quest = 425, title = "Ivar the Foul", npc = 1950, npcName = "Rane Yorick", map = 1421, x = 53.46, y = 13.43, f = "e" },
-				},
-			},
-			{
-				note = "Three ghouls with him. Wait for one to walk outside, then kill it. Inside the building.",
-				goals = {
-					{ t = "collect", quest = 425, item = 3621, itemName = "Ivar's Head", oi = 1, map = 1421, x = 51.53, y = 13.91, f = "e" },
+					{ t = "turnin", quest = 10068, title = "Well Watcher Solanian", npc = 15295, npcName = "Well Watcher Solanian", map = 1944, x = 38.8, y = 19.4, f = "e" },
+					{ t = "turnin", quest = 10073, title = "Well Watcher Solanian", npc = 15295, npcName = "Well Watcher Solanian", map = 1944, x = 38.8, y = 19.4, f = "e" },
+					{ t = "turnin", quest = 10071, title = "Well Watcher Solanian", npc = 15295, npcName = "Well Watcher Solanian", map = 1944, x = 38.8, y = 19.4, f = "e" },
+					{ t = "turnin", quest = 10069, title = "Well Watcher Solanian", npc = 15295, npcName = "Well Watcher Solanian", map = 1944, x = 38.8, y = 19.4, f = "e" },
+					{ t = "turnin", quest = 10069, title = "Well Watcher Solanian", npc = 15295, npcName = "Well Watcher Solanian", map = 1944, x = 38.8, y = 19.4, f = "e" },
+					{ t = "turnin", quest = 10069, title = "Well Watcher Solanian", npc = 15295, npcName = "Well Watcher Solanian", map = 1944, x = 38.8, y = 19.4, f = "e" },
+					{ t = "accept", quest = 8330, title = "Solanian's Belongings", npc = 15295, npcName = "Well Watcher Solanian", map = 1944, x = 38.8, y = 19.4, f = "e" },
+					{ t = "accept", quest = 8345, title = "The Shrine of Dath'Remar", npc = 15295, npcName = "Well Watcher Solanian", map = 1944, x = 38.8, y = 19.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 425, title = "Ivar the Foul", npc = 1950, npcName = "Rane Yorick", map = 1421, x = 53.46, y = 13.43, f = "e" },
+					{ t = "accept", quest = 8330, title = "Solanian's Belongings", npc = 15295, npcName = "Well Watcher Solanian", map = 1944, x = 38.8, y = 19.4, f = "e" },
+					{ t = "accept", quest = 8345, title = "The Shrine of Dath'Remar", npc = 15295, npcName = "Well Watcher Solanian", map = 1944, x = 38.8, y = 19.4, f = "e" },
 				},
 			},
 			{
-				note = "Avoid Son of Arugal. Higher level elite black worgen. Walks around a large area.",
+				only = { races = { "BloodElf" } },
 				goals = {
-					{ t = "complete", quest = 437, title = "The Dead Fields", note = "Click Here to Continue" },
+					{ t = "accept", quest = 8336, title = "A Fistful of Slivers", npc = 15296, npcName = "Arcanist Ithanas", map = 1944, x = 38.3, y = 19.1, f = "e" },
 				},
 			},
 			{
+				only = { races = { "BloodElf" } },
 				goals = {
-					{ t = "complete", quest = 437, title = "The Dead Fields", note = "Enter the Dead Fields", map = 1421, x = 45.44, y = 21.01, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Essence_Of_Nightlash",
-				note = "Gnolls. Eventually spawns here.",
-				goals = {
-					{ t = "collect", quest = 437, item = 3622, itemName = "Essence of Nightlash", oi = 1, map = 1421, x = 45.44, y = 21.01, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Grizzled_Bear_Hearts",
-				along = true,
-				goals = {
-					{ t = "collect", quest = 447, item = 3253, itemName = "Grizzled Bear Heart", count = 6, oi = 1, map = 1421, x = 40.75, y = 17.83, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Skittering_Blood",
-				along = true,
-				note = "Spiders. Inside and outside the mine. notinsticky",
-				goals = {
-					{ t = "collect", quest = 447, item = 3254, itemName = "Skittering Blood", count = 6, oi = 2, map = 1421, x = 35.65, y = 13.58, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Darksoul_Shackles",
-				along = true,
-				note = "Worgen. Avoid Son of Arugal. notinsticky Higher level elite black worgen. notinsticky",
-				goals = {
-					{ t = "goto", text = "Leave the mine", map = 1421, x = 35.65, y = 13.58 },
-					{ t = "collect", quest = 423, item = 3157, itemName = "Darksoul Shackle", count = 3, oi = 2, map = 1421, x = 39.83, y = 24.99, f = "e" },
-				},
-			},
-			{
-				label = "Collect_Glutton_Shackles",
-				along = true,
-				note = "Worgen. Avoid Son of Arugal. notinsticky Higher level elite black worgen. notinsticky",
-				goals = {
-					{ t = "goto", text = "Leave the mine", map = 1421, x = 35.65, y = 13.58 },
-					{ t = "collect", quest = 423, item = 3156, itemName = "Glutton Shackle", count = 6, oi = 1, map = 1421, x = 39.83, y = 24.99, f = "e" },
-				},
-			},
-			{
-				note = "Fast travel. Don't worry about resurrection sickness. Traveling around soon.",
-				goals = {
-					{ t = "complete", quest = 423, title = "Arugal's Folly", note = "Die on Purpose", map = 1421, x = 39.83, y = 24.99, f = "e" },
+					{ t = "accept", quest = 8346, title = "Thirst Unending", npc = 15297, npcName = "Arcanist Helion", map = 1944, x = 37.2, y = 18.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "complete", quest = 423, title = "Arugal's Folly", note = "Resurrect at the Spirit Healer", map = 1421, x = 44.31, y = 41.51, f = "e" },
-				},
-			},
-			{
-				note = "Follow the road.",
-				goals = {
-					{ t = "turnin", quest = 478, title = "Maps and Runes", npc = 2121, npcName = "Shadow Priest Allister", map = 1421, x = 43.98, y = 40.93, f = "e" },
-					{ t = "accept", quest = 481, title = "Dalar's Analysis", npc = 2121, npcName = "Shadow Priest Allister", map = 1421, x = 43.98, y = 40.93, f = "e" },
-				},
-			},
-			{
-				note = "Walks around.",
-				goals = {
-					{ t = "turnin", quest = 423, title = "Arugal's Folly", npc = 1938, npcName = "Dalar Dawnweaver", map = 1421, x = 44.19, y = 39.78, f = "e" },
-					{ t = "turnin", quest = 481, title = "Dalar's Analysis", npc = 1938, npcName = "Dalar Dawnweaver", map = 1421, x = 44.19, y = 39.78, f = "e" },
-					{ t = "accept", quest = 482, title = "Dalaran's Intentions", npc = 1938, npcName = "Dalar Dawnweaver", map = 1421, x = 44.19, y = 39.78, f = "e" },
+					{ t = "collect", quest = 8336, itemName = "Arcane Sliver", count = 6, oi = 1, map = 1944, x = 34.8, y = 20.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 482, title = "Dalaran's Intentions", npc = 2121, npcName = "Shadow Priest Allister", map = 1421, x = 43.98, y = 40.93, f = "e" },
-				},
-			},
-			{
-				note = "Downstairs inside the crypt.",
-				goals = {
-					{ t = "goto", text = "Enter the crypt", map = 1421, x = 43.09, y = 41.39 },
-					{ t = "turnin", quest = 437, title = "The Dead Fields", npc = 1952, npcName = "High Executor Hadrec", map = 1421, x = 43.43, y = 40.87, f = "e" },
-					{ t = "accept", quest = 438, title = "The Decrepit Ferry", npc = 1952, npcName = "High Executor Hadrec", map = 1421, x = 43.43, y = 40.87, f = "e" },
+					{ t = "collect", quest = 8326, itemName = "Lynx Collar", count = 8, oi = 1, map = 1944, x = 33.6, y = 22.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 438, title = "The Decrepit Ferry", map = 1421, x = 58.39, y = 34.84, f = "e" },
-					{ t = "accept", quest = 439, title = "Rot Hide Clues", map = 1421, x = 58.39, y = 34.84, f = "e" },
-				},
-			},
-			{
-				note = "Downstairs inside the crypt.",
-				goals = {
-					{ t = "goto", text = "Enter the crypt", map = 1421, x = 43.09, y = 41.39 },
-					{ t = "turnin", quest = 439, title = "Rot Hide Clues", npc = 1952, npcName = "High Executor Hadrec", map = 1421, x = 43.43, y = 40.87, f = "e" },
-				},
-			},
-			{
-				note = "Upstairs inside Undercity.",
-				only = { races = { "Scourge" } },
-				goals = {
-					{ t = "turnin", quest = 6323, title = "Ride to the Undercity", npc = 4556, npcName = "Gordon Wendham", map = 1458, x = 61.49, y = 41.8, f = "e" },
-					{ t = "accept", quest = 6322, title = "Michael Garrett", npc = 4556, npcName = "Gordon Wendham", map = 1458, x = 61.49, y = 41.8, f = "e" },
-				},
-			},
-			{
-				note = "Upstairs inside Undercity.",
-				only = { races = { "Scourge" } },
-				goals = {
-					{ t = "turnin", quest = 6322, title = "Michael Garrett", npc = 4551, npcName = "Michael Garrett", map = 1458, x = 63.26, y = 48.56, f = "e" },
-					{ t = "accept", quest = 6324, title = "Return to Podrig", npc = 4551, npcName = "Michael Garrett", map = 1458, x = 63.26, y = 48.56, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Scourge" } },
-				goals = {
-					{ t = "turnin", quest = 6324, title = "Return to Podrig", npc = 6389, npcName = "Deathguard Podrig", map = 1421, x = 43.43, y = 41.68, f = "e" },
+					{ t = "level", level = 3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", text = "Follow the path down", map = 1458, x = 52.84, y = 77.62 },
-					{ t = "turnin", quest = 447, title = "A Recipe For Death", npc = 2055, npcName = "Master Apothecary Faranell", map = 1458, x = 48.82, y = 69.29, f = "e" },
+					{ t = "turnin", quest = 8326, title = "Unfortunate Measures", npc = 15278, npcName = "Magistrix Erona", map = 1944, x = 38.2, y = 20.8, f = "e" },
+					{ t = "accept", quest = 8327, title = "Report to Lanthan Perilon", npc = 15278, npcName = "Magistrix Erona", map = 1944, x = 38.2, y = 20.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 1359, title = "Zinge's Delivery", npc = 5204, npcName = "Apothecary Zinge", map = 1458, x = 50.13, y = 67.99, f = "e" },
-					{ t = "accept", quest = 1358, title = "Sample for Helbrim", npc = 5204, npcName = "Apothecary Zinge", map = 1458, x = 50.13, y = 67.99, f = "e" },
+					{ t = "turnin", quest = 8336, title = "A Fistful of Slivers", npc = 15296, npcName = "Arcanist Ithanas", map = 1944, x = 38.3, y = 19.1, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "PRIEST" } },
 				goals = {
-					{ t = "train", npc = 4608, npcName = "Father Lazarus", map = 1458, x = 47.57, y = 18.9, f = "e" },
+					{ t = "turnin", quest = 8346, title = "Thirst Unending", npc = 15297, npcName = "Arcanist Helion", map = 1944, x = 37.2, y = 18.9, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "ROGUE" } },
 				goals = {
-					{ t = "train", npc = 4582, npcName = "Carolyn Ward", map = 1458, x = 83.86, y = 72.07, f = "e" },
+					{ t = "turnin", quest = 8327, title = "Report to Lanthan Perilon", npc = 15281, npcName = "Lanthan Perilon", map = 1944, x = 35.4, y = 22.5, f = "e" },
+					{ t = "accept", quest = 8334, title = "Aggression", npc = 15281, npcName = "Lanthan Perilon", map = 1944, x = 35.4, y = 22.5, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
-				only = { classes = { "MAGE" } },
 				goals = {
-					{ t = "train", npc = 4568, npcName = "Anastasia Hartwell", map = 1458, x = 85.14, y = 10.03, f = "e" },
+					{ t = "kill", quest = 8334, target = "Tender", count = 7, oi = 1, map = 1944, x = 33.5, y = 24.2, f = "e" },
+					{ t = "kill", quest = 8334, target = "Feral Tender", count = 7, oi = 2, map = 1944, x = 33.5, y = 24.2, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "WARLOCK" } },
 				goals = {
-					{ t = "train", npc = 4563, npcName = "Kaal Soulreaper", map = 1458, x = 86.21, y = 15.93, f = "e" },
+					{ t = "level", level = 4, f = "e" },
 				},
 			},
 			{
-				note = "Buy available Grimoires. Inside the building.",
-				only = { classes = { "WARLOCK" } },
 				goals = {
-					{ t = "vendor", npc = 5753, npcName = "Martha Strain", map = 1458, x = 85.7, y = 16.08, f = "e" },
+					{ t = "goto", map = 1944, x = 29.6, y = 19.4, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "WARRIOR" } },
 				goals = {
-					{ t = "train", npc = 4595, npcName = "Baltus Fowler", map = 1458, x = 47.4, y = 17.29, f = "e" },
+					{ t = "collect", quest = 8330, itemName = "Scroll of Scourge Magic", count = 1, oi = 2, map = 1944, x = 31.3, y = 22.7, f = "e" },
 				},
 			},
 			{
-				only = { races = { "Scourge" }, classes = { "ROGUE" } },
 				goals = {
-					{ t = "turnin", quest = 1886, title = "The Deathstalkers", npc = 6467, npcName = "Mennet Carkad", map = 1458, x = 83.51, y = 69.11, f = "e" },
-					{ t = "accept", quest = 1898, title = "The Deathstalkers", npc = 6467, npcName = "Mennet Carkad", map = 1458, x = 83.51, y = 69.11, f = "e" },
+					{ t = "collect", quest = 8330, itemName = "Solanian's Scrying Orb", count = 1, oi = 1, map = 1944, x = 35.1, y = 28.9, f = "e" },
 				},
 			},
 			{
-				only = { races = { "Scourge" }, classes = { "ROGUE" } },
 				goals = {
-					{ t = "turnin", quest = 1898, title = "The Deathstalkers", npc = 6522, npcName = "Andron Gant", map = 1458, x = 54.82, y = 76.3, f = "e" },
-					{ t = "accept", quest = 1899, title = "The Deathstalkers", npc = 6522, npcName = "Andron Gant", map = 1458, x = 54.82, y = 76.3, f = "e" },
+					{ t = "collect", quest = 8330, itemName = "Solanian's Journal", count = 1, oi = 3, map = 1944, x = 37.7, y = 24.9, f = "e" },
 				},
 			},
 			{
-				only = { races = { "Scourge" }, classes = { "ROGUE" } },
 				goals = {
-					{ t = "collect", quest = 1899, item = 7294, itemName = "Andron's Ledger", oi = 1, map = 1458, x = 55.42, y = 77.05, f = "e" },
+					{ t = "turnin", quest = 8330, title = "Solanian's Belongings", npc = 15295, npcName = "Well Watcher Solanian", map = 1944, x = 38.8, y = 19.4, f = "e" },
+					{ t = "turnin", quest = 8345, title = "The Shrine of Dath'Remar", npc = 15295, npcName = "Well Watcher Solanian", map = 1944, x = 38.8, y = 19.4, f = "e" },
 				},
 			},
 			{
-				only = { races = { "Scourge" }, classes = { "ROGUE" } },
 				goals = {
-					{ t = "turnin", quest = 1899, title = "The Deathstalkers", npc = 6467, npcName = "Mennet Carkad", map = 1458, x = 83.51, y = 69.11, f = "e" },
-					{ t = "accept", quest = 1978, title = "The Deathstalkers", npc = 6467, npcName = "Mennet Carkad", map = 1458, x = 65.53, y = 79.73, f = "e" },
+					{ t = "turnin", quest = 8334, title = "Aggression", npc = 15281, npcName = "Lanthan Perilon", map = 1944, x = 35.4, y = 22.5, f = "e" },
+					{ t = "accept", quest = 8335, title = "Felendren the Banished", npc = 15281, npcName = "Lanthan Perilon", map = 1944, x = 35.4, y = 22.5, f = "e" },
 				},
 			},
 			{
-				only = { races = { "Scourge" }, classes = { "ROGUE" } },
 				goals = {
-					{ t = "turnin", quest = 1978, title = "The Deathstalkers", npc = 2425, npcName = "Varimathras", map = 1458, x = 59.75, y = 84.64, f = "e" },
+					{ t = "kill", quest = 8335, target = "Arcane Wraith", count = 8, oi = 1, map = 1944, x = 32.2, y = 25.9, f = "e" },
+					{ t = "kill", quest = 8335, target = "Tainted Arcane Wraith", count = 2, oi = 2, map = 1944, x = 32.2, y = 25.9, f = "e" },
+					{ t = "collect", itemName = "Tainted Arcane Sliver", count = 1, map = 1944, x = 32.2, y = 25.9, f = "e" },
+					{ t = "accept", quest = 8338, title = "Tainted Arcane Sliver", map = 1944, x = 32.2, y = 25.9, f = "e" },
 				},
 			},
 			{
-				note = "Walks around. Inside the building.",
-				only = { classes = { "PALADIN" } },
+				note = "Follow the ramps all the way to the top to 30.8,27.1",
 				goals = {
-					{ t = "train", map = 1458, x = 47.39, y = 14.89, f = "e" },
+					{ t = "collect", quest = 8335, itemName = "Felendren's Head", count = 1, oi = 3, map = 1944, x = 30.8, y = 27.1, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "DRUID" } },
 				goals = {
-					{ t = "train", npc = 12042, npcName = "Loganaar", map = 1450, x = 52.53, y = 40.57, f = "e" },
+					{ t = "turnin", quest = 8335, title = "Felendren the Banished", npc = 15281, npcName = "Lanthan Perilon", map = 1944, x = 35.4, y = 22.5, f = "e" },
+					{ t = "accept", quest = 8347, title = "Aiding the Outrunners", npc = 15281, npcName = "Lanthan Perilon", map = 1944, x = 35.4, y = 22.5, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "SHAMAN" } },
 				goals = {
-					{ t = "train", npc = 3173, npcName = "Swart", map = 1411, x = 54.42, y = 42.59, f = "e" },
+					{ t = "level", level = 5, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "train", npc = 3171, npcName = "Thotar", map = 1411, x = 51.85, y = 43.49, f = "e" },
+					{ t = "turnin", quest = 8338, title = "Tainted Arcane Sliver", npc = 15297, npcName = "Arcanist Helion", map = 1944, x = 37.2, y = 18.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 8347, title = "Aiding the Outrunners", npc = 15301, npcName = "Outrunner Alarion", map = 1944, x = 40.4, y = 32.2, f = "e" },
+					{ t = "accept", quest = 9704, title = "Slain by the Wretched", npc = 15301, npcName = "Outrunner Alarion", map = 1944, x = 40.4, y = 32.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9704, title = "Slain by the Wretched", map = 1944, x = 42.0, y = 35.7, f = "e" },
+					{ t = "accept", quest = 9705, title = "Package Recovery", map = 1944, x = 42.0, y = 35.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9705, title = "Package Recovery", npc = 15301, npcName = "Outrunner Alarion", map = 1944, x = 40.4, y = 32.2, f = "e" },
+					{ t = "accept", quest = 8350, title = "Completing the Delivery", npc = 15301, npcName = "Outrunner Alarion", map = 1944, x = 40.4, y = 32.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 8472, title = "Major Malfunction", npc = 15418, npcName = "Magister Jaronis", map = 1944, x = 47.3, y = 46.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 8350, title = "Completing the Delivery", npc = 15433, npcName = "Innkeeper Delaniel", map = 1944, x = 48.1, y = 47.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "home", text = "Falconwing Square", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 8463, title = "Unstable Mana Crystals", npc = 15403, npcName = "Aeldon Sunbrand", map = 1944, x = 48.2, y = 46.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 8468, title = "Wanted: Thaelis the Hungerer", map = 1944, x = 48.2, y = 46.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 8463, itemName = "Unstable Mana Crystal", count = 6, oi = 1, map = 1944, x = 45.9, y = 43.7, f = "e" },
+					{ t = "collect", quest = 8472, itemName = "Arcane Core", count = 6, oi = 1, map = 1944, x = 45.9, y = 43.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 8468, itemName = "Thaelis's Head", count = 1, oi = 1, map = 1944, x = 45.0, y = 37.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 8472, title = "Major Malfunction", npc = 15418, npcName = "Magister Jaronis", map = 1944, x = 47.3, y = 46.3, f = "e" },
+					{ t = "accept", quest = 8895, title = "Delivery to the North Sanctum", npc = 15418, npcName = "Magister Jaronis", map = 1944, x = 47.3, y = 46.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 8468, title = "Wanted: Thaelis the Hungerer", npc = 16924, npcName = "Sergeant Kan'ren", map = 1944, x = 47.8, y = 46.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 8463, title = "Unstable Mana Crystals", npc = 15403, npcName = "Aeldon Sunbrand", map = 1944, x = 48.2, y = 46.0, f = "e" },
+					{ t = "accept", quest = 9352, title = "Darnassian Intrusions", npc = 15403, npcName = "Aeldon Sunbrand", map = 1944, x = 48.2, y = 46.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 8895, title = "Delivery to the North Sanctum", npc = 15405, npcName = "Ley-Keeper Caidanis", map = 1944, x = 44.6, y = 53.1, f = "e" },
+					{ t = "accept", quest = 9119, title = "Malfunction at the West Sanctum", npc = 15405, npcName = "Ley-Keeper Caidanis", map = 1944, x = 44.6, y = 53.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 9035, title = "Roadside Ambush", npc = 15941, npcName = "Apprentice Ralen", map = 1944, x = 45.2, y = 56.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9119, title = "Malfunction at the West Sanctum", npc = 15401, npcName = "Ley-Keeper Velania", map = 1944, x = 36.7, y = 57.4, f = "e" },
+					{ t = "accept", quest = 8486, title = "Arcane Instability", npc = 15401, npcName = "Ley-Keeper Velania", map = 1944, x = 36.7, y = 57.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 8486, target = "Manawraith", count = 5, oi = 1, map = 1944, x = 35.4, y = 57.4, f = "e" },
+					{ t = "kill", quest = 8486, target = "Mana Stalker", count = 5, oi = 2, map = 1944, x = 35.4, y = 57.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", itemName = "the Incriminating Documents", count = 1, map = 1944, x = 33.9, y = 58.4, f = "e" },
+					{ t = "accept", quest = 8482, title = "Incriminating Documents", map = 1944, x = 33.9, y = 58.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9352, title = "Darnassian Intrusions", npc = 15401, npcName = "Ley-Keeper Velania", map = 1944, x = 36.7, y = 57.4, f = "e" },
+					{ t = "turnin", quest = 8486, title = "Arcane Instability", npc = 15401, npcName = "Ley-Keeper Velania", map = 1944, x = 36.7, y = 57.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 8884, title = "Fish Heads, Fish Heads...", npc = 15920, npcName = "Hathvelion Sungaze", map = 1944, x = 30.2, y = 58.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 8884, itemName = "Grimscale Murloc Head", count = 8, oi = 1, map = 1944, x = 27.3, y = 57.2, f = "e" },
+					{ t = "collect", itemName = "Captain Kelisendra's Lost Rutters", count = 1, map = 1944, x = 27.3, y = 57.2, f = "e" },
+					{ t = "accept", quest = 8887, title = "Captain Kelisendra's Lost Rutters", map = 1944, x = 27.3, y = 57.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 8884, title = "Fish Heads, Fish Heads...", npc = 15920, npcName = "Hathvelion Sungaze", map = 1944, x = 30.2, y = 58.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 8887, title = "Captain Kelisendra's Lost Rutters", npc = 15921, npcName = "Captain Kelisendra", map = 1944, x = 36.4, y = 66.7, f = "e" },
+					{ t = "accept", quest = 8886, title = "Grimscale Pirates!", npc = 15921, npcName = "Captain Kelisendra", map = 1944, x = 36.4, y = 66.7, f = "e" },
+					{ t = "accept", quest = 8480, title = "Lost Armaments", npc = 15404, npcName = "Velendris Whitemorn", map = 1944, x = 36.4, y = 66.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 8480, itemName = "Sin'dorei Armaments", count = 8, oi = 1, map = 1944, x = 31.7, y = 69.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 8886, itemName = "Captain Kelisendra's Cargo", count = 6, oi = 1, map = 1944, x = 25.6, y = 70.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 8886, title = "Grimscale Pirates!", npc = 15921, npcName = "Captain Kelisendra", map = 1944, x = 36.4, y = 66.7, f = "e" },
+					{ t = "turnin", quest = 8480, title = "Lost Armaments", npc = 15404, npcName = "Velendris Whitemorn", map = 1944, x = 36.4, y = 66.7, f = "e" },
+					{ t = "accept", quest = 9076, title = "Wretched Ringleader", npc = 15404, npcName = "Velendris Whitemorn", map = 1944, x = 36.4, y = 66.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 9076, itemName = "Aldaron's Head", count = 1, oi = 1, map = 1944, x = 32.8, y = 69.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9076, title = "Wretched Ringleader", npc = 15404, npcName = "Velendris Whitemorn", map = 1944, x = 36.4, y = 66.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 8491, title = "Pelt Collection", npc = 15417, npcName = "Velan Brightoak", map = 1944, x = 44.7, y = 69.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 9395, title = "Saltheril's Haven", npc = 16210, npcName = "Magistrix Landra Dawnstrider", map = 1944, x = 44.0, y = 70.8, f = "e" },
+					{ t = "accept", quest = 9254, title = "The Wayward Apprentice", npc = 16210, npcName = "Magistrix Landra Dawnstrider", map = 1944, x = 44.0, y = 70.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 9358, title = "Ranger Sareyn", npc = 15397, npcName = "Marniel Amberlight", map = 1944, x = 43.7, y = 71.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "home", text = "Fairbreeze Village", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 8892, title = "Situation at Sunsail Anchorage", npc = 15939, npcName = "Ranger Degolien", map = 1944, x = 43.3, y = 70.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9035, title = "Roadside Ambush", npc = 15945, npcName = "Apprentice Meledor", map = 1944, x = 44.9, y = 61.0, f = "e" },
+					{ t = "accept", quest = 9062, title = "Soaked Pages", npc = 15945, npcName = "Apprentice Meledor", map = 1944, x = 44.9, y = 61.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 9062, itemName = "Antheol's Elemental Grimoire", count = 1, oi = 1, map = 1944, x = 44.3, y = 62.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9062, title = "Soaked Pages", npc = 15945, npcName = "Apprentice Meledor", map = 1944, x = 44.9, y = 61.0, f = "e" },
+					{ t = "accept", quest = 9064, title = "Taking the Fall", npc = 15945, npcName = "Apprentice Meledor", map = 1944, x = 44.9, y = 61.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 8482, title = "Incriminating Documents", npc = 15403, npcName = "Aeldon Sunbrand", map = 1944, x = 48.2, y = 46.0, f = "e" },
+					{ t = "accept", quest = 8483, title = "The Dwarven Spy", npc = 15403, npcName = "Aeldon Sunbrand", map = 1944, x = 48.2, y = 46.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 8483, itemName = "Prospector Anvilward's Head", count = 1, oi = 1, map = 1944, x = 44.6, y = 53.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 8483, title = "The Dwarven Spy", npc = 15403, npcName = "Aeldon Sunbrand", map = 1944, x = 48.2, y = 46.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 8475, title = "The Dead Scar", npc = 15416, npcName = "Ranger Jaela", map = 1944, x = 50.3, y = 50.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 8475, target = "Plaguebone Pillager", count = 8, oi = 1, map = 1944, x = 50.0, y = 52.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 8475, title = "The Dead Scar", npc = 15416, npcName = "Ranger Jaela", map = 1944, x = 50.3, y = 50.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9064, title = "Taking the Fall", npc = 15970, npcName = "Instructor Antheol", map = 1944, x = 55.7, y = 54.5, f = "e" },
+					{ t = "accept", quest = 9066, title = "Swift Discipline", npc = 15970, npcName = "Instructor Antheol", map = 1944, x = 55.7, y = 54.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9254, title = "The Wayward Apprentice", npc = 15402, npcName = "Apprentice Mirveda", map = 1944, x = 54.3, y = 71.0, f = "e" },
+					{ t = "accept", quest = 8487, title = "Corrupted Soil", npc = 15402, npcName = "Apprentice Mirveda", map = 1944, x = 54.3, y = 71.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 8487, item = 20771, itemName = "Tainted Soil Sample", count = 8, oi = 1, map = 1944, x = 52.6, y = 70.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 8487, title = "Corrupted Soil", npc = 15402, npcName = "Apprentice Mirveda", map = 1944, x = 54.3, y = 71.0, f = "e" },
+					{ t = "accept", quest = 8488, title = "Unexpected Results", npc = 15402, npcName = "Apprentice Mirveda", map = 1944, x = 54.3, y = 71.0, f = "e" },
+				},
+			},
+			{
+				note = "Protect Apprentice Mirveda from the ambushers",
+				goals = {
+					{ t = "turnin", quest = 8488, title = "Unexpected Results", map = 1944, x = 54.3, y = 71.0, f = "e" },
+					{ t = "accept", quest = 9255, title = "Research Notes", map = 1944, x = 54.3, y = 71.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 9, f = "e" },
 				},
 			},
 		},

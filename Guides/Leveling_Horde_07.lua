@@ -1,603 +1,515 @@
 -- TuWoW_Leveling — Guides/Leveling_Horde_07.lua
--- Compilado desde ZygorGuidesViewerForever y depurado para TuWoW 3.3.5a.
+-- Compilado desde Zygor Guides WotLK 3.3.5a oficial para TuWoW.
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/h-orc-and-troll-starter-1-13-part-2",
+		id = "zygor/leveling/h-troll-1-13",
 		pack = "guides",
-		title = "Orc & Troll Starter (Parte 2/3)",
+		title = "Troll (1-13) (Parte 1/2)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-orc-and-troll-starter-1-13-part-3",
+		next = "zygor/leveling/h-troll-1-13-part-2",
 		author = "TuWoW & Zygor",
 		minLevel = 1,
 		maxLevel = 13,
 		zone = 1411,
 		version = 1,
-		races = { "Orc", "Troll" },
+		races = { "Troll" },
 		steps = {
 			{
-				note = "Cast Lesser Heal (Rank 2) on Grunt Kor'ja. Cast Power Word: Fortitude on Grunt Kor'ja.",
-				only = { classes = { "PRIEST" } },
 				goals = {
-					{ t = "complete", quest = 5648, title = "Garments of Spirituality", note = "Heal and Fortify Grunt Kor'ja", map = 1411, x = 53.1, y = 46.46, f = "e" },
+					{ t = "accept", quest = 4641, title = "Your Place In The World", npc = 10176, npcName = "Kaltunk", map = 1411, x = 43.3, y = 68.5, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "PRIEST" } },
+				note = "Go inside the cave to 42,68",
 				goals = {
-					{ t = "turnin", quest = 5648, title = "Garments of Spirituality", npc = 3706, npcName = "Tai'jin", map = 1411, x = 54.26, y = 42.93, f = "e" },
+					{ t = "turnin", quest = 4641, title = "Your Place In The World", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
+					{ t = "accept", quest = 788, title = "Cutting Teeth", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "WARRIOR" } },
 				goals = {
-					{ t = "train", npc = 3169, npcName = "Tarshaw Jaggedscar", map = 1411, x = 54.19, y = 42.47, f = "e" },
+					{ t = "kill", quest = 788, target = "Mottled Boar", count = 10, oi = 1, map = 1411, x = 43.8, y = 70.0, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "SHAMAN" } },
 				goals = {
-					{ t = "train", npc = 3173, npcName = "Swart", map = 1411, x = 54.42, y = 42.59, f = "e" },
+					{ t = "level", level = 2, f = "e" },
 				},
 			},
 			{
-				note = "We will train Mining and Blacksmithing. Allows you to make and use Sharpening Stones. Increases damage. Mine Copper Ore as you see it. Use the Rough Stones to make sharpening stones.",
-				only = { classes = { "WARRIOR", "ROGUE" } },
 				goals = {
-					{ t = "complete", quest = 2161, title = "A Peon's Burden", note = "Click Here to Continue" },
+					{ t = "accept", quest = 792, title = "Vile Familiars (1)", npc = 3145, npcName = "Zureetha Fargaze", map = 1411, x = 42.8, y = 69.1, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "WARRIOR", "ROGUE" } },
+				note = "Go into the cave to 42.1,68.3",
+				only = { races = { "Troll" }, classes = { "MAGE" } },
 				goals = {
-					{ t = "buy", item = 2901, itemName = "Mining Pick", map = 1411, x = 52.98, y = 41.97, f = "e" },
+					{ t = "turnin", quest = 788, title = "Cutting Teeth", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
+					{ t = "accept", quest = 789, title = "Sting of the Scorpid", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
+					{ t = "accept", quest = 3086, title = "Glyphic Tablet", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "WARRIOR", "ROGUE" } },
+				note = "Go into the cave to 42.1,68.3",
+				only = { races = { "Troll" }, classes = { "WARRIOR" } },
 				goals = {
-					{ t = "skill", level = 75, skill = "Mining" },
+					{ t = "turnin", quest = 788, title = "Cutting Teeth", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
+					{ t = "accept", quest = 789, title = "Sting of the Scorpid", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
+					{ t = "accept", quest = 3065, title = "Simple Tablet", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
 				},
 			},
 			{
-				only = { classes = { "WARRIOR", "ROGUE" } },
+				note = "Go into the cave to 42.1,68.3",
+				only = { races = { "Troll" }, classes = { "SHAMAN" } },
 				goals = {
-					{ t = "skill", level = 75, skill = "Blacksmithing" },
+					{ t = "turnin", quest = 788, title = "Cutting Teeth", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
+					{ t = "accept", quest = 789, title = "Sting of the Scorpid", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
+					{ t = "accept", quest = 3084, title = "Rune-Inscribed Tablet", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
 				},
 			},
 			{
-				note = "Outside behind the building.",
-				only = { classes = { "WARLOCK" } },
+				note = "Go into the cave to 42.1,68.3",
+				only = { races = { "Troll" }, classes = { "ROGUE" } },
 				goals = {
-					{ t = "train", npc = 3172, npcName = "Dhugru Gorelust", map = 1411, x = 54.38, y = 41.19, f = "e" },
+					{ t = "turnin", quest = 788, title = "Cutting Teeth", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
+					{ t = "accept", quest = 789, title = "Sting of the Scorpid", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
+					{ t = "accept", quest = 3083, title = "Encrypted Tablet", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
 				},
 			},
 			{
-				note = "Buy available Grimoires. Outside behind the building.",
-				only = { classes = { "WARLOCK" } },
+				note = "Go into the cave to 42.1,68.3",
+				only = { races = { "Troll" }, classes = { "PRIEST" } },
 				goals = {
-					{ t = "vendor", npc = 6027, npcName = "Kitha", map = 1411, x = 54.71, y = 41.5, f = "e" },
+					{ t = "turnin", quest = 788, title = "Cutting Teeth", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
+					{ t = "accept", quest = 789, title = "Sting of the Scorpid", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
+					{ t = "accept", quest = 3085, title = "Hallowed Tablet", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
+				note = "Go into the cave to 42.1,68.3",
+				only = { races = { "Troll" }, classes = { "HUNTER" } },
 				goals = {
-					{ t = "turnin", quest = 2161, title = "A Peon's Burden", npc = 6928, npcName = "Innkeeper Grosk", map = 1411, x = 51.52, y = 41.65, f = "e" },
+					{ t = "turnin", quest = 788, title = "Cutting Teeth", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
+					{ t = "accept", quest = 789, title = "Sting of the Scorpid", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
+					{ t = "accept", quest = 3082, title = "Etched Tablet", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
 				},
 			},
 			{
-				note = "Walks around.",
+				only = { races = { "Troll" }, classes = { "MAGE" } },
 				goals = {
-					{ t = "accept", quest = 815, title = "Break a Few Eggs", npc = 3191, npcName = "Cook Torka", map = 1411, x = 51.11, y = 42.45, f = "e" },
+					{ t = "turnin", quest = 3086, title = "Glyphic Tablet", npc = 5884, npcName = "Mai'ah", map = 1411, x = 42.5, y = 69.0, f = "e" },
 				},
 			},
 			{
-				label = "Kill_Razormane_Quilboars_And_Scouts",
-				along = true,
+				only = { races = { "Troll" }, classes = { "WARRIOR" } },
 				goals = {
-					{ t = "kill", quest = 837, npc = 3111, target = "Razormane Quilboar", count = 4, oi = 1, map = 1411, x = 46.17, y = 49.03, f = "e" },
-					{ t = "kill", quest = 837, npc = 3112, target = "Razormane Scout", count = 4, oi = 2, map = 1411, x = 46.17, y = 49.03, f = "e" },
+					{ t = "turnin", quest = 3065, title = "Simple Tablet", npc = 3153, npcName = "Frang", map = 1411, x = 42.9, y = 69.4, f = "e" },
 				},
 			},
 			{
-				note = "Top of the tower.",
+				only = { races = { "Troll" }, classes = { "SHAMAN" } },
 				goals = {
-					{ t = "accept", quest = 791, title = "Carry Your Weight", npc = 3147, npcName = "Furl Scornbrow", map = 1411, x = 49.89, y = 40.38, f = "e" },
+					{ t = "turnin", quest = 3084, title = "Rune-Inscribed Tablet", npc = 3157, npcName = "Shikrik", map = 1411, x = 42.4, y = 69.0, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "HUNTER" } },
+				only = { races = { "Troll" }, classes = { "ROGUE" } },
 				goals = {
-					{ t = "train", npc = 3171, npcName = "Thotar", map = 1411, x = 51.85, y = 43.49, f = "e" },
+					{ t = "turnin", quest = 3083, title = "Encrypted Tablet", npc = 3155, npcName = "Rwag", map = 1411, x = 41.3, y = 68.0, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
-				only = { classes = { "ROGUE" } },
+				only = { races = { "Troll" }, classes = { "PRIEST" } },
 				goals = {
-					{ t = "train", npc = 3170, npcName = "Kaplak", map = 1411, x = 51.98, y = 43.69, f = "e" },
+					{ t = "turnin", quest = 3085, title = "Hallowed Tablet", npc = 3707, npcName = "Ken'jai", map = 1411, x = 42.4, y = 68.8, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "PRIEST" } },
 				goals = {
-					{ t = "train", npc = 3706, npcName = "Tai'jin", map = 1411, x = 54.26, y = 42.93, f = "e" },
+					{ t = "accept", quest = 4402, title = "Galgar's Cactus Apple Surprise", npc = 9796, npcName = "Galgar", map = 1411, x = 42.7, y = 67.2, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "WARRIOR" } },
+				only = { races = { "Troll" }, classes = { "HUNTER" } },
 				goals = {
-					{ t = "train", npc = 3169, npcName = "Tarshaw Jaggedscar", map = 1411, x = 54.19, y = 42.47, f = "e" },
+					{ t = "turnin", quest = 3082, title = "Etched Tablet", npc = 3154, npcName = "Jen'shan", map = 1411, x = 42.8, y = 69.3, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "SHAMAN" } },
 				goals = {
-					{ t = "train", npc = 3173, npcName = "Swart", map = 1411, x = 54.42, y = 42.59, f = "e" },
+					{ t = "collect", quest = 789, itemName = "Scorpid Worker Tail", count = 10, oi = 1, map = 1411, x = 41.3, y = 63.3, f = "e" },
 				},
 			},
 			{
-				note = "Outside behind the building.",
-				only = { classes = { "WARLOCK" } },
 				goals = {
-					{ t = "train", npc = 3172, npcName = "Dhugru Gorelust", map = 1411, x = 54.38, y = 41.19, f = "e" },
+					{ t = "level", level = 3, f = "e" },
 				},
 			},
 			{
-				note = "Buy available Grimoires. Outside behind the building.",
-				only = { classes = { "WARLOCK" } },
+				note = "Go into the cave to 42,68",
 				goals = {
-					{ t = "vendor", npc = 6027, npcName = "Kitha", map = 1411, x = 54.71, y = 41.5, f = "e" },
+					{ t = "turnin", quest = 789, title = "Sting of the Scorpid", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
 				goals = {
-					{ t = "kill", quest = 784, npc = 3192, target = "Lieutenant Benedict", oi = 3, map = 1411, x = 59.71, y = 58.27, f = "e" },
-					{ t = "collect", quest = 830, item = 4882, itemName = "Benedict's Key", map = 1411, x = 59.71, y = 58.27, f = "e" },
+					{ t = "accept", quest = 5441, title = "Lazy Peons", npc = 11378, npcName = "Foreman Thazz'ril", map = 1411, x = 44.6, y = 68.6, f = "e" },
 				},
 			},
 			{
-				note = "Top of the building.",
 				goals = {
-					{ t = "goto", text = "Follow the path and run further up the stairs", map = 1411, x = 59.9, y = 57.87 },
-					{ t = "collect", quest = 830, item = 4881, itemName = "Aged Envelope", map = 1411, x = 59.26, y = 57.66, f = "e" },
+					{ t = "goto", map = 1411, x = 45.3, y = 69.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "use", item = 4881, itemName = "Aged Envelope" },
-					{ t = "accept", quest = 830, title = "The Admiral's Orders" },
+					{ t = "turnin", quest = 5441, title = "Lazy Peons", npc = 11378, npcName = "Foreman Thazz'ril", map = 1411, x = 44.6, y = 68.6, f = "e" },
+					{ t = "accept", quest = 6394, title = "Thazz'ril's Pick", npc = 11378, npcName = "Foreman Thazz'ril", map = 1411, x = 44.6, y = 68.6, f = "e" },
 				},
 			},
 			{
-				label = "Collect_Canvas_Scraps",
-				along = true,
 				goals = {
-					{ t = "collect", quest = 791, item = 4870, itemName = "Canvas Scraps", count = 8, oi = 1, map = 1411, x = 58.08, y = 55.78, f = "e" },
+					{ t = "collect", quest = 4402, itemName = "Cactus Apple", count = 10, oi = 1, map = 1411, x = 44.1, y = 65.4, f = "e" },
 				},
 			},
 			{
-				label = "Kill_Kul_Tiras_Enemies",
-				along = true,
 				goals = {
-					{ t = "kill", quest = 784, npc = 3129, target = "Kul Tiras Marine", count = 8, oi = 2, map = 1411, x = 58.08, y = 55.78, f = "e" },
-					{ t = "kill", quest = 784, npc = 3128, target = "Kul Tiras Sailor", count = 10, oi = 1, map = 1411, x = 58.08, y = 55.78, f = "e" },
+					{ t = "kill", quest = 792, target = "Vile Familiar", count = 12, oi = 1, map = 1411, x = 45.8, y = 59.3, f = "e" },
 				},
 			},
 			{
-				note = "No death penalty at this level. Fast travel.",
 				goals = {
-					{ t = "complete", quest = 830, title = "The Admiral's Orders", note = "Die on Purpose", map = 1411, x = 58.08, y = 55.78, f = "e" },
+					{ t = "level", level = 4, f = "e" },
 				},
 			},
 			{
+				only = { races = { "Troll" }, classes = { "SHAMAN" } },
 				goals = {
-					{ t = "complete", quest = 830, title = "The Admiral's Orders", note = "Resurrect at the Spirit Healer", map = 1411, x = 53.51, y = 44.45, f = "e" },
+					{ t = "accept", quest = 1516, title = "Call of Earth (1)", npc = 5887, npcName = "Canaga Earthcaller", map = 1411, x = 42.4, y = 69.2, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
+				note = "Go inside the cave",
 				goals = {
-					{ t = "turnin", quest = 784, title = "Vanquish the Betrayers", npc = 3139, npcName = "Gar'Thok", map = 1411, x = 51.95, y = 43.5, f = "e" },
-					{ t = "accept", quest = 825, title = "From The Wreckage....", npc = 3139, npcName = "Gar'Thok", map = 1411, x = 51.95, y = 43.5, f = "e" },
-					{ t = "turnin", quest = 830, title = "The Admiral's Orders", npc = 3139, npcName = "Gar'Thok", map = 1411, x = 51.95, y = 43.5, f = "e" },
+					{ t = "goto", map = 1411, x = 45.5, y = 56.4, f = "e" },
 				},
 			},
 			{
-				note = "Top of the tower.",
 				goals = {
-					{ t = "goto", text = "Follow the path up", map = 1411, x = 50.09, y = 43.01 },
-					{ t = "turnin", quest = 791, title = "Carry Your Weight", npc = 3147, npcName = "Furl Scornbrow", map = 1411, x = 49.89, y = 40.38, f = "e" },
+					{ t = "collect", quest = 6394, itemName = "Thazz'ril's Pick", count = 1, oi = 1, map = 1411, x = 43.8, y = 53.8, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
+				only = { races = { "Troll" }, classes = { "SHAMAN" } },
 				goals = {
-					{ t = "sethome", location = "Razor Hill", map = 1411, x = 51.52, y = 41.65, f = "e" },
+					{ t = "collect", quest = 1516, itemName = "Felstalker Hoof", count = 2, oi = 1, map = 1411, x = 45.3, y = 55.7, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "WARRIOR", "ROGUE" } },
+				note = "Leave the cave,0.5|c",
 				goals = {
-					{ t = "skill", level = 75, skill = "First Aid" },
+					{ t = "goto", map = 1411, x = 45.3, y = 56.7, f = "e" },
 				},
 			},
 			{
-				note = "While waiting for things like boats. Increases skill in First Aid. Need higher skill to make better bandages. Keep bandages to heal yourself.",
-				only = { classes = { "WARRIOR", "ROGUE" } },
 				goals = {
-					{ t = "complete", quest = 808, title = "Minshina's Skull", note = "Click Here to Continue" },
+					{ t = "accept", quest = 790, title = "Sarkoth (1)", npc = 3287, npcName = "Hana'zua", map = 1411, x = 40.6, y = 62.6, f = "e" },
 				},
 			},
 			{
-				note = "Grey metal chests. Inside and near sunken ships. Underwater.",
 				goals = {
-					{ t = "collect", quest = 825, item = 4863, itemName = "Gnomish Tools", count = 3, oi = 1, map = 1411, x = 62.03, y = 56.06, f = "e" },
+					{ t = "collect", quest = 790, itemName = "Sarkoth's Mangled Claw", count = 1, oi = 1, map = 1411, x = 40.6, y = 66.6, f = "e" },
 				},
 			},
 			{
-				note = "Troll wearing a red robe. Walks around.",
 				goals = {
-					{ t = "collect", quest = 826, item = 4866, itemName = "Zalazane's Head", oi = 3, map = 1411, x = 67.4, y = 86.4, f = "e" },
+					{ t = "turnin", quest = 790, title = "Sarkoth (1)", npc = 3287, npcName = "Hana'zua", map = 1411, x = 40.6, y = 62.6, f = "e" },
+					{ t = "accept", quest = 804, title = "Sarkoth (2)", npc = 3287, npcName = "Hana'zua", map = 1411, x = 40.6, y = 62.6, f = "e" },
 				},
 			},
 			{
-				note = "Skulls.",
 				goals = {
-					{ t = "collect", quest = 808, item = 4864, itemName = "Minshina's Skull", oi = 1, map = 1411, x = 67.45, y = 87.81, f = "e" },
+					{ t = "turnin", quest = 4402, title = "Galgar's Cactus Apple Surprise", npc = 9796, npcName = "Galgar", map = 1411, x = 42.7, y = 67.2, f = "e" },
 				},
 			},
 			{
-				label = "Kill_Hexed_Trolls_And_Voodoo_Trolls",
-				along = true,
 				goals = {
-					{ t = "kill", quest = 826, npc = 3207, target = "Hexed Troll", count = 8, oi = 1, map = 1411, x = 67.36, y = 85.03, f = "e" },
-					{ t = "kill", quest = 826, npc = 3206, target = "Voodoo Troll", count = 8, oi = 2, map = 1411, x = 67.36, y = 85.03, f = "e" },
+					{ t = "turnin", quest = 804, title = "Sarkoth (2)", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
 				},
 			},
 			{
-				label = "Collect_Taillasher_Eggs",
-				along = true,
-				note = "Clusters of purple eggs. Near trees.",
+				only = { races = { "Troll" }, classes = { "SHAMAN" } },
 				goals = {
-					{ t = "collect", quest = 815, item = 4890, itemName = "Taillasher Egg", count = 3, oi = 1, map = 1411, x = 63.9, y = 85.5, f = "e" },
+					{ t = "turnin", quest = 1516, title = "Call of Earth (1)", npc = 5887, npcName = "Canaga Earthcaller", map = 1411, x = 42.4, y = 69.2, f = "e" },
+					{ t = "accept", quest = 1517, title = "Call of Earth (2)", npc = 5887, npcName = "Canaga Earthcaller", map = 1411, x = 42.4, y = 69.2, f = "e" },
 				},
 			},
 			{
-				label = "Collect_Durotar_Tiger_Fur",
-				along = true,
+				only = { races = { "Troll" }, classes = { "SHAMAN" } },
 				goals = {
-					{ t = "collect", quest = 817, item = 4892, itemName = "Durotar Tiger Fur", count = 4, oi = 1, map = 1411, x = 60.54, y = 89.71, f = "e" },
+					{ t = "goto", map = 1411, x = 41.5, y = 73.4, f = "e" },
 				},
 			},
 			{
-				note = "No death penalty at this level. Fast travel. Anywhere in Echo Isles.",
+				note = "Go up the path to 44.1,76.1",
+				only = { races = { "Troll" }, classes = { "SHAMAN" } },
 				goals = {
-					{ t = "goto", text = "Die on Purpose", map = 1411, x = 60.54, y = 89.71 },
+					{ t = "turnin", quest = 1517, title = "Call of Earth (2)", npc = 5891, npcName = "the Minor Manifestation of Earth", map = 1411, x = 44.1, y = 76.1, f = "e" },
+					{ t = "accept", quest = 1518, title = "Call of Earth (3)", npc = 5891, npcName = "the Minor Manifestation of Earth", map = 1411, x = 44.1, y = 76.1, f = "e" },
 				},
 			},
 			{
+				only = { races = { "Troll" }, classes = { "SHAMAN" } },
 				goals = {
-					{ t = "complete", quest = 817, title = "Practical Prey", note = "Resurrect at the Spirit Healer", map = 1411, x = 57.5, y = 73.26, f = "e" },
+					{ t = "turnin", quest = 1518, title = "Call of Earth (3)", npc = 5887, npcName = "Canaga Earthcaller", map = 1411, x = 42.4, y = 69.2, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "MAGE" } },
 				goals = {
-					{ t = "train", npc = 5880, npcName = "Un'Thuwa", map = 1411, x = 56.31, y = 75.11, f = "e" },
+					{ t = "turnin", quest = 792, title = "Vile Familiars (1)", npc = 3145, npcName = "Zureetha Fargaze", map = 1411, x = 42.8, y = 69.2, f = "e" },
+					{ t = "accept", quest = 794, title = "Burning Blade Medallion", npc = 3145, npcName = "Zureetha Fargaze", map = 1411, x = 42.8, y = 69.2, f = "e" },
 				},
 			},
 			{
-				note = "Save the Faintly Glowing Skull quest reward. Used later to make a quest easier.",
 				goals = {
-					{ t = "complete", quest = 808, title = "Minshina's Skull", note = "Click Here to Continue" },
+					{ t = "turnin", quest = 6394, title = "Thazz'ril's Pick", npc = 11378, npcName = "Foreman Thazz'ril", map = 1411, x = 44.6, y = 68.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 808, title = "Minshina's Skull", npc = 3188, npcName = "Master Gadrin", map = 1411, x = 55.95, y = 74.72, f = "e" },
-					{ t = "turnin", quest = 826, title = "Zalazane", npc = 3188, npcName = "Master Gadrin", map = 1411, x = 55.95, y = 74.72, f = "e" },
+					{ t = "level", level = 5, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
 				goals = {
-					{ t = "turnin", quest = 817, title = "Practical Prey", npc = 3194, npcName = "Vel'rin Fang", map = 1411, x = 55.95, y = 73.93, f = "e" },
+					{ t = "goto", map = 1411, x = 45.5, y = 56.4, f = "e" },
 				},
 			},
 			{
-				note = "Walks around.",
 				goals = {
-					{ t = "turnin", quest = 815, title = "Break a Few Eggs", npc = 3191, npcName = "Cook Torka", map = 1411, x = 51.11, y = 42.45, f = "e" },
+					{ t = "collect", quest = 794, itemName = "Burning Blade Medallion", count = 1, oi = 1, map = 1411, x = 42.7, y = 53.0, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
+				note = "Hearth to the Valley of Trials,0.1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "turnin", quest = 825, title = "From The Wreckage....", npc = 3139, npcName = "Gar'Thok", map = 1411, x = 51.95, y = 43.5, f = "e" },
-					{ t = "accept", quest = 831, title = "The Admiral's Orders", npc = 3139, npcName = "Gar'Thok", map = 1411, x = 51.95, y = 43.5, f = "e" },
+					{ t = "goto", map = 1411, x = 43.3, y = 68.8, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "PRIEST" } },
 				goals = {
-					{ t = "train", npc = 3706, npcName = "Tai'jin", map = 1411, x = 54.26, y = 42.93, f = "e" },
+					{ t = "turnin", quest = 794, title = "Burning Blade Medallion", npc = 3145, npcName = "Zureetha Fargaze", map = 1411, x = 42.8, y = 69.1, f = "e" },
+					{ t = "accept", quest = 805, title = "Report to Sen'jin Village", npc = 3145, npcName = "Zureetha Fargaze", map = 1411, x = 42.8, y = 69.1, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "PRIEST" } },
+				note = "Go east along the road through the big gate,0.3",
 				goals = {
-					{ t = "accept", quest = 5654, title = "Hex of Weakness", npc = 3706, npcName = "Tai'jin", map = 1411, x = 54.26, y = 42.93, f = "e" },
+					{ t = "goto", map = 1411, x = 49.8, y = 68.4, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
-				only = { classes = { "ROGUE" } },
 				goals = {
-					{ t = "train", npc = 3170, npcName = "Kaplak", map = 1411, x = 51.98, y = 43.69, f = "e" },
+					{ t = "accept", quest = 2161, title = "A Peon's Burden", npc = 6786, npcName = "Ukor", map = 1411, x = 52.1, y = 68.3, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
-				only = { classes = { "ROGUE" } },
 				goals = {
-					{ t = "accept", quest = 1859, title = "Therzok", npc = 3170, npcName = "Kaplak", map = 1411, x = 51.98, y = 43.69, f = "e" },
+					{ t = "accept", quest = 786, title = "Thwarting Kolkar Aggression", npc = 3140, npcName = "Lar Prowltusk", map = 1411, x = 54.2, y = 73.3, f = "e" },
 				},
 			},
 			{
-				note = "Outside behind the building.",
-				only = { classes = { "WARLOCK" } },
 				goals = {
-					{ t = "train", npc = 3172, npcName = "Dhugru Gorelust", map = 1411, x = 54.38, y = 41.19, f = "e" },
+					{ t = "turnin", quest = 805, title = "Report to Sen'jin Village", npc = 3188, npcName = "Master Gadrin", map = 1411, x = 55.9, y = 74.5, f = "e" },
+					{ t = "accept", quest = 808, title = "Minshina's Skull", npc = 3188, npcName = "Master Gadrin", map = 1411, x = 55.9, y = 74.5, f = "e" },
+					{ t = "accept", quest = 826, title = "Zalazane", npc = 3188, npcName = "Master Gadrin", map = 1411, x = 55.9, y = 74.5, f = "e" },
+					{ t = "accept", quest = 823, title = "Report to Orgnil", npc = 3188, npcName = "Master Gadrin", map = 1411, x = 55.9, y = 74.5, f = "e" },
+					{ t = "accept", quest = 818, title = "A Solvent Spirit", npc = 3304, npcName = "Master Vornal", map = 1411, x = 55.9, y = 74.5, f = "e" },
 				},
 			},
 			{
-				note = "Buy available Grimoires. Outside behind the building.",
-				only = { classes = { "WARLOCK" } },
 				goals = {
-					{ t = "vendor", npc = 6027, npcName = "Kitha", map = 1411, x = 54.71, y = 41.5, f = "e" },
+					{ t = "accept", quest = 817, title = "Practical Prey", npc = 3194, npcName = "Vel'rin Fang", map = 1411, x = 55.9, y = 74.0, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "WARRIOR" } },
 				goals = {
-					{ t = "train", npc = 3169, npcName = "Tarshaw Jaggedscar", map = 1411, x = 54.19, y = 42.47, f = "e" },
+					{ t = "turnin", quest = 823, title = "Report to Orgnil", npc = 3142, npcName = "Orgnil Soulscar", map = 1411, x = 52.2, y = 43.2, f = "e" },
+					{ t = "accept", quest = 806, title = "Dark Storms", npc = 3142, npcName = "Orgnil Soulscar", map = 1411, x = 52.2, y = 43.2, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "WARRIOR" } },
 				goals = {
-					{ t = "accept", quest = 1505, title = "Veteran Uzzek", npc = 3169, npcName = "Tarshaw Jaggedscar", map = 1411, x = 54.19, y = 42.47, f = "e" },
+					{ t = "accept", quest = 784, title = "Vanquish the Betrayers", npc = 3139, npcName = "Gar'Thok", map = 1411, x = 51.9, y = 43.5, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "train", npc = 3171, npcName = "Thotar", map = 1411, x = 51.85, y = 43.49, f = "e" },
+					{ t = "turnin", quest = 2161, title = "A Peon's Burden", npc = 6928, npcName = "Innkeeper Grosk", map = 1411, x = 51.5, y = 41.6, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "accept", quest = 6062, title = "Taming the Beast", npc = 3171, npcName = "Thotar", map = 1411, x = 51.85, y = 43.49, f = "e" },
+					{ t = "home", text = "Razor Hill", f = "e" },
 				},
 			},
 			{
-				note = "On a Dire Mottled Boar.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "use", item = 15917, itemName = "Taming Rod" },
-					{ t = "complete", quest = 6062, title = "Taming the Beast", note = "Tame a Dire Mottled Boar", map = 1411, x = 51.4, y = 48.0, f = "e" },
+					{ t = "accept", quest = 791, title = "Carry Your Weight", npc = 3147, npcName = "Furl Scornbrow", map = 1411, x = 49.9, y = 40.4, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "turnin", quest = 6062, title = "Taming the Beast", npc = 3171, npcName = "Thotar", map = 1411, x = 51.85, y = 43.49, f = "e" },
-					{ t = "accept", quest = 6083, title = "Taming the Beast", npc = 3171, npcName = "Thotar", map = 1411, x = 51.85, y = 43.49, f = "e" },
+					{ t = "kill", quest = 784, target = "Kul Tiras Sailor", count = 10, oi = 1, map = 1411, x = 55.5, y = 51.2, f = "e" },
+					{ t = "kill", quest = 784, target = "Kul Tiras Marine", count = 8, oi = 2, map = 1411, x = 55.5, y = 51.2, f = "e" },
+					{ t = "collect", quest = 791, itemName = "Canvas Scraps", count = 8, oi = 1, map = 1411, x = 55.5, y = 51.2, f = "e" },
 				},
 			},
 			{
-				note = "On a Surf Crawler. Crabs. Dismiss your pet first.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "use", item = 15919, itemName = "Taming Rod" },
-					{ t = "complete", quest = 6083, title = "Taming the Beast", note = "Tame a Surf Crawler", map = 1411, x = 57.8, y = 28.0, f = "e" },
+					{ t = "level", level = 6, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "turnin", quest = 6083, title = "Taming the Beast", npc = 3171, npcName = "Thotar", map = 1411, x = 51.85, y = 43.49, f = "e" },
-					{ t = "accept", quest = 6082, title = "Taming the Beast", npc = 3171, npcName = "Thotar", map = 1411, x = 51.85, y = 43.49, f = "e" },
+					{ t = "kill", quest = 784, npc = 3192, target = "Lieutenant Benedict", count = 1, oi = 3, map = 1411, x = 59.7, y = 58.3, f = "e" },
+					{ t = "collect", quest = 830, item = 4882, itemName = "Benedict's Key", count = 1, map = 1411, x = 59.7, y = 58.3, f = "e" },
 				},
 			},
 			{
-				note = "On an Armored Scorpid. Dismiss your pet first.",
-				only = { classes = { "HUNTER" } },
+				note = "Leave the room and run across the hall and up the wooden steps,0.3",
 				goals = {
-					{ t = "use", item = 15920, itemName = "Taming Rod" },
-					{ t = "complete", quest = 6082, title = "Taming the Beast", note = "Tame an Armored Scorpid", map = 1411, x = 55.0, y = 38.2, f = "e" },
+					{ t = "goto", map = 1411, x = 60.0, y = 57.6, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "turnin", quest = 6082, title = "Taming the Beast", npc = 3171, npcName = "Thotar", map = 1411, x = 51.85, y = 43.49, f = "e" },
-					{ t = "accept", quest = 6081, title = "Training the Beast", npc = 3171, npcName = "Thotar", map = 1411, x = 51.85, y = 43.49, f = "e" },
+					{ t = "collect", quest = 830, item = 4881, itemName = "Aged Envelope", count = 1, map = 1411, x = 59.3, y = 57.7, f = "e" },
+					{ t = "accept", quest = 830, title = "The Admiral's Orders (1)", map = 1411, x = 59.3, y = 57.7, f = "e" },
 				},
 			},
 			{
-				note = "Buy 20, or whatever you can afford. Used to feed your pet soon.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "buy", item = 117, itemName = "Tough Jerky", map = 1411, x = 51.13, y = 42.63, f = "e" },
-					{ t = "vendor", npc = 3881, npcName = "Grimtak", map = 1411, x = 51.13, y = 42.63, f = "e" },
+					{ t = "turnin", quest = 784, title = "Vanquish the Betrayers", npc = 3139, npcName = "Gar'Thok", map = 1411, x = 51.9, y = 43.5, f = "e" },
+					{ t = "accept", quest = 825, title = "From The Wreckage....", npc = 3139, npcName = "Gar'Thok", map = 1411, x = 51.9, y = 43.5, f = "e" },
+					{ t = "turnin", quest = 830, title = "The Admiral's Orders (1)", npc = 3139, npcName = "Gar'Thok", map = 1411, x = 51.9, y = 43.5, f = "e" },
+					{ t = "accept", quest = 831, title = "The Admiral's Orders (2)", npc = 3139, npcName = "Gar'Thok", map = 1411, x = 51.9, y = 43.5, f = "e" },
+					{ t = "accept", quest = 837, title = "Encroachment", npc = 3139, npcName = "Gar'Thok", map = 1411, x = 51.9, y = 43.5, f = "e" },
 				},
 			},
 			{
-				note = "Between the rocks. Hurry, timed quest.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "accept", quest = 812, title = "Need for a Cure", npc = 3190, npcName = "Rhinag", map = 1411, x = 41.55, y = 18.61, f = "e" },
+					{ t = "accept", quest = 815, title = "Break a Few Eggs", npc = 3191, npcName = "Cook Torka", map = 1411, x = 51.1, y = 42.4, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "goto", text = "Run up the stairs", map = 1454, x = 56.4, y = 56.75 },
+					{ t = "turnin", quest = 791, title = "Carry Your Weight", npc = 3147, npcName = "Furl Scornbrow", map = 1411, x = 49.9, y = 40.4, f = "e" },
 				},
 			},
 			{
-				note = "Top of the building.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "turnin", quest = 6081, title = "Training the Beast", npc = 3352, npcName = "Ormak Grimshot", map = 1454, x = 66.05, y = 18.54, f = "e" },
+					{ t = "level", level = 7, f = "e" },
 				},
 			},
 			{
-				note = "Learn pet abilities from Pet Trainers. Cast Beast Training to teach your pet.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "complete", quest = 837, title = "Encroachment", note = "Click Here to Continue" },
+					{ t = "collect", quest = 818, itemName = "Crawler Mucus", count = 8, oi = 2, map = 1411, x = 60.8, y = 46.9, f = "e" },
+					{ t = "collect", quest = 818, itemName = "Intact Makrura Eye", count = 4, oi = 1, map = 1411, x = 60.8, y = 46.9, f = "e" },
+					{ t = "collect", quest = 825, itemName = "Gnomish Tools", count = 3, oi = 1, map = 1411, x = 60.8, y = 46.9, f = "e" },
 				},
 			},
 			{
-				note = "Top of the building.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "train", npc = 10088, npcName = "Xao'tsu", map = 1454, x = 66.34, y = 14.83, f = "e" },
+					{ t = "turnin", quest = 825, title = "From The Wreckage....", npc = 3139, npcName = "Gar'Thok", map = 1411, x = 51.9, y = 43.5, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "turnin", quest = 831, title = "The Admiral's Orders", npc = 3230, npcName = "Nazgrel", map = 1454, x = 32.27, y = 35.8, f = "e" },
+					{ t = "kill", quest = 837, target = "Razormane Quilboar", count = 4, oi = 1, map = 1411, x = 44.6, y = 48.6, f = "e" },
+					{ t = "kill", quest = 837, target = "Razormane Scout", count = 4, oi = 2, map = 1411, x = 44.6, y = 48.6, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "accept", quest = 5726, title = "Hidden Enemies", npc = 4949, npcName = "Thrall", map = 1454, x = 31.75, y = 37.82, f = "e" },
+					{ t = "goto", map = 1411, x = 51.3, y = 79.1, f = "e" },
 				},
 			},
 			{
-				note = "Inside the Cleft of Shadow.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "accept", quest = 813, title = "Finding the Antidote", npc = 3189, npcName = "Kor'ghan", map = 1454, x = 47.24, y = 53.58, f = "e" },
+					{ t = "goto", map = 1411, x = 49.8, y = 81.3, f = "e" },
 				},
 			},
 			{
-				note = "Top of the tower.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "getfp", location = "Orgrimmar", map = 1454, x = 45.13, y = 63.9, f = "e" },
+					{ t = "goto", map = 1411, x = 47.7, y = 77.3, f = "e" },
 				},
 			},
 			{
-				note = "Cast Tame Beast on a Venomtail Scorpid. Scorpions. New permanent pet. Dismiss your pet first.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "complete", quest = 837, title = "Encroachment", note = "Click Here to Continue", map = 1411, x = 49.8, y = 17.4, f = "e" },
+					{ t = "goto", map = 1411, x = 46.2, y = 78.9, f = "e" },
 				},
 			},
 			{
-				note = "Walks around. Inside the building.",
-				only = { classes = { "HUNTER" } },
 				goals = {
-					{ t = "accept", quest = 816, title = "Lost But Not Forgotten", npc = 3193, npcName = "Misha Tor'kren", map = 1411, x = 43.11, y = 30.24, f = "e" },
+					{ t = "turnin", quest = 786, title = "Thwarting Kolkar Aggression", npc = 3140, npcName = "Lar Prowltusk", map = 1411, x = 54.2, y = 73.3, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "SHAMAN" } },
 				goals = {
-					{ t = "train", npc = 3173, npcName = "Swart", map = 1411, x = 54.42, y = 42.59, f = "e" },
+					{ t = "turnin", quest = 818, title = "A Solvent Spirit", npc = 3304, npcName = "Master Vornal", map = 1411, x = 55.9, y = 74.5, f = "e" },
 				},
 			},
 			{
-				note = "Inside the building.",
-				only = { classes = { "SHAMAN" } },
 				goals = {
-					{ t = "accept", quest = 2983, title = "Call of Fire", npc = 3173, npcName = "Swart", map = 1411, x = 54.42, y = 42.59, f = "e" },
+					{ t = "level", level = 8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 837, npc = 3113, target = "Razormane Dustrunner", count = 4, oi = 3, map = 1411, x = 43.43, y = 39.15, f = "e" },
-					{ t = "kill", quest = 837, npc = 3114, target = "Razormane Battleguard", count = 4, oi = 4, map = 1411, x = 43.43, y = 39.15, f = "e" },
+					{ t = "collect", quest = 815, itemName = "Taillasher Egg", count = 3, oi = 1, map = 1411, x = 60.3, y = 82.9, f = "e" },
+					{ t = "collect", quest = 817, itemName = "Durotar Tiger Fur", count = 4, oi = 1, map = 1411, x = 60.3, y = 82.9, f = "e" },
 				},
 			},
 			{
-				note = "Walks around. Inside the building.",
 				goals = {
-					{ t = "accept", quest = 816, title = "Lost But Not Forgotten", npc = 3193, npcName = "Misha Tor'kren", map = 1411, x = 43.11, y = 30.24, f = "e" },
+					{ t = "kill", quest = 826, target = "Hexed Troll", count = 8, oi = 1, map = 1411, x = 65.4, y = 83.3, f = "e" },
+					{ t = "kill", quest = 826, target = "Voodoo Troll", count = 8, oi = 2, map = 1411, x = 65.4, y = 83.3, f = "e" },
 				},
 			},
 			{
-				note = "Walks around.",
-				only = { classes = { "SHAMAN" } },
 				goals = {
-					{ t = "turnin", quest = 2983, title = "Call of Fire", npc = 5907, npcName = "Kranal Fiss", map = 1413, x = 56.03, y = 19.89, f = "e" },
-					{ t = "accept", quest = 1524, title = "Call of Fire", npc = 5907, npcName = "Kranal Fiss", map = 1413, x = 56.03, y = 19.89, f = "e" },
+					{ t = "collect", quest = 826, itemName = "Zalazane's Head", count = 1, oi = 3, map = 1411, x = 67.6, y = 86.5, f = "e" },
 				},
 			},
 			{
-				note = "Top of the mountain.",
-				only = { classes = { "SHAMAN" } },
 				goals = {
-					{ t = "goto", text = "Follow the path up", map = 1411, x = 36.59, y = 57.07 },
-					{ t = "turnin", quest = 1524, title = "Call of Fire", npc = 5900, npcName = "Telf Joolam", map = 1411, x = 38.55, y = 58.96, f = "e" },
-					{ t = "accept", quest = 1525, title = "Call of Fire", npc = 5900, npcName = "Telf Joolam", map = 1411, x = 38.55, y = 58.96, f = "e" },
+					{ t = "collect", quest = 808, itemName = "Minshina's Skull", count = 1, oi = 1, map = 1411, x = 67.5, y = 87.8, f = "e" },
 				},
 			},
 			{
-				note = "Thornweavers and Water Seekers.",
-				only = { classes = { "SHAMAN" } },
 				goals = {
-					{ t = "collect", quest = 1525, item = 5026, itemName = "Fire Tar", oi = 1, map = 1413, x = 54.33, y = 24.72, f = "e" },
+					{ t = "turnin", quest = 808, title = "Minshina's Skull", npc = 3188, npcName = "Master Gadrin", map = 1411, x = 55.9, y = 74.5, f = "e" },
+					{ t = "turnin", quest = 826, title = "Zalazane", npc = 3188, npcName = "Master Gadrin", map = 1411, x = 55.9, y = 74.5, f = "e" },
 				},
 			},
 			{
-				note = "Upstairs inside the building.",
 				goals = {
-					{ t = "turnin", quest = 837, title = "Encroachment", npc = 3139, npcName = "Gar'Thok", map = 1411, x = 51.95, y = 43.5, f = "e" },
+					{ t = "turnin", quest = 817, title = "Practical Prey", npc = 3194, npcName = "Vel'rin Fang", map = 1411, x = 55.9, y = 74.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 806, title = "Dark Storms", npc = 3142, npcName = "Orgnil Soulscar", map = 1411, x = 52.24, y = 43.15, f = "e" },
+					{ t = "level", level = 9, f = "e" },
 				},
 			},
 			{
-				note = "Inside the cave. In the back.",
-				only = { classes = { "SHAMAN" } },
+				note = "Hearth to Razor Hill,0.1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "collect", quest = 1525, item = 6652, itemName = "Reagent Pouch", oi = 2, map = 1411, x = 52.8, y = 28.6, f = "e" },
+					{ t = "goto", map = 1411, x = 51.5, y = 41.7, f = "e" },
 				},
 			},
 		},

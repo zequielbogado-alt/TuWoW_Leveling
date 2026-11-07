@@ -706,12 +706,15 @@ PAGES[#PAGES + 1] = {
 		dipper(h.Sky, cx + 30, 70, 1, 0)
 		emblem(h.Sky, 60, cx, 70, 170, 70)
 		h.Word = W.Tex(h.Sky, "ARTWORK", "wordmark", "text")
-		h.Word:SetSize(144, 18)
-		h.Word:SetPoint("CENTER", h.Sky, "TOPLEFT", cx, -130)
+		h.Word:Hide()
+		local brandTitle = W.Text(h.Sky, "title", "accent")
+		brandTitle:SetText("|cffffd24aTUWOW|r |cffffffffLEVELING|r")
+		brandTitle:SetPoint("CENTER", h.Sky, "TOPLEFT", cx, -130)
+		h.BrandTitle = brandTitle
 		h.Tagline = W.Text(h.Sky, "note", "textDim")
 		h.Tagline:SetWidth(CW)
 		h.Tagline:SetJustifyH("CENTER")
-		h.Tagline:SetText(L["Leveling guides for World of Warcraft: Forever"])
+		h.Tagline:SetText(L["Leveling guides for TuWoW"])
 		h.Tagline:SetPoint("TOP", h.Sky, "TOPLEFT", cx, -151)
 
 		local p = P.Body
@@ -742,7 +745,7 @@ PAGES[#PAGES + 1] = {
 		h.Dark:SetShown(painted)
 
 		local name = known(playerInfo().name)
-		p.Title:SetText(name and (L["Hello, %s"]):format(name) or L["Welcome to Polestar"])
+		p.Title:SetText(name and (L["Hello, %s"]):format(name) or L["Welcome to TuWoW Leveling"])
 		place(p.Title, 0, 4)
 		local y = 4 + p.Title:GetStringHeight() + 8
 		place(p.Line, 0, y)
@@ -890,7 +893,7 @@ PAGES[#PAGES + 1] = {
 	shown = function() return full end,
 	build = function(P)
 		compactHero(P.Hero, L["Make it yours"],
-			(L["Three choices to start with. Everything else is in %s."]):format(cmd("/polestar options")), true)
+			(L["Three choices to start with. Everything else is in %s."]):format(cmd("/twl options")), true)
 		local p = P.Body
 		F.AutoQuest = toggleRow(p, L["Accept and turn in guide quests for me"], "behavior.autoAccept",
 			L["Only quests in the next steps of your open guides. Never picks between rewards. Hold Shift to skip."],
@@ -900,7 +903,7 @@ PAGES[#PAGES + 1] = {
 		p.SchemeTitle = para(p, "body", "text", CW, 2)
 		p.SchemeTitle:SetText(L["Colour scheme"])
 		p.SchemeNote = para(p, "note", "textMuted", CW, 3)
-		p.SchemeNote:SetText(L["The background of every Polestar window. It changes as you pick."])
+		p.SchemeNote:SetText(L["The background of every TuWoW Leveling window. It changes as you pick."])
 		p.Keep = para(p, "note", "textMuted", CW, 3)
 		p.Keep:SetText(L["Skip keeps these as they are."])
 		F.Schemes = {}
