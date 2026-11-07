@@ -272,6 +272,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Toshley's Station|goto Blade's Edge Mountains,60.7,69.3,2|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 10594, title = "Gauging the Resonant Frequency", npc = 21755, npcName = "Nickwinkle the Metro-Gnome", map = 1949, x = 60.2, y = 68.9, f = "e" },
 				},
@@ -387,6 +393,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Sylvanaar|goto Blade's Edge Mountains,38.3,65.3,3|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 10512, title = "Getting the Bladespire Tanked", npc = 21151, npcName = "Borgrim Stouthammer", map = 1949, x = 37.4, y = 64.6, f = "e" },
 				},
@@ -457,16 +469,6 @@ do
 					{ t = "accept", quest = 10810, title = "Damaged Mask", map = 1949, x = 68.9, y = 35.6, f = "e" },
 				},
 			},
-			{
-				goals = {
-					{ t = "goto", map = 1949, x = 71.7, y = 22.4, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 1949, x = 71.6, y = 20.3, f = "e" },
-				},
-			},
 		},
 	})
 end
@@ -478,13 +480,22 @@ do
 		title = "Levels (66-68) (Parte 3/3)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-levels-68-70",
 		author = "TuWoW & Zygor",
 		minLevel = 66,
 		maxLevel = 68,
 		zone = 1946,
 		version = 1,
 		steps = {
+			{
+				goals = {
+					{ t = "goto", map = 1949, x = 71.7, y = 22.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1949, x = 71.6, y = 20.3, f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "goto", map = 1949, x = 71.6, y = 18.5, f = "e" },

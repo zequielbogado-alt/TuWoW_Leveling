@@ -8,13 +8,34 @@ do
 		title = "Levels (35-40) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-levels-40-45",
 		author = "TuWoW & Zygor",
 		minLevel = 35,
 		maxLevel = 40,
 		zone = 1441,
 		version = 1,
 		steps = {
+			{
+				goals = {
+					{ t = "kill", target = "Syndicate mobs", count = 1, map = 1416, x = 62.3, y = 45.4, f = "e" },
+					{ t = "collect", quest = 512, itemName = "Alterac Signet Ring", count = 7, oi = 1, map = 1416, x = 62.3, y = 45.4, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Southshore|goto Hillsbrad Foothills,51.2,58.9,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 500, title = "Crushridge Bounty", npc = 2263, npcName = "Marshal Redpath", map = 1424, x = 49.5, y = 58.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 512, title = "Noble Deaths", npc = 2276, npcName = "Magistrate Henry Maleb", map = 1424, x = 48.1, y = 59.1, f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "accept", quest = 691, title = "Worth Its Weight in Gold", npc = 2788, npcName = "Apprentice Kryten", map = 1417, x = 46.2, y = 47.8, f = "e" },
@@ -265,6 +286,12 @@ do
 					{ t = "accept", quest = 660, title = "Hints of a New Plague? (4)", npc = 2713, npcName = "Kinelory", map = 1417, x = 60.2, y = 53.9, f = "e" },
 					{ t = "turnin", quest = 660, title = "Hints of a New Plague? (4)", npc = 2712, npcName = "Quae", map = 1417, x = 60.2, y = 53.9, f = "e" },
 					{ t = "accept", quest = 661, title = "Hints of a New Plague? (5)", npc = 2712, npcName = "Quae", map = 1417, x = 60.2, y = 53.9, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Southshore|goto Hillsbrad Foothills,51.2,58.9,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{

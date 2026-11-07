@@ -5,7 +5,7 @@ do
 	Polestar.RegisterGuide({
 		id = "zygor/leveling/a-northrend-74-76",
 		pack = "guides",
-		title = "Northrend (74-76) (Parte 1/4)",
+		title = "Northrend (74-76) (Parte 1/5)",
 		category = "Leveling",
 		faction = "Alliance",
 		next = "zygor/leveling/a-northrend-74-76-part-2",
@@ -120,6 +120,12 @@ do
 				goals = {
 					{ t = "turnin", quest = 12235, title = "Naxxramas and the Fall of Wintergarde", npc = 27317, npcName = "Gryphon Commander Urik", x = 77.1, y = 50.1, f = "e" },
 					{ t = "accept", quest = 12237, title = "Flight of the Wintergarde Defender", npc = 27317, npcName = "Gryphon Commander Urik", x = 77.1, y = 50.1, f = "e" },
+				},
+			},
+			{
+				note = "Use the Wintergarde Gryphon Whistle in your bags|use Wintergarde Gryphon Whistle##37287",
+				goals = {
+					{ t = "use", item = 37287, itemName = "Wintergarde Gryphon Whistle", f = "e" },
 				},
 			},
 			{
@@ -444,6 +450,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Wintergarde Keep|goto Dragonblight,77.4,51.5,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 12305, title = "Parting Thoughts", npc = 27314, npcName = "Zelig the Visionary", x = 79.1, y = 47.2, f = "e" },
 					{ t = "accept", quest = 12475, title = "What Secrets Men Hide", npc = 27314, npcName = "Zelig the Visionary", x = 79.1, y = 47.2, f = "e" },
@@ -489,18 +501,6 @@ do
 			{
 				goals = {
 					{ t = "collect", quest = 12475, itemName = "Onslaught Map", count = 1, oi = 1, x = 87.6, y = 38.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", target = "Onslaught mobs", count = 1, x = 84.9, y = 35.5, f = "e" },
-					{ t = "collect", quest = 12477, itemName = "The Path of Redemption", count = 1, oi = 1, x = 84.9, y = 35.5, f = "e" },
-					{ t = "kill", quest = 12476, target = "Scarlet Onslaught", count = 20, oi = 1, x = 84.9, y = 35.5, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 12476, title = "The Return of the Crusade?", npc = 27155, npcName = "Commander Lynore Windstryke", x = 78.6, y = 48.2, f = "e" },
 				},
 			},
 		},

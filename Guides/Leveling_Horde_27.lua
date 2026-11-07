@@ -17,6 +17,16 @@ do
 		steps = {
 			{
 				goals = {
+					{ t = "goto", map = 1447, x = 47.6, y = 61.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1447, x = 47.9, y = 51.6, f = "e" },
+				},
+			},
+			{
+				goals = {
 					{ t = "goto", map = 1447, x = 48.6, y = 48.6, f = "e" },
 				},
 			},
@@ -118,6 +128,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Orgrimmar|goto Orgrimmar|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 3541, title = "Delivery to Jes'rimon", npc = 8659, npcName = "Jes'rimon", map = 1456, x = 55.6, y = 34.1, f = "e" },
 					{ t = "accept", quest = 3563, title = "Jes'rimon's Payment to Jediga", npc = 8659, npcName = "Jes'rimon", map = 1456, x = 55.6, y = 34.1, f = "e" },
@@ -213,6 +229,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Orgrimmar|goto Orgrimmar|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 3562, title = "Magatha's Payment to Jediga", npc = 8587, npcName = "Jediga", map = 1447, x = 22.6, y = 51.4, f = "e" },
 					{ t = "turnin", quest = 3563, title = "Jes'rimon's Payment to Jediga", npc = 8587, npcName = "Jediga", map = 1447, x = 22.6, y = 51.4, f = "e" },
@@ -235,6 +257,12 @@ do
 					{ t = "turnin", quest = 2585, title = "The Decisive Striker", npc = 7505, npcName = "Bloodmage Drazial", map = 1419, x = 50.6, y = 14.2, f = "e" },
 					{ t = "turnin", quest = 2601, title = "The Basilisk's Bite", npc = 7506, npcName = "Bloodmage Lynnore", map = 1419, x = 50.6, y = 14.2, f = "e" },
 					{ t = "turnin", quest = 2603, title = "Vulture's Vigor", npc = 7506, npcName = "Bloodmage Lynnore", map = 1419, x = 50.6, y = 14.2, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Orgrimmar|goto Orgrimmar|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{
@@ -483,6 +511,23 @@ do
 					{ t = "goto", map = 1449, x = 23.8, y = 59.2, f = "e" },
 				},
 			},
+		},
+	})
+end
+
+do
+	Polestar.RegisterGuide({
+		id = "zygor/leveling/h-levels-50-55-part-3",
+		pack = "guides",
+		title = "Levels (50-55) (Parte 3/3)",
+		category = "Leveling",
+		faction = "Horde",
+		author = "TuWoW & Zygor",
+		minLevel = 50,
+		maxLevel = 55,
+		zone = 1446,
+		version = 1,
+		steps = {
 			{
 				goals = {
 					{ t = "kill", quest = 4501, target = "Frenzied Pterrordax", count = 15, oi = 1, map = 1449, x = 21.0, y = 59.0, f = "e" },
@@ -511,24 +556,6 @@ do
 					{ t = "goto", map = 1449, x = 49.7, y = 45.7, f = "e" },
 				},
 			},
-		},
-	})
-end
-
-do
-	Polestar.RegisterGuide({
-		id = "zygor/leveling/h-levels-50-55-part-3",
-		pack = "guides",
-		title = "Levels (50-55) (Parte 3/3)",
-		category = "Leveling",
-		faction = "Horde",
-		next = "zygor/leveling/h-levels-55-60",
-		author = "TuWoW & Zygor",
-		minLevel = 50,
-		maxLevel = 55,
-		zone = 1446,
-		version = 1,
-		steps = {
 			{
 				goals = {
 					{ t = "collect", quest = 4502, itemName = "Un'Goro Ash", count = 9, oi = 1, map = 1449, x = 46.6, y = 52.9, f = "e" },

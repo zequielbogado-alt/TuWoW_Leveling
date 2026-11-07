@@ -8,7 +8,6 @@ do
 		title = "Levels (35-40) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-levels-40-45",
 		author = "TuWoW & Zygor",
 		minLevel = 35,
 		maxLevel = 40,
@@ -16,9 +15,15 @@ do
 		version = 1,
 		steps = {
 			{
+				goals = {
+					{ t = "turnin", quest = 668, title = "Sunken Treasure (3)", npc = 2610, npcName = "Shakes O'Breen", map = 1458, x = 32.3, y = 81.4, f = "e" },
+					{ t = "accept", quest = 669, title = "Sunken Treasure (4)", npc = 2610, npcName = "Shakes O'Breen", map = 1458, x = 32.3, y = 81.4, f = "e" },
+				},
+			},
+			{
 				note = "Hearth to Hammerfall,0.1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "goto", map = 1458, x = 73.8, y = 32.6, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 1458, x = 73.8, y = 32.6, f = "e" },
 				},
 			},
 			{
@@ -89,6 +94,12 @@ do
 			{
 				goals = {
 					{ t = "turnin", quest = 1147, title = "The Swarm Grows (3)", npc = 4483, npcName = "Moktar Krin", map = 1441, x = 67.6, y = 63.9, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to the Crossroads|goto The Barrens,52.0,29.9,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{
@@ -246,7 +257,7 @@ do
 			{
 				note = "Use the Witchbane Torch while standing at the end of the dock right outside|use Witchbane Torch##33113",
 				goals = {
-					{ t = "goto", map = 1445, x = 55.2, y = 26.7, f = "e" },
+					{ t = "use", item = 33113, itemName = "Witchbane Torch", map = 1445, x = 55.2, y = 26.7, f = "e" },
 				},
 			},
 			{
@@ -289,6 +300,12 @@ do
 				goals = {
 					{ t = "turnin", quest = 1239, title = "The Severed Head", npc = 4791, npcName = "Nazeer Bloodpike", map = 1445, x = 35.2, y = 30.7, f = "e" },
 					{ t = "accept", quest = 1240, title = "The Troll Witchdoctor", npc = 4791, npcName = "Nazeer Bloodpike", map = 1445, x = 35.2, y = 30.7, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to the Crossroads|goto The Barrens,52.0,29.9,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{

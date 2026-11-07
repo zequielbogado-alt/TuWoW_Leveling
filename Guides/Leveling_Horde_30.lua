@@ -506,13 +506,18 @@ do
 		title = "Outland (60-62) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-outland-62-64",
 		author = "TuWoW & Zygor",
 		minLevel = 60,
 		maxLevel = 62,
 		zone = 1419,
 		version = 1,
 		steps = {
+			{
+				note = "Hearth to Thrallmar|goto Hellfire Peninsula,56.7,37.5,5|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "turnin", quest = 10835, title = "Apothecary Antonivich", npc = 16588, npcName = "Apothecary Antonivich", map = 1944, x = 52.3, y = 36.5, f = "e" },
@@ -567,6 +572,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Thrallmar|goto Hellfire Peninsula,54.7,38.3,5|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 10838, title = "The Demoniac Scryer", npc = 16588, npcName = "Apothecary Antonivich", map = 1944, x = 52.3, y = 36.5, f = "e" },
 					{ t = "accept", quest = 10875, title = "Report to Nazgrel", npc = 16588, npcName = "Apothecary Antonivich", map = 1944, x = 52.3, y = 36.5, f = "e" },
@@ -586,7 +597,7 @@ do
 			{
 				note = "Use the Felhound Whistle while standing next to Forman Razelcraz|use Felhound Whistle##30803",
 				goals = {
-					{ t = "goto", map = 1944, x = 51.4, y = 30.6, f = "e" },
+					{ t = "use", item = 30803, itemName = "Felhound Whistle", map = 1944, x = 51.4, y = 30.6, f = "e" },
 				},
 			},
 			{

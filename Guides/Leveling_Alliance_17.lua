@@ -96,6 +96,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Menethil Harbor|goto Wetlands,10.1,56.7,9|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				note = "Ride the boat to Auberdine|goto Darkshore,32.4,43.7,1|noway|c",
 				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
 				goals = {
@@ -341,6 +347,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Lakeshire|goto Redridge Mountains,26.9,44.9,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 180, title = "Wanted: Lieutenant Fangore", npc = 344, npcName = "Magistrate Solomon", map = 1433, x = 30.0, y = 44.4, f = "e" },
 				},
@@ -445,6 +457,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Darkshire|goto Duskwood,73.9,44.5,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 78, title = "The Legend of Stalvan (9)", npc = 273, npcName = "Tavernkeep Smitts", map = 1431, x = 74.1, y = 44.7, f = "e" },
 					{ t = "accept", quest = 79, title = "The Legend of Stalvan (10)", npc = 273, npcName = "Tavernkeep Smitts", map = 1431, x = 74.1, y = 44.7, f = "e" },
@@ -476,23 +494,6 @@ do
 			{
 				goals = {
 					{ t = "kill", quest = 173, target = "Nightbane Shadow Weaver", count = 6, oi = 1, map = 1431, x = 66.0, y = 47.0, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 173, title = "Worgen in the Woods (1)", npc = 663, npcName = "Calor", map = 1431, x = 75.7, y = 47.6, f = "e" },
-					{ t = "accept", quest = 221, title = "Worgen in the Woods (2)", npc = 663, npcName = "Calor", map = 1431, x = 75.7, y = 47.6, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", quest = 221, target = "Nightbane Dark Runner", count = 12, oi = 1, map = 1431, x = 66.0, y = 47.0, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 221, title = "Worgen in the Woods (2)", npc = 663, npcName = "Calor", map = 1431, x = 75.7, y = 47.6, f = "e" },
-					{ t = "accept", quest = 222, title = "Worgen in the Woods (3)", npc = 663, npcName = "Calor", map = 1431, x = 75.7, y = 47.6, f = "e" },
 				},
 			},
 		},

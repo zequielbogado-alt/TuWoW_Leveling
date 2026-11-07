@@ -8,13 +8,30 @@ do
 		title = "Outland (68-70) (Parte 3/3)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-northrend-70-72",
 		author = "TuWoW & Zygor",
 		minLevel = 68,
 		maxLevel = 70,
 		zone = 1953,
 		version = 1,
 		steps = {
+			{
+				note = "Go inside Manaforge Coruu to 49,81.5",
+				goals = {
+					{ t = "collect", quest = 10330, itemName = "Coruu Access Crystal", count = 1, oi = 1, map = 1953, x = 49.0, y = 81.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10330, title = "Shutting Down Manaforge Coruu", npc = 19840, npcName = "Caledis Brightdawn", f = "e" },
+					{ t = "accept", quest = 10200, title = "Return to Thalodien", npc = 19840, npcName = "Caledis Brightdawn", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 10334, title = "Needs More Cowbell", npc = 20464, npcName = "Thadell", map = 1953, x = 57.7, y = 85.2, f = "e" },
+					{ t = "accept", quest = 10331, title = "Indispensable Tools", npc = 20463, npcName = "Apprentice Andrethan", map = 1953, x = 57.7, y = 85.2, f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "accept", quest = 10184, title = "Malevolent Remnants", npc = 19488, npcName = "Custodian Dieworth", map = 1953, x = 57.5, y = 86.3, f = "e" },
@@ -201,6 +218,12 @@ do
 			{
 				goals = {
 					{ t = "turnin", quest = 10192, title = "Krasus's Compendium", npc = 19644, npcName = "Image of Archmage Vargoth", f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Area 52|goto Netherstorm,32.3,65.5,3|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{

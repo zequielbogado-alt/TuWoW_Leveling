@@ -17,6 +17,23 @@ do
 		steps = {
 			{
 				goals = {
+					{ t = "collect", quest = 4292, itemName = "Lar'korwi's Head", count = 1, oi = 1, map = 1446, x = 79.9, y = 49.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 4289, itemName = "Un'Goro Gorilla Pelt", count = 2, oi = 1, map = 1446, x = 65.7, y = 15.5, f = "e" },
+					{ t = "collect", quest = 4289, itemName = "Un'Goro Stomper Pelt", count = 2, oi = 2, map = 1446, x = 65.7, y = 15.5, f = "e" },
+					{ t = "collect", quest = 4289, itemName = "Un'Goro Thunderer Pelt", count = 2, oi = 3, map = 1446, x = 65.7, y = 15.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 4243, title = "Chasing A-Me 01 (1)", npc = 9618, npcName = "Karna Remtravel", map = 1446, x = 46.4, y = 13.4, f = "e" },
+				},
+			},
+			{
+				goals = {
 					{ t = "turnin", quest = 3845, title = "It's a Secret to Everybody (2)", npc = 8737, npcName = "Linken", map = 1446, x = 44.7, y = 8.1, f = "e" },
 					{ t = "accept", quest = 3908, title = "It's a Secret to Everybody (3)", npc = 8737, npcName = "Linken", map = 1446, x = 44.7, y = 8.1, f = "e" },
 				},
@@ -356,6 +373,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Astranaar|goto Ashenvale,35.5,50.2,5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "accept", quest = 4101, title = "Cleansing Felwood", npc = 9528, npcName = "Arathandris Silversky", map = 1448, x = 54.2, y = 86.8, f = "e" },
 				},
@@ -402,6 +425,7 @@ do
 			{
 				note = "Click the Package of Empty Ooze Containers in your bags|use Package of Empty Ooze Containers##11912",
 				goals = {
+					{ t = "use", item = 11912, itemName = "Package of Empty Ooze Containers", f = "e" },
 					{ t = "collect", quest = 4512, item = 11914, itemName = "Empty Cursed Ooze Jar", count = 6, f = "e" },
 					{ t = "collect", quest = 4512, item = 11948, itemName = "Empty Tainted Ooze Jar", count = 6, f = "e" },
 				},
@@ -479,6 +503,23 @@ do
 					{ t = "kill", quest = 4906, target = "Jadefire Trickster", count = 8, oi = 3, map = 1448, x = 42.0, y = 19.2, f = "e" },
 				},
 			},
+		},
+	})
+end
+
+do
+	Polestar.RegisterGuide({
+		id = "zygor/leveling/a-levels-50-55-part-3",
+		pack = "guides",
+		title = "Levels (50-55) (Parte 3/3)",
+		category = "Leveling",
+		faction = "Alliance",
+		author = "TuWoW & Zygor",
+		minLevel = 50,
+		maxLevel = 55,
+		zone = 1419,
+		version = 1,
+		steps = {
 			{
 				goals = {
 					{ t = "collect", itemName = "Flute of Xavaric", count = 1, map = 1448, x = 39.1, y = 22.3, f = "e" },
@@ -502,24 +543,6 @@ do
 					{ t = "fpath", text = "Talonbranch Glade", map = 1448, x = 62.5, y = 24.2, f = "e" },
 				},
 			},
-		},
-	})
-end
-
-do
-	Polestar.RegisterGuide({
-		id = "zygor/leveling/a-levels-50-55-part-3",
-		pack = "guides",
-		title = "Levels (50-55) (Parte 3/3)",
-		category = "Leveling",
-		faction = "Alliance",
-		next = "zygor/leveling/a-levels-55-60",
-		author = "TuWoW & Zygor",
-		minLevel = 50,
-		maxLevel = 55,
-		zone = 1419,
-		version = 1,
-		steps = {
 			{
 				goals = {
 					{ t = "turnin", quest = 8462, title = "Speak to Nafien", npc = 15395, npcName = "Nafien", map = 1448, x = 64.8, y = 8.1, f = "e" },
@@ -557,6 +580,12 @@ do
 			{
 				goals = {
 					{ t = "fpath", text = "Moonglade", map = 1450, x = 48.1, y = 67.4, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Astranaar|goto Ashenvale,35.5,50.2,5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{

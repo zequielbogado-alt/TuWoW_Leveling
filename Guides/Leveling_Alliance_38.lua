@@ -17,6 +17,12 @@ do
 		steps = {
 			{
 				goals = {
+					{ t = "collect", quest = 10262, itemName = "Zaxxis Insignia", count = 10, oi = 1, map = 1953, x = 30.2, y = 75.5, f = "e" },
+					{ t = "collect", quest = 10206, itemName = "Ethereal Technology", count = 10, oi = 1, map = 1953, x = 30.2, y = 75.5, f = "e" },
+				},
+			},
+			{
+				goals = {
 					{ t = "turnin", quest = 10206, title = "Pick Your Part", npc = 19645, npcName = "Papa Wheeler", map = 1953, x = 33.0, y = 64.7, f = "e" },
 					{ t = "accept", quest = 10232, title = "In A Scrap With The Legion", npc = 19645, npcName = "Papa Wheeler", map = 1953, x = 33.0, y = 64.7, f = "e" },
 					{ t = "accept", quest = 10333, title = "Help Mama Wheeler", npc = 19645, npcName = "Papa Wheeler", map = 1953, x = 33.0, y = 64.7, f = "e" },
@@ -312,6 +318,7 @@ do
 			{
 				note = "Use Archmage Vargoth's Staff|use Archmage Vargoth's Staff##28455",
 				goals = {
+					{ t = "use", item = 28455, itemName = "Archmage Vargoth's Staff", f = "e" },
 					{ t = "turnin", quest = 10301, title = "Unlocking the Compendium", npc = 19644, npcName = "Image of Archmage Vargoth", f = "e" },
 					{ t = "accept", quest = 10209, title = "Summoner Kanthin's Prize", npc = 19644, npcName = "Image of Archmage Vargoth", f = "e" },
 				},
@@ -336,6 +343,7 @@ do
 			{
 				note = "Use Archmage Vargoth's Staff|use Archmage Vargoth's Staff##28455",
 				goals = {
+					{ t = "use", item = 28455, itemName = "Archmage Vargoth's Staff", f = "e" },
 					{ t = "turnin", quest = 10209, title = "Summoner Kanthin's Prize", npc = 19644, npcName = "Image of Archmage Vargoth", f = "e" },
 					{ t = "accept", quest = 10176, title = "Ar'kelos the Guardian", npc = 19644, npcName = "Image of Archmage Vargoth", f = "e" },
 				},
@@ -511,11 +519,6 @@ do
 					{ t = "collect", quest = 10429, itemName = "Hulking Hydra Heart", count = 1, oi = 1, map = 1953, x = 44.6, y = 28.4, f = "e" },
 				},
 			},
-			{
-				goals = {
-					{ t = "turnin", quest = 10429, title = "When Nature Goes Too Far", npc = 20871, npcName = "Aurine Moonblaze", map = 1953, x = 42.3, y = 32.6, f = "e" },
-				},
-			},
 		},
 	})
 end
@@ -527,13 +530,17 @@ do
 		title = "Levels (68-70) (Parte 3/3)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-northrend-70-72",
 		author = "TuWoW & Zygor",
 		minLevel = 68,
 		maxLevel = 70,
 		zone = 1949,
 		version = 1,
 		steps = {
+			{
+				goals = {
+					{ t = "turnin", quest = 10429, title = "When Nature Goes Too Far", npc = 20871, npcName = "Aurine Moonblaze", map = 1953, x = 42.3, y = 32.6, f = "e" },
+				},
+			},
 			{
 				note = "Ride the elevating platform up and go to 43.5,35.1",
 				goals = {

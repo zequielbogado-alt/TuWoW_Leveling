@@ -401,6 +401,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Kharanos|goto Dun Morogh,47.3,52.5,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 412, title = "Operation Recombobulation", npc = 1269, npcName = "Razzle Sprysprocket", map = 1426, x = 45.8, y = 49.4, f = "e" },
 				},
@@ -460,6 +466,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Kharanos|goto Dun Morogh,47.4,52.5,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "level", level = 10, f = "e" },
 				},
@@ -493,19 +505,6 @@ do
 				only = { races = { "Dwarf" }, classes = { "HUNTER" } },
 				goals = {
 					{ t = "accept", quest = 6064, title = "Taming the Beast (1)", npc = 1231, npcName = "Grif Wildheart", map = 1426, x = 45.8, y = 53.0, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Dwarf" }, classes = { "HUNTER" } },
-				goals = {
-					{ t = "goto", map = 1426, x = 47.9, y = 56.6, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Dwarf" }, classes = { "HUNTER" } },
-				goals = {
-					{ t = "turnin", quest = 6064, title = "Taming the Beast (1)", npc = 1231, npcName = "Grif Wildheart", map = 1426, x = 45.8, y = 53.0, f = "e" },
-					{ t = "accept", quest = 6084, title = "Taming the Beast (2)", npc = 1231, npcName = "Grif Wildheart", map = 1426, x = 45.8, y = 53.0, f = "e" },
 				},
 			},
 		},

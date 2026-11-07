@@ -304,6 +304,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Thrallmar|goto Hellfire Peninsula,54.7,38.3,5|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 9406, title = "The Mag'har", npc = 3230, npcName = "Nazgrel", map = 1944, x = 55.0, y = 36.0, f = "e" },
 					{ t = "accept", quest = 9438, title = "Messenger to Thrall", npc = 3230, npcName = "Nazgrel", map = 1944, x = 55.0, y = 36.0, f = "e" },
@@ -470,11 +476,6 @@ do
 			{
 				goals = {
 					{ t = "turnin", quest = 9728, title = "A Warm Welcome", npc = 17858, npcName = "Warden Hamoot", map = 1946, x = 79.1, y = 65.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 9785, title = "Blessings of the Ancients", npc = 18070, npcName = "Windcaller Blackhoof", map = 1946, x = 80.4, y = 64.7, f = "e" },
 				},
 			},
 		},

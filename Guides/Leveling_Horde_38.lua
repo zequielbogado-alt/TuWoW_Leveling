@@ -17,6 +17,12 @@ do
 		steps = {
 			{
 				goals = {
+					{ t = "turnin", quest = 10721, title = "A Boaring Time for Grulloc", npc = 22103, npcName = "Baron Sablemane", x = 53.3, y = 41.2, f = "e" },
+					{ t = "accept", quest = 10785, title = "It's a Trap!", npc = 22103, npcName = "Baron Sablemane", x = 53.3, y = 41.2, f = "e" },
+				},
+			},
+			{
+				goals = {
 					{ t = "turnin", quest = 10785, title = "It's a Trap!", npc = 21984, npcName = "Rexxar", x = 51.9, y = 58.4, f = "e" },
 					{ t = "accept", quest = 10723, title = "Gorgrom the Dragon-Eater", npc = 21984, npcName = "Rexxar", x = 51.9, y = 58.4, f = "e" },
 					{ t = "accept", quest = 10786, title = "Slaughter at Boulder'mok", npc = 21147, npcName = "Tor'chunk Twoclaws", x = 51.9, y = 58.4, f = "e" },
@@ -405,6 +411,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Area 52|goto Netherstorm,32.3,65.5,3|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 10329, title = "Shutting Down Manaforge B'naar", npc = 19468, npcName = "Spymaster Thalodien", map = 1953, x = 32.0, y = 64.0, f = "e" },
 					{ t = "accept", quest = 10194, title = "Stealth Flight", npc = 19468, npcName = "Spymaster Thalodien", map = 1953, x = 32.0, y = 64.0, f = "e" },
@@ -459,6 +471,12 @@ do
 				},
 			},
 			{
+				note = "Use the Sunfury Disguise in your bags|havebuff Sunfury Disguise|use Sunfury Disguise##28607",
+				goals = {
+					{ t = "use", item = 28607, itemName = "Sunfury Disguise", f = "e" },
+				},
+			},
+			{
 				note = "Go inside Manaforge Coruu to 48.2,84.1",
 				goals = {
 					{ t = "goto", map = 1953, x = 48.2, y = 84.1, f = "e" },
@@ -468,24 +486,6 @@ do
 				goals = {
 					{ t = "turnin", quest = 10198, title = "Information Gathering", npc = 19840, npcName = "Caledis Brightdawn", f = "e" },
 					{ t = "accept", quest = 10330, title = "Shutting Down Manaforge Coruu", npc = 19840, npcName = "Caledis Brightdawn", f = "e" },
-				},
-			},
-			{
-				note = "Go inside Manaforge Coruu to 49,81.5",
-				goals = {
-					{ t = "collect", quest = 10330, itemName = "Coruu Access Crystal", count = 1, oi = 1, map = 1953, x = 49.0, y = 81.5, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 10330, title = "Shutting Down Manaforge Coruu", npc = 19840, npcName = "Caledis Brightdawn", f = "e" },
-					{ t = "accept", quest = 10200, title = "Return to Thalodien", npc = 19840, npcName = "Caledis Brightdawn", f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 10334, title = "Needs More Cowbell", npc = 20464, npcName = "Thadell", map = 1953, x = 57.7, y = 85.2, f = "e" },
-					{ t = "accept", quest = 10331, title = "Indispensable Tools", npc = 20463, npcName = "Apprentice Andrethan", map = 1953, x = 57.7, y = 85.2, f = "e" },
 				},
 			},
 		},

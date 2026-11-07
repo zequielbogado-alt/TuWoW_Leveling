@@ -174,6 +174,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Cenarion Hold|goto Silithus,50.4,36.5,3|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 8277, title = "Deadly Desert Venom", npc = 15189, npcName = "Beetix Ficklespragg", map = 1451, x = 51.6, y = 38.6, f = "e" },
 					{ t = "accept", quest = 8278, title = "Noggle's Last Hope", npc = 15189, npcName = "Beetix Ficklespragg", map = 1451, x = 51.6, y = 38.6, f = "e" },
@@ -224,6 +230,12 @@ do
 			{
 				goals = {
 					{ t = "talk", npc = 15171, npcName = "Frankal Stonebridge", map = 1451, x = 40.8, y = 88.9, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Cenarion Hold|goto Silithus,50.4,36.5,3|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{
@@ -492,17 +504,6 @@ do
 					{ t = "accept", quest = 4984, title = "The Wildlife Suffers Too (1)", npc = 10739, npcName = "Mulgris Deepriver", map = 1422, x = 53.7, y = 64.7, f = "e" },
 				},
 			},
-			{
-				goals = {
-					{ t = "kill", quest = 4984, target = "Diseased Wolf", count = 8, oi = 1, map = 1422, x = 42.8, y = 55.4, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 4984, title = "The Wildlife Suffers Too (1)", npc = 10739, npcName = "Mulgris Deepriver", map = 1422, x = 53.7, y = 64.7, f = "e" },
-					{ t = "accept", quest = 4985, title = "The Wildlife Suffers Too (2)", npc = 10739, npcName = "Mulgris Deepriver", map = 1422, x = 53.7, y = 64.7, f = "e" },
-				},
-			},
 		},
 	})
 end
@@ -514,13 +515,23 @@ do
 		title = "Death Knight (55-60) (Parte 3/3)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-outland-60-62",
 		author = "TuWoW & Zygor",
 		minLevel = 55,
 		maxLevel = 60,
 		zone = 1428,
 		version = 1,
 		steps = {
+			{
+				goals = {
+					{ t = "kill", quest = 4984, target = "Diseased Wolf", count = 8, oi = 1, map = 1422, x = 42.8, y = 55.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 4984, title = "The Wildlife Suffers Too (1)", npc = 10739, npcName = "Mulgris Deepriver", map = 1422, x = 53.7, y = 64.7, f = "e" },
+					{ t = "accept", quest = 4985, title = "The Wildlife Suffers Too (2)", npc = 10739, npcName = "Mulgris Deepriver", map = 1422, x = 53.7, y = 64.7, f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "kill", quest = 4985, target = "Diseased Grizzly", count = 8, oi = 1, map = 1422, x = 57.9, y = 61.2, f = "e" },

@@ -326,7 +326,7 @@ do
 			{
 				note = "Open the Ornate Jewelry Box in your bags|use Ornate Jeweled Box##39418",
 				goals = {
-					{ t = "goto", x = 55.9, y = 60.5, f = "e" },
+					{ t = "use", item = 39418, itemName = "Ornate Jeweled Box", x = 55.9, y = 60.5, f = "e" },
 				},
 			},
 			{
@@ -492,6 +492,7 @@ do
 			{
 				note = "Click the Horn of the Frostbrood in your bags|use Horn of the Frostbrood##39700",
 				goals = {
+					{ t = "use", item = 39700, itemName = "Horn of the Frostbrood", f = "e" },
 					{ t = "kill", quest = 12779, target = "Scarlet Soldiers", count = 150, oi = 1, f = "e" },
 				},
 			},

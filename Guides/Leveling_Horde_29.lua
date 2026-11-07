@@ -8,13 +8,28 @@ do
 		title = "Levels (55-60) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-outland-60-62",
 		author = "TuWoW & Zygor",
 		minLevel = 55,
 		maxLevel = 60,
 		zone = 1449,
 		version = 1,
 		steps = {
+			{
+				goals = {
+					{ t = "collect", quest = 977, itemName = "Pristine Yeti Horn", count = 2, oi = 1, map = 1452, x = 66.0, y = 43.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1452, x = 60.1, y = 73.5, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Everlook,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 1452, x = 61.3, y = 38.8, f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "turnin", quest = 977, title = "Are We There. Yeti? (2)", npc = 10305, npcName = "Umi Rumplesnicker", map = 1452, x = 60.9, y = 37.6, f = "e" },
@@ -160,6 +175,12 @@ do
 			{
 				goals = {
 					{ t = "collect", quest = 8284, itemName = "Twilight Tablet Fragment", count = 8, oi = 1, map = 1451, x = 25.0, y = 10.0, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Cenarion Hold|goto Silithus,51.9,39.2,0.3|noway|use hearthstone##6948|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{

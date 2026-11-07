@@ -17,6 +17,18 @@ do
 		steps = {
 			{
 				goals = {
+					{ t = "kill", target = "goblins", count = 1, map = 1434, x = 41.4, y = 42.3, f = "e" },
+					{ t = "collect", quest = 600, itemName = "Singing Blue Crystal", count = 10, oi = 1, map = 1434, x = 41.4, y = 42.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", target = "Skullsplitter trolls", count = 1, map = 1434, x = 42.5, y = 36.7, f = "e" },
+					{ t = "collect", quest = 209, itemName = "Skullsplitter Tusk", count = 18, oi = 1, map = 1434, x = 42.5, y = 36.7, f = "e" },
+				},
+			},
+			{
+				goals = {
 					{ t = "collect", quest = 193, itemName = "Fang of Bhag'thera", count = 1, oi = 1, map = 1434, x = 50.0, y = 24.0, f = "e" },
 				},
 			},
@@ -30,6 +42,12 @@ do
 				goals = {
 					{ t = "kill", target = "Lesser Water Elementals", count = 1, map = 1434, x = 21.7, y = 25.0, f = "e" },
 					{ t = "collect", quest = 601, itemName = "Water Elemental Bracers", count = 6, oi = 1, map = 1434, x = 21.7, y = 25.0, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Booty Bay|goto Stranglethorn Vale,27.7,74.6,6|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{
@@ -281,6 +299,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Thelsamar|goto Loch Modan,35.1,46.9,3|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "accept", quest = 1395, title = "Supplies for Nethergarde", npc = 5464, npcName = "Watchmaster Sorigal", map = 1431, x = 75.8, y = 46.2, f = "e" },
 				},
@@ -398,6 +422,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Booty Bay|goto Stranglethorn Vale,27.7,74.6,6|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 621, title = "Zanzil's Secret", npc = 2498, npcName = "Crank Fizzlebub", map = 1434, x = 27.1, y = 77.2, f = "e" },
 				},
@@ -472,6 +502,23 @@ do
 					{ t = "accept", quest = 1194, title = "Rizzle's Schematics", map = 1441, x = 77.2, y = 77.4, f = "e" },
 				},
 			},
+		},
+	})
+end
+
+do
+	Polestar.RegisterGuide({
+		id = "zygor/leveling/a-levels-40-45-part-3",
+		pack = "guides",
+		title = "Levels (40-45) (Parte 3/3)",
+		category = "Leveling",
+		faction = "Alliance",
+		author = "TuWoW & Zygor",
+		minLevel = 40,
+		maxLevel = 45,
+		zone = 1445,
+		version = 1,
+		steps = {
 			{
 				goals = {
 					{ t = "turnin", quest = 1194, title = "Rizzle's Schematics", npc = 4630, npcName = "Pozzik", map = 1441, x = 80.2, y = 75.9, f = "e" },
@@ -502,24 +549,6 @@ do
 					{ t = "accept", quest = 3520, title = "Screecher Spirits", npc = 8579, npcName = "Yeh'kinya", map = 1441, x = 67.0, y = 22.4, f = "e" },
 				},
 			},
-		},
-	})
-end
-
-do
-	Polestar.RegisterGuide({
-		id = "zygor/leveling/a-levels-40-45-part-3",
-		pack = "guides",
-		title = "Levels (40-45) (Parte 3/3)",
-		category = "Leveling",
-		faction = "Alliance",
-		next = "zygor/leveling/a-levels-45-50",
-		author = "TuWoW & Zygor",
-		minLevel = 40,
-		maxLevel = 45,
-		zone = 1445,
-		version = 1,
-		steps = {
 			{
 				goals = {
 					{ t = "collect", quest = 2781, itemName = "Caliph Scorpidsting's Head", count = 1, oi = 1, map = 1441, x = 64.7, y = 35.3, f = "e" },

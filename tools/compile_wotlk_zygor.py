@@ -2,22 +2,26 @@
 # -*- coding: utf-8 -*-
 """
 TuWoW_Leveling — tools/compile_wotlk_zygor.py
-Compilador de guías oficiales de Zygor Guides WotLK 3.3.5a (UltimoWoW) para TuWoW_Leveling.
-Extrae todas las guías de Leveling 1-80 (Horda y Alianza) con sus coordenadas nativas 3.3.5a,
-las divide en partes de hasta 85 pasos y las exporta en archivos modulares (< 750 líneas).
+Compilador oficial de guías de Zygor Guides WotLK 3.3.5a (UltimoWoW) para TuWoW_Leveling.
+Extrae todas las guías de:
+  - Leveling 1-80 (Horda y Alianza)
+  - Misiones Diarias / Dailies (Horda y Alianza)
+con coordenadas nativas 3.3.5a, las divide en partes de hasta 85 pasos y las exporta
+en archivos modulares (< 750 líneas) en Guides/.
 """
 
 import os
 import re
-import shutil
 from typing import Any, Dict, List, Optional, Set, Tuple
 
 WORKSPACE_DIR = r"c:\TuWoW\TuWoW-Client\Interface\AddOns\TuWoW_Leveling"
 GUIDES_DIR = os.path.join(WORKSPACE_DIR, "Guides")
 ZYGOR_WOTLK_DIR = r"C:\Users\bogad\Downloads\ZygorGuides-UltimoWoW\ZygorGuidesViewer\Guides"
 
-HORDE_FILE = os.path.join(ZYGOR_WOTLK_DIR, "ZygorGuidesHorde.lua")
-ALLIANCE_FILE = os.path.join(ZYGOR_WOTLK_DIR, "ZygorGuidesAlliance.lua")
+HORDE_LEVELING_FILE = os.path.join(ZYGOR_WOTLK_DIR, "ZygorGuidesHorde.lua")
+ALLIANCE_LEVELING_FILE = os.path.join(ZYGOR_WOTLK_DIR, "ZygorGuidesAlliance.lua")
+HORDE_DAILIES_FILE = os.path.join(ZYGOR_WOTLK_DIR, "ZygorDailiesHorde.lua")
+ALLIANCE_DAILIES_FILE = os.path.join(ZYGOR_WOTLK_DIR, "ZygorDailiesAlliance.lua")
 
 # Mapeo de nombres de zona en Zygor -> uiMapID (Classic 3.3.5a / TuWoW)
 ZONE_TO_UIMAP: Dict[str, int] = {
@@ -41,6 +45,22 @@ ZONE_TO_UIMAP: Dict[str, int] = {
     "The Exodar": 1947, "Exodar": 1947, "Silvermoon City": 1948, "Silvermoon": 1948,
     "Hellfire Peninsula": 1944, "Zangarmarsh": 1946, "Terokkar Forest": 1952, "Nagrand": 1951,
     "Blade's Edge Mountains": 1949, "Netherstorm": 1953, "Shadowmoon Valley": 1948, "Shattrath City": 1955,
+    "Isle of Quel'Danas": 1957,
+    # Northrend (WotLK 3.3.5a)
+    "Northrend": 113,
+    "Borean Tundra": 114,
+    "Dragonblight": 115,
+    "Grizzly Hills": 116,
+    "Howling Fjord": 117,
+    "Icecrown": 118,
+    "Sholazar Basin": 119,
+    "The Storm Peaks": 120, "Storm Peaks": 120,
+    "Zul'Drak": 121, "ZulDrak": 121,
+    "Wintergrasp": 123,
+    "Dalaran": 125,
+    "Crystalsong Forest": 127, "Crystalsong": 127,
+    "Hrothgar's Landing": 118,
+    "Plaguelands: The Scarlet Enclave": 124, "Scarlet Enclave": 124,
 }
 
 RACES: Dict[str, str] = {
@@ -71,10 +91,11 @@ def slugify(s: str) -> str:
     s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
     return s[:60]
 
-def parse_zygor_guide(full_title: str, body: str, faction: str) -> Optional[Dict[str, Any]]:
+def parse_zygor_guide(full_title: str, body: str, faction: str, default_cat: str = "Leveling") -> Optional[Dict[str, Any]]:
     parts = [p.strip() for p in full_title.split("\\") if p.strip()]
     short_title = parts[-1]
-    
+    folder = parts[1] if len(parts) > 2 else None
+
     # Rango de niveles
     min_lvl, max_lvl = None, None
     lm = re.search(r'\((\d+)\s*-\s*(\d+)\)', short_title)
@@ -89,10 +110,12 @@ def parse_zygor_guide(full_title: str, body: str, faction: str) -> Optional[Dict
     guide: Dict[str, Any] = {
         "title": short_title,
         "full_title": full_title,
-        "category": "Leveling",
+        "category": default_cat,
         "faction": faction,
         "steps": [],
     }
+    if folder:
+        guide["folder"] = folder
     if min_lvl is not None: guide["minLevel"] = min_lvl
     if max_lvl is not None: guide["maxLevel"] = max_lvl
 
@@ -133,6 +156,13 @@ def parse_zygor_guide(full_title: str, body: str, faction: str) -> Optional[Dict
                 if gm:
                     note_text = re.sub(r'\|goto\s+[0-9\.]+,[0-9\.]+', '', note_text).strip()
                     last_coords = (current_map, float(gm.group(1)), float(gm.group(2)))
+                # Extract |use or |click inside note
+                um = re.search(r'\|use\s+([^#\|]+)(?:##(\d+))?', note_text)
+                if um:
+                    g = {"t": "use", "itemName": um.group(1).strip()}
+                    if um.group(2): g["item"] = int(um.group(2))
+                    if last_coords: g["map"], g["x"], g["y"] = last_coords
+                    st_obj["goals"].append(g)
                 if note_text:
                     notes.append(note_text)
                 continue
@@ -226,6 +256,26 @@ def parse_zygor_guide(full_title: str, body: str, faction: str) -> Optional[Dict
                 if item_id: g["item"] = item_id
                 if last_npc: g["npcName"] = last_npc
                 if last_npc_id: g["npc"] = last_npc_id
+                if last_coords: g["map"], g["x"], g["y"] = last_coords
+                st_obj["goals"].append(g)
+                continue
+
+            usem = re.search(r'^\.?\.?use\s+([^#\|]+)(?:##(\d+))?', line)
+            if usem:
+                item_name = usem.group(1).strip()
+                item_id = int(usem.group(2)) if usem.group(2) else None
+                g = {"t": "use", "itemName": item_name}
+                if item_id: g["item"] = item_id
+                if last_coords: g["map"], g["x"], g["y"] = last_coords
+                st_obj["goals"].append(g)
+                continue
+
+            clickm = re.search(r'^\.?\.?click\s+([^#\|]+)(?:##(\d+))?', line)
+            if clickm:
+                obj_name = clickm.group(1).strip()
+                obj_id = int(clickm.group(2)) if clickm.group(2) else None
+                g = {"t": "click", "objName": obj_name}
+                if obj_id: g["object"] = obj_id
                 if last_coords: g["map"], g["x"], g["y"] = last_coords
                 st_obj["goals"].append(g)
                 continue
@@ -413,84 +463,81 @@ def write_guide_chunks(bucket_prefix: str, guides: List[Dict[str, Any]], max_lin
     flush()
     return generated
 
-def main():
-    print("=== Compilador de Guías Zygor WotLK 3.3.5a para TuWoW ===")
-    
-    # 1. Parsear Horde
-    with open(HORDE_FILE, 'r', encoding='latin-1') as f:
-        h_text = f.read()
+def parse_file_guides(filepath: str, faction: str, category: str, id_prefix: str) -> List[Dict[str, Any]]:
+    if not os.path.exists(filepath):
+        return []
+    with open(filepath, 'r', encoding='latin-1') as f:
+        content = f.read()
 
     re_guide = re.compile(r'RegisterGuide\(\s*"([^"]+)"\s*,\s*\[\[(.*?)\]\]\s*\)', re.DOTALL)
-    
-    raw_horde: List[Dict[str, Any]] = []
-    title_to_id: Dict[str, str] = {}
-    
-    for m in re_guide.finditer(h_text):
+    guides: List[Dict[str, Any]] = []
+    seen_ids: Set[str] = set()
+
+    for m in re_guide.finditer(content):
         full_title = m.group(1).replace('\\\\', '\\')
         body = m.group(2)
-        g = parse_zygor_guide(full_title, body, "Horde")
+        g = parse_zygor_guide(full_title, body, faction, default_cat=category)
         if g:
             short = g["title"]
-            base_id = f"zygor/leveling/h-{slugify(short)}"
-            g["id"] = base_id
+            folder = g.get("folder", "")
+            slug_base = f"{slugify(folder)}-{slugify(short)}" if folder else slugify(short)
+            base_id = f"zygor/{category.lower()}/{id_prefix}-{slug_base}"
+            gid = base_id
+            idx = 2
+            while gid in seen_ids:
+                gid = f"{base_id}-{idx}"
+                idx += 1
+            seen_ids.add(gid)
+            g["id"] = gid
             g["version"] = 1
             g["author"] = "TuWoW & Zygor"
-            title_to_id[full_title] = base_id
-            raw_horde.append(g)
+            guides.append(g)
 
-    # 2. Parsear Alliance
-    with open(ALLIANCE_FILE, 'r', encoding='latin-1') as f:
-        a_text = f.read()
+    return guides
 
-    raw_alliance: List[Dict[str, Any]] = []
-    for m in re_guide.finditer(a_text):
-        full_title = m.group(1).replace('\\\\', '\\')
-        body = m.group(2)
-        g = parse_zygor_guide(full_title, body, "Alliance")
-        if g:
-            short = g["title"]
-            base_id = f"zygor/leveling/a-{slugify(short)}"
-            g["id"] = base_id
-            g["version"] = 1
-            g["author"] = "TuWoW & Zygor"
-            title_to_id[full_title] = base_id
-            raw_alliance.append(g)
+def main():
+    print("=== Compilador de Guías Zygor WotLK 3.3.5a (Leveling + Dailies) para TuWoW ===")
+    
+    # 1. Leveling Horde & Alliance
+    raw_horde_lev = parse_file_guides(HORDE_LEVELING_FILE, "Horde", "Leveling", "h")
+    raw_alliance_lev = parse_file_guides(ALLIANCE_LEVELING_FILE, "Alliance", "Leveling", "a")
 
-    # Conectar 'next' IDs
-    for glist in (raw_horde, raw_alliance):
-        for g in glist:
-            rn = g.get("raw_next")
-            if rn and rn in title_to_id:
-                g["next"] = title_to_id[rn]
+    # 2. Dailies Horde & Alliance
+    raw_horde_dai = parse_file_guides(HORDE_DAILIES_FILE, "Horde", "Dailies", "h-dai")
+    raw_alliance_dai = parse_file_guides(ALLIANCE_DAILIES_FILE, "Alliance", "Dailies", "a-dai")
 
     # Dividir guías largas en partes <= 85 pasos
-    final_horde: List[Dict[str, Any]] = []
-    for g in raw_horde:
-        final_horde.extend(split_large_guide(g, max_steps_per_part=85))
+    final_horde_lev = []
+    for g in raw_horde_lev: final_horde_lev.extend(split_large_guide(g, max_steps_per_part=85))
 
-    final_alliance: List[Dict[str, Any]] = []
-    for g in raw_alliance:
-        final_alliance.extend(split_large_guide(g, max_steps_per_part=85))
+    final_alliance_lev = []
+    for g in raw_alliance_lev: final_alliance_lev.extend(split_large_guide(g, max_steps_per_part=85))
 
-    print(f"Horde Guides compiladas: {len(final_horde)} partes (desde {len(raw_horde)} guías Zygor)")
-    print(f"Alliance Guides compiladas: {len(final_alliance)} partes (desde {len(raw_alliance)} guías Zygor)")
+    final_horde_dai = []
+    for g in raw_horde_dai: final_horde_dai.extend(split_large_guide(g, max_steps_per_part=85))
+
+    final_alliance_dai = []
+    for g in raw_alliance_dai: final_alliance_dai.extend(split_large_guide(g, max_steps_per_part=85))
+
+    print(f"Horde Leveling: {len(final_horde_lev)} partes (desde {len(raw_horde_lev)} guías)")
+    print(f"Alliance Leveling: {len(final_alliance_lev)} partes (desde {len(raw_alliance_lev)} guías)")
+    print(f"Horde Dailies: {len(final_horde_dai)} partes (desde {len(raw_horde_dai)} guías)")
+    print(f"Alliance Dailies: {len(final_alliance_dai)} partes (desde {len(raw_alliance_dai)} guías)")
 
     # Escribir archivos modulares (< 740 líneas)
-    h_files = write_guide_chunks("Leveling_Horde", final_horde, max_lines=740)
-    a_files = write_guide_chunks("Leveling_Alliance", final_alliance, max_lines=740)
+    hl_files = write_guide_chunks("Leveling_Horde", final_horde_lev, max_lines=740)
+    al_files = write_guide_chunks("Leveling_Alliance", final_alliance_lev, max_lines=740)
+    hd_files = write_guide_chunks("Dailies_Horde", final_horde_dai, max_lines=740)
+    ad_files = write_guide_chunks("Dailies_Alliance", final_alliance_dai, max_lines=740)
 
-    print(f"Generados {len(h_files)} archivos Leveling_Horde_XX.lua")
-    print(f"Generados {len(a_files)} archivos Leveling_Alliance_XX.lua")
-
-    # Actualizar Guides.xml
-    xml_path = os.path.join(GUIDES_DIR, "Guides.xml")
-    with open(xml_path, "r", encoding="utf-8") as f:
-        xml_content = f.read()
+    print(f"Generados {len(hl_files)} archivos Leveling_Horde_XX.lua")
+    print(f"Generados {len(al_files)} archivos Leveling_Alliance_XX.lua")
+    print(f"Generados {len(hd_files)} archivos Dailies_Horde_XX.lua")
+    print(f"Generados {len(ad_files)} archivos Dailies_Alliance_XX.lua")
 
     # Reconstruir lista de scripts en Guides.xml
     all_lua = sorted([f for f in os.listdir(GUIDES_DIR) if f.endswith(".lua") and f != "Pack.lua"])
     
-    # Subdirectorios QuestDB y Names
     qdb_files = []
     qdb_dir = os.path.join(GUIDES_DIR, "QuestDB")
     if os.path.exists(qdb_dir):
@@ -501,6 +548,7 @@ def main():
     if os.path.exists(name_dir):
         name_files = [f"Names/{f}" for f in sorted(os.listdir(name_dir)) if f.endswith(".lua")]
 
+    xml_path = os.path.join(GUIDES_DIR, "Guides.xml")
     xml_lines = [
         '<Ui xmlns="http://www.blizzard.com/wow/ui/">',
         '\t<Script file="Pack.lua"/>',

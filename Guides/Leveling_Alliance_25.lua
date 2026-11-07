@@ -5,7 +5,7 @@ do
 	Polestar.RegisterGuide({
 		id = "zygor/leveling/a-levels-45-50",
 		pack = "guides",
-		title = "Levels (45-50) (Parte 1/2)",
+		title = "Levels (45-50) (Parte 1/3)",
 		category = "Leveling",
 		faction = "Alliance",
 		next = "zygor/leveling/a-levels-45-50-part-2",
@@ -15,6 +15,12 @@ do
 		zone = 1444,
 		version = 1,
 		steps = {
+			{
+				note = "Hearth to Gadgetzan|goto Tanaris,51.7,27.8,6|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "turnin", quest = 1690, title = "Wastewander Justice", npc = 7407, npcName = "Chief Engineer Bilgewhizzle", x = 52.5, y = 28.5, f = "e" },
@@ -41,6 +47,12 @@ do
 			{
 				goals = {
 					{ t = "turnin", quest = 8365, title = "Pirate Hats Ahoy!", npc = 15165, npcName = "Haughty Modiste", x = 66.6, y = 22.3, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Gadgetzan|goto Tanaris,51.7,27.8,6|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{
@@ -245,6 +257,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Feathermoon Stronghold|goto Feralas,31.0,44.0,5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 2821, title = "The Mark of Quality", npc = 7852, npcName = "Pratt McGrubben", map = 1444, x = 30.6, y = 42.7, f = "e" },
 					{ t = "accept", quest = 7733, title = "Improved Quality", npc = 7852, npcName = "Pratt McGrubben", map = 1444, x = 30.6, y = 42.7, f = "e" },
@@ -424,6 +442,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Aerie Peak|goto The Hinterlands,13.9,42.1,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 2877, title = "Skulk Rock Clean-up", npc = 7884, npcName = "Fraggar Thundermantle", map = 1425, x = 14.8, y = 44.6, f = "e" },
 					{ t = "turnin", quest = 2880, title = "Troll Necklace Bounty", npc = 7884, npcName = "Fraggar Thundermantle", map = 1425, x = 14.8, y = 44.6, f = "e" },
@@ -471,29 +495,6 @@ do
 			{
 				goals = {
 					{ t = "goto", map = 1453, x = 22.6, y = 56.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 3661, title = "Favored of Elune?", npc = 7916, npcName = "Erelas Ambersky", map = 1438, x = 55.5, y = 92.0, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 2944, title = "The Super Snapper FX", npc = 7907, npcName = "Daryn Lightwind", map = 1438, x = 55.4, y = 92.2, f = "e" },
-					{ t = "accept", quest = 2943, title = "Return to Troyas", npc = 7907, npcName = "Daryn Lightwind", map = 1438, x = 55.4, y = 92.2, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "home", text = "Feathermoon Stronghold", f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 2943, title = "Return to Troyas", npc = 7764, npcName = "Troyas Moonbreeze", map = 1438, x = 31.8, y = 45.6, f = "e" },
-					{ t = "accept", quest = 2879, title = "The Stave of Equinex", npc = 7764, npcName = "Troyas Moonbreeze", map = 1438, x = 31.8, y = 45.6, f = "e" },
-					{ t = "accept", quest = 3445, title = "The Sunken Temple", npc = 7900, npcName = "Angelas Moonbreeze", map = 1438, x = 31.8, y = 45.6, f = "e" },
 				},
 			},
 		},

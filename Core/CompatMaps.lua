@@ -112,6 +112,19 @@ ns.MapFrames.era = ns.MapFrames.era or {
 	[1954] = makeBounds(530, 1211.4584, 806.7705, -6300.0, 10153.1247),
 	[1955] = makeBounds(530, 1306.25, 870.8333, 5999.9998, -1495.8333),
 	[1957] = makeBounds(530, 1097.9166, 733.333, -6120.8332, 12966.6663),
+	-- Northrend (WotLK)
+	[113] = makeBounds(571, 17764.05, 11842.70, 9198.58, 10619.23), -- Northrend continent
+	[114] = makeBounds(571, 5764.58, 3843.75, 8570.83, 4897.92), -- Borean Tundra
+	[115] = makeBounds(571, 5608.33, 3739.58, 3627.08, 5575.00), -- Dragonblight
+	[116] = makeBounds(571, 5250.00, 3500.00, -1110.42, 5516.67), -- Grizzly Hills
+	[117] = makeBounds(571, 6045.83, 4031.25, -1397.92, 3116.67), -- Howling Fjord
+	[118] = makeBounds(571, 6270.83, 4181.25, 5443.75, 9427.08), -- Icecrown
+	[119] = makeBounds(571, 4356.25, 2904.17, 6929.17, 7287.50), -- Sholazar Basin
+	[120] = makeBounds(571, 7112.50, 4741.65, 1841.67, 10197.90), -- The Storm Peaks
+	[121] = makeBounds(571, 4993.75, 3329.17, -600.00, 7668.75), -- Zul'Drak
+	[123] = makeBounds(571, 2975.00, 1983.34, 4329.17, 5716.67), -- Wintergrasp
+	[125] = makeBounds(571, 830.02, 553.34, 1052.51, 6066.67), -- Dalaran
+	[127] = makeBounds(571, 2722.92, 1814.58, 1443.75, 6502.08), -- Crystalsong Forest
 }
 
 ns.MapFrames.live = ns.MapFrames.live or {
@@ -134,6 +147,10 @@ local uiMapToArea335 = {
 	[1945] = 467, [1946] = 468, [1947] = 472, [1948] = 474, [1949] = 476,
 	[1950] = 477, [1951] = 478, [1952] = 479, [1953] = 480, [1954] = 481,
 	[1955] = 482, [1957] = 500,
+	-- Northrend (WotLK)
+	[114] = 487, [115] = 489, [116] = 491, [117] = 492, [118] = 493,
+	[119] = 494, [120] = 496, [121] = 497, [123] = 502, [125] = 505,
+	[127] = 511,
 }
 
 local area335ToUiMap = {}
@@ -166,6 +183,11 @@ local mapNamesEN = {
 	[1950] = "Bloodmyst Isle", [1951] = "Nagrand", [1952] = "Terokkar Forest",
 	[1953] = "Netherstorm", [1954] = "Silvermoon City", [1955] = "Shattrath City",
 	[1957] = "Isle of Quel'Danas",
+	-- Northrend (WotLK)
+	[114] = "Borean Tundra", [115] = "Dragonblight", [116] = "Grizzly Hills",
+	[117] = "Howling Fjord", [118] = "Icecrown", [119] = "Sholazar Basin",
+	[120] = "The Storm Peaks", [121] = "Zul'Drak", [123] = "Wintergrasp",
+	[125] = "Dalaran", [127] = "Crystalsong Forest",
 }
 
 local mapNamesES = {
@@ -193,11 +215,21 @@ local mapNamesES = {
 	[1950] = "Isla Bruma de Sangre", [1951] = "Nagrand", [1952] = "Bosque de Terokkar",
 	[1953] = "Tormenta Abisal", [1954] = "Ciudad de Lunargenta", [1955] = "Ciudad de Shattrath",
 	[1957] = "Isla de Quel'Danas",
+	-- Northrend (WotLK)
+	[114] = "Tundra Boreal", [115] = "Cementerio de Dragones", [116] = "Colinas Pardas",
+	[117] = "Fiordo Aquilonal", [118] = "Corona de Hielo", [119] = "Cuenca de Sholazar",
+	[120] = "Las Cumbres Tormentosas", [121] = "Zul'Drak", [123] = "Conquista del Invierno",
+	[125] = "Dalaran", [127] = "Bosque Canto de Cristal",
 }
 
 local zoneNameToUiMap = {}
 for id, name in pairs(mapNamesEN) do zoneNameToUiMap[name] = id end
 for id, name in pairs(mapNamesES) do zoneNameToUiMap[name] = id end
+zoneNameToUiMap["Storm Peaks"] = 120
+zoneNameToUiMap["Cumbres Tormentosas"] = 120
+zoneNameToUiMap["ZulDrak"] = 121
+zoneNameToUiMap["Hrothgar's Landing"] = 118
+zoneNameToUiMap["Desembarco de Hrothgar"] = 118
 
 local subZoneToParentUiMap = {
 	-- Mulgore (1412)

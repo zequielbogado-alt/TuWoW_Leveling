@@ -8,7 +8,6 @@ do
 		title = "Levels (40-45) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-levels-45-50",
 		author = "TuWoW & Zygor",
 		minLevel = 40,
 		maxLevel = 45,
@@ -16,9 +15,19 @@ do
 		version = 1,
 		steps = {
 			{
+				goals = {
+					{ t = "collect", quest = 621, itemName = "Zanzil's Mixture", count = 12, oi = 1, map = 1434, x = 39.0, y = 59.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 43, f = "e" },
+				},
+			},
+			{
 				note = "Hearth to Booty Bay,0.1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "goto", map = 1434, x = 27.1, y = 77.3, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 1434, x = 27.1, y = 77.3, f = "e" },
 				},
 			},
 			{
@@ -358,6 +367,12 @@ do
 				goals = {
 					{ t = "turnin", quest = 1187, title = "Razzeric's Tweaking", npc = 4706, npcName = "Razzeric", map = 1441, x = 80.3, y = 76.1, f = "e" },
 					{ t = "accept", quest = 1188, title = "Safety First (1)", npc = 4706, npcName = "Razzeric", map = 1441, x = 80.3, y = 76.1, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Gadgetzan|goto Tanaris,52.4,27.9,0.3|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{

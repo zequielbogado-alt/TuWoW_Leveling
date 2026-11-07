@@ -132,6 +132,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to the Crossroads|goto The Barrens,52.0,29.9,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				only = { races = { "Tauren" }, classes = { "DRUID" } },
 				goals = {
 					{ t = "accept", quest = 6126, title = "Lessons Anew", npc = 3033, npcName = "Turak Runetotem", map = 1456, x = 76.0, y = 27.0, f = "e" },
@@ -264,6 +270,12 @@ do
 			{
 				goals = {
 					{ t = "collect", quest = 867, itemName = "Witchwing Talon", count = 8, oi = 1, map = 1413, x = 40.7, y = 19.7, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to the Crossroads|goto The Barrens,52.0,29.9,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{
@@ -438,6 +450,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to the Crossroads|goto The Barrens,52.0,29.9,0.5|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				only = { races = { "Tauren" }, classes = { "DRUID" } },
 				goals = {
 					{ t = "accept", quest = 26, title = "A Lesson to Learn", npc = 3033, npcName = "Turak Runetotem", map = 1456, x = 76.4, y = 27.3, f = "e" },
@@ -492,25 +510,6 @@ do
 				only = { races = { "Tauren" }, classes = { "DRUID" } },
 				goals = {
 					{ t = "collect", quest = 30, item = 15882, itemName = "Half Pendant of Aquatic Endurance", count = 1, map = 1415, x = 39.0, y = 38.0, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Tauren" }, classes = { "DRUID" } },
-				goals = {
-					{ t = "collect", quest = 30, itemName = "Pendant of the Sea Lion", count = 1, oi = 1, map = 1450, x = 36.1, y = 41.6, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Tauren" }, classes = { "DRUID" } },
-				goals = {
-					{ t = "turnin", quest = 30, title = "Trial of the Sea Lion", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.4, y = 30.5, f = "e" },
-					{ t = "accept", quest = 31, title = "Aquatic Form", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.4, y = 30.5, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Tauren" }, classes = { "DRUID" } },
-				goals = {
-					{ t = "talk", npc = 11798, npcName = "Bunthen Plainswind", map = 1450, x = 44.3, y = 45.9, f = "e" },
 				},
 			},
 		},

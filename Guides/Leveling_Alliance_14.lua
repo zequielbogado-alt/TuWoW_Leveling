@@ -5,16 +5,23 @@ do
 	Polestar.RegisterGuide({
 		id = "zygor/leveling/a-main-guide-13-20-part-2",
 		pack = "guides",
-		title = "Main Guide (13-20) (Parte 2/2)",
+		title = "Main Guide (13-20) (Parte 2/3)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-levels-20-25",
+		next = "zygor/leveling/a-main-guide-13-20-part-3",
 		author = "TuWoW & Zygor",
 		minLevel = 13,
 		maxLevel = 20,
 		zone = 1436,
 		version = 1,
 		steps = {
+			{
+				only = { races = { "NightElf" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "turnin", quest = 27, title = "A Lesson to Learn", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.2, y = 30.5, f = "e" },
+					{ t = "accept", quest = 29, title = "Trial of the Lake", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.2, y = 30.5, f = "e" },
+				},
+			},
 			{
 				note = "Go south in the lake to 57.6,57.8",
 				only = { races = { "NightElf" }, classes = { "DRUID" } },
@@ -83,6 +90,12 @@ do
 				only = { races = { "NightElf" }, classes = { "DRUID" } },
 				goals = {
 					{ t = "turnin", quest = 5061, title = "Aquatic Form", npc = 4217, npcName = "Mathrengyl Bearwalker", map = 1457, x = 35.2, y = 8.1, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Sentinel Hill|goto Westfall,52.9,53.6,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{
@@ -289,6 +302,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Thelsamar|goto Loch Modan,35.1,46.9,3|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 255, title = "Mercenaries", npc = 1139, npcName = "Magistrate Bluntnose", map = 1436, x = 34.7, y = 43.2, f = "e" },
 				},
@@ -433,6 +452,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Lakeshire|goto Redridge Mountains,26.9,44.9,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 130, title = "Visit the Herbalist", npc = 342, npcName = "Martie Jainrose", map = 1433, x = 21.9, y = 46.3, f = "e" },
 					{ t = "accept", quest = 131, title = "Delivering Daffodils", npc = 342, npcName = "Martie Jainrose", map = 1433, x = 21.9, y = 46.3, f = "e" },
@@ -461,6 +486,23 @@ do
 					{ t = "collect", quest = 92, itemName = "Crisp Spider Meat", count = 5, oi = 3, map = 1433, x = 19.3, y = 73.2, f = "e" },
 				},
 			},
+		},
+	})
+end
+
+do
+	Polestar.RegisterGuide({
+		id = "zygor/leveling/a-main-guide-13-20-part-3",
+		pack = "guides",
+		title = "Main Guide (13-20) (Parte 3/3)",
+		category = "Leveling",
+		faction = "Alliance",
+		author = "TuWoW & Zygor",
+		minLevel = 13,
+		maxLevel = 20,
+		zone = 1436,
+		version = 1,
+		steps = {
 			{
 				goals = {
 					{ t = "kill", quest = 246, target = "Redridge Mongrel", count = 10, oi = 1, map = 1433, x = 26.8, y = 80.2, f = "e" },

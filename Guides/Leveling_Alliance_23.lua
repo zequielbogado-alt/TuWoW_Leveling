@@ -164,6 +164,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Theramore|goto Dustwallow Marsh,66.6,45.2,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 1204, title = "Mudrock Soup and Bugs", npc = 4794, npcName = "Morgan Stern", map = 1445, x = 66.3, y = 45.5, f = "e" },
 					{ t = "turnin", quest = 1222, title = "Stinky's Escape", npc = 4794, npcName = "Morgan Stern", map = 1445, x = 66.3, y = 45.5, f = "e" },
@@ -358,6 +364,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Theramore|goto Dustwallow Marsh,67.5,50.3,9|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 1287, title = "The Deserters (2)", npc = 4944, npcName = "Captain Garran Vimes", map = 1445, x = 68.2, y = 48.6, f = "e" },
 					{ t = "accept", quest = 11143, title = "A Grim Connection", npc = 4944, npcName = "Captain Garran Vimes", map = 1445, x = 68.2, y = 48.6, f = "e" },
@@ -485,18 +497,6 @@ do
 			{
 				goals = {
 					{ t = "kill", quest = 196, target = "Jungle Stalker", count = 10, oi = 1, map = 1434, x = 32.6, y = 40.4, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", target = "goblins", count = 1, map = 1434, x = 41.4, y = 42.3, f = "e" },
-					{ t = "collect", quest = 600, itemName = "Singing Blue Crystal", count = 10, oi = 1, map = 1434, x = 41.4, y = 42.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", target = "Skullsplitter trolls", count = 1, map = 1434, x = 42.5, y = 36.7, f = "e" },
-					{ t = "collect", quest = 209, itemName = "Skullsplitter Tusk", count = 18, oi = 1, map = 1434, x = 42.5, y = 36.7, f = "e" },
 				},
 			},
 		},

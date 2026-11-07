@@ -465,6 +465,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Dolanaar|goto Teldrassil,55.7,59.8,1|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 483, title = "The Relics of Wakening", npc = 2078, npcName = "Athridas Bearmantle", map = 1438, x = 56.0, y = 57.3, f = "e" },
 					{ t = "accept", quest = 486, title = "Ursal the Mauler", npc = 2078, npcName = "Athridas Bearmantle", map = 1438, x = 56.0, y = 57.3, f = "e" },
@@ -490,11 +496,6 @@ do
 			{
 				goals = {
 					{ t = "accept", quest = 930, title = "The Glowing Fruit", map = 1438, x = 42.6, y = 76.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 930, title = "The Glowing Fruit", npc = 2080, npcName = "Denalan", map = 1438, x = 60.9, y = 68.5, f = "e" },
 				},
 			},
 		},

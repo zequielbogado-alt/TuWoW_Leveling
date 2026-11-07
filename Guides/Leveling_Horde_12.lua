@@ -189,6 +189,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Cenarion Hold|goto Silithus,51.9,39.2,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 8277, title = "Deadly Desert Venom", npc = 15189, npcName = "Beetix Ficklespragg", map = 1449, x = 51.7, y = 38.6, f = "e" },
 					{ t = "accept", quest = 8278, title = "Noggle's Last Hope", npc = 15189, npcName = "Beetix Ficklespragg", map = 1449, x = 51.7, y = 38.6, f = "e" },
@@ -425,6 +431,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Undercity|goto Undercity|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 5023, title = "Better Late Than Never (2)", npc = 10781, npcName = "Royal Overseer Bauhaus", map = 1458, x = 69.8, y = 43.1, f = "e" },
 					{ t = "accept", quest = 5049, title = "The Jeremiah Blues", npc = 10781, npcName = "Royal Overseer Bauhaus", map = 1458, x = 69.8, y = 43.1, f = "e" },
@@ -490,16 +502,6 @@ do
 					{ t = "goto", map = 1422, x = 46.7, y = 71.0, f = "e" },
 				},
 			},
-			{
-				goals = {
-					{ t = "goto", map = 1422, x = 40.1, y = 71.5, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 5153, title = "A Strange Historian", npc = 10667, npcName = "Chromie", map = 1422, x = 39.5, y = 66.8, f = "e" },
-				},
-			},
 		},
 	})
 end
@@ -511,13 +513,22 @@ do
 		title = "Death Knight (55-60) (Parte 3/3)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-outland-60-62",
 		author = "TuWoW & Zygor",
 		minLevel = 55,
 		maxLevel = 60,
 		zone = 1454,
 		version = 1,
 		steps = {
+			{
+				goals = {
+					{ t = "goto", map = 1422, x = 40.1, y = 71.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 5153, title = "A Strange Historian", npc = 10667, npcName = "Chromie", map = 1422, x = 39.5, y = 66.8, f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "goto", map = 1422, x = 42.3, y = 66.2, f = "e" },

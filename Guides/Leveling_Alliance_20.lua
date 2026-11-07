@@ -8,13 +8,23 @@ do
 		title = "Levels (30-35) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-levels-35-40",
 		author = "TuWoW & Zygor",
 		minLevel = 30,
 		maxLevel = 35,
 		zone = 1453,
 		version = 1,
 		steps = {
+			{
+				goals = {
+					{ t = "turnin", quest = 632, title = "The Thandol Span (2)", npc = 1075, npcName = "Rhag Garmason", map = 1437, x = 49.8, y = 18.3, f = "e" },
+					{ t = "accept", quest = 633, title = "The Thandol Span (3)", npc = 1075, npcName = "Rhag Garmason", map = 1437, x = 49.8, y = 18.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1417, x = 48.8, y = 88.1, f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "turnin", quest = 633, title = "The Thandol Span (3)", npc = 1075, npcName = "Rhag Garmason", map = 1437, x = 49.8, y = 18.3, f = "e" },
@@ -160,6 +170,12 @@ do
 				goals = {
 					{ t = "accept", quest = 510, title = "Foreboding Plans", map = 1416, x = 58.3, y = 68.0, f = "e" },
 					{ t = "accept", quest = 511, title = "Encrypted Letter", map = 1416, x = 58.3, y = 68.0, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Southshore|goto Hillsbrad Foothills,51.2,58.9,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{

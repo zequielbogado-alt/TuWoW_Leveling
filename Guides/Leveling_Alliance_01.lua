@@ -218,6 +218,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Northshire Valley|goto Elwynn Forest,48.1,43.7,1|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 21, title = "Skirmish at Echo Ridge", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e" },
 					{ t = "accept", quest = 54, title = "Report to Goldshire", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e" },
@@ -488,15 +494,9 @@ do
 				},
 			},
 			{
+				note = "Hearth to Goldshire|goto Elwynn Forest,42.4,65.8,2|use Hearthstone##6948|noway|c",
 				goals = {
-					{ t = "turnin", quest = 76, title = "The Jasperlode Mine", npc = 240, npcName = "Marshal Dughan", map = 1429, x = 42.1, y = 65.9, f = "e" },
-					{ t = "turnin", quest = 39, title = "Deliver Thomas' Report", npc = 240, npcName = "Marshal Dughan", map = 1429, x = 42.1, y = 65.9, f = "e" },
-					{ t = "accept", quest = 239, title = "Westbrook Garrison Needs Help!", npc = 240, npcName = "Marshal Dughan", map = 1429, x = 42.1, y = 65.9, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 1097, title = "Elmore's Task", npc = 514, npcName = "Smith Argus", map = 1429, x = 41.7, y = 65.6, f = "e" },
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 		},

@@ -5,7 +5,7 @@ do
 	Polestar.RegisterGuide({
 		id = "zygor/leveling/a-northrend-74-76-part-2",
 		pack = "guides",
-		title = "Northrend (74-76) (Parte 2/4)",
+		title = "Northrend (74-76) (Parte 2/5)",
 		category = "Leveling",
 		faction = "Alliance",
 		next = "zygor/leveling/a-northrend-74-76-part-3",
@@ -15,6 +15,18 @@ do
 		zone = 1453,
 		version = 1,
 		steps = {
+			{
+				goals = {
+					{ t = "kill", target = "Onslaught mobs", count = 1, x = 84.9, y = 35.5, f = "e" },
+					{ t = "collect", quest = 12477, itemName = "The Path of Redemption", count = 1, oi = 1, x = 84.9, y = 35.5, f = "e" },
+					{ t = "kill", quest = 12476, target = "Scarlet Onslaught", count = 20, oi = 1, x = 84.9, y = 35.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12476, title = "The Return of the Crusade?", npc = 27155, npcName = "Commander Lynore Windstryke", x = 78.6, y = 48.2, f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "turnin", quest = 12477, title = "The Path of Redemption", npc = 27136, npcName = "High Commander Halford Wyrmbane", x = 78.61, y = 48.2, f = "e" },
@@ -437,6 +449,12 @@ do
 				},
 			},
 			{
+				note = "Use your Ruby Beacon of the Dragon Queen|use Ruby Beacon of the Dragon Queen##38302",
+				goals = {
+					{ t = "use", item = 38302, itemName = "Ruby Beacon of the Dragon Queen", f = "e" },
+				},
+			},
+			{
 				note = "Fly to 57.2,33.1",
 				goals = {
 					{ t = "kill", quest = 12498, target = "Wastes Scavenger", count = 30, oi = 1, x = 57.2, y = 33.1, f = "e" },
@@ -446,6 +464,12 @@ do
 				note = "Fly to 54.5,31.3",
 				goals = {
 					{ t = "collect", quest = 12498, itemName = "Scythe of Antiok", count = 1, oi = 2, x = 54.5, y = 31.3, f = "e" },
+				},
+			},
+			{
+				note = "Use your Ruby Beacon of the Dragon Queen|use Ruby Beacon of the Dragon Queen##38302",
+				goals = {
+					{ t = "use", item = 38302, itemName = "Ruby Beacon of the Dragon Queen", f = "e" },
 				},
 			},
 			{
@@ -479,28 +503,6 @@ do
 			{
 				goals = {
 					{ t = "talk", npc = 26877, npcName = "Derek Rammel", x = 39.5, y = 25.9, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 13347, title = "Reborn From The Ashes", npc = 29611, npcName = "King Varian Wrynn", map = 1453, x = 80.0, y = 38.4, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "level", level = 75, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "talk", npc = 26673, npcName = "Image of Archmage Modera", map = 1453, x = 29.0, y = 55.5, f = "e" },
-				},
-			},
-			{
-				note = "Go downstairs to 56.3,46.8|goto Dalaran,56.3,46.8",
-				goals = {
-					{ t = "turnin", quest = 12794, title = "The Magical Kingdom of Dalaran", npc = 29156, npcName = "Archmage Celindra", f = "e" },
-					{ t = "accept", quest = 12790, title = "Learning to Leave and Return: the Magical Way", npc = 29156, npcName = "Archmage Celindra", f = "e" },
 				},
 			},
 		},

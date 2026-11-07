@@ -8,13 +8,17 @@ do
 		title = "Levels (64-66) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-levels-66-68",
 		author = "TuWoW & Zygor",
 		minLevel = 64,
 		maxLevel = 66,
 		zone = 1946,
 		version = 1,
 		steps = {
+			{
+				goals = {
+					{ t = "goto", map = 1952, x = 56.7, y = 69.2, f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "turnin", quest = 10874, title = "Veil Shalas: Signal Fires", npc = 22272, npcName = "Kirrik the Awakened", map = 1952, x = 37.4, y = 51.5, f = "e" },
@@ -219,6 +223,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Allerian Stronghold|goto Terokkar Forest,57.5,54.2,3|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 9994, title = "What Are These Things?", npc = 18459, npcName = "Jenai Starwhisper", map = 1952, x = 57.0, y = 53.5, f = "e" },
 					{ t = "accept", quest = 10444, title = "Report to the Allerian Post", npc = 18459, npcName = "Jenai Starwhisper", map = 1952, x = 57.0, y = 53.5, f = "e" },
@@ -284,6 +294,12 @@ do
 			{
 				goals = {
 					{ t = "collect", quest = 10028, itemName = "Draenei Vessel", count = 8, oi = 1, map = 1952, x = 54.1, y = 32.1, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Allerian Stronghold|goto Terokkar Forest,57.5,54.2,3|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{

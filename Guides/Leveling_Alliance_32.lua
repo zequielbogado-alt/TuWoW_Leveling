@@ -115,6 +115,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to the Temple of Telhamat|goto Hellfire Peninsula,23.4,36.4,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "accept", quest = 9912, title = "The Cenarion Expedition", npc = 16885, npcName = "Amythiel Mistwalker", x = 15.7, y = 52.0, f = "e" },
 					{ t = "accept", quest = 10159, title = "Keep Thornfang Hill Clear!", npc = 16888, npcName = "Mahuram Stouthoof", x = 15.7, y = 52.0, f = "e" },
@@ -492,12 +498,6 @@ do
 					{ t = "accept", quest = 9919, title = "Sporeggar", npc = 17923, npcName = "Fahssn", map = 1946, x = 19.1, y = 63.9, f = "e" },
 				},
 			},
-			{
-				goals = {
-					{ t = "turnin", quest = 9701, title = "Observing the Sporelings", npc = 17831, npcName = "Watcher Leesa'oh", map = 1946, x = 23.3, y = 66.2, f = "e" },
-					{ t = "accept", quest = 9702, title = "A Question of Gluttony", npc = 17831, npcName = "Watcher Leesa'oh", map = 1946, x = 23.3, y = 66.2, f = "e" },
-				},
-			},
 		},
 	})
 end
@@ -509,13 +509,18 @@ do
 		title = "Levels (62-64) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-levels-64-66",
 		author = "TuWoW & Zygor",
 		minLevel = 62,
 		maxLevel = 64,
 		zone = 1946,
 		version = 1,
 		steps = {
+			{
+				goals = {
+					{ t = "turnin", quest = 9701, title = "Observing the Sporelings", npc = 17831, npcName = "Watcher Leesa'oh", map = 1946, x = 23.3, y = 66.2, f = "e" },
+					{ t = "accept", quest = 9702, title = "A Question of Gluttony", npc = 17831, npcName = "Watcher Leesa'oh", map = 1946, x = 23.3, y = 66.2, f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "collect", quest = 9702, itemName = "Discarded Nutriment", count = 10, oi = 1, map = 1946, x = 27.0, y = 63.3, f = "e" },

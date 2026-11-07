@@ -388,6 +388,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Kharanos|goto Dun Morogh,47.3,52.5,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 412, title = "Operation Recombobulation", npc = 1269, npcName = "Razzle Sprysprocket", map = 1426, x = 45.8, y = 49.4, f = "e" },
 				},
@@ -496,13 +502,6 @@ do
 				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
 				goals = {
 					{ t = "accept", quest = 1715, title = "The Slaughtered Lamb", npc = 6120, npcName = "Lago Blackwrench", map = 1455, x = 47.6, y = 9.3, f = "e" },
-				},
-			},
-			{
-				note = "Ride the tram to Stormwind City|goto Stormwind City|noway|c",
-				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
-				goals = {
-					{ t = "goto", map = 1455, x = 76.9, y = 51.2, f = "e" },
 				},
 			},
 		},

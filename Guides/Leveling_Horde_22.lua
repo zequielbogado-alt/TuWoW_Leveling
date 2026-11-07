@@ -64,7 +64,7 @@ do
 			{
 				note = "Hearth to Booty Bay,0.1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "goto", map = 1434, x = 27.1, y = 77.3, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 1434, x = 27.1, y = 77.3, f = "e" },
 				},
 			},
 			{
@@ -291,6 +291,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Booty Bay|goto Stranglethorn Vale,27.1,77.3,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "accept", quest = 1372, title = "Nothing But The Truth (1)", npc = 5418, npcName = "Deathstalker Zraedus", map = 1431, x = 87.6, y = 35.5, f = "e" },
 					{ t = "turnin", quest = 1372, title = "Nothing But The Truth (1)", npc = 5414, npcName = "Apothecary Faustin", map = 1431, x = 87.6, y = 35.5, f = "e" },
@@ -389,6 +395,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Stonard|goto Swamp of Sorrows,45.0,56.7,0.3|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "accept", quest = 573, title = "Mok'thardin's Enchantment (4)", npc = 2465, npcName = "Far Seer Mok'thardin", map = 1434, x = 32.1, y = 29.2, f = "e" },
 				},
@@ -475,16 +487,6 @@ do
 			{
 				goals = {
 					{ t = "collect", quest = 609, itemName = "Chucky's Huge Ring", count = 1, oi = 3, map = 1434, x = 40.1, y = 58.2, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 621, itemName = "Zanzil's Mixture", count = 12, oi = 1, map = 1434, x = 39.0, y = 59.0, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "level", level = 43, f = "e" },
 				},
 			},
 		},

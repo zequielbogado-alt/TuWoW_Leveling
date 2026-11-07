@@ -8,7 +8,6 @@ do
 		title = "Troll (1-13) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-main-guide-13-20",
 		author = "TuWoW & Zygor",
 		minLevel = 1,
 		maxLevel = 13,
@@ -274,7 +273,7 @@ do
 			{
 				note = "Hearth to Razor Hill,0.1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "goto", map = 1411, x = 51.5, y = 41.7, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 1411, x = 51.5, y = 41.7, f = "e" },
 				},
 			},
 			{
@@ -461,7 +460,7 @@ do
 			{
 				note = "Hearth to Razor Hill,0.1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "goto", map = 1458, x = 51.5, y = 41.7, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 1458, x = 51.5, y = 41.7, f = "e" },
 				},
 			},
 		},

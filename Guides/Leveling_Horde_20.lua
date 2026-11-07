@@ -89,7 +89,7 @@ do
 			{
 				note = "Hearth to Booty Bay,0.1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "goto", map = 1434, x = 27.1, y = 77.3, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 1434, x = 27.1, y = 77.3, f = "e" },
 				},
 			},
 			{
@@ -219,7 +219,7 @@ do
 			{
 				note = "Hearth to Hammerfall,0.1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "goto", map = 1417, x = 73.8, y = 32.6, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 1417, x = 73.8, y = 32.6, f = "e" },
 				},
 			},
 			{
@@ -388,6 +388,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Hammerfall|goto Arathi Highlands,73.8,32.6,0.5|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "collect", quest = 651, itemName = "Cresting Key", count = 1, oi = 2, map = 1458, x = 66.8, y = 29.7, f = "e" },
 				},
@@ -476,12 +482,6 @@ do
 					{ t = "turnin", quest = 664, title = "Drowned Sorrows", npc = 2769, npcName = "Captain Steelgut", map = 1458, x = 33.9, y = 80.7, f = "e" },
 					{ t = "turnin", quest = 666, title = "Sunken Treasure (2)", npc = 2774, npcName = "Doctor Draxlegauge", map = 1458, x = 33.9, y = 80.7, f = "e" },
 					{ t = "accept", quest = 668, title = "Sunken Treasure (3)", npc = 2774, npcName = "Doctor Draxlegauge", map = 1458, x = 33.9, y = 80.7, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 668, title = "Sunken Treasure (3)", npc = 2610, npcName = "Shakes O'Breen", map = 1458, x = 32.3, y = 81.4, f = "e" },
-					{ t = "accept", quest = 669, title = "Sunken Treasure (4)", npc = 2610, npcName = "Shakes O'Breen", map = 1458, x = 32.3, y = 81.4, f = "e" },
 				},
 			},
 		},

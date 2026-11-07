@@ -31,6 +31,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Lakeshire|goto Redridge Mountains,26.9,44.9,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				only = { races = { "Human", "Gnome" }, classes = { "WARLOCK" } },
 				goals = {
 					{ t = "accept", quest = 1717, title = "Gakin's Summons", npc = 6120, npcName = "Lago Blackwrench", map = 1455, x = 47.6, y = 9.3, f = "e" },
@@ -156,6 +162,12 @@ do
 			{
 				goals = {
 					{ t = "level", level = 21, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Sentinel Hill|goto Westfall,53.4,50.8,3|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{
@@ -359,6 +371,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Auberdine|goto Darkshore,38.1,43.1,9|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 951, title = "Mathystra Relics", npc = 3616, npcName = "Onu", map = 1439, x = 43.5, y = 76.3, f = "e" },
 				},
@@ -450,6 +468,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Astranaar|goto Ashenvale,35.5,50.2,5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 1023, title = "Raene's Cleansing (2)", npc = 3691, npcName = "Raene Wolfrunner", map = 1440, x = 36.6, y = 49.6, f = "e" },
 					{ t = "accept", quest = 1024, title = "Raene's Cleansing (3)", npc = 3691, npcName = "Raene Wolfrunner", map = 1440, x = 36.6, y = 49.6, f = "e" },
@@ -465,30 +489,6 @@ do
 			{
 				goals = {
 					{ t = "collect", quest = 1054, itemName = "Dal Bloodclaw's Skull", count = 1, oi = 1, map = 1440, x = 37.4, y = 33.9, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 1054, title = "Culling the Threat", npc = 3691, npcName = "Raene Wolfrunner", map = 1440, x = 36.6, y = 49.6, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 1440, x = 50.1, y = 56.4, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 1024, title = "Raene's Cleansing (3)", npc = 3916, npcName = "Shael'dryn", map = 1440, x = 53.5, y = 46.3, f = "e" },
-					{ t = "accept", quest = 1026, title = "Raene's Cleansing (4)", npc = 3916, npcName = "Shael'dryn", map = 1440, x = 53.5, y = 46.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", quest = 1025, target = "Foulweald Den Watcher", count = 1, oi = 1, map = 1440, x = 50.9, y = 60.2, f = "e" },
-					{ t = "kill", quest = 1025, target = "Foulweald Ursa", count = 2, oi = 2, map = 1440, x = 50.9, y = 60.2, f = "e" },
-					{ t = "kill", quest = 1025, target = "Foulweald Totemic", count = 10, oi = 3, map = 1440, x = 50.9, y = 60.2, f = "e" },
-					{ t = "kill", quest = 1025, target = "Foulweald Warrior", count = 12, oi = 4, map = 1440, x = 50.9, y = 60.2, f = "e" },
 				},
 			},
 		},

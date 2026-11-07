@@ -330,6 +330,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Astranaar|goto Ashenvale,35.5,50.2,5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 1029, title = "Raene's Cleansing (8)", npc = 3691, npcName = "Raene Wolfrunner", map = 1440, x = 36.6, y = 49.6, f = "e" },
 				},
@@ -457,6 +463,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Menethil Harbor|goto Wetlands,10.1,56.7,9|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 292, title = "The Eye of Paleth", npc = 1217, npcName = "Glorin Steelbrow", map = 1437, x = 10.6, y = 60.6, f = "e" },
 					{ t = "accept", quest = 293, title = "Cleansing the Eye", npc = 1217, npcName = "Glorin Steelbrow", map = 1437, x = 10.6, y = 60.6, f = "e" },
@@ -494,17 +506,6 @@ do
 				goals = {
 					{ t = "turnin", quest = 631, title = "The Thandol Span (1)", map = 1437, x = 51.3, y = 8.0, f = "e" },
 					{ t = "accept", quest = 632, title = "The Thandol Span (2)", map = 1437, x = 51.3, y = 8.0, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 632, title = "The Thandol Span (2)", npc = 1075, npcName = "Rhag Garmason", map = 1437, x = 49.8, y = 18.3, f = "e" },
-					{ t = "accept", quest = 633, title = "The Thandol Span (3)", npc = 1075, npcName = "Rhag Garmason", map = 1437, x = 49.8, y = 18.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 1417, x = 48.8, y = 88.1, f = "e" },
 				},
 			},
 		},

@@ -49,6 +49,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Southshore|goto Hillsbrad Foothills,51.2,58.9,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 525, title = "Further Mysteries", npc = 2276, npcName = "Magistrate Henry Maleb", map = 1424, x = 48.1, y = 59.1, f = "e" },
 				},
@@ -212,6 +218,12 @@ do
 			{
 				goals = {
 					{ t = "turnin", quest = 6027, title = "Book of the Ancients", npc = 11863, npcName = "Azore Aldamort", map = 1443, x = 38.9, y = 27.2, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Nijel's Point|goto Desolace,66.8,10.1,4|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{
@@ -397,6 +409,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Booty Bay|goto Stranglethorn Vale,27.0,77.3,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 605, title = "Singing Blue Shards", npc = 2498, npcName = "Crank Fizzlebub", map = 1434, x = 27.1, y = 77.2, f = "e" },
 				},
@@ -464,22 +482,6 @@ do
 				goals = {
 					{ t = "kill", target = "ogres", count = 1, map = 1416, x = 49.7, y = 60.8, f = "e" },
 					{ t = "collect", quest = 500, itemName = "Dirty Knucklebones", count = 9, oi = 1, map = 1416, x = 49.7, y = 60.8, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", target = "Syndicate mobs", count = 1, map = 1416, x = 62.3, y = 45.4, f = "e" },
-					{ t = "collect", quest = 512, itemName = "Alterac Signet Ring", count = 7, oi = 1, map = 1416, x = 62.3, y = 45.4, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 500, title = "Crushridge Bounty", npc = 2263, npcName = "Marshal Redpath", map = 1424, x = 49.5, y = 58.7, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 512, title = "Noble Deaths", npc = 2276, npcName = "Magistrate Henry Maleb", map = 1424, x = 48.1, y = 59.1, f = "e" },
 				},
 			},
 		},

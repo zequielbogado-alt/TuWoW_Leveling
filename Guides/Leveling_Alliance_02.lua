@@ -8,7 +8,6 @@ do
 		title = "Human (1-13) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-main-guide-13-20",
 		author = "TuWoW & Zygor",
 		minLevel = 1,
 		maxLevel = 13,
@@ -16,6 +15,18 @@ do
 		version = 1,
 		races = { "Human" },
 		steps = {
+			{
+				goals = {
+					{ t = "turnin", quest = 76, title = "The Jasperlode Mine", npc = 240, npcName = "Marshal Dughan", map = 1429, x = 42.1, y = 65.9, f = "e" },
+					{ t = "turnin", quest = 39, title = "Deliver Thomas' Report", npc = 240, npcName = "Marshal Dughan", map = 1429, x = 42.1, y = 65.9, f = "e" },
+					{ t = "accept", quest = 239, title = "Westbrook Garrison Needs Help!", npc = 240, npcName = "Marshal Dughan", map = 1429, x = 42.1, y = 65.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 1097, title = "Elmore's Task", npc = 514, npcName = "Smith Argus", map = 1429, x = 41.7, y = 65.6, f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "turnin", quest = 88, title = "Princess Must Die!", npc = 244, npcName = "Ma Stonefield", map = 1429, x = 34.6, y = 84.5, f = "e" },
@@ -211,6 +222,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Thelsamar|goto Loch Modan,35.5,48.3,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 418, title = "Thelsamar Blood Sausages", npc = 1963, npcName = "Vidra Hearthstove", map = 1432, x = 34.8, y = 49.3, f = "e" },
 				},
@@ -378,6 +395,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Auberdine|goto Darkshore,37.0,44.1,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				note = "Ride the boat to Stormwind Harbor|goto Stormwind City|noway|c",
 				goals = {
 					{ t = "goto", map = 1439, x = 32.4, y = 43.8, f = "e" },
@@ -399,6 +422,7 @@ do
 				note = "Click the Tome of Divinity in your bags|use Tome of Divinity##6775",
 				only = { races = { "Human" }, classes = { "PALADIN" } },
 				goals = {
+					{ t = "use", item = 6775, itemName = "Tome of Divinity", map = 1453, x = 50.6, y = 47.5, f = "e" },
 					{ t = "accept", quest = 1642, title = "The Tome of Divinity (1)", map = 1453, x = 50.6, y = 47.5, f = "e" },
 					{ t = "turnin", quest = 1642, title = "The Tome of Divinity (1)", npc = 6171, npcName = "Duthorian Rall", map = 1453, x = 50.6, y = 47.5, f = "e" },
 					{ t = "accept", quest = 1643, title = "The Tome of Divinity (2)", npc = 6171, npcName = "Duthorian Rall", map = 1453, x = 50.6, y = 47.5, f = "e" },

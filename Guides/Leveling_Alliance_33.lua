@@ -237,6 +237,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Shattrath City|goto Shattrath City|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 10021, title = "Restoring the Light", npc = 18538, npcName = "Ishanah", map = 1955, x = 24.0, y = 29.7, f = "e" },
 				},
@@ -478,11 +484,6 @@ do
 			{
 				goals = {
 					{ t = "goto", map = 1952, x = 56.1, y = 72.4, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 1952, x = 56.7, y = 69.2, f = "e" },
 				},
 			},
 		},

@@ -360,6 +360,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Garadar|goto Nagrand,55.0,36.8,6|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 9891, title = "Because Kilrath is a Coward", npc = 18106, npcName = "Jorin Deadeye", map = 1951, x = 55.5, y = 37.6, f = "e" },
 					{ t = "accept", quest = 9906, title = "Message in a Battle", npc = 18106, npcName = "Jorin Deadeye", map = 1951, x = 55.5, y = 37.6, f = "e" },
@@ -501,11 +507,6 @@ do
 			{
 				goals = {
 					{ t = "kill", quest = 9810, target = "Watoosun's Polluted Essence", count = 1, oi = 1, map = 1951, x = 33.1, y = 50.8, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", quest = 9849, target = "Minion of Gurok", count = 30, oi = 1, map = 1951, x = 27.9, y = 77.6, f = "e" },
 				},
 			},
 		},

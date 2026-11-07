@@ -8,13 +8,28 @@ do
 		title = "Levels (45-50) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-levels-50-55",
 		author = "TuWoW & Zygor",
 		minLevel = 45,
 		maxLevel = 50,
 		zone = 1446,
 		version = 1,
 		steps = {
+			{
+				goals = {
+					{ t = "collect", quest = 580, itemName = "Pupellyverbos Port", count = 12, oi = 1, map = 1425, x = 77.2, y = 76.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 2742, title = "Rin'ji is Trapped!", map = 1425, x = 86.3, y = 59.0, f = "e" },
+					{ t = "accept", quest = 2782, title = "Rin'ji's Secret", map = 1425, x = 86.3, y = 59.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 7828, target = "Silvermane Stalker", count = 5, oi = 1, map = 1425, x = 70.3, y = 58.9, f = "e" },
+				},
+			},
 			{
 				note = "Slagtree's Lost Tools can be at any of these 5 spots:",
 				goals = {
@@ -98,6 +113,12 @@ do
 			{
 				goals = {
 					{ t = "turnin", quest = 7841, title = "Message to the Wildhammer", npc = 14738, npcName = "Otho Moji'ko", map = 1425, x = 79.4, y = 79.1, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Tarren Mill|goto Hillsbrad Foothills,62.7,19.1,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{
@@ -230,7 +251,7 @@ do
 			{
 				note = "Hearth to Booty Bay,0.1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "goto", map = 1434, x = 27.1, y = 77.3, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 1434, x = 27.1, y = 77.3, f = "e" },
 				},
 			},
 			{
@@ -320,6 +341,12 @@ do
 			{
 				goals = {
 					{ t = "collect", quest = 3062, itemName = "Edana's Dark Heart", count = 1, oi = 1, map = 1444, x = 40.3, y = 8.6, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Camp Mojache|goto Feralas,74.8,45.1,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{

@@ -47,6 +47,7 @@ do
 			{
 				note = "Put on your Felsworn Gas Mask|use Felsworn Gas Mask##31366",
 				goals = {
+					{ t = "use", item = 31366, itemName = "Felsworn Gas Mask", map = 1949, x = 73.2, y = 40.0, f = "e" },
 					{ t = "turnin", quest = 10819, title = "Felsworn Gas Mask", map = 1949, x = 73.2, y = 40.0, f = "e" },
 					{ t = "accept", quest = 10820, title = "Deceive thy Enemy", map = 1949, x = 73.2, y = 40.0, f = "e" },
 				},
@@ -247,6 +248,12 @@ do
 				note = "Go inside the cave to 33.9,35.4",
 				goals = {
 					{ t = "kill", quest = 10748, npc = 21389, target = "Maxnar the Ashmaw", count = 1, oi = 1, map = 1949, x = 33.9, y = 35.4, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Sylvanaar|goto Blade's Edge Mountains,35.9,63.9,0.3|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{
@@ -488,12 +495,6 @@ do
 			{
 				goals = {
 					{ t = "goto", map = 1953, x = 29.0, y = 72.7, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 10262, itemName = "Zaxxis Insignia", count = 10, oi = 1, map = 1953, x = 30.2, y = 75.5, f = "e" },
-					{ t = "collect", quest = 10206, itemName = "Ethereal Technology", count = 10, oi = 1, map = 1953, x = 30.2, y = 75.5, f = "e" },
 				},
 			},
 		},

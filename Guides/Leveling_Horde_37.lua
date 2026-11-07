@@ -376,6 +376,12 @@ do
 				},
 			},
 			{
+				note = "Put on your Felsworn Gas Mask to wear it|use Felsworn Gas Mask##31366",
+				goals = {
+					{ t = "use", item = 31366, itemName = "Felsworn Gas Mask", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 10819, title = "Felsworn Gas Mask", x = 73.2, y = 40.0, f = "e" },
 					{ t = "accept", quest = 10820, title = "Deceive thy Enemy", x = 73.2, y = 40.0, f = "e" },
@@ -485,12 +491,6 @@ do
 			{
 				goals = {
 					{ t = "collect", quest = 10721, itemName = "Grulloc's Sack", count = 1, oi = 1, x = 60.2, y = 47.6, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 10721, title = "A Boaring Time for Grulloc", npc = 22103, npcName = "Baron Sablemane", x = 53.3, y = 41.2, f = "e" },
-					{ t = "accept", quest = 10785, title = "It's a Trap!", npc = 22103, npcName = "Baron Sablemane", x = 53.3, y = 41.2, f = "e" },
 				},
 			},
 		},

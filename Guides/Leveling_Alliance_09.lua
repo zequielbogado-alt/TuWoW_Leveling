@@ -148,6 +148,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Ammen Vale|goto Azuremyst Isle,84.3,43.0,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 9294, title = "Healing the Lake", npc = 16514, npcName = "Botanist Taerix", map = 1941, x = 79.1, y = 46.5, f = "e" },
 				},
@@ -375,6 +381,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Azure Watch|goto Azuremyst Isle,49.2,50.8,2|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 9463, title = "Medicinal Purpose", npc = 17214, npcName = "Anchorite Fateema", map = 1941, x = 48.4, y = 51.8, f = "e" },
 					{ t = "accept", quest = 9473, title = "An Alternative Alternative", npc = 17215, npcName = "Daedal", map = 1941, x = 48.4, y = 51.8, f = "e" },
@@ -487,20 +499,6 @@ do
 				goals = {
 					{ t = "turnin", quest = 9540, title = "Totem of Tikti", f = "e" },
 					{ t = "accept", quest = 9541, title = "Totem of Yor", f = "e" },
-				},
-			},
-			{
-				note = "Follow the ghost furbolg to the river",
-				goals = {
-					{ t = "turnin", quest = 9541, title = "Totem of Yor", f = "e" },
-					{ t = "accept", quest = 9542, title = "Totem of Vark", f = "e" },
-				},
-			},
-			{
-				note = "Follow the ghost furbolg out of the water",
-				goals = {
-					{ t = "turnin", quest = 9542, title = "Totem of Vark", f = "e" },
-					{ t = "accept", quest = 9544, title = "The Prophecy of Akida", f = "e" },
 				},
 			},
 		},

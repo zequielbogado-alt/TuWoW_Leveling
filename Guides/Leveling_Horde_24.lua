@@ -32,6 +32,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Gadgetzan|goto Tanaris,52.4,27.9,0.3|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 1707, title = "Water Pouch Bounty", npc = 7408, npcName = "Spigot Operator Luglunket", map = 1446, x = 52.5, y = 28.5, f = "e" },
 					{ t = "turnin", quest = 1690, title = "Wastewander Justice", npc = 7407, npcName = "Chief Engineer Bilgewhizzle", map = 1446, x = 52.5, y = 28.5, f = "e" },
@@ -292,6 +298,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Camp Mojache|goto Feralas,74.8,45.1,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 3121, title = "A Strange Request", npc = 36208, npcName = "Xerash Fireblade", map = 1454, x = 76.8, y = 37.5, f = "e" },
 					{ t = "accept", quest = 3122, title = "Return to Witch Doctor Uzer'i", npc = 36208, npcName = "Xerash Fireblade", map = 1454, x = 76.8, y = 37.5, f = "e" },
@@ -314,6 +326,12 @@ do
 					{ t = "collect", quest = 3128, itemName = "Splintered Log", count = 2, oi = 1, map = 1444, x = 56.3, y = 61.0, f = "e" },
 					{ t = "collect", quest = 3128, itemName = "Resilient Sinew", count = 20, oi = 3, map = 1444, x = 56.3, y = 61.0, f = "e" },
 					{ t = "collect", quest = 3128, itemName = "Metallic Fragments", count = 40, oi = 4, map = 1444, x = 56.3, y = 61.0, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Camp Mojache|goto Feralas,74.8,45.1,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{
@@ -475,22 +493,6 @@ do
 			{
 				goals = {
 					{ t = "accept", quest = 7839, title = "Vilebranch Hooligans", npc = 14737, npcName = "Smith Slagtree", map = 1425, x = 77.5, y = 80.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 580, itemName = "Pupellyverbos Port", count = 12, oi = 1, map = 1425, x = 77.2, y = 76.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 2742, title = "Rin'ji is Trapped!", map = 1425, x = 86.3, y = 59.0, f = "e" },
-					{ t = "accept", quest = 2782, title = "Rin'ji's Secret", map = 1425, x = 86.3, y = 59.0, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", quest = 7828, target = "Silvermane Stalker", count = 5, oi = 1, map = 1425, x = 70.3, y = 58.9, f = "e" },
 				},
 			},
 		},

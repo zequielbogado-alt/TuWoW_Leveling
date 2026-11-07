@@ -17,6 +17,28 @@ do
 		steps = {
 			{
 				goals = {
+					{ t = "collect", quest = 4005, itemName = "Silver Totem of Aquementas", count = 1, oi = 1, map = 1446, x = 70.4, y = 49.9, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Gadgetzan|goto Tanaris,51.7,27.8,6|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1449, x = 43.7, y = 9.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 4005, title = "Aquementas", npc = 9117, npcName = "J.D. Collie", map = 1449, x = 41.9, y = 2.7, f = "e" },
+					{ t = "accept", quest = 3961, title = "Linken's Adventure", npc = 9117, npcName = "J.D. Collie", map = 1449, x = 41.9, y = 2.7, f = "e" },
+				},
+			},
+			{
+				goals = {
 					{ t = "turnin", quest = 3961, title = "Linken's Adventure", npc = 8737, npcName = "Linken", map = 1449, x = 44.7, y = 8.1, f = "e" },
 				},
 			},
@@ -64,7 +86,7 @@ do
 			{
 				note = "Hearth to Cenarion Hold,0.5|use Hearthstone##6948|noway|c",
 				goals = {
-					{ t = "goto", map = 1451, x = 51.9, y = 39.0, f = "e" },
+					{ t = "use", item = 6948, itemName = "Hearthstone", map = 1451, x = 51.9, y = 39.0, f = "e" },
 				},
 			},
 			{
@@ -486,6 +508,23 @@ do
 					{ t = "accept", quest = 5152, title = "Auntie Marlene", npc = 10926, npcName = "Pamela Redpath", map = 1422, x = 32.4, y = 83.7, f = "e" },
 				},
 			},
+		},
+	})
+end
+
+do
+	Polestar.RegisterGuide({
+		id = "zygor/leveling/a-levels-55-60-part-3",
+		pack = "guides",
+		title = "Levels (55-60) (Parte 3/3)",
+		category = "Leveling",
+		faction = "Alliance",
+		author = "TuWoW & Zygor",
+		minLevel = 55,
+		maxLevel = 60,
+		zone = 1413,
+		version = 1,
+		steps = {
 			{
 				goals = {
 					{ t = "kill", quest = 5542, target = "Plaguehound", count = 5, oi = 2, map = 1422, x = 52.5, y = 49.1, f = "e" },
@@ -507,24 +546,6 @@ do
 					{ t = "fpath", text = "Light's Hope Chapel", map = 1422, x = 75.9, y = 53.4, f = "e" },
 				},
 			},
-		},
-	})
-end
-
-do
-	Polestar.RegisterGuide({
-		id = "zygor/leveling/a-levels-55-60-part-3",
-		pack = "guides",
-		title = "Levels (55-60) (Parte 3/3)",
-		category = "Leveling",
-		faction = "Alliance",
-		next = "zygor/leveling/a-outland-60-62",
-		author = "TuWoW & Zygor",
-		minLevel = 55,
-		maxLevel = 60,
-		zone = 1413,
-		version = 1,
-		steps = {
 			{
 				goals = {
 					{ t = "turnin", quest = 9446, title = "Tomb of the Lightbringer", npc = 11053, npcName = "High Priestess MacDonnell", map = 1422, x = 42.9, y = 84.5, f = "e" },
@@ -600,6 +621,12 @@ do
 					{ t = "turnin", quest = 5544, title = "Carrion Grubbage", npc = 1855, npcName = "Tirion Fordring", f = "e" },
 					{ t = "accept", quest = 5742, title = "Redemption", npc = 1855, npcName = "Tirion Fordring", f = "e" },
 					{ t = "turnin", quest = 5742, title = "Redemption", npc = 1855, npcName = "Tirion Fordring", f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{

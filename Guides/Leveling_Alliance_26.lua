@@ -5,16 +5,39 @@ do
 	Polestar.RegisterGuide({
 		id = "zygor/leveling/a-levels-45-50-part-2",
 		pack = "guides",
-		title = "Levels (45-50) (Parte 2/2)",
+		title = "Levels (45-50) (Parte 2/3)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-levels-50-55",
+		next = "zygor/leveling/a-levels-45-50-part-3",
 		author = "TuWoW & Zygor",
 		minLevel = 45,
 		maxLevel = 50,
 		zone = 1444,
 		version = 1,
 		steps = {
+			{
+				goals = {
+					{ t = "turnin", quest = 3661, title = "Favored of Elune?", npc = 7916, npcName = "Erelas Ambersky", map = 1438, x = 55.5, y = 92.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 2944, title = "The Super Snapper FX", npc = 7907, npcName = "Daryn Lightwind", map = 1438, x = 55.4, y = 92.2, f = "e" },
+					{ t = "accept", quest = 2943, title = "Return to Troyas", npc = 7907, npcName = "Daryn Lightwind", map = 1438, x = 55.4, y = 92.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "home", text = "Feathermoon Stronghold", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 2943, title = "Return to Troyas", npc = 7764, npcName = "Troyas Moonbreeze", map = 1438, x = 31.8, y = 45.6, f = "e" },
+					{ t = "accept", quest = 2879, title = "The Stave of Equinex", npc = 7764, npcName = "Troyas Moonbreeze", map = 1438, x = 31.8, y = 45.6, f = "e" },
+					{ t = "accept", quest = 3445, title = "The Sunken Temple", npc = 7900, npcName = "Angelas Moonbreeze", map = 1438, x = 31.8, y = 45.6, f = "e" },
+				},
+			},
 			{
 				note = "Ride the boat to the main continent of Feralas|goto Feralas,43.5,42.7,1|noway|c",
 				goals = {
@@ -108,6 +131,12 @@ do
 			{
 				goals = {
 					{ t = "accept", quest = 3841, title = "An Orphan Looking For a Home", npc = 7956, npcName = "Kindal Moonweaver", map = 1438, x = 65.9, y = 45.6, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Feathermoon Stronghold|goto Feralas,31.0,44.0,5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{
@@ -206,6 +235,12 @@ do
 			{
 				goals = {
 					{ t = "turnin", quest = 3520, title = "Screecher Spirits", npc = 8579, npcName = "Yeh'kinya", map = 1446, x = 67.0, y = 22.4, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Gadgetzan|goto Tanaris,51.7,27.8,6|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{
@@ -426,6 +461,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Booty Bay|goto Stranglethorn Vale,27.7,74.6,6|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 608, title = "The Bloodsail Buccaneers (5)", npc = 2487, npcName = "Fleet Master Seahorn", map = 1425, x = 27.2, y = 77.0, f = "e" },
 				},
@@ -455,6 +496,23 @@ do
 					{ t = "collect", item = 8393, itemName = "Scorpok Pincer", count = 6, f = "e" },
 				},
 			},
+		},
+	})
+end
+
+do
+	Polestar.RegisterGuide({
+		id = "zygor/leveling/a-levels-45-50-part-3",
+		pack = "guides",
+		title = "Levels (45-50) (Parte 3/3)",
+		category = "Leveling",
+		faction = "Alliance",
+		author = "TuWoW & Zygor",
+		minLevel = 45,
+		maxLevel = 50,
+		zone = 1444,
+		version = 1,
+		steps = {
 			{
 				goals = {
 					{ t = "turnin", quest = 2601, title = "The Basilisk's Bite", npc = 7506, npcName = "Bloodmage Lynnore", map = 1419, x = 50.7, y = 14.2, f = "e" },

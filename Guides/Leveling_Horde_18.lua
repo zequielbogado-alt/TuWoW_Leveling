@@ -16,6 +16,12 @@ do
 		version = 1,
 		steps = {
 			{
+				note = "Hearth to Sun Rock Retreat|goto Stonetalon Mountains,47.5,62.1,0.5|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				only = { classes = { "WARRIOR" } },
 				goals = {
 					{ t = "accept", quest = 1718, title = "The Islander", npc = 3354, npcName = "Sorek", map = 1454, x = 80.4, y = 32.4, f = "e" },
@@ -166,6 +172,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Orgrimmar|goto Orgrimmar|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "goto", map = 1411, x = 50.8, y = 13.3, f = "e" },
 				},
@@ -223,6 +235,12 @@ do
 			{
 				goals = {
 					{ t = "level", level = 31, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Orgrimmar|goto Orgrimmar|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{
@@ -300,6 +318,12 @@ do
 			{
 				goals = {
 					{ t = "fpath", text = "Gadgetzan", map = 1446, x = 51.6, y = 25.4, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Orgrimmar|goto Orgrimmar|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{
@@ -468,27 +492,6 @@ do
 			{
 				goals = {
 					{ t = "level", level = 33, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 1368, title = "Gelkis Alliance", npc = 5397, npcName = "Uthek the Wise", map = 1443, x = 36.2, y = 79.3, f = "e" },
-					{ t = "accept", quest = 1370, title = "Stealing Supplies", npc = 5397, npcName = "Uthek the Wise", map = 1443, x = 36.2, y = 79.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 5763, title = "Hunting in Stranglethorn", npc = 11877, npcName = "Roon Wildmane", map = 1443, x = 25.1, y = 72.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 5381, title = "Hand of Iruxos", npc = 11624, npcName = "Taiga Wisemane", map = 1443, x = 25.8, y = 68.2, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "home", text = "Shadowprey Village", f = "e" },
 				},
 			},
 		},

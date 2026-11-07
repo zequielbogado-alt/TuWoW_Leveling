@@ -56,6 +56,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Gadgetzan|goto Tanaris,52.4,27.9,0.3|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 2605, title = "The Thirsty Goblin", npc = 7564, npcName = "Marin Noggenfogger", map = 1446, x = 51.8, y = 28.6, f = "e" },
 					{ t = "accept", quest = 2606, title = "In Good Taste", npc = 7564, npcName = "Marin Noggenfogger", map = 1446, x = 51.8, y = 28.6, f = "e" },
@@ -340,6 +346,12 @@ do
 				},
 			},
 			{
+				note = "Equip the Torch of Retribution|use Torch of Retribution##10515",
+				goals = {
+					{ t = "use", item = 10515, itemName = "Torch of Retribution", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "goto", map = 1427, x = 33.3, y = 54.5, f = "e" },
 				},
@@ -392,7 +404,7 @@ do
 			{
 				note = "Hearth to Stonard,0.1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "goto", map = 1428, x = 45.1, y = 56.7, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 1428, x = 45.1, y = 56.7, f = "e" },
 				},
 			},
 			{
@@ -481,20 +493,11 @@ do
 			{
 				note = "Open the Box of Empty Vials|use Box of Empty Vials##10695",
 				goals = {
+					{ t = "use", item = 10695, itemName = "Box of Empty Vials", f = "e" },
 					{ t = "collect", itemName = "Empty Vial Labeled", count = 1, f = "e" },
 					{ t = "collect", itemName = "Empty Vial Labeled", count = 1, f = "e" },
 					{ t = "collect", itemName = "Empty Vial Labeled", count = 1, f = "e" },
 					{ t = "collect", itemName = "Empty Vial Labeled", count = 1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 1447, x = 47.6, y = 61.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 1447, x = 47.9, y = 51.6, f = "e" },
 				},
 			},
 		},

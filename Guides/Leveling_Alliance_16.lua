@@ -8,7 +8,6 @@ do
 		title = "Levels (20-25) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-levels-25-30",
 		author = "TuWoW & Zygor",
 		minLevel = 20,
 		maxLevel = 25,
@@ -17,12 +16,42 @@ do
 		steps = {
 			{
 				goals = {
+					{ t = "turnin", quest = 1054, title = "Culling the Threat", npc = 3691, npcName = "Raene Wolfrunner", map = 1440, x = 36.6, y = 49.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1440, x = 50.1, y = 56.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 1024, title = "Raene's Cleansing (3)", npc = 3916, npcName = "Shael'dryn", map = 1440, x = 53.5, y = 46.3, f = "e" },
+					{ t = "accept", quest = 1026, title = "Raene's Cleansing (4)", npc = 3916, npcName = "Shael'dryn", map = 1440, x = 53.5, y = 46.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 1025, target = "Foulweald Den Watcher", count = 1, oi = 1, map = 1440, x = 50.9, y = 60.2, f = "e" },
+					{ t = "kill", quest = 1025, target = "Foulweald Ursa", count = 2, oi = 2, map = 1440, x = 50.9, y = 60.2, f = "e" },
+					{ t = "kill", quest = 1025, target = "Foulweald Totemic", count = 10, oi = 3, map = 1440, x = 50.9, y = 60.2, f = "e" },
+					{ t = "kill", quest = 1025, target = "Foulweald Warrior", count = 12, oi = 4, map = 1440, x = 50.9, y = 60.2, f = "e" },
+				},
+			},
+			{
+				goals = {
 					{ t = "goto", map = 1440, x = 44.0, y = 55.0, f = "e" },
 				},
 			},
 			{
 				goals = {
 					{ t = "collect", quest = 1033, itemName = "Elune's Tear", count = 1, oi = 1, map = 1440, x = 46.2, y = 46.0, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Astranaar|goto Ashenvale,35.5,50.2,5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{

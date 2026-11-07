@@ -195,6 +195,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Honor Hold|goto Hellfire Peninsula,55.7,63.3,5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "accept", quest = 10058, title = "An Old Gift", npc = 16825, npcName = "Father Malgor Devidicus", map = 1944, x = 54.3, y = 63.4, f = "e" },
 					{ t = "accept", quest = 9558, title = "The Longbeards", npc = 16826, npcName = "Sid Limbardi", map = 1944, x = 54.3, y = 63.4, f = "e" },
@@ -502,11 +508,6 @@ do
 					{ t = "accept", quest = 10367, title = "A Traitor Among Us", npc = 19361, npcName = "Naladu", map = 1944, x = 16.3, y = 65.1, f = "e" },
 				},
 			},
-			{
-				goals = {
-					{ t = "collect", quest = 10367, itemName = "Sha'naar Key", count = 1, oi = 1, map = 1944, x = 14.3, y = 63.5, f = "e" },
-				},
-			},
 		},
 	})
 end
@@ -518,13 +519,17 @@ do
 		title = "Outland (60-62) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-levels-62-64",
 		author = "TuWoW & Zygor",
 		minLevel = 60,
 		maxLevel = 62,
 		zone = 1944,
 		version = 1,
 		steps = {
+			{
+				goals = {
+					{ t = "collect", quest = 10367, itemName = "Sha'naar Key", count = 1, oi = 1, map = 1944, x = 14.3, y = 63.5, f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "turnin", quest = 10367, title = "A Traitor Among Us", npc = 19361, npcName = "Naladu", map = 1944, x = 16.3, y = 65.1, f = "e" },
@@ -641,6 +646,12 @@ do
 			{
 				goals = {
 					{ t = "turnin", quest = 9351, title = "Voidwalkers Gone Wild", npc = 19367, npcName = "\"Screaming\" Screed Luckheed", map = 1944, x = 49.2, y = 74.8, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to the Temple of Telhamat|goto Hellfire Peninsula,23.4,37.2,3|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{

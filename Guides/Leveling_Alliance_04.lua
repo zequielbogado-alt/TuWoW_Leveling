@@ -18,6 +18,11 @@ do
 		steps = {
 			{
 				goals = {
+					{ t = "turnin", quest = 930, title = "The Glowing Fruit", npc = 2080, npcName = "Denalan", map = 1438, x = 60.9, y = 68.5, f = "e" },
+				},
+			},
+			{
+				goals = {
 					{ t = "turnin", quest = 933, title = "Crown of the Earth (4)", npc = 3515, npcName = "Corithras Moonrage", map = 1438, x = 56.1, y = 61.7, f = "e" },
 					{ t = "accept", quest = 7383, title = "Crown of the Earth (5)", npc = 3515, npcName = "Corithras Moonrage", map = 1438, x = 56.1, y = 61.7, f = "e" },
 				},
@@ -55,6 +60,12 @@ do
 			{
 				goals = {
 					{ t = "accept", quest = 931, title = "The Shimmering Frond", map = 1438, x = 34.7, y = 29.0, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Dolanaar|goto Teldrassil,55.7,59.8,1|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{
@@ -374,6 +385,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Auberdine|goto Darkshore,37.0,44.1,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				note = "Ride the boat to Stormwind Harbor|goto Stormwind City|noway|c",
 				goals = {
 					{ t = "goto", map = 1439, x = 32.4, y = 43.8, f = "e" },
@@ -463,6 +480,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Thelsamar|goto Loch Modan,35.5,48.3,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 418, title = "Thelsamar Blood Sausages", npc = 1963, npcName = "Vidra Hearthstove", map = 1432, x = 34.8, y = 49.3, f = "e" },
 				},
@@ -472,6 +495,24 @@ do
 					{ t = "turnin", quest = 416, title = "Rat Catching", npc = 1340, npcName = "Mountaineer Kadrell", map = 1432, x = 34.8, y = 47.1, f = "e" },
 				},
 			},
+		},
+	})
+end
+
+do
+	Polestar.RegisterGuide({
+		id = "zygor/leveling/a-night-elf-1-13-part-3",
+		pack = "guides",
+		title = "Night Elf (1-13) (Parte 3/3)",
+		category = "Leveling",
+		faction = "Alliance",
+		author = "TuWoW & Zygor",
+		minLevel = 1,
+		maxLevel = 13,
+		zone = 1438,
+		version = 1,
+		races = { "NightElf" },
+		steps = {
 			{
 				goals = {
 					{ t = "accept", quest = 224, title = "In Defense of the King's Lands (1)", npc = 1089, npcName = "Mountaineer Cobbleflint", map = 1432, x = 22.1, y = 73.1, f = "e" },
@@ -494,25 +535,6 @@ do
 					{ t = "turnin", quest = 224, title = "In Defense of the King's Lands (1)", npc = 1089, npcName = "Mountaineer Cobbleflint", map = 1432, x = 22.1, y = 73.1, f = "e" },
 				},
 			},
-		},
-	})
-end
-
-do
-	Polestar.RegisterGuide({
-		id = "zygor/leveling/a-night-elf-1-13-part-3",
-		pack = "guides",
-		title = "Night Elf (1-13) (Parte 3/3)",
-		category = "Leveling",
-		faction = "Alliance",
-		next = "zygor/leveling/a-main-guide-13-20",
-		author = "TuWoW & Zygor",
-		minLevel = 1,
-		maxLevel = 13,
-		zone = 1438,
-		version = 1,
-		races = { "NightElf" },
-		steps = {
 			{
 				goals = {
 					{ t = "turnin", quest = 267, title = "The Trogg Threat", npc = 1092, npcName = "Captain Rugelfuss", map = 1432, x = 23.2, y = 73.7, f = "e" },

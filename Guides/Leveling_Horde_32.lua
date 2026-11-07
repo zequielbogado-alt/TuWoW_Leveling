@@ -8,13 +8,17 @@ do
 		title = "Outland (62-64) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-outland-64-66",
 		author = "TuWoW & Zygor",
 		minLevel = 62,
 		maxLevel = 64,
 		zone = 1944,
 		version = 1,
 		steps = {
+			{
+				goals = {
+					{ t = "accept", quest = 9785, title = "Blessings of the Ancients", npc = 18070, npcName = "Windcaller Blackhoof", map = 1946, x = 80.4, y = 64.7, f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "accept", quest = 9697, title = "Watcher Leesa'oh", npc = 17834, npcName = "Lethyn Moonfire", map = 1946, x = 78.5, y = 63.1, f = "e" },
@@ -240,6 +244,12 @@ do
 			{
 				goals = {
 					{ t = "goto", map = 1946, x = 44.4, y = 66.0, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Zabra'jin|goto Zangarmarsh,31.7,49.8,4|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{

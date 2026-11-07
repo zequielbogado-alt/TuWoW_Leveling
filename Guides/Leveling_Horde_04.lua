@@ -8,7 +8,6 @@ do
 		title = "Tauren (1-13) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-main-guide-13-20",
 		author = "TuWoW & Zygor",
 		minLevel = 1,
 		maxLevel = 13,
@@ -304,6 +303,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Bloodhoof Village|goto Mulgore,46.7,61.0,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 770, title = "The Demon Scarred Cloak", npc = 3052, npcName = "Skorn Whitecloud", map = 1412, x = 46.8, y = 60.2, f = "e" },
 				},
@@ -443,6 +448,12 @@ do
 			{
 				goals = {
 					{ t = "turnin", quest = 447, title = "A Recipe For Death (1)", npc = 2055, npcName = "Master Apothecary Faranell", map = 1421, x = 48.8, y = 69.3, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to the Crossroads|goto The Barrens,52.0,29.9,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{

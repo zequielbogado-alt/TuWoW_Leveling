@@ -205,6 +205,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 3368, title = "Suntara Stones (2)", npc = 8256, npcName = "Curator Thorius", map = 1455, x = 67.8, y = 8.3, f = "e" },
 					{ t = "accept", quest = 3371, title = "Dwarven Justice", npc = 8256, npcName = "Curator Thorius", map = 1455, x = 67.8, y = 8.3, f = "e" },
@@ -335,6 +341,12 @@ do
 				},
 			},
 			{
+				note = "Equip the Torch of Retribution|use Torch of Retribution##10515|n",
+				goals = {
+					{ t = "use", item = 10515, itemName = "Torch of Retribution", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "goto", map = 1427, x = 33.3, y = 54.5, f = "e" },
 				},
@@ -376,6 +388,12 @@ do
 			{
 				goals = {
 					{ t = "collect", quest = 4450, itemName = "Goodsteel's Balanced Flameberge", count = 1, oi = 4, map = 1435, x = 91.6, y = 67.6, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{
@@ -489,23 +507,6 @@ do
 				goals = {
 					{ t = "turnin", quest = 4291, title = "The Scent of Lar'korwi", npc = 9619, npcName = "Torwa Pathfinder", map = 1446, x = 71.6, y = 76.0, f = "e" },
 					{ t = "accept", quest = 4292, title = "The Bait for Lar'korwi", npc = 9619, npcName = "Torwa Pathfinder", map = 1446, x = 71.6, y = 76.0, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 4292, itemName = "Lar'korwi's Head", count = 1, oi = 1, map = 1446, x = 79.9, y = 49.9, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 4289, itemName = "Un'Goro Gorilla Pelt", count = 2, oi = 1, map = 1446, x = 65.7, y = 15.5, f = "e" },
-					{ t = "collect", quest = 4289, itemName = "Un'Goro Stomper Pelt", count = 2, oi = 2, map = 1446, x = 65.7, y = 15.5, f = "e" },
-					{ t = "collect", quest = 4289, itemName = "Un'Goro Thunderer Pelt", count = 2, oi = 3, map = 1446, x = 65.7, y = 15.5, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 4243, title = "Chasing A-Me 01 (1)", npc = 9618, npcName = "Karna Remtravel", map = 1446, x = 46.4, y = 13.4, f = "e" },
 				},
 			},
 		},

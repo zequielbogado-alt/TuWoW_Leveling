@@ -8,13 +8,29 @@ do
 		title = "Levels (25-30) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-levels-30-35",
 		author = "TuWoW & Zygor",
 		minLevel = 25,
 		maxLevel = 30,
 		zone = 1437,
 		version = 1,
 		steps = {
+			{
+				goals = {
+					{ t = "turnin", quest = 173, title = "Worgen in the Woods (1)", npc = 663, npcName = "Calor", map = 1431, x = 75.7, y = 47.6, f = "e" },
+					{ t = "accept", quest = 221, title = "Worgen in the Woods (2)", npc = 663, npcName = "Calor", map = 1431, x = 75.7, y = 47.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 221, target = "Nightbane Dark Runner", count = 12, oi = 1, map = 1431, x = 66.0, y = 47.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 221, title = "Worgen in the Woods (2)", npc = 663, npcName = "Calor", map = 1431, x = 75.7, y = 47.6, f = "e" },
+					{ t = "accept", quest = 222, title = "Worgen in the Woods (3)", npc = 663, npcName = "Calor", map = 1431, x = 75.7, y = 47.6, f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "level", level = 28, f = "e" },
@@ -110,6 +126,12 @@ do
 				goals = {
 					{ t = "turnin", quest = 164, title = "Deliveries to Sven", npc = 311, npcName = "Sven Yorgen", map = 1431, x = 7.8, y = 34.2, f = "e" },
 					{ t = "accept", quest = 95, title = "Sven's Revenge", npc = 311, npcName = "Sven Yorgen", map = 1431, x = 7.8, y = 34.2, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Darkshire|goto Duskwood,73.9,44.5,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{
@@ -246,6 +268,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Darkshire|goto Duskwood,73.9,44.5,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 156, title = "Gather Rot Blossoms", npc = 273, npcName = "Tavernkeep Smitts", map = 1431, x = 74.1, y = 44.7, f = "e" },
 					{ t = "accept", quest = 159, title = "Juice Delivery", npc = 273, npcName = "Tavernkeep Smitts", map = 1431, x = 74.1, y = 44.7, f = "e" },
@@ -283,6 +311,12 @@ do
 				goals = {
 					{ t = "turnin", quest = 134, title = "Ogre Thieves", npc = 289, npcName = "Abercrombie", map = 1431, x = 28.0, y = 31.5, f = "e" },
 					{ t = "accept", quest = 160, title = "Note to the Mayor", npc = 289, npcName = "Abercrombie", map = 1431, x = 28.0, y = 31.5, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Darkshire|goto Duskwood,73.9,44.5,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{

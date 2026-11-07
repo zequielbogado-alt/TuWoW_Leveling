@@ -8,13 +8,31 @@ do
 		title = "Main Guide (13-20) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-levels-20-25",
 		author = "TuWoW & Zygor",
 		minLevel = 13,
 		maxLevel = 20,
 		zone = 1413,
 		version = 1,
 		steps = {
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "collect", quest = 30, itemName = "Pendant of the Sea Lion", count = 1, oi = 1, map = 1450, x = 36.1, y = 41.6, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "turnin", quest = 30, title = "Trial of the Sea Lion", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.4, y = 30.5, f = "e" },
+					{ t = "accept", quest = 31, title = "Aquatic Form", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.4, y = 30.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "talk", npc = 11798, npcName = "Bunthen Plainswind", map = 1450, x = 44.3, y = 45.9, f = "e" },
+				},
+			},
 			{
 				only = { races = { "Tauren" }, classes = { "DRUID" } },
 				goals = {
@@ -260,6 +278,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to the Crossroads|goto The Barrens,52.0,29.9,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 4921, title = "Lost in Battle", npc = 3432, npcName = "Mankrik", map = 1413, x = 52.0, y = 31.6, f = "e" },
 				},
@@ -418,6 +442,12 @@ do
 			{
 				goals = {
 					{ t = "collect", quest = 876, itemName = "Serena's Head", count = 1, oi = 1, map = 1413, x = 39.2, y = 12.1, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to the Crossroads|goto The Barrens,52.0,29.9,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{

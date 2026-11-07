@@ -272,7 +272,7 @@ do
 			{
 				note = "Hearth to the Valley of Trials,0.1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "goto", map = 1411, x = 43.3, y = 68.8, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 1411, x = 43.3, y = 68.8, f = "e" },
 				},
 			},
 			{
@@ -484,7 +484,7 @@ do
 			{
 				note = "Hearth to Razor Hill,0.1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "goto", map = 1411, x = 51.5, y = 41.7, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 1411, x = 51.5, y = 41.7, f = "e" },
 				},
 			},
 			{

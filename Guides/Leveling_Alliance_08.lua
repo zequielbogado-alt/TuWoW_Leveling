@@ -8,7 +8,6 @@ do
 		title = "Dwarf (1-13) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-main-guide-13-20",
 		author = "TuWoW & Zygor",
 		minLevel = 1,
 		maxLevel = 13,
@@ -16,6 +15,19 @@ do
 		version = 1,
 		races = { "Dwarf" },
 		steps = {
+			{
+				only = { races = { "Dwarf" }, classes = { "HUNTER" } },
+				goals = {
+					{ t = "goto", map = 1426, x = 47.9, y = 56.6, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Dwarf" }, classes = { "HUNTER" } },
+				goals = {
+					{ t = "turnin", quest = 6064, title = "Taming the Beast (1)", npc = 1231, npcName = "Grif Wildheart", map = 1426, x = 45.8, y = 53.0, f = "e" },
+					{ t = "accept", quest = 6084, title = "Taming the Beast (2)", npc = 1231, npcName = "Grif Wildheart", map = 1426, x = 45.8, y = 53.0, f = "e" },
+				},
+			},
 			{
 				only = { races = { "Dwarf" }, classes = { "HUNTER" } },
 				goals = {
@@ -97,6 +109,12 @@ do
 				goals = {
 					{ t = "turnin", quest = 1339, title = "Mountaineer Stormpike's Task", npc = 1343, npcName = "Mountaineer Stormpike", map = 1432, x = 24.8, y = 18.4, f = "e" },
 					{ t = "accept", quest = 1338, title = "Stormpike's Order", npc = 1343, npcName = "Mountaineer Stormpike", map = 1432, x = 24.8, y = 18.4, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Thelsamar|goto Loch Modan,35.5,48.3,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{
@@ -352,6 +370,12 @@ do
 			{
 				goals = {
 					{ t = "level", level = 13, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Auberdine|goto Darkshore,37.0,44.1,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{

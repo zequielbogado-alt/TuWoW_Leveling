@@ -8,13 +8,18 @@ do
 		title = "Outland (64-66) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-outland-66-68",
 		author = "TuWoW & Zygor",
 		minLevel = 64,
 		maxLevel = 66,
 		zone = 1946,
 		version = 1,
 		steps = {
+			{
+				goals = {
+					{ t = "kill", quest = 10914, target = "Auchenai Initiate", count = 12, oi = 1, map = 1952, x = 36.7, y = 74.4, f = "e" },
+					{ t = "kill", quest = 10914, target = "Auchenai Doomsayer", count = 5, oi = 2, map = 1952, x = 36.7, y = 74.4, f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "turnin", quest = 10914, title = "A Hero Is Needed", npc = 22446, npcName = "Commander Ra'vaj", map = 1952, x = 31.0, y = 76.1, f = "e" },
@@ -294,6 +299,12 @@ do
 				goals = {
 					{ t = "turnin", quest = 10003, title = "The Firewing Liaison", npc = 18566, npcName = "Shadowstalker Kaide", map = 1952, x = 63.4, y = 42.7, f = "e" },
 					{ t = "turnin", quest = 10008, title = "What Happens in Terokkar Stays in Terokkar", npc = 18566, npcName = "Shadowstalker Kaide", map = 1952, x = 63.4, y = 42.7, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Stonebreaker Hold|goto Terokkar Forest,49.2,45.3,2.5|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{

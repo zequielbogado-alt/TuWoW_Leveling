@@ -8,7 +8,6 @@ do
 		title = "Blood Elf (1-13) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-main-guide-13-20",
 		author = "TuWoW & Zygor",
 		minLevel = 1,
 		maxLevel = 13,
@@ -297,7 +296,7 @@ do
 			{
 				note = "Hearth to Fairbreeze Village,0.5|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "goto", map = 1944, x = 43.7, y = 71.2, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 1944, x = 43.7, y = 71.2, f = "e" },
 				},
 			},
 			{

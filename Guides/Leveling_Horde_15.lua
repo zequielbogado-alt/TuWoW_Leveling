@@ -233,6 +233,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to the Crossroads|goto The Barrens,52.0,29.9,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 3281, title = "Stolen Silver", npc = 3464, npcName = "Gazrog", map = 1413, x = 51.9, y = 30.3, f = "e" },
 				},
@@ -409,6 +415,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to the Crossroads|goto The Barrens,52.0,29.9,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 1094, title = "Further Instructions (1)", npc = 3442, npcName = "Sputtervalve", map = 1413, x = 63.0, y = 37.2, f = "e" },
 					{ t = "accept", quest = 1095, title = "Further Instructions (2)", npc = 3442, npcName = "Sputtervalve", map = 1413, x = 63.0, y = 37.2, f = "e" },
@@ -495,21 +507,9 @@ do
 				},
 			},
 			{
+				note = "Hearth to the Crossroads|goto The Barrens,52.0,29.9,0.1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "turnin", quest = 3261, title = "Jorn Skyseer", npc = 3387, npcName = "Jorn Skyseer", map = 1440, x = 44.9, y = 59.1, f = "e" },
-					{ t = "accept", quest = 882, title = "Ishamuhale", npc = 3387, npcName = "Jorn Skyseer", map = 1440, x = 44.9, y = 59.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "home", text = "Camp Taurajo", f = "e" },
-				},
-			},
-			{
-				note = "Click Chen's Empty Keg",
-				goals = {
-					{ t = "collect", itemName = "Chen's Empty Keg", count = 1, map = 1440, x = 45.0, y = 62.2, f = "e" },
-					{ t = "accept", quest = 819, title = "Chen's Empty Keg", map = 1440, x = 45.0, y = 62.2, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 		},

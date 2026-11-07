@@ -17,6 +17,20 @@ do
 		races = { "Draenei" },
 		steps = {
 			{
+				note = "Follow the ghost furbolg to the river",
+				goals = {
+					{ t = "turnin", quest = 9541, title = "Totem of Yor", f = "e" },
+					{ t = "accept", quest = 9542, title = "Totem of Vark", f = "e" },
+				},
+			},
+			{
+				note = "Follow the ghost furbolg out of the water",
+				goals = {
+					{ t = "turnin", quest = 9542, title = "Totem of Vark", f = "e" },
+					{ t = "accept", quest = 9544, title = "The Prophecy of Akida", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "collect", item = 23801, itemName = "Bristlelimb Key", count = 8, map = 1941, x = 28.5, y = 66.4, f = "e" },
 				},
@@ -46,6 +60,12 @@ do
 			{
 				goals = {
 					{ t = "turnin", quest = 9527, title = "All That Remains", npc = 17311, npcName = "Cowlen", map = 1941, x = 16.6, y = 94.5, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Azure Watch|goto Azuremyst Isle,49.2,50.8,2|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{
@@ -305,6 +325,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Azure Watch|goto Azuremyst Isle,49.2,50.8,2|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 9623, title = "Coming of Age", npc = 17584, npcName = "Torallius the Pack Handler", map = 1941, x = 35.1, y = 43.4, f = "e" },
 				},
@@ -429,6 +455,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Auberdine|goto Darkshore,37.0,44.1,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				note = "Ride the boat to Azuremyst Isle|goto Azuremyst Isle|noway|c",
 				only = { races = { "Draenei" }, classes = { "PALADIN" } },
 				goals = {
@@ -479,6 +511,24 @@ do
 					{ t = "fpath", text = "Stormwind City", map = 1453, x = 71.0, y = 72.5, f = "e" },
 				},
 			},
+		},
+	})
+end
+
+do
+	Polestar.RegisterGuide({
+		id = "zygor/leveling/a-draenei-1-13-part-3",
+		pack = "guides",
+		title = "Draenei (1-13) (Parte 3/3)",
+		category = "Leveling",
+		faction = "Alliance",
+		author = "TuWoW & Zygor",
+		minLevel = 1,
+		maxLevel = 13,
+		zone = 1941,
+		version = 1,
+		races = { "Draenei" },
+		steps = {
 			{
 				note = "Ride the train to Ironforge|goto Ironforge|noway|c",
 				goals = {
@@ -507,25 +557,6 @@ do
 					{ t = "kill", quest = 433, target = "Rockjaw Bonesnapper", count = 10, oi = 1, map = 1426, x = 70.7, y = 56.5, f = "e" },
 				},
 			},
-		},
-	})
-end
-
-do
-	Polestar.RegisterGuide({
-		id = "zygor/leveling/a-draenei-1-13-part-3",
-		pack = "guides",
-		title = "Draenei (1-13) (Parte 3/3)",
-		category = "Leveling",
-		faction = "Alliance",
-		next = "zygor/leveling/a-main-guide-13-20",
-		author = "TuWoW & Zygor",
-		minLevel = 1,
-		maxLevel = 13,
-		zone = 1941,
-		version = 1,
-		races = { "Draenei" },
-		steps = {
 			{
 				note = "Go outside to 68.7,56.0",
 				goals = {
@@ -574,6 +605,12 @@ do
 				goals = {
 					{ t = "turnin", quest = 1339, title = "Mountaineer Stormpike's Task", npc = 1343, npcName = "Mountaineer Stormpike", map = 1432, x = 24.8, y = 18.4, f = "e" },
 					{ t = "accept", quest = 1338, title = "Stormpike's Order", npc = 1343, npcName = "Mountaineer Stormpike", map = 1432, x = 24.8, y = 18.4, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Thelsamar|goto Loch Modan,35.5,48.3,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{

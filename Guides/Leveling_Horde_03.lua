@@ -174,7 +174,7 @@ do
 			{
 				note = "Hearth to Camp Narache,0.1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "goto", map = 1412, x = 44.9, y = 77.2, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 1412, x = 44.9, y = 77.2, f = "e" },
 				},
 			},
 			{
@@ -388,7 +388,7 @@ do
 			{
 				note = "Hearth to Bloodhoof Village,0.1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "goto", map = 1412, x = 46.7, y = 61.0, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 1412, x = 46.7, y = 61.0, f = "e" },
 				},
 			},
 			{
@@ -467,7 +467,7 @@ do
 			{
 				note = "Hearth to Bloodhoof Village,0.1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "goto", map = 1412, x = 46.7, y = 61.0, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 1412, x = 46.7, y = 61.0, f = "e" },
 				},
 			},
 			{

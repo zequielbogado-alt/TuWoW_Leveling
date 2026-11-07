@@ -8,7 +8,6 @@ do
 		title = "Gnome (1-13) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Alliance",
-		next = "zygor/leveling/a-main-guide-13-20",
 		author = "TuWoW & Zygor",
 		minLevel = 1,
 		maxLevel = 13,
@@ -16,6 +15,13 @@ do
 		version = 1,
 		races = { "Gnome" },
 		steps = {
+			{
+				note = "Ride the tram to Stormwind City|goto Stormwind City|noway|c",
+				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
+				goals = {
+					{ t = "goto", map = 1455, x = 76.9, y = 51.2, f = "e" },
+				},
+			},
 			{
 				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
 				goals = {
@@ -95,6 +101,12 @@ do
 			{
 				goals = {
 					{ t = "level", level = 11, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Thelsamar|goto Loch Modan,35.5,48.3,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{
@@ -278,6 +290,12 @@ do
 			{
 				goals = {
 					{ t = "level", level = 13, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Auberdine|goto Darkshore,37.0,44.1,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{

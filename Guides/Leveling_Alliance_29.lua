@@ -79,6 +79,7 @@ do
 			{
 				note = "Click the Bag of Empty Ooze Containers in your bags|use Bag of Empty Ooze Containers##11955",
 				goals = {
+					{ t = "use", item = 11955, itemName = "Bag of Empty Ooze Containers", f = "e" },
 					{ t = "collect", quest = 4513, item = 11953, itemName = "Empty Pure Sample Jar", count = 10, f = "e" },
 				},
 			},
@@ -131,6 +132,12 @@ do
 				note = "Make sure you have 10 Filled Pure Sample Jars",
 				goals = {
 					{ t = "collect", quest = 4513, item = 11954, itemName = "Filled Pure Sample Jar", count = 10, oi = 1, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Astranaar|goto Ashenvale,35.5,50.2,5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{
@@ -272,6 +279,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Everlook|goto Winterspring,61.2,38.3,3|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 977, title = "Are We There. Yeti? (2)", npc = 10305, npcName = "Umi Rumplesnicker", map = 1452, x = 60.9, y = 37.6, f = "e" },
 					{ t = "accept", quest = 5163, title = "Are We There, Yeti? (3)", npc = 10305, npcName = "Umi Rumplesnicker", map = 1452, x = 60.9, y = 37.6, f = "e" },
@@ -323,6 +336,12 @@ do
 			{
 				goals = {
 					{ t = "turnin", quest = 5086, title = "Toxic Horrors", npc = 9298, npcName = "Donova Snowden", map = 1452, x = 31.3, y = 45.2, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Everlook|goto Winterspring,61.3,38.9,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{
@@ -485,22 +504,6 @@ do
 			{
 				goals = {
 					{ t = "home", text = "Gadgetzan", f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 4005, itemName = "Silver Totem of Aquementas", count = 1, oi = 1, map = 1446, x = 70.4, y = 49.9, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 1449, x = 43.7, y = 9.4, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 4005, title = "Aquementas", npc = 9117, npcName = "J.D. Collie", map = 1449, x = 41.9, y = 2.7, f = "e" },
-					{ t = "accept", quest = 3961, title = "Linken's Adventure", npc = 9117, npcName = "J.D. Collie", map = 1449, x = 41.9, y = 2.7, f = "e" },
 				},
 			},
 		},

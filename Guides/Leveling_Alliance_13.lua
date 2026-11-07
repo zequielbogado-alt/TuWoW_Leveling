@@ -5,7 +5,7 @@ do
 	Polestar.RegisterGuide({
 		id = "zygor/leveling/a-main-guide-13-20",
 		pack = "guides",
-		title = "Main Guide (13-20) (Parte 1/2)",
+		title = "Main Guide (13-20) (Parte 1/3)",
 		category = "Leveling",
 		faction = "Alliance",
 		next = "zygor/leveling/a-main-guide-13-20-part-2",
@@ -147,6 +147,12 @@ do
 				only = { races = { "NightElf" }, classes = { "DRUID" } },
 				goals = {
 					{ t = "turnin", quest = 6125, title = "Power over Poison", npc = 4217, npcName = "Mathrengyl Bearwalker", map = 1457, x = 35.2, y = 8.1, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Sentinel Hill|goto Westfall,52.9,53.6,0.5|use Hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
 				},
 			},
 			{
@@ -478,13 +484,6 @@ do
 				only = { races = { "NightElf" }, classes = { "DRUID" } },
 				goals = {
 					{ t = "accept", quest = 27, title = "A Lesson to Learn", npc = 4217, npcName = "Mathrengyl Bearwalker", map = 1457, x = 35.2, y = 8.1, f = "e" },
-				},
-			},
-			{
-				only = { races = { "NightElf" }, classes = { "DRUID" } },
-				goals = {
-					{ t = "turnin", quest = 27, title = "A Lesson to Learn", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.2, y = 30.5, f = "e" },
-					{ t = "accept", quest = 29, title = "Trial of the Lake", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.2, y = 30.5, f = "e" },
 				},
 			},
 		},

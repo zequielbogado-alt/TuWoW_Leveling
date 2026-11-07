@@ -90,6 +90,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to the Orgrimmar|goto Orgrimmar|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 4147, title = "Marvon's Workshop", npc = 8496, npcName = "Liv Rizzlefix", map = 1413, x = 62.5, y = 38.7, f = "e" },
 					{ t = "turnin", quest = 4502, title = "Volcanic Activity", npc = 8496, npcName = "Liv Rizzlefix", map = 1413, x = 62.5, y = 38.7, f = "e" },
@@ -170,6 +176,12 @@ do
 			{
 				goals = {
 					{ t = "level", level = 56, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to the Orgrimmar|goto Orgrimmar|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{
@@ -350,6 +362,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to the Orgrimmar|goto Orgrimmar|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 5155, title = "Forces of Jaedenar", npc = 10922, npcName = "Greta Mosshoof", map = 1448, x = 51.2, y = 82.1, f = "e" },
 					{ t = "accept", quest = 5157, title = "Collection of the Corrupt Water", npc = 10922, npcName = "Greta Mosshoof", map = 1448, x = 51.2, y = 82.1, f = "e" },
@@ -478,22 +496,6 @@ do
 				goals = {
 					{ t = "turnin", quest = 3783, title = "Are We There, Yeti? (1)", npc = 10305, npcName = "Umi Rumplesnicker", map = 1452, x = 60.9, y = 37.6, f = "e" },
 					{ t = "accept", quest = 977, title = "Are We There. Yeti? (2)", npc = 10305, npcName = "Umi Rumplesnicker", map = 1452, x = 60.9, y = 37.6, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 977, itemName = "Pristine Yeti Horn", count = 2, oi = 1, map = 1452, x = 66.0, y = 43.0, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 1452, x = 60.1, y = 73.5, f = "e" },
-				},
-			},
-			{
-				note = "Hearth to Everlook,0.1|use hearthstone##6948|noway|c",
-				goals = {
-					{ t = "goto", map = 1452, x = 61.3, y = 38.8, f = "e" },
 				},
 			},
 		},

@@ -95,12 +95,12 @@ VIEWS = { "home", "browse", "current", "recent" }
 VIEW_LABEL = { home = L["Home"], browse = L["Browse"], current = L["Current"], recent = L["Recent"] }
 
 -- The guide format's categories, in the order players look for them.
-CATEGORIES = { "Leveling", "Dungeons", "Class", "Professions", "Reputation", "Events", "Exploration", "Collectibles", "Legacy", "Miscellaneous" }
+CATEGORIES = { "Leveling", "Dailies", "Dungeons", "Class", "Professions", "Reputation", "Events", "Exploration", "Collectibles", "Legacy", "Miscellaneous" }
 P.CATEGORIES = CATEGORIES
 CATEGORY_RANK = {}
 for i, c in ipairs(CATEGORIES) do CATEGORY_RANK[c] = i end
 CATEGORY_ICON = {
-	Leveling = "icon-level", Dungeons = "icon-enter", Class = "icon-train", Professions = "icon-craft",
+	Leveling = "icon-level", Dailies = "icon-explore", Dungeons = "icon-enter", Class = "icon-train", Professions = "icon-craft",
 	Reputation = "icon-rep", Events = "icon-achieve", Exploration = "icon-explore",
 	Legacy = "icon-achieve", Collectibles = "icon-collect", Miscellaneous = "icon-treasure", Favorites = "star",
 }

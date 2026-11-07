@@ -8,13 +8,33 @@ do
 		title = "Levels (30-35) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-levels-35-40",
 		author = "TuWoW & Zygor",
 		minLevel = 30,
 		maxLevel = 35,
 		zone = 1454,
 		version = 1,
 		steps = {
+			{
+				goals = {
+					{ t = "turnin", quest = 1368, title = "Gelkis Alliance", npc = 5397, npcName = "Uthek the Wise", map = 1443, x = 36.2, y = 79.3, f = "e" },
+					{ t = "accept", quest = 1370, title = "Stealing Supplies", npc = 5397, npcName = "Uthek the Wise", map = 1443, x = 36.2, y = 79.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 5763, title = "Hunting in Stranglethorn", npc = 11877, npcName = "Roon Wildmane", map = 1443, x = 25.1, y = 72.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 5381, title = "Hand of Iruxos", npc = 11624, npcName = "Taiga Wisemane", map = 1443, x = 25.8, y = 68.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "home", text = "Shadowprey Village", f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "accept", quest = 6143, title = "Other Fish to Fry", npc = 12340, npcName = "Drulzegar Skraghook", map = 1443, x = 23.3, y = 72.9, f = "e" },
@@ -154,7 +174,7 @@ do
 			{
 				note = "Hearth to Shadowprey Village,0.1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "goto", map = 1443, x = 24.1, y = 68.2, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 1443, x = 24.1, y = 68.2, f = "e" },
 				},
 			},
 			{

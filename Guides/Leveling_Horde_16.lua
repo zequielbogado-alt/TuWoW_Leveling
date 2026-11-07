@@ -8,13 +8,30 @@ do
 		title = "Levels (20-25) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-levels-25-30",
 		author = "TuWoW & Zygor",
 		minLevel = 20,
 		maxLevel = 25,
 		zone = 1413,
 		version = 1,
 		steps = {
+			{
+				goals = {
+					{ t = "turnin", quest = 3261, title = "Jorn Skyseer", npc = 3387, npcName = "Jorn Skyseer", map = 1440, x = 44.9, y = 59.1, f = "e" },
+					{ t = "accept", quest = 882, title = "Ishamuhale", npc = 3387, npcName = "Jorn Skyseer", map = 1440, x = 44.9, y = 59.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "home", text = "Camp Taurajo", f = "e" },
+				},
+			},
+			{
+				note = "Click Chen's Empty Keg",
+				goals = {
+					{ t = "collect", itemName = "Chen's Empty Keg", count = 1, map = 1440, x = 45.0, y = 62.2, f = "e" },
+					{ t = "accept", quest = 819, title = "Chen's Empty Keg", map = 1440, x = 45.0, y = 62.2, f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "collect", quest = 868, itemName = "Silithid Egg", count = 12, oi = 1, map = 1440, x = 45.1, y = 69.2, f = "e" },
@@ -67,6 +84,12 @@ do
 				goals = {
 					{ t = "turnin", quest = 843, title = "Gann's Reclamation", npc = 3341, npcName = "Gann Stonespire", map = 1440, x = 46.0, y = 79.1, f = "e" },
 					{ t = "accept", quest = 846, title = "Revenge of Gann (1)", npc = 3341, npcName = "Gann Stonespire", map = 1440, x = 46.0, y = 79.1, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Camp Taurajo|goto The Barrens,45.5,59.0,0.5|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{
@@ -201,6 +224,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Sun Rock Retreat|goto Stonetalon Mountains,47.5,62.1,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 6284, title = "Arachnophobia", npc = 11860, npcName = "Maggran Earthbinder", map = 1442, x = 47.2, y = 61.2, f = "e" },
 				},
@@ -302,6 +331,12 @@ do
 				goals = {
 					{ t = "turnin", quest = 4821, title = "Alien Egg", npc = 10539, npcName = "Hagar Lightninghoof", map = 1441, x = 44.6, y = 50.3, f = "e" },
 					{ t = "accept", quest = 4865, title = "Serpent Wild", npc = 10539, npcName = "Hagar Lightninghoof", map = 1441, x = 44.6, y = 50.3, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Camp Taurajo|goto The Barrens,45.5,59.0,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{

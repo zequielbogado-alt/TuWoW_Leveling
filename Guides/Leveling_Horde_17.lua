@@ -165,6 +165,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Splintertree Post|goto Ashenvale,73.9,60.7,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 824, title = "Je'neu of the Earthen Ring", npc = 12736, npcName = "Je'neu Sancrea", map = 1456, x = 11.6, y = 34.3, f = "e" },
 				},
@@ -224,6 +230,12 @@ do
 			{
 				goals = {
 					{ t = "turnin", quest = 6462, title = "Troll Charm", npc = 12721, npcName = "Mitsuwa", map = 1456, x = 11.7, y = 34.9, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Splintertree Post|goto Ashenvale,73.9,60.7,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{
@@ -347,6 +359,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Sun Rock Retreat|goto Stonetalon Mountains,47.5,62.1,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 5062, title = "Sacred Fire", npc = 4046, npcName = "Magatha Grimtotem", map = 1456, x = 69.9, y = 30.9, f = "e" },
 					{ t = "accept", quest = 5088, title = "Arikara", npc = 4046, npcName = "Magatha Grimtotem", map = 1456, x = 69.9, y = 30.9, f = "e" },
@@ -426,6 +444,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Freewind Post|goto Thousand Needles,46.0,51.4,2.0|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 1197, title = "The Sacred Flame (3)", npc = 4722, npcName = "Rau Cliffrunner", map = 1441, x = 46.1, y = 51.7, f = "e" },
 				},
@@ -441,6 +465,23 @@ do
 					{ t = "turnin", quest = 5147, title = "Wanted - Arnak Grimtotem", npc = 10537, npcName = "Cliffwatcher Longhorn", map = 1441, x = 45.6, y = 50.8, f = "e" },
 				},
 			},
+		},
+	})
+end
+
+do
+	Polestar.RegisterGuide({
+		id = "zygor/leveling/h-levels-25-30-part-2",
+		pack = "guides",
+		title = "Levels (25-30) (Parte 2/2)",
+		category = "Leveling",
+		faction = "Horde",
+		author = "TuWoW & Zygor",
+		minLevel = 25,
+		maxLevel = 30,
+		zone = 1456,
+		version = 1,
+		steps = {
 			{
 				goals = {
 					{ t = "turnin", quest = 1131, title = "Steelsnap", npc = 3441, npcName = "Melor Stonehoof", map = 1441, x = 61.5, y = 80.9, f = "e" },
@@ -465,24 +506,6 @@ do
 					{ t = "goto", map = 1441, x = 12.0, y = 18.8, f = "e" },
 				},
 			},
-		},
-	})
-end
-
-do
-	Polestar.RegisterGuide({
-		id = "zygor/leveling/h-levels-25-30-part-2",
-		pack = "guides",
-		title = "Levels (25-30) (Parte 2/2)",
-		category = "Leveling",
-		faction = "Horde",
-		next = "zygor/leveling/h-levels-30-35",
-		author = "TuWoW & Zygor",
-		minLevel = 25,
-		maxLevel = 30,
-		zone = 1456,
-		version = 1,
-		steps = {
 			{
 				goals = {
 					{ t = "collect", quest = 9433, itemName = "Thalanaar Moonwell Water", count = 1, oi = 1, map = 1441, x = 9.5, y = 18.7, f = "e" },

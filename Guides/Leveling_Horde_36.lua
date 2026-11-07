@@ -8,13 +8,23 @@ do
 		title = "Outland (66-68) (Parte 2/2)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-outland-68-70",
 		author = "TuWoW & Zygor",
 		minLevel = 66,
 		maxLevel = 68,
 		zone = 1952,
 		version = 1,
 		steps = {
+			{
+				goals = {
+					{ t = "kill", quest = 9849, target = "Minion of Gurok", count = 30, oi = 1, map = 1951, x = 27.9, y = 77.6, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Garadar|goto Nagrand,55.0,36.8,6|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "turnin", quest = 9916, title = "Bleeding Hollow Supply Crates", npc = 18300, npcName = "Elkay'gan the Mystic", map = 1951, x = 55.5, y = 37.6, f = "e" },
@@ -81,6 +91,12 @@ do
 					{ t = "turnin", quest = 9931, title = "Returning the Favor", npc = 18261, npcName = "Lantressor of the Blade", map = 1951, x = 73.8, y = 62.6, f = "e" },
 					{ t = "turnin", quest = 9932, title = "Body of Evidence", npc = 18261, npcName = "Lantressor of the Blade", map = 1951, x = 73.8, y = 62.6, f = "e" },
 					{ t = "accept", quest = 9934, title = "Message to Garadar", npc = 18261, npcName = "Lantressor of the Blade", map = 1951, x = 73.8, y = 62.6, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Garadar|goto Nagrand,55.0,36.8,6|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{

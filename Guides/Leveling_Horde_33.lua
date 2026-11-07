@@ -153,6 +153,12 @@ do
 				},
 			},
 			{
+				note = "Hearth to Zabra'jin|goto Zangarmarsh,31.7,49.8,4|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
 				goals = {
 					{ t = "turnin", quest = 9823, title = "Us or Them", npc = 18013, npcName = "Shadow Hunter Denjai", map = 1946, x = 30.7, y = 50.9, f = "e" },
 					{ t = "turnin", quest = 10118, title = "Message to the Daggerfen", npc = 18013, npcName = "Shadow Hunter Denjai", map = 1946, x = 30.7, y = 50.9, f = "e" },
@@ -476,12 +482,6 @@ do
 				goals = {
 					{ t = "turnin", quest = 10913, title = "An Improper Burial", npc = 22446, npcName = "Commander Ra'vaj", map = 1952, x = 31.0, y = 76.1, f = "e" },
 					{ t = "accept", quest = 10914, title = "A Hero Is Needed", npc = 22446, npcName = "Commander Ra'vaj", map = 1952, x = 31.0, y = 76.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", quest = 10914, target = "Auchenai Initiate", count = 12, oi = 1, map = 1952, x = 36.7, y = 74.4, f = "e" },
-					{ t = "kill", quest = 10914, target = "Auchenai Doomsayer", count = 5, oi = 2, map = 1952, x = 36.7, y = 74.4, f = "e" },
 				},
 			},
 		},

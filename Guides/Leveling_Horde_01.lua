@@ -322,7 +322,7 @@ do
 			{
 				note = "Hearth to Brill,0.1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "goto", map = 1420, x = 61.8, y = 52.1, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 1420, x = 61.8, y = 52.1, f = "e" },
 				},
 			},
 			{
@@ -463,7 +463,7 @@ do
 			{
 				note = "Hearth to Brill,0.5|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "goto", map = 1420, x = 61.8, y = 52.1, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 1420, x = 61.8, y = 52.1, f = "e" },
 				},
 			},
 			{
