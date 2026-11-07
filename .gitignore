@@ -13,4 +13,6 @@ Desktop.ini
 *.tmp
 *.bak
 *~
+dist/
+*.zip
 

@@ -1,9 +1,14 @@
 # 🌟 TuWoW Leveling
 ### Asistente Integral de Leveo, Mazmorras, Raros y Codex para TuWoW (3.3.5a)
 
-![Versión](https://img.shields.io/badge/Versi%C3%B3n-1.0.0-gold?style=for-the-badge)
-![Cliente](https://img.shields.io/badge/Cliente-TuWoW%203.3.5a-00ccff?style=for-the-badge)
-![Idioma](https://img.shields.io/badge/Idioma-Espa%C3%B1ol%20%7C%20English-green?style=for-the-badge)
+[![Descargar Addon](https://img.shields.io/badge/DESCARGAR_ADDON_AQUÍ_(ZIP)-v1.0.0-ffcc00?style=for-the-badge&logo=curseforge&logoColor=black)](https://github.com/zequielbogado-alt/TuWoW_Leveling/releases/download/v1.0.0/TuWoW_Leveling.zip)
+[![Releases](https://img.shields.io/badge/Ver_Releases-GitHub-00ccff?style=for-the-badge&logo=github)](https://github.com/zequielbogado-alt/TuWoW_Leveling/releases/latest)
+![Cliente](https://img.shields.io/badge/Cliente-TuWoW%203.3.5a-green?style=for-the-badge)
+
+> ### ⚡ **[📥 ¡HAZ CLIC AQUÍ PARA DESCARGAR TuWoW_Leveling.zip!](https://github.com/zequielbogado-alt/TuWoW_Leveling/releases/download/v1.0.0/TuWoW_Leveling.zip)**
+> *¡Paquete oficial limpio y optimizado, listo para extraer en tu carpeta `Interface/AddOns` y jugar!*
+
+---
 
 **TuWoW Leveling** es el complemento definitivo de aventuras diseñado a medida para los jugadores del servidor **TuWoW**. Reúne en una sola interfaz moderna, cinematográfica y ligera todo lo que necesitas para subir de nivel de forma óptima, encontrar cada misión, explorar mazmorras sin perderte nada y cazar criaturas raras por todo Azeroth.
 
@@ -91,21 +96,22 @@ Puedes escribir cualquiera de los siguientes comandos en el chat del juego:
 
 ---
 
-## 📦 Instrucciones de Instalación
+## 📦 Instrucciones de Instalación Rápida
 
-1. Descarga la versión más reciente del addon haciendo clic en el botón verde **Code** $\rightarrow$ **Download ZIP**.
-2. Abre tu explorador de archivos y dirígete a la carpeta de tu juego:
+1. **Descarga el archivo ZIP:**
+   👉 **[Descargar TuWoW_Leveling.zip (v1.0.0)](https://github.com/zequielbogado-alt/TuWoW_Leveling/releases/download/v1.0.0/TuWoW_Leveling.zip)**
+2. **Descomprime:**
+   Abre el archivo descargado y extrae la carpeta `TuWoW_Leveling` directamente dentro de:
    ```text
    TuWoW-Client/Interface/AddOns/
    ```
-3. Extrae el contenido del archivo ZIP dentro de la carpeta `AddOns`.
-4. **Importante:** Asegúrate de que la carpeta se llame exactamente:
+3. **Verifica la ruta:**
+   Asegúrate de que la estructura final de carpetas quede así:
    ```text
-   TuWoW_Leveling
+   TuWoW-Client/Interface/AddOns/TuWoW_Leveling/TuWoW_Leveling.toc
    ```
-   *(Evita carpetas duplicadas como `TuWoW_Leveling-main/TuWoW_Leveling`).*
-5. Inicia el juego o escribe `/reload` si ya tenías el cliente abierto.
-6. En la pantalla de selección de personajes, haz clic en el botón **Accesorios** (abajo a la izquierda) y confirma que **TuWoW Leveling** esté marcado. ¡Y listo a disfrutar de la aventura!
+4. **¡A jugar!**
+   Inicia el juego (o escribe `/reload` si ya lo tenías abierto), confirma en la pantalla de personajes que **TuWoW Leveling** esté marcado en el menú **Accesorios** y ¡disfruta de la mejor experiencia de leveo!
 
 ---
 
