@@ -109,14 +109,14 @@ do
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 13105, title = "Once More Unto The Breach, Hero", npc = 30677, npcName = "Highlord Tirion Fordring", map = 118, x = 86.0, y = 75.8, f = "e" },
-					{ t = "accept", quest = 13104, title = "Once More Unto The Breach, Hero", npc = 30677, npcName = "Highlord Tirion Fordring", map = 118, x = 86.0, y = 75.8, f = "e" },
+					{ t = "accept", quest = 13105, title = "Once More Unto The Breach, Hero", npc = 30677, npcName = "Highlord Tirion Fordring", map = 118, x = 86.0, y = 75.8, f = "e", only = { classes = { "DEATHKNIGHT" } } },
+					{ t = "accept", quest = 13104, title = "Once More Unto The Breach, Hero", npc = 30677, npcName = "Highlord Tirion Fordring", map = 118, x = 86.0, y = 75.8, f = "e", only = { classes = { "DEATHKNIGHT" } } },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 13105, title = "Once More Unto The Breach, Hero", npc = 30596, npcName = "The Ebon Watcher", map = 118, x = 83.0, y = 72.9, f = "e" },
-					{ t = "turnin", quest = 13104, title = "Once More Unto The Breach, Hero", npc = 30596, npcName = "The Ebon Watcher", map = 118, x = 83.0, y = 72.9, f = "e" },
+					{ t = "turnin", quest = 13105, title = "Once More Unto The Breach, Hero", npc = 30596, npcName = "The Ebon Watcher", map = 118, x = 83.0, y = 72.9, f = "e", only = { classes = { "DEATHKNIGHT" } } },
+					{ t = "turnin", quest = 13104, title = "Once More Unto The Breach, Hero", npc = 30596, npcName = "The Ebon Watcher", map = 118, x = 83.0, y = 72.9, f = "e", only = { classes = { "DEATHKNIGHT" } } },
 					{ t = "accept", quest = 13118, title = "The Purging Of Scourgeholme", npc = 30596, npcName = "The Ebon Watcher", map = 118, x = 83.0, y = 72.9, f = "e" },
 					{ t = "accept", quest = 13122, title = "The Scourgestone", npc = 30596, npcName = "The Ebon Watcher", map = 118, x = 83.0, y = 72.9, f = "e" },
 				},

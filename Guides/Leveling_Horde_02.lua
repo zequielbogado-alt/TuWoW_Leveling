@@ -9,118 +9,12 @@ do
 		category = "Leveling",
 		faction = "Horde",
 		author = "TuWoW & Zygor",
-		minLevel = 9,
+		minLevel = 10,
 		maxLevel = 13,
 		zone = 1420,
 		version = 1,
 		races = { "Scourge" },
 		steps = {
-			{
-				goals = {
-					{ t = "level", level = 10, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 356, title = "Rear Guard Patrol", npc = 1495, npcName = "Deathguard Linnea", map = 1420, x = 65.6, y = 60.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 360, title = "Return to the Magistrate", npc = 1499, npcName = "Magistrate Sevren", map = 1420, x = 61.3, y = 50.8, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Scourge" }, classes = { "WARRIOR" } },
-				goals = {
-					{ t = "accept", quest = 1818, title = "Speak with Dillinger", npc = 2131, npcName = "Austil de Mon", map = 1420, x = 61.9, y = 52.5, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Scourge" }, classes = { "WARRIOR" } },
-				goals = {
-					{ t = "turnin", quest = 1818, title = "Speak with Dillinger", npc = 1496, npcName = "Deathguard Dillinger", map = 1420, x = 58.2, y = 51.4, f = "e" },
-					{ t = "accept", quest = 1819, title = "Ulag the Cleaver", npc = 1496, npcName = "Deathguard Dillinger", map = 1420, x = 58.2, y = 51.4, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Scourge" }, classes = { "WARRIOR" } },
-				goals = {
-					{ t = "kill", quest = 1819, target = "Ulag the Cleaver", count = 1, oi = 1, map = 1420, x = 59.2, y = 48.5, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Scourge" }, classes = { "WARRIOR" } },
-				goals = {
-					{ t = "turnin", quest = 1819, title = "Ulag the Cleaver", npc = 1496, npcName = "Deathguard Dillinger", map = 1420, x = 58.2, y = 51.4, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Scourge" }, classes = { "WARLOCK" } },
-				goals = {
-					{ t = "accept", quest = 1478, title = "Halgar's Summons", npc = 5724, npcName = "Ageron Kargal", map = 1420, x = 61.6, y = 52.7, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Scourge" }, classes = { "WARLOCK" } },
-				goals = {
-					{ t = "turnin", quest = 1478, title = "Halgar's Summons", npc = 5675, npcName = "Carendin Halgar", map = 1458, x = 85.1, y = 26.0, f = "e" },
-					{ t = "accept", quest = 1473, title = "Creature of the Void", npc = 5675, npcName = "Carendin Halgar", map = 1458, x = 85.1, y = 26.0, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Scourge" }, classes = { "WARLOCK" } },
-				goals = {
-					{ t = "collect", quest = 1473, itemName = "Egalin's Grimoire", count = 1, oi = 1, map = 1420, x = 51.1, y = 67.6, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Scourge" }, classes = { "WARLOCK" } },
-				goals = {
-					{ t = "turnin", quest = 1473, title = "Creature of the Void", npc = 5675, npcName = "Carendin Halgar", map = 1458, x = 85.1, y = 26.0, f = "e" },
-					{ t = "accept", quest = 1471, title = "The Binding", npc = 5675, npcName = "Carendin Halgar", map = 1458, x = 85.1, y = 26.0, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Scourge" }, classes = { "WARLOCK" } },
-				goals = {
-					{ t = "kill", quest = 1471, target = "Summoned Voidwalker", count = 1, oi = 1, map = 1458, x = 86.6, y = 27.1, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Scourge" }, classes = { "WARLOCK" } },
-				goals = {
-					{ t = "turnin", quest = 1471, title = "The Binding", npc = 5675, npcName = "Carendin Halgar", map = 1458, x = 85.1, y = 26.0, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", quest = 370, target = "Captain Perrine", count = 1, oi = 1, map = 1458, x = 51.1, y = 67.9, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", quest = 370, target = "Scarlet Zealot", count = 3, oi = 2, map = 1458, x = 53.1, y = 65.8, f = "e" },
-					{ t = "kill", quest = 370, target = "Scarlet Missionary", count = 3, oi = 3, map = 1458, x = 53.1, y = 65.8, f = "e" },
-					{ t = "collect", quest = 374, itemName = "Scarlet Insignia Ring", count = 10, oi = 1, map = 1458, x = 53.1, y = 65.8, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 370, title = "At War With The Scarlet Crusade (2)", npc = 1515, npcName = "Executor Zygand", map = 1458, x = 60.6, y = 51.8, f = "e" },
-					{ t = "accept", quest = 371, title = "At War With The Scarlet Crusade (3)", npc = 1515, npcName = "Executor Zygand", map = 1458, x = 60.6, y = 51.8, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 374, title = "Proof of Demise", npc = 1652, npcName = "Deathguard Burgess", map = 1458, x = 60.9, y = 52.0, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", quest = 371, target = "Scarlet Friar", count = 5, oi = 2, map = 1458, x = 76.2, y = 54.3, f = "e" },
-				},
-			},
 			{
 				goals = {
 					{ t = "kill", quest = 371, target = "Captain Vachon", count = 1, oi = 1, map = 1458, x = 78.8, y = 56.0, f = "e" },

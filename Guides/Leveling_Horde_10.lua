@@ -17,34 +17,6 @@ do
 		steps = {
 			{
 				goals = {
-					{ t = "turnin", quest = 9358, title = "Ranger Sareyn", npc = 15942, npcName = "Ranger Sareyn", map = 1944, x = 46.9, y = 71.8, f = "e" },
-					{ t = "accept", quest = 9252, title = "Defending Fairbreeze Village", npc = 15942, npcName = "Ranger Sareyn", map = 1944, x = 46.9, y = 71.8, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", quest = 9252, target = "Rotlimb Marauder", count = 4, oi = 1, map = 1944, x = 50.7, y = 75.5, f = "e" },
-					{ t = "kill", quest = 9252, target = "Darkwraith", count = 4, oi = 2, map = 1944, x = 50.7, y = 75.5, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 9252, title = "Defending Fairbreeze Village", npc = 15942, npcName = "Ranger Sareyn", map = 1944, x = 46.9, y = 71.8, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 9255, title = "Research Notes", npc = 16210, npcName = "Magistrix Landra Dawnstrider", map = 1944, x = 44.0, y = 70.8, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 9395, title = "Saltheril's Haven", npc = 16144, npcName = "Lord Saltheril", map = 1944, x = 38.1, y = 73.6, f = "e" },
-					{ t = "accept", quest = 9067, title = "The Party Never Ends", npc = 16144, npcName = "Lord Saltheril", map = 1944, x = 38.1, y = 73.6, f = "e" },
-				},
-			},
-			{
-				goals = {
 					{ t = "kill", quest = 8892, target = "Wretched Thug", count = 5, oi = 1, map = 1944, x = 33.5, y = 71.6, f = "e" },
 					{ t = "kill", quest = 8892, target = "Wretched Hooligan", count = 5, oi = 2, map = 1944, x = 33.5, y = 71.6, f = "e" },
 				},
@@ -91,79 +63,24 @@ do
 				},
 			},
 			{
-				only = { races = { "BloodElf" }, classes = { "WARLOCK" } },
+				only = { races = { "BloodElf" } },
 				goals = {
 					{ t = "accept", quest = 9529, title = "The Stone", npc = 16647, npcName = "Talionia", map = 1948, x = 74.4, y = 47.1, f = "e" },
-				},
-			},
-			{
-				only = { races = { "BloodElf" }, classes = { "WARLOCK" } },
-				goals = {
 					{ t = "turnin", quest = 9529, title = "The Stone", map = 1943, x = 43.8, y = 15.6, f = "e" },
 					{ t = "accept", quest = 9619, title = "The Rune of Summoning", map = 1943, x = 43.8, y = 15.6, f = "e" },
-				},
-			},
-			{
-				only = { races = { "BloodElf" }, classes = { "WARLOCK" } },
-				goals = {
 					{ t = "kill", quest = 9619, target = "Summoned Voidwalker", count = 1, oi = 1, map = 1943, x = 27.0, y = 15.2, f = "e" },
-				},
-			},
-			{
-				only = { races = { "BloodElf" }, classes = { "WARLOCK" } },
-				goals = {
 					{ t = "turnin", quest = 9619, title = "The Rune of Summoning", npc = 16647, npcName = "Talionia", map = 1948, x = 74.4, y = 47.1, f = "e" },
-				},
-			},
-			{
-				only = { races = { "BloodElf" }, classes = { "HUNTER" } },
-				goals = {
 					{ t = "accept", quest = 9484, title = "Taming the Beast (1)", npc = 15399, npcName = "Lieutenant Dawnrunner", map = 1944, x = 60.3, y = 62.8, f = "e" },
-				},
-			},
-			{
-				only = { races = { "BloodElf" }, classes = { "HUNTER" } },
-				goals = {
-					{ t = "goto", map = 1944, x = 61.2, y = 65.5, f = "e" },
-				},
-			},
-			{
-				only = { races = { "BloodElf" }, classes = { "HUNTER" } },
-				goals = {
 					{ t = "turnin", quest = 9484, title = "Taming the Beast (1)", npc = 15399, npcName = "Lieutenant Dawnrunner", map = 1944, x = 60.3, y = 62.8, f = "e" },
 					{ t = "accept", quest = 9486, title = "Taming the Beast (2)", npc = 15399, npcName = "Lieutenant Dawnrunner", map = 1944, x = 60.3, y = 62.8, f = "e" },
-				},
-			},
-			{
-				only = { races = { "BloodElf" }, classes = { "HUNTER" } },
-				goals = {
-					{ t = "goto", map = 1944, x = 64.7, y = 60.9, f = "e" },
-				},
-			},
-			{
-				only = { races = { "BloodElf" }, classes = { "HUNTER" } },
-				goals = {
 					{ t = "turnin", quest = 9486, title = "Taming the Beast (2)", npc = 15399, npcName = "Lieutenant Dawnrunner", map = 1944, x = 60.3, y = 62.8, f = "e" },
 					{ t = "accept", quest = 9485, title = "Taming the Beast (3)", npc = 15399, npcName = "Lieutenant Dawnrunner", map = 1944, x = 60.3, y = 62.8, f = "e" },
-				},
-			},
-			{
-				only = { races = { "BloodElf" }, classes = { "HUNTER" } },
-				goals = {
-					{ t = "goto", map = 1943, x = 51.0, y = 15.2, f = "e" },
-				},
-			},
-			{
-				only = { races = { "BloodElf" }, classes = { "HUNTER" } },
-				goals = {
 					{ t = "turnin", quest = 9485, title = "Taming the Beast (3)", npc = 15399, npcName = "Lieutenant Dawnrunner", map = 1944, x = 60.3, y = 62.8, f = "e" },
 					{ t = "accept", quest = 9673, title = "Beast Training", npc = 15399, npcName = "Lieutenant Dawnrunner", map = 1944, x = 60.3, y = 62.8, f = "e" },
-				},
-			},
-			{
-				only = { races = { "BloodElf" }, classes = { "HUNTER" } },
-				goals = {
 					{ t = "turnin", quest = 9673, title = "Beast Training", npc = 16675, npcName = "Halthenis", map = 1948, x = 82.2, y = 28.1, f = "e" },
+					{ t = "goto", map = 1944, x = 61.2, y = 65.5, f = "e", only = { classes = { "HUNTER" } } },
+					{ t = "goto", map = 1944, x = 64.7, y = 60.9, f = "e", only = { classes = { "HUNTER" } } },
+					{ t = "goto", map = 1943, x = 51.0, y = 15.2, f = "e", only = { classes = { "HUNTER" } } },
 				},
 			},
 			{

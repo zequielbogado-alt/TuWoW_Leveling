@@ -32,11 +32,11 @@ do
 			{
 				goals = {
 					{ t = "turnin", quest = 13680, title = "The Aspirant's Challenge", npc = 33542, npcName = "Magister Edien Sunhollow", map = 118, x = 76.3, y = 24.4, f = "e" },
-					{ t = "accept", quest = 13691, title = "A Valiant Of Orgrimmar", npc = 33542, npcName = "Magister Edien Sunhollow", map = 118, x = 76.3, y = 24.4, f = "e" },
-					{ t = "accept", quest = 13693, title = "A Valiant Of Sen'jin", npc = 33542, npcName = "Magister Edien Sunhollow", map = 118, x = 76.3, y = 24.4, f = "e" },
-					{ t = "accept", quest = 13694, title = "A Valiant Of Thunder Bluff", npc = 33542, npcName = "Magister Edien Sunhollow", map = 118, x = 76.3, y = 24.4, f = "e" },
-					{ t = "accept", quest = 13695, title = "A Valiant Of Undercity", npc = 33542, npcName = "Magister Edien Sunhollow", map = 118, x = 76.3, y = 24.4, f = "e" },
-					{ t = "accept", quest = 13696, title = "A Valiant Of Silvermoon", npc = 33542, npcName = "Magister Edien Sunhollow", map = 118, x = 76.3, y = 24.4, f = "e" },
+					{ t = "accept", quest = 13691, title = "A Valiant Of Orgrimmar", npc = 33542, npcName = "Magister Edien Sunhollow", map = 118, x = 76.3, y = 24.4, f = "e", only = { races = { "Orc" } } },
+					{ t = "accept", quest = 13693, title = "A Valiant Of Sen'jin", npc = 33542, npcName = "Magister Edien Sunhollow", map = 118, x = 76.3, y = 24.4, f = "e", only = { races = { "Troll" } } },
+					{ t = "accept", quest = 13694, title = "A Valiant Of Thunder Bluff", npc = 33542, npcName = "Magister Edien Sunhollow", map = 118, x = 76.3, y = 24.4, f = "e", only = { races = { "Tauren" } } },
+					{ t = "accept", quest = 13695, title = "A Valiant Of Undercity", npc = 33542, npcName = "Magister Edien Sunhollow", map = 118, x = 76.3, y = 24.4, f = "e", only = { races = { "Scourge" } } },
+					{ t = "accept", quest = 13696, title = "A Valiant Of Silvermoon", npc = 33542, npcName = "Magister Edien Sunhollow", map = 118, x = 76.3, y = 24.4, f = "e", only = { races = { "BloodElf" } } },
 				},
 			},
 			{

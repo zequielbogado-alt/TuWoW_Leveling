@@ -16,47 +16,6 @@ do
 		races = { "Gnome" },
 		steps = {
 			{
-				note = "Ride the tram to Stormwind City|goto Stormwind City|noway|c",
-				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
-				goals = {
-					{ t = "goto", map = 1455, x = 76.9, y = 51.2, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
-				goals = {
-					{ t = "turnin", quest = 1715, title = "The Slaughtered Lamb", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.2, y = 85.3, f = "e" },
-					{ t = "accept", quest = 1688, title = "Surena Caledon", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.2, y = 85.3, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
-				goals = {
-					{ t = "collect", quest = 1688, itemName = "Surena's Choker", count = 1, oi = 1, map = 1429, x = 71.0, y = 80.8, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
-				goals = {
-					{ t = "turnin", quest = 1688, title = "Surena Caledon", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.2, y = 85.3, f = "e" },
-					{ t = "accept", quest = 1689, title = "The Binding", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.2, y = 85.3, f = "e" },
-				},
-			},
-			{
-				note = "Go downstairs into the catacombs to 39.1,84.3",
-				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
-				goals = {
-					{ t = "kill", quest = 1689, target = "Summoned Voidwalker", count = 1, oi = 1, map = 1453, x = 39.1, y = 84.3, f = "e" },
-				},
-			},
-			{
-				note = "Go upstairs to 39.2,85.3",
-				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
-				goals = {
-					{ t = "turnin", quest = 1689, title = "The Binding", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.2, y = 85.3, f = "e" },
-				},
-			},
-			{
 				note = "Ride the train to Ironforge|goto Ironforge|noway|c",
 				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
 				goals = {

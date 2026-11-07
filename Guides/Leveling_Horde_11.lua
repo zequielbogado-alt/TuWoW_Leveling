@@ -385,11 +385,11 @@ do
 			{
 				goals = {
 					{ t = "turnin", quest = 12738, title = "A Cry For Vengeance!", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e" },
-					{ t = "accept", quest = 12739, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e" },
-					{ t = "accept", quest = 12747, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e" },
-					{ t = "accept", quest = 12748, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e" },
-					{ t = "accept", quest = 12749, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e" },
-					{ t = "accept", quest = 12750, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e" },
+					{ t = "accept", quest = 12739, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e", only = { races = { "Tauren" } } },
+					{ t = "accept", quest = 12747, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e", only = { races = { "BloodElf" } } },
+					{ t = "accept", quest = 12748, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e", only = { races = { "Orc" } } },
+					{ t = "accept", quest = 12749, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e", only = { races = { "Troll" } } },
+					{ t = "accept", quest = 12750, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e", only = { races = { "Scourge" } } },
 				},
 			},
 			{
@@ -424,11 +424,11 @@ do
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12739, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e" },
-					{ t = "turnin", quest = 12747, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e" },
-					{ t = "turnin", quest = 12748, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e" },
-					{ t = "turnin", quest = 12749, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e" },
-					{ t = "turnin", quest = 12750, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e" },
+					{ t = "turnin", quest = 12739, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e", only = { races = { "Tauren" } } },
+					{ t = "turnin", quest = 12747, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e", only = { races = { "BloodElf" } } },
+					{ t = "turnin", quest = 12748, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e", only = { races = { "Orc" } } },
+					{ t = "turnin", quest = 12749, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e", only = { races = { "Troll" } } },
+					{ t = "turnin", quest = 12750, title = "A Special Surprise", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e", only = { races = { "Scourge" } } },
 					{ t = "accept", quest = 12751, title = "A Sort Of Homecoming", npc = 29053, npcName = "Knight Commander Plaguefist", map = 1423, x = 52.9, y = 81.5, f = "e" },
 				},
 			},

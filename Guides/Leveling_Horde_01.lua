@@ -39,77 +39,20 @@ do
 				},
 			},
 			{
-				only = { races = { "Scourge" }, classes = { "WARRIOR" } },
+				only = { races = { "Scourge" } },
 				goals = {
 					{ t = "turnin", quest = 364, title = "The Mindless Ones", npc = 1569, npcName = "Shadow Priest Sarvis", map = 1420, x = 30.8, y = 66.2, f = "e" },
 					{ t = "accept", quest = 3901, title = "Rattling the Rattlecages", npc = 1569, npcName = "Shadow Priest Sarvis", map = 1420, x = 30.8, y = 66.2, f = "e" },
 					{ t = "accept", quest = 3095, title = "Simple Scroll", npc = 1569, npcName = "Shadow Priest Sarvis", map = 1420, x = 30.8, y = 66.2, f = "e" },
 					{ t = "accept", quest = 376, title = "The Damned", npc = 1661, npcName = "Novice Elreth", map = 1420, x = 30.8, y = 66.2, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Scourge" }, classes = { "WARLOCK" } },
-				goals = {
-					{ t = "turnin", quest = 364, title = "The Mindless Ones", npc = 1569, npcName = "Shadow Priest Sarvis", map = 1420, x = 30.8, y = 66.2, f = "e" },
-					{ t = "accept", quest = 3901, title = "Rattling the Rattlecages", npc = 1569, npcName = "Shadow Priest Sarvis", map = 1420, x = 30.8, y = 66.2, f = "e" },
 					{ t = "accept", quest = 3099, title = "Tainted Scroll", npc = 1569, npcName = "Shadow Priest Sarvis", map = 1420, x = 30.8, y = 66.2, f = "e" },
-					{ t = "accept", quest = 376, title = "The Damned", npc = 1661, npcName = "Novice Elreth", map = 1420, x = 30.8, y = 66.2, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Scourge" }, classes = { "ROGUE" } },
-				goals = {
-					{ t = "turnin", quest = 364, title = "The Mindless Ones", npc = 1569, npcName = "Shadow Priest Sarvis", map = 1420, x = 30.8, y = 66.2, f = "e" },
-					{ t = "accept", quest = 3901, title = "Rattling the Rattlecages", npc = 1569, npcName = "Shadow Priest Sarvis", map = 1420, x = 30.8, y = 66.2, f = "e" },
 					{ t = "accept", quest = 3096, title = "Encrypted Scroll", npc = 1569, npcName = "Shadow Priest Sarvis", map = 1420, x = 30.8, y = 66.2, f = "e" },
-					{ t = "accept", quest = 376, title = "The Damned", npc = 1661, npcName = "Novice Elreth", map = 1420, x = 30.8, y = 66.2, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Scourge" }, classes = { "WARLOCK" } },
-				goals = {
 					{ t = "turnin", quest = 3099, title = "Tainted Scroll", npc = 2126, npcName = "Maximillion", map = 1420, x = 30.9, y = 66.3, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Scourge" }, classes = { "PRIEST" } },
-				goals = {
-					{ t = "turnin", quest = 364, title = "The Mindless Ones", npc = 1569, npcName = "Shadow Priest Sarvis", map = 1420, x = 30.8, y = 66.2, f = "e" },
-					{ t = "accept", quest = 3901, title = "Rattling the Rattlecages", npc = 1569, npcName = "Shadow Priest Sarvis", map = 1420, x = 30.8, y = 66.2, f = "e" },
 					{ t = "accept", quest = 3097, title = "Hallowed Scroll", npc = 1569, npcName = "Shadow Priest Sarvis", map = 1420, x = 30.8, y = 66.2, f = "e" },
-					{ t = "accept", quest = 376, title = "The Damned", npc = 1661, npcName = "Novice Elreth", map = 1420, x = 30.8, y = 66.2, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Scourge" }, classes = { "MAGE" } },
-				goals = {
-					{ t = "turnin", quest = 364, title = "The Mindless Ones", npc = 1569, npcName = "Shadow Priest Sarvis", map = 1420, x = 30.8, y = 66.2, f = "e" },
-					{ t = "accept", quest = 3901, title = "Rattling the Rattlecages", npc = 1569, npcName = "Shadow Priest Sarvis", map = 1420, x = 30.8, y = 66.2, f = "e" },
-					{ t = "accept", quest = 376, title = "The Damned", npc = 1661, npcName = "Novice Elreth", map = 1420, x = 30.8, y = 66.2, f = "e" },
 					{ t = "accept", quest = 3098, title = "Glyphic Scroll", npc = 1661, npcName = "Novice Elreth", map = 1420, x = 30.8, y = 66.2, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Scourge" }, classes = { "WARRIOR" } },
-				goals = {
 					{ t = "turnin", quest = 3095, title = "Simple Scroll", npc = 2119, npcName = "Dannal Stern", map = 1420, x = 32.7, y = 65.6, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Scourge" }, classes = { "ROGUE" } },
-				goals = {
 					{ t = "turnin", quest = 3096, title = "Encrypted Scroll", npc = 2122, npcName = "David Trias", map = 1420, x = 32.5, y = 65.7, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Scourge" }, classes = { "PRIEST" } },
-				goals = {
 					{ t = "turnin", quest = 3097, title = "Hallowed Scroll", npc = 2123, npcName = "Dark Cleric Duesten", map = 1420, x = 31.1, y = 66.0, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Scourge" }, classes = { "MAGE" } },
-				goals = {
 					{ t = "turnin", quest = 3098, title = "Glyphic Scroll", npc = 2124, npcName = "Isabella", map = 1420, x = 30.9, y = 66.1, f = "e" },
 				},
 			},
@@ -494,6 +437,67 @@ do
 				goals = {
 					{ t = "kill", quest = 356, target = "Bleeding Horror", count = 8, oi = 1, map = 1420, x = 74.7, y = 61.5, f = "e" },
 					{ t = "kill", quest = 356, target = "Wandering Spirit", count = 8, oi = 2, map = 1420, x = 74.7, y = 61.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 10, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 356, title = "Rear Guard Patrol", npc = 1495, npcName = "Deathguard Linnea", map = 1420, x = 65.6, y = 60.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 360, title = "Return to the Magistrate", npc = 1499, npcName = "Magistrate Sevren", map = 1420, x = 61.3, y = 50.8, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Scourge" } },
+				goals = {
+					{ t = "accept", quest = 1818, title = "Speak with Dillinger", npc = 2131, npcName = "Austil de Mon", map = 1420, x = 61.9, y = 52.5, f = "e" },
+					{ t = "turnin", quest = 1818, title = "Speak with Dillinger", npc = 1496, npcName = "Deathguard Dillinger", map = 1420, x = 58.2, y = 51.4, f = "e" },
+					{ t = "accept", quest = 1819, title = "Ulag the Cleaver", npc = 1496, npcName = "Deathguard Dillinger", map = 1420, x = 58.2, y = 51.4, f = "e" },
+					{ t = "kill", quest = 1819, target = "Ulag the Cleaver", count = 1, oi = 1, map = 1420, x = 59.2, y = 48.5, f = "e" },
+					{ t = "turnin", quest = 1819, title = "Ulag the Cleaver", npc = 1496, npcName = "Deathguard Dillinger", map = 1420, x = 58.2, y = 51.4, f = "e" },
+					{ t = "accept", quest = 1478, title = "Halgar's Summons", npc = 5724, npcName = "Ageron Kargal", map = 1420, x = 61.6, y = 52.7, f = "e" },
+					{ t = "turnin", quest = 1478, title = "Halgar's Summons", npc = 5675, npcName = "Carendin Halgar", map = 1458, x = 85.1, y = 26.0, f = "e" },
+					{ t = "accept", quest = 1473, title = "Creature of the Void", npc = 5675, npcName = "Carendin Halgar", map = 1458, x = 85.1, y = 26.0, f = "e" },
+					{ t = "collect", quest = 1473, itemName = "Egalin's Grimoire", count = 1, oi = 1, map = 1420, x = 51.1, y = 67.6, f = "e" },
+					{ t = "turnin", quest = 1473, title = "Creature of the Void", npc = 5675, npcName = "Carendin Halgar", map = 1458, x = 85.1, y = 26.0, f = "e" },
+					{ t = "accept", quest = 1471, title = "The Binding", npc = 5675, npcName = "Carendin Halgar", map = 1458, x = 85.1, y = 26.0, f = "e" },
+					{ t = "kill", quest = 1471, target = "Summoned Voidwalker", count = 1, oi = 1, map = 1458, x = 86.6, y = 27.1, f = "e" },
+					{ t = "turnin", quest = 1471, title = "The Binding", npc = 5675, npcName = "Carendin Halgar", map = 1458, x = 85.1, y = 26.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 370, target = "Captain Perrine", count = 1, oi = 1, map = 1458, x = 51.1, y = 67.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 370, target = "Scarlet Zealot", count = 3, oi = 2, map = 1458, x = 53.1, y = 65.8, f = "e" },
+					{ t = "kill", quest = 370, target = "Scarlet Missionary", count = 3, oi = 3, map = 1458, x = 53.1, y = 65.8, f = "e" },
+					{ t = "collect", quest = 374, itemName = "Scarlet Insignia Ring", count = 10, oi = 1, map = 1458, x = 53.1, y = 65.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 370, title = "At War With The Scarlet Crusade (2)", npc = 1515, npcName = "Executor Zygand", map = 1458, x = 60.6, y = 51.8, f = "e" },
+					{ t = "accept", quest = 371, title = "At War With The Scarlet Crusade (3)", npc = 1515, npcName = "Executor Zygand", map = 1458, x = 60.6, y = 51.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 374, title = "Proof of Demise", npc = 1652, npcName = "Deathguard Burgess", map = 1458, x = 60.9, y = 52.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 371, target = "Scarlet Friar", count = 5, oi = 2, map = 1458, x = 76.2, y = 54.3, f = "e" },
 				},
 			},
 		},

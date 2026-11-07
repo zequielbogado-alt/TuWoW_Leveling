@@ -10,6 +10,7 @@ con coordenadas nativas 3.3.5a, las divide en partes de hasta 85 pasos y las exp
 en archivos modulares (< 750 líneas) en Guides/.
 """
 
+import copy
 import os
 import re
 from typing import Any, Dict, List, Optional, Set, Tuple
@@ -178,9 +179,26 @@ def parse_zygor_guide(full_title: str, body: str, faction: str, default_cat: str
         last_coords = None
         notes = []
 
+        def add_goal(g_item):
+            if inline_only:
+                g_item["only"] = copy.deepcopy(inline_only)
+            st_obj["goals"].append(g_item)
+
         for line in lines:
             if line.startswith("//"):
                 continue
+
+            inline_only = None
+            only_m = re.search(r'\|only\s+([^#\|]+)', line)
+            if only_m:
+                cond_in = only_m.group(1).strip().lower()
+                r_in = [r for k, r in RACES.items() if re.search(rf'\b{k}\b', cond_in)]
+                c_in = [c for k, c in CLASSES.items() if re.search(rf'\b{k}\b', cond_in)]
+                if r_in or c_in:
+                    inline_only = {}
+                    if r_in: inline_only["races"] = r_in
+                    if c_in: inline_only["classes"] = c_in
+
             if line.startswith("'") or line.startswith("tip "):
                 note_text = line[1:].strip() if line.startswith("'") else line[4:].strip()
                 gm = re.search(r'\|goto\s+([0-9\.]+),([0-9\.]+)', note_text)
@@ -193,7 +211,7 @@ def parse_zygor_guide(full_title: str, body: str, faction: str, default_cat: str
                     g = {"t": "use", "itemName": um.group(1).strip()}
                     if um.group(2): g["item"] = int(um.group(2))
                     if last_coords: g["map"], g["x"], g["y"] = last_coords
-                    st_obj["goals"].append(g)
+                    add_goal(g)
                 if note_text:
                     notes.append(note_text)
                 continue
@@ -234,7 +252,7 @@ def parse_zygor_guide(full_title: str, body: str, faction: str, default_cat: str
                 if last_npc: g["npcName"] = last_npc
                 if last_npc_id: g["npc"] = last_npc_id
                 if last_coords: g["map"], g["x"], g["y"] = last_coords
-                st_obj["goals"].append(g)
+                add_goal(g)
                 continue
 
             turnm = re.search(r'^\.?\.?turnin\s+([^#\|]+)(?:##(\d+))?', line)
@@ -245,7 +263,7 @@ def parse_zygor_guide(full_title: str, body: str, faction: str, default_cat: str
                 if last_npc: g["npcName"] = last_npc
                 if last_npc_id: g["npc"] = last_npc_id
                 if last_coords: g["map"], g["x"], g["y"] = last_coords
-                st_obj["goals"].append(g)
+                add_goal(g)
                 continue
 
             km = re.search(r'^\.?\.?kill\s+(?:(\d+)\s+)?([^#\|]+)(?:##(\d+))?(?:\|q\s+(\d+)(?:/(\d+))?)?', line)
@@ -260,7 +278,7 @@ def parse_zygor_guide(full_title: str, body: str, faction: str, default_cat: str
                 if qid: g["quest"] = qid
                 if oi: g["oi"] = oi
                 if last_coords: g["map"], g["x"], g["y"] = last_coords
-                st_obj["goals"].append(g)
+                add_goal(g)
                 continue
 
             getm = re.search(r'^\.?\.?(?:get|collect)\s+(?:(\d+)\s+)?([^#\|]+)(?:##(\d+))?(?:\|q\s+(\d+)(?:/(\d+))?)?', line)
@@ -275,7 +293,7 @@ def parse_zygor_guide(full_title: str, body: str, faction: str, default_cat: str
                 if qid: g["quest"] = qid
                 if oi: g["oi"] = oi
                 if last_coords: g["map"], g["x"], g["y"] = last_coords
-                st_obj["goals"].append(g)
+                add_goal(g)
                 continue
 
             buym = re.search(r'^\.?\.?buy\s+(?:(\d+)\s+)?([^#\|]+)(?:##(\d+))?', line)
@@ -288,7 +306,7 @@ def parse_zygor_guide(full_title: str, body: str, faction: str, default_cat: str
                 if last_npc: g["npcName"] = last_npc
                 if last_npc_id: g["npc"] = last_npc_id
                 if last_coords: g["map"], g["x"], g["y"] = last_coords
-                st_obj["goals"].append(g)
+                add_goal(g)
                 continue
 
             usem = re.search(r'^\.?\.?use\s+([^#\|]+)(?:##(\d+))?', line)
@@ -298,7 +316,7 @@ def parse_zygor_guide(full_title: str, body: str, faction: str, default_cat: str
                 g = {"t": "use", "itemName": item_name}
                 if item_id: g["item"] = item_id
                 if last_coords: g["map"], g["x"], g["y"] = last_coords
-                st_obj["goals"].append(g)
+                add_goal(g)
                 continue
 
             clickm = re.search(r'^\.?\.?click\s+([^#\|]+)(?:##(\d+))?', line)
@@ -308,12 +326,12 @@ def parse_zygor_guide(full_title: str, body: str, faction: str, default_cat: str
                 g = {"t": "click", "objName": obj_name}
                 if obj_id: g["object"] = obj_id
                 if last_coords: g["map"], g["x"], g["y"] = last_coords
-                st_obj["goals"].append(g)
+                add_goal(g)
                 continue
 
             dm = re.search(r'^\.?\.?ding\s+(\d+)', line)
             if dm:
-                st_obj["goals"].append({"t": "level", "level": int(dm.group(1))})
+                add_goal({"t": "level", "level": int(dm.group(1))})
                 continue
 
             fm = re.search(r'^\.?\.?fpath\s+([^#\|]+)', line)
@@ -322,7 +340,7 @@ def parse_zygor_guide(full_title: str, body: str, faction: str, default_cat: str
                 g = {"t": "getfp", "location": loc, "text": loc}
                 mp = (last_coords and last_coords[0]) or current_map or guide.get("zone", 1411)
                 if last_coords: g["map"], g["x"], g["y"] = mp, last_coords[1], last_coords[2]
-                st_obj["goals"].append(g)
+                add_goal(g)
                 continue
 
             hm = re.search(r'^\.?\.?(?:home|hearth)\s*([^\n\r]*)', line)
@@ -332,7 +350,7 @@ def parse_zygor_guide(full_title: str, body: str, faction: str, default_cat: str
                 g = {"t": action, "location": loc, "text": loc}
                 mp = (last_coords and last_coords[0]) or current_map or guide.get("zone", 1411)
                 if last_coords: g["map"], g["x"], g["y"] = mp, last_coords[1], last_coords[2]
-                st_obj["goals"].append(g)
+                add_goal(g)
                 continue
 
         if not st_obj["goals"]:
@@ -342,10 +360,10 @@ def parse_zygor_guide(full_title: str, body: str, faction: str, default_cat: str
                 if last_coords:
                     mp = last_coords[0] or current_map or guide.get("zone", 1411)
                     g["map"], g["x"], g["y"] = mp, last_coords[1], last_coords[2]
-                st_obj["goals"].append(g)
+                add_goal(g)
             elif last_coords:
                 mp = last_coords[0] or current_map or guide.get("zone", 1411)
-                st_obj["goals"].append({"t": "goto", "map": mp, "x": last_coords[1], "y": last_coords[2]})
+                add_goal({"t": "goto", "map": mp, "x": last_coords[1], "y": last_coords[2]})
 
         if notes:
             st_obj["note"] = " ".join(notes)
@@ -358,6 +376,10 @@ def parse_zygor_guide(full_title: str, body: str, faction: str, default_cat: str
     if not guide["steps"]:
         return None
 
+    # Merge class split steps and enrich starter hubs
+    guide["steps"] = merge_class_steps(guide["steps"])
+    enrich_starter_hub_steps(guide)
+
     # Detectar primera zona de la guía
     for st in guide["steps"]:
         for gl in st["goals"]:
@@ -368,6 +390,198 @@ def parse_zygor_guide(full_title: str, body: str, faction: str, default_cat: str
             break
 
     return guide
+
+COLDRIDGE_ACCEPT_GOALS = [
+    {"t": "accept", "quest": 3114, "title": "Glyphic Memorandum", "npc": 658, "npcName": "Sten Stoutarm", "map": 1426, "x": 29.8, "y": 71.3, "f": "e", "only": {"classes": ["MAGE"]}},
+    {"t": "accept", "quest": 3112, "title": "Simple Memorandum", "npc": 658, "npcName": "Sten Stoutarm", "map": 1426, "x": 29.8, "y": 71.3, "f": "e", "only": {"classes": ["WARRIOR"]}},
+    {"t": "accept", "quest": 3115, "title": "Tainted Memorandum", "npc": 658, "npcName": "Sten Stoutarm", "map": 1426, "x": 29.8, "y": 71.3, "f": "e", "only": {"classes": ["WARLOCK"]}},
+    {"t": "accept", "quest": 3113, "title": "Encrypted Memorandum", "npc": 658, "npcName": "Sten Stoutarm", "map": 1426, "x": 29.8, "y": 71.3, "f": "e", "only": {"classes": ["ROGUE"]}},
+    {"t": "accept", "quest": 3108, "title": "Etched Rune", "npc": 658, "npcName": "Sten Stoutarm", "map": 1426, "x": 29.8, "y": 71.3, "f": "e", "only": {"classes": ["HUNTER"]}},
+    {"t": "accept", "quest": 3110, "title": "Hallowed Rune", "npc": 658, "npcName": "Sten Stoutarm", "map": 1426, "x": 29.8, "y": 71.3, "f": "e", "only": {"classes": ["PRIEST"]}},
+    {"t": "accept", "quest": 3107, "title": "Consecrated Rune", "npc": 658, "npcName": "Sten Stoutarm", "map": 1426, "x": 29.8, "y": 71.3, "f": "e", "only": {"classes": ["PALADIN"]}},
+]
+
+COLDRIDGE_TURNIN_GOALS = [
+    {"t": "turnin", "quest": 3114, "title": "Glyphic Memorandum", "npc": 944, "npcName": "Marryk Nurribit", "map": 1426, "x": 28.7, "y": 66.4, "f": "e", "only": {"classes": ["MAGE"]}},
+    {"t": "turnin", "quest": 3112, "title": "Simple Memorandum", "npc": 912, "npcName": "Thran Khorman", "map": 1426, "x": 28.8, "y": 67.2, "f": "e", "only": {"classes": ["WARRIOR"]}},
+    {"t": "turnin", "quest": 3106, "title": "Simple Rune", "npc": 912, "npcName": "Thran Khorman", "map": 1426, "x": 28.8, "y": 67.2, "f": "e", "only": {"classes": ["WARRIOR"]}},
+    {"t": "turnin", "quest": 3115, "title": "Tainted Memorandum", "npc": 460, "npcName": "Alamar Grimm", "map": 1426, "x": 28.7, "y": 66.1, "f": "e", "only": {"classes": ["WARLOCK"]}},
+    {"t": "turnin", "quest": 3113, "title": "Encrypted Memorandum", "npc": 916, "npcName": "Solm Hargrin", "map": 1426, "x": 28.4, "y": 67.5, "f": "e", "only": {"classes": ["ROGUE"]}},
+    {"t": "turnin", "quest": 3109, "title": "Encrypted Rune", "npc": 916, "npcName": "Solm Hargrin", "map": 1426, "x": 28.4, "y": 67.5, "f": "e", "only": {"classes": ["ROGUE"]}},
+    {"t": "turnin", "quest": 3108, "title": "Etched Rune", "npc": 895, "npcName": "Thorgas Grimson", "map": 1426, "x": 29.2, "y": 67.5, "f": "e", "only": {"classes": ["HUNTER"]}},
+    {"t": "turnin", "quest": 3110, "title": "Hallowed Rune", "npc": 837, "npcName": "Branstock Khalder", "map": 1426, "x": 28.6, "y": 66.4, "f": "e", "only": {"classes": ["PRIEST"]}},
+    {"t": "turnin", "quest": 3107, "title": "Consecrated Rune", "npc": 926, "npcName": "Bromos Grummner", "map": 1426, "x": 28.8, "y": 68.3, "f": "e", "only": {"classes": ["PALADIN"]}},
+]
+
+VALLEY_OF_TRIALS_ACCEPT_GOALS = [
+    {"t": "accept", "quest": 2383, "title": "Simple Parchment", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["WARRIOR"]}},
+    {"t": "accept", "quest": 3065, "title": "Simple Tablet", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["WARRIOR"]}},
+    {"t": "accept", "quest": 3088, "title": "Encrypted Parchment", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["ROGUE"]}},
+    {"t": "accept", "quest": 3083, "title": "Encrypted Tablet", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["ROGUE"]}},
+    {"t": "accept", "quest": 3087, "title": "Etched Parchment", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["HUNTER"]}},
+    {"t": "accept", "quest": 3082, "title": "Etched Tablet", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["HUNTER"]}},
+    {"t": "accept", "quest": 3089, "title": "Rune-Inscribed Parchment", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["SHAMAN"]}},
+    {"t": "accept", "quest": 3084, "title": "Rune-Inscribed Tablet", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["SHAMAN"]}},
+    {"t": "accept", "quest": 3090, "title": "Tainted Parchment", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["WARLOCK"]}},
+    {"t": "accept", "quest": 3086, "title": "Glyphic Tablet", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["MAGE"]}},
+    {"t": "accept", "quest": 3085, "title": "Hallowed Tablet", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["PRIEST"]}},
+]
+
+VALLEY_OF_TRIALS_TURNIN_GOALS = [
+    {"t": "turnin", "quest": 2383, "title": "Simple Parchment", "npc": 3169, "npcName": "Frang", "map": 1411, "x": 42.9, "y": 69.4, "f": "e", "only": {"classes": ["WARRIOR"]}},
+    {"t": "turnin", "quest": 3065, "title": "Simple Tablet", "npc": 3169, "npcName": "Frang", "map": 1411, "x": 42.9, "y": 69.4, "f": "e", "only": {"classes": ["WARRIOR"]}},
+    {"t": "turnin", "quest": 3088, "title": "Encrypted Parchment", "npc": 3170, "npcName": "Rwag", "map": 1411, "x": 42.4, "y": 69.1, "f": "e", "only": {"classes": ["ROGUE"]}},
+    {"t": "turnin", "quest": 3083, "title": "Encrypted Tablet", "npc": 3170, "npcName": "Rwag", "map": 1411, "x": 42.4, "y": 69.1, "f": "e", "only": {"classes": ["ROGUE"]}},
+    {"t": "turnin", "quest": 3087, "title": "Etched Parchment", "npc": 3171, "npcName": "Jen'shan", "map": 1411, "x": 42.7, "y": 69.1, "f": "e", "only": {"classes": ["HUNTER"]}},
+    {"t": "turnin", "quest": 3082, "title": "Etched Tablet", "npc": 3171, "npcName": "Jen'shan", "map": 1411, "x": 42.7, "y": 69.1, "f": "e", "only": {"classes": ["HUNTER"]}},
+    {"t": "turnin", "quest": 3089, "title": "Rune-Inscribed Parchment", "npc": 3173, "npcName": "Shikrik", "map": 1411, "x": 42.5, "y": 69.0, "f": "e", "only": {"classes": ["SHAMAN"]}},
+    {"t": "turnin", "quest": 3084, "title": "Rune-Inscribed Tablet", "npc": 3173, "npcName": "Shikrik", "map": 1411, "x": 42.5, "y": 69.0, "f": "e", "only": {"classes": ["SHAMAN"]}},
+    {"t": "turnin", "quest": 3090, "title": "Tainted Parchment", "npc": 3172, "npcName": "Nartok", "map": 1411, "x": 42.6, "y": 69.0, "f": "e", "only": {"classes": ["WARLOCK"]}},
+    {"t": "turnin", "quest": 3086, "title": "Glyphic Tablet", "npc": 5880, "npcName": "Mai'ah", "map": 1411, "x": 42.5, "y": 69.0, "f": "e", "only": {"classes": ["MAGE"]}},
+    {"t": "turnin", "quest": 3085, "title": "Hallowed Tablet", "npc": 3706, "npcName": "Tai'jin", "map": 1411, "x": 42.5, "y": 69.0, "f": "e", "only": {"classes": ["PRIEST"]}},
+]
+
+def enrich_coldridge_steps(steps: List[Dict[str, Any]]):
+    for st in steps:
+        has_179 = any(gl.get("quest") == 179 for gl in st.get("goals", []))
+        has_233 = any(gl.get("quest") == 233 for gl in st.get("goals", []))
+        if has_179 and has_233:
+            new_goals = []
+            for gl in st["goals"]:
+                if gl.get("quest") in (179, 233, 170):
+                    new_goals.append(gl)
+            for cg in COLDRIDGE_ACCEPT_GOALS:
+                new_goals.append(copy.deepcopy(cg))
+            st["goals"] = new_goals
+            if st.get("only") and "classes" in st["only"]:
+                del st["only"]["classes"]
+                if not st["only"]: del st["only"]
+
+        has_class_turnin = any(gl.get("quest") in (3114, 3112, 3106, 3115, 3113, 3109, 3108, 3110, 3107) for gl in st.get("goals", []))
+        is_only_turnins = all(gl.get("t") == "turnin" for gl in st.get("goals", []))
+        if has_class_turnin and is_only_turnins:
+            st["goals"] = [copy.deepcopy(cg) for cg in COLDRIDGE_TURNIN_GOALS]
+            if st.get("only") and "classes" in st["only"]:
+                del st["only"]["classes"]
+                if not st["only"]: del st["only"]
+
+def enrich_valley_of_trials_steps(steps: List[Dict[str, Any]]):
+    for st in steps:
+        has_788 = any(gl.get("quest") == 788 for gl in st.get("goals", []))
+        has_789 = any(gl.get("quest") == 789 for gl in st.get("goals", []))
+        if has_788 and has_789:
+            new_goals = []
+            for gl in st["goals"]:
+                if gl.get("quest") in (788, 789):
+                    new_goals.append(gl)
+            for vg in VALLEY_OF_TRIALS_ACCEPT_GOALS:
+                new_goals.append(copy.deepcopy(vg))
+            st["goals"] = new_goals
+            if st.get("only") and "classes" in st["only"]:
+                del st["only"]["classes"]
+                if not st["only"]: del st["only"]
+
+        has_vot_turnin = any(gl.get("quest") in (2383, 3065, 3088, 3083, 3087, 3082, 3089, 3084, 3090, 3086, 3085) for gl in st.get("goals", []))
+        is_only_turnins = all(gl.get("t") == "turnin" for gl in st.get("goals", []))
+        if has_vot_turnin and is_only_turnins:
+            st["goals"] = [copy.deepcopy(vg) for vg in VALLEY_OF_TRIALS_TURNIN_GOALS]
+            if st.get("only") and "classes" in st["only"]:
+                del st["only"]["classes"]
+                if not st["only"]: del st["only"]
+
+def enrich_starter_hub_steps(g: Dict[str, Any]):
+    steps = g.get("steps", [])
+    title = g.get("title", "").lower()
+    guide_id = g.get("id", "").lower()
+
+    is_coldridge = ("gnome" in title or "dwarf" in title or "gnome" in guide_id or "dwarf" in guide_id) and "1-13" in title
+    is_vot = ("orc" in title or "troll" in title or "orc" in guide_id or "troll" in guide_id) and "1-13" in title
+
+    if is_coldridge:
+        enrich_coldridge_steps(steps)
+    elif is_vot:
+        enrich_valley_of_trials_steps(steps)
+
+def merge_class_steps(steps: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    new_steps = []
+    i = 0
+    while i < len(steps):
+        st = steps[i]
+        st_classes = st.get("only", {}).get("classes")
+        if not st_classes:
+            new_steps.append(st)
+            i += 1
+            continue
+
+        # Look ahead for consecutive steps that have different classes
+        group = [st]
+        classes_seen = set(st_classes)
+        j = i + 1
+        while j < len(steps):
+            next_st = steps[j]
+            next_classes = next_st.get("only", {}).get("classes")
+            if not next_classes:
+                break
+            group.append(next_st)
+            classes_seen.update(next_classes)
+            j += 1
+
+        if len(classes_seen) <= 1 or len(group) == 1:
+            new_steps.append(st)
+            i += 1
+            continue
+
+        all_quest_ids = [gl.get("quest") for s in group for gl in s["goals"] if gl.get("quest")]
+        quest_counts = {}
+        for q in all_quest_ids:
+            quest_counts[q] = quest_counts.get(q, 0) + 1
+        
+        has_shared = any(c > 1 for c in quest_counts.values())
+        same_hub = all(len(s["goals"]) <= 2 for s in group)
+
+        if has_shared or same_hub:
+            merged_step: Dict[str, Any] = {"goals": []}
+            
+            common_races = group[0].get("only", {}).get("races")
+            if common_races:
+                all_have_races = all(s.get("only", {}).get("races") == common_races for s in group)
+                if all_have_races:
+                    merged_step.setdefault("only", {})["races"] = common_races
+
+            for s in group:
+                if s.get("along"): merged_step["along"] = True
+                if s.get("note") and not merged_step.get("note"):
+                    merged_step["note"] = s["note"]
+
+            seen_common_keys = set()
+            class_goals = []
+
+            for s in group:
+                s_cls = s.get("only", {}).get("classes", [])
+                for gl in s["goals"]:
+                    q = gl.get("quest")
+                    if q and quest_counts.get(q, 0) > 1:
+                        key = (gl.get("t"), q, gl.get("npc"), gl.get("target"), gl.get("itemName"), gl.get("oi"))
+                        if key not in seen_common_keys:
+                            seen_common_keys.add(key)
+                            gl_copy = copy.deepcopy(gl)
+                            if "only" in gl_copy and "classes" in gl_copy["only"]:
+                                del gl_copy["only"]["classes"]
+                                if not gl_copy["only"]: del gl_copy["only"]
+                            merged_step["goals"].append(gl_copy)
+                    else:
+                        gl_copy = copy.deepcopy(gl)
+                        gl_copy.setdefault("only", {})["classes"] = copy.deepcopy(s_cls)
+                        class_goals.append(gl_copy)
+
+            merged_step["goals"].extend(class_goals)
+            new_steps.append(merged_step)
+            i = j
+        else:
+            new_steps.append(st)
+            i += 1
+
+    return new_steps
 
 def format_goal_lua(g: Dict[str, Any], default_map: Optional[int] = None) -> str:
     if ("x" in g or "y" in g) and ("map" not in g or g["map"] is None):

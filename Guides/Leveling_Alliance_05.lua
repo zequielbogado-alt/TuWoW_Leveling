@@ -32,39 +32,18 @@ do
 				},
 			},
 			{
-				only = { races = { "Gnome" }, classes = { "MAGE" } },
+				only = { races = { "Gnome" } },
 				goals = {
 					{ t = "turnin", quest = 179, title = "Dwarven Outfitters", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
 					{ t = "accept", quest = 233, title = "Coldridge Valley Mail Delivery (1)", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
-					{ t = "accept", quest = 3114, title = "Glyphic Memorandum", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
 					{ t = "accept", quest = 170, title = "A New Threat", npc = 713, npcName = "Balir Frosthammer", map = 1426, x = 29.8, y = 71.3, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Gnome" }, classes = { "WARRIOR" } },
-				goals = {
-					{ t = "turnin", quest = 179, title = "Dwarven Outfitters", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
-					{ t = "accept", quest = 233, title = "Coldridge Valley Mail Delivery (1)", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
-					{ t = "accept", quest = 3112, title = "Simple Memorandum", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
-					{ t = "accept", quest = 170, title = "A New Threat", npc = 713, npcName = "Balir Frosthammer", map = 1426, x = 29.8, y = 71.3, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
-				goals = {
-					{ t = "turnin", quest = 179, title = "Dwarven Outfitters", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
-					{ t = "accept", quest = 233, title = "Coldridge Valley Mail Delivery (1)", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
-					{ t = "accept", quest = 3115, title = "Tainted Memorandum", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
-					{ t = "accept", quest = 170, title = "A New Threat", npc = 713, npcName = "Balir Frosthammer", map = 1426, x = 29.8, y = 71.3, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Gnome" }, classes = { "ROGUE" } },
-				goals = {
-					{ t = "turnin", quest = 179, title = "Dwarven Outfitters", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
-					{ t = "accept", quest = 233, title = "Coldridge Valley Mail Delivery (1)", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
-					{ t = "accept", quest = 3113, title = "Encrypted Memorandum", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
-					{ t = "accept", quest = 170, title = "A New Threat", npc = 713, npcName = "Balir Frosthammer", map = 1426, x = 29.8, y = 71.3, f = "e" },
+					{ t = "accept", quest = 3114, title = "Glyphic Memorandum", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e", only = { classes = { "MAGE" } } },
+					{ t = "accept", quest = 3112, title = "Simple Memorandum", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e", only = { classes = { "WARRIOR" } } },
+					{ t = "accept", quest = 3115, title = "Tainted Memorandum", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e", only = { classes = { "WARLOCK" } } },
+					{ t = "accept", quest = 3113, title = "Encrypted Memorandum", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e", only = { classes = { "ROGUE" } } },
+					{ t = "accept", quest = 3108, title = "Etched Rune", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e", only = { classes = { "HUNTER" } } },
+					{ t = "accept", quest = 3110, title = "Hallowed Rune", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e", only = { classes = { "PRIEST" } } },
+					{ t = "accept", quest = 3107, title = "Consecrated Rune", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e", only = { classes = { "PALADIN" } } },
 				},
 			},
 			{
@@ -90,27 +69,17 @@ do
 				},
 			},
 			{
-				only = { races = { "Gnome" }, classes = { "MAGE" } },
+				only = { races = { "Gnome" } },
 				goals = {
-					{ t = "turnin", quest = 3114, title = "Glyphic Memorandum", npc = 944, npcName = "Marryk Nurribit", map = 1426, x = 28.7, y = 66.4, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Gnome" }, classes = { "WARRIOR" } },
-				goals = {
-					{ t = "turnin", quest = 3112, title = "Simple Memorandum", npc = 912, npcName = "Thran Khorman", map = 1426, x = 28.8, y = 67.2, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
-				goals = {
-					{ t = "turnin", quest = 3115, title = "Tainted Memorandum", npc = 460, npcName = "Alamar Grimm", map = 1426, x = 28.7, y = 66.1, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Gnome" }, classes = { "ROGUE" } },
-				goals = {
-					{ t = "turnin", quest = 3113, title = "Encrypted Memorandum", npc = 916, npcName = "Solm Hargrin", map = 1426, x = 28.4, y = 67.5, f = "e" },
+					{ t = "turnin", quest = 3114, title = "Glyphic Memorandum", npc = 944, npcName = "Marryk Nurribit", map = 1426, x = 28.7, y = 66.4, f = "e", only = { classes = { "MAGE" } } },
+					{ t = "turnin", quest = 3112, title = "Simple Memorandum", npc = 912, npcName = "Thran Khorman", map = 1426, x = 28.8, y = 67.2, f = "e", only = { classes = { "WARRIOR" } } },
+					{ t = "turnin", quest = 3106, title = "Simple Rune", npc = 912, npcName = "Thran Khorman", map = 1426, x = 28.8, y = 67.2, f = "e", only = { classes = { "WARRIOR" } } },
+					{ t = "turnin", quest = 3115, title = "Tainted Memorandum", npc = 460, npcName = "Alamar Grimm", map = 1426, x = 28.7, y = 66.1, f = "e", only = { classes = { "WARLOCK" } } },
+					{ t = "turnin", quest = 3113, title = "Encrypted Memorandum", npc = 916, npcName = "Solm Hargrin", map = 1426, x = 28.4, y = 67.5, f = "e", only = { classes = { "ROGUE" } } },
+					{ t = "turnin", quest = 3109, title = "Encrypted Rune", npc = 916, npcName = "Solm Hargrin", map = 1426, x = 28.4, y = 67.5, f = "e", only = { classes = { "ROGUE" } } },
+					{ t = "turnin", quest = 3108, title = "Etched Rune", npc = 895, npcName = "Thorgas Grimson", map = 1426, x = 29.2, y = 67.5, f = "e", only = { classes = { "HUNTER" } } },
+					{ t = "turnin", quest = 3110, title = "Hallowed Rune", npc = 837, npcName = "Branstock Khalder", map = 1426, x = 28.6, y = 66.4, f = "e", only = { classes = { "PRIEST" } } },
+					{ t = "turnin", quest = 3107, title = "Consecrated Rune", npc = 926, npcName = "Bromos Grummner", map = 1426, x = 28.8, y = 68.3, f = "e", only = { classes = { "PALADIN" } } },
 				},
 			},
 			{
@@ -502,6 +471,47 @@ do
 				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
 				goals = {
 					{ t = "accept", quest = 1715, title = "The Slaughtered Lamb", npc = 6120, npcName = "Lago Blackwrench", map = 1455, x = 47.6, y = 9.3, f = "e" },
+				},
+			},
+			{
+				note = "Ride the tram to Stormwind City|goto Stormwind City|noway|c",
+				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
+				goals = {
+					{ t = "goto", map = 1455, x = 76.9, y = 51.2, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
+				goals = {
+					{ t = "turnin", quest = 1715, title = "The Slaughtered Lamb", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.2, y = 85.3, f = "e" },
+					{ t = "accept", quest = 1688, title = "Surena Caledon", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.2, y = 85.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
+				goals = {
+					{ t = "collect", quest = 1688, itemName = "Surena's Choker", count = 1, oi = 1, map = 1429, x = 71.0, y = 80.8, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
+				goals = {
+					{ t = "turnin", quest = 1688, title = "Surena Caledon", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.2, y = 85.3, f = "e" },
+					{ t = "accept", quest = 1689, title = "The Binding", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.2, y = 85.3, f = "e" },
+				},
+			},
+			{
+				note = "Go downstairs into the catacombs to 39.1,84.3",
+				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
+				goals = {
+					{ t = "kill", quest = 1689, target = "Summoned Voidwalker", count = 1, oi = 1, map = 1453, x = 39.1, y = 84.3, f = "e" },
+				},
+			},
+			{
+				note = "Go upstairs to 39.2,85.3",
+				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
+				goals = {
+					{ t = "turnin", quest = 1689, title = "The Binding", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.2, y = 85.3, f = "e" },
 				},
 			},
 		},

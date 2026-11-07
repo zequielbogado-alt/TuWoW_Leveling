@@ -3,12 +3,12 @@
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/h-outland-68-70",
+		id = "zygor/leveling/h-outland-68-70-part-2",
 		pack = "guides",
-		title = "Outland (68-70) (Parte 1/3)",
+		title = "Outland (68-70) (Parte 2/3)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-outland-68-70-part-2",
+		next = "zygor/leveling/h-outland-68-70-part-3",
 		author = "TuWoW & Zygor",
 		minLevel = 68,
 		maxLevel = 70,
@@ -16,481 +16,476 @@ do
 		version = 1,
 		steps = {
 			{
-				note = "Go to the top of the tower to 45.4,80.4|goto Blade's Edge Mountains,45.4,80.4",
 				goals = {
-					{ t = "kill", quest = 10543, target = "Grimnok Battleborn", count = 1, oi = 1, f = "e" },
+					{ t = "turnin", quest = 10721, title = "A Boaring Time for Grulloc", npc = 22103, npcName = "Baron Sablemane", map = 1949, x = 53.3, y = 41.2, f = "e" },
+					{ t = "accept", quest = 10785, title = "It's a Trap!", npc = 22103, npcName = "Baron Sablemane", map = 1949, x = 53.3, y = 41.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 1949, x = 42.8, y = 46.7, f = "e" },
+					{ t = "turnin", quest = 10785, title = "It's a Trap!", npc = 21984, npcName = "Rexxar", map = 1949, x = 51.9, y = 58.4, f = "e" },
+					{ t = "accept", quest = 10723, title = "Gorgrom the Dragon-Eater", npc = 21984, npcName = "Rexxar", map = 1949, x = 51.9, y = 58.4, f = "e" },
+					{ t = "accept", quest = 10786, title = "Slaughter at Boulder'mok", npc = 21147, npcName = "Tor'chunk Twoclaws", map = 1949, x = 51.9, y = 58.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 10543, target = "Korgaah", count = 1, oi = 2, map = 1949, x = 43.2, y = 46.1, f = "e" },
+					{ t = "turnin", quest = 10894, title = "Wyrmskull Watcher", npc = 22386, npcName = "Watcher Moonshade", map = 1949, x = 49.9, y = 35.9, f = "e" },
+					{ t = "accept", quest = 10893, title = "Longtail is the Lynchpin", npc = 22386, npcName = "Watcher Moonshade", map = 1949, x = 49.9, y = 35.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10543, title = "Grimnok and Korgaah, I Am For You!", npc = 21349, npcName = "T'chali the Witch Doctor", map = 1949, x = 45.0, y = 72.3, f = "e" },
-					{ t = "accept", quest = 10544, title = "A Curse Upon Both of Your Clans!", npc = 21349, npcName = "T'chali the Witch Doctor", map = 1949, x = 45.0, y = 72.3, f = "e" },
+					{ t = "kill", quest = 10893, target = "Draaca Longtail", count = 1, oi = 1, map = 1949, x = 46.7, y = 32.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 1949, x = 47.1, y = 78.0, f = "e" },
+					{ t = "turnin", quest = 10893, title = "Longtail is the Lynchpin", npc = 22386, npcName = "Watcher Moonshade", map = 1949, x = 49.9, y = 35.9, f = "e" },
+					{ t = "accept", quest = 10722, title = "Meeting at the Blackwing Coven", npc = 22386, npcName = "Watcher Moonshade", map = 1949, x = 49.9, y = 35.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 1949, x = 42.4, y = 53.8, f = "e" },
+					{ t = "kill", target = "arakkoas", count = 1, map = 1949, x = 40.9, y = 20.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10544, title = "A Curse Upon Both of Your Clans!", npc = 21349, npcName = "T'chali the Witch Doctor", map = 1949, x = 45.0, y = 72.3, f = "e" },
+					{ t = "goto", map = 1949, x = 40.7, y = 18.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10505, title = "The Bloodmaul Ogres", npc = 21147, npcName = "Tor'chunk Twoclaws", map = 1949, x = 51.9, y = 58.4, f = "e" },
+					{ t = "goto", map = 1949, x = 39.0, y = 17.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10526, title = "The Thunderspike", npc = 21311, npcName = "Rokgah Bloodgrip", map = 1949, x = 52.8, y = 59.0, f = "e" },
-					{ t = "accept", quest = 10718, title = "The Spirits Have Voices", npc = 21950, npcName = "Garm Wolfbrother", map = 1949, x = 52.8, y = 59.0, f = "e" },
+					{ t = "goto", map = 1949, x = 42.5, y = 21.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10718, title = "The Spirits Have Voices", npc = 21984, npcName = "Rexxar", map = 1949, x = 51.9, y = 58.4, f = "e" },
-					{ t = "accept", quest = 10614, title = "Whispers on the Wind", npc = 21984, npcName = "Rexxar", map = 1949, x = 51.9, y = 58.4, f = "e" },
+					{ t = "collect", itemName = "the Orb of the Grishna", count = 1, map = 1949, x = 40.2, y = 23.0, f = "e" },
+					{ t = "accept", quest = 10825, title = "The Truth Unorbed", map = 1949, x = 40.2, y = 23.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 1949, x = 55.8, y = 72.7, f = "e" },
+					{ t = "collect", quest = 10722, item = 31121, itemName = "Costume Scraps", count = 5, map = 1949, x = 32.3, y = 34.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "getfp", location = "Mok'Nathal Village", text = "Mok'Nathal Village", map = 1949, x = 76.4, y = 65.9, f = "e" },
+					{ t = "talk", npc = 22019, npcName = "Kolphis Darkscale", map = 1949, x = 32.6, y = 37.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 10565, title = "The Stones of Vekh'nir", npc = 21496, npcName = "Dertrok", map = 1949, x = 75.1, y = 62.1, f = "e" },
+					{ t = "kill", quest = 10786, target = "Boulder'mok Brute", count = 5, oi = 1, map = 1949, x = 30.3, y = 24.6, f = "e" },
+					{ t = "kill", quest = 10786, target = "Boulder'mok Shaman", count = 3, oi = 2, map = 1949, x = 30.3, y = 24.6, f = "e" },
+					{ t = "collect", quest = 10723, item = 31754, itemName = "Grisly Totem", count = 3, map = 1949, x = 30.3, y = 24.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10614, title = "Whispers on the Wind", npc = 22004, npcName = "Leoroxx", map = 1949, x = 75.3, y = 60.9, f = "e" },
-					{ t = "accept", quest = 10709, title = "Reunion", npc = 22004, npcName = "Leoroxx", map = 1949, x = 75.3, y = 60.9, f = "e" },
+					{ t = "goto", map = 1949, x = 30.6, y = 22.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 10860, title = "Mok'Nathal Treats", npc = 21088, npcName = "Matron Varah", map = 1949, x = 76.1, y = 60.3, f = "e" },
+					{ t = "turnin", quest = 10747, title = "Whelps of the Wyrmcult", npc = 21983, npcName = "Samia Inkling", map = 1949, x = 62.0, y = 39.5, f = "e" },
+					{ t = "turnin", quest = 10722, title = "Meeting at the Blackwing Coven", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
+					{ t = "accept", quest = 10748, title = "Maxnar Must Die!", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
+					{ t = "turnin", quest = 10825, title = "The Truth Unorbed", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
+					{ t = "accept", quest = 10829, title = "Treebole Must Know", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "sethome", location = "Mok'Nathal Village", text = "Mok'Nathal Village", f = "e" },
+					{ t = "turnin", quest = 10607, title = "Whispers of the Raven God", npc = 21782, npcName = "Timeon", map = 1949, x = 62.2, y = 39.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 10617, title = "Silkwing Cocoons", npc = 21895, npcName = "Taerek", map = 1949, x = 75.9, y = 61.5, f = "e" },
-					{ t = "accept", quest = 10618, title = "The Softest Wings", npc = 21896, npcName = "Silmara", map = 1949, x = 75.9, y = 61.5, f = "e" },
+					{ t = "turnin", quest = 10723, title = "Gorgrom the Dragon-Eater", npc = 21984, npcName = "Rexxar", map = 1949, x = 51.9, y = 58.4, f = "e" },
+					{ t = "turnin", quest = 10786, title = "Slaughter at Boulder'mok", npc = 21147, npcName = "Tor'chunk Twoclaws", map = 1949, x = 51.9, y = 58.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10709, title = "Reunion", npc = 21984, npcName = "Rexxar", map = 1949, x = 51.9, y = 58.4, f = "e" },
-					{ t = "accept", quest = 10714, title = "On Spirit's Wings", npc = 21984, npcName = "Rexxar", map = 1949, x = 51.9, y = 58.4, f = "e" },
+					{ t = "turnin", quest = 10829, title = "Treebole Must Know", npc = 22215, npcName = "Treebole", map = 1949, x = 36.9, y = 22.5, f = "e" },
+					{ t = "accept", quest = 10830, title = "Exorcising the Trees", npc = 22215, npcName = "Treebole", map = 1949, x = 36.9, y = 22.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 10617, itemName = "Silkwing Cocoon", count = 8, oi = 1, map = 1949, x = 73.8, y = 64.9, f = "e" },
-					{ t = "collect", quest = 10618, itemName = "Iridescent Wing", count = 12, oi = 1, map = 1949, x = 73.8, y = 64.9, f = "e" },
+					{ t = "collect", quest = 10830, item = 31495, itemName = "Grishnath Orb", count = 5, map = 1949, x = 39.3, y = 20.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 10565, item = 30561, itemName = "Vekh'nir Crystal", count = 1, map = 1949, x = 76.4, y = 75.4, f = "e" },
+					{ t = "collect", quest = 10830, item = 31517, itemName = "Dire Pinfeather", count = 5, map = 1949, x = 30.1, y = 28.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 1949, x = 77.8, y = 74.7, f = "e" },
+					{ t = "goto", map = 1949, x = 33.8, y = 29.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10565, title = "The Stones of Vekh'nir", npc = 21496, npcName = "Dertrok", map = 1949, x = 75.1, y = 62.1, f = "e" },
-					{ t = "accept", quest = 10566, title = "Trial and Error", npc = 21496, npcName = "Dertrok", map = 1949, x = 75.1, y = 62.1, f = "e" },
+					{ t = "turnin", quest = 10830, title = "Exorcising the Trees", npc = 22215, npcName = "Treebole", map = 1949, x = 36.9, y = 22.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10617, title = "Silkwing Cocoons", npc = 21895, npcName = "Taerek", map = 1949, x = 75.9, y = 61.5, f = "e" },
-					{ t = "turnin", quest = 10618, title = "The Softest Wings", npc = 21896, npcName = "Silmara", map = 1949, x = 75.9, y = 61.5, f = "e" },
+					{ t = "kill", quest = 10748, target = "Maxnar the Ashmaw", count = 1, oi = 1, map = 1949, x = 33.9, y = 35.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 10846, title = "Understanding the Mok'Nathal", npc = 22004, npcName = "Leoroxx", map = 1949, x = 75.3, y = 60.9, f = "e" },
+					{ t = "turnin", quest = 10748, title = "Maxnar Must Die!", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 10566, item = 30651, itemName = "Dertrok's First Wand", count = 1, f = "e" },
-					{ t = "collect", quest = 10566, item = 30652, itemName = "Dertrok's Second Wand", count = 1, f = "e" },
-					{ t = "collect", quest = 10566, item = 30653, itemName = "Dertrok's Third Wand", count = 1, f = "e" },
-					{ t = "collect", quest = 10566, item = 30654, itemName = "Dertrok's Fourth Wand", count = 1, f = "e" },
+					{ t = "accept", quest = 10183, title = "Off To Area 52", npc = 19569, npcName = "Netherologist Coppernickels", map = 1953, x = 21.3, y = 55.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 10566, item = 30655, itemName = "Infused Vekh'nir Crystal", count = 4, map = 1949, x = 73.2, y = 74.6, f = "e" },
+					{ t = "accept", quest = 10190, title = "Recharging the Batteries", npc = 19578, npcName = "Bot-Specialist Alley", map = 1953, x = 31.5, y = 56.6, f = "e" },
 				},
 			},
 			{
-				note = "Go inside the cave|n",
 				goals = {
-					{ t = "kill", quest = 10846, target = "Vekh", count = 1, oi = 1, f = "e" },
+					{ t = "goto", map = 1953, x = 26.5, y = 51.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10566, title = "Trial and Error", npc = 21496, npcName = "Dertrok", f = "e" },
-					{ t = "accept", quest = 10615, title = "Ruuan Weald", npc = 21496, npcName = "Dertrok", f = "e" },
+					{ t = "turnin", quest = 10190, title = "Recharging the Batteries", npc = 19578, npcName = "Bot-Specialist Alley", map = 1953, x = 31.5, y = 56.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10846, title = "Understanding the Mok'Nathal", npc = 22004, npcName = "Leoroxx", map = 1949, x = 75.3, y = 60.9, f = "e" },
-					{ t = "accept", quest = 10843, title = "Since Time Forgotten...", npc = 22004, npcName = "Leoroxx", map = 1949, x = 75.3, y = 60.9, f = "e" },
+					{ t = "level", level = 69, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 10851, title = "The Totems of My Enemy", npc = 22312, npcName = "Spiritcaller Dohgar", map = 1949, x = 74.9, y = 60.5, f = "e" },
+					{ t = "accept", quest = 10342, title = "Securing the Shaleskin Shale", npc = 19617, npcName = "Boots", map = 1953, x = 32.3, y = 63.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 10860, itemName = "Serpent Flesh", count = 3, oi = 2, map = 1949, x = 68.9, y = 67.2, f = "e" },
+					{ t = "accept", quest = 10265, title = "Consortium Crystal Collection", npc = 19880, npcName = "Nether-Stalker Khay'ji", map = 1953, x = 32.4, y = 64.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 10860, itemName = "Raptor Ribs", count = 3, oi = 1, map = 1949, x = 65.2, y = 56.9, f = "e" },
+					{ t = "accept", quest = 10189, title = "Manaforge B'naar", npc = 19468, npcName = "Spymaster Thalodien", map = 1953, x = 32.0, y = 64.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 10851, itemName = "Bladespire Totem", count = 5, oi = 1, map = 1949, x = 59.3, y = 56.0, f = "e" },
+					{ t = "sethome", location = "Area 52", text = "Area 52", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 10843, target = "Gnosh Brognat", count = 1, oi = 1, map = 1949, x = 57.1, y = 54.6, f = "e" },
+					{ t = "turnin", quest = 10183, title = "Off To Area 52", npc = 19570, npcName = "Rocket-Chief Fuselage", map = 1953, x = 32.7, y = 65.0, f = "e" },
+					{ t = "accept", quest = 10186, title = "You're Hired!", npc = 19570, npcName = "Rocket-Chief Fuselage", map = 1953, x = 32.7, y = 65.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10843, title = "Since Time Forgotten...", npc = 22004, npcName = "Leoroxx", map = 1949, x = 75.3, y = 60.9, f = "e" },
-					{ t = "accept", quest = 10845, title = "Slay the Brood Mother", npc = 22004, npcName = "Leoroxx", map = 1949, x = 75.3, y = 60.9, f = "e" },
+					{ t = "accept", quest = 10173, title = "The Archmage's Staff", npc = 19217, npcName = "Ravandwyr", map = 1953, x = 31.4, y = 66.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10851, title = "The Totems of My Enemy", npc = 22312, npcName = "Spiritcaller Dohgar", map = 1949, x = 74.9, y = 60.5, f = "e" },
-					{ t = "accept", quest = 10853, title = "Spirit Calling", npc = 22312, npcName = "Spiritcaller Dohgar", map = 1949, x = 74.9, y = 60.5, f = "e" },
+					{ t = "getfp", location = "Area 52", text = "Area 52", map = 1953, x = 33.7, y = 64.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10860, title = "Mok'Nathal Treats", npc = 21088, npcName = "Matron Varah", map = 1949, x = 76.1, y = 60.3, f = "e" },
+					{ t = "collect", quest = 10342, itemName = "Shaleskin Shale", count = 5, oi = 1, map = 1953, x = 33.1, y = 60.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 10853, itemName = "Lesser Nether Drake Spirit", count = 8, oi = 1, map = 1949, x = 65.6, y = 75.6, f = "e" },
-					{ t = "kill", quest = 10845, target = "Dreadwing", count = 1, oi = 1, map = 1949, x = 65.6, y = 75.6, f = "e" },
+					{ t = "accept", quest = 10191, title = "Mark V is Alive!", npc = 19589, npcName = "Maxx A. Million Mk. V", map = 1953, x = 31.5, y = 56.6, f = "e" },
+					{ t = "collect", quest = 10186, itemName = "Etherlithium Matrix Crystal", count = 10, oi = 1, map = 1953, x = 31.5, y = 56.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10845, title = "Slay the Brood Mother", npc = 22004, npcName = "Leoroxx", map = 1949, x = 75.3, y = 60.9, f = "e" },
+					{ t = "turnin", quest = 10191, title = "Mark V is Alive!", npc = 19578, npcName = "Bot-Specialist Alley", map = 1953, x = 31.5, y = 56.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10853, title = "Spirit Calling", npc = 22312, npcName = "Spiritcaller Dohgar", map = 1949, x = 74.9, y = 60.5, f = "e" },
-					{ t = "accept", quest = 10859, title = "Gather the Orbs", npc = 22312, npcName = "Spiritcaller Dohgar", map = 1949, x = 74.9, y = 60.5, f = "e" },
+					{ t = "turnin", quest = 10342, title = "Securing the Shaleskin Shale", npc = 19617, npcName = "Boots", map = 1953, x = 32.3, y = 63.9, f = "e" },
+					{ t = "accept", quest = 10199, title = "That Little Extra Kick", npc = 19617, npcName = "Boots", map = 1953, x = 32.3, y = 63.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 1949, x = 65.5, y = 46.6, f = "e" },
+					{ t = "turnin", quest = 10186, title = "You're Hired!", npc = 19570, npcName = "Rocket-Chief Fuselage", map = 1953, x = 32.7, y = 65.0, f = "e" },
+					{ t = "accept", quest = 10203, title = "Invaluable Asset Zapping", npc = 19570, npcName = "Rocket-Chief Fuselage", map = 1953, x = 32.7, y = 65.0, f = "e" },
+					{ t = "accept", quest = 10225, title = "Report to Engineering", npc = 19570, npcName = "Rocket-Chief Fuselage", map = 1953, x = 32.7, y = 65.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10859, title = "Gather the Orbs", npc = 22312, npcName = "Spiritcaller Dohgar", map = 1949, x = 74.9, y = 60.5, f = "e" },
-					{ t = "accept", quest = 10865, title = "Inform Leoroxx!", npc = 22312, npcName = "Spiritcaller Dohgar", map = 1949, x = 74.9, y = 60.5, f = "e" },
+					{ t = "turnin", quest = 10225, title = "Report to Engineering", npc = 19709, npcName = "Chief Engineer Trep", map = 1953, x = 32.4, y = 66.8, f = "e" },
+					{ t = "accept", quest = 10224, title = "Essence for the Engines", npc = 19709, npcName = "Chief Engineer Trep", map = 1953, x = 32.4, y = 66.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10865, title = "Inform Leoroxx!", npc = 22004, npcName = "Leoroxx", map = 1949, x = 75.3, y = 60.9, f = "e" },
-					{ t = "accept", quest = 10867, title = "There Can Be Only One Response", npc = 22004, npcName = "Leoroxx", map = 1949, x = 75.3, y = 60.9, f = "e" },
+					{ t = "collect", quest = 10224, itemName = "Mana Wraith Essence", count = 7, oi = 1, map = 1953, x = 34.8, y = 59.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 1949, x = 66.3, y = 44.3, f = "e" },
+					{ t = "turnin", quest = 10224, title = "Essence for the Engines", npc = 19709, npcName = "Chief Engineer Trep", map = 1953, x = 32.4, y = 66.8, f = "e" },
+					{ t = "accept", quest = 10226, title = "Elemental Power Extraction", npc = 19709, npcName = "Chief Engineer Trep", map = 1953, x = 32.4, y = 66.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10615, title = "Ruuan Weald", npc = 21782, npcName = "Timeon", map = 1949, x = 62.2, y = 39.1, f = "e" },
-					{ t = "accept", quest = 10567, title = "Creating the Pendant", npc = 21782, npcName = "Timeon", map = 1949, x = 62.2, y = 39.1, f = "e" },
+					{ t = "collect", quest = 10189, itemName = "B'naar Personnel Roster", count = 1, oi = 1, map = 1953, x = 27.8, y = 65.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 10753, title = "Culling the Wild", npc = 22133, npcName = "Faradrella", map = 1949, x = 62.6, y = 38.2, f = "e" },
+					{ t = "collect", quest = 10226, itemName = "Elemental Power", count = 5, oi = 1, map = 1953, x = 35.4, y = 76.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 10770, title = "Little Embers", npc = 22053, npcName = "Mosswood the Ancient", map = 1949, x = 61.2, y = 38.4, f = "e" },
-					{ t = "accept", quest = 10771, title = "From the Ashes", npc = 22053, npcName = "Mosswood the Ancient", map = 1949, x = 61.2, y = 38.4, f = "e" },
+					{ t = "goto", map = 1953, x = 40.3, y = 72.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 10682, title = "A Time for Negotiation...", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
+					{ t = "goto", map = 1953, x = 41.0, y = 73.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "getfp", location = "Evergrove", text = "Evergrove", map = 1949, x = 61.7, y = 39.6, f = "e" },
+					{ t = "collect", quest = 10265, itemName = "Arklon Crystal Artifact", count = 1, oi = 1, map = 1953, x = 42.4, y = 72.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10867, title = "There Can Be Only One Response", npc = 22312, npcName = "Spiritcaller Dohgar", map = 1949, x = 74.9, y = 60.5, f = "e" },
+					{ t = "goto", map = 1953, x = 42.5, y = 72.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "sethome", location = "Thunderlord Stronghold", text = "Thunderlord Stronghold", f = "e" },
+					{ t = "goto", map = 1953, x = 41.4, y = 71.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 10753, target = "Fel Corrupter", count = 2, oi = 3, map = 1949, x = 68.9, y = 35.6, f = "e" },
-					{ t = "kill", quest = 10753, target = "Felsworn Scalewing", count = 4, oi = 1, map = 1949, x = 68.9, y = 35.6, f = "e" },
-					{ t = "kill", quest = 10753, target = "Felsworn Daggermaw", count = 4, oi = 2, map = 1949, x = 68.9, y = 35.6, f = "e" },
-					{ t = "collect", itemName = "a Damaged Mask", count = 1, map = 1949, x = 68.9, y = 35.6, f = "e" },
-					{ t = "accept", quest = 10810, title = "Damaged Mask", map = 1949, x = 68.9, y = 35.6, f = "e" },
+					{ t = "collect", quest = 10173, itemName = "Archmage Vargoth's Staff", count = 1, oi = 1, map = 1953, x = 40.9, y = 72.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 1949, x = 71.7, y = 22.4, f = "e" },
+					{ t = "kill", target = "Nether Rays", count = 1, map = 1953, x = 44.6, y = 72.1, f = "e" },
+					{ t = "collect", quest = 10199, itemName = "Nether Ray Stinger", count = 5, oi = 1, map = 1953, x = 44.6, y = 72.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 1949, x = 71.6, y = 20.3, f = "e" },
+					{ t = "turnin", quest = 10203, title = "Invaluable Asset Zapping", npc = 19634, npcName = "Lead Sapper Blastfizzle", map = 1953, x = 34.2, y = 68.1, f = "e" },
+					{ t = "accept", quest = 10221, title = "Dr. Boom!", npc = 19634, npcName = "Lead Sapper Blastfizzle", map = 1953, x = 34.2, y = 68.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 10770, target = "Scorch Imp", count = 8, oi = 1, map = 1949, x = 70.7, y = 20.2, f = "e" },
+					{ t = "turnin", quest = 10226, title = "Elemental Power Extraction", npc = 19709, npcName = "Chief Engineer Trep", map = 1953, x = 32.4, y = 66.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 1949, x = 71.6, y = 18.5, f = "e" },
+					{ t = "turnin", quest = 10173, title = "The Archmage's Staff", npc = 19217, npcName = "Ravandwyr", map = 1953, x = 31.4, y = 66.2, f = "e" },
+					{ t = "accept", quest = 10300, title = "Rebuilding the Staff", npc = 19217, npcName = "Ravandwyr", map = 1953, x = 31.4, y = 66.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10810, title = "Damaged Mask", map = 1949, x = 62.7, y = 40.4, f = "e" },
-					{ t = "accept", quest = 10812, title = "Mystery Mask", map = 1949, x = 62.7, y = 40.4, f = "e" },
+					{ t = "turnin", quest = 10265, title = "Consortium Crystal Collection", npc = 19880, npcName = "Nether-Stalker Khay'ji", map = 1953, x = 32.4, y = 64.2, f = "e" },
+					{ t = "accept", quest = 10262, title = "A Heap of Ethereals", npc = 19880, npcName = "Nether-Stalker Khay'ji", map = 1953, x = 32.4, y = 64.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10812, title = "Mystery Mask", npc = 22127, npcName = "Wildlord Antelarion", map = 1949, x = 62.2, y = 40.1, f = "e" },
-					{ t = "accept", quest = 10819, title = "Felsworn Gas Mask", npc = 22127, npcName = "Wildlord Antelarion", map = 1949, x = 62.2, y = 40.1, f = "e" },
+					{ t = "turnin", quest = 10199, title = "That Little Extra Kick", npc = 19617, npcName = "Boots", map = 1953, x = 32.3, y = 63.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10753, title = "Culling the Wild", npc = 22133, npcName = "Faradrella", map = 1949, x = 62.6, y = 38.2, f = "e" },
+					{ t = "accept", quest = 10206, title = "Pick Your Part", npc = 19645, npcName = "Papa Wheeler", map = 1953, x = 33.0, y = 64.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10770, title = "Little Embers", npc = 22053, npcName = "Mosswood the Ancient", map = 1949, x = 61.2, y = 38.4, f = "e" },
-					{ t = "turnin", quest = 10771, title = "From the Ashes", npc = 22053, npcName = "Mosswood the Ancient", map = 1949, x = 61.2, y = 38.4, f = "e" },
+					{ t = "turnin", quest = 10189, title = "Manaforge B'naar", npc = 19468, npcName = "Spymaster Thalodien", map = 1953, x = 32.0, y = 64.0, f = "e" },
+					{ t = "accept", quest = 10193, title = "High Value Targets", npc = 19468, npcName = "Spymaster Thalodien", map = 1953, x = 32.0, y = 64.0, f = "e" },
+					{ t = "accept", quest = 10204, title = "Bloodgem Crystals", npc = 19469, npcName = "Magistrix Larynna", map = 1953, x = 32.0, y = 64.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 21981, npcName = "Overseer Nuaar", map = 1949, x = 58.8, y = 39.1, f = "e" },
+					{ t = "kill", target = "Disembodied Ghosts", count = 1, map = 1953, x = 33.5, y = 53.0, f = "e" },
+					{ t = "collect", quest = 10300, itemName = "Flawless Crystal Shard", count = 4, oi = 1, map = 1953, x = 33.5, y = 53.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10682, title = "A Time for Negotiation...", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
-					{ t = "accept", quest = 10713, title = "...and a Time for Action", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
-					{ t = "accept", quest = 10717, title = "Poaching from Poachers", npc = 21983, npcName = "Samia Inkling", map = 1949, x = 62.0, y = 39.5, f = "e" },
+					{ t = "kill", quest = 10221, target = "Dr. Boom", count = 1, oi = 1, map = 1953, x = 35.0, y = 59.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 10713, target = "Wyrmcult Hewer", count = 10, oi = 1, map = 1949, x = 59.9, y = 37.8, f = "e" },
-					{ t = "collect", quest = 10717, itemName = "Wyrmcult Net", count = 5, oi = 1, map = 1949, x = 59.9, y = 37.8, f = "e" },
-					{ t = "collect", itemName = "a Meeting note", count = 1, map = 1949, x = 59.9, y = 37.8, f = "e" },
-					{ t = "accept", quest = 10719, title = "Did You Get The Note?", map = 1949, x = 59.9, y = 37.8, f = "e" },
+					{ t = "turnin", quest = 10300, title = "Rebuilding the Staff", npc = 19217, npcName = "Ravandwyr", map = 1953, x = 31.4, y = 66.2, f = "e" },
+					{ t = "accept", quest = 10174, title = "Curse of the Violet Tower", npc = 19217, npcName = "Ravandwyr", map = 1953, x = 31.4, y = 66.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10717, title = "Poaching from Poachers", npc = 21983, npcName = "Samia Inkling", map = 1949, x = 62.0, y = 39.5, f = "e" },
-					{ t = "accept", quest = 10747, title = "Whelps of the Wyrmcult", npc = 21983, npcName = "Samia Inkling", map = 1949, x = 62.0, y = 39.5, f = "e" },
-					{ t = "turnin", quest = 10713, title = "...and a Time for Action", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
-					{ t = "turnin", quest = 10719, title = "Did You Get The Note?", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
-					{ t = "accept", quest = 10894, title = "Wyrmskull Watcher", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
+					{ t = "turnin", quest = 10221, title = "Dr. Boom!", npc = 19634, npcName = "Lead Sapper Blastfizzle", map = 1953, x = 34.2, y = 68.1, f = "e" },
 				},
 			},
 			{
-				note = "Put on your Felsworn Gas Mask to wear it|use Felsworn Gas Mask##31366",
 				goals = {
-					{ t = "use", item = 31366, itemName = "Felsworn Gas Mask", f = "e" },
+					{ t = "collect", itemName = "a Bloodgem Shard", count = 1, map = 1953, x = 26.3, y = 66.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10819, title = "Felsworn Gas Mask", map = 1949, x = 73.2, y = 40.0, f = "e" },
-					{ t = "accept", quest = 10820, title = "Deceive thy Enemy", map = 1949, x = 73.2, y = 40.0, f = "e" },
+					{ t = "kill", quest = 10193, target = "Sunfury Warp-Master", count = 2, oi = 1, map = 1953, x = 26.9, y = 70.5, f = "e" },
+					{ t = "kill", quest = 10193, target = "Sunfury Warp-Engineer", count = 6, oi = 2, map = 1953, x = 26.9, y = 70.5, f = "e" },
+					{ t = "kill", quest = 10193, target = "Sunfury Geologist", count = 8, oi = 3, map = 1953, x = 26.9, y = 70.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 10820, target = "Doomforge Attendant", count = 4, oi = 1, map = 1949, x = 74.9, y = 39.9, f = "e" },
-					{ t = "kill", quest = 10820, target = "Doomforge Engineer", count = 4, oi = 2, map = 1949, x = 74.9, y = 39.9, f = "e" },
+					{ t = "collect", quest = 10262, itemName = "Zaxxis Insignia", count = 10, oi = 1, map = 1953, x = 30.2, y = 75.5, f = "e" },
+					{ t = "collect", quest = 10206, itemName = "Ethereal Technology", count = 10, oi = 1, map = 1953, x = 30.2, y = 75.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10820, title = "Deceive thy Enemy", map = 1949, x = 73.2, y = 40.0, f = "e" },
+					{ t = "turnin", quest = 10206, title = "Pick Your Part", npc = 19645, npcName = "Papa Wheeler", map = 1953, x = 33.0, y = 64.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 10567, item = 30704, itemName = "Ruuan'ok Claw", count = 6, map = 1949, x = 63.9, y = 31.5, f = "e" },
+					{ t = "turnin", quest = 10262, title = "A Heap of Ethereals", npc = 19880, npcName = "Nether-Stalker Khay'ji", map = 1953, x = 32.4, y = 64.2, f = "e" },
+					{ t = "accept", quest = 10205, title = "Warp-Raider Nesaad", npc = 19880, npcName = "Nether-Stalker Khay'ji", map = 1953, x = 32.4, y = 64.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 10567, itemName = "Harbinger's Pendant", count = 1, oi = 1, map = 1949, x = 64.5, y = 33.1, f = "e" },
+					{ t = "turnin", quest = 10193, title = "High Value Targets", npc = 19468, npcName = "Spymaster Thalodien", map = 1953, x = 32.0, y = 64.0, f = "e" },
+					{ t = "accept", quest = 10329, title = "Shutting Down Manaforge B'naar", npc = 19468, npcName = "Spymaster Thalodien", map = 1953, x = 32.0, y = 64.0, f = "e" },
+					{ t = "turnin", quest = 10204, title = "Bloodgem Crystals", npc = 19469, npcName = "Magistrix Larynna", map = 1953, x = 32.0, y = 64.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 1949, x = 58.4, y = 30.8, f = "e" },
+					{ t = "collect", quest = 10329, itemName = "B'naar Access Crystal", count = 1, oi = 1, map = 1953, x = 23.9, y = 70.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10714, title = "On Spirit's Wings", npc = 21984, npcName = "Rexxar", map = 1949, x = 51.9, y = 58.4, f = "e" },
-					{ t = "accept", quest = 10783, title = "Baron Sablemane", npc = 21984, npcName = "Rexxar", map = 1949, x = 51.9, y = 58.4, f = "e" },
+					{ t = "goto", map = 1953, x = 23.2, y = 68.1, f = "e" },
 				},
 			},
 			{
+				note = "Hearth to Area 52|goto Netherstorm,32.3,65.5,3|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "turnin", quest = 10567, title = "Creating the Pendant", npc = 21782, npcName = "Timeon", map = 1949, x = 62.2, y = 39.1, f = "e" },
-					{ t = "accept", quest = 10607, title = "Whispers of the Raven God", npc = 21782, npcName = "Timeon", map = 1949, x = 62.2, y = 39.1, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10783, title = "Baron Sablemane", npc = 22103, npcName = "Baron Sablemane", map = 1949, x = 53.3, y = 41.2, f = "e" },
-					{ t = "accept", quest = 10715, title = "Into the Churning Gulch", npc = 22103, npcName = "Baron Sablemane", map = 1949, x = 53.3, y = 41.2, f = "e" },
+					{ t = "turnin", quest = 10329, title = "Shutting Down Manaforge B'naar", npc = 19468, npcName = "Spymaster Thalodien", map = 1953, x = 32.0, y = 64.0, f = "e" },
+					{ t = "accept", quest = 10194, title = "Stealth Flight", npc = 19468, npcName = "Spymaster Thalodien", map = 1953, x = 32.0, y = 64.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 10715, itemName = "Crust Burster Venom Gland", count = 7, oi = 1, map = 1949, x = 49.0, y = 44.5, f = "e" },
+					{ t = "kill", quest = 10205, target = "Warp-Raider Nesaad", count = 1, oi = 1, map = 1953, x = 28.2, y = 79.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10715, title = "Into the Churning Gulch", npc = 22103, npcName = "Baron Sablemane", map = 1949, x = 53.3, y = 41.2, f = "e" },
-					{ t = "accept", quest = 10749, title = "Baron Sablemane's Poison", npc = 22103, npcName = "Baron Sablemane", map = 1949, x = 53.3, y = 41.2, f = "e" },
+					{ t = "turnin", quest = 10205, title = "Warp-Raider Nesaad", npc = 19880, npcName = "Nether-Stalker Khay'ji", map = 1953, x = 32.4, y = 64.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10749, title = "Baron Sablemane's Poison", npc = 21984, npcName = "Rexxar", map = 1949, x = 51.9, y = 58.4, f = "e" },
-					{ t = "accept", quest = 10720, title = "The Smallest Creatures", npc = 21984, npcName = "Rexxar", map = 1949, x = 51.9, y = 58.4, f = "e" },
-					{ t = "accept", quest = 10784, title = "Crush the Bloodmaul Camp", npc = 21147, npcName = "Tor'chunk Twoclaws", map = 1949, x = 51.9, y = 58.4, f = "e" },
+					{ t = "turnin", quest = 10194, title = "Stealth Flight", npc = 20162, npcName = "Veronia", map = 1953, x = 33.8, y = 64.2, f = "e" },
+					{ t = "accept", quest = 10652, title = "Behind Enemy Lines", npc = 20162, npcName = "Veronia", map = 1953, x = 33.8, y = 64.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 10784, target = "Bloodmaul Mauler", count = 10, oi = 1, map = 1949, x = 56.2, y = 26.7, f = "e" },
-					{ t = "kill", quest = 10784, target = "Bloodmaul Warlock", count = 5, oi = 2, map = 1949, x = 56.2, y = 26.7, f = "e" },
+					{ t = "turnin", quest = 10652, title = "Behind Enemy Lines", npc = 19840, npcName = "Caledis Brightdawn", map = 1953, x = 48.2, y = 86.6, f = "e" },
+					{ t = "accept", quest = 10197, title = "A Convincing Disguise", npc = 19840, npcName = "Caledis Brightdawn", map = 1953, x = 48.2, y = 86.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 1949, x = 56.4, y = 29.2, f = "e" },
+					{ t = "kill", target = "Sunfury Arcanists", count = 1, map = 1953, x = 47.7, y = 84.9, f = "e" },
+					{ t = "collect", quest = 10197, itemName = "Sunfury Arcanist Robes", count = 1, oi = 3, map = 1953, x = 47.7, y = 84.9, f = "e" },
 				},
 			},
 			{
-				note = "As a marmot, do the following:",
+				note = "Go inside Manaforge Coruu to 49,81.5",
 				goals = {
-					{ t = "goto", map = 1949, x = 55.4, y = 28.2, f = "e" },
+					{ t = "kill", target = "Sunfury Researchers", count = 1, map = 1953, x = 49.0, y = 81.5, f = "e" },
+					{ t = "collect", quest = 10197, itemName = "Sunfury Researcher Gloves", count = 1, oi = 1, map = 1953, x = 49.0, y = 81.5, f = "e" },
 				},
 			},
 			{
+				note = "Go outside to 50.8,83.2",
 				goals = {
-					{ t = "goto", map = 1949, x = 55.3, y = 26.0, f = "e" },
+					{ t = "kill", target = "Sunfury Guardsmen", count = 1, map = 1953, x = 50.8, y = 83.2, f = "e" },
+					{ t = "collect", quest = 10197, itemName = "Sunfury Guardsman Medallion", count = 1, oi = 2, map = 1953, x = 50.8, y = 83.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 1949, x = 55.9, y = 23.1, f = "e" },
+					{ t = "turnin", quest = 10197, title = "A Convincing Disguise", npc = 19840, npcName = "Caledis Brightdawn", map = 1953, x = 48.2, y = 86.6, f = "e" },
+					{ t = "accept", quest = 10198, title = "Information Gathering", npc = 19840, npcName = "Caledis Brightdawn", map = 1953, x = 48.2, y = 86.6, f = "e" },
 				},
 			},
 			{
+				note = "Use the Sunfury Disguise in your bags|havebuff Sunfury Disguise|use Sunfury Disguise##28607",
 				goals = {
-					{ t = "goto", map = 1949, x = 56.0, y = 29.0, f = "e" },
+					{ t = "use", item = 28607, itemName = "Sunfury Disguise", f = "e" },
 				},
 			},
 			{
+				note = "Go inside Manaforge Coruu to 48.2,84.1",
 				goals = {
-					{ t = "turnin", quest = 10720, title = "The Smallest Creatures", npc = 21984, npcName = "Rexxar", map = 1949, x = 51.9, y = 58.4, f = "e" },
-					{ t = "accept", quest = 10721, title = "A Boaring Time for Grulloc", npc = 21984, npcName = "Rexxar", map = 1949, x = 51.9, y = 58.4, f = "e" },
-					{ t = "turnin", quest = 10784, title = "Crush the Bloodmaul Camp", npc = 21147, npcName = "Tor'chunk Twoclaws", map = 1949, x = 51.9, y = 58.4, f = "e" },
+					{ t = "goto", map = 1953, x = 48.2, y = 84.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 10721, itemName = "Grulloc's Sack", count = 1, oi = 1, map = 1949, x = 60.2, y = 47.6, f = "e" },
+					{ t = "turnin", quest = 10198, title = "Information Gathering", npc = 19840, npcName = "Caledis Brightdawn", f = "e" },
+					{ t = "accept", quest = 10330, title = "Shutting Down Manaforge Coruu", npc = 19840, npcName = "Caledis Brightdawn", f = "e" },
 				},
 			},
 		},

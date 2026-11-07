@@ -3,415 +3,496 @@
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/h-northrend-76-78-part-4",
+		id = "zygor/leveling/h-northrend-78-80",
 		pack = "guides",
-		title = "Northrend (76-78) (Parte 4/4)",
+		title = "Northrend (78-80) (Parte 1/4)",
 		category = "Leveling",
 		faction = "Horde",
+		next = "zygor/leveling/h-northrend-78-80-part-2",
 		author = "TuWoW & Zygor",
-		minLevel = 77,
-		maxLevel = 78,
-		zone = 116,
+		minLevel = 78,
+		maxLevel = 80,
+		zone = 119,
 		version = 1,
 		steps = {
 			{
 				goals = {
-					{ t = "accept", quest = 12655, title = "The Blessing of Zim'Rhuk", npc = 28479, npcName = "Witch Doctor Khufu", map = 121, x = 59.5, y = 58.1, f = "e" },
+					{ t = "turnin", quest = 12522, title = "Need an Engine, Take an Engine", npc = 28033, npcName = "Weslex Quickwrench", map = 119, x = 25.4, y = 58.5, f = "e" },
+					{ t = "accept", quest = 12523, title = "Have a Part, Give a Part", npc = 28033, npcName = "Weslex Quickwrench", map = 119, x = 25.4, y = 58.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", target = "Frozen Earths", count = 1, map = 121, x = 56.4, y = 52.8, f = "e" },
-					{ t = "collect", quest = 12639, itemName = "Essence of the Frozen Earth", count = 7, oi = 1, map = 121, x = 56.4, y = 52.8, f = "e" },
-					{ t = "collect", quest = 12655, item = 38551, itemName = "Drakkari Offerings", count = 10, map = 121, x = 56.4, y = 52.8, f = "e" },
+					{ t = "collect", quest = 12523, itemName = "Venture Co. Spare Parts", count = 7, oi = 1, map = 119, x = 32.7, y = 46.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", target = "Priests of Rhunok", count = 1, map = 121, x = 54.0, y = 49.1, f = "e" },
-					{ t = "collect", quest = 12650, itemName = "Rhunokian Artifact", count = 7, oi = 1, map = 121, x = 54.0, y = 49.1, f = "e" },
+					{ t = "kill", quest = 12525, target = "Meatpie", count = 1, oi = 2, map = 119, x = 35.8, y = 50.3, f = "e" },
+					{ t = "kill", quest = 12525, target = "Foreman Swindlegrin", count = 1, oi = 1, map = 119, x = 35.8, y = 50.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12642, title = "Spirit of Rhunok", npc = 28561, npcName = "Spirit of Rhunok", map = 121, x = 53.4, y = 39.2, f = "e" },
-					{ t = "accept", quest = 12646, title = "My Prophet, My Enemy", npc = 28561, npcName = "Spirit of Rhunok", map = 121, x = 53.4, y = 39.2, f = "e" },
+					{ t = "turnin", quest = 12525, title = "Wipe That Grin Off His Face", npc = 28032, npcName = "Debaar", map = 119, x = 27.2, y = 59.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 12646, itemName = "Arctic Bear God Mojo", count = 1, oi = 1, map = 121, x = 54.0, y = 47.3, f = "e" },
+					{ t = "turnin", quest = 12523, title = "Have a Part, Give a Part", npc = 28033, npcName = "Weslex Quickwrench", map = 119, x = 25.4, y = 58.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12646, title = "My Prophet, My Enemy", npc = 28561, npcName = "Spirit of Rhunok", map = 121, x = 53.4, y = 39.2, f = "e" },
-					{ t = "accept", quest = 12647, title = "An End to the Suffering", npc = 28561, npcName = "Spirit of Rhunok", map = 121, x = 53.4, y = 39.2, f = "e" },
+					{ t = "accept", quest = 12696, title = "Aerial Surveillance", npc = 28266, npcName = "Professor Calvert", map = 119, x = 25.4, y = 58.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 12647, item = 38696, itemName = "Tormentor's Incense", count = 1, map = 121, x = 53.4, y = 35.9, f = "e" },
+					{ t = "getfp", location = "Nesingwary Base Camp", text = "Nesingwary Base Camp", map = 119, x = 25.3, y = 58.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 12647, target = "Rhunok", count = 1, oi = 1, map = 121, x = 53.5, y = 34.5, f = "e" },
+					{ t = "accept", quest = 12549, title = "Dreadsaber Mastery: Becoming a Predator", npc = 28031, npcName = "Buck Cantwell", map = 119, x = 26.7, y = 59.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12647, title = "An End to the Suffering", npc = 28561, npcName = "Spirit of Rhunok", map = 121, x = 53.4, y = 39.2, f = "e" },
-					{ t = "accept", quest = 12653, title = "Back to Har'koa", npc = 28561, npcName = "Spirit of Rhunok", map = 121, x = 53.4, y = 39.2, f = "e" },
+					{ t = "accept", quest = 12520, title = "Rhino Mastery: The Test", npc = 27986, npcName = "Hemet Nesingwary", map = 119, x = 27.1, y = 58.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12655, title = "The Blessing of Zim'Rhuk", npc = 190657, npcName = "Zim'Rhuk", map = 121, x = 59.3, y = 44.5, f = "e" },
+					{ t = "accept", quest = 12589, title = "Kick, What Kick?", npc = 28328, npcName = "Drostan", map = 119, x = 27.1, y = 59.9, f = "e" },
 				},
 			},
 			{
+				note = "Use your RJR Rifle on the gnome close to you with an apple on his head|use RJR Rifle##38573",
 				goals = {
-					{ t = "turnin", quest = 12640, title = "Sealing the Rifts", npc = 28484, npcName = "Scalper Ahunae", map = 121, x = 59.2, y = 56.2, f = "e" },
-					{ t = "accept", quest = 12659, title = "Scalps!", npc = 28484, npcName = "Scalper Ahunae", map = 121, x = 59.2, y = 56.2, f = "e" },
+					{ t = "use", item = 38573, itemName = "RJR Rifle", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12639, title = "The Frozen Earth", npc = 28480, npcName = "Element-Tamer Dagoda", map = 121, x = 59.4, y = 56.4, f = "e" },
-					{ t = "accept", quest = 12662, title = "Bringing Down Heb'Jin", npc = 28480, npcName = "Element-Tamer Dagoda", map = 121, x = 59.4, y = 56.4, f = "e" },
+					{ t = "turnin", quest = 12589, title = "Kick, What Kick?", npc = 28328, npcName = "Drostan", map = 119, x = 27.1, y = 59.9, f = "e" },
+					{ t = "accept", quest = 12592, title = "The Great Hunter's Challenge", npc = 28328, npcName = "Drostan", map = 119, x = 27.1, y = 59.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12650, title = "Plundering Their Own", npc = 28527, npcName = "Chronicler To'kini", map = 121, x = 60.0, y = 57.9, f = "e" },
+					{ t = "kill", quest = 12549, target = "Dreadsaber", count = 15, oi = 1, map = 119, x = 28.0, y = 56.0, f = "e" },
+					{ t = "kill", quest = 12520, target = "Shardhorn Rhino", count = 15, oi = 1, map = 119, x = 28.0, y = 56.0, f = "e" },
+					{ t = "kill", target = "Dreadsabers and Shardhorn Rhinos", count = 1, map = 119, x = 28.0, y = 56.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12653, title = "Back to Har'koa", npc = 28401, npcName = "Har'koa", map = 121, x = 63.8, y = 70.5, f = "e" },
-					{ t = "accept", quest = 12665, title = "I Sense a Disturbance", npc = 28401, npcName = "Har'koa", map = 121, x = 63.8, y = 70.5, f = "e" },
+					{ t = "turnin", quest = 12549, title = "Dreadsaber Mastery: Becoming a Predator", npc = 28031, npcName = "Buck Cantwell", map = 119, x = 26.7, y = 59.0, f = "e" },
+					{ t = "accept", quest = 12550, title = "Dreadsaber Mastery: Stalking the Prey", npc = 28031, npcName = "Buck Cantwell", map = 119, x = 26.7, y = 59.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 28401, npcName = "Har'koa", map = 121, x = 63.8, y = 70.5, f = "e" },
+					{ t = "turnin", quest = 12520, title = "Rhino Mastery: The Test", npc = 27986, npcName = "Hemet Nesingwary", map = 119, x = 27.1, y = 58.6, f = "e" },
+					{ t = "accept", quest = 12526, title = "Rhino Mastery: The Chase", npc = 27986, npcName = "Hemet Nesingwary", map = 119, x = 27.1, y = 58.6, f = "e" },
 				},
 			},
 			{
-				note = "When you return to 63.8,70.5",
 				goals = {
-					{ t = "turnin", quest = 12665, title = "I Sense a Disturbance", npc = 28401, npcName = "Har'koa", map = 121, x = 63.8, y = 70.5, f = "e" },
-					{ t = "accept", quest = 12666, title = "Preparations for the Underworld", npc = 28401, npcName = "Har'koa", map = 121, x = 63.8, y = 70.5, f = "e" },
+					{ t = "accept", quest = 12804, title = "A Steak Fit for a Hunter", npc = 28046, npcName = "Korg the Cleaver", map = 119, x = 26.7, y = 59.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", target = "Har'koan Subduers", count = 1, map = 121, x = 64.1, y = 69.9, f = "e" },
-					{ t = "kill", target = "Claws of Har'koa", count = 1, map = 121, x = 64.1, y = 69.9, f = "e" },
-					{ t = "collect", quest = 12666, itemName = "Sacred Adornment", count = 8, oi = 1, map = 121, x = 64.1, y = 69.9, f = "e" },
+					{ t = "accept", quest = 12634, title = "Some Make Lemonade, Some Make Liquor", npc = 29157, npcName = "Grimbooze Thunderbrew", map = 119, x = 26.8, y = 60.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12666, title = "Preparations for the Underworld", npc = 28401, npcName = "Har'koa", map = 121, x = 63.8, y = 70.5, f = "e" },
-					{ t = "accept", quest = 12667, title = "Seek the Wind Serpent Goddess", npc = 28401, npcName = "Har'koa", map = 121, x = 63.8, y = 70.5, f = "e" },
+					{ t = "turnin", quest = 12592, title = "The Great Hunter's Challenge", npc = 28328, npcName = "Drostan", map = 119, x = 27.1, y = 59.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 121, x = 74.3, y = 66.7, f = "e" },
+					{ t = "accept", quest = 12551, title = "Crocolisk Mastery: The Trial", npc = 28032, npcName = "Debaar", map = 119, x = 27.2, y = 59.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12667, title = "Seek the Wind Serpent Goddess", npc = 28030, npcName = "Quetz'lun's Spirit", map = 121, x = 75.4, y = 58.6, f = "e" },
-					{ t = "accept", quest = 12672, title = "Setting the Stage", npc = 28030, npcName = "Quetz'lun's Spirit", map = 121, x = 75.4, y = 58.6, f = "e" },
+					{ t = "turnin", quest = 12526, title = "Rhino Mastery: The Chase", npc = 28191, npcName = "Oracle Soo-rahm", map = 119, x = 25.6, y = 66.5, f = "e" },
+					{ t = "accept", quest = 12543, title = "An Offering for Soo-rahm", npc = 28191, npcName = "Oracle Soo-rahm", map = 119, x = 25.6, y = 66.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 12672, itemName = "Underworld Power Fragment", count = 10, oi = 1, map = 121, x = 74.6, y = 59.8, f = "e" },
+					{ t = "kill", target = "Longneck Grazers", count = 1, map = 119, x = 29.5, y = 66.4, f = "e" },
+					{ t = "collect", quest = 12804, itemName = "Longneck Grazer Steak", count = 5, oi = 1, map = 119, x = 29.5, y = 66.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12672, title = "Setting the Stage", npc = 28030, npcName = "Quetz'lun's Spirit", map = 121, x = 75.4, y = 58.6, f = "e" },
-					{ t = "accept", quest = 12668, title = "Foundation for Revenge", npc = 28030, npcName = "Quetz'lun's Spirit", map = 121, x = 75.4, y = 58.6, f = "e" },
+					{ t = "kill", quest = 12551, target = "Mangal Crocolisk", count = 15, oi = 1, map = 119, x = 29.0, y = 62.5, f = "e" },
 				},
 			},
 			{
-				note = "They look like altars all around this whole area.",
 				goals = {
-					{ t = "kill", target = "Quetz'lun Worshippers and Serpent-Touched Berserkers next to the Soul Fonts", count = 1, f = "e" },
+					{ t = "kill", target = "Emperor Cobras", count = 1, map = 119, x = 36.3, y = 65.8, f = "e" },
+					{ t = "collect", quest = 12543, itemName = "Intact Cobra Fang", count = 5, oi = 1, map = 119, x = 36.3, y = 65.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12668, title = "Foundation for Revenge", npc = 28030, npcName = "Quetz'lun's Spirit", map = 121, x = 75.4, y = 58.6, f = "e" },
-					{ t = "accept", quest = 12674, title = "Hell Hath a Fury", npc = 28030, npcName = "Quetz'lun's Spirit", map = 121, x = 75.4, y = 58.6, f = "e" },
+					{ t = "collect", quest = 12634, itemName = "Orange", count = 1, oi = 1, map = 119, x = 37.6, y = 61.8, f = "e" },
+					{ t = "collect", quest = 12634, itemName = "Banana Bunch", count = 2, oi = 2, map = 119, x = 37.6, y = 61.8, f = "e" },
+					{ t = "collect", quest = 12634, itemName = "Papaya", count = 1, oi = 3, map = 119, x = 37.6, y = 61.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 121, x = 74.5, y = 57.4, f = "e" },
+					{ t = "turnin", quest = 12696, title = "Aerial Surveillance", npc = 28746, npcName = "Pilot Vic", map = 119, x = 50.0, y = 61.5, f = "e" },
+					{ t = "accept", quest = 12699, title = "An Embarassing Incident", npc = 28746, npcName = "Pilot Vic", map = 119, x = 50.0, y = 61.5, f = "e" },
+					{ t = "accept", quest = 12803, title = "Force of Nature", npc = 28746, npcName = "Pilot Vic", map = 119, x = 50.0, y = 61.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", target = "High Priest Tua-Tua", count = 1, map = 121, x = 73.5, y = 60.8, f = "e" },
+					{ t = "accept", quest = 12654, title = "The Part-time Hunter", npc = 28568, npcName = "Tamara Wobblesprocket", map = 119, x = 50.5, y = 62.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", target = "High Priest Hawinni", count = 1, map = 121, x = 76.0, y = 54.9, f = "e" },
+					{ t = "collect", quest = 12699, itemName = "Vic's Keys", count = 1, oi = 1, map = 119, x = 48.6, y = 64.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12674, title = "Hell Hath a Fury", npc = 28030, npcName = "Quetz'lun's Spirit", map = 121, x = 75.4, y = 58.6, f = "e" },
-					{ t = "accept", quest = 12675, title = "One Last Thing", npc = 28030, npcName = "Quetz'lun's Spirit", map = 121, x = 75.4, y = 58.6, f = "e" },
+					{ t = "turnin", quest = 12699, title = "An Embarassing Incident", npc = 28746, npcName = "Pilot Vic", map = 119, x = 50.0, y = 61.5, f = "e" },
+					{ t = "accept", quest = 12671, title = "Reconnaissance Flight", npc = 28746, npcName = "Pilot Vic", map = 119, x = 50.0, y = 61.5, f = "e" },
 				},
 			},
 			{
+				note = "You go flying in a plane",
 				goals = {
-					{ t = "turnin", quest = 12675, title = "One Last Thing", npc = 28401, npcName = "Har'koa", map = 121, x = 63.8, y = 70.5, f = "e" },
-					{ t = "accept", quest = 12684, title = "Blood of a Dead God", npc = 28401, npcName = "Har'koa", map = 121, x = 63.8, y = 70.5, f = "e" },
+					{ t = "goto", map = 119, x = 50.0, y = 61.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 12662, target = "Heb'Jin", count = 1, oi = 1, map = 121, x = 64.2, y = 52.6, f = "e" },
+					{ t = "turnin", quest = 12671, title = "Reconnaissance Flight", npc = 28746, npcName = "Pilot Vic", map = 119, x = 50.0, y = 61.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", target = "Heb'Drakkar trolls", count = 1, map = 121, x = 64.6, y = 57.0, f = "e" },
+					{ t = "goto", map = 119, x = 39.9, y = 43.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", target = "Bloods of Mam'toth", count = 1, map = 121, x = 70.5, y = 50.4, f = "e" },
-					{ t = "collect", quest = 12684, itemName = "Blood of Mam'toth", count = 7, oi = 1, map = 121, x = 70.5, y = 50.4, f = "e" },
+					{ t = "turnin", quest = 12550, title = "Dreadsaber Mastery: Stalking the Prey", npc = 28031, npcName = "Buck Cantwell", map = 119, x = 26.7, y = 59.0, f = "e" },
+					{ t = "accept", quest = 12558, title = "Dreadsaber Mastery: Ready to Pounce", npc = 28031, npcName = "Buck Cantwell", map = 119, x = 26.7, y = 59.0, f = "e" },
 				},
 			},
 			{
-				note = "Hearth to Zim'Torga|goto Zul'Drak,59.3,57.2,0.5|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+					{ t = "turnin", quest = 12804, title = "A Steak Fit for a Hunter", npc = 28046, npcName = "Korg the Cleaver", map = 119, x = 26.7, y = 59.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12662, title = "Bringing Down Heb'Jin", npc = 28480, npcName = "Element-Tamer Dagoda", map = 121, x = 59.4, y = 56.4, f = "e" },
+					{ t = "turnin", quest = 12634, title = "Some Make Lemonade, Some Make Liquor", npc = 29157, npcName = "Grimbooze Thunderbrew", map = 119, x = 26.8, y = 60.1, f = "e" },
+					{ t = "accept", quest = 12644, title = "Still At It", npc = 29157, npcName = "Grimbooze Thunderbrew", map = 119, x = 26.8, y = 60.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12659, title = "Scalps!", npc = 28484, npcName = "Scalper Ahunae", map = 121, x = 59.2, y = 56.2, f = "e" },
+					{ t = "collect", quest = 12644, itemName = "Thunderbrew's Jungle Punch", count = 1, oi = 1, map = 119, x = 26.7, y = 60.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 13549, title = "Tails Up", npc = 28527, npcName = "Chronicler To'kini", map = 121, x = 60.0, y = 57.9, f = "e" },
+					{ t = "turnin", quest = 12644, title = "Still At It", npc = 29157, npcName = "Grimbooze Thunderbrew", map = 119, x = 26.8, y = 60.1, f = "e" },
+					{ t = "accept", quest = 12645, title = "The Taste Test", npc = 29157, npcName = "Grimbooze Thunderbrew", map = 119, x = 26.8, y = 60.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12684, title = "Blood of a Dead God", npc = 28401, npcName = "Har'koa", map = 121, x = 63.8, y = 70.5, f = "e" },
-					{ t = "accept", quest = 12685, title = "You Reap What You Sow", npc = 28401, npcName = "Har'koa", map = 121, x = 63.8, y = 70.5, f = "e" },
+					{ t = "turnin", quest = 12551, title = "Crocolisk Mastery: The Trial", npc = 28032, npcName = "Debaar", map = 119, x = 27.2, y = 59.9, f = "e" },
+					{ t = "accept", quest = 12560, title = "Crocolisk Mastery: The Plan", npc = 28032, npcName = "Debaar", map = 119, x = 27.2, y = 59.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 12685, target = "Drained Prophet of Quetz'lun", count = 1, oi = 1, map = 121, x = 75.2, y = 58.6, f = "e" },
+					{ t = "goto", map = 119, x = 27.4, y = 59.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12685, title = "You Reap What You Sow", npc = 28479, npcName = "Witch Doctor Khufu", map = 121, x = 59.5, y = 58.1, f = "e" },
+					{ t = "goto", map = 119, x = 27.1, y = 58.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 12709, title = "Hexed Caches", npc = 28527, npcName = "Chronicler To'kini", map = 121, x = 60.0, y = 57.9, f = "e" },
+					{ t = "turnin", quest = 12543, title = "An Offering for Soo-rahm", npc = 28191, npcName = "Oracle Soo-rahm", map = 119, x = 25.6, y = 66.5, f = "e" },
+					{ t = "accept", quest = 12544, title = "The Bones of Nozronn", npc = 28191, npcName = "Oracle Soo-rahm", map = 119, x = 25.6, y = 66.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 12712, title = "The Key of Warlord Zol'Maz", npc = 28401, npcName = "Har'koa", map = 121, x = 60.3, y = 57.8, f = "e" },
+					{ t = "goto", map = 119, x = 26.1, y = 71.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 12708, title = "Enchanted Tiki Warriors", npc = 28480, npcName = "Element-Tamer Dagoda", map = 121, x = 59.4, y = 56.4, f = "e" },
+					{ t = "turnin", quest = 12544, title = "The Bones of Nozronn", npc = 27986, npcName = "Hemet Nesingwary", map = 119, x = 27.1, y = 58.6, f = "e" },
+					{ t = "accept", quest = 12556, title = "Rhino Mastery: The Kill", npc = 27986, npcName = "Hemet Nesingwary", map = 119, x = 27.1, y = 58.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 12707, title = "Wooly Justice", npc = 28484, npcName = "Scalper Ahunae", map = 121, x = 59.2, y = 56.2, f = "e" },
+					{ t = "collect", quest = 12558, itemName = "Shango's Pelt", count = 1, oi = 1, map = 119, x = 33.4, y = 34.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 121, x = 69.5, y = 41.1, f = "e" },
+					{ t = "collect", quest = 12560, itemName = "Sandfern", count = 5, oi = 1, map = 119, x = 34.7, y = 41.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", target = "Drek'Maz", count = 1, map = 121, x = 68.2, y = 35.3, f = "e" },
-					{ t = "collect", quest = 12712, item = 39315, itemName = "Drek'Maz's Tiki", count = 1, map = 121, x = 68.2, y = 35.3, f = "e" },
+					{ t = "collect", quest = 12556, itemName = "Farunn's Horn", count = 1, oi = 1, map = 119, x = 47.4, y = 43.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", target = "Yara", count = 1, map = 121, x = 67.9, y = 32.8, f = "e" },
-					{ t = "collect", quest = 12712, item = 39313, itemName = "Yara's Sword", count = 1, map = 121, x = 67.9, y = 32.8, f = "e" },
+					{ t = "goto", map = 119, x = 50.5, y = 62.1, f = "e" },
 				},
 			},
 			{
+				note = "Fly to Nesingwary Base Camp,0.5|noway|c",
 				goals = {
-					{ t = "kill", target = "Tiri", count = 1, map = 121, x = 63.8, y = 37.2, f = "e" },
-					{ t = "collect", quest = 12712, item = 39316, itemName = "Tiri's Magical Incantation", count = 1, map = 121, x = 63.8, y = 37.2, f = "e" },
+					{ t = "goto", map = 119, x = 25.4, y = 58.2, f = "e" },
 				},
 			},
 			{
-				note = "Click Tiri's Magical Incantation in your bags|use Tiri's Magical Incantation##39316",
 				goals = {
-					{ t = "use", item = 39316, itemName = "Tiri's Magical Incantation", f = "e" },
-					{ t = "collect", quest = 12712, item = 39314, itemName = "Tiki Dervish Ceremony", count = 1, f = "e" },
+					{ t = "turnin", quest = 12556, title = "Rhino Mastery: The Kill", npc = 27986, npcName = "Hemet Nesingwary", map = 119, x = 27.1, y = 58.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 12709, itemName = "Zol'Maz Stronghold Cache", count = 12, oi = 1, map = 121, x = 69.2, y = 35.9, f = "e" },
+					{ t = "turnin", quest = 12558, title = "Dreadsaber Mastery: Ready to Pounce", npc = 28031, npcName = "Buck Cantwell", map = 119, x = 26.7, y = 59.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 12712, itemName = "Key of Warlord Zol'Maz", count = 1, oi = 1, map = 121, x = 66.2, y = 33.4, f = "e" },
+					{ t = "turnin", quest = 12645, title = "The Taste Test", npc = 29157, npcName = "Grimbooze Thunderbrew", map = 119, x = 26.8, y = 60.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "getfp", location = "Gundrak", text = "Gundrak", map = 121, x = 70.5, y = 23.3, f = "e" },
+					{ t = "turnin", quest = 12560, title = "Crocolisk Mastery: The Plan", npc = 28032, npcName = "Debaar", map = 119, x = 27.2, y = 59.9, f = "e" },
+					{ t = "accept", quest = 12569, title = "Crocolisk Mastery: The Ambush", npc = 28032, npcName = "Debaar", map = 119, x = 27.2, y = 59.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 13099, title = "Just Checkin'", npc = 30676, npcName = "Chronicler Bah'Kini", map = 121, x = 70.1, y = 20.9, f = "e" },
+					{ t = "kill", target = "Bushwhacker that spawns", count = 1, map = 119, x = 46.3, y = 63.4, f = "e" },
+					{ t = "collect", quest = 12569, itemName = "Bushwhacker's Jaw", count = 1, oi = 1, map = 119, x = 46.3, y = 63.4, f = "e" },
 				},
 			},
 			{
-				note = "Fly to Zim'Torga,0.5|noway|c",
 				goals = {
-					{ t = "goto", map = 121, x = 60.0, y = 56.8, f = "e" },
+					{ t = "collect", quest = 12654, itemName = "Pitch's Remains", count = 1, oi = 1, map = 119, x = 50.5, y = 77.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12712, title = "The Key of Warlord Zol'Maz", npc = 28401, npcName = "Har'koa", map = 121, x = 60.3, y = 57.8, f = "e" },
-					{ t = "accept", quest = 12721, title = "Rampage", npc = 28401, npcName = "Har'koa", map = 121, x = 60.3, y = 57.8, f = "e" },
+					{ t = "accept", quest = 12528, title = "Playing Along", npc = 28095, npcName = "Tracker Gekgek", map = 119, x = 50.5, y = 76.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12709, title = "Hexed Caches", npc = 28527, npcName = "Chronicler To'kini", map = 121, x = 60.0, y = 57.9, f = "e" },
+					{ t = "turnin", quest = 12528, title = "Playing Along", npc = 28082, npcName = "High-Shaman Rakjak", map = 119, x = 55.0, y = 69.1, f = "e" },
+					{ t = "accept", quest = 12529, title = "The Ape Hunter's Slave", npc = 28082, npcName = "High-Shaman Rakjak", map = 119, x = 55.0, y = 69.1, f = "e" },
 				},
 			},
 			{
+				note = "Talk to Goregek the Gorilla Hunter who is following you",
 				goals = {
-					{ t = "turnin", quest = 12708, title = "Enchanted Tiki Warriors", npc = 28480, npcName = "Element-Tamer Dagoda", map = 121, x = 59.4, y = 56.4, f = "e" },
+					{ t = "accept", quest = 12530, title = "Tormenting the Softknuckles", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12707, title = "Wooly Justice", npc = 28484, npcName = "Scalper Ahunae", map = 121, x = 59.2, y = 56.2, f = "e" },
+					{ t = "kill", quest = 12529, target = "Hardknuckle Forager", count = 8, oi = 1, map = 119, x = 57.5, y = 73.3, f = "e" },
 				},
 			},
 			{
-				note = "Fly to Gundrak,0.5|noway|c",
 				goals = {
-					{ t = "goto", map = 121, x = 70.5, y = 23.2, f = "e" },
+					{ t = "kill", quest = 12529, target = "Hardknuckle Charger", count = 6, oi = 2, map = 119, x = 61.1, y = 71.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 121, x = 78.1, y = 24.2, f = "e" },
+					{ t = "kill", quest = 12530, target = "Hardknuckle Matriarch", count = 1, oi = 1, map = 119, x = 66.9, y = 73.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 30569, npcName = "Rafae", map = 121, x = 70.5, y = 23.3, f = "e" },
+					{ t = "turnin", quest = 12529, title = "The Ape Hunter's Slave", npc = 28082, npcName = "High-Shaman Rakjak", map = 119, x = 55.0, y = 69.1, f = "e" },
+					{ t = "turnin", quest = 12530, title = "Tormenting the Softknuckles", npc = 28082, npcName = "High-Shaman Rakjak", map = 119, x = 55.0, y = 69.1, f = "e" },
+					{ t = "accept", quest = 12533, title = "The Wasp Hunter's Apprentice", npc = 28082, npcName = "High-Shaman Rakjak", map = 119, x = 55.0, y = 69.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12721, title = "Rampage", npc = 28479, npcName = "Witch Doctor Khufu", map = 121, x = 59.5, y = 58.1, f = "e" },
+					{ t = "accept", quest = 12534, title = "The Sapphire Queen", npc = 28138, npcName = "Elder Harkek", map = 119, x = 55.5, y = 69.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 12524, title = "Venture Co. Misadventure", npc = 28032, npcName = "Debaar", map = 119, x = 27.2, y = 59.9, f = "e" },
+					{ t = "kill", quest = 12533, target = "Sapphire Hive Wasp", count = 6, oi = 1, map = 119, x = 59.6, y = 75.8, f = "e" },
+					{ t = "kill", quest = 12533, target = "Sapphire Hive Drone", count = 9, oi = 2, map = 119, x = 59.6, y = 75.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "sethome", location = "Nesingwary Base Camp", text = "Nesingwary Base Camp", f = "e" },
+					{ t = "goto", map = 119, x = 59.4, y = 79.1, f = "e" },
 				},
 			},
 			{
+				note = "Follow the path down to 57.1,79.3",
 				goals = {
-					{ t = "accept", quest = 12624, title = "It Could Be Anywhere!", npc = 28497, npcName = "Chad", map = 119, x = 26.9, y = 58.9, f = "e" },
+					{ t = "collect", quest = 12534, itemName = "Stinger of the Sapphire Queen", count = 1, oi = 1, map = 119, x = 57.1, y = 79.3, f = "e" },
 				},
 			},
 			{
+				note = "Go outside to 55.0,69.1",
 				goals = {
-					{ t = "accept", quest = 12522, title = "Need an Engine, Take an Engine", npc = 28033, npcName = "Weslex Quickwrench", map = 119, x = 25.4, y = 58.5, f = "e" },
+					{ t = "turnin", quest = 12533, title = "The Wasp Hunter's Apprentice", npc = 28082, npcName = "High-Shaman Rakjak", map = 119, x = 55.0, y = 69.1, f = "e" },
+					{ t = "turnin", quest = 12534, title = "The Sapphire Queen", npc = 28082, npcName = "High-Shaman Rakjak", map = 119, x = 55.0, y = 69.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 12522, itemName = "Flying Machine Engine", count = 1, oi = 1, map = 119, x = 38.7, y = 56.7, f = "e" },
+					{ t = "accept", quest = 12532, title = "Flown the Coop!", npc = 28138, npcName = "Elder Harkek", map = 119, x = 55.5, y = 69.7, f = "e" },
 				},
 			},
 			{
+				note = "They are all around the village",
 				goals = {
-					{ t = "turnin", quest = 12521, title = "Where in the World is Hemet Nesingwary?", npc = 27987, npcName = "Monte Muzzleshot", map = 119, x = 39.7, y = 58.7, f = "e" },
-					{ t = "accept", quest = 12489, title = "Welcome to Sholazar Basin", npc = 27987, npcName = "Monte Muzzleshot", map = 119, x = 39.7, y = 58.7, f = "e" },
+					{ t = "collect", quest = 12532, itemName = "Captured Chicken", count = 12, oi = 1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 12688, title = "Engineering a Disaster", npc = 28787, npcName = "Engineering Helice", map = 119, x = 35.5, y = 47.4, f = "e" },
+					{ t = "turnin", quest = 12532, title = "Flown the Coop!", npc = 28138, npcName = "Elder Harkek", map = 119, x = 55.5, y = 69.7, f = "e" },
+					{ t = "accept", quest = 12531, title = "The Underground Menace", npc = 28138, npcName = "Elder Harkek", map = 119, x = 55.5, y = 69.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", target = "Venture Company mobs", count = 1, map = 119, x = 37.4, y = 46.1, f = "e" },
-					{ t = "collect", quest = 12624, itemName = "Golden Engagement Ring", count = 1, oi = 1, map = 119, x = 37.4, y = 46.1, f = "e" },
+					{ t = "accept", quest = 12535, title = "Mischief in the Making", npc = 28082, npcName = "High-Shaman Rakjak", map = 119, x = 55.0, y = 69.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12524, title = "Venture Co. Misadventure", npc = 28032, npcName = "Debaar", map = 119, x = 27.2, y = 59.9, f = "e" },
-					{ t = "accept", quest = 12525, title = "Wipe That Grin Off His Face", npc = 28032, npcName = "Debaar", map = 119, x = 27.2, y = 59.9, f = "e" },
+					{ t = "collect", quest = 12535, itemName = "Skyreach Crystal Cluster", count = 8, oi = 1, map = 119, x = 56.6, y = 84.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12624, title = "It Could Be Anywhere!", npc = 28497, npcName = "Chad", map = 119, x = 26.9, y = 58.9, f = "e" },
+					{ t = "collect", quest = 12531, itemName = "Claw of Serfex", count = 1, oi = 1, map = 119, x = 49.8, y = 85.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12489, title = "Welcome to Sholazar Basin", npc = 27986, npcName = "Hemet Nesingwary", map = 119, x = 27.1, y = 58.6, f = "e" },
-					{ t = "turnin", quest = 12688, title = "Engineering a Disaster", npc = 27986, npcName = "Hemet Nesingwary", map = 119, x = 27.1, y = 58.6, f = "e" },
+					{ t = "turnin", quest = 12531, title = "The Underground Menace", npc = 28082, npcName = "High-Shaman Rakjak", map = 119, x = 55.0, y = 69.1, f = "e" },
+					{ t = "turnin", quest = 12535, title = "Mischief in the Making", npc = 28082, npcName = "High-Shaman Rakjak", map = 119, x = 55.0, y = 69.1, f = "e" },
+					{ t = "accept", quest = 12536, title = "A Rough Ride", npc = 28082, npcName = "High-Shaman Rakjak", map = 119, x = 55.0, y = 69.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "level", level = 78, f = "e" },
+					{ t = "talk", npc = 28298, npcName = "Captive Crocolisk", map = 119, x = 57.3, y = 68.4, f = "e" },
+				},
+			},
+			{
+				note = "When you jump off the crocodile:",
+				goals = {
+					{ t = "turnin", quest = 12536, title = "A Rough Ride", npc = 28668, npcName = "Zepik the Gorloc Hunter", f = "e" },
+					{ t = "accept", quest = 12537, title = "Lightning Definitely Strikes Twice", npc = 28668, npcName = "Zepik the Gorloc Hunter", f = "e" },
+					{ t = "accept", quest = 12538, title = "The Mist Isn't Listening", npc = 28668, npcName = "Zepik the Gorloc Hunter", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 119, x = 45.4, y = 37.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 119, x = 45.5, y = 39.8, f = "e" },
+				},
+			},
+			{
+				note = "Use Zepik's Hunting Horn if Zepik is not standing next to you:|use Zepik's Hunting Horn##38512",
+				goals = {
+					{ t = "use", item = 38512, itemName = "Zepik's Hunting Horn", f = "e" },
+					{ t = "turnin", quest = 12537, title = "Lightning Definitely Strikes Twice", npc = 28216, npcName = "Zepik the Gorloc Hunter", f = "e" },
+					{ t = "turnin", quest = 12538, title = "The Mist Isn't Listening", npc = 28216, npcName = "Zepik the Gorloc Hunter", f = "e" },
+					{ t = "accept", quest = 12539, title = "Hoofing It", npc = 28216, npcName = "Zepik the Gorloc Hunter", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12539, title = "Hoofing It", npc = 28082, npcName = "High-Shaman Rakjak", map = 119, x = 55.0, y = 69.1, f = "e" },
+					{ t = "accept", quest = 12540, title = "Just Following Orders", npc = 28082, npcName = "High-Shaman Rakjak", map = 119, x = 55.0, y = 69.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", target = "the crocodile that spawns", count = 1, map = 119, x = 55.7, y = 64.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12540, title = "Just Following Orders", npc = 28217, npcName = "Injured Rainspeaker Oracle", map = 119, x = 55.7, y = 64.9, f = "e" },
+					{ t = "accept", quest = 12570, title = "Fortunate Misunderstandings", npc = 28217, npcName = "Injured Rainspeaker Oracle", map = 119, x = 55.7, y = 64.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12570, title = "Fortunate Misunderstandings", npc = 28027, npcName = "High-Oracle Soo-say", map = 119, x = 54.6, y = 56.3, f = "e" },
+					{ t = "accept", quest = 12571, title = "Make the Bad Snake Go Away", npc = 28027, npcName = "High-Oracle Soo-say", map = 119, x = 54.6, y = 56.3, f = "e" },
+				},
+			},
+			{
+				note = "Use Lafoo's Bug Bag if Lafoo is not standing next to you:|use Lafoo's Bug Bag##38622",
+				goals = {
+					{ t = "use", item = 38622, itemName = "Lafoo's Bug Bag", f = "e" },
+					{ t = "accept", quest = 12572, title = "Gods like Shiny Things", npc = 28120, npcName = "Lafoo", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 12571, target = "Venomtip", count = 1, oi = 2, map = 119, x = 57.5, y = 52.4, f = "e" },
+				},
+			},
+			{
+				note = "Use Lafoo's Bug Bag if Lafoo is not standing next to you:|use Lafoo's Bug Bag##38622",
+				goals = {
+					{ t = "use", item = 38622, itemName = "Lafoo's Bug Bag", map = 119, x = 52.4, y = 53.2, f = "e" },
+					{ t = "collect", quest = 12572, itemName = "Shiny Treasures", count = 6, oi = 1, map = 119, x = 52.4, y = 53.2, f = "e" },
+					{ t = "kill", quest = 12571, target = "Emperor Cobra", count = 10, oi = 1, map = 119, x = 52.4, y = 53.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12571, title = "Make the Bad Snake Go Away", npc = 28027, npcName = "High-Oracle Soo-say", map = 119, x = 54.6, y = 56.3, f = "e" },
+					{ t = "accept", quest = 12573, title = "Making Peace", npc = 28027, npcName = "High-Oracle Soo-say", map = 119, x = 54.6, y = 56.3, f = "e" },
+					{ t = "turnin", quest = 12572, title = "Gods like Shiny Things", npc = 28027, npcName = "High-Oracle Soo-say", map = 119, x = 54.6, y = 56.3, f = "e" },
 				},
 			},
 		},

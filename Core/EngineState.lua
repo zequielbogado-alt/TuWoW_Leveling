@@ -83,7 +83,20 @@ end
 -- A step is for this character (`only`) and, with `when`, its predicates
 -- hold (Own.whenHolds: as stored once the route passed the step, else live).
 function stepApplies(step)
-	return Guides.Matches(step.only, player) and (step.when == nil or Own.whenHolds(step))
+	if not (Guides.Matches(step.only, player) and (step.when == nil or Own.whenHolds(step))) then
+		return false
+	end
+	if step.goals and #step.goals > 0 then
+		local hasAny = false
+		for _, g in ipairs(step.goals) do
+			if Guides.Matches(g.only, player) then
+				hasAny = true
+				break
+			end
+		end
+		if not hasAny then return false end
+	end
+	return true
 end
 
 function questDone(q)

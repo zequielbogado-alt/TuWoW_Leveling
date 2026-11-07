@@ -76,11 +76,11 @@ do
 			{
 				note = "Make sure you have 25 Valiant Seals:",
 				goals = {
-					{ t = "collect", quest = 13697, itemName = "Valiant's Seal", count = 25, oi = 1, f = "e" },
-					{ t = "collect", quest = 13719, itemName = "Valiant's Seal", count = 25, oi = 1, f = "e" },
-					{ t = "collect", quest = 13720, itemName = "Valiant's Seal", count = 25, oi = 1, f = "e" },
-					{ t = "collect", quest = 13721, itemName = "Valiant's Seal", count = 25, oi = 1, f = "e" },
-					{ t = "collect", quest = 13722, itemName = "Valiant's Seal", count = 25, oi = 1, f = "e" },
+					{ t = "collect", quest = 13697, itemName = "Valiant's Seal", count = 25, oi = 1, f = "e", only = { races = { "Orc" } } },
+					{ t = "collect", quest = 13719, itemName = "Valiant's Seal", count = 25, oi = 1, f = "e", only = { races = { "Troll" } } },
+					{ t = "collect", quest = 13720, itemName = "Valiant's Seal", count = 25, oi = 1, f = "e", only = { races = { "Tauren" } } },
+					{ t = "collect", quest = 13721, itemName = "Valiant's Seal", count = 25, oi = 1, f = "e", only = { races = { "Scourge" } } },
+					{ t = "collect", quest = 13722, itemName = "Valiant's Seal", count = 25, oi = 1, f = "e", only = { races = { "BloodElf" } } },
 				},
 			},
 			{
@@ -150,7 +150,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 33518, npcName = "Squire Danny", map = 118, x = 68.6, y = 21.0, f = "e" },
+					{ t = "talk", npc = 33518, npcName = "Squire Danny", map = 118, x = 68.6, y = 21.0, f = "e", only = { races = { "BloodElf" } } },
 				},
 			},
 			{
@@ -190,13 +190,13 @@ do
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 13736, title = "A Champion Rises", npc = 33817, npcName = "Justicar Mariel Trueheart", map = 118, x = 69.7, y = 22.9, f = "e" },
-					{ t = "turnin", quest = 13737, title = "A Champion Rises", npc = 33817, npcName = "Justicar Mariel Trueheart", map = 118, x = 69.7, y = 22.9, f = "e" },
-					{ t = "turnin", quest = 13738, title = "A Champion Rises", npc = 33817, npcName = "Justicar Mariel Trueheart", map = 118, x = 69.7, y = 22.9, f = "e" },
-					{ t = "turnin", quest = 13739, title = "A Champion Rises", npc = 33817, npcName = "Justicar Mariel Trueheart", map = 118, x = 69.7, y = 22.9, f = "e" },
-					{ t = "turnin", quest = 13740, title = "A Champion Rises", npc = 33817, npcName = "Justicar Mariel Trueheart", map = 118, x = 69.7, y = 22.9, f = "e" },
-					{ t = "accept", quest = 13795, title = "The Scourgebane", npc = 33817, npcName = "Justicar Mariel Trueheart", map = 118, x = 69.7, y = 22.9, f = "e" },
-					{ t = "accept", quest = 13794, title = "Eadric the Pure", npc = 33817, npcName = "Justicar Mariel Trueheart", map = 118, x = 69.7, y = 22.9, f = "e" },
+					{ t = "turnin", quest = 13736, title = "A Champion Rises", npc = 33817, npcName = "Justicar Mariel Trueheart", map = 118, x = 69.7, y = 22.9, f = "e", only = { races = { "Orc" } } },
+					{ t = "turnin", quest = 13737, title = "A Champion Rises", npc = 33817, npcName = "Justicar Mariel Trueheart", map = 118, x = 69.7, y = 22.9, f = "e", only = { races = { "Troll" } } },
+					{ t = "turnin", quest = 13738, title = "A Champion Rises", npc = 33817, npcName = "Justicar Mariel Trueheart", map = 118, x = 69.7, y = 22.9, f = "e", only = { races = { "Tauren" } } },
+					{ t = "turnin", quest = 13739, title = "A Champion Rises", npc = 33817, npcName = "Justicar Mariel Trueheart", map = 118, x = 69.7, y = 22.9, f = "e", only = { races = { "Scourge" } } },
+					{ t = "turnin", quest = 13740, title = "A Champion Rises", npc = 33817, npcName = "Justicar Mariel Trueheart", map = 118, x = 69.7, y = 22.9, f = "e", only = { races = { "BloodElf" } } },
+					{ t = "accept", quest = 13795, title = "The Scourgebane", npc = 33817, npcName = "Justicar Mariel Trueheart", map = 118, x = 69.7, y = 22.9, f = "e", only = { classes = { "DEATHKNIGHT" } } },
+					{ t = "accept", quest = 13794, title = "Eadric the Pure", npc = 33817, npcName = "Justicar Mariel Trueheart", map = 118, x = 69.7, y = 22.9, f = "e", only = { classes = { "DEATHKNIGHT" } } },
 				},
 			},
 			{

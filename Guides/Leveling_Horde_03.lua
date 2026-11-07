@@ -38,58 +38,17 @@ do
 				},
 			},
 			{
-				only = { races = { "Tauren" }, classes = { "WARRIOR" } },
+				only = { races = { "Tauren" } },
 				goals = {
 					{ t = "turnin", quest = 747, title = "The Hunt Begins", npc = 2980, npcName = "Grull Hawkwind", map = 1412, x = 44.9, y = 77.1, f = "e" },
 					{ t = "accept", quest = 750, title = "The Hunt Continues", npc = 2980, npcName = "Grull Hawkwind", map = 1412, x = 44.9, y = 77.1, f = "e" },
 					{ t = "accept", quest = 3091, title = "Simple Note", npc = 2980, npcName = "Grull Hawkwind", map = 1412, x = 44.9, y = 77.1, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Tauren" }, classes = { "SHAMAN" } },
-				goals = {
-					{ t = "turnin", quest = 747, title = "The Hunt Begins", npc = 2980, npcName = "Grull Hawkwind", map = 1412, x = 44.9, y = 77.1, f = "e" },
-					{ t = "accept", quest = 750, title = "The Hunt Continues", npc = 2980, npcName = "Grull Hawkwind", map = 1412, x = 44.9, y = 77.1, f = "e" },
 					{ t = "accept", quest = 3093, title = "Rune-Inscribed Note", npc = 2980, npcName = "Grull Hawkwind", map = 1412, x = 44.9, y = 77.1, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Tauren" }, classes = { "HUNTER" } },
-				goals = {
-					{ t = "turnin", quest = 747, title = "The Hunt Begins", npc = 2980, npcName = "Grull Hawkwind", map = 1412, x = 44.9, y = 77.1, f = "e" },
-					{ t = "accept", quest = 750, title = "The Hunt Continues", npc = 2980, npcName = "Grull Hawkwind", map = 1412, x = 44.9, y = 77.1, f = "e" },
 					{ t = "accept", quest = 3092, title = "Etched Note", npc = 2980, npcName = "Grull Hawkwind", map = 1412, x = 44.9, y = 77.1, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Tauren" }, classes = { "DRUID" } },
-				goals = {
-					{ t = "turnin", quest = 747, title = "The Hunt Begins", npc = 2980, npcName = "Grull Hawkwind", map = 1412, x = 44.9, y = 77.1, f = "e" },
-					{ t = "accept", quest = 750, title = "The Hunt Continues", npc = 2980, npcName = "Grull Hawkwind", map = 1412, x = 44.9, y = 77.1, f = "e" },
 					{ t = "accept", quest = 3094, title = "Verdant Note", npc = 2980, npcName = "Grull Hawkwind", map = 1412, x = 44.9, y = 77.1, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Tauren" }, classes = { "WARRIOR" } },
-				goals = {
 					{ t = "turnin", quest = 3091, title = "Simple Note", npc = 3059, npcName = "Harutt Thunderhorn", map = 1412, x = 44.0, y = 76.1, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Tauren" }, classes = { "SHAMAN" } },
-				goals = {
 					{ t = "turnin", quest = 3093, title = "Rune-Inscribed Note", npc = 3062, npcName = "Meela Dawnstrider", map = 1412, x = 45.0, y = 75.9, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Tauren" }, classes = { "HUNTER" } },
-				goals = {
 					{ t = "turnin", quest = 3092, title = "Etched Note", npc = 3061, npcName = "Lanka Farshot", map = 1412, x = 44.2, y = 75.8, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Tauren" }, classes = { "DRUID" } },
-				goals = {
 					{ t = "turnin", quest = 3094, title = "Verdant Note", npc = 3060, npcName = "Gart Mistrunner", map = 1412, x = 45.1, y = 75.9, f = "e" },
 				},
 			},
@@ -481,34 +440,115 @@ do
 				},
 			},
 			{
-				only = { races = { "Tauren" }, classes = { "WARRIOR" } },
+				note = "Go up the path to 38,59",
+				only = { races = { "Tauren" } },
 				goals = {
 					{ t = "accept", quest = 1505, title = "Veteran Uzzek", npc = 3063, npcName = "Krang Stonehoof", map = 1412, x = 49.5, y = 60.6, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Tauren" }, classes = { "WARRIOR" } },
-				goals = {
 					{ t = "turnin", quest = 1505, title = "Veteran Uzzek", npc = 5810, npcName = "Uzzek", map = 1413, x = 61.4, y = 21.1, f = "e" },
 					{ t = "accept", quest = 1498, title = "Path of Defense", npc = 5810, npcName = "Uzzek", map = 1413, x = 61.4, y = 21.1, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Tauren" }, classes = { "WARRIOR" } },
-				goals = {
 					{ t = "collect", quest = 1498, itemName = "Singed Scale", count = 5, oi = 1, map = 1411, x = 39.2, y = 32.0, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Tauren" }, classes = { "WARRIOR" } },
-				goals = {
 					{ t = "turnin", quest = 1498, title = "Path of Defense", npc = 5810, npcName = "Uzzek", map = 1413, x = 61.4, y = 21.1, f = "e" },
+					{ t = "accept", quest = 2984, title = "Call of Fire (1)", npc = 3066, npcName = "Narm Skychaser", map = 1413, x = 48.3, y = 59.1, f = "e" },
+					{ t = "turnin", quest = 2984, title = "Call of Fire (1)", npc = 5907, npcName = "Kranal Fiss", map = 1413, x = 55.8, y = 19.8, f = "e" },
+					{ t = "accept", quest = 1524, title = "Call of Fire (2)", npc = 5907, npcName = "Kranal Fiss", map = 1413, x = 55.8, y = 19.8, f = "e" },
+					{ t = "turnin", quest = 1524, title = "Call of Fire (2)", npc = 5900, npcName = "Telf Joolam", map = 1411, x = 38.0, y = 59.0, f = "e" },
+					{ t = "accept", quest = 1525, title = "Call of Fire (3)", npc = 5900, npcName = "Telf Joolam", map = 1411, x = 38.0, y = 59.0, f = "e" },
+					{ t = "collect", quest = 1525, itemName = "Fire Tar", count = 1, oi = 1, map = 1413, x = 53.8, y = 25.6, f = "e" },
+					{ t = "collect", quest = 1525, itemName = "Reagent Pouch", count = 1, oi = 2, map = 1411, x = 52.8, y = 28.9, f = "e" },
+					{ t = "turnin", quest = 1525, title = "Call of Fire (3)", npc = 5900, npcName = "Telf Joolam", map = 1411, x = 38.0, y = 59.0, f = "e" },
+					{ t = "accept", quest = 1526, title = "Call of Fire (4)", npc = 5900, npcName = "Telf Joolam", map = 1411, x = 38.0, y = 59.0, f = "e" },
+					{ t = "collect", quest = 1526, itemName = "Glowing Ember", count = 1, oi = 1, map = 1411, x = 38.9, y = 58.3, f = "e" },
+					{ t = "turnin", quest = 1526, title = "Call of Fire (4)", map = 1411, x = 38.9, y = 58.3, f = "e" },
+					{ t = "accept", quest = 1527, title = "Call of Fire (5)", map = 1411, x = 38.9, y = 58.3, f = "e" },
+					{ t = "turnin", quest = 1527, title = "Call of Fire (5)", npc = 5907, npcName = "Kranal Fiss", map = 1413, x = 55.8, y = 19.8, f = "e" },
+					{ t = "accept", quest = 6061, title = "Taming the Beast (1)", npc = 3065, npcName = "Yaw Sharpmane", map = 1413, x = 47.8, y = 55.7, f = "e" },
+					{ t = "turnin", quest = 6061, title = "Taming the Beast (1)", npc = 3065, npcName = "Yaw Sharpmane", map = 1413, x = 47.8, y = 55.7, f = "e" },
+					{ t = "accept", quest = 6087, title = "Taming the Beast (2)", npc = 3065, npcName = "Yaw Sharpmane", map = 1413, x = 47.8, y = 55.7, f = "e" },
+					{ t = "turnin", quest = 6087, title = "Taming the Beast (2)", npc = 3065, npcName = "Yaw Sharpmane", map = 1413, x = 47.8, y = 55.7, f = "e" },
+					{ t = "accept", quest = 6088, title = "Taming the Beast (3)", npc = 3065, npcName = "Yaw Sharpmane", map = 1413, x = 47.8, y = 55.7, f = "e" },
+					{ t = "turnin", quest = 6088, title = "Taming the Beast (3)", npc = 3065, npcName = "Yaw Sharpmane", map = 1413, x = 47.8, y = 55.7, f = "e" },
+					{ t = "accept", quest = 6089, title = "Training the Beast (2)", npc = 3065, npcName = "Yaw Sharpmane", map = 1413, x = 47.8, y = 55.7, f = "e" },
+					{ t = "turnin", quest = 6089, title = "Training the Beast", npc = 3039, npcName = "Holt Thunderhorn", map = 1456, x = 57.3, y = 89.8, f = "e" },
+					{ t = "accept", quest = 5926, title = "Heeding the Call", npc = 3064, npcName = "Gennia Runetotem", map = 1456, x = 48.5, y = 59.7, f = "e" },
+					{ t = "turnin", quest = 5926, title = "Heeding the Call", npc = 3033, npcName = "Turak Runetotem", map = 1456, x = 76.4, y = 27.3, f = "e" },
+					{ t = "accept", quest = 5922, title = "Moonglade", npc = 3033, npcName = "Turak Runetotem", map = 1456, x = 76.4, y = 27.3, f = "e" },
+					{ t = "turnin", quest = 5922, title = "Moonglade", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.4, y = 30.5, f = "e" },
+					{ t = "accept", quest = 5930, title = "Great Bear Spirit", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.4, y = 30.5, f = "e" },
+					{ t = "turnin", quest = 5930, title = "Great Bear Spirit", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.4, y = 30.5, f = "e" },
+					{ t = "accept", quest = 5932, title = "Back to Thunder Bluff", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.4, y = 30.5, f = "e" },
+					{ t = "turnin", quest = 5932, title = "Back to Thunder Bluff", npc = 3033, npcName = "Turak Runetotem", map = 1456, x = 76.4, y = 27.3, f = "e" },
+					{ t = "accept", quest = 6002, title = "Body and Heart", npc = 3033, npcName = "Turak Runetotem", map = 1456, x = 76.4, y = 27.3, f = "e" },
+					{ t = "turnin", quest = 6002, title = "Body and Heart", npc = 3033, npcName = "Turak Runetotem", map = 1456, x = 76.4, y = 27.3, f = "e" },
+					{ t = "goto", map = 1411, x = 36.6, y = 57.1, f = "e", only = { classes = { "SHAMAN" } } },
+					{ t = "goto", map = 1413, x = 42.4, y = 54.5, f = "e", only = { classes = { "HUNTER" } } },
+					{ t = "goto", map = 1413, x = 48.6, y = 46.7, f = "e", only = { classes = { "HUNTER" } } },
+					{ t = "goto", map = 1413, x = 42.3, y = 50.1, f = "e", only = { classes = { "HUNTER" } } },
+					{ t = "talk", npc = 11956, npcName = "the Great Bear Spirit", map = 1450, x = 39.1, y = 27.3, f = "e", only = { classes = { "DRUID" } } },
+					{ t = "talk", npc = 11798, npcName = "Bunthen Plainswind", map = 1450, x = 44.3, y = 45.9, f = "e", only = { classes = { "DRUID" } } },
+					{ t = "talk", npc = 12144, npcName = "Lunaclaw Spirit", map = 1413, x = 42.0, y = 60.9, f = "e", only = { classes = { "DRUID" } } },
+					{ t = "getfp", location = "Camp Taurajo", text = "Camp Taurajo", map = 1413, x = 44.4, y = 59.2, f = "e", only = { classes = { "DRUID" } } },
 				},
 			},
 			{
-				only = { races = { "Tauren" }, classes = { "SHAMAN" } },
+				only = { races = { "Tauren" } },
 				goals = {
-					{ t = "accept", quest = 2984, title = "Call of Fire (1)", npc = 3066, npcName = "Narm Skychaser", map = 1413, x = 48.3, y = 59.1, f = "e" },
+					{ t = "collect", quest = 759, itemName = "Prairie Alpha Tooth", count = 8, oi = 1, map = 1412, x = 63.2, y = 61.7, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Tauren" } },
+				goals = {
+					{ t = "turnin", quest = 759, title = "Wildmane Totem", npc = 2948, npcName = "Mull Thunderhorn", map = 1412, x = 48.5, y = 60.4, f = "e" },
+					{ t = "accept", quest = 760, title = "Wildmane Cleansing", npc = 2948, npcName = "Mull Thunderhorn", map = 1412, x = 48.5, y = 60.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 861, title = "The Hunter's Way", npc = 3052, npcName = "Skorn Whitecloud", map = 1412, x = 46.8, y = 60.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 764, target = "Venture Co. Worker", count = 14, oi = 1, map = 1412, x = 59.2, y = 48.8, f = "e" },
+					{ t = "kill", quest = 764, target = "Venture Co. Supervisor", count = 6, oi = 2, map = 1412, x = 59.2, y = 48.8, f = "e" },
+				},
+			},
+			{
+				note = "Go northeast into the mine to 64.4,43.5",
+				goals = {
+					{ t = "collect", quest = 765, itemName = "Fizsprocket's Clipboard", count = 1, oi = 1, map = 1412, x = 64.4, y = 43.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 764, title = "The Venture Co.", npc = 2988, npcName = "Morin Cloudstalker", map = 1412, x = 59.3, y = 62.2, f = "e" },
+					{ t = "turnin", quest = 765, title = "Supervisor Fizsprocket", npc = 2988, npcName = "Morin Cloudstalker", map = 1412, x = 59.3, y = 62.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 11, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 744, title = "Preparation for Ceremony", npc = 2987, npcName = "Eyahn Eagletalon", map = 1456, x = 37.7, y = 59.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 833, title = "A Sacred Burial", npc = 3233, npcName = "Lorekeeper Raintotem", map = 1412, x = 59.9, y = 25.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 833, target = "Bristleback Interloper", count = 8, oi = 1, map = 1412, x = 61.0, y = 23.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 773, title = "Rite of Wisdom", npc = 2994, npcName = "Ancestral Spirit", map = 1412, x = 61.4, y = 21.0, f = "e" },
+					{ t = "accept", quest = 775, title = "Journey into Thunder Bluff", npc = 2994, npcName = "Ancestral Spirit", map = 1412, x = 61.4, y = 21.0, f = "e" },
 				},
 			},
 		},

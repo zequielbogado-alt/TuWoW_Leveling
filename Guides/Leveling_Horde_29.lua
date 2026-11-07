@@ -3,493 +3,700 @@
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/h-levels-55-60-part-2",
+		id = "zygor/leveling/h-outland-60-62",
 		pack = "guides",
-		title = "Levels (55-60) (Parte 2/2)",
+		title = "Outland (60-62) (Parte 1/2)",
 		category = "Leveling",
 		faction = "Horde",
+		next = "zygor/leveling/h-outland-60-62-part-2",
 		author = "TuWoW & Zygor",
-		minLevel = 57,
-		maxLevel = 60,
-		zone = 1449,
+		minLevel = 60,
+		maxLevel = 62,
+		zone = 1419,
 		version = 1,
 		steps = {
 			{
 				goals = {
-					{ t = "collect", quest = 977, itemName = "Pristine Yeti Horn", count = 2, oi = 1, map = 1452, x = 66.0, y = 43.0, f = "e" },
+					{ t = "accept", quest = 9407, title = "Through the Dark Portal", npc = 19254, npcName = "Warlord Dar'toon", map = 1419, x = 58.1, y = 56.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 1452, x = 60.1, y = 73.5, f = "e" },
-				},
-			},
-			{
-				note = "Hearth to Everlook,0.1|use hearthstone##6948|noway|c",
-				goals = {
-					{ t = "use", item = 6948, itemName = "hearthstone", map = 1452, x = 61.3, y = 38.8, f = "e" },
+					{ t = "turnin", quest = 9407, title = "Through the Dark Portal", npc = 19253, npcName = "Lieutenant General Orion", map = 1944, x = 87.4, y = 49.8, f = "e" },
+					{ t = "accept", quest = 10120, title = "Arrival in Outland", npc = 19253, npcName = "Lieutenant General Orion", map = 1944, x = 87.4, y = 49.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 977, title = "Are We There. Yeti? (2)", npc = 10305, npcName = "Umi Rumplesnicker", map = 1452, x = 60.9, y = 37.6, f = "e" },
-					{ t = "accept", quest = 5163, title = "Are We There, Yeti? (3)", npc = 10305, npcName = "Umi Rumplesnicker", map = 1452, x = 60.9, y = 37.6, f = "e" },
+					{ t = "turnin", quest = 10120, title = "Arrival in Outland", npc = 18930, npcName = "Vlagga Freyfeather", map = 1944, x = 87.3, y = 48.1, f = "e" },
+					{ t = "accept", quest = 10289, title = "Journey to Thrallmar", npc = 18930, npcName = "Vlagga Freyfeather", map = 1944, x = 87.3, y = 48.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 1452, x = 61.5, y = 38.6, f = "e" },
+					{ t = "turnin", quest = 10289, title = "Journey to Thrallmar", npc = 19255, npcName = "General Krakork", map = 1944, x = 55.9, y = 36.8, f = "e" },
+					{ t = "accept", quest = 10291, title = "Report to Nazgrel", npc = 19255, npcName = "General Krakork", map = 1944, x = 55.9, y = 36.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 8464, target = "Winterfall Shaman", count = 8, oi = 1, map = 1452, x = 67.0, y = 35.0, f = "e" },
-					{ t = "kill", quest = 8464, target = "Winterfall Den Watcher", count = 8, oi = 2, map = 1452, x = 67.0, y = 35.0, f = "e" },
-					{ t = "kill", quest = 8464, target = "Winterfall Ursa", count = 8, oi = 3, map = 1452, x = 67.0, y = 35.0, f = "e" },
+					{ t = "turnin", quest = 10291, title = "Report to Nazgrel", npc = 3230, npcName = "Nazgrel", map = 1944, x = 55.0, y = 36.0, f = "e" },
+					{ t = "accept", quest = 10121, title = "Eradicate the Burning Legion", npc = 3230, npcName = "Nazgrel", map = 1944, x = 55.0, y = 36.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 4842, title = "Strange Sources", npc = 9298, npcName = "Donova Snowden", map = 1452, x = 31.3, y = 45.2, f = "e" },
+					{ t = "accept", quest = 10450, title = "Bonechewer Blood", npc = 21256, npcName = "Vurtok Axebreaker", map = 1944, x = 55.1, y = 36.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8464, title = "Winterfall Activity", npc = 11556, npcName = "Salfa", map = 1452, x = 27.7, y = 34.5, f = "e" },
+					{ t = "accept", quest = 10086, title = "I Work... For the Horde!", npc = 21283, npcName = "Megzeg Nukklebust", map = 1944, x = 55.2, y = 38.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 1452, x = 38.5, y = 38.7, f = "e" },
+					{ t = "sethome", location = "Thrallmar", text = "Thrallmar", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 4521, target = "Raging Owlbeast", count = 15, oi = 1, map = 1452, x = 59.3, y = 28.0, f = "e" },
+					{ t = "turnin", quest = 10121, title = "Eradicate the Burning Legion", npc = 19256, npcName = "Sergeant Shatterskull", map = 1944, x = 58.0, y = 41.3, f = "e" },
+					{ t = "accept", quest = 10123, title = "Felspark Ravine", npc = 19256, npcName = "Sergeant Shatterskull", map = 1944, x = 58.0, y = 41.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 4809, itemName = "Uncracked Chillwind Horn", count = 8, oi = 1, map = 1452, x = 61.0, y = 22.0, f = "e" },
+					{ t = "kill", quest = 10123, target = "Dreadcaller", count = 1, oi = 1, map = 1944, x = 60.8, y = 35.9, f = "e" },
+					{ t = "kill", quest = 10123, target = "Flamewaker Imp", count = 4, oi = 2, map = 1944, x = 60.8, y = 35.9, f = "e" },
+					{ t = "kill", quest = 10123, target = "Infernal Warbringer", count = 6, oi = 3, map = 1944, x = 60.8, y = 35.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 4809, title = "Chillwind Horns", npc = 10468, npcName = "Felnok Steelspring", map = 1452, x = 61.6, y = 38.6, f = "e" },
-					{ t = "accept", quest = 4810, title = "Return to Tinkee", npc = 10468, npcName = "Felnok Steelspring", map = 1452, x = 61.6, y = 38.6, f = "e" },
+					{ t = "turnin", quest = 10123, title = "Felspark Ravine", npc = 19256, npcName = "Sergeant Shatterskull", map = 1944, x = 58.0, y = 41.3, f = "e" },
+					{ t = "accept", quest = 10124, title = "Forward Base: Reaver's Fall", npc = 19256, npcName = "Sergeant Shatterskull", map = 1944, x = 58.0, y = 41.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 4521, title = "Wild Guardians (1)", npc = 10306, npcName = "Trull Failbaine", map = 1448, x = 34.7, y = 52.8, f = "e" },
+					{ t = "turnin", quest = 10124, title = "Forward Base: Reaver's Fall", npc = 19273, npcName = "Forward Commander To'arch", map = 1944, x = 65.9, y = 43.6, f = "e" },
+					{ t = "accept", quest = 10208, title = "Disrupt Their Reinforcements", npc = 19273, npcName = "Forward Commander To'arch", map = 1944, x = 65.9, y = 43.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 1446, x = 51.1, y = 26.9, f = "e" },
+					{ t = "collect", quest = 10208, item = 28513, itemName = "Demonic Rune Stone", count = 4, map = 1944, x = 70.8, y = 45.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 1446, x = 54.1, y = 28.4, f = "e" },
-				},
-			},
-			{
-				note = "As a spirit, go north to 54,23.4",
-				goals = {
-					{ t = "turnin", quest = 3912, title = "Meet at the Grave", npc = 9299, npcName = "Gaeriyan", map = 1446, x = 54.0, y = 23.4, f = "e" },
-					{ t = "accept", quest = 3913, title = "A Grave Situation", npc = 9299, npcName = "Gaeriyan", map = 1446, x = 54.0, y = 23.4, f = "e" },
+					{ t = "collect", quest = 10208, item = 28513, itemName = "Demonic Rune Stone", count = 4, map = 1944, x = 74.0, y = 38.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 3913, title = "A Grave Situation", map = 1446, x = 53.8, y = 29.1, f = "e" },
-					{ t = "accept", quest = 3914, title = "Linken's Sword", map = 1446, x = 53.8, y = 29.1, f = "e" },
+					{ t = "turnin", quest = 10208, title = "Disrupt Their Reinforcements", npc = 19273, npcName = "Forward Commander To'arch", map = 1944, x = 65.9, y = 43.6, f = "e" },
+					{ t = "accept", quest = 10129, title = "Mission: Gateways Murketh and Shaadraz", npc = 19273, npcName = "Forward Commander To'arch", map = 1944, x = 65.9, y = 43.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 1449, x = 43.7, y = 9.4, f = "e" },
+					{ t = "talk", npc = 19401, npcName = "Wing Commander Brack", map = 1944, x = 66.1, y = 43.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 3914, title = "Linken's Sword", npc = 8737, npcName = "Linken", map = 1449, x = 44.7, y = 8.1, f = "e" },
-					{ t = "accept", quest = 3941, title = "A Gnome's Assistance", npc = 8737, npcName = "Linken", map = 1449, x = 44.7, y = 8.1, f = "e" },
+					{ t = "turnin", quest = 10129, title = "Mission: Gateways Murketh and Shaadraz", npc = 19273, npcName = "Forward Commander To'arch", map = 1944, x = 65.9, y = 43.6, f = "e" },
+					{ t = "accept", quest = 10162, title = "Mission: The Abyssal Shelf", npc = 19273, npcName = "Forward Commander To'arch", map = 1944, x = 65.9, y = 43.6, f = "e" },
+					{ t = "accept", quest = 10388, title = "Return to Thrallmar", npc = 19273, npcName = "Forward Commander To'arch", map = 1944, x = 65.9, y = 43.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 3941, title = "A Gnome's Assistance", npc = 9117, npcName = "J.D. Collie", map = 1449, x = 41.9, y = 2.7, f = "e" },
-					{ t = "accept", quest = 3942, title = "Linken's Memory", npc = 9117, npcName = "J.D. Collie", map = 1449, x = 41.9, y = 2.7, f = "e" },
+					{ t = "kill", quest = 10162, target = "Mo'arg Overseer", count = 5, oi = 2, map = 1944, x = 66.1, y = 43.7, f = "e" },
+					{ t = "kill", quest = 10162, target = "Gan'arg Peon", count = 20, oi = 1, map = 1944, x = 66.1, y = 43.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 1449, x = 29.2, y = 22.1, f = "e" },
+					{ t = "turnin", quest = 10162, title = "Mission: The Abyssal Shelf", npc = 19273, npcName = "Forward Commander To'arch", map = 1944, x = 65.9, y = 43.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 1124, title = "Wasteland", npc = 13220, npcName = "Layo Starstrike", map = 1451, x = 81.8, y = 18.8, f = "e" },
+					{ t = "accept", quest = 9498, title = "Falcon Watch", npc = 16577, npcName = "Martik Tor'seldori", map = 1944, x = 55.2, y = 39.1, f = "e", only = { races = { "BloodElf" } } },
+					{ t = "accept", quest = 9499, title = "Falcon Watch", npc = 16577, npcName = "Martik Tor'seldori", map = 1944, x = 55.2, y = 39.1, f = "e", only = { races = { "BloodElf" } } },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8276, title = "Taking Back Silithus", npc = 15191, npcName = "Windcaller Proudhorn", map = 1451, x = 51.2, y = 38.3, f = "e" },
-					{ t = "accept", quest = 8280, title = "Securing the Supply Lines", npc = 15191, npcName = "Windcaller Proudhorn", map = 1451, x = 51.2, y = 38.3, f = "e" },
+					{ t = "turnin", quest = 10388, title = "Return to Thrallmar", npc = 3230, npcName = "Nazgrel", map = 1944, x = 55.0, y = 36.0, f = "e" },
+					{ t = "accept", quest = 10390, title = "Forge Camp: Mageddon", npc = 3230, npcName = "Nazgrel", map = 1944, x = 55.0, y = 36.0, f = "e" },
+					{ t = "accept", quest = 9400, title = "The Assassin", npc = 3230, npcName = "Nazgrel", map = 1944, x = 55.0, y = 36.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "level", level = 58, f = "e" },
+					{ t = "kill", quest = 10390, target = "Gan'arg Servant", count = 10, oi = 1, map = 1944, x = 64.4, y = 31.9, f = "e" },
+					{ t = "collect", quest = 10390, itemName = "Head of Forgefiend Razorsaw", count = 1, oi = 2, map = 1944, x = 64.4, y = 31.9, f = "e" },
+					{ t = "collect", itemName = "the Burning Legion Missive", count = 1, map = 1944, x = 64.4, y = 31.9, f = "e" },
+					{ t = "accept", quest = 10393, title = "Vile Plans", map = 1944, x = 64.4, y = 31.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "sethome", location = "Cenarion Hold", text = "Cenarion Hold", f = "e" },
+					{ t = "turnin", quest = 10390, title = "Forge Camp: Mageddon", npc = 3230, npcName = "Nazgrel", map = 1944, x = 55.0, y = 36.0, f = "e" },
+					{ t = "accept", quest = 10391, title = "Cannons of Rage", npc = 3230, npcName = "Nazgrel", map = 1944, x = 55.0, y = 36.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 8277, title = "Deadly Desert Venom", npc = 15189, npcName = "Beetix Ficklespragg", map = 1451, x = 51.7, y = 38.6, f = "e" },
+					{ t = "turnin", quest = 10393, title = "Vile Plans", npc = 21175, npcName = "Magister Bloodhawk", map = 1944, x = 55.1, y = 36.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 8284, title = "The Twilight Mystery", npc = 15183, npcName = "Geologist Larksbane", map = 1451, x = 49.7, y = 37.5, f = "e" },
+					{ t = "kill", quest = 10391, target = "Fel Cannon MKI", count = 3, oi = 1, map = 1944, x = 57.5, y = 31.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "getfp", location = "Cenarion Hold", text = "Cenarion Hold", map = 1451, x = 48.7, y = 36.7, f = "e" },
+					{ t = "turnin", quest = 10391, title = "Cannons of Rage", npc = 3230, npcName = "Nazgrel", map = 1944, x = 55.0, y = 36.0, f = "e" },
+					{ t = "accept", quest = 10392, title = "Doorway to the Abyss", npc = 3230, npcName = "Nazgrel", map = 1944, x = 55.0, y = 36.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 8280, target = "Dredge Striker", count = 15, oi = 1, map = 1451, x = 54.0, y = 31.0, f = "e" },
-					{ t = "collect", quest = 8277, itemName = "Stonelash Scorpid Stinger", count = 8, oi = 1, map = 1451, x = 54.0, y = 31.0, f = "e" },
-					{ t = "collect", quest = 8277, itemName = "Sand Skitterer Fang", count = 8, oi = 2, map = 1451, x = 54.0, y = 31.0, f = "e" },
+					{ t = "kill", quest = 10392, target = "Warbringer Arix'Amal", count = 1, oi = 1, map = 1944, x = 52.8, y = 26.4, f = "e" },
+					{ t = "collect", quest = 10392, itemName = "Burning Legion Gate Key", count = 1, oi = 3, map = 1944, x = 52.8, y = 26.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 8284, itemName = "Twilight Tablet Fragment", count = 8, oi = 1, map = 1451, x = 25.0, y = 10.0, f = "e" },
+					{ t = "goto", map = 1944, x = 53.1, y = 27.6, f = "e" },
 				},
 			},
 			{
-				note = "Hearth to Cenarion Hold|goto Silithus,51.9,39.2,0.3|noway|use hearthstone##6948|c",
+				goals = {
+					{ t = "turnin", quest = 10392, title = "Doorway to the Abyss", npc = 3230, npcName = "Nazgrel", map = 1944, x = 55.0, y = 36.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 10389, title = "The Agony and the Darkness", npc = 21175, npcName = "Magister Bloodhawk", map = 1944, x = 55.1, y = 36.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 10086, itemName = "Salvaged Metal", count = 8, oi = 1, map = 1944, x = 56.6, y = 47.1, f = "e" },
+					{ t = "collect", quest = 10086, itemName = "Salvaged Wood", count = 8, oi = 2, map = 1944, x = 56.6, y = 47.1, f = "e" },
+					{ t = "collect", quest = 10450, itemName = "Bonechewer Blood", count = 12, oi = 1, map = 1944, x = 56.6, y = 47.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10086, title = "I Work... For the Horde!", npc = 21283, npcName = "Megzeg Nukklebust", map = 1944, x = 55.2, y = 38.8, f = "e" },
+					{ t = "accept", quest = 10087, title = "Burn It Up... For the Horde!", npc = 21283, npcName = "Megzeg Nukklebust", map = 1944, x = 55.2, y = 38.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10450, title = "Bonechewer Blood", npc = 21256, npcName = "Vurtok Axebreaker", map = 1944, x = 55.1, y = 36.4, f = "e" },
+					{ t = "accept", quest = 10449, title = "Apothecary Zelana", npc = 21256, npcName = "Vurtok Axebreaker", map = 1944, x = 55.1, y = 36.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10449, title = "Apothecary Zelana", npc = 21257, npcName = "Apothecary Zelana", map = 1944, x = 66.2, y = 42.0, f = "e" },
+					{ t = "accept", quest = 10242, title = "Spinebreaker Post", npc = 21257, npcName = "Apothecary Zelana", map = 1944, x = 66.2, y = 42.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "talk", npc = 19401, npcName = "Wing Commander Brack", map = 1944, x = 66.1, y = 43.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "getfp", location = "Spinebreaker Post", text = "Spinebreaker Post", map = 1944, x = 61.7, y = 81.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 10278, title = "The Warp Rifts", npc = 19683, npcName = "Ogath the Mad", map = 1944, x = 61.9, y = 81.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 10220, title = "Make Them Listen", npc = 19682, npcName = "Emissary Mordiba", map = 1944, x = 61.8, y = 81.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10242, title = "Spinebreaker Post", npc = 21279, npcName = "Apothecary Albreck", map = 1944, x = 61.1, y = 81.8, f = "e" },
+					{ t = "accept", quest = 10538, title = "Boiling Blood", npc = 21279, npcName = "Apothecary Albreck", map = 1944, x = 61.1, y = 81.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 9345, title = "Preparing the Salve", npc = 16858, npcName = "Grelag", map = 1944, x = 60.9, y = 81.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 10809, title = "Wanted: Worg Master Kruush", map = 1944, x = 61.2, y = 80.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1944, x = 59.5, y = 66.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 10220, target = "Unyielding Footman", count = 12, oi = 1, map = 1944, x = 58.0, y = 79.0, f = "e" },
+					{ t = "kill", quest = 10220, target = "Unyielding Knight", count = 8, oi = 2, map = 1944, x = 58.0, y = 79.0, f = "e" },
+					{ t = "kill", quest = 10220, target = "Unyielding Sorcerer", count = 6, oi = 3, map = 1944, x = 58.0, y = 79.0, f = "e" },
+					{ t = "accept", quest = 10229, title = "Decipher the Tome", map = 1944, x = 58.0, y = 79.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9345, title = "Preparing the Salve", npc = 16858, npcName = "Grelag", map = 1944, x = 60.9, y = 81.7, f = "e" },
+					{ t = "accept", quest = 10213, title = "Investigate the Crash", npc = 16858, npcName = "Grelag", map = 1944, x = 60.9, y = 81.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10229, title = "Decipher the Tome", npc = 19736, npcName = "Althen the Historian", map = 1944, x = 61.8, y = 81.7, f = "e" },
+					{ t = "accept", quest = 10230, title = "The Battle Horn", npc = 19736, npcName = "Althen the Historian", map = 1944, x = 61.8, y = 81.7, f = "e" },
+					{ t = "turnin", quest = 10220, title = "Make Them Listen", npc = 19682, npcName = "Emissary Mordiba", map = 1944, x = 61.8, y = 81.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 10230, itemName = "Unyielding Battle Horn", count = 1, oi = 1, map = 1944, x = 54.7, y = 83.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10230, title = "The Battle Horn", npc = 19736, npcName = "Althen the Historian", map = 1944, x = 61.8, y = 81.7, f = "e" },
+					{ t = "accept", quest = 10250, title = "Bloody Vengeance", npc = 19736, npcName = "Althen the Historian", map = 1944, x = 61.8, y = 81.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 10250, target = "Urtrak", count = 1, oi = 1, map = 1944, x = 63.5, y = 77.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10250, title = "Bloody Vengeance", npc = 19736, npcName = "Althen the Historian", map = 1944, x = 61.8, y = 81.7, f = "e" },
+					{ t = "accept", quest = 10258, title = "Honor the Fallen", npc = 19736, npcName = "Althen the Historian", map = 1944, x = 61.8, y = 81.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10258, title = "Honor the Fallen", npc = 19937, npcName = "Commander Hogarth", map = 1944, x = 56.9, y = 77.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 10538, item = 30425, itemName = "Bleeding Hollow Blood", count = 12, map = 1944, x = 64.6, y = 72.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 10538, itemName = "Boiled Blood", count = 12, oi = 1, map = 1944, x = 65.2, y = 71.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 10809, itemName = "Worg Master's Head", count = 1, oi = 1, map = 1944, x = 68.4, y = 73.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10809, title = "Wanted: Worg Master Kruush", npc = 22107, npcName = "Captain Darkhowl", map = 1944, x = 61.2, y = 81.3, f = "e" },
+					{ t = "accept", quest = 10792, title = "Zeth'Gor Must Burn!", npc = 22107, npcName = "Captain Darkhowl", map = 1944, x = 61.2, y = 81.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10538, title = "Boiling Blood", npc = 21279, npcName = "Apothecary Albreck", map = 1944, x = 61.1, y = 81.8, f = "e" },
+					{ t = "accept", quest = 10835, title = "Apothecary Antonivich", npc = 21279, npcName = "Apothecary Albreck", map = 1944, x = 61.1, y = 81.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 10813, title = "The Eyes of Grillok", npc = 22231, npcName = "Zezzak", map = 1944, x = 61.7, y = 81.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1944, x = 66.4, y = 74.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10813, title = "The Eyes of Grillok", npc = 22231, npcName = "Zezzak", map = 1944, x = 61.7, y = 81.9, f = "e" },
+					{ t = "accept", quest = 10834, title = "Grillok \"Darkeye\"", npc = 22231, npcName = "Zezzak", map = 1944, x = 61.7, y = 81.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 10834, itemName = "Grillok's Eyepatch", count = 1, oi = 1, map = 1944, x = 66.6, y = 71.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", target = "Bleeding Hollow Peons", count = 4, map = 1944, x = 68.7, y = 69.8, f = "e" },
+					{ t = "collect", quest = 10792, item = 31347, itemName = "Bleeding Hollow Torch", count = 4, map = 1944, x = 68.7, y = 69.8, f = "e" },
+					{ t = "collect", quest = 10792, item = 31346, itemName = "Burning Bleeding Hollow Torch", count = 4, map = 1944, x = 68.7, y = 69.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1944, x = 69.5, y = 70.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1944, x = 68.6, y = 72.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1944, x = 67.6, y = 75.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1944, x = 68.8, y = 76.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10792, title = "Zeth'Gor Must Burn!", npc = 22107, npcName = "Captain Darkhowl", map = 1944, x = 61.2, y = 81.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10834, title = "Grillok \"Darkeye\"", npc = 22231, npcName = "Zezzak", map = 1944, x = 61.7, y = 81.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 61, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10213, title = "Investigate the Crash", npc = 19367, npcName = "\"Screaming\" Screed Luckheed", map = 1944, x = 49.2, y = 74.8, f = "e" },
+					{ t = "accept", quest = 10161, title = "In Case of Emergency...", npc = 19367, npcName = "\"Screaming\" Screed Luckheed", map = 1944, x = 49.2, y = 74.8, f = "e" },
+					{ t = "accept", quest = 9349, title = "Ravager Egg Roundup", npc = 19344, npcName = "Legassi", map = 1944, x = 49.2, y = 74.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 10161, itemName = "Zeppelin Debris", count = 30, oi = 1, map = 1944, x = 58.1, y = 71.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10161, title = "In Case of Emergency...", npc = 19367, npcName = "\"Screaming\" Screed Luckheed", map = 1944, x = 49.2, y = 74.8, f = "e" },
+					{ t = "accept", quest = 9351, title = "Voidwalkers Gone Wild", npc = 19367, npcName = "\"Screaming\" Screed Luckheed", map = 1944, x = 49.2, y = 74.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", target = "voidwalkers", count = 1, map = 1944, x = 49.5, y = 81.8, f = "e" },
+					{ t = "collect", quest = 9351, itemName = "Condensed Voidwalker Essence", count = 10, oi = 1, map = 1944, x = 49.5, y = 81.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", target = "Unstable Voidwalkers", count = 1, map = 1944, x = 46.8, y = 83.1, f = "e" },
+					{ t = "collect", quest = 10278, itemName = "Warp Nether", count = 3, oi = 1, map = 1944, x = 46.8, y = 83.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", target = "Razorfury Ravagers", count = 1, map = 1944, x = 41.2, y = 84.4, f = "e" },
+					{ t = "collect", quest = 9349, itemName = "Ravager Egg", count = 12, oi = 1, map = 1944, x = 41.2, y = 84.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9351, title = "Voidwalkers Gone Wild", npc = 19367, npcName = "\"Screaming\" Screed Luckheed", map = 1944, x = 49.2, y = 74.8, f = "e" },
+					{ t = "turnin", quest = 9349, title = "Ravager Egg Roundup", npc = 19344, npcName = "Legassi", map = 1944, x = 49.2, y = 74.8, f = "e" },
+					{ t = "accept", quest = 9361, title = "Helboar, the Other White Meat", npc = 19344, npcName = "Legassi", map = 1944, x = 49.2, y = 74.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", target = "Helboars", count = 1, map = 1944, x = 50.2, y = 74.8, f = "e" },
+					{ t = "collect", quest = 9361, item = 23270, itemName = "Tainted Helboar Meat", count = 1, map = 1944, x = 50.2, y = 74.8, f = "e" },
+					{ t = "collect", quest = 9361, itemName = "Purified Helboar Meat", count = 8, oi = 1, map = 1944, x = 50.2, y = 74.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 9373, title = "Missing Missive", map = 1944, x = 47.8, y = 65.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9361, title = "Helboar, the Other White Meat", npc = 19344, npcName = "Legassi", map = 1944, x = 49.2, y = 74.8, f = "e" },
+					{ t = "accept", quest = 9356, title = "Smooth as Butter", npc = 19344, npcName = "Legassi", map = 1944, x = 49.2, y = 74.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", target = "vultures", count = 1, map = 1944, x = 62.6, y = 67.3, f = "e" },
+					{ t = "collect", quest = 9356, itemName = "Plump Buzzard Wing", count = 12, oi = 1, map = 1944, x = 62.6, y = 67.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9356, title = "Smooth as Butter", npc = 19344, npcName = "Legassi", map = 1944, x = 49.2, y = 74.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10278, title = "The Warp Rifts", npc = 19683, npcName = "Ogath the Mad", map = 1944, x = 61.9, y = 81.5, f = "e" },
+					{ t = "accept", quest = 10294, title = "Void Ridge", npc = 19683, npcName = "Ogath the Mad", map = 1944, x = 61.9, y = 81.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1944, x = 71.3, y = 67.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 10294, itemName = "Void Ridge Soul Shard", count = 40, oi = 1, map = 1944, x = 75.4, y = 66.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 10294, title = "Void Ridge", npc = 19683, npcName = "Ogath the Mad", map = 1944, x = 61.9, y = 81.5, f = "e" },
+					{ t = "accept", quest = 10295, title = "From the Abyss", npc = 19683, npcName = "Ogath the Mad", map = 1944, x = 61.9, y = 81.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1944, x = 71.3, y = 67.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 10295, itemName = "Galaxis Soul Shard", count = 1, oi = 1, map = 1944, x = 81.1, y = 78.9, f = "e" },
+				},
+			},
+		},
+	})
+end
+
+do
+	Polestar.RegisterGuide({
+		id = "zygor/leveling/h-outland-60-62-part-2",
+		pack = "guides",
+		title = "Outland (60-62) (Parte 2/2)",
+		category = "Leveling",
+		faction = "Horde",
+		author = "TuWoW & Zygor",
+		minLevel = 61,
+		maxLevel = 62,
+		zone = 1419,
+		version = 1,
+		steps = {
+			{
+				note = "Hearth to Thrallmar|goto Hellfire Peninsula,56.7,37.5,5|use hearthstone##6948|noway|c",
 				goals = {
 					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8277, title = "Deadly Desert Venom", npc = 15189, npcName = "Beetix Ficklespragg", map = 1451, x = 51.7, y = 38.6, f = "e" },
-					{ t = "accept", quest = 8278, title = "Noggle's Last Hope", npc = 15189, npcName = "Beetix Ficklespragg", map = 1451, x = 51.7, y = 38.6, f = "e" },
+					{ t = "turnin", quest = 10835, title = "Apothecary Antonivich", npc = 16588, npcName = "Apothecary Antonivich", map = 1944, x = 52.3, y = 36.5, f = "e" },
+					{ t = "accept", quest = 10864, title = "A Burden of Souls", npc = 16588, npcName = "Apothecary Antonivich", map = 1944, x = 52.3, y = 36.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8280, title = "Securing the Supply Lines", npc = 15191, npcName = "Windcaller Proudhorn", map = 1451, x = 51.2, y = 38.3, f = "e" },
-					{ t = "accept", quest = 8281, title = "Stepping Up Security", npc = 15191, npcName = "Windcaller Proudhorn", map = 1451, x = 51.2, y = 38.3, f = "e" },
+					{ t = "accept", quest = 10236, title = "Outland Sucks!", npc = 16915, npcName = "Foreman Razelcraz", map = 1944, x = 51.4, y = 30.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8284, title = "The Twilight Mystery", npc = 15183, npcName = "Geologist Larksbane", map = 1451, x = 49.7, y = 37.5, f = "e" },
-					{ t = "accept", quest = 8285, title = "The Deserter", npc = 15183, npcName = "Geologist Larksbane", map = 1451, x = 49.7, y = 37.5, f = "e" },
+					{ t = "collect", quest = 10236, itemName = "Shredder Spare Parts", count = 6, oi = 1, map = 1944, x = 48.9, y = 35.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 8281, target = "Dredge Crusher", count = 20, oi = 1, map = 1451, x = 55.0, y = 60.0, f = "e" },
-					{ t = "collect", quest = 8278, itemName = "Stonelash Pincer Stinger", count = 3, oi = 2, map = 1451, x = 55.0, y = 60.0, f = "e" },
+					{ t = "kill", target = "Shattered Hand Orcs", count = 1, map = 1944, x = 45.9, y = 39.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8285, title = "The Deserter", npc = 15194, npcName = "Hermit Ortell", map = 1451, x = 67.2, y = 69.8, f = "e" },
+					{ t = "turnin", quest = 10236, title = "Outland Sucks!", npc = 16915, npcName = "Foreman Razelcraz", map = 1944, x = 51.4, y = 30.6, f = "e" },
+					{ t = "accept", quest = 10238, title = "How to Serve Goblins", npc = 16915, npcName = "Foreman Razelcraz", map = 1944, x = 51.4, y = 30.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 8278, itemName = "Stonelash Flayer Stinger", count = 3, oi = 1, map = 1451, x = 65.0, y = 75.0, f = "e" },
-					{ t = "collect", quest = 8278, itemName = "Rock Stalker Fang", count = 3, oi = 3, map = 1451, x = 65.0, y = 75.0, f = "e" },
+					{ t = "turnin", quest = 10864, title = "A Burden of Souls", npc = 16588, npcName = "Apothecary Antonivich", map = 1944, x = 52.3, y = 36.5, f = "e" },
+					{ t = "accept", quest = 10838, title = "The Demoniac Scryer", npc = 16588, npcName = "Apothecary Antonivich", map = 1944, x = 52.3, y = 36.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8281, title = "Stepping Up Security", npc = 15191, npcName = "Windcaller Proudhorn", map = 1451, x = 51.2, y = 38.3, f = "e" },
+					{ t = "goto", map = 1944, x = 45.1, y = 41.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8278, title = "Noggle's Last Hope", npc = 15189, npcName = "Beetix Ficklespragg", map = 1451, x = 51.7, y = 38.6, f = "e" },
+					{ t = "goto", map = 1944, x = 46.5, y = 45.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 3942, title = "Linken's Memory", npc = 9116, npcName = "Eridan Bluewind", map = 1448, x = 51.3, y = 81.6, f = "e" },
+					{ t = "goto", map = 1944, x = 47.5, y = 46.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 4810, title = "Return to Tinkee", npc = 10267, npcName = "Tinkee Steamboil", map = 1428, x = 65.2, y = 23.9, f = "e" },
+					{ t = "collect", quest = 10838, itemName = "Demoniac Scryer Reading", count = 1, oi = 1, map = 1944, x = 45.5, y = 47.2, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Thrallmar|goto Hellfire Peninsula,54.7,38.3,5|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 4293, itemName = "Corrupted Felwood Sample", count = 5, oi = 1, map = 1458, x = 47.5, y = 73.1, f = "e" },
-					{ t = "collect", quest = 4294, itemName = "Pure Un'Goro Sample", count = 5, oi = 1, map = 1458, x = 47.5, y = 73.1, f = "e" },
+					{ t = "turnin", quest = 10838, title = "The Demoniac Scryer", npc = 16588, npcName = "Apothecary Antonivich", map = 1944, x = 52.3, y = 36.5, f = "e" },
+					{ t = "accept", quest = 10875, title = "Report to Nazgrel", npc = 16588, npcName = "Apothecary Antonivich", map = 1944, x = 52.3, y = 36.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 4293, title = "A Sample of Slime...", npc = 10136, npcName = "Chemist Fuely", map = 1458, x = 47.5, y = 73.1, f = "e" },
-					{ t = "turnin", quest = 4294, title = "... and a Batch of Ooze", npc = 10136, npcName = "Chemist Fuely", map = 1458, x = 47.5, y = 73.1, f = "e" },
+					{ t = "turnin", quest = 10875, title = "Report to Nazgrel", npc = 3230, npcName = "Nazgrel", map = 1944, x = 55.0, y = 36.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 3570, title = "Seeping Corruption (3)", npc = 8390, npcName = "Chemist Cuely", map = 1458, x = 48.4, y = 71.8, f = "e" },
-					{ t = "turnin", quest = 3570, title = "Seeping Corruption (3)", npc = 8390, npcName = "Chemist Cuely", map = 1458, x = 48.4, y = 71.8, f = "e" },
+					{ t = "turnin", quest = 10238, title = "How to Serve Goblins", npc = 16915, npcName = "Foreman Razelcraz", map = 1944, x = 51.4, y = 30.6, f = "e" },
+					{ t = "accept", quest = 10629, title = "Shizz Work", npc = 16915, npcName = "Foreman Razelcraz", map = 1944, x = 51.4, y = 30.6, f = "e" },
+				},
+			},
+			{
+				note = "Use the Felhound Whistle while standing next to Forman Razelcraz|use Felhound Whistle##30803",
+				goals = {
+					{ t = "use", item = 30803, itemName = "Felhound Whistle", map = 1944, x = 51.4, y = 30.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "sethome", location = "Undercity", text = "Undercity", f = "e" },
+					{ t = "collect", quest = 10629, itemName = "Shredder Keys", count = 1, oi = 1, map = 1944, x = 49.9, y = 29.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "getfp", location = "The Bulwark", text = "The Bulwark", map = 1420, x = 83.57, y = 69.95, f = "e" },
+					{ t = "turnin", quest = 10629, title = "Shizz Work", npc = 16915, npcName = "Foreman Razelcraz", map = 1944, x = 51.4, y = 30.6, f = "e" },
+					{ t = "accept", quest = 10630, title = "Beneath Thrallmar", npc = 16915, npcName = "Foreman Razelcraz", map = 1944, x = 51.4, y = 30.6, f = "e" },
+				},
+			},
+			{
+				note = "Go to inside the mine to 54.4,31.4",
+				goals = {
+					{ t = "kill", quest = 10630, target = "Urga'zz", count = 1, oi = 1, map = 1944, x = 54.4, y = 31.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5095, title = "A Call to Arms: The Plaguelands!", npc = 10837, npcName = "High Executor Derrington", map = 1420, x = 83.1, y = 68.9, f = "e" },
-					{ t = "accept", quest = 5096, title = "Scarlet Diversions", npc = 10837, npcName = "High Executor Derrington", map = 1420, x = 83.1, y = 68.9, f = "e" },
-					{ t = "collect", quest = 5096, item = 12814, itemName = "Flame in a Bottle", count = 1, map = 1420, x = 83.1, y = 68.9, f = "e" },
+					{ t = "turnin", quest = 10630, title = "Beneath Thrallmar", npc = 16915, npcName = "Foreman Razelcraz", map = 1944, x = 51.4, y = 30.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 6029, title = "The Everlook Report", npc = 10839, npcName = "Argent Officer Garush", map = 1420, x = 83.2, y = 68.5, f = "e" },
+					{ t = "goto", map = 1944, x = 61.1, y = 52.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 5021, title = "Better Late Than Never (1)", npc = 10778, npcName = "Janice Felstone", map = 1422, x = 38.4, y = 54.1, f = "e" },
-				},
-			},
-			{
-				note = "Go south inside the barn to 39,55",
-				goals = {
-					{ t = "turnin", quest = 5021, title = "Better Late Than Never (1)", map = 1422, x = 38.7, y = 55.3, f = "e" },
-					{ t = "accept", quest = 5023, title = "Better Late Than Never (2)", map = 1422, x = 38.7, y = 55.3, f = "e" },
+					{ t = "goto", map = 1944, x = 55.0, y = 54.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 1422, x = 40.7, y = 51.9, f = "e" },
+					{ t = "turnin", quest = 10295, title = "From the Abyss", npc = 19683, npcName = "Ogath the Mad", map = 1944, x = 61.9, y = 81.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5096, title = "Scarlet Diversions", npc = 10837, npcName = "High Executor Derrington", map = 1420, x = 83.1, y = 68.9, f = "e" },
-					{ t = "accept", quest = 5228, title = "The Scourge Cauldrons", npc = 10837, npcName = "High Executor Derrington", map = 1420, x = 83.1, y = 68.9, f = "e" },
+					{ t = "turnin", quest = 10087, title = "Burn It Up... For the Horde!", npc = 21283, npcName = "Megzeg Nukklebust", map = 1944, x = 55.2, y = 38.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5228, title = "The Scourge Cauldrons", npc = 11055, npcName = "Shadow Priestess Vandis", map = 1420, x = 83.0, y = 71.9, f = "e" },
-					{ t = "accept", quest = 5229, title = "Target: Felstone Field", npc = 11055, npcName = "Shadow Priestess Vandis", map = 1420, x = 83.0, y = 71.9, f = "e" },
+					{ t = "turnin", quest = 9400, title = "The Assassin", map = 1944, x = 33.6, y = 43.5, f = "e" },
+					{ t = "accept", quest = 9401, title = "A Strange Weapon", map = 1944, x = 33.6, y = 43.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", itemName = "his Felstone Field Cauldron Key", count = 1, map = 1422, x = 37.0, y = 57.2, f = "e" },
-					{ t = "turnin", quest = 5229, title = "Target: Felstone Field", map = 1422, x = 37.0, y = 57.2, f = "e" },
-					{ t = "accept", quest = 5230, title = "Return to the Bulwark", map = 1422, x = 37.0, y = 57.2, f = "e" },
+					{ t = "accept", quest = 9374, title = "Arelion's Journal", npc = 16793, npcName = "Magistrix Carinda", map = 1944, x = 26.4, y = 60.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5230, title = "Return to the Bulwark", npc = 11055, npcName = "Shadow Priestess Vandis", map = 1420, x = 83.0, y = 71.9, f = "e" },
-					{ t = "accept", quest = 5231, title = "Target: Dalson's Tears", npc = 11055, npcName = "Shadow Priestess Vandis", map = 1420, x = 83.0, y = 71.9, f = "e" },
+					{ t = "accept", quest = 9387, title = "Source of the Corruption", npc = 16794, npcName = "Apothecary Azethen", map = 1944, x = 26.8, y = 59.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", itemName = "his Dalson's Tears Cauldron Key", count = 1, map = 1422, x = 46.2, y = 52.5, f = "e" },
-					{ t = "turnin", quest = 5231, title = "Target: Dalson's Tears", map = 1422, x = 46.2, y = 52.5, f = "e" },
-					{ t = "accept", quest = 5232, title = "Return to the Bulwark", map = 1422, x = 46.2, y = 52.5, f = "e" },
+					{ t = "accept", quest = 9366, title = "In Need of Felblood", npc = 16791, npcName = "Ryathen the Somber", map = 1944, x = 27.0, y = 59.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5232, title = "Return to the Bulwark", npc = 11055, npcName = "Shadow Priestess Vandis", map = 1420, x = 83.0, y = 71.9, f = "e" },
-					{ t = "accept", quest = 5233, title = "Target: Writhing Haunt", npc = 11055, npcName = "Shadow Priestess Vandis", map = 1420, x = 83.0, y = 71.9, f = "e" },
+					{ t = "accept", quest = 9396, title = "Magic of the Arakkoa", npc = 16792, npcName = "Arcanist Calesthris Dawnstar", map = 1944, x = 27.1, y = 59.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", itemName = "his Writhing Haunt Cauldron Key", count = 1, map = 1422, x = 53.0, y = 66.0, f = "e" },
-					{ t = "turnin", quest = 5233, title = "Target: Writhing Haunt", map = 1422, x = 53.0, y = 66.0, f = "e" },
-					{ t = "accept", quest = 5234, title = "Return to the Bulwark", map = 1422, x = 53.0, y = 66.0, f = "e" },
+					{ t = "accept", quest = 9381, title = "Trueflight Arrows", npc = 16790, npcName = "Falconer Drenna Riverwind", map = 1944, x = 27.7, y = 60.3, f = "e" },
+					{ t = "accept", quest = 9397, title = "Birds of a Feather", npc = 16790, npcName = "Falconer Drenna Riverwind", map = 1944, x = 27.7, y = 60.3, f = "e" },
+					{ t = "accept", quest = 10442, title = "Helping the Cenarion Post", npc = 16790, npcName = "Falconer Drenna Riverwind", map = 1944, x = 27.7, y = 60.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5234, title = "Return to the Bulwark", npc = 11055, npcName = "Shadow Priestess Vandis", map = 1420, x = 83.0, y = 71.9, f = "e" },
-					{ t = "accept", quest = 5235, title = "Target: Gahrron's Withering", npc = 11055, npcName = "Shadow Priestess Vandis", map = 1420, x = 83.0, y = 71.9, f = "e" },
+					{ t = "getfp", location = "Falcon Watch", text = "Falcon Watch", map = 1944, x = 27.8, y = 60.0, f = "e" },
+				},
+			},
+			{
+				note = "Go inside the building next to the Flight Path",
+				goals = {
+					{ t = "goto", map = 1944, x = 28.5, y = 60.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", itemName = "his Gahrron's Withering Cauldron Key", count = 1, map = 1422, x = 62.6, y = 58.9, f = "e" },
-					{ t = "turnin", quest = 5235, title = "Target: Gahrron's Withering", map = 1422, x = 62.6, y = 58.9, f = "e" },
-					{ t = "accept", quest = 5236, title = "Return to the Bulwark", map = 1422, x = 62.6, y = 58.9, f = "e" },
+					{ t = "turnin", quest = 9498, title = "Falcon Watch", npc = 16789, npcName = "Ranger Captain Venn'ren", map = 1944, x = 28.5, y = 60.2, f = "e", only = { races = { "BloodElf" } } },
+					{ t = "turnin", quest = 9499, title = "Falcon Watch", npc = 16789, npcName = "Ranger Captain Venn'ren", map = 1944, x = 28.5, y = 60.2, f = "e", only = { races = { "BloodElf" } } },
+					{ t = "accept", quest = 9340, title = "The Great Fissure", npc = 16789, npcName = "Ranger Captain Venn'ren", map = 1944, x = 28.5, y = 60.2, f = "e" },
+					{ t = "accept", quest = 10103, title = "Report to Zurai", npc = 16789, npcName = "Ranger Captain Venn'ren", map = 1944, x = 28.5, y = 60.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "level", level = 59, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 5236, title = "Return to the Bulwark", npc = 11055, npcName = "Shadow Priestess Vandis", map = 1420, x = 83.0, y = 71.9, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 5237, title = "Mission Accomplished!", npc = 10837, npcName = "High Executor Derrington", map = 1420, x = 83.1, y = 68.9, f = "e" },
-				},
-			},
-			{
-				note = "Go north up the coast to 5,38",
-				goals = {
-					{ t = "accept", quest = 5542, title = "Demon Dogs", npc = 1855, npcName = "Tirion Fordring", map = 1420, x = 4.7, y = 38.3, f = "e" },
-					{ t = "accept", quest = 5543, title = "Blood Tinged Skies", npc = 1855, npcName = "Tirion Fordring", map = 1420, x = 4.7, y = 38.3, f = "e" },
-					{ t = "accept", quest = 5544, title = "Carrion Grubbage", npc = 1855, npcName = "Tirion Fordring", map = 1420, x = 4.7, y = 38.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 6042, title = "Un-Life's Little Annoyances", npc = 11878, npcName = "Nathanos Blightcaller", map = 1420, x = 23.0, y = 68.2, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", quest = 5542, target = "Plaguehound Runt", count = 20, oi = 1, map = 1420, x = 25.1, y = 63.1, f = "e" },
-					{ t = "kill", quest = 5543, target = "Plaguebat", count = 30, oi = 1, map = 1420, x = 25.1, y = 63.1, f = "e" },
-					{ t = "collect", quest = 5544, itemName = "Slab of Carrion Worm Meat", count = 15, oi = 1, map = 1420, x = 25.1, y = 63.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 5601, title = "Sister Pamela", npc = 10926, npcName = "Pamela Redpath", map = 1420, x = 32.4, y = 83.7, f = "e" },
-					{ t = "accept", quest = 5149, title = "Pamela's Doll", npc = 10926, npcName = "Pamela Redpath", map = 1420, x = 32.4, y = 83.7, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", itemName = "Pamela's Doll's Head", count = 1, map = 1420, x = 35.0, y = 84.3, f = "e" },
-					{ t = "collect", itemName = "Pamela's Doll's Left Side", count = 1, map = 1420, x = 35.0, y = 84.3, f = "e" },
-					{ t = "collect", itemName = "Pamela's Doll's Right Side", count = 1, map = 1420, x = 35.0, y = 84.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 5149, title = "Pamela's Doll", npc = 10926, npcName = "Pamela Redpath", map = 1420, x = 32.4, y = 83.7, f = "e" },
-					{ t = "accept", quest = 5241, title = "Uncle Carlin", npc = 10926, npcName = "Pamela Redpath", map = 1420, x = 32.4, y = 83.7, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", quest = 5542, target = "Plaguehound", count = 5, oi = 2, map = 1420, x = 46.5, y = 57.9, f = "e" },
-					{ t = "kill", quest = 6042, target = "Noxious Plaguebat", count = 20, oi = 1, map = 1420, x = 46.5, y = 57.9, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "getfp", location = "Light's Hope Chapel", text = "Light's Hope Chapel", map = 1420, x = 74.5, y = 51.2, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 6030, title = "Duke Nicholas Zverenhoff", npc = 11039, npcName = "Duke Nicholas Zverenhoff", map = 1420, x = 75.7, y = 53.9, f = "e" },
-					{ t = "turnin", quest = 5241, title = "Uncle Carlin", npc = 11063, npcName = "Carlin Redpath", map = 1420, x = 75.7, y = 53.9, f = "e" },
-					{ t = "accept", quest = 5211, title = "Defenders of Darrowshire", npc = 11063, npcName = "Carlin Redpath", map = 1420, x = 75.7, y = 53.9, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 1420, x = 61.4, y = 36.7, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", quest = 6042, target = "Monstrous Plaguebat", count = 10, oi = 2, map = 1420, x = 58.3, y = 38.4, f = "e" },
-					{ t = "kill", quest = 5542, target = "Frenzied Plaguehound", count = 5, oi = 3, map = 1420, x = 58.3, y = 38.4, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 5211, title = "Defenders of Darrowshire", npc = 11063, npcName = "Carlin Redpath", map = 1420, x = 75.7, y = 53.9, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 6042, title = "Un-Life's Little Annoyances", npc = 11878, npcName = "Nathanos Blightcaller", map = 1420, x = 23.0, y = 68.2, f = "e" },
-				},
-			},
-			{
-				note = "Go northwest along the coast to 5,38",
-				goals = {
-					{ t = "turnin", quest = 5542, title = "Demon Dogs", npc = 1855, npcName = "Tirion Fordring", map = 1420, x = 4.7, y = 38.3, f = "e" },
-					{ t = "turnin", quest = 5543, title = "Blood Tinged Skies", npc = 1855, npcName = "Tirion Fordring", map = 1420, x = 4.7, y = 38.3, f = "e" },
-					{ t = "turnin", quest = 5544, title = "Carrion Grubbage", npc = 1855, npcName = "Tirion Fordring", map = 1420, x = 4.7, y = 38.3, f = "e" },
-					{ t = "accept", quest = 5742, title = "Redemption", npc = 1855, npcName = "Tirion Fordring", map = 1420, x = 4.7, y = 38.3, f = "e" },
-					{ t = "turnin", quest = 5742, title = "Redemption", npc = 1855, npcName = "Tirion Fordring", map = 1420, x = 4.7, y = 38.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 5023, title = "Better Late Than Never (2)", npc = 10781, npcName = "Royal Overseer Bauhaus", map = 1458, x = 69.8, y = 43.1, f = "e" },
-					{ t = "accept", quest = 5049, title = "The Jeremiah Blues", npc = 10781, npcName = "Royal Overseer Bauhaus", map = 1458, x = 69.8, y = 43.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 5049, title = "The Jeremiah Blues", npc = 8403, npcName = "Jeremiah Payson", map = 1458, x = 67.6, y = 44.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 1420, x = 60.8, y = 58.8, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 5163, title = "Are We There, Yeti? (3)", npc = 10305, npcName = "Umi Rumplesnicker", map = 1452, x = 60.9, y = 37.6, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 1411, x = 51.0, y = 14.0, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 1458, x = 85.3, y = 17.0, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "level", level = 60, f = "e" },
+					{ t = "level", level = 62, f = "e" },
 				},
 			},
 		},

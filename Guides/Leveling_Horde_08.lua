@@ -17,59 +17,6 @@ do
 		steps = {
 			{
 				goals = {
-					{ t = "turnin", quest = 815, title = "Break a Few Eggs", npc = 3191, npcName = "Cook Torka", map = 1411, x = 51.1, y = 42.4, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", quest = 837, target = "Razormane Dustrunner", count = 4, oi = 3, map = 1411, x = 44.5, y = 41.0, f = "e" },
-					{ t = "kill", quest = 837, target = "Razormane Battleguard", count = 4, oi = 4, map = 1411, x = 44.5, y = 41.0, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 816, title = "Lost But Not Forgotten", npc = 3193, npcName = "Misha Tor'kren", map = 1411, x = 43.1, y = 30.2, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 834, title = "Winds in the Desert", npc = 3293, npcName = "Rezlak", map = 1411, x = 46.4, y = 22.9, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 1411, x = 50.8, y = 31.6, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 834, itemName = "Sack of Supplies", count = 5, oi = 1, map = 1411, x = 48.6, y = 33.5, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 834, title = "Winds in the Desert", npc = 3293, npcName = "Rezlak", map = 1411, x = 46.4, y = 22.9, f = "e" },
-					{ t = "accept", quest = 835, title = "Securing the Lines", npc = 3293, npcName = "Rezlak", map = 1411, x = 46.4, y = 22.9, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 1411, x = 51.7, y = 27.4, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", quest = 835, target = "Dustwind Savage", count = 12, oi = 1, map = 1411, x = 54.1, y = 26.9, f = "e" },
-					{ t = "kill", quest = 835, target = "Dustwind Storm Witch", count = 8, oi = 2, map = 1411, x = 54.1, y = 26.9, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 835, title = "Securing the Lines", npc = 3293, npcName = "Rezlak", map = 1411, x = 46.4, y = 22.9, f = "e" },
-				},
-			},
-			{
-				goals = {
 					{ t = "turnin", quest = 837, title = "Encroachment", npc = 3139, npcName = "Gar'Thok", map = 1411, x = 51.9, y = 43.5, f = "e" },
 				},
 			},
@@ -79,140 +26,39 @@ do
 				},
 			},
 			{
-				only = { races = { "Troll" }, classes = { "WARRIOR" } },
+				note = "Go up the path to 38,59",
+				only = { races = { "Troll" } },
 				goals = {
 					{ t = "accept", quest = 1505, title = "Veteran Uzzek", npc = 3169, npcName = "Tarshaw Jaggedscar", map = 1411, x = 54.2, y = 42.4, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Troll" }, classes = { "WARRIOR" } },
-				goals = {
 					{ t = "turnin", quest = 1505, title = "Veteran Uzzek", npc = 5810, npcName = "Uzzek", map = 1413, x = 61.4, y = 21.1, f = "e" },
 					{ t = "accept", quest = 1498, title = "Path of Defense", npc = 5810, npcName = "Uzzek", map = 1413, x = 61.4, y = 21.1, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Troll" }, classes = { "WARRIOR" } },
-				goals = {
 					{ t = "collect", quest = 1498, itemName = "Singed Scale", count = 5, oi = 1, map = 1411, x = 39.0, y = 32.0, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Troll" }, classes = { "WARRIOR" } },
-				goals = {
 					{ t = "turnin", quest = 1498, title = "Path of Defense", npc = 5810, npcName = "Uzzek", map = 1413, x = 61.4, y = 21.1, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Troll" }, classes = { "SHAMAN" } },
-				goals = {
 					{ t = "accept", quest = 2983, title = "Call of Fire (1)", npc = 3173, npcName = "Swart", map = 1411, x = 54.4, y = 42.6, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Troll" }, classes = { "SHAMAN" } },
-				goals = {
 					{ t = "turnin", quest = 2983, title = "Call of Fire (1)", npc = 5907, npcName = "Kranal Fiss", map = 1413, x = 55.8, y = 19.8, f = "e" },
 					{ t = "accept", quest = 1524, title = "Call of Fire (2)", npc = 5907, npcName = "Kranal Fiss", map = 1413, x = 55.8, y = 19.8, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Troll" }, classes = { "SHAMAN" } },
-				goals = {
-					{ t = "goto", map = 1411, x = 36.6, y = 57.1, f = "e" },
-				},
-			},
-			{
-				note = "Go up the path to 38,59",
-				only = { races = { "Troll" }, classes = { "SHAMAN" } },
-				goals = {
 					{ t = "turnin", quest = 1524, title = "Call of Fire (2)", npc = 5900, npcName = "Telf Joolam", map = 1411, x = 38.0, y = 59.0, f = "e" },
 					{ t = "accept", quest = 1525, title = "Call of Fire (3)", npc = 5900, npcName = "Telf Joolam", map = 1411, x = 38.0, y = 59.0, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Troll" }, classes = { "SHAMAN" } },
-				goals = {
 					{ t = "collect", quest = 1525, itemName = "Fire Tar", count = 1, oi = 1, map = 1413, x = 53.8, y = 25.6, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Troll" }, classes = { "SHAMAN" } },
-				goals = {
 					{ t = "collect", quest = 1525, itemName = "Reagent Pouch", count = 1, oi = 2, map = 1411, x = 52.8, y = 28.9, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Troll" }, classes = { "SHAMAN" } },
-				goals = {
 					{ t = "turnin", quest = 1525, title = "Call of Fire (3)", npc = 5900, npcName = "Telf Joolam", map = 1411, x = 38.6, y = 58.9, f = "e" },
 					{ t = "accept", quest = 1526, title = "Call of Fire (4)", npc = 5900, npcName = "Telf Joolam", map = 1411, x = 38.6, y = 58.9, f = "e" },
-				},
-			},
-			{
-				note = "Run up the big hill next to you to 39,58",
-				only = { races = { "Troll" }, classes = { "SHAMAN" } },
-				goals = {
 					{ t = "collect", quest = 1526, itemName = "Glowing Ember", count = 1, oi = 1, map = 1411, x = 38.9, y = 58.3, f = "e" },
 					{ t = "turnin", quest = 1526, title = "Call of Fire (4)", map = 1411, x = 38.9, y = 58.3, f = "e" },
 					{ t = "accept", quest = 1527, title = "Call of Fire (5)", map = 1411, x = 38.9, y = 58.3, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Troll" }, classes = { "SHAMAN" } },
-				goals = {
 					{ t = "turnin", quest = 1527, title = "Call of Fire (5)", npc = 5907, npcName = "Kranal Fiss", map = 1413, x = 55.8, y = 19.8, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Troll" }, classes = { "HUNTER" } },
-				goals = {
 					{ t = "accept", quest = 6062, title = "Taming the Beast (1)", npc = 3171, npcName = "Thotar", map = 1411, x = 51.9, y = 43.5, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Troll" }, classes = { "HUNTER" } },
-				goals = {
-					{ t = "goto", map = 1411, x = 52.1, y = 46.2, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Troll" }, classes = { "HUNTER" } },
-				goals = {
 					{ t = "turnin", quest = 6062, title = "Taming the Beast (1)", npc = 3171, npcName = "Thotar", map = 1411, x = 51.9, y = 43.5, f = "e" },
 					{ t = "accept", quest = 6083, title = "Taming the Beast (2)", npc = 3171, npcName = "Thotar", map = 1411, x = 51.9, y = 43.5, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Troll" }, classes = { "HUNTER" } },
-				goals = {
-					{ t = "goto", map = 1411, x = 59.0, y = 26.5, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Troll" }, classes = { "HUNTER" } },
-				goals = {
 					{ t = "turnin", quest = 6083, title = "Taming the Beast (2)", npc = 3171, npcName = "Thotar", map = 1411, x = 51.9, y = 43.5, f = "e" },
 					{ t = "accept", quest = 6082, title = "Taming the Beast (3)", npc = 3171, npcName = "Thotar", map = 1411, x = 51.9, y = 43.5, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Troll" }, classes = { "HUNTER" } },
-				goals = {
-					{ t = "goto", map = 1411, x = 48.0, y = 39.3, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Troll" }, classes = { "HUNTER" } },
-				goals = {
 					{ t = "turnin", quest = 6082, title = "Taming the Beast (3)", npc = 3171, npcName = "Thotar", map = 1411, x = 51.9, y = 43.5, f = "e" },
 					{ t = "accept", quest = 6081, title = "Training the Beast", npc = 3171, npcName = "Thotar", map = 1411, x = 51.9, y = 43.5, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Troll" }, classes = { "HUNTER" } },
-				goals = {
 					{ t = "turnin", quest = 6081, title = "Training the Beast", npc = 3352, npcName = "Ormak Grimshot", map = 1454, x = 65.8, y = 18.3, f = "e" },
+					{ t = "goto", map = 1411, x = 36.6, y = 57.1, f = "e", only = { classes = { "SHAMAN" } } },
+					{ t = "goto", map = 1411, x = 52.1, y = 46.2, f = "e", only = { classes = { "HUNTER" } } },
+					{ t = "goto", map = 1411, x = 59.0, y = 26.5, f = "e", only = { classes = { "HUNTER" } } },
+					{ t = "goto", map = 1411, x = 48.0, y = 39.3, f = "e", only = { classes = { "HUNTER" } } },
 				},
 			},
 			{

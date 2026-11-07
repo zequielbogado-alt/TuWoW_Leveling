@@ -59,75 +59,20 @@ do
 				},
 			},
 			{
-				only = { races = { "Human" }, classes = { "MAGE" } },
+				only = { races = { "Human" } },
 				goals = {
 					{ t = "turnin", quest = 7, title = "Kobold Camp Cleanup", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e" },
 					{ t = "accept", quest = 15, title = "Investigate Echo Ridge", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e" },
 					{ t = "accept", quest = 3104, title = "Glyphic Letter", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Human" }, classes = { "WARRIOR" } },
-				goals = {
-					{ t = "turnin", quest = 7, title = "Kobold Camp Cleanup", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e" },
-					{ t = "accept", quest = 15, title = "Investigate Echo Ridge", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e" },
 					{ t = "accept", quest = 3100, title = "Simple Letter", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Human" }, classes = { "WARLOCK" } },
-				goals = {
-					{ t = "turnin", quest = 7, title = "Kobold Camp Cleanup", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e" },
-					{ t = "accept", quest = 15, title = "Investigate Echo Ridge", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e" },
-					{ t = "accept", quest = 3105, title = "Tainted Letter", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Human" }, classes = { "ROGUE" } },
-				goals = {
-					{ t = "turnin", quest = 7, title = "Kobold Camp Cleanup", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e" },
-					{ t = "accept", quest = 15, title = "Investigate Echo Ridge", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e" },
-					{ t = "accept", quest = 3102, title = "Encrypted Letter", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Human" }, classes = { "PRIEST" } },
-				goals = {
-					{ t = "turnin", quest = 7, title = "Kobold Camp Cleanup", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e" },
-					{ t = "accept", quest = 15, title = "Investigate Echo Ridge", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e" },
 					{ t = "accept", quest = 3103, title = "Hallowed Letter", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Human" }, classes = { "PALADIN" } },
-				goals = {
-					{ t = "turnin", quest = 7, title = "Kobold Camp Cleanup", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e" },
-					{ t = "accept", quest = 15, title = "Investigate Echo Ridge", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e" },
 					{ t = "accept", quest = 3101, title = "Consecrated Letter", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Human" }, classes = { "MAGE" } },
-				goals = {
 					{ t = "turnin", quest = 3104, title = "Glyphic Letter", npc = 198, npcName = "Khelden Bremen", map = 1429, x = 49.7, y = 39.4, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Human" }, classes = { "WARRIOR" } },
-				goals = {
 					{ t = "turnin", quest = 3100, title = "Simple Letter", npc = 911, npcName = "Llane Beshere", map = 1429, x = 50.2, y = 42.3, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Human" }, classes = { "PRIEST" } },
-				goals = {
 					{ t = "turnin", quest = 3103, title = "Hallowed Letter", npc = 375, npcName = "Priestess Anetta", map = 1429, x = 49.8, y = 39.5, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Human" }, classes = { "PALADIN" } },
-				goals = {
 					{ t = "turnin", quest = 3101, title = "Consecrated Letter", npc = 925, npcName = "Brother Sammuel", map = 1429, x = 50.4, y = 42.1, f = "e" },
+					{ t = "accept", quest = 3105, title = "Tainted Letter", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e", only = { classes = { "WARLOCK" } } },
+					{ t = "accept", quest = 3102, title = "Encrypted Letter", npc = 197, npcName = "Marshal McBride", map = 1429, x = 48.9, y = 41.6, f = "e", only = { classes = { "ROGUE" } } },
 				},
 			},
 			{
@@ -136,15 +81,10 @@ do
 				},
 			},
 			{
-				only = { races = { "Human" }, classes = { "WARLOCK" } },
+				only = { races = { "Human" } },
 				goals = {
-					{ t = "turnin", quest = 3105, title = "Tainted Letter", npc = 459, npcName = "Drusilla La Salle", map = 1429, x = 49.9, y = 42.6, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Human" }, classes = { "ROGUE" } },
-				goals = {
-					{ t = "turnin", quest = 3102, title = "Encrypted Letter", npc = 915, npcName = "Jorik Kerridan", map = 1429, x = 50.3, y = 39.9, f = "e" },
+					{ t = "turnin", quest = 3105, title = "Tainted Letter", npc = 459, npcName = "Drusilla La Salle", map = 1429, x = 49.9, y = 42.6, f = "e", only = { classes = { "WARLOCK" } } },
+					{ t = "turnin", quest = 3102, title = "Encrypted Letter", npc = 915, npcName = "Jorik Kerridan", map = 1429, x = 50.3, y = 39.9, f = "e", only = { classes = { "ROGUE" } } },
 				},
 			},
 			{
@@ -497,6 +437,62 @@ do
 				note = "Hearth to Goldshire|goto Elwynn Forest,42.4,65.8,2|use Hearthstone##6948|noway|c",
 				goals = {
 					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 76, title = "The Jasperlode Mine", npc = 240, npcName = "Marshal Dughan", map = 1429, x = 42.1, y = 65.9, f = "e" },
+					{ t = "turnin", quest = 39, title = "Deliver Thomas' Report", npc = 240, npcName = "Marshal Dughan", map = 1429, x = 42.1, y = 65.9, f = "e" },
+					{ t = "accept", quest = 239, title = "Westbrook Garrison Needs Help!", npc = 240, npcName = "Marshal Dughan", map = 1429, x = 42.1, y = 65.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 1097, title = "Elmore's Task", npc = 514, npcName = "Smith Argus", map = 1429, x = 41.7, y = 65.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 88, title = "Princess Must Die!", npc = 244, npcName = "Ma Stonefield", map = 1429, x = 34.6, y = 84.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 239, title = "Westbrook Garrison Needs Help!", npc = 963, npcName = "Deputy Rainer", map = 1429, x = 24.3, y = 74.8, f = "e" },
+					{ t = "accept", quest = 11, title = "Riverpaw Gnoll Bounty", npc = 963, npcName = "Deputy Rainer", map = 1429, x = 24.3, y = 74.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 11, itemName = "Painted Gnoll Armband", count = 8, oi = 1, map = 1429, x = 26.8, y = 86.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11, title = "Riverpaw Gnoll Bounty", npc = 963, npcName = "Deputy Rainer", map = 1429, x = 24.3, y = 74.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 10, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Human" } },
+				goals = {
+					{ t = "accept", quest = 1685, title = "Gakin's Summons", npc = 6121, npcName = "Remen Marcot", map = 1429, x = 44.5, y = 66.3, f = "e", only = { classes = { "WARLOCK" } } },
+					{ t = "accept", quest = 1638, title = "A Warrior's Training", npc = 913, npcName = "Lyria Du Lac", map = 1429, x = 41.1, y = 65.8, f = "e", only = { classes = { "WARRIOR" } } },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 61, title = "Shipment to Stormwind", npc = 279, npcName = "Morgan Pestle", map = 1453, x = 63.2, y = 74.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 1097, title = "Elmore's Task", npc = 1416, npcName = "Grimand Elmore", map = 1453, x = 59.7, y = 33.8, f = "e" },
+					{ t = "accept", quest = 353, title = "Stormpike's Delivery", npc = 1416, npcName = "Grimand Elmore", map = 1453, x = 59.7, y = 33.8, f = "e" },
 				},
 			},
 		},

@@ -3,349 +3,485 @@
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/h-levels-30-35-part-2",
+		id = "zygor/leveling/h-levels-35-40",
 		pack = "guides",
-		title = "Levels (30-35) (Parte 2/2)",
+		title = "Levels (35-40) (Parte 1/2)",
 		category = "Leveling",
 		faction = "Horde",
+		next = "zygor/leveling/h-levels-35-40-part-2",
 		author = "TuWoW & Zygor",
-		minLevel = 33,
-		maxLevel = 35,
-		zone = 1442,
+		minLevel = 35,
+		maxLevel = 40,
+		zone = 1434,
 		version = 1,
 		steps = {
 			{
 				goals = {
-					{ t = "turnin", quest = 1368, title = "Gelkis Alliance", npc = 5397, npcName = "Uthek the Wise", map = 1443, x = 36.2, y = 79.3, f = "e" },
-					{ t = "accept", quest = 1370, title = "Stealing Supplies", npc = 5397, npcName = "Uthek the Wise", map = 1443, x = 36.2, y = 79.3, f = "e" },
+					{ t = "kill", quest = 187, target = "Elder Stranglethorn Tiger", count = 10, oi = 1, map = 1434, x = 31.8, y = 19.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 5763, title = "Hunting in Stranglethorn", npc = 11877, npcName = "Roon Wildmane", map = 1443, x = 25.1, y = 72.3, f = "e" },
+					{ t = "kill", quest = 568, target = "Lashtail Raptor", count = 15, oi = 1, map = 1434, x = 32.4, y = 21.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 5381, title = "Hand of Iruxos", npc = 11624, npcName = "Taiga Wisemane", map = 1443, x = 25.8, y = 68.2, f = "e" },
+					{ t = "turnin", quest = 581, title = "Hunt for Yenniku", npc = 2497, npcName = "Nimboya", map = 1434, x = 32.2, y = 27.7, f = "e" },
+					{ t = "accept", quest = 582, title = "Headhunting", npc = 2497, npcName = "Nimboya", map = 1434, x = 32.2, y = 27.7, f = "e" },
+					{ t = "accept", quest = 2932, title = "Grim Message", npc = 2497, npcName = "Nimboya", map = 1434, x = 32.2, y = 27.7, f = "e" },
+					{ t = "turnin", quest = 596, title = "Bloody Bone Necklaces", npc = 2519, npcName = "Kin'weelay", map = 1434, x = 32.2, y = 27.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "sethome", location = "Shadowprey Village", text = "Shadowprey Village", f = "e" },
+					{ t = "turnin", quest = 9436, title = "Bloodscalp Insight", npc = 17094, npcName = "Nemeth Hawkeye", map = 1434, x = 32.0, y = 28.6, f = "e" },
+					{ t = "accept", quest = 9457, title = "An Unusual Patron", npc = 17094, npcName = "Nemeth Hawkeye", map = 1434, x = 32.0, y = 28.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 6143, title = "Other Fish to Fry", npc = 12340, npcName = "Drulzegar Skraghook", map = 1443, x = 23.3, y = 72.9, f = "e" },
+					{ t = "turnin", quest = 568, title = "The Defense of Grom'gol (1)", npc = 2464, npcName = "Commander Aggro'gosh", map = 1434, x = 32.2, y = 28.9, f = "e" },
+					{ t = "accept", quest = 569, title = "The Defense of Grom'gol (2)", npc = 2464, npcName = "Commander Aggro'gosh", map = 1434, x = 32.2, y = 28.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 6142, title = "Clam Bait", npc = 12031, npcName = "Mai'lahii", map = 1443, x = 22.6, y = 72.0, f = "e" },
+					{ t = "collect", quest = 582, itemName = "Shrunken Head", count = 20, oi = 1, map = 1434, x = 20.1, y = 14.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "getfp", location = "Shadowprey Village", text = "Shadowprey Village", map = 1443, x = 21.6, y = 74.1, f = "e" },
+					{ t = "turnin", quest = 195, title = "Raptor Mastery (2)", npc = 715, npcName = "Hemet Nesingwary Jr.", map = 1434, x = 35.6, y = 10.6, f = "e" },
+					{ t = "accept", quest = 196, title = "Raptor Mastery (3)", npc = 715, npcName = "Hemet Nesingwary Jr.", map = 1434, x = 35.6, y = 10.6, f = "e" },
+					{ t = "turnin", quest = 5763, title = "Hunting in Stranglethorn", npc = 715, npcName = "Hemet Nesingwary Jr.", map = 1434, x = 35.6, y = 10.6, f = "e" },
+					{ t = "turnin", quest = 187, title = "Tiger Mastery (3)", npc = 717, npcName = "Ajeck Rouack", map = 1434, x = 35.6, y = 10.6, f = "e" },
+					{ t = "accept", quest = 188, title = "Tiger Mastery (4)", npc = 717, npcName = "Ajeck Rouack", map = 1434, x = 35.6, y = 10.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 5386, item = 13545, itemName = "Shellfish", count = 10, map = 1443, x = 19.5, y = 75.9, f = "e" },
+					{ t = "collect", quest = 575, itemName = "Large River Crocolisk Skin", count = 2, oi = 1, map = 1434, x = 40.3, y = 12.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5421, title = "Fish in a Bucket", npc = 11317, npcName = "Jinar'Zillen", map = 1443, x = 22.5, y = 73.1, f = "e" },
-					{ t = "collect", quest = 5386, itemName = "Bloodbelly Fish", count = 2, oi = 1, map = 1443, x = 22.5, y = 73.1, f = "e" },
+					{ t = "collect", quest = 213, itemName = "Tumbled Crystal", count = 8, oi = 1, map = 1434, x = 45.5, y = 21.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 6142, itemName = "Soft-shelled Clam Meat", count = 10, oi = 1, map = 1443, x = 25.0, y = 40.0, f = "e" },
+					{ t = "kill", quest = 569, target = "Mosh'Ogg Brute", count = 10, oi = 1, map = 1434, x = 37.4, y = 29.3, f = "e" },
+					{ t = "kill", quest = 569, target = "Mosh'Ogg Witch Doctor", count = 5, oi = 2, map = 1434, x = 37.4, y = 29.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 6161, title = "Claim Rackmore's Treasure!", map = 1443, x = 36.1, y = 30.4, f = "e" },
+					{ t = "turnin", quest = 569, title = "The Defense of Grom'gol (2)", npc = 2464, npcName = "Commander Aggro'gosh", map = 1434, x = 32.2, y = 28.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 6161, itemName = "Rackmore's Silver Key", count = 1, oi = 1, map = 1443, x = 33.8, y = 30.0, f = "e" },
+					{ t = "turnin", quest = 582, title = "Headhunting", npc = 2497, npcName = "Nimboya", map = 1434, x = 32.2, y = 27.7, f = "e" },
+					{ t = "accept", quest = 638, title = "Trollbane", npc = 2497, npcName = "Nimboya", map = 1434, x = 32.2, y = 27.7, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Booty Bay,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 1434, x = 27.1, y = 77.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 6161, itemName = "Rackmore's Golden Key", count = 1, oi = 2, map = 1443, x = 35.6, y = 25.7, f = "e" },
-					{ t = "kill", quest = 6143, target = "Slitherblade Naga", count = 7, oi = 2, map = 1443, x = 35.6, y = 25.7, f = "e" },
-					{ t = "kill", quest = 6143, target = "Slitherblade Sorceress", count = 5, oi = 3, map = 1443, x = 35.6, y = 25.7, f = "e" },
+					{ t = "turnin", quest = 605, title = "Singing Blue Shards", npc = 2498, npcName = "Crank Fizzlebub", map = 1434, x = 27.1, y = 77.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 5741, title = "Sceptre of Light", npc = 11863, npcName = "Azore Aldamort", map = 1443, x = 38.9, y = 27.2, f = "e" },
+					{ t = "turnin", quest = 189, title = "Bloodscalp Ears", npc = 737, npcName = "Kebok", map = 1434, x = 27.0, y = 77.2, f = "e" },
+					{ t = "turnin", quest = 213, title = "Hostile Takeover", npc = 737, npcName = "Kebok", map = 1434, x = 27.0, y = 77.2, f = "e" },
+					{ t = "turnin", quest = 201, title = "Investigate the Camp", npc = 773, npcName = "Krazek", map = 1434, x = 27.0, y = 77.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 1435, itemName = "Infused Burning Gem", count = 15, oi = 1, map = 1443, x = 56.4, y = 30.8, f = "e" },
+					{ t = "level", level = 36, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 5741, itemName = "Sceptre of Light", count = 1, oi = 1, map = 1443, x = 55.2, y = 30.1, f = "e" },
+					{ t = "accept", quest = 621, title = "Zanzil's Secret", npc = 2498, npcName = "Crank Fizzlebub", map = 1434, x = 27.1, y = 77.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5741, title = "Sceptre of Light", npc = 11863, npcName = "Azore Aldamort", map = 1443, x = 38.9, y = 27.2, f = "e" },
-					{ t = "accept", quest = 6027, title = "Book of the Ancients", npc = 11863, npcName = "Azore Aldamort", map = 1443, x = 38.9, y = 27.2, f = "e" },
+					{ t = "turnin", quest = 575, title = "Supply and Demand", npc = 2495, npcName = "Drizzlik", map = 1434, x = 28.3, y = 77.6, f = "e" },
+					{ t = "accept", quest = 577, title = "Some Assembly Required", npc = 2495, npcName = "Drizzlik", map = 1434, x = 28.3, y = 77.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 1482, itemName = "Oracle Crystal", count = 1, oi = 1, map = 1443, x = 37.3, y = 18.1, f = "e" },
+					{ t = "accept", quest = 1164, title = "To Steal From Thieves", npc = 4486, npcName = "Genavie Callow", map = 1458, x = 63.8, y = 49.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 6143, target = "Slitherblade Myrmidon", count = 7, oi = 1, map = 1443, x = 32.8, y = 14.9, f = "e" },
+					{ t = "turnin", quest = 638, title = "Trollbane", npc = 2703, npcName = "Zengu", map = 1417, x = 73.8, y = 34.0, f = "e" },
+					{ t = "accept", quest = 639, title = "Sigil of Strom", npc = 2703, npcName = "Zengu", map = 1417, x = 73.8, y = 34.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 6161, title = "Claim Rackmore's Treasure!", map = 1443, x = 30.0, y = 8.7, f = "e" },
+					{ t = "accept", quest = 677, title = "Call to Arms (1)", npc = 2771, npcName = "Drum Fel", map = 1417, x = 74.2, y = 33.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5386, title = "Catch of the Day", npc = 11259, npcName = "Nataka Longhorn", map = 1443, x = 55.4, y = 55.8, f = "e" },
+					{ t = "accept", quest = 701, title = "Guile of the Raptor (1)", npc = 2706, npcName = "Tor'gan", map = 1417, x = 74.7, y = 36.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 1435, title = "The Burning of Spirits", npc = 4498, npcName = "Maurin Bonesplitter", map = 1443, x = 52.2, y = 53.4, f = "e" },
-					{ t = "turnin", quest = 1482, title = "The Corrupter (3)", npc = 4498, npcName = "Maurin Bonesplitter", map = 1443, x = 52.2, y = 53.4, f = "e" },
-					{ t = "accept", quest = 1484, title = "The Corrupter (4)", npc = 4498, npcName = "Maurin Bonesplitter", map = 1443, x = 52.2, y = 53.4, f = "e" },
+					{ t = "kill", quest = 677, target = "Witherbark Axe Thrower", count = 10, oi = 1, map = 1417, x = 70.2, y = 58.9, f = "e" },
+					{ t = "kill", quest = 677, target = "Witherbark Headhunter", count = 10, oi = 2, map = 1417, x = 70.2, y = 58.9, f = "e" },
+					{ t = "kill", quest = 677, target = "Witherbark Witch Doctor", count = 8, oi = 3, map = 1417, x = 70.2, y = 58.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 1484, title = "The Corrupter (4)", npc = 5641, npcName = "Takata Steelblade", map = 1443, x = 52.6, y = 54.4, f = "e" },
+					{ t = "accept", quest = 642, title = "The Princess Trapped", map = 1417, x = 62.5, y = 33.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 1366, itemName = "Centaur Ear", count = 15, oi = 1, map = 1443, x = 69.8, y = 70.1, f = "e" },
+					{ t = "turnin", quest = 677, title = "Call to Arms (1)", npc = 2771, npcName = "Drum Fel", map = 1417, x = 74.2, y = 33.9, f = "e" },
+					{ t = "accept", quest = 678, title = "Call to Arms (2)", npc = 2771, npcName = "Drum Fel", map = 1417, x = 74.2, y = 33.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 1370, itemName = "Crudely Dried Meat", count = 6, oi = 1, map = 1443, x = 70.9, y = 75.4, f = "e" },
+					{ t = "sethome", location = "Hammerfall", text = "Hammerfall", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "level", level = 34, f = "e" },
+					{ t = "goto", map = 1417, x = 80.9, y = 39.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 1366, title = "Centaur Bounty", npc = 5395, npcName = "Felgur Twocuts", map = 1443, x = 56.2, y = 59.6, f = "e" },
+					{ t = "collect", quest = 642, itemName = "Mote of Myzrael", count = 12, oi = 1, map = 1417, x = 82.6, y = 36.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 5381, itemName = "Demon Box", count = 1, oi = 1, map = 1443, x = 54.9, y = 26.7, f = "e" },
+					{ t = "turnin", quest = 642, title = "The Princess Trapped", map = 1417, x = 84.3, y = 31.0, f = "e" },
+					{ t = "accept", quest = 651, title = "Stones of Binding", map = 1417, x = 84.3, y = 31.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 6027, itemName = "Book of the Ancients", count = 1, oi = 1, map = 1443, x = 28.2, y = 6.6, f = "e" },
+					{ t = "collect", quest = 1164, itemName = "Kenata's Head", count = 1, oi = 1, map = 1417, x = 56.4, y = 36.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 6027, title = "Book of the Ancients", npc = 11863, npcName = "Azore Aldamort", map = 1443, x = 38.9, y = 27.2, f = "e" },
-				},
-			},
-			{
-				note = "Hearth to Shadowprey Village,0.1|use hearthstone##6948|noway|c",
-				goals = {
-					{ t = "use", item = 6948, itemName = "hearthstone", map = 1443, x = 24.1, y = 68.2, f = "e" },
+					{ t = "collect", quest = 1164, itemName = "Marcel's Head", count = 1, oi = 2, map = 1417, x = 54.2, y = 38.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 5381, title = "Hand of Iruxos", npc = 11624, npcName = "Taiga Wisemane", map = 1443, x = 25.8, y = 68.2, f = "e" },
+					{ t = "collect", quest = 1164, itemName = "Fardel's Head", count = 1, oi = 3, map = 1417, x = 56.7, y = 40.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 6143, title = "Other Fish to Fry", npc = 12340, npcName = "Drulzegar Skraghook", map = 1443, x = 23.3, y = 72.9, f = "e" },
+					{ t = "collect", quest = 701, itemName = "Raptor Heart", count = 12, oi = 1, map = 1417, x = 52.3, y = 67.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 6142, title = "Clam Bait", npc = 12031, npcName = "Mai'Lahii", map = 1443, x = 22.6, y = 72.0, f = "e" },
+					{ t = "kill", quest = 678, target = "Boulderfist Brute", count = 10, oi = 1, map = 1417, x = 53.0, y = 72.8, f = "e" },
+					{ t = "kill", quest = 678, target = "Boulderfist Magus", count = 4, oi = 2, map = 1417, x = 53.0, y = 72.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 1370, title = "Stealing Supplies", npc = 5397, npcName = "Uthek the Wise", map = 1443, x = 36.2, y = 79.3, f = "e" },
-				},
-			},
-			{
-				note = "Go northwest to Shadowprey Village,0.5",
-				goals = {
-					{ t = "goto", map = 1443, x = 21.6, y = 74.1, f = "e" },
+					{ t = "collect", quest = 639, itemName = "Sigil of Strom", count = 1, oi = 1, map = 1417, x = 26.0, y = 62.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 5361, title = "Family Tree", npc = 10537, npcName = "Cliffwatcher Longhorn", map = 1441, x = 45.6, y = 50.8, f = "e" },
+					{ t = "collect", quest = 671, itemName = "Bloodstone Amulet", count = 10, oi = 1, map = 1417, x = 34.1, y = 31.6, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Hammerfall,0.1|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 1417, x = 73.8, y = 32.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 1175, target = "Saltstone Crystalhide", count = 10, oi = 2, map = 1441, x = 78.6, y = 84.7, f = "e" },
-					{ t = "kill", quest = 1175, target = "Saltstone Gazer", count = 6, oi = 3, map = 1441, x = 78.6, y = 84.7, f = "e" },
+					{ t = "turnin", quest = 639, title = "Sigil of Strom", npc = 2703, npcName = "Zengu", map = 1417, x = 73.8, y = 34.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 1175, title = "A Bump in the Road", npc = 4629, npcName = "Trackmaster Zherin", map = 1441, x = 81.6, y = 78.0, f = "e" },
+					{ t = "turnin", quest = 678, title = "Call to Arms (2)", npc = 2771, npcName = "Drum Fel", map = 1417, x = 74.2, y = 33.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 1268, title = "Suspicious Hoofprints", map = 1445, x = 29.7, y = 47.6, f = "e" },
+					{ t = "turnin", quest = 671, title = "Foul Magics (1)", npc = 2706, npcName = "Tor'gan", map = 1417, x = 74.7, y = 36.3, f = "e" },
+					{ t = "turnin", quest = 701, title = "Guile of the Raptor (1)", npc = 2706, npcName = "Tor'gan", map = 1417, x = 74.7, y = 36.3, f = "e" },
+					{ t = "accept", quest = 702, title = "Guile of the Raptor (2)", npc = 2706, npcName = "Tor'gan", map = 1417, x = 74.7, y = 36.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 1269, title = "Lieutenant Paval Reethe", map = 1445, x = 29.8, y = 48.2, f = "e" },
+					{ t = "turnin", quest = 702, title = "Guile of the Raptor (2)", npc = 2792, npcName = "Gor'mul", map = 1417, x = 72.6, y = 33.9, f = "e" },
+					{ t = "accept", quest = 847, title = "Guile of the Raptor (3)", npc = 2792, npcName = "Gor'mul", map = 1417, x = 72.6, y = 33.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 1251, title = "The Black Shield (1)", map = 1445, x = 29.6, y = 48.6, f = "e" },
+					{ t = "turnin", quest = 847, title = "Guile of the Raptor (3)", npc = 2706, npcName = "Tor'gan", map = 1417, x = 74.7, y = 36.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 1268, title = "Suspicious Hoofprints", npc = 4926, npcName = "Krog", map = 1445, x = 36.4, y = 31.9, f = "e" },
-					{ t = "turnin", quest = 1269, title = "Lieutenant Paval Reethe", npc = 4926, npcName = "Krog", map = 1445, x = 36.4, y = 31.9, f = "e" },
-					{ t = "turnin", quest = 1251, title = "The Black Shield (1)", npc = 4926, npcName = "Krog", map = 1445, x = 36.4, y = 31.9, f = "e" },
-					{ t = "accept", quest = 1321, title = "The Black Shield (2)", npc = 4926, npcName = "Krog", map = 1445, x = 36.4, y = 31.9, f = "e" },
+					{ t = "level", level = 37, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 1321, title = "The Black Shield (2)", npc = 5087, npcName = "Do'gol", map = 1445, x = 36.5, y = 30.8, f = "e" },
+					{ t = "accept", quest = 544, title = "Prison Break In", npc = 2410, npcName = "Magus Wordeen Voidglare", map = 1424, x = 61.5, y = 20.9, f = "e" },
+					{ t = "accept", quest = 556, title = "Stone Tokens", npc = 2437, npcName = "Keeper Bel'varil", map = 1424, x = 61.5, y = 20.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "getfp", location = "Brackenwall Village", text = "Brackenwall Village", map = 1445, x = 35.6, y = 31.9, f = "e" },
+					{ t = "collect", quest = 556, itemName = "Worn Stone Token", count = 10, oi = 1, map = 1416, x = 21.3, y = 83.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 1178, title = "Goblin Sponsorship (1)", npc = 3391, npcName = "Gazlowe", map = 1413, x = 62.7, y = 36.2, f = "e" },
-					{ t = "accept", quest = 1180, title = "Goblin Sponsorship (2)", npc = 3391, npcName = "Gazlowe", map = 1413, x = 62.7, y = 36.2, f = "e" },
+					{ t = "collect", quest = 544, itemName = "Bloodstone Marble", count = 1, oi = 2, map = 1416, x = 20.1, y = 84.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 1111, title = "Wharfmaster Dizzywig", npc = 3453, npcName = "Wharfmaster Dizzywig", map = 1413, x = 63.4, y = 38.5, f = "e" },
-					{ t = "accept", quest = 1112, title = "Parts for Kravel", npc = 3453, npcName = "Wharfmaster Dizzywig", map = 1413, x = 63.4, y = 38.5, f = "e" },
+					{ t = "collect", quest = 544, itemName = "Bloodstone Shard", count = 1, oi = 3, map = 1416, x = 20.2, y = 86.4, f = "e" },
+					{ t = "collect", quest = 544, itemName = "Bloodstone Wedge", count = 1, oi = 1, map = 1416, x = 20.2, y = 86.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 1180, title = "Goblin Sponsorship (2)", npc = 4631, npcName = "Wharfmaster Lozgil", map = 1434, x = 26.4, y = 73.6, f = "e" },
-					{ t = "accept", quest = 1181, title = "Goblin Sponsorship (3)", npc = 4631, npcName = "Wharfmaster Lozgil", map = 1434, x = 26.4, y = 73.6, f = "e" },
+					{ t = "collect", quest = 544, itemName = "Bloodstone Oval", count = 1, oi = 4, map = 1416, x = 17.8, y = 83.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 606, title = "Scaring Shaky", npc = 2501, npcName = "\"Sea Wolf\" MacKinley", map = 1434, x = 27.8, y = 77.1, f = "e" },
+					{ t = "collect", quest = 1136, item = 5810, itemName = "Fresh Carcass", count = 1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 575, title = "Supply and Demand", npc = 2495, npcName = "Drizzlik", map = 1434, x = 28.3, y = 77.6, f = "e" },
+					{ t = "turnin", quest = 544, title = "Prison Break In", npc = 2410, npcName = "Magus Wordeen Voidglare", map = 1416, x = 61.5, y = 20.9, f = "e" },
+					{ t = "accept", quest = 545, title = "Dalaran Patrols", npc = 2410, npcName = "Magus Wordeen Voidglare", map = 1416, x = 61.5, y = 20.9, f = "e" },
+					{ t = "turnin", quest = 556, title = "Stone Tokens", npc = 2437, npcName = "Keeper Bel'varil", map = 1416, x = 61.5, y = 20.9, f = "e" },
+					{ t = "accept", quest = 557, title = "Bracers of Binding", npc = 2437, npcName = "Keeper Bel'varil", map = 1416, x = 61.5, y = 20.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 605, title = "Singing Blue Shards", npc = 2498, npcName = "Crank Fizzlebub", map = 1434, x = 27.1, y = 77.2, f = "e" },
+					{ t = "collect", quest = 1136, itemName = "Frostmaw's Mane", count = 1, oi = 1, map = 1416, x = 37.5, y = 66.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "sethome", location = "Booty Bay", text = "Booty Bay", f = "e" },
+					{ t = "kill", quest = 545, target = "Dalaran Summoner", count = 6, oi = 1, map = 1416, x = 20.0, y = 74.0, f = "e" },
+					{ t = "kill", quest = 545, target = "Elemental Slave", count = 12, oi = 2, map = 1416, x = 20.0, y = 74.0, f = "e" },
+					{ t = "collect", quest = 557, itemName = "Bracers of Earth Binding", count = 4, oi = 1, map = 1416, x = 20.0, y = 74.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 189, title = "Bloodscalp Ears", npc = 737, npcName = "Kebok", map = 1434, x = 27.0, y = 77.2, f = "e" },
-					{ t = "accept", quest = 213, title = "Hostile Takeover", npc = 737, npcName = "Kebok", map = 1434, x = 27.0, y = 77.2, f = "e" },
-					{ t = "accept", quest = 201, title = "Investigate the Camp", npc = 773, npcName = "Krazek", map = 1434, x = 27.0, y = 77.2, f = "e" },
+					{ t = "turnin", quest = 545, title = "Dalaran Patrols", npc = 2410, npcName = "Magus Wordeen Voidglare", map = 1424, x = 61.5, y = 20.9, f = "e" },
+					{ t = "turnin", quest = 557, title = "Bracers of Binding", npc = 2437, npcName = "Keeper Bel'varil", map = 1424, x = 61.5, y = 20.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 1181, title = "Goblin Sponsorship (3)", npc = 2496, npcName = "Baron Revilgaz", map = 1434, x = 27.2, y = 76.9, f = "e" },
-					{ t = "accept", quest = 1182, title = "Goblin Sponsorship (4)", npc = 2496, npcName = "Baron Revilgaz", map = 1434, x = 27.2, y = 76.9, f = "e" },
+					{ t = "turnin", quest = 553, title = "Helcular's Revenge (2)", map = 1424, x = 52.7, y = 53.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "getfp", location = "Booty Bay", text = "Booty Bay", map = 1434, x = 26.9, y = 77.1, f = "e" },
+					{ t = "turnin", quest = 1164, title = "To Steal From Thieves", npc = 4486, npcName = "Genavie Callow", map = 1458, x = 63.8, y = 49.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 570, title = "Mok'thardin's Enchantment (1)", npc = 2465, npcName = "Far Seer Mok'thardin", map = 1434, x = 32.1, y = 29.2, f = "e" },
+					{ t = "goto", map = 1458, x = 61.9, y = 59.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 568, title = "The Defense of Grom'gol (1)", npc = 2464, npcName = "Commander Aggro'gosh", map = 1434, x = 32.2, y = 28.9, f = "e" },
+					{ t = "collect", quest = 9457, itemName = "Heart of Naias", count = 1, oi = 1, map = 1458, x = 19.8, y = 22.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 9436, title = "Bloodscalp Insight", npc = 17094, npcName = "Nemeth Hawkeye", map = 1434, x = 32.0, y = 28.6, f = "e" },
+					{ t = "collect", quest = 629, itemName = "Tablet Shard", count = 1, oi = 1, map = 1458, x = 24.8, y = 23.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 581, title = "Hunt for Yenniku", npc = 2497, npcName = "Nimboya", map = 1434, x = 32.2, y = 27.7, f = "e" },
-					{ t = "accept", quest = 596, title = "Bloody Bone Necklaces", npc = 2519, npcName = "Kin'weelay", map = 1434, x = 32.2, y = 27.7, f = "e" },
-					{ t = "accept", quest = 629, title = "The Vile Reef", npc = 2519, npcName = "Kin'weelay", map = 1434, x = 32.2, y = 27.7, f = "e" },
+					{ t = "collect", quest = 1182, item = 5851, itemName = "Cozzle's Key", count = 1, map = 1458, x = 42.7, y = 18.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 605, itemName = "Singing Crystal Shard", count = 10, oi = 1, map = 1434, x = 26.7, y = 18.5, f = "e" },
+					{ t = "collect", quest = 1182, itemName = "Fuel Regulator Blueprints", count = 1, oi = 1, map = 1458, x = 43.3, y = 20.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 581, itemName = "Bloodscalp Tusk", count = 9, oi = 1, map = 1434, x = 28.8, y = 19.7, f = "e" },
-					{ t = "collect", quest = 189, itemName = "Bloodscalp Ear", count = 15, oi = 1, map = 1434, x = 28.8, y = 19.7, f = "e" },
-					{ t = "collect", quest = 596, itemName = "Bloody Bone Necklace", count = 25, oi = 1, map = 1434, x = 28.8, y = 19.7, f = "e" },
-					{ t = "collect", quest = 9436, itemName = "Bloodscalp Totem", count = 1, oi = 1, map = 1434, x = 28.8, y = 19.7, f = "e" },
+					{ t = "kill", quest = 192, target = "Shadowmaw Panther", count = 10, oi = 1, map = 1458, x = 47.1, y = 22.9, f = "e" },
+					{ t = "collect", quest = 570, itemName = "Shadowmaw Claw", count = 8, oi = 1, map = 1458, x = 47.1, y = 22.9, f = "e" },
+					{ t = "collect", quest = 570, itemName = "Pristine Tigress Fang", count = 1, oi = 2, map = 1458, x = 47.1, y = 22.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "level", level = 35, f = "e" },
+					{ t = "turnin", quest = 570, title = "Mok'thardin's Enchantment (1)", npc = 2465, npcName = "Far Seer Mok'thardin", map = 1458, x = 32.1, y = 29.2, f = "e" },
+					{ t = "accept", quest = 572, title = "Mok'thardin's Enchantment (2)", npc = 2465, npcName = "Far Seer Mok'thardin", map = 1458, x = 32.1, y = 29.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 9457, title = "An Unusual Patron", npc = 17094, npcName = "Nemeth Hawkeye", map = 1458, x = 32.0, y = 28.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 629, title = "The Vile Reef", npc = 2519, npcName = "Kin'weelay", map = 1458, x = 32.3, y = 28.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 1182, title = "Goblin Sponsorship (4)", npc = 2496, npcName = "Baron Revilgaz", map = 1458, x = 27.2, y = 76.9, f = "e" },
+					{ t = "accept", quest = 1183, title = "Goblin Sponsorship (5)", npc = 2496, npcName = "Baron Revilgaz", map = 1458, x = 27.2, y = 76.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 38, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 5361, title = "Family Tree", npc = 11259, npcName = "Nataka Longhorn", map = 1458, x = 55.4, y = 55.8, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Hammerfall|goto Arathi Highlands,73.8,32.6,0.5|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 651, itemName = "Cresting Key", count = 1, oi = 2, map = 1458, x = 66.8, y = 29.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 651, itemName = "Thundering Key", count = 1, oi = 3, map = 1458, x = 52.1, y = 50.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 651, itemName = "Burning Key", count = 1, oi = 1, map = 1458, x = 25.5, y = 30.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 651, title = "Stones of Binding", map = 1458, x = 36.2, y = 57.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1458, x = 31.3, y = 64.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 663, title = "Land Ho!", npc = 2766, npcName = "Lolo the Lookout", map = 1458, x = 31.8, y = 82.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 663, title = "Land Ho!", npc = 2610, npcName = "Shakes O'Breen", map = 1458, x = 32.3, y = 81.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 662, title = "Deep Sea Salvage", npc = 2767, npcName = "First Mate Nilzlix", map = 1458, x = 32.8, y = 81.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 664, title = "Drowned Sorrows", npc = 2769, npcName = "Captain Steelgut", map = 1458, x = 33.9, y = 80.7, f = "e" },
+					{ t = "accept", quest = 665, title = "Sunken Treasure (1)", npc = 2768, npcName = "Professor Phizzlethorpe", map = 1458, x = 33.9, y = 80.7, f = "e" },
+					{ t = "turnin", quest = 665, title = "Sunken Treasure (1)", npc = 2774, npcName = "Doctor Draxlegauge", map = 1458, x = 33.9, y = 80.7, f = "e" },
+					{ t = "accept", quest = 666, title = "Sunken Treasure (2)", npc = 2774, npcName = "Doctor Draxlegauge", map = 1458, x = 33.9, y = 80.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", quest = 664, target = "Daggerspine Raider", count = 10, oi = 1, map = 1458, x = 25.2, y = 84.7, f = "e" },
+					{ t = "kill", quest = 664, target = "Daggerspine Sorceress", count = 3, oi = 2, map = 1458, x = 25.2, y = 84.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 662, itemName = "Maiden's Folly Log", count = 1, oi = 2, map = 1458, x = 23.4, y = 85.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 662, itemName = "Maiden's Folly Charts", count = 1, oi = 1, map = 1458, x = 23.0, y = 84.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 662, itemName = "Spirit of Silverpine Charts", count = 1, oi = 3, map = 1458, x = 20.5, y = 85.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 662, itemName = "Spirit of Silverpine Log", count = 1, oi = 4, map = 1458, x = 20.6, y = 85.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 666, itemName = "Elven Gem", count = 10, oi = 1, map = 1458, x = 21.9, y = 83.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 662, title = "Deep Sea Salvage", npc = 2767, npcName = "First Mate Nilzlix", map = 1458, x = 32.8, y = 81.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 664, title = "Drowned Sorrows", npc = 2769, npcName = "Captain Steelgut", map = 1458, x = 33.9, y = 80.7, f = "e" },
+					{ t = "turnin", quest = 666, title = "Sunken Treasure (2)", npc = 2774, npcName = "Doctor Draxlegauge", map = 1458, x = 33.9, y = 80.7, f = "e" },
+					{ t = "accept", quest = 668, title = "Sunken Treasure (3)", npc = 2774, npcName = "Doctor Draxlegauge", map = 1458, x = 33.9, y = 80.7, f = "e" },
 				},
 			},
 		},

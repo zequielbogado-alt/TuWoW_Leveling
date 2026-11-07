@@ -3,382 +3,504 @@
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/h-northrend-74-76-part-4",
+		id = "zygor/leveling/h-northrend-76-78",
 		pack = "guides",
-		title = "Northrend (74-76) (Parte 4/4)",
+		title = "Northrend (76-78) (Parte 1/4)",
 		category = "Leveling",
 		faction = "Horde",
+		next = "zygor/leveling/h-northrend-76-78-part-2",
 		author = "TuWoW & Zygor",
-		minLevel = 75,
-		maxLevel = 76,
-		zone = 115,
+		minLevel = 76,
+		maxLevel = 78,
+		zone = 116,
 		version = 1,
 		steps = {
 			{
 				goals = {
-					{ t = "turnin", quest = 12412, title = "My Enemy's Friend", npc = 26860, npcName = "Conqueror Krenna", map = 116, x = 20.7, y = 64.2, f = "e" },
-					{ t = "accept", quest = 12413, title = "Attack on Silverbrook", npc = 26860, npcName = "Conqueror Krenna", map = 116, x = 20.7, y = 64.2, f = "e" },
-					{ t = "turnin", quest = 12423, title = "Mikhail's Journal", npc = 26860, npcName = "Conqueror Krenna", map = 116, x = 20.7, y = 64.2, f = "e" },
-					{ t = "accept", quest = 12424, title = "Gorgonna", npc = 26860, npcName = "Conqueror Krenna", map = 116, x = 20.7, y = 64.2, f = "e" },
+					{ t = "turnin", quest = 12327, title = "Out of Body Experience", npc = 27581, npcName = "Ruuna the Blind", map = 116, x = 44.0, y = 47.9, f = "e" },
+					{ t = "accept", quest = 12329, title = "Fate and Coincidence", npc = 27581, npcName = "Ruuna the Blind", map = 116, x = 44.0, y = 47.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12424, title = "Gorgonna", npc = 27102, npcName = "Gorgonna", map = 116, x = 21.0, y = 64.0, f = "e" },
-					{ t = "accept", quest = 12422, title = "Tactical Clemency", npc = 27102, npcName = "Gorgonna", map = 116, x = 21.0, y = 64.0, f = "e" },
+					{ t = "turnin", quest = 12329, title = "Fate and Coincidence", npc = 26935, npcName = "Sasha", map = 116, x = 57.5, y = 41.3, f = "e" },
+					{ t = "accept", quest = 12134, title = "Sasha's Hunt", npc = 26935, npcName = "Sasha", map = 116, x = 57.5, y = 41.3, f = "e" },
+					{ t = "accept", quest = 12330, title = "Anatoly Will Talk", npc = 26935, npcName = "Sasha", map = 116, x = 57.5, y = 41.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 12208, title = "Good Troll Hunting", npc = 27266, npcName = "Sergeant Thurkin", map = 116, x = 22.2, y = 64.7, f = "e" },
+					{ t = "kill", quest = 12134, target = "Solstice Hunter", count = 12, oi = 1, map = 116, x = 60.4, y = 40.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 12453, title = "Eyes Above", npc = 27262, npcName = "Windseer Grayhorn", map = 116, x = 22.5, y = 62.8, f = "e" },
+					{ t = "goto", map = 116, x = 62.3, y = 42.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12208, title = "Good Troll Hunting", npc = 26424, npcName = "Samir", map = 116, x = 16.2, y = 47.6, f = "e" },
-					{ t = "accept", quest = 11984, title = "Filling the Cages", npc = 26424, npcName = "Samir", map = 116, x = 16.2, y = 47.6, f = "e" },
+					{ t = "turnin", quest = 12134, title = "Sasha's Hunt", npc = 26935, npcName = "Sasha", map = 116, x = 57.5, y = 41.3, f = "e" },
+					{ t = "turnin", quest = 12330, title = "Anatoly Will Talk", npc = 26935, npcName = "Sasha", map = 116, x = 57.5, y = 41.3, f = "e" },
+					{ t = "accept", quest = 12411, title = "A Sister's Pledge", npc = 26935, npcName = "Sasha", map = 116, x = 57.5, y = 41.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 26429, npcName = "Budd", map = 116, x = 16.4, y = 48.3, f = "e" },
+					{ t = "turnin", quest = 12411, title = "A Sister's Pledge", npc = 27646, npcName = "Anya", map = 116, x = 64.8, y = 43.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 116, x = 13.2, y = 60.5, f = "e" },
+					{ t = "turnin", quest = 12195, title = "The Unexpected 'Guest'", npc = 27221, npcName = "Tormak the Scarred", map = 116, x = 65.3, y = 47.5, f = "e" },
+					{ t = "accept", quest = 12165, title = "An Intriguing Plan", npc = 27221, npcName = "Tormak the Scarred", map = 116, x = 65.3, y = 47.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11984, title = "Filling the Cages", npc = 26424, npcName = "Samir", map = 116, x = 16.2, y = 47.6, f = "e" },
+					{ t = "accept", quest = 12279, title = "A Bear of an Appetite", npc = 26484, npcName = "Hugh Glass", map = 116, x = 69.1, y = 40.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 11989, title = "Truce?", npc = 26423, npcName = "Drakuru", map = 116, x = 16.4, y = 47.8, f = "e" },
+					{ t = "turnin", quest = 12190, title = "Say Hello to My Little Friend", npc = 26884, npcName = "Harkor", map = 116, x = 73.8, y = 34.0, f = "e" },
+					{ t = "accept", quest = 12113, title = "Nice to Meat You", npc = 26884, npcName = "Harkor", map = 116, x = 73.8, y = 34.0, f = "e" },
+					{ t = "accept", quest = 12114, title = "Therapy", npc = 26884, npcName = "Harkor", map = 116, x = 73.8, y = 34.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 11989, item = 38083, itemName = "Dull Carving Knife", count = 1, map = 116, x = 16.5, y = 47.8, f = "e" },
+					{ t = "accept", quest = 12116, title = "It Takes Guts....", npc = 26886, npcName = "Kraz", map = 116, x = 73.9, y = 34.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 26423, npcName = "Drakuru", map = 116, x = 16.4, y = 47.8, f = "e" },
+					{ t = "kill", target = "Longhoof Grazers", count = 1, map = 116, x = 72.7, y = 37.6, f = "e" },
+					{ t = "collect", quest = 12113, itemName = "Shovelhorn Steak", count = 10, oi = 2, map = 116, x = 72.7, y = 37.6, f = "e" },
+					{ t = "kill", target = "Duskhowl Prowlers", count = 1, map = 116, x = 72.7, y = 37.6, f = "e" },
+					{ t = "collect", quest = 12113, itemName = "Fibrous Worg Meat", count = 10, oi = 1, map = 116, x = 72.7, y = 37.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11989, title = "Truce?", npc = 26423, npcName = "Drakuru", map = 116, x = 16.4, y = 47.8, f = "e" },
-					{ t = "accept", quest = 11990, title = "Vial of Visions", npc = 26423, npcName = "Drakuru", map = 116, x = 16.4, y = 47.8, f = "e" },
+					{ t = "goto", map = 116, x = 61.6, y = 32.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "buy", npc = 26474, npcName = "Ameenah", itemName = "Imbued Vial", count = 1, map = 116, x = 16.0, y = 47.8, f = "e" },
+					{ t = "goto", map = 116, x = 64.3, y = 15.0, f = "e" },
 				},
 			},
 			{
+				note = "Follow the road into the mountains around to 65.8,17.8",
 				goals = {
-					{ t = "collect", quest = 11990, itemName = "Haze Leaf", count = 3, oi = 2, map = 116, x = 14.6, y = 45.3, f = "e" },
+					{ t = "turnin", quest = 12074, title = "An Expedient Ally", npc = 26260, npcName = "Kurun", map = 116, x = 65.8, y = 17.8, f = "e" },
+					{ t = "accept", quest = 11982, title = "Raining Down Destruction", npc = 26260, npcName = "Kurun", map = 116, x = 65.8, y = 17.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 11990, itemName = "Waterweed Frond", count = 1, oi = 3, map = 116, x = 15.2, y = 40.3, f = "e" },
+					{ t = "collect", quest = 11982, item = 35734, itemName = "Boulder", count = 5, map = 116, x = 66.1, y = 13.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11990, title = "Vial of Visions", npc = 26423, npcName = "Drakuru", map = 116, x = 16.4, y = 47.8, f = "e" },
-					{ t = "accept", quest = 11991, title = "Subject to Interpretation", npc = 26423, npcName = "Drakuru", map = 116, x = 16.4, y = 47.8, f = "e" },
+					{ t = "turnin", quest = 11982, title = "Raining Down Destruction", npc = 26260, npcName = "Kurun", map = 116, x = 65.8, y = 17.8, f = "e" },
+					{ t = "accept", quest = 12070, title = "Rallying the Troops", npc = 26260, npcName = "Kurun", map = 116, x = 65.8, y = 17.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 12484, title = "Scourgekabob", npc = 26519, npcName = "Prigmon", map = 116, x = 15.7, y = 46.7, f = "e" },
+					{ t = "goto", map = 116, x = 68.3, y = 10.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 12484, item = 38149, itemName = "Scourged Troll Mummy", count = 1, map = 116, x = 15.7, y = 46.9, f = "e" },
+					{ t = "turnin", quest = 12070, title = "Rallying the Troops", npc = 26260, npcName = "Kurun", map = 116, x = 65.8, y = 17.8, f = "e" },
+					{ t = "accept", quest = 11985, title = "Into the Breach", npc = 26260, npcName = "Kurun", map = 116, x = 65.8, y = 17.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 116, x = 16.9, y = 48.3, f = "e" },
+					{ t = "accept", quest = 12026, title = "The Damaged Journal", map = 116, x = 64.3, y = 19.8, f = "e" },
 				},
 			},
 			{
+				note = "They look like torn pages that spawn all around this area on the ground",
 				goals = {
-					{ t = "turnin", quest = 12484, title = "Scourgekabob", npc = 26604, npcName = "Mack Fearsen", map = 116, x = 16.7, y = 48.3, f = "e" },
-					{ t = "accept", quest = 12029, title = "Seared Scourge", npc = 26604, npcName = "Mack Fearsen", map = 116, x = 16.7, y = 48.3, f = "e" },
+					{ t = "collect", quest = 12026, item = 35737, itemName = "Missing Journal Page", count = 8, f = "e" },
+					{ t = "collect", quest = 12026, itemName = "Brann Bronzebeard's Journal", count = 1, oi = 1, f = "e" },
 				},
 			},
 			{
+				note = "Go into the building to 70.2,13.0",
 				goals = {
-					{ t = "accept", quest = 12483, title = "Shimmercap Stew", npc = 26519, npcName = "Prigmon", map = 116, x = 15.7, y = 46.7, f = "e" },
+					{ t = "kill", quest = 11985, target = "Iron Thane Argrum", count = 1, oi = 1, map = 116, x = 70.2, y = 13.0, f = "e" },
 				},
 			},
 			{
+				note = "Go out of the building and up the path to 65.8,17.8",
 				goals = {
-					{ t = "collect", quest = 12483, itemName = "Shimmering Snowcap", count = 5, oi = 2, map = 116, x = 11.1, y = 61.8, f = "e" },
+					{ t = "turnin", quest = 11985, title = "Into the Breach", npc = 26260, npcName = "Kurun", map = 116, x = 65.8, y = 17.8, f = "e" },
+					{ t = "accept", quest = 12081, title = "Gavrock", npc = 26260, npcName = "Kurun", map = 116, x = 65.8, y = 17.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", target = "Ice Serpents", count = 1, map = 116, x = 13.3, y = 58.5, f = "e" },
-					{ t = "collect", quest = 12483, itemName = "Ice Serpent Eye", count = 5, oi = 1, map = 116, x = 13.3, y = 58.5, f = "e" },
-					{ t = "kill", target = "trolls", count = 1, map = 116, x = 13.3, y = 58.5, f = "e" },
-					{ t = "collect", quest = 11991, item = 35799, itemName = "Frozen Mojo", count = 5, map = 116, x = 13.3, y = 58.5, f = "e" },
+					{ t = "kill", quest = 12114, target = "Drakkari Protector", count = 10, oi = 1, map = 116, x = 70.5, y = 27.4, f = "e" },
+					{ t = "kill", quest = 12114, target = "Drakkari Oracle", count = 10, oi = 2, map = 116, x = 70.5, y = 27.4, f = "e" },
+					{ t = "kill", target = "Drakkari mobs", count = 1, map = 116, x = 70.5, y = 27.4, f = "e" },
+					{ t = "collect", quest = 12068, item = 36758, itemName = "Sacred Mojo", count = 5, map = 116, x = 70.5, y = 27.4, f = "e" },
 				},
 			},
 			{
+				note = "Go inside the underground crypt to 70.8,21.8",
 				goals = {
-					{ t = "turnin", quest = 11991, title = "Subject to Interpretation", npc = 26500, npcName = "Image of Drakuru", map = 116, x = 13.2, y = 60.9, f = "e" },
-					{ t = "accept", quest = 12007, title = "Sacrifices Must be Made", npc = 26500, npcName = "Image of Drakuru", map = 116, x = 13.2, y = 60.9, f = "e" },
+					{ t = "collect", quest = 12116, itemName = "Drakkari Canopic Jar", count = 5, oi = 1, map = 116, x = 70.8, y = 21.8, f = "e" },
 				},
 			},
 			{
+				note = "Inside the crypt, go to 69.4,18.2",
 				goals = {
-					{ t = "collect", quest = 12483, itemName = "Sweetroot", count = 5, oi = 3, map = 116, x = 18.4, y = 38.5, f = "e" },
+					{ t = "collect", quest = 12068, itemName = "Drakkari Tablets", count = 1, oi = 1, map = 116, x = 69.4, y = 18.2, f = "e" },
 				},
 			},
 			{
+				note = "Inside the crypt, go to 69.5,17.5",
 				goals = {
-					{ t = "kill", target = "Warlord Zim'bo", count = 1, map = 116, x = 14.5, y = 38.0, f = "e" },
-					{ t = "collect", quest = 12007, item = 35836, itemName = "Zim'bo's Mojo", count = 1, map = 116, x = 14.5, y = 38.0, f = "e" },
+					{ t = "accept", quest = 12082, title = "Dun-da-Dun-tah!", npc = 26814, npcName = "Harrison Jones", map = 116, x = 69.5, y = 17.5, f = "e" },
 				},
 			},
 			{
-				note = "Go up the huge stairs to 17.9,36.5",
 				goals = {
-					{ t = "collect", quest = 12007, itemName = "Eye of the Prophets", count = 1, oi = 1, map = 116, x = 17.9, y = 36.5, f = "e" },
+					{ t = "turnin", quest = 12068, title = "Voices From the Dust", npc = 26787, npcName = "Image of Drakuru", map = 116, x = 71.7, y = 26.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12007, title = "Sacrifices Must be Made", npc = 26543, npcName = "Image of Drakuru", map = 116, x = 17.4, y = 36.4, f = "e" },
-					{ t = "accept", quest = 12042, title = "Heart of the Ancients", npc = 26543, npcName = "Image of Drakuru", map = 116, x = 17.4, y = 36.4, f = "e" },
+					{ t = "collect", quest = 12279, itemName = "Northern Salmon", count = 6, oi = 1, map = 116, x = 75.5, y = 26.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 116, x = 16.0, y = 29.9, f = "e" },
+					{ t = "turnin", quest = 12081, title = "Gavrock", npc = 26420, npcName = "Gavrock", map = 116, x = 79.8, y = 33.6, f = "e" },
+					{ t = "accept", quest = 12093, title = "Runes of Compulsion", npc = 26420, npcName = "Gavrock", map = 116, x = 79.8, y = 33.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12422, title = "Tactical Clemency", npc = 27497, npcName = "Captured Trapper", map = 116, x = 21.9, y = 29.9, f = "e" },
+					{ t = "kill", target = "Iron Rune-Weavers", count = 4, map = 116, x = 79.1, y = 43.3, f = "e" },
+					{ t = "kill", quest = 12093, target = "Overseer Brunon", count = 1, oi = 4, map = 116, x = 79.1, y = 43.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 12413, target = "Silverbrook Defender", count = 8, oi = 1, map = 116, x = 24.0, y = 33.6, f = "e" },
+					{ t = "kill", target = "Iron Rune-Weavers", count = 4, map = 116, x = 75.3, y = 36.7, f = "e" },
+					{ t = "kill", quest = 12093, target = "Overseer Lochli", count = 1, oi = 3, map = 116, x = 75.3, y = 36.7, f = "e" },
 				},
 			},
 			{
-				note = "Go on top of the control station to 36.9,32.4",
 				goals = {
-					{ t = "turnin", quest = 12042, title = "Heart of the Ancients", map = 116, x = 36.9, y = 32.4, f = "e" },
-					{ t = "accept", quest = 12802, title = "My Heart is in Your Hands", map = 116, x = 36.9, y = 32.4, f = "e" },
+					{ t = "turnin", quest = 12116, title = "It Takes Guts....", npc = 26886, npcName = "Kraz", map = 116, x = 73.9, y = 34.1, f = "e" },
+					{ t = "accept", quest = 12120, title = "Drak'aguul's Mallet", npc = 26886, npcName = "Kraz", map = 116, x = 73.9, y = 34.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", target = "Drakkari Defenders", count = 1, map = 116, x = 44.2, y = 30.4, f = "e" },
-					{ t = "collect", quest = 12802, item = 36743, itemName = "Desperate Mojo", count = 5, map = 116, x = 44.2, y = 30.4, f = "e" },
+					{ t = "turnin", quest = 12113, title = "Nice to Meat You", npc = 26884, npcName = "Harkor", map = 116, x = 73.8, y = 34.0, f = "e" },
+					{ t = "turnin", quest = 12114, title = "Therapy", npc = 26884, npcName = "Harkor", map = 116, x = 73.8, y = 34.0, f = "e" },
+					{ t = "turnin", quest = 12082, title = "Dun-da-Dun-tah!", npc = 26884, npcName = "Harkor", map = 116, x = 73.8, y = 34.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12802, title = "My Heart is in Your Hands", npc = 26701, npcName = "Image of Drakuru", map = 116, x = 45.0, y = 28.4, f = "e" },
-					{ t = "accept", quest = 12068, title = "Voices From the Dust", npc = 26701, npcName = "Image of Drakuru", map = 116, x = 45.0, y = 28.4, f = "e" },
+					{ t = "kill", target = "Iron Rune-Weavers", count = 4, map = 116, x = 72.1, y = 33.9, f = "e" },
+					{ t = "kill", quest = 12093, target = "Overseer Korgan", count = 1, oi = 2, map = 116, x = 72.1, y = 33.9, f = "e" },
 				},
 			},
 			{
-				note = "Hearth to Conquest Hold,0.5|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "use", item = 6948, itemName = "hearthstone", map = 116, x = 20.9, y = 64.5, f = "e" },
+					{ t = "kill", target = "Iron Rune-Weavers", count = 4, map = 116, x = 67.7, y = 29.6, f = "e" },
+					{ t = "kill", quest = 12093, target = "Overseer Durval", count = 1, oi = 1, map = 116, x = 67.7, y = 29.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12413, title = "Attack on Silverbrook", npc = 26860, npcName = "Conqueror Krenna", map = 116, x = 20.7, y = 64.2, f = "e" },
+					{ t = "collect", quest = 12120, itemName = "Drakil'jin Mallet", count = 1, oi = 1, map = 116, x = 71.6, y = 28.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 12207, title = "Vordrassil's Fall", npc = 27262, npcName = "Windseer Grayhorn", map = 116, x = 22.5, y = 62.8, f = "e" },
-					{ t = "accept", quest = 12213, title = "The Darkness Beneath", npc = 27262, npcName = "Windseer Grayhorn", map = 116, x = 22.5, y = 62.8, f = "e" },
+					{ t = "turnin", quest = 12120, title = "Drak'aguul's Mallet", npc = 26886, npcName = "Kraz", map = 116, x = 73.9, y = 34.1, f = "e" },
+					{ t = "accept", quest = 12121, title = "See You on the Other Side", npc = 26886, npcName = "Kraz", map = 116, x = 73.9, y = 34.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12029, title = "Seared Scourge", npc = 26604, npcName = "Mack Fearsen", map = 116, x = 16.7, y = 48.3, f = "e" },
+					{ t = "turnin", quest = 12093, title = "Runes of Compulsion", npc = 26420, npcName = "Gavrock", map = 116, x = 79.8, y = 33.6, f = "e" },
+					{ t = "accept", quest = 12094, title = "Latent Power", npc = 26420, npcName = "Gavrock", map = 116, x = 79.8, y = 33.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12483, title = "Shimmercap Stew", npc = 26519, npcName = "Prigmon", map = 116, x = 15.7, y = 46.7, f = "e" },
-					{ t = "accept", quest = 12190, title = "Say Hello to My Little Friend", npc = 26519, npcName = "Prigmon", map = 116, x = 15.7, y = 46.7, f = "e" },
+					{ t = "goto", map = 116, x = 78.8, y = 39.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", target = "Entropic Oozes", count = 1, map = 116, x = 26.5, y = 46.6, f = "e" },
-					{ t = "collect", quest = 12207, itemName = "Slime Sample", count = 6, oi = 1, map = 116, x = 26.5, y = 46.6, f = "e" },
+					{ t = "goto", map = 116, x = 74.1, y = 44.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 116, x = 28.6, y = 45.1, f = "e" },
+					{ t = "goto", map = 116, x = 71.3, y = 39.9, f = "e" },
 				},
 			},
 			{
-				note = "Go underground to 30.5,43.9",
 				goals = {
-					{ t = "goto", map = 116, x = 30.5, y = 43.9, f = "e" },
+					{ t = "collect", itemName = "killed by Warlord Jin'arrak", count = 1, map = 116, x = 71.5, y = 24.7, f = "e" },
 				},
 			},
 			{
-				note = "Go outside the tunnel to 33.3,48.5|n",
+				note = "While dead, go inside the crypt to 69.4,19.5",
 				goals = {
-					{ t = "goto", map = 116, x = 33.3, y = 48.5, f = "e" },
+					{ t = "turnin", quest = 12121, title = "See You on the Other Side", npc = 26924, npcName = "Gan'jo", map = 116, x = 69.4, y = 19.5, f = "e" },
+					{ t = "accept", quest = 12137, title = "Chill Out, Mon", npc = 26924, npcName = "Gan'jo", map = 116, x = 69.4, y = 19.5, f = "e" },
 				},
 			},
 			{
-				note = "Go underground to 32.2,45.8",
 				goals = {
-					{ t = "goto", map = 116, x = 32.2, y = 45.8, f = "e" },
+					{ t = "collect", quest = 12137, itemName = "Snow of Eternal Slumber", count = 1, oi = 1, map = 116, x = 69.4, y = 19.5, f = "e" },
 				},
 			},
 			{
-				note = "Go outside the tunnel to 40.7,52|n",
 				goals = {
-					{ t = "goto", map = 116, x = 40.7, y = 52.0, f = "e" },
+					{ t = "talk", npc = 26924, npcName = "Gan'jo", map = 116, x = 69.4, y = 19.5, f = "e" },
 				},
 			},
 			{
-				note = "Go underground to 41.2,54.7",
 				goals = {
-					{ t = "goto", map = 116, x = 41.2, y = 54.7, f = "e" },
+					{ t = "collect", quest = 12137, itemName = "Drakkari Spirit Particles", count = 5, oi = 2, map = 116, x = 70.0, y = 20.4, f = "e" },
 				},
 			},
 			{
-				note = "Go outside the tunnel to 43.8,53.3",
+				note = "Go outside to 73.9,34.1",
 				goals = {
-					{ t = "goto", map = 116, x = 43.8, y = 53.3, f = "e" },
+					{ t = "turnin", quest = 12137, title = "Chill Out, Mon", npc = 26886, npcName = "Kraz", map = 116, x = 73.9, y = 34.1, f = "e" },
+					{ t = "accept", quest = 12152, title = "Jin'arrak's End", npc = 26886, npcName = "Kraz", map = 116, x = 73.9, y = 34.1, f = "e" },
 				},
 			},
 			{
+				note = "Go into the crypt to 71.3,19.6",
 				goals = {
-					{ t = "getfp", location = "Camp Oneqwah", text = "Camp Oneqwah", map = 116, x = 65.0, y = 46.9, f = "e" },
+					{ t = "collect", itemName = "Sacred Drakkari Offering", count = 1, map = 116, x = 71.3, y = 19.6, f = "e" },
+					{ t = "collect", quest = 12152, item = 37063, itemName = "Infused Drakkari Offering", count = 1, map = 116, x = 71.3, y = 19.6, f = "e" },
 				},
 			},
 			{
+				note = "Go outside to 71.4,24.4",
 				goals = {
-					{ t = "accept", quest = 12415, title = "The Horse Hollerer", npc = 26944, npcName = "Soulok Stormfury", map = 116, x = 65.0, y = 47.9, f = "e" },
+					{ t = "goto", map = 116, x = 71.4, y = 24.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12451, title = "Onward to Camp Oneqwah", npc = 26666, npcName = "Scout Vor'takh", map = 116, x = 65.2, y = 47.7, f = "e" },
-					{ t = "accept", quest = 12074, title = "An Expedient Ally", npc = 26666, npcName = "Scout Vor'takh", map = 116, x = 65.2, y = 47.7, f = "e" },
+					{ t = "turnin", quest = 12152, title = "Jin'arrak's End", npc = 26886, npcName = "Kraz", map = 116, x = 73.9, y = 34.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 12195, title = "The Unexpected 'Guest'", npc = 27221, npcName = "Tormak the Scarred", map = 116, x = 65.3, y = 47.5, f = "e" },
+					{ t = "turnin", quest = 12094, title = "Latent Power", npc = 26420, npcName = "Gavrock", map = 116, x = 79.8, y = 33.6, f = "e" },
+					{ t = "accept", quest = 12099, title = "Free at Last", npc = 26420, npcName = "Gavrock", map = 116, x = 79.8, y = 33.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "sethome", location = "Camp Oneqwah", text = "Camp Oneqwah", f = "e" },
+					{ t = "goto", map = 116, x = 76.2, y = 37.7, f = "e" },
 				},
 			},
 			{
-				note = "Fly to Conquest Hold,0.5|noway|c",
 				goals = {
-					{ t = "goto", map = 116, x = 22.0, y = 64.5, f = "e" },
+					{ t = "turnin", quest = 12099, title = "Free at Last", npc = 26420, npcName = "Gavrock", map = 116, x = 79.8, y = 33.6, f = "e" },
 				},
 			},
 			{
+				note = "Hearth to Camp Oneqwah,0.5|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "accept", quest = 12425, title = "Ruuna the Blind", npc = 27102, npcName = "Gorgonna", map = 116, x = 21.0, y = 64.0, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 116, x = 65.4, y = 47.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12207, title = "Vordrassil's Fall", npc = 27262, npcName = "Windseer Grayhorn", map = 116, x = 22.5, y = 62.8, f = "e" },
-					{ t = "turnin", quest = 12213, title = "The Darkness Beneath", npc = 27262, npcName = "Windseer Grayhorn", map = 116, x = 22.5, y = 62.8, f = "e" },
-					{ t = "turnin", quest = 12453, title = "Eyes Above", npc = 27262, npcName = "Windseer Grayhorn", map = 116, x = 22.5, y = 62.8, f = "e" },
-					{ t = "accept", quest = 12229, title = "A Possible Link", npc = 27262, npcName = "Windseer Grayhorn", map = 116, x = 22.5, y = 62.8, f = "e" },
-					{ t = "accept", quest = 12231, title = "The Bear God's Offspring", npc = 27262, npcName = "Windseer Grayhorn", map = 116, x = 22.5, y = 62.8, f = "e" },
+					{ t = "turnin", quest = 12026, title = "The Damaged Journal", npc = 26584, npcName = "Sage Paluna", map = 116, x = 65.2, y = 47.7, f = "e" },
+					{ t = "accept", quest = 12054, title = "Deciphering the Journal", npc = 26584, npcName = "Sage Paluna", map = 116, x = 65.2, y = 47.7, f = "e" },
 				},
 			},
 			{
-				note = "Fly to Camp Oneqwah,0.5|noway|c",
 				goals = {
-					{ t = "goto", map = 116, x = 64.9, y = 46.9, f = "e" },
+					{ t = "accept", quest = 12204, title = "In the Name of Loken", npc = 26666, npcName = "Scout Vor'takh", map = 116, x = 65.2, y = 47.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", target = "Silvercoat Stags", count = 1, map = 116, x = 60.4, y = 54.3, f = "e" },
-					{ t = "collect", quest = 12195, itemName = "Mature Stag Horn", count = 5, oi = 1, map = 116, x = 60.4, y = 54.3, f = "e" },
+					{ t = "turnin", quest = 12415, title = "The Horse Hollerer", npc = 26944, npcName = "Soulok Stormfury", map = 116, x = 65.0, y = 47.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 27275, npcName = "Kodian", map = 116, x = 66.9, y = 62.4, f = "e" },
+					{ t = "turnin", quest = 12279, title = "A Bear of an Appetite", npc = 26484, npcName = "Hugh Glass", map = 116, x = 69.1, y = 40.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", target = "Redfang furbolgs", count = 1, map = 116, x = 63.6, y = 57.9, f = "e" },
-					{ t = "collect", quest = 12229, itemName = "Crazed Furbolg Blood", count = 8, oi = 1, map = 116, x = 63.6, y = 57.9, f = "e" },
+					{ t = "talk", npc = 26420, npcName = "Gavrock", map = 116, x = 79.8, y = 33.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 27274, npcName = "Orsonn", map = 116, x = 48.1, y = 58.9, f = "e" },
+					{ t = "kill", target = "Iron Rune-Smiths", count = 1, map = 116, x = 76.6, y = 55.1, f = "e" },
+					{ t = "collect", quest = 12165, item = 36849, itemName = "Golem Blueprint Section 1", count = 1, map = 116, x = 76.6, y = 55.1, f = "e" },
+					{ t = "collect", quest = 12165, item = 36850, itemName = "Golem Blueprint Section 2", count = 1, map = 116, x = 76.6, y = 55.1, f = "e" },
+					{ t = "collect", quest = 12165, item = 36851, itemName = "Golem Blueprint Section 3", count = 1, map = 116, x = 76.6, y = 55.1, f = "e" },
+					{ t = "collect", quest = 12165, itemName = "War Golem Blueprint", count = 1, oi = 1, map = 116, x = 76.6, y = 55.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12425, title = "Ruuna the Blind", npc = 27581, npcName = "Ruuna the Blind", map = 116, x = 44.0, y = 47.9, f = "e" },
-					{ t = "accept", quest = 12328, title = "Ruuna's Request", npc = 27581, npcName = "Ruuna the Blind", map = 116, x = 44.0, y = 47.9, f = "e" },
+					{ t = "collect", quest = 12054, itemName = "Spiritsbreath", count = 1, oi = 1, map = 116, x = 66.6, y = 58.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", target = "Fern Feeder Moths", count = 1, map = 116, x = 46.8, y = 35.7, f = "e" },
-					{ t = "collect", quest = 12328, itemName = "Gossamer Dust", count = 4, oi = 1, map = 116, x = 46.8, y = 35.7, f = "e" },
+					{ t = "turnin", quest = 12054, title = "Deciphering the Journal", npc = 26584, npcName = "Sage Paluna", map = 116, x = 65.2, y = 47.7, f = "e" },
+					{ t = "accept", quest = 12058, title = "The Runic Prophecies", npc = 26584, npcName = "Sage Paluna", map = 116, x = 65.2, y = 47.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12328, title = "Ruuna's Request", npc = 27581, npcName = "Ruuna the Blind", map = 116, x = 44.0, y = 47.9, f = "e" },
-					{ t = "accept", quest = 12327, title = "Out of Body Experience", npc = 27581, npcName = "Ruuna the Blind", map = 116, x = 44.0, y = 47.9, f = "e" },
+					{ t = "turnin", quest = 12204, title = "In the Name of Loken", npc = 26666, npcName = "Scout Vor'takh", map = 116, x = 65.2, y = 47.7, f = "e" },
+					{ t = "accept", quest = 12201, title = "The Overseer's Shadow", npc = 26666, npcName = "Scout Vor'takh", map = 116, x = 65.2, y = 47.7, f = "e" },
+					{ t = "accept", quest = 12073, title = "Pounding the Iron", npc = 26666, npcName = "Scout Vor'takh", map = 116, x = 65.2, y = 47.7, f = "e" },
 				},
 			},
 			{
-				note = "Drink the Gossamer Potion in your bags next to Ruuna's Crystal Ball right next to you|use Gossamer Potion##37661",
 				goals = {
-					{ t = "use", item = 37661, itemName = "Gossamer Potion", f = "e" },
+					{ t = "turnin", quest = 12165, title = "An Intriguing Plan", npc = 27227, npcName = "Prospector Rokar", map = 116, x = 65.0, y = 47.0, f = "e" },
+					{ t = "accept", quest = 12196, title = "From the Ground Up", npc = 27227, npcName = "Prospector Rokar", map = 116, x = 65.0, y = 47.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "level", level = 76, f = "e" },
+					{ t = "collect", quest = 12201, itemName = "Overseer's Uniform", count = 1, oi = 1, map = 116, x = 76.6, y = 54.8, f = "e" },
+					{ t = "collect", quest = 12196, itemName = "War Golem Part", count = 8, oi = 1, map = 116, x = 76.6, y = 54.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12201, title = "The Overseer's Shadow", npc = 26666, npcName = "Scout Vor'takh", map = 116, x = 65.2, y = 47.7, f = "e" },
+					{ t = "accept", quest = 12202, title = "Cultivating an Image", npc = 26666, npcName = "Scout Vor'takh", map = 116, x = 65.2, y = 47.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12196, title = "From the Ground Up", npc = 27227, npcName = "Propector Rokar", map = 116, x = 65.0, y = 47.0, f = "e" },
+					{ t = "accept", quest = 12197, title = "We Have the Power", npc = 27227, npcName = "Propector Rokar", map = 116, x = 65.0, y = 47.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", target = "Iron dwarves", count = 1, map = 116, x = 76.2, y = 53.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 12197, itemName = "Kathorn's Power Cell", count = 1, oi = 2, map = 116, x = 76.8, y = 59.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 12197, itemName = "Durar's Power Cell", count = 1, oi = 1, map = 116, x = 74.9, y = 56.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12202, title = "Cultivating an Image", npc = 26666, npcName = "Scout Vor'takh", map = 116, x = 65.2, y = 47.7, f = "e" },
+					{ t = "accept", quest = 12203, title = "Loken's Orders", npc = 26666, npcName = "Scout Vor'takh", map = 116, x = 65.2, y = 47.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12197, title = "We Have the Power", npc = 27227, npcName = "Prospector Rokar", map = 116, x = 65.0, y = 47.0, f = "e" },
+					{ t = "accept", quest = 12198, title = "... Or Maybe We Don't", npc = 27227, npcName = "Prospector Rokar", map = 116, x = 65.0, y = 47.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "kill", target = "Lightning Sentries", count = 1, map = 116, x = 73.7, y = 51.4, f = "e" },
+					{ t = "collect", quest = 12198, itemName = "Charge Level", count = 10, oi = 1, map = 116, x = 73.7, y = 51.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 116, x = 81.5, y = 60.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12203, title = "Loken's Orders", npc = 26666, npcName = "Scout Vor'takh", map = 116, x = 65.2, y = 47.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12198, title = "... Or Maybe We Don't", npc = 27227, npcName = "Prospector Rokar", map = 116, x = 65.0, y = 47.0, f = "e" },
+					{ t = "accept", quest = 12199, title = "Bringing Down the Iron Thane", npc = 27227, npcName = "Prospector Rokar", map = 116, x = 65.0, y = 47.0, f = "e" },
+				},
+			},
+			{
+				note = "Go into this building and downstairs to 76.2,63.2",
+				goals = {
+					{ t = "kill", quest = 12199, target = "Iron Thane Furyhammer", count = 1, oi = 1, map = 116, x = 76.2, y = 63.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12199, title = "Bringing Down the Iron Thane", npc = 27221, npcName = "Tormak the Scarred", map = 116, x = 65.3, y = 47.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 116, x = 65.2, y = 19.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 116, x = 68.5, y = 16.2, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 116, x = 69.0, y = 14.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 116, x = 70.2, y = 14.7, f = "e" },
+				},
+			},
+			{
+				note = "Hearth to Camp Oneqwah,0.5|use hearthstone##6948|noway|c",
+				goals = {
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 116, x = 65.4, y = 47.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12073, title = "Pounding the Iron", npc = 26666, npcName = "Scout Vor'takh", map = 116, x = 65.2, y = 47.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 12058, title = "The Runic Prophecies", npc = 26584, npcName = "Sage Paluna", map = 116, x = 65.2, y = 47.7, f = "e" },
 				},
 			},
 		},

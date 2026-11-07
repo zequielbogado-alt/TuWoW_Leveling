@@ -32,11 +32,11 @@ do
 			{
 				goals = {
 					{ t = "turnin", quest = 13679, title = "The Aspirant's Challenge", npc = 33625, npcName = "Arcanist Taelis", map = 118, x = 76.5, y = 19.4, f = "e" },
-					{ t = "accept", quest = 13684, title = "A Valiant Of Stormwind", npc = 33625, npcName = "Arcanist Taelis", map = 118, x = 76.5, y = 19.4, f = "e" },
-					{ t = "accept", quest = 13689, title = "A Valiant Of Darnassus", npc = 33625, npcName = "Arcanist Taelis", map = 118, x = 76.5, y = 19.4, f = "e" },
-					{ t = "accept", quest = 13685, title = "A Valiant Of Ironforge", npc = 33625, npcName = "Arcanist Taelis", map = 118, x = 76.5, y = 19.4, f = "e" },
-					{ t = "accept", quest = 13688, title = "A Valiant Of Gnomeregan", npc = 33625, npcName = "Arcanist Taelis", map = 118, x = 76.5, y = 19.4, f = "e" },
-					{ t = "accept", quest = 13690, title = "A Valiant Of The Exodar", npc = 33625, npcName = "Arcanist Taelis", map = 118, x = 76.5, y = 19.4, f = "e" },
+					{ t = "accept", quest = 13684, title = "A Valiant Of Stormwind", npc = 33625, npcName = "Arcanist Taelis", map = 118, x = 76.5, y = 19.4, f = "e", only = { races = { "Human" } } },
+					{ t = "accept", quest = 13689, title = "A Valiant Of Darnassus", npc = 33625, npcName = "Arcanist Taelis", map = 118, x = 76.5, y = 19.4, f = "e", only = { races = { "NightElf" } } },
+					{ t = "accept", quest = 13685, title = "A Valiant Of Ironforge", npc = 33625, npcName = "Arcanist Taelis", map = 118, x = 76.5, y = 19.4, f = "e", only = { races = { "Dwarf" } } },
+					{ t = "accept", quest = 13688, title = "A Valiant Of Gnomeregan", npc = 33625, npcName = "Arcanist Taelis", map = 118, x = 76.5, y = 19.4, f = "e", only = { races = { "Gnome" } } },
+					{ t = "accept", quest = 13690, title = "A Valiant Of The Exodar", npc = 33625, npcName = "Arcanist Taelis", map = 118, x = 76.5, y = 19.4, f = "e", only = { races = { "Draenei" } } },
 				},
 			},
 			{
