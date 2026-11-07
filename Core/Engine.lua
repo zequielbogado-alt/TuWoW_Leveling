@@ -450,9 +450,12 @@ ns.OnLogin(function()
 	local s = ns.CharState()
 	local ids, seen, back = {}, {}, {}
 	local function add(id)
-		if type(id) == "string" and not seen[id] and #ids < MAX_TABS and Guides.Get(id) then
-			ids[#ids + 1] = id
-			seen[id] = true
+		if type(id) == "string" and not seen[id] and #ids < MAX_TABS then
+			local g = Guides.Get(id)
+			if g and Guides.GuideMatches(g, player) then
+				ids[#ids + 1] = id
+				seen[id] = true
+			end
 		end
 	end
 	local list = type(s.tabs) == "table" and s.tabs or {}
@@ -487,6 +490,7 @@ ns.OnLogin(function()
 	add(saved) -- saved before tabs existed
 	local activeId = s.tabs and list[tonumber(s.activeTab) or 0] or s.guide
 	if type(activeId) == "string" and not Guides.Get(activeId) then activeId = Guides.Successor(activeId) or activeId end
+	if activeId and Guides.Get(activeId) and not Guides.GuideMatches(Guides.Get(activeId), player) then activeId = nil end
 	local offerFrom
 	if #ids == 0 and ns.Get("behavior.autoSelectGuide") then
 		local suggested = Engine.StartingGuide()

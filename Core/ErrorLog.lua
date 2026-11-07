@@ -87,11 +87,6 @@ do
 			end
 		end)
 	end
-
-	-- Habilitar scriptErrors en el cliente para que el motor reporte cualquier fallo
-	if SetCVar then
-		pcall(SetCVar, "scriptErrors", "1")
-	end
 end
 
 ---------------------------------------------------------------------------

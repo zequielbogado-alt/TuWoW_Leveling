@@ -246,6 +246,7 @@ end
 ---------------------------------------------------------------------------
 
 local listeners = {}
+local gameHandlers = {}
 local busDepth, busDirty = 0, false
 
 function ns.On(msg, fn)
@@ -298,7 +299,6 @@ end
 ---------------------------------------------------------------------------
 
 local eventFrame = CreateFrame("Frame")
-local gameHandlers = {}
 local eventDepth, eventsDirty = 0, false
 
 local function settle(event)
