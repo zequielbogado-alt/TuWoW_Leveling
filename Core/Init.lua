@@ -271,16 +271,25 @@ end
 
 function ns.Fire(msg, ...)
 	local list = listeners[msg]
-	if not list then return end
-	busDepth = busDepth + 1
-	for i = 1, #list do
-		local h = list[i]
-		if h.live then call(h.fn, ...) end
+	if list then
+		busDepth = busDepth + 1
+		for i = 1, #list do
+			local h = list[i]
+			if h.live then call(h.fn, ...) end
+		end
+		busDepth = busDepth - 1
+		if busDepth == 0 and busDirty then
+			busDirty = false
+			for _, l in pairs(listeners) do compact(l) end
+		end
 	end
-	busDepth = busDepth - 1
-	if busDepth == 0 and busDirty then
-		busDirty = false
-		for _, l in pairs(listeners) do compact(l) end
+	-- Dispatch synthetic/simulated events to gameHandlers (e.g. QUEST_TURNED_IN)
+	local glist = gameHandlers[msg]
+	if glist then
+		for i = 1, #glist do
+			local h = glist[i]
+			if h.live then call(h.fn, msg, ...) end
+		end
 	end
 end
 
@@ -311,9 +320,7 @@ function ns.RegisterEvent(event, fn)
 	event = EVENT_ALIAS_335[event] or event
 	local list = gameHandlers[event]
 	if not list then
-		if not pcall(eventFrame.RegisterEvent, eventFrame, event) then
-			return false
-		end
+		pcall(eventFrame.RegisterEvent, eventFrame, event)
 		list = {}
 		gameHandlers[event] = list
 	end

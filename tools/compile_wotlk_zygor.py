@@ -454,6 +454,18 @@ def split_large_guide(g: Dict[str, Any], max_steps_per_part: int = 85) -> List[D
     total_parts = (len(steps) + max_steps_per_part - 1) // max_steps_per_part
     orig_next = g.get("next")
     base_title = g["title"]
+    
+    # Calcular progresión de nivel a lo largo de los bloques
+    cur_lvl = g.get("minLevel", 1)
+    chunk_min_levels = []
+    for idx in range(total_parts):
+        chunk_min_levels.append(cur_lvl)
+        chunk = steps[idx * max_steps_per_part : (idx + 1) * max_steps_per_part]
+        for step in chunk:
+            for goal in step.get("goals", []):
+                if goal.get("t") == "level" and "level" in goal:
+                    cur_lvl = max(cur_lvl, int(goal["level"]))
+
     for idx in range(total_parts):
         chunk = steps[idx * max_steps_per_part : (idx + 1) * max_steps_per_part]
         part = dict(g)
@@ -468,6 +480,8 @@ def split_large_guide(g: Dict[str, Any], max_steps_per_part: int = 85) -> List[D
         part["steps"] = chunk
         if g.get("zone"):
             part["zone"] = g["zone"]
+        if idx > 0 and chunk_min_levels[idx] > g.get("minLevel", 1):
+            part["minLevel"] = chunk_min_levels[idx]
         parts.append(part)
     return parts
 

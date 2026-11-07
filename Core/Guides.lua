@@ -758,6 +758,7 @@ local function rank(packId, player, here, zone)
 		if (g.category == nil or g.category == "Leveling") and guideMatches(g, player) then
 			local lo, hi = g.minLevel or 1, g.maxLevel or g.minLevel or 1
 			if hi < lo then hi = lo end
+			local isPart = (g.id:find("%-part%-[2-9]") or (g.title and g.title:find("%(Parte [2-9]"))) and 1 or 0
 			if level >= lo and level <= hi then
 				local specific = ((g.races and #g.races > 0) or (g.classes and #g.classes > 0)) and 0 or 1
 				local inZone = ((here and g.zone == here.map) or (zone and g.zoneName == zone)) and 0 or 1
@@ -767,9 +768,9 @@ local function rank(packId, player, here, zone)
 					local cost = ns.TravelCost(here, start)
 					if cost then band = math.floor(cost / TRAVEL_TIE) end
 				end
-				fitting[#fitting + 1] = { id = g.id, key = { inZone, band, specific, hi - lo, lo, i } }
+				fitting[#fitting + 1] = { id = g.id, key = { inZone, isPart, band, specific, hi - lo, lo, i } }
 			elseif #fitting == 0 then
-				local key = lo > level and { 1, lo - level, hi - lo, i } or { 2, level - hi, hi - lo, i }
+				local key = lo > level and { 1, isPart, lo - level, hi - lo, i } or { 2, isPart, level - hi, hi - lo, i }
 				if not bestKey or less(key, bestKey) then best, bestKey = g.id, key end
 			end
 		end

@@ -10,6 +10,7 @@ do
 		folder = "The Storm Peaks",
 		faction = "Alliance",
 		author = "TuWoW & Zygor",
+		minLevel = 79,
 		zone = 120,
 		version = 1,
 		steps = {

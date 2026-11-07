@@ -805,7 +805,14 @@ ns.OnLogin(function()
 	db.betaNoticeSeen = nil -- the beta notice's flag; the welcome has its own
 	if seen() then return end
 	pending = "login"
-	if C_Timer and C_Timer.After then ns.After(DELAY, try) else try() end
+	if C_Timer and C_Timer.After then
+		ns.After(1, try)
+		ns.After(2, try)
+		ns.After(4, try)
+		ns.After(7, try)
+	else
+		try()
+	end
 end)
 
 -- RouteChoice.lua registers first, so its window is already up (or still
@@ -814,9 +821,18 @@ ns.RegisterEvent("PLAYER_REGEN_ENABLED", function()
 	yieldToRouteChoice()
 	try()
 end)
--- After a cinematic, once the UI is back.
+-- After a cinematic, movie, or gaining player control.
 ns.RegisterEvent("CINEMATIC_STOP", function()
 	if C_Timer and C_Timer.After then ns.After(1, try) else try() end
+end)
+ns.RegisterEvent("STOP_MOVIE", function()
+	if C_Timer and C_Timer.After then ns.After(1, try) else try() end
+end)
+ns.RegisterEvent("PLAYER_CONTROL_GAINED", function()
+	if C_Timer and C_Timer.After then ns.After(0.5, try) else try() end
+end)
+ns.RegisterEvent("PLAYER_ENTERING_WORLD", function()
+	if C_Timer and C_Timer.After then ns.After(1.5, try) else try() end
 end)
 ns.On("ROUTE_CHOICE", yieldToRouteChoice)
 ns.On("SHOW_WELCOME", function(page) WEL.Show(page) end)

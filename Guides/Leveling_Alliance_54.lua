@@ -9,7 +9,7 @@ do
 		category = "Leveling",
 		faction = "Alliance",
 		author = "TuWoW & Zygor",
-		minLevel = 76,
+		minLevel = 77,
 		maxLevel = 78,
 		zone = 116,
 		version = 1,

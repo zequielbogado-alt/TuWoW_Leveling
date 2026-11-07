@@ -19,43 +19,23 @@ local math_floor = math.floor
 function Compat.IsSecret(_) return false end
 function Compat.Readable(v) return v end
 function Compat.IsGamepadActive() return false end
-
-function Compat.Now()
-	if time then return time() end
-	return GetTime and math_floor(GetTime()) or 0
-end
-
+function Compat.Now() return (time and time()) or (GetTime and math_floor(GetTime())) or 0 end
 function Compat.GetPlayerFaction()
 	local faction = UnitFactionGroup and UnitFactionGroup("player")
-	if faction == "Alliance" or faction == "Horde" then return faction end
-	return nil
+	return (faction == "Alliance" or faction == "Horde") and faction or nil
 end
-
-function Compat.GetPlayerLevel()
-	return UnitLevel("player") or 1
-end
-
+function Compat.GetPlayerLevel() return UnitLevel("player") or 1 end
 function Compat.GetPlayerXP()
-	local cur = UnitXP("player") or 0
-	local max = UnitXPMax("player") or 1
+	local cur, max = UnitXP("player") or 0, UnitXPMax("player") or 1
 	if max <= 0 then max = 1 end
 	return cur, max, cur / max
 end
-
-function Compat.GetPlayerRace()
-	local _, raceFile = UnitRace("player")
-	return raceFile or "Human"
-end
-
-function Compat.GetPlayerClass()
-	local _, classFile = UnitClass("player")
-	return classFile or "WARRIOR"
-end
+function Compat.GetPlayerRace() return select(2, UnitRace("player")) or "Human" end
+function Compat.GetPlayerClass() return select(2, UnitClass("player")) or "WARRIOR" end
 
 function Compat.GetPlayerInfo()
 	local _, race = UnitRace("player")
 	local _, class = UnitClass("player")
-	local faction = Compat.GetPlayerFaction() or "Neutral"
 	return {
 		name = UnitName("player"),
 		realm = GetRealmName and GetRealmName() or nil,
@@ -63,107 +43,73 @@ function Compat.GetPlayerInfo()
 		level = UnitLevel("player") or 1,
 		xp = UnitXP and UnitXP("player") or 0,
 		xpMax = UnitXPMax and UnitXPMax("player") or 0,
-		race = race,
-		class = class,
-		faction = faction,
+		race = race, class = class, faction = Compat.GetPlayerFaction() or "Neutral",
 	}
 end
 
 local RACE_ID_BY_FILE = {
-	Human = 1, Orc = 2, Dwarf = 3, NightElf = 4,
-	Scourge = 5, Undead = 5, Tauren = 6, Gnome = 7,
-	Troll = 8, BloodElf = 10, Draenei = 11,
+	Human = 1, Orc = 2, Dwarf = 3, NightElf = 4, Scourge = 5,
+	Undead = 5, Tauren = 6, Gnome = 7, Troll = 8, BloodElf = 10, Draenei = 11,
 }
-
 local CLASS_ID_BY_FILE = {
-	WARRIOR = 1, PALADIN = 2, HUNTER = 3, ROGUE = 4,
-	PRIEST = 5, DEATHKNIGHT = 6, SHAMAN = 7, MAGE = 8,
-	WARLOCK = 9, DRUID = 11,
+	WARRIOR = 1, PALADIN = 2, HUNTER = 3, ROGUE = 4, PRIEST = 5,
+	DEATHKNIGHT = 6, SHAMAN = 7, MAGE = 8, WARLOCK = 9, DRUID = 11,
 }
 
 function Compat.PlayerRaceId()
-	local _, raceFile = UnitRace("player")
-	return raceFile and RACE_ID_BY_FILE[raceFile] or nil
+	local _, r = UnitRace("player")
+	return r and RACE_ID_BY_FILE[r] or nil
 end
-
 function Compat.PlayerClassMask()
-	local _, classFile = UnitClass("player")
-	local classID = classFile and CLASS_ID_BY_FILE[classFile]
-	return classID and (2 ^ (classID - 1)) or nil
+	local _, c = UnitClass("player")
+	local id = c and CLASS_ID_BY_FILE[c]
+	return id and (2 ^ (id - 1)) or nil
 end
-
-function Compat.GetPlayerFacing()
-	return GetPlayerFacing and GetPlayerFacing() or 0
-end
-
-function Compat.GetPlayerSpeed()
-	return GetUnitSpeed and GetUnitSpeed("player") or 0
-end
+function Compat.GetPlayerFacing() return GetPlayerFacing and GetPlayerFacing() or 0 end
+function Compat.GetPlayerSpeed() return GetUnitSpeed and GetUnitSpeed("player") or 0 end
 
 function Compat.GetZoneText()
 	local zone = GetZoneText and GetZoneText() or (GetRealZoneText and GetRealZoneText())
 	local sub = GetSubZoneText and GetSubZoneText() or nil
-	if zone == "" then zone = nil end
-	if sub == "" then sub = nil end
-	return zone, sub
+	return (zone ~= "") and zone or nil, (sub ~= "") and sub or nil
 end
-
 function Compat.GetBindLocation()
 	local loc = GetBindLocation and GetBindLocation() or nil
-	if loc == "" then return nil end
-	return loc
+	return (loc ~= "") and loc or nil
 end
-
-function Compat.GetMoney()
-	return GetMoney and GetMoney() or 0
-end
-
-function Compat.IsOnTaxi()
-	return UnitOnTaxi and UnitOnTaxi("player") and true or false
-end
+function Compat.GetMoney() return GetMoney and GetMoney() or 0 end
+function Compat.IsOnTaxi() return UnitOnTaxi and UnitOnTaxi("player") and true or false end
 
 function Compat.GetSpellCooldown(spellID)
 	if not GetSpellCooldown then return 0, 0 end
 	local ok, s, d = pcall(GetSpellCooldown, spellID)
-	if not ok or type(s) ~= "number" or type(d) ~= "number" then return 0, 0 end
-	return s, d
+	return (ok and type(s) == "number" and type(d) == "number") and s or 0, (ok and type(d) == "number") and d or 0
 end
 
 function Compat.GetItemCooldown(itemID)
 	if not GetItemCooldown then return 0, 0 end
 	local ok, s, d = pcall(GetItemCooldown, itemID)
-	if not ok or type(s) ~= "number" or type(d) ~= "number" then return 0, 0 end
-	return s, d
+	return (ok and type(s) == "number" and type(d) == "number") and s or 0, (ok and type(d) == "number") and d or 0
 end
 
 function Compat.InCombat()
-	if InCombatLockdown and InCombatLockdown() then return true end
-	return UnitAffectingCombat and UnitAffectingCombat("player") and true or false
+	return (InCombatLockdown and InCombatLockdown()) or (UnitAffectingCombat and UnitAffectingCombat("player")) and true or false
 end
-
 function Compat.IsInInstance()
 	if not IsInInstance then return false end
 	local inside, kind = IsInInstance()
-	if not inside then return false end
-	return true, kind
+	return inside and true or false, kind
 end
-
 function Compat.GetInstanceMapID()
 	if not (Compat.IsInInstance() and GetInstanceInfo) then return nil end
 	local id = select(8, GetInstanceInfo())
 	return type(id) == "number" and id or nil
 end
-
 function Compat.IsIndoors()
-	if not IsIndoors then return nil end
 	local ok, inside = pcall(IsIndoors)
-	if not ok then return nil end
-	return inside and true or false
+	return ok and inside and true or false
 end
-
-function Compat.IsShiftKeyDown()
-	return IsShiftKeyDown and IsShiftKeyDown() and true or false
-end
+function Compat.IsShiftKeyDown() return IsShiftKeyDown and IsShiftKeyDown() and true or false end
 
 function Compat.ParseGUID335(guid)
 	if type(guid) ~= "string" or #guid < 12 then return nil, nil end
@@ -222,32 +168,94 @@ end
 
 local completedQuests = {}
 
+local function getCharTurnedIn()
+	local s = ns.CharState and ns.CharState()
+	if s then
+		if type(s.turnedInQuests) ~= "table" then s.turnedInQuests = {} end
+		return s.turnedInQuests
+	end
+	return nil
+end
+
 local function RefreshCompletedQuestsFromServer()
 	if GetQuestsCompleted then
 		GetQuestsCompleted(completedQuests)
 	end
 end
 
+local function resolveTurninQuestID()
+	local qid = (GetQuestID and GetQuestID()) or 0
+	local title = GetTitleText and GetTitleText()
+	if (not qid or qid <= 0) and title and ns.QuestDB and ns.QuestDB.GetQuestIDByName then
+		qid = ns.QuestDB.GetQuestIDByName(title) or 0
+	end
+	if (not qid or qid <= 0) and ns.Engine then
+		local g = ns.Engine.ActiveGuide and ns.Engine.ActiveGuide()
+		local s = ns.Engine.ActiveStep and ns.Engine.ActiveStep()
+		if g and s and g.steps and g.steps[s] then
+			for _, goal in ipairs(g.steps[s].goals or {}) do
+				if goal.t == "turnin" and goal.quest then
+					qid = goal.quest
+					break
+				end
+			end
+		end
+	end
+	return (qid and qid > 0) and qid or nil
+end
+
 local questCompatFrame = CreateFrame("Frame")
 questCompatFrame:RegisterEvent("PLAYER_ENTERING_WORLD")
 questCompatFrame:RegisterEvent("QUEST_QUERY_COMPLETE")
-questCompatFrame:SetScript("OnEvent", function(_, event)
+questCompatFrame:RegisterEvent("CHAT_MSG_SYSTEM")
+local QUEST_COMPLETE_PATTERN = ERR_QUEST_COMPLETE_S and ERR_QUEST_COMPLETE_S:gsub("%%s", "(.+)") or "(.*) completada%."
+
+questCompatFrame:SetScript("OnEvent", function(_, event, msg)
 	if event == "PLAYER_ENTERING_WORLD" then
 		if QueryQuestsCompleted then QueryQuestsCompleted() end
 		RefreshCompletedQuestsFromServer()
 	elseif event == "QUEST_QUERY_COMPLETE" then
 		RefreshCompletedQuestsFromServer()
 		if ns.Fire then ns.Fire("QUEST_STATE_CHANGED") end
+	elseif event == "CHAT_MSG_SYSTEM" and msg then
+		local qTitle = msg:match(QUEST_COMPLETE_PATTERN)
+		if qTitle then
+			local qid = ns.QuestDB and ns.QuestDB.GetQuestIDByName and ns.QuestDB.GetQuestIDByName(qTitle)
+			if not qid then qid = resolveTurninQuestID() end
+			if qid then
+				Compat.MarkQuestCompleted(qid)
+				ns.Fire("QUEST_TURNED_IN", qid)
+			end
+		end
 	end
 end)
 
+if GetQuestReward then
+	hooksecurefunc("GetQuestReward", function()
+		local qid = resolveTurninQuestID()
+		if qid then
+			Compat.MarkQuestCompleted(qid)
+			ns.Fire("QUEST_TURNED_IN", qid)
+			if QueryQuestsCompleted and ns.After then
+				ns.After(1.5, QueryQuestsCompleted)
+			end
+		end
+	end)
+end
+
 function Compat.MarkQuestCompleted(questID)
-	if questID then completedQuests[questID] = true end
+	if questID and type(questID) == "number" and questID > 0 then
+		completedQuests[questID] = true
+		local saved = getCharTurnedIn()
+		if saved then saved[questID] = true end
+	end
 end
 
 function Compat.IsQuestCompleted(questID)
 	if not questID then return false end
 	if completedQuests[questID] then return true end
+	local saved = getCharTurnedIn()
+	if saved and saved[questID] then return true end
 	if Questie and Questie.db and Questie.db.char and Questie.db.char.complete and Questie.db.char.complete[questID] then
 		return true
 	end

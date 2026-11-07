@@ -11,6 +11,7 @@ do
 		faction = "Alliance",
 		next = "zygor/dailies/a-dai-the-storm-peaks-the-storm-peaks-full-zone-quest-path-includes-pre-quests-part-3",
 		author = "TuWoW & Zygor",
+		minLevel = 79,
 		zone = 120,
 		version = 1,
 		steps = {

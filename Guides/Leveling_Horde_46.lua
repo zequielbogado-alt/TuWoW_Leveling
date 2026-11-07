@@ -10,7 +10,7 @@ do
 		faction = "Horde",
 		next = "zygor/leveling/h-northrend-72-74-part-4",
 		author = "TuWoW & Zygor",
-		minLevel = 72,
+		minLevel = 73,
 		maxLevel = 74,
 		zone = 117,
 		version = 1,

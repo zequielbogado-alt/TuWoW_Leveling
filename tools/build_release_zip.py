@@ -77,3 +77,4 @@ with zipfile.ZipFile(ZIP_PATH, "w", zipfile.ZIP_DEFLATED) as zf:
 print(f"\nEmpaquetados exitosamente {count + len(INCLUDE_FILES) + 1} archivos.")
 size_mb = os.path.getsize(ZIP_PATH) / (1024 * 1024)
 print(f"Tamaño final de {ZIP_NAME}: {size_mb:.2f} MB")
+

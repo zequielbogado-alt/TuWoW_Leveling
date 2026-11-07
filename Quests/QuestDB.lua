@@ -319,6 +319,24 @@ function Q.GetQuestTitle(id)
 	return r and named("Quest", id, r[QUEST_TITLE]) or nil
 end
 
+local titleToQuestID = nil
+function Q.GetQuestIDByName(name)
+	if not name or type(name) ~= "string" or name == "" then return nil end
+	local clean = name:lower():gsub("^%s+", ""):gsub("%s+$", "")
+	if not titleToQuestID then
+		titleToQuestID = {}
+		if data and data.quests then
+			for id, r in pairs(data.quests) do
+				local raw = r[QUEST_TITLE]
+				if raw then titleToQuestID[raw:lower()] = id end
+				local loc = named("Quest", id, raw)
+				if loc then titleToQuestID[loc:lower()] = id end
+			end
+		end
+	end
+	return titleToQuestID[clean]
+end
+
 local function spawnRow(list, _, map, f, x, y, r)
 	list[#list + 1] = { map = map, f = f, x = x, y = y, r = r }
 end
