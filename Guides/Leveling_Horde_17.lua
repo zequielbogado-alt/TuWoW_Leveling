@@ -75,7 +75,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Splintertree Post", f = "e" },
+					{ t = "sethome", location = "Splintertree Post", text = "Splintertree Post", f = "e" },
 				},
 			},
 			{
@@ -275,7 +275,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Sun Rock Retreat", f = "e" },
+					{ t = "sethome", location = "Sun Rock Retreat", text = "Sun Rock Retreat", f = "e" },
 				},
 			},
 			{
@@ -377,7 +377,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Freewind Post", f = "e" },
+					{ t = "sethome", location = "Freewind Post", text = "Freewind Post", f = "e" },
 				},
 			},
 			{
@@ -596,7 +596,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Sun Rock Retreat", f = "e" },
+					{ t = "sethome", location = "Sun Rock Retreat", text = "Sun Rock Retreat", f = "e" },
 				},
 			},
 			{

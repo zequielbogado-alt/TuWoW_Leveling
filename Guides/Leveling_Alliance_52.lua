@@ -217,7 +217,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "The Argent Stand", f = "e" },
+					{ t = "sethome", location = "The Argent Stand", text = "The Argent Stand", f = "e" },
 				},
 			},
 			{

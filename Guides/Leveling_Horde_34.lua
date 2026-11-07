@@ -131,7 +131,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Stonebreaker Hold", map = 1952, x = 49.2, y = 43.4, f = "e" },
+					{ t = "getfp", location = "Stonebreaker Hold", text = "Stonebreaker Hold", map = 1952, x = 49.2, y = 43.4, f = "e" },
 				},
 			},
 			{
@@ -149,7 +149,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Stonebreaker Hold", f = "e" },
+					{ t = "sethome", location = "Stonebreaker Hold", text = "Stonebreaker Hold", f = "e" },
 				},
 			},
 			{

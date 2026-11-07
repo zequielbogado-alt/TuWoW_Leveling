@@ -12,7 +12,7 @@ do
 		author = "TuWoW & Zygor",
 		minLevel = 55,
 		maxLevel = 60,
-		zone = 1413,
+		zone = 1448,
 		version = 1,
 		steps = {
 			{
@@ -23,13 +23,13 @@ do
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 3909, title = "The Videre Elixir", npc = 9298, npcName = "Donova Snowden", x = 31.3, y = 45.2, f = "e" },
-					{ t = "accept", quest = 3912, title = "Meet at the Grave", npc = 9298, npcName = "Donova Snowden", x = 31.3, y = 45.2, f = "e" },
+					{ t = "turnin", quest = 3909, title = "The Videre Elixir", npc = 9298, npcName = "Donova Snowden", map = 1448, x = 31.3, y = 45.2, f = "e" },
+					{ t = "accept", quest = 3912, title = "Meet at the Grave", npc = 9298, npcName = "Donova Snowden", map = 1448, x = 31.3, y = 45.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Everlook", x = 62.3, y = 36.6, f = "e" },
+					{ t = "getfp", location = "Everlook", text = "Everlook", map = 1448, x = 62.3, y = 36.6, f = "e" },
 				},
 			},
 			{
@@ -223,7 +223,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Everlook", f = "e" },
+					{ t = "sethome", location = "Everlook", text = "Everlook", f = "e" },
 				},
 			},
 			{
@@ -386,7 +386,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Lakeshire", f = "e" },
+					{ t = "sethome", location = "Lakeshire", text = "Lakeshire", f = "e" },
 				},
 			},
 			{
@@ -396,7 +396,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Morgan's Vigil", map = 1428, x = 84.3, y = 68.3, f = "e" },
+					{ t = "getfp", location = "Morgan's Vigil", text = "Morgan's Vigil", map = 1428, x = 84.3, y = 68.3, f = "e" },
 				},
 			},
 			{
@@ -503,7 +503,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Gadgetzan", f = "e" },
+					{ t = "sethome", location = "Gadgetzan", text = "Gadgetzan", f = "e" },
 				},
 			},
 		},

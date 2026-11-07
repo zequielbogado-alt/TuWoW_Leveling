@@ -370,7 +370,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Apothecary Camp", map = 117, x = 26.0, y = 25.1, f = "e" },
+					{ t = "getfp", location = "Apothecary Camp", text = "Apothecary Camp", map = 117, x = 26.0, y = 25.1, f = "e" },
 				},
 			},
 			{

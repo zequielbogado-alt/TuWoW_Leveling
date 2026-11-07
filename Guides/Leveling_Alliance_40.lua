@@ -173,7 +173,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Amber Ledge", map = 114, x = 45.3, y = 34.5, f = "e" },
+					{ t = "getfp", location = "Amber Ledge", text = "Amber Ledge", map = 114, x = 45.3, y = 34.5, f = "e" },
 				},
 			},
 			{

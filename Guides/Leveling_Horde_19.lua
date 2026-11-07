@@ -11,7 +11,7 @@ do
 		author = "TuWoW & Zygor",
 		minLevel = 30,
 		maxLevel = 35,
-		zone = 1454,
+		zone = 1442,
 		version = 1,
 		steps = {
 			{
@@ -32,7 +32,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Shadowprey Village", f = "e" },
+					{ t = "sethome", location = "Shadowprey Village", text = "Shadowprey Village", f = "e" },
 				},
 			},
 			{
@@ -47,7 +47,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Shadowprey Village", map = 1443, x = 21.6, y = 74.1, f = "e" },
+					{ t = "getfp", location = "Shadowprey Village", text = "Shadowprey Village", map = 1443, x = 21.6, y = 74.1, f = "e" },
 				},
 			},
 			{
@@ -249,7 +249,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Brackenwall Village", map = 1445, x = 35.6, y = 31.9, f = "e" },
+					{ t = "getfp", location = "Brackenwall Village", text = "Brackenwall Village", map = 1445, x = 35.6, y = 31.9, f = "e" },
 				},
 			},
 			{
@@ -287,7 +287,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Booty Bay", f = "e" },
+					{ t = "sethome", location = "Booty Bay", text = "Booty Bay", f = "e" },
 				},
 			},
 			{
@@ -305,7 +305,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Booty Bay", map = 1434, x = 26.9, y = 77.1, f = "e" },
+					{ t = "getfp", location = "Booty Bay", text = "Booty Bay", map = 1434, x = 26.9, y = 77.1, f = "e" },
 				},
 			},
 			{

@@ -336,12 +336,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Moa'ki Harbor", map = 115, x = 48.5, y = 74.4, f = "e" },
+					{ t = "getfp", location = "Moa'ki Harbor", text = "Moa'ki Harbor", map = 115, x = 48.5, y = 74.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "home", text = "Moa'ki Harbor", f = "e" },
+					{ t = "sethome", location = "Moa'ki Harbor", text = "Moa'ki Harbor", f = "e" },
 				},
 			},
 			{

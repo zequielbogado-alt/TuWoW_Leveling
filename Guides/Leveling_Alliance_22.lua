@@ -327,7 +327,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Theramore", f = "e" },
+					{ t = "sethome", location = "Theramore", text = "Theramore", f = "e" },
 				},
 			},
 			{

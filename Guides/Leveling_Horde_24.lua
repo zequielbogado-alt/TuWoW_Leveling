@@ -94,7 +94,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Camp Mojache", map = 1444, x = 75.4, y = 44.4, f = "e" },
+					{ t = "getfp", location = "Camp Mojache", text = "Camp Mojache", map = 1444, x = 75.4, y = 44.4, f = "e" },
 				},
 			},
 			{
@@ -114,7 +114,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Camp Mojache", f = "e" },
+					{ t = "sethome", location = "Camp Mojache", text = "Camp Mojache", f = "e" },
 				},
 			},
 			{
@@ -371,7 +371,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Valormok", map = 1447, x = 22.0, y = 49.6, f = "e" },
+					{ t = "getfp", location = "Valormok", text = "Valormok", map = 1447, x = 22.0, y = 49.6, f = "e" },
 				},
 			},
 			{
@@ -409,7 +409,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Tarren Mill", f = "e" },
+					{ t = "sethome", location = "Tarren Mill", text = "Tarren Mill", f = "e" },
 				},
 			},
 			{
@@ -487,7 +487,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Revantusk Village", map = 1425, x = 81.7, y = 81.8, f = "e" },
+					{ t = "getfp", location = "Revantusk Village", text = "Revantusk Village", map = 1425, x = 81.7, y = 81.8, f = "e" },
 				},
 			},
 			{

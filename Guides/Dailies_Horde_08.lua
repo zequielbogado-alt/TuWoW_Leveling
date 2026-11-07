@@ -552,7 +552,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Sunreaver Pavilion", map = 118, x = 76.1, y = 24.0, f = "e" },
+					{ t = "sethome", location = "Sunreaver Pavilion", text = "Sunreaver Pavilion", map = 118, x = 76.1, y = 24.0, f = "e" },
 				},
 			},
 			{

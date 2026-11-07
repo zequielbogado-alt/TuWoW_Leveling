@@ -71,12 +71,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Wyrmrest Temple", f = "e" },
+					{ t = "sethome", location = "Wyrmrest Temple", text = "Wyrmrest Temple", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Wyrmrest Temple", map = 115, x = 60.3, y = 51.6, f = "e" },
+					{ t = "getfp", location = "Wyrmrest Temple", text = "Wyrmrest Temple", map = 115, x = 60.3, y = 51.6, f = "e" },
 				},
 			},
 			{

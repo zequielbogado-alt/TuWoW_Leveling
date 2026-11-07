@@ -258,7 +258,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Sepulcher", map = 1421, x = 45.6, y = 42.6, f = "e" },
+					{ t = "getfp", location = "Sepulcher", text = "Sepulcher", map = 1421, x = 45.6, y = 42.6, f = "e" },
 				},
 			},
 			{
@@ -378,7 +378,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Orgrimmar", map = 1454, x = 45.1, y = 63.9, f = "e" },
+					{ t = "getfp", location = "Orgrimmar", text = "Orgrimmar", map = 1454, x = 45.1, y = 63.9, f = "e" },
 				},
 			},
 			{

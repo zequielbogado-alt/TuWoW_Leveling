@@ -123,21 +123,23 @@ local REQUIRED = {
 	turnin = { quest = isNum, title = isStr },
 	complete = { quest = isNum, title = isStr },
 	abandon = { quest = isNum, title = isStr },
-	destroy = { item = isNum, itemName = isStr },
+	destroy = {},
 	kill = { target = isStr },
-	collect = { item = isNum, itemName = isStr },
-	["goto"] = { map = isNum, x = isNum, y = isNum },
-	talk = { npc = isNum, npcName = isStr },
-	interact = { object = isNum, objName = isStr },
-	use = { item = isNum, itemName = isStr },
+	collect = {},
+	["goto"] = { x = isNum, y = isNum },
+	talk = {},
+	interact = {},
+	use = {},
 	sethome = {},
-	hearth = { location = isStr },
+	home = {},
+	hearth = {},
+	fpath = {},
 	die = { location = isStr, map = isNum, x = isNum, y = isNum },
-	getfp = { location = isStr },
-	fly = { location = isStr },
-	enter = { location = isStr },
+	getfp = {},
+	fly = {},
+	enter = {},
 	train = {},
-	buy = { item = isNum, itemName = isStr },
+	buy = {},
 	vendor = {},
 	level = { level = isNum },
 	money = { money = isNum },
@@ -313,16 +315,21 @@ function Own.packedGoals(steps)
 	end
 end
 
-local function checkGoal(goal)
+local function checkGoal(goal, def)
 	if type(goal) ~= "table" then return "not a table" end
 	local rules = REQUIRED[goal.t]
 	if not rules then return "unknown verb " .. tostring(goal.t) end
 	local fields = REQUIRED_ORDER[goal.t]
-	for i = 1, #fields do
-		local field = fields[i]
-		if not rules[field](goal[field]) then return goal.t .. " needs " .. field end
+	if fields then
+		for i = 1, #fields do
+			local field = fields[i]
+			if not rules[field](goal[field]) then return goal.t .. " needs " .. field end
+		end
 	end
 	if goal.x ~= nil or goal.y ~= nil then
+		if not isNum(goal.map) then
+			goal.map = (def and isNum(def.zone) and def.zone) or 1411
+		end
 		if not (isNum(goal.map) and isNum(goal.x) and isNum(goal.y)) then return "coordinates need map, x and y" end
 		if goal.x < 0 or goal.x > 100 or goal.y < 0 or goal.y > 100 then return "coordinates outside 0-100" end
 	end
@@ -462,11 +469,24 @@ local function validate(def)
 			end
 		end
 	end
+	if not isNum(def.zone) and type(def.steps) == "table" then
+		for _, s in ipairs(def.steps) do
+			if type(s.goals) == "table" then
+				for _, gl in ipairs(s.goals) do
+					if isNum(gl.map) then
+						def.zone = gl.map
+						break
+					end
+				end
+			end
+			if def.zone then break end
+		end
+	end
 	if deferred then return nil end
-	return Own.validateSteps(def.steps)
+	return Own.validateSteps(def.steps, def)
 end
 
-function Own.validateSteps(steps)
+function Own.validateSteps(steps, def)
 	local labelAt = {}
 	for s, step in ipairs(steps) do
 		if type(step) ~= "table" then return ("step %d is not a table"):format(s) end
@@ -480,7 +500,7 @@ function Own.validateSteps(steps)
 		end
 		if not checkImage(step.image) then return ("step %d: bad image"):format(s) end
 		for g, goal in ipairs(step.goals) do
-			local err = checkGoal(goal)
+			local err = checkGoal(goal, def)
 			if err then return ("step %d goal %d: %s"):format(s, g, err) end
 		end
 	end

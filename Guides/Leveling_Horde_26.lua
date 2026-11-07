@@ -190,7 +190,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Thorium Point", map = 1427, x = 34.8, y = 30.9, f = "e" },
+					{ t = "getfp", location = "Thorium Point", text = "Thorium Point", map = 1427, x = 34.8, y = 30.9, f = "e" },
 				},
 			},
 			{
@@ -380,12 +380,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Flame Crest", map = 1428, x = 65.7, y = 24.2, f = "e" },
+					{ t = "getfp", location = "Flame Crest", text = "Flame Crest", map = 1428, x = 65.7, y = 24.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "home", text = "Stonard", f = "e" },
+					{ t = "sethome", location = "Stonard", text = "Stonard", f = "e" },
 				},
 			},
 			{
@@ -464,7 +464,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Orgrimmar", f = "e" },
+					{ t = "sethome", location = "Orgrimmar", text = "Orgrimmar", f = "e" },
 				},
 			},
 			{

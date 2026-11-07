@@ -144,7 +144,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Bouldercrag's Refuge", map = 120, x = 30.6, y = 36.3, f = "e" },
+					{ t = "getfp", location = "Bouldercrag's Refuge", text = "Bouldercrag's Refuge", map = 120, x = 30.6, y = 36.3, f = "e" },
 				},
 			},
 			{
@@ -174,7 +174,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Bouldercrag's Refuge", f = "e" },
+					{ t = "sethome", location = "Bouldercrag's Refuge", text = "Bouldercrag's Refuge", f = "e" },
 				},
 			},
 			{

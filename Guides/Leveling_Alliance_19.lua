@@ -112,7 +112,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Astranaar", f = "e" },
+					{ t = "sethome", location = "Astranaar", text = "Astranaar", f = "e" },
 				},
 			},
 			{
@@ -169,7 +169,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Forest Song", map = 1453, x = 84.7, y = 43.9, f = "e" },
+					{ t = "getfp", location = "Forest Song", text = "Forest Song", map = 1453, x = 84.7, y = 43.9, f = "e" },
 				},
 			},
 			{
@@ -293,7 +293,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Talrendis Point", map = 1447, x = 11.9, y = 77.6, f = "e" },
+					{ t = "getfp", location = "Talrendis Point", text = "Talrendis Point", map = 1447, x = 11.9, y = 77.6, f = "e" },
 				},
 			},
 			{
@@ -343,7 +343,7 @@ do
 			{
 				only = { races = { "Human", "Dwarf", "Gnome", "Draenei" } },
 				goals = {
-					{ t = "fpath", text = "Rut'theran Village", map = 1438, x = 58.4, y = 94.0, f = "e" },
+					{ t = "getfp", location = "Rut'theran Village", text = "Rut'theran Village", map = 1438, x = 58.4, y = 94.0, f = "e" },
 				},
 			},
 			{
@@ -381,7 +381,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Menethil Harbor", f = "e" },
+					{ t = "sethome", location = "Menethil Harbor", text = "Menethil Harbor", f = "e" },
 				},
 			},
 			{

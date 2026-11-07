@@ -40,12 +40,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "the Crossroads", f = "e" },
+					{ t = "sethome", location = "the Crossroads", text = "the Crossroads", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Crossroads", map = 1413, x = 51.5, y = 30.3, f = "e" },
+					{ t = "getfp", location = "Crossroads", text = "Crossroads", map = 1413, x = 51.5, y = 30.3, f = "e" },
 				},
 			},
 			{
@@ -324,7 +324,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Ratchet", map = 1413, x = 63.1, y = 37.2, f = "e" },
+					{ t = "getfp", location = "Ratchet", text = "Ratchet", map = 1413, x = 63.1, y = 37.2, f = "e" },
 				},
 			},
 			{

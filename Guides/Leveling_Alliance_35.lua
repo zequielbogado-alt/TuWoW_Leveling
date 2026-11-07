@@ -180,7 +180,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Telaar", map = 1951, x = 54.2, y = 75.1, f = "e" },
+					{ t = "getfp", location = "Telaar", text = "Telaar", map = 1951, x = 54.2, y = 75.1, f = "e" },
 				},
 			},
 			{

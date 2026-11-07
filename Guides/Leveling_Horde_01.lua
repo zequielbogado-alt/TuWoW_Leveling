@@ -268,7 +268,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Brill", f = "e" },
+					{ t = "sethome", location = "Brill", text = "Brill", f = "e" },
 				},
 			},
 			{

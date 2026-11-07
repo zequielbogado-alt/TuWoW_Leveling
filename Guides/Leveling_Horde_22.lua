@@ -173,7 +173,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Kargath", map = 1418, x = 4.0, y = 44.8, f = "e" },
+					{ t = "getfp", location = "Kargath", text = "Kargath", map = 1418, x = 4.0, y = 44.8, f = "e" },
 				},
 			},
 			{
@@ -309,12 +309,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Stonard", f = "e" },
+					{ t = "sethome", location = "Stonard", text = "Stonard", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Stonard", map = 1435, x = 46.1, y = 54.8, f = "e" },
+					{ t = "getfp", location = "Stonard", text = "Stonard", map = 1435, x = 46.1, y = 54.8, f = "e" },
 				},
 			},
 			{
@@ -427,7 +427,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Booty Bay", f = "e" },
+					{ t = "sethome", location = "Booty Bay", text = "Booty Bay", f = "e" },
 				},
 			},
 			{

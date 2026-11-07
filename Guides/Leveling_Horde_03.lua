@@ -259,7 +259,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Bloodhoof Village", f = "e" },
+					{ t = "sethome", location = "Bloodhoof Village", text = "Bloodhoof Village", f = "e" },
 				},
 			},
 			{

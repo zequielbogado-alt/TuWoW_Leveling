@@ -12,24 +12,24 @@ do
 		author = "TuWoW & Zygor",
 		minLevel = 55,
 		maxLevel = 60,
-		zone = 1454,
+		zone = 1423,
 		version = 1,
 		steps = {
 			{
 				goals = {
-					{ t = "goto", x = 50.4, y = 31.9, f = "e" },
+					{ t = "goto", map = 1423, x = 50.4, y = 31.9, f = "e" },
 				},
 			},
 			{
 				note = "Follow the path northwest to 33.9,30.4",
 				goals = {
-					{ t = "turnin", quest = 12800, title = "The Lich King's Command", npc = 31082, npcName = "Scourge Commander Thalanor", x = 33.9, y = 30.4, f = "e" },
-					{ t = "accept", quest = 12801, title = "The Light of Dawn", npc = 31082, npcName = "Scourge Commander Thalanor", x = 33.9, y = 30.4, f = "e" },
+					{ t = "turnin", quest = 12800, title = "The Lich King's Command", npc = 31082, npcName = "Scourge Commander Thalanor", map = 1423, x = 33.9, y = 30.4, f = "e" },
+					{ t = "accept", quest = 12801, title = "The Light of Dawn", npc = 31082, npcName = "Scourge Commander Thalanor", map = 1423, x = 33.9, y = 30.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 29173, npcName = "Highlord Darion Mograine", x = 34.4, y = 31.1, f = "e" },
+					{ t = "talk", npc = 29173, npcName = "Highlord Darion Mograine", map = 1423, x = 34.4, y = 31.1, f = "e" },
 				},
 			},
 			{
@@ -41,32 +41,32 @@ do
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 13165, title = "Taking Back Acherus", npc = 29173, npcName = "Highlord Darion Mograine", x = 83.4, y = 49.4, f = "e" },
-					{ t = "accept", quest = 13166, title = "The Battle For The Ebon Hold", npc = 29173, npcName = "Highlord Darion Mograine", x = 83.4, y = 49.4, f = "e" },
+					{ t = "turnin", quest = 13165, title = "Taking Back Acherus", npc = 29173, npcName = "Highlord Darion Mograine", map = 1423, x = 83.4, y = 49.4, f = "e" },
+					{ t = "accept", quest = 13166, title = "The Battle For The Ebon Hold", npc = 29173, npcName = "Highlord Darion Mograine", map = 1423, x = 83.4, y = 49.4, f = "e" },
 				},
 			},
 			{
 				note = "Stand on the purple circle to teleport upstairs,0.5|noway|c",
 				goals = {
-					{ t = "goto", x = 82.7, y = 47.8, f = "e" },
+					{ t = "goto", map = 1423, x = 82.7, y = 47.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 13166, target = "Scourge", count = 10, oi = 2, x = 83.0, y = 48.0, f = "e" },
-					{ t = "kill", quest = 13166, npc = 31099, target = "Patchwerk", count = 1, oi = 1, x = 83.0, y = 48.0, f = "e" },
+					{ t = "kill", quest = 13166, target = "Scourge", count = 10, oi = 2, map = 1423, x = 83.0, y = 48.0, f = "e" },
+					{ t = "kill", quest = 13166, npc = 31099, target = "Patchwerk", count = 1, oi = 1, map = 1423, x = 83.0, y = 48.0, f = "e" },
 				},
 			},
 			{
 				note = "Stand on the purple circle to teleport downstairs,0.5|noway|c",
 				goals = {
-					{ t = "goto", x = 83.0, y = 48.4, f = "e" },
+					{ t = "goto", map = 1423, x = 83.0, y = 48.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 13166, title = "The Battle For The Ebon Hold", npc = 31084, npcName = "Highlord Darion Mograine", x = 83.4, y = 49.4, f = "e" },
-					{ t = "accept", quest = 13189, title = "Warchief's Blessing", npc = 31084, npcName = "Highlord Darion Mograine", x = 83.4, y = 49.4, f = "e" },
+					{ t = "turnin", quest = 13166, title = "The Battle For The Ebon Hold", npc = 31084, npcName = "Highlord Darion Mograine", map = 1423, x = 83.4, y = 49.4, f = "e" },
+					{ t = "accept", quest = 13189, title = "Warchief's Blessing", npc = 31084, npcName = "Highlord Darion Mograine", map = 1423, x = 83.4, y = 49.4, f = "e" },
 				},
 			},
 			{
@@ -86,7 +86,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Everlook", f = "e" },
+					{ t = "sethome", location = "Everlook", text = "Everlook", f = "e" },
 				},
 			},
 			{
@@ -168,7 +168,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Cenarion Hold", f = "e" },
+					{ t = "sethome", location = "Cenarion Hold", text = "Cenarion Hold", f = "e" },
 				},
 			},
 			{
@@ -251,12 +251,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Undercity", f = "e" },
+					{ t = "sethome", location = "Undercity", text = "Undercity", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "The Bulwark", map = 1420, x = 83.57, y = 69.95, f = "e" },
+					{ t = "getfp", location = "The Bulwark", text = "The Bulwark", map = 1420, x = 83.57, y = 69.95, f = "e" },
 				},
 			},
 			{
@@ -364,7 +364,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Thondroril River", map = 1422, x = 69.26, y = 49.66, f = "e" },
+					{ t = "getfp", location = "Thondroril River", text = "Thondroril River", map = 1422, x = 69.26, y = 49.66, f = "e" },
 				},
 			},
 			{
@@ -516,7 +516,7 @@ do
 		author = "TuWoW & Zygor",
 		minLevel = 55,
 		maxLevel = 60,
-		zone = 1454,
+		zone = 1423,
 		version = 1,
 		steps = {
 			{

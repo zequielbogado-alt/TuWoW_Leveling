@@ -394,7 +394,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Dun Niffelem", map = 120, x = 62.6, y = 60.9, f = "e" },
+					{ t = "getfp", location = "Dun Niffelem", text = "Dun Niffelem", map = 120, x = 62.6, y = 60.9, f = "e" },
 				},
 			},
 			{

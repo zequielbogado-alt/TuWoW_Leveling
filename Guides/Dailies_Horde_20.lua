@@ -40,7 +40,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Dun Niffelem", map = 120, x = 62.6, y = 60.9, f = "e" },
+					{ t = "getfp", location = "Dun Niffelem", text = "Dun Niffelem", map = 120, x = 62.6, y = 60.9, f = "e" },
 				},
 			},
 			{
@@ -234,7 +234,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Camp Tunka'lo", map = 120, x = 65.4, y = 50.6, f = "e" },
+					{ t = "getfp", location = "Camp Tunka'lo", text = "Camp Tunka'lo", map = 120, x = 65.4, y = 50.6, f = "e" },
 				},
 			},
 			{
@@ -381,7 +381,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Grom'arsh Crash-Site", map = 120, x = 36.2, y = 49.4, f = "e" },
+					{ t = "getfp", location = "Grom'arsh Crash-Site", text = "Grom'arsh Crash-Site", map = 120, x = 36.2, y = 49.4, f = "e" },
 				},
 			},
 			{
@@ -402,7 +402,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Grom'arsh Crash-Site", f = "e" },
+					{ t = "sethome", location = "Grom'arsh Crash-Site", text = "Grom'arsh Crash-Site", f = "e" },
 				},
 			},
 			{

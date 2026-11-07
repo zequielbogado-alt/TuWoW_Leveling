@@ -205,7 +205,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Brill", map = 1420, x = 61.7, y = 52.0, f = "e" },
+					{ t = "sethome", location = "Brill", text = "Brill", map = 1420, x = 61.7, y = 52.0, f = "e" },
 				},
 			},
 			{

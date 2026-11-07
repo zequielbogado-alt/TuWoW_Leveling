@@ -22,7 +22,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Camp Taurajo", f = "e" },
+					{ t = "sethome", location = "Camp Taurajo", text = "Camp Taurajo", f = "e" },
 				},
 			},
 			{
@@ -135,7 +135,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Sun Rock Retreat", f = "e" },
+					{ t = "sethome", location = "Sun Rock Retreat", text = "Sun Rock Retreat", f = "e" },
 				},
 			},
 			{
@@ -242,7 +242,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Camp Taurajo", f = "e" },
+					{ t = "sethome", location = "Camp Taurajo", text = "Camp Taurajo", f = "e" },
 				},
 			},
 			{
@@ -290,7 +290,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Freewind Post", map = 1441, x = 45.1, y = 49.1, f = "e" },
+					{ t = "getfp", location = "Freewind Post", text = "Freewind Post", map = 1441, x = 45.1, y = 49.1, f = "e" },
 				},
 			},
 			{

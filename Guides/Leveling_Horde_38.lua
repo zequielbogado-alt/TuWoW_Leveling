@@ -12,141 +12,141 @@ do
 		author = "TuWoW & Zygor",
 		minLevel = 68,
 		maxLevel = 70,
-		zone = 1953,
+		zone = 1949,
 		version = 1,
 		steps = {
 			{
 				goals = {
-					{ t = "turnin", quest = 10721, title = "A Boaring Time for Grulloc", npc = 22103, npcName = "Baron Sablemane", x = 53.3, y = 41.2, f = "e" },
-					{ t = "accept", quest = 10785, title = "It's a Trap!", npc = 22103, npcName = "Baron Sablemane", x = 53.3, y = 41.2, f = "e" },
+					{ t = "turnin", quest = 10721, title = "A Boaring Time for Grulloc", npc = 22103, npcName = "Baron Sablemane", map = 1949, x = 53.3, y = 41.2, f = "e" },
+					{ t = "accept", quest = 10785, title = "It's a Trap!", npc = 22103, npcName = "Baron Sablemane", map = 1949, x = 53.3, y = 41.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10785, title = "It's a Trap!", npc = 21984, npcName = "Rexxar", x = 51.9, y = 58.4, f = "e" },
-					{ t = "accept", quest = 10723, title = "Gorgrom the Dragon-Eater", npc = 21984, npcName = "Rexxar", x = 51.9, y = 58.4, f = "e" },
-					{ t = "accept", quest = 10786, title = "Slaughter at Boulder'mok", npc = 21147, npcName = "Tor'chunk Twoclaws", x = 51.9, y = 58.4, f = "e" },
+					{ t = "turnin", quest = 10785, title = "It's a Trap!", npc = 21984, npcName = "Rexxar", map = 1949, x = 51.9, y = 58.4, f = "e" },
+					{ t = "accept", quest = 10723, title = "Gorgrom the Dragon-Eater", npc = 21984, npcName = "Rexxar", map = 1949, x = 51.9, y = 58.4, f = "e" },
+					{ t = "accept", quest = 10786, title = "Slaughter at Boulder'mok", npc = 21147, npcName = "Tor'chunk Twoclaws", map = 1949, x = 51.9, y = 58.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10894, title = "Wyrmskull Watcher", npc = 22386, npcName = "Watcher Moonshade", x = 49.9, y = 35.9, f = "e" },
-					{ t = "accept", quest = 10893, title = "Longtail is the Lynchpin", npc = 22386, npcName = "Watcher Moonshade", x = 49.9, y = 35.9, f = "e" },
+					{ t = "turnin", quest = 10894, title = "Wyrmskull Watcher", npc = 22386, npcName = "Watcher Moonshade", map = 1949, x = 49.9, y = 35.9, f = "e" },
+					{ t = "accept", quest = 10893, title = "Longtail is the Lynchpin", npc = 22386, npcName = "Watcher Moonshade", map = 1949, x = 49.9, y = 35.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 10893, target = "Draaca Longtail", count = 1, oi = 1, x = 46.7, y = 32.9, f = "e" },
+					{ t = "kill", quest = 10893, target = "Draaca Longtail", count = 1, oi = 1, map = 1949, x = 46.7, y = 32.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10893, title = "Longtail is the Lynchpin", npc = 22386, npcName = "Watcher Moonshade", x = 49.9, y = 35.9, f = "e" },
-					{ t = "accept", quest = 10722, title = "Meeting at the Blackwing Coven", npc = 22386, npcName = "Watcher Moonshade", x = 49.9, y = 35.9, f = "e" },
+					{ t = "turnin", quest = 10893, title = "Longtail is the Lynchpin", npc = 22386, npcName = "Watcher Moonshade", map = 1949, x = 49.9, y = 35.9, f = "e" },
+					{ t = "accept", quest = 10722, title = "Meeting at the Blackwing Coven", npc = 22386, npcName = "Watcher Moonshade", map = 1949, x = 49.9, y = 35.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", target = "arakkoas", count = 1, x = 40.9, y = 20.4, f = "e" },
+					{ t = "kill", target = "arakkoas", count = 1, map = 1949, x = 40.9, y = 20.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", x = 40.7, y = 18.7, f = "e" },
+					{ t = "goto", map = 1949, x = 40.7, y = 18.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", x = 39.0, y = 17.2, f = "e" },
+					{ t = "goto", map = 1949, x = 39.0, y = 17.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", x = 42.5, y = 21.6, f = "e" },
+					{ t = "goto", map = 1949, x = 42.5, y = 21.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", itemName = "the Orb of the Grishna", count = 1, x = 40.2, y = 23.0, f = "e" },
-					{ t = "accept", quest = 10825, title = "The Truth Unorbed", x = 40.2, y = 23.0, f = "e" },
+					{ t = "collect", itemName = "the Orb of the Grishna", count = 1, map = 1949, x = 40.2, y = 23.0, f = "e" },
+					{ t = "accept", quest = 10825, title = "The Truth Unorbed", map = 1949, x = 40.2, y = 23.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 10722, item = 31121, itemName = "Costume Scraps", count = 5, x = 32.3, y = 34.9, f = "e" },
+					{ t = "collect", quest = 10722, item = 31121, itemName = "Costume Scraps", count = 5, map = 1949, x = 32.3, y = 34.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 22019, npcName = "Kolphis Darkscale", x = 32.6, y = 37.5, f = "e" },
+					{ t = "talk", npc = 22019, npcName = "Kolphis Darkscale", map = 1949, x = 32.6, y = 37.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 10786, target = "Boulder'mok Brute", count = 5, oi = 1, x = 30.3, y = 24.6, f = "e" },
-					{ t = "kill", quest = 10786, target = "Boulder'mok Shaman", count = 3, oi = 2, x = 30.3, y = 24.6, f = "e" },
-					{ t = "collect", quest = 10723, item = 31754, itemName = "Grisly Totem", count = 3, x = 30.3, y = 24.6, f = "e" },
+					{ t = "kill", quest = 10786, target = "Boulder'mok Brute", count = 5, oi = 1, map = 1949, x = 30.3, y = 24.6, f = "e" },
+					{ t = "kill", quest = 10786, target = "Boulder'mok Shaman", count = 3, oi = 2, map = 1949, x = 30.3, y = 24.6, f = "e" },
+					{ t = "collect", quest = 10723, item = 31754, itemName = "Grisly Totem", count = 3, map = 1949, x = 30.3, y = 24.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", x = 30.6, y = 22.2, f = "e" },
+					{ t = "goto", map = 1949, x = 30.6, y = 22.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10747, title = "Whelps of the Wyrmcult", npc = 21983, npcName = "Samia Inkling", x = 62.0, y = 39.5, f = "e" },
-					{ t = "turnin", quest = 10722, title = "Meeting at the Blackwing Coven", npc = 22007, npcName = "Tree Warden Chawn", x = 62.0, y = 39.5, f = "e" },
-					{ t = "accept", quest = 10748, title = "Maxnar Must Die!", npc = 22007, npcName = "Tree Warden Chawn", x = 62.0, y = 39.5, f = "e" },
-					{ t = "turnin", quest = 10825, title = "The Truth Unorbed", npc = 22007, npcName = "Tree Warden Chawn", x = 62.0, y = 39.5, f = "e" },
-					{ t = "accept", quest = 10829, title = "Treebole Must Know", npc = 22007, npcName = "Tree Warden Chawn", x = 62.0, y = 39.5, f = "e" },
+					{ t = "turnin", quest = 10747, title = "Whelps of the Wyrmcult", npc = 21983, npcName = "Samia Inkling", map = 1949, x = 62.0, y = 39.5, f = "e" },
+					{ t = "turnin", quest = 10722, title = "Meeting at the Blackwing Coven", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
+					{ t = "accept", quest = 10748, title = "Maxnar Must Die!", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
+					{ t = "turnin", quest = 10825, title = "The Truth Unorbed", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
+					{ t = "accept", quest = 10829, title = "Treebole Must Know", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10607, title = "Whispers of the Raven God", npc = 21782, npcName = "Timeon", x = 62.2, y = 39.1, f = "e" },
+					{ t = "turnin", quest = 10607, title = "Whispers of the Raven God", npc = 21782, npcName = "Timeon", map = 1949, x = 62.2, y = 39.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10723, title = "Gorgrom the Dragon-Eater", npc = 21984, npcName = "Rexxar", x = 51.9, y = 58.4, f = "e" },
-					{ t = "turnin", quest = 10786, title = "Slaughter at Boulder'mok", npc = 21147, npcName = "Tor'chunk Twoclaws", x = 51.9, y = 58.4, f = "e" },
+					{ t = "turnin", quest = 10723, title = "Gorgrom the Dragon-Eater", npc = 21984, npcName = "Rexxar", map = 1949, x = 51.9, y = 58.4, f = "e" },
+					{ t = "turnin", quest = 10786, title = "Slaughter at Boulder'mok", npc = 21147, npcName = "Tor'chunk Twoclaws", map = 1949, x = 51.9, y = 58.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10829, title = "Treebole Must Know", npc = 22215, npcName = "Treebole", x = 36.9, y = 22.5, f = "e" },
-					{ t = "accept", quest = 10830, title = "Exorcising the Trees", npc = 22215, npcName = "Treebole", x = 36.9, y = 22.5, f = "e" },
+					{ t = "turnin", quest = 10829, title = "Treebole Must Know", npc = 22215, npcName = "Treebole", map = 1949, x = 36.9, y = 22.5, f = "e" },
+					{ t = "accept", quest = 10830, title = "Exorcising the Trees", npc = 22215, npcName = "Treebole", map = 1949, x = 36.9, y = 22.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 10830, item = 31495, itemName = "Grishnath Orb", count = 5, x = 39.3, y = 20.2, f = "e" },
+					{ t = "collect", quest = 10830, item = 31495, itemName = "Grishnath Orb", count = 5, map = 1949, x = 39.3, y = 20.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 10830, item = 31517, itemName = "Dire Pinfeather", count = 5, x = 30.1, y = 28.6, f = "e" },
+					{ t = "collect", quest = 10830, item = 31517, itemName = "Dire Pinfeather", count = 5, map = 1949, x = 30.1, y = 28.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", x = 33.8, y = 29.4, f = "e" },
+					{ t = "goto", map = 1949, x = 33.8, y = 29.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10830, title = "Exorcising the Trees", npc = 22215, npcName = "Treebole", x = 36.9, y = 22.5, f = "e" },
+					{ t = "turnin", quest = 10830, title = "Exorcising the Trees", npc = 22215, npcName = "Treebole", map = 1949, x = 36.9, y = 22.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 10748, target = "Maxnar the Ashmaw", count = 1, oi = 1, x = 33.9, y = 35.4, f = "e" },
+					{ t = "kill", quest = 10748, target = "Maxnar the Ashmaw", count = 1, oi = 1, map = 1949, x = 33.9, y = 35.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10748, title = "Maxnar Must Die!", npc = 22007, npcName = "Tree Warden Chawn", x = 62.0, y = 39.5, f = "e" },
+					{ t = "turnin", quest = 10748, title = "Maxnar Must Die!", npc = 22007, npcName = "Tree Warden Chawn", map = 1949, x = 62.0, y = 39.5, f = "e" },
 				},
 			},
 			{
@@ -191,7 +191,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Area 52", f = "e" },
+					{ t = "sethome", location = "Area 52", text = "Area 52", f = "e" },
 				},
 			},
 			{
@@ -207,7 +207,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Area 52", map = 1953, x = 33.7, y = 64.0, f = "e" },
+					{ t = "getfp", location = "Area 52", text = "Area 52", map = 1953, x = 33.7, y = 64.0, f = "e" },
 				},
 			},
 			{

@@ -317,7 +317,7 @@ do
 		steps = {
 			{
 				goals = {
-					{ t = "fpath", text = "Argent Tournament Grounds", map = 118, x = 72.6, y = 22.6, f = "e" },
+					{ t = "getfp", location = "Argent Tournament Grounds", text = "Argent Tournament Grounds", map = 118, x = 72.6, y = 22.6, f = "e" },
 				},
 			},
 			{

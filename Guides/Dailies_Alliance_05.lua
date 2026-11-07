@@ -446,7 +446,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Death's Rise", map = 118, x = 19.3, y = 47.8, f = "e" },
+					{ t = "getfp", location = "Death's Rise", text = "Death's Rise", map = 118, x = 19.3, y = 47.8, f = "e" },
 				},
 			},
 			{

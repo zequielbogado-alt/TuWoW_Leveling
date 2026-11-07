@@ -359,7 +359,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Bor'gorok Outpost", map = 114, x = 49.6, y = 11.1, f = "e" },
+					{ t = "getfp", location = "Bor'gorok Outpost", text = "Bor'gorok Outpost", map = 114, x = 49.6, y = 11.1, f = "e" },
 				},
 			},
 			{
@@ -521,12 +521,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Vengeance Landing", map = 1420, x = 79.0, y = 29.7, f = "e" },
+					{ t = "getfp", location = "Vengeance Landing", text = "Vengeance Landing", map = 1420, x = 79.0, y = 29.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "home", text = "Vengeance Landing", f = "e" },
+					{ t = "sethome", location = "Vengeance Landing", text = "Vengeance Landing", f = "e" },
 				},
 			},
 			{

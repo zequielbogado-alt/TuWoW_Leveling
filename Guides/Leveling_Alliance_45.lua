@@ -227,7 +227,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Fort Wildervar", map = 117, x = 60.1, y = 16.1, f = "e" },
+					{ t = "getfp", location = "Fort Wildervar", text = "Fort Wildervar", map = 117, x = 60.1, y = 16.1, f = "e" },
 				},
 			},
 			{

@@ -56,7 +56,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Thrallmar", f = "e" },
+					{ t = "sethome", location = "Thrallmar", text = "Thrallmar", f = "e" },
 				},
 			},
 			{
@@ -219,7 +219,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Spinebreaker Post", map = 1944, x = 61.7, y = 81.2, f = "e" },
+					{ t = "getfp", location = "Spinebreaker Post", text = "Spinebreaker Post", map = 1944, x = 61.7, y = 81.2, f = "e" },
 				},
 			},
 			{
@@ -677,7 +677,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Falcon Watch", map = 1944, x = 27.8, y = 60.0, f = "e" },
+					{ t = "getfp", location = "Falcon Watch", text = "Falcon Watch", map = 1944, x = 27.8, y = 60.0, f = "e" },
 				},
 			},
 			{

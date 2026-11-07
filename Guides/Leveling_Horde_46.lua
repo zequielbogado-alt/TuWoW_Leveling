@@ -22,7 +22,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Camp Winterhoof", map = 117, x = 49.6, y = 11.6, f = "e" },
+					{ t = "getfp", location = "Camp Winterhoof", text = "Camp Winterhoof", map = 117, x = 49.6, y = 11.6, f = "e" },
 				},
 			},
 			{
@@ -351,7 +351,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Camp Winterhoof", f = "e" },
+					{ t = "sethome", location = "Camp Winterhoof", text = "Camp Winterhoof", f = "e" },
 				},
 			},
 			{
@@ -435,7 +435,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Venomspite", map = 115, x = 76.5, y = 62.2, f = "e" },
+					{ t = "getfp", location = "Venomspite", text = "Venomspite", map = 115, x = 76.5, y = 62.2, f = "e" },
 				},
 			},
 			{
@@ -462,7 +462,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Venomspite", f = "e" },
+					{ t = "sethome", location = "Venomspite", text = "Venomspite", f = "e" },
 				},
 			},
 			{

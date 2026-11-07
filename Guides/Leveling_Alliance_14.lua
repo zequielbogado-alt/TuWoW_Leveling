@@ -125,7 +125,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Thelsamar", f = "e" },
+					{ t = "sethome", location = "Thelsamar", text = "Thelsamar", f = "e" },
 				},
 			},
 			{
@@ -341,7 +341,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Lakeshire", map = 1433, x = 30.6, y = 59.4, f = "e" },
+					{ t = "getfp", location = "Lakeshire", text = "Lakeshire", map = 1433, x = 30.6, y = 59.4, f = "e" },
 				},
 			},
 			{
@@ -402,7 +402,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Lakeshire", f = "e" },
+					{ t = "sethome", location = "Lakeshire", text = "Lakeshire", f = "e" },
 				},
 			},
 			{

@@ -349,7 +349,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Kamagua", map = 117, x = 24.7, y = 57.8, f = "e" },
+					{ t = "getfp", location = "Kamagua", text = "Kamagua", map = 117, x = 24.7, y = 57.8, f = "e" },
 				},
 			},
 			{

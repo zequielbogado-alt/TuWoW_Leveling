@@ -242,7 +242,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Kharanos", f = "e" },
+					{ t = "sethome", location = "Kharanos", text = "Kharanos", f = "e" },
 				},
 			},
 			{

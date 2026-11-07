@@ -220,7 +220,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Taunka'le Village", map = 114, x = 77.8, y = 37.8, f = "e" },
+					{ t = "getfp", location = "Taunka'le Village", text = "Taunka'le Village", map = 114, x = 77.8, y = 37.8, f = "e" },
 				},
 			},
 			{
@@ -236,7 +236,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Taunka'le Village", f = "e" },
+					{ t = "sethome", location = "Taunka'le Village", text = "Taunka'le Village", f = "e" },
 				},
 			},
 			{

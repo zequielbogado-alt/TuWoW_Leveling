@@ -88,7 +88,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Mudsprocket", map = 1445, x = 42.8, y = 72.4, f = "e" },
+					{ t = "getfp", location = "Mudsprocket", text = "Mudsprocket", map = 1445, x = 42.8, y = 72.4, f = "e" },
 				},
 			},
 			{
@@ -476,7 +476,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Booty Bay", f = "e" },
+					{ t = "sethome", location = "Booty Bay", text = "Booty Bay", f = "e" },
 				},
 			},
 			{

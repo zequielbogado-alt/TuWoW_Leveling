@@ -12,7 +12,7 @@ do
 		author = "TuWoW & Zygor",
 		minLevel = 74,
 		maxLevel = 76,
-		zone = 1453,
+		zone = 115,
 		version = 1,
 		steps = {
 			{
@@ -111,12 +111,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Westfall Brigade Encampment", f = "e" },
+					{ t = "sethome", location = "Westfall Brigade Encampment", text = "Westfall Brigade Encampment", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Westfall Brigade Encampment", map = 116, x = 59.9, y = 26.7, f = "e" },
+					{ t = "getfp", location = "Westfall Brigade Encampment", text = "Westfall Brigade Encampment", map = 116, x = 59.9, y = 26.7, f = "e" },
 				},
 			},
 			{
@@ -519,7 +519,7 @@ do
 		author = "TuWoW & Zygor",
 		minLevel = 74,
 		maxLevel = 76,
-		zone = 1453,
+		zone = 115,
 		version = 1,
 		steps = {
 			{

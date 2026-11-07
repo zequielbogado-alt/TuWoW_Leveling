@@ -45,7 +45,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Gadgetzan", map = 1446, x = 51.0, y = 29.3, f = "e" },
+					{ t = "getfp", location = "Gadgetzan", text = "Gadgetzan", map = 1446, x = 51.0, y = 29.3, f = "e" },
 				},
 			},
 			{
@@ -67,7 +67,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Theramore", map = 1445, x = 67.5, y = 51.3, f = "e" },
+					{ t = "getfp", location = "Theramore", text = "Theramore", map = 1445, x = 67.5, y = 51.3, f = "e" },
 				},
 			},
 			{
@@ -89,12 +89,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Nijel's Point", map = 1443, x = 64.7, y = 10.5, f = "e" },
+					{ t = "getfp", location = "Nijel's Point", text = "Nijel's Point", map = 1443, x = 64.7, y = 10.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "home", text = "Nijel's Point", f = "e" },
+					{ t = "sethome", location = "Nijel's Point", text = "Nijel's Point", f = "e" },
 				},
 			},
 			{
@@ -243,7 +243,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Feathermoon Stronghold", map = 1444, x = 30.2, y = 43.2, f = "e" },
+					{ t = "getfp", location = "Feathermoon Stronghold", text = "Feathermoon Stronghold", map = 1444, x = 30.2, y = 43.2, f = "e" },
 				},
 			},
 			{
@@ -271,7 +271,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Booty Bay", f = "e" },
+					{ t = "sethome", location = "Booty Bay", text = "Booty Bay", f = "e" },
 				},
 			},
 			{
@@ -475,7 +475,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Southshore", f = "e" },
+					{ t = "sethome", location = "Southshore", text = "Southshore", f = "e" },
 				},
 			},
 			{

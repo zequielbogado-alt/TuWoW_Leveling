@@ -123,7 +123,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Garadar", map = 1951, x = 57.2, y = 35.2, f = "e" },
+					{ t = "getfp", location = "Garadar", text = "Garadar", map = 1951, x = 57.2, y = 35.2, f = "e" },
 				},
 			},
 			{
@@ -133,7 +133,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Garadar", f = "e" },
+					{ t = "sethome", location = "Garadar", text = "Garadar", f = "e" },
 				},
 			},
 			{

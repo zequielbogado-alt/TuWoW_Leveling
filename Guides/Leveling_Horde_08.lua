@@ -339,12 +339,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Undercity", map = 1458, x = 63.2, y = 48.6, f = "e" },
+					{ t = "getfp", location = "Undercity", text = "Undercity", map = 1458, x = 63.2, y = 48.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Sepulcher", map = 1421, x = 45.6, y = 42.6, f = "e" },
+					{ t = "getfp", location = "Sepulcher", text = "Sepulcher", map = 1421, x = 45.6, y = 42.6, f = "e" },
 				},
 			},
 			{

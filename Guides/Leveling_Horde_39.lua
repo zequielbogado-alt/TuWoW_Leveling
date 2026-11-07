@@ -11,7 +11,7 @@ do
 		author = "TuWoW & Zygor",
 		minLevel = 68,
 		maxLevel = 70,
-		zone = 1953,
+		zone = 1949,
 		version = 1,
 		steps = {
 			{

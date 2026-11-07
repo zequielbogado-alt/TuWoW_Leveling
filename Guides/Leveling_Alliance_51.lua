@@ -256,7 +256,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Zim'Torga", map = 121, x = 60.0, y = 56.7, f = "e" },
+					{ t = "getfp", location = "Zim'Torga", text = "Zim'Torga", map = 121, x = 60.0, y = 56.7, f = "e" },
 				},
 			},
 			{
@@ -266,7 +266,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Zim'Torga", f = "e" },
+					{ t = "sethome", location = "Zim'Torga", text = "Zim'Torga", f = "e" },
 				},
 			},
 			{
@@ -276,12 +276,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "The Argent Stand", map = 121, x = 41.6, y = 64.4, f = "e" },
+					{ t = "getfp", location = "The Argent Stand", text = "The Argent Stand", map = 121, x = 41.6, y = 64.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Light's Breach", map = 121, x = 32.2, y = 74.4, f = "e" },
+					{ t = "getfp", location = "Light's Breach", text = "Light's Breach", map = 121, x = 32.2, y = 74.4, f = "e" },
 				},
 			},
 			{
@@ -335,7 +335,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Ebon Watch", map = 121, x = 14.0, y = 73.6, f = "e" },
+					{ t = "getfp", location = "Ebon Watch", text = "Ebon Watch", map = 121, x = 14.0, y = 73.6, f = "e" },
 				},
 			},
 			{

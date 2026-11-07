@@ -61,7 +61,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "The Sepulcher", map = 1458, x = 43.2, y = 41.3, f = "e" },
+					{ t = "sethome", location = "The Sepulcher", text = "The Sepulcher", map = 1458, x = 43.2, y = 41.3, f = "e" },
 				},
 			},
 			{
@@ -229,7 +229,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "The Crossroads", f = "e" },
+					{ t = "sethome", location = "The Crossroads", text = "The Crossroads", f = "e" },
 				},
 			},
 			{
@@ -264,7 +264,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Camp Taurajo", map = 1413, x = 44.4, y = 59.2, f = "e" },
+					{ t = "getfp", location = "Camp Taurajo", text = "Camp Taurajo", map = 1413, x = 44.4, y = 59.2, f = "e" },
 				},
 			},
 			{
@@ -274,7 +274,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Thunder Bluff", map = 1456, x = 47.0, y = 49.9, f = "e" },
+					{ t = "getfp", location = "Thunder Bluff", text = "Thunder Bluff", map = 1456, x = 47.0, y = 49.9, f = "e" },
 				},
 			},
 			{

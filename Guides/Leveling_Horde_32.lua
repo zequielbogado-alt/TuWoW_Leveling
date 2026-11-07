@@ -61,7 +61,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Swamprat Post", map = 1946, x = 84.8, y = 55.1, f = "e" },
+					{ t = "getfp", location = "Swamprat Post", text = "Swamprat Post", map = 1946, x = 84.8, y = 55.1, f = "e" },
 				},
 			},
 			{
@@ -195,7 +195,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Zabra'jin", f = "e" },
+					{ t = "sethome", location = "Zabra'jin", text = "Zabra'jin", f = "e" },
 				},
 			},
 			{
@@ -210,7 +210,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Zabra'jin", map = 1946, x = 33.1, y = 51.1, f = "e" },
+					{ t = "getfp", location = "Zabra'jin", text = "Zabra'jin", map = 1946, x = 33.1, y = 51.1, f = "e" },
 				},
 			},
 			{

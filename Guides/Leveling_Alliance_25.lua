@@ -12,7 +12,7 @@ do
 		author = "TuWoW & Zygor",
 		minLevel = 45,
 		maxLevel = 50,
-		zone = 1444,
+		zone = 1446,
 		version = 1,
 		steps = {
 			{
@@ -23,30 +23,30 @@ do
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 1690, title = "Wastewander Justice", npc = 7407, npcName = "Chief Engineer Bilgewhizzle", x = 52.5, y = 28.5, f = "e" },
-					{ t = "accept", quest = 1691, title = "More Wastewander Justice", npc = 7407, npcName = "Chief Engineer Bilgewhizzle", x = 52.5, y = 28.5, f = "e" },
-					{ t = "turnin", quest = 2781, title = "WANTED: Caliph Scorpidsting", npc = 7407, npcName = "Chief Engineer Bilgewhizzle", x = 52.5, y = 28.5, f = "e" },
-					{ t = "turnin", quest = 1707, title = "Water Pouch Bounty", npc = 7408, npcName = "Spigot Operator Luglunket", x = 52.5, y = 28.5, f = "e" },
+					{ t = "turnin", quest = 1690, title = "Wastewander Justice", npc = 7407, npcName = "Chief Engineer Bilgewhizzle", map = 1446, x = 52.5, y = 28.5, f = "e" },
+					{ t = "accept", quest = 1691, title = "More Wastewander Justice", npc = 7407, npcName = "Chief Engineer Bilgewhizzle", map = 1446, x = 52.5, y = 28.5, f = "e" },
+					{ t = "turnin", quest = 2781, title = "WANTED: Caliph Scorpidsting", npc = 7407, npcName = "Chief Engineer Bilgewhizzle", map = 1446, x = 52.5, y = 28.5, f = "e" },
+					{ t = "turnin", quest = 1707, title = "Water Pouch Bounty", npc = 7408, npcName = "Spigot Operator Luglunket", map = 1446, x = 52.5, y = 28.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 1691, target = "Wastewander Rogue", count = 8, oi = 1, x = 64.3, y = 38.2, f = "e" },
-					{ t = "kill", quest = 1691, target = "Wastewander Assassin", count = 6, oi = 2, x = 64.3, y = 38.2, f = "e" },
-					{ t = "kill", quest = 1691, target = "Wastewander Shadow Mage", count = 10, oi = 3, x = 64.3, y = 38.2, f = "e" },
+					{ t = "kill", quest = 1691, target = "Wastewander Rogue", count = 8, oi = 1, map = 1446, x = 64.3, y = 38.2, f = "e" },
+					{ t = "kill", quest = 1691, target = "Wastewander Assassin", count = 6, oi = 2, map = 1446, x = 64.3, y = 38.2, f = "e" },
+					{ t = "kill", quest = 1691, target = "Wastewander Shadow Mage", count = 10, oi = 3, map = 1446, x = 64.3, y = 38.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 2873, title = "Stoley's Shipment", npc = 7881, npcName = "Stoley", x = 67.1, y = 23.9, f = "e" },
-					{ t = "accept", quest = 2874, title = "Deliver to MacKinley", npc = 7881, npcName = "Stoley", x = 67.1, y = 23.9, f = "e" },
-					{ t = "turnin", quest = 8366, title = "Southsea Shakedown", npc = 7882, npcName = "Security Chief Bilgewhizzle", x = 67.1, y = 23.9, f = "e" },
-					{ t = "turnin", quest = 2875, title = "WANTED: Andre Firebeard", npc = 7882, npcName = "Security Chief Bilgewhizzle", x = 67.1, y = 23.9, f = "e" },
+					{ t = "turnin", quest = 2873, title = "Stoley's Shipment", npc = 7881, npcName = "Stoley", map = 1446, x = 67.1, y = 23.9, f = "e" },
+					{ t = "accept", quest = 2874, title = "Deliver to MacKinley", npc = 7881, npcName = "Stoley", map = 1446, x = 67.1, y = 23.9, f = "e" },
+					{ t = "turnin", quest = 8366, title = "Southsea Shakedown", npc = 7882, npcName = "Security Chief Bilgewhizzle", map = 1446, x = 67.1, y = 23.9, f = "e" },
+					{ t = "turnin", quest = 2875, title = "WANTED: Andre Firebeard", npc = 7882, npcName = "Security Chief Bilgewhizzle", map = 1446, x = 67.1, y = 23.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 8365, title = "Pirate Hats Ahoy!", npc = 15165, npcName = "Haughty Modiste", x = 66.6, y = 22.3, f = "e" },
+					{ t = "turnin", quest = 8365, title = "Pirate Hats Ahoy!", npc = 15165, npcName = "Haughty Modiste", map = 1446, x = 66.6, y = 22.3, f = "e" },
 				},
 			},
 			{
@@ -57,12 +57,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 1691, title = "More Wastewander Justice", npc = 7407, npcName = "Chief Engineer Bilgewhizzle", x = 52.5, y = 28.5, f = "e" },
+					{ t = "turnin", quest = 1691, title = "More Wastewander Justice", npc = 7407, npcName = "Chief Engineer Bilgewhizzle", map = 1446, x = 52.5, y = 28.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 3022, title = "Handle With Care", npc = 7763, npcName = "Curgle Cranklehop", x = 52.4, y = 26.9, f = "e" },
+					{ t = "accept", quest = 3022, title = "Handle With Care", npc = 7763, npcName = "Curgle Cranklehop", map = 1446, x = 52.4, y = 26.9, f = "e" },
 				},
 			},
 			{
@@ -72,7 +72,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Feathermoon Stronghold", f = "e" },
+					{ t = "sethome", location = "Feathermoon Stronghold", text = "Feathermoon Stronghold", f = "e" },
 				},
 			},
 			{
@@ -346,7 +346,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Aerie Peak", map = 1425, x = 11.1, y = 46.2, f = "e" },
+					{ t = "getfp", location = "Aerie Peak", text = "Aerie Peak", map = 1425, x = 11.1, y = 46.2, f = "e" },
 				},
 			},
 			{
@@ -362,7 +362,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Aerie Peak", map = 1425, x = 13.8, y = 41.7, f = "e" },
+					{ t = "sethome", location = "Aerie Peak", text = "Aerie Peak", map = 1425, x = 13.8, y = 41.7, f = "e" },
 				},
 			},
 			{

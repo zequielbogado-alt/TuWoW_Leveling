@@ -195,7 +195,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Kor'kron Vanguard", map = 115, x = 43.8, y = 16.9, f = "e" },
+					{ t = "getfp", location = "Kor'kron Vanguard", text = "Kor'kron Vanguard", map = 115, x = 43.8, y = 16.9, f = "e" },
 				},
 			},
 			{
@@ -338,7 +338,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Dalaran", map = 127, x = 72.2, y = 45.8, f = "e" },
+					{ t = "getfp", location = "Dalaran", text = "Dalaran", map = 127, x = 72.2, y = 45.8, f = "e" },
 				},
 			},
 			{
@@ -370,12 +370,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Conquest Hold", map = 116, x = 22.0, y = 64.4, f = "e" },
+					{ t = "getfp", location = "Conquest Hold", text = "Conquest Hold", map = 116, x = 22.0, y = 64.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "home", text = "Conquest Hold", f = "e" },
+					{ t = "sethome", location = "Conquest Hold", text = "Conquest Hold", f = "e" },
 				},
 			},
 			{

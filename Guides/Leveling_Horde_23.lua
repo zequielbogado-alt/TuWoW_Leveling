@@ -323,7 +323,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Gadgetzan", f = "e" },
+					{ t = "sethome", location = "Gadgetzan", text = "Gadgetzan", f = "e" },
 				},
 			},
 			{

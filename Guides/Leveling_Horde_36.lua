@@ -137,12 +137,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Thunderlord Stronghold", f = "e" },
+					{ t = "sethome", location = "Thunderlord Stronghold", text = "Thunderlord Stronghold", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Thunderlord Stronghold", map = 1949, x = 52.1, y = 54.1, f = "e" },
+					{ t = "getfp", location = "Thunderlord Stronghold", text = "Thunderlord Stronghold", map = 1949, x = 52.1, y = 54.1, f = "e" },
 				},
 			},
 			{

@@ -209,18 +209,20 @@ function describe(goal)
 		return L["Click"], N.Object(goal.object) or goal.objName, "object", goal.quest and fmt(L["for %s"], questTitle(goal)) or nil
 	elseif t == "use" then
 		return L["Use"], N.Item(goal.item) or goal.itemName, "item", goal.quest and fmt(L["for %s"], questTitle(goal)) or nil
-	elseif t == "sethome" then
+	elseif t == "sethome" or t == "home" then
 		local _, npcName = npcOf(goal)
-		if goal.location then return L["Set your home to"], place or goal.location, "place", fmt(L["at %s"], npcName) end
+		local loc = place or goal.location or goal.text
+		if loc then return L["Set your home to"], loc, "place", fmt(L["at %s"], npcName) end
 		return L["Set your home at"], npcName or L["the nearest inn"], npcName and "npc" or "text", nil
 	elseif t == "hearth" then
-		return L["Hearth to"], place or goal.location, "place", nil
+		return L["Hearth to"], place or goal.location or goal.text or "Hearthstone", "place", nil
 	elseif t == "die" then
 		return L["Die and resurrect at"], goal.location, "place", nil
 	elseif t == "enter" then
 		return L["Go to"], place or goal.location, "place", nil
-	elseif t == "getfp" then
-		return L["Get the flight path at"], place or N.Taxi(goal.node) or goal.location, "place", fmt(L["from %s"], N.Npc(goal.npc) or goal.npcName)
+	elseif t == "getfp" or t == "fpath" then
+		local loc = place or (goal.node and N.Taxi(goal.node)) or goal.location or goal.text
+		return L["Get the flight path at"], loc, "place", fmt(L["from %s"], N.Npc(goal.npc) or goal.npcName)
 	elseif t == "fly" then
 		return L["Fly to"], place or N.Taxi(goal.node) or goal.location, "place", nil
 	elseif t == "train" then

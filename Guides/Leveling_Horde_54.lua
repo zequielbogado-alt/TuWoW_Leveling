@@ -40,7 +40,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "The Argent Stand", f = "e" },
+					{ t = "sethome", location = "The Argent Stand", text = "The Argent Stand", f = "e" },
 				},
 			},
 			{
@@ -406,7 +406,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Zim'Torga", f = "e" },
+					{ t = "sethome", location = "Zim'Torga", text = "Zim'Torga", f = "e" },
 				},
 			},
 			{

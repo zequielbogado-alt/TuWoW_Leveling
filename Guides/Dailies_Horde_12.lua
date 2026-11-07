@@ -34,7 +34,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Fairbreeze Village", map = 1944, x = 43.7, y = 71.2, f = "e" },
+					{ t = "sethome", location = "Fairbreeze Village", text = "Fairbreeze Village", map = 1944, x = 43.7, y = 71.2, f = "e" },
 				},
 			},
 			{

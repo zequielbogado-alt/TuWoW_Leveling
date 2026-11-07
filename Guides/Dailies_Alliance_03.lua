@@ -116,7 +116,7 @@ do
 		steps = {
 			{
 				goals = {
-					{ t = "fpath", text = "The Argent Vanguard", map = 118, x = 87.8, y = 78.1, f = "e" },
+					{ t = "getfp", location = "The Argent Vanguard", text = "The Argent Vanguard", map = 118, x = 87.8, y = 78.1, f = "e" },
 				},
 			},
 			{
@@ -336,7 +336,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Crusaders' Pinnacle", map = 118, x = 79.4, y = 72.4, f = "e" },
+					{ t = "getfp", location = "Crusaders' Pinnacle", text = "Crusaders' Pinnacle", map = 118, x = 79.4, y = 72.4, f = "e" },
 				},
 			},
 			{

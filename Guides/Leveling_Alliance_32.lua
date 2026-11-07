@@ -12,106 +12,106 @@ do
 		author = "TuWoW & Zygor",
 		minLevel = 62,
 		maxLevel = 64,
-		zone = 1946,
+		zone = 1944,
 		version = 1,
 		steps = {
 			{
 				goals = {
-					{ t = "turnin", quest = 10057, title = "Looking to the Leadership", npc = 16827, npcName = "Honor Guard Wesilow", x = 50.9, y = 60.2, f = "e" },
+					{ t = "turnin", quest = 10057, title = "Looking to the Leadership", npc = 16827, npcName = "Honor Guard Wesilow", map = 1944, x = 50.9, y = 60.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", target = "Bleeding Hollow Orcs", count = 1, x = 64.2, y = 71.8, f = "e" },
-					{ t = "collect", quest = 10484, itemName = "Cursed Talisman", count = 12, oi = 1, x = 64.2, y = 71.8, f = "e" },
+					{ t = "kill", target = "Bleeding Hollow Orcs", count = 1, map = 1944, x = 64.2, y = 71.8, f = "e" },
+					{ t = "collect", quest = 10484, itemName = "Cursed Talisman", count = 12, oi = 1, map = 1944, x = 64.2, y = 71.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10484, title = "Cursed Talismans", npc = 21133, npcName = "Corporal Ironridge", x = 71.0, y = 63.4, f = "e" },
-					{ t = "accept", quest = 10485, title = "Warlord of the Bleeding Hollow", npc = 21133, npcName = "Corporal Ironridge", x = 71.0, y = 63.4, f = "e" },
+					{ t = "turnin", quest = 10484, title = "Cursed Talismans", npc = 21133, npcName = "Corporal Ironridge", map = 1944, x = 71.0, y = 63.4, f = "e" },
+					{ t = "accept", quest = 10485, title = "Warlord of the Bleeding Hollow", npc = 21133, npcName = "Corporal Ironridge", map = 1944, x = 71.0, y = 63.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 10895, title = "Zeth'Gor Must Burn!", npc = 19409, npcName = "Wing Commander Dabir'ee", x = 71.3, y = 62.8, f = "e" },
+					{ t = "accept", quest = 10895, title = "Zeth'Gor Must Burn!", npc = 19409, npcName = "Wing Commander Dabir'ee", map = 1944, x = 71.3, y = 62.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", x = 70.1, y = 69.1, f = "e" },
+					{ t = "goto", map = 1944, x = 70.1, y = 69.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", x = 70.9, y = 71.3, f = "e" },
+					{ t = "goto", map = 1944, x = 70.9, y = 71.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 10485, itemName = "Morkh's Shattered Armor", count = 1, oi = 1, x = 70.1, y = 76.9, f = "e" },
+					{ t = "collect", quest = 10485, itemName = "Morkh's Shattered Armor", count = 1, oi = 1, map = 1944, x = 70.1, y = 76.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", x = 66.4, y = 76.6, f = "e" },
+					{ t = "goto", map = 1944, x = 66.4, y = 76.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", x = 67.9, y = 67.0, f = "e" },
+					{ t = "goto", map = 1944, x = 67.9, y = 67.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10485, title = "Warlord of the Bleeding Hollow", npc = 21133, npcName = "Corporal Ironridge", x = 71.0, y = 63.4, f = "e" },
-					{ t = "accept", quest = 10903, title = "Return to Honor Hold", npc = 21133, npcName = "Corporal Ironridge", x = 71.0, y = 63.4, f = "e" },
+					{ t = "turnin", quest = 10485, title = "Warlord of the Bleeding Hollow", npc = 21133, npcName = "Corporal Ironridge", map = 1944, x = 71.0, y = 63.4, f = "e" },
+					{ t = "accept", quest = 10903, title = "Return to Honor Hold", npc = 21133, npcName = "Corporal Ironridge", map = 1944, x = 71.0, y = 63.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10895, title = "Zeth'Gor Must Burn!", npc = 19409, npcName = "Wing Commander Dabir'ee", x = 71.3, y = 62.8, f = "e" },
+					{ t = "turnin", quest = 10895, title = "Zeth'Gor Must Burn!", npc = 19409, npcName = "Wing Commander Dabir'ee", map = 1944, x = 71.3, y = 62.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10903, title = "Return to Honor Hold", npc = 22430, npcName = "Assistant Klatu", x = 54.3, y = 63.6, f = "e" },
-					{ t = "accept", quest = 10909, title = "Fel Spirits", npc = 22430, npcName = "Assistant Klatu", x = 54.3, y = 63.6, f = "e" },
-					{ t = "accept", quest = 10916, title = "Digging for Prayer Beads", npc = 22430, npcName = "Assistant Klatu", x = 54.3, y = 63.6, f = "e" },
+					{ t = "turnin", quest = 10903, title = "Return to Honor Hold", npc = 22430, npcName = "Assistant Klatu", map = 1944, x = 54.3, y = 63.6, f = "e" },
+					{ t = "accept", quest = 10909, title = "Fel Spirits", npc = 22430, npcName = "Assistant Klatu", map = 1944, x = 54.3, y = 63.6, f = "e" },
+					{ t = "accept", quest = 10916, title = "Digging for Prayer Beads", npc = 22430, npcName = "Assistant Klatu", map = 1944, x = 54.3, y = 63.6, f = "e" },
 				},
 			},
 			{
 				note = "Go outside and behind the inn to 54.2,63.3",
 				goals = {
-					{ t = "collect", quest = 10916, itemName = "Draenei Prayer Beads", count = 1, oi = 1, x = 54.2, y = 63.3, f = "e" },
+					{ t = "collect", quest = 10916, itemName = "Draenei Prayer Beads", count = 1, oi = 1, map = 1944, x = 54.2, y = 63.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", x = 45.0, y = 75.0, f = "e" },
+					{ t = "goto", map = 1944, x = 45.0, y = 75.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10909, title = "Fel Spirits", npc = 22430, npcName = "Assistant Klatu", x = 54.3, y = 63.6, f = "e" },
-					{ t = "turnin", quest = 10916, title = "Digging for Prayer Beads", npc = 22430, npcName = "Assistant Klatu", x = 54.3, y = 63.6, f = "e" },
-					{ t = "accept", quest = 10935, title = "The Exorcism of Colonel Jules", npc = 22430, npcName = "Assistant Klatu", x = 54.3, y = 63.6, f = "e" },
+					{ t = "turnin", quest = 10909, title = "Fel Spirits", npc = 22430, npcName = "Assistant Klatu", map = 1944, x = 54.3, y = 63.6, f = "e" },
+					{ t = "turnin", quest = 10916, title = "Digging for Prayer Beads", npc = 22430, npcName = "Assistant Klatu", map = 1944, x = 54.3, y = 63.6, f = "e" },
+					{ t = "accept", quest = 10935, title = "The Exorcism of Colonel Jules", npc = 22430, npcName = "Assistant Klatu", map = 1944, x = 54.3, y = 63.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 22431, npcName = "Anchorite Barada", x = 54.0, y = 63.5, f = "e" },
+					{ t = "talk", npc = 22431, npcName = "Anchorite Barada", map = 1944, x = 54.0, y = 63.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10935, title = "The Exorcism of Colonel Jules", npc = 22430, npcName = "Assistant Klatu", x = 54.3, y = 63.6, f = "e" },
-					{ t = "accept", quest = 10936, title = "Trollbane is Looking for You", npc = 22430, npcName = "Assistant Klatu", x = 54.3, y = 63.6, f = "e" },
+					{ t = "turnin", quest = 10935, title = "The Exorcism of Colonel Jules", npc = 22430, npcName = "Assistant Klatu", map = 1944, x = 54.3, y = 63.6, f = "e" },
+					{ t = "accept", quest = 10936, title = "Trollbane is Looking for You", npc = 22430, npcName = "Assistant Klatu", map = 1944, x = 54.3, y = 63.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10936, title = "Trollbane is Looking for You", npc = 16819, npcName = "Force Commander Danath Trollbane", x = 56.6, y = 66.7, f = "e" },
+					{ t = "turnin", quest = 10936, title = "Trollbane is Looking for You", npc = 16819, npcName = "Force Commander Danath Trollbane", map = 1944, x = 56.6, y = 66.7, f = "e" },
 				},
 			},
 			{
@@ -122,19 +122,19 @@ do
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 9912, title = "The Cenarion Expedition", npc = 16885, npcName = "Amythiel Mistwalker", x = 15.7, y = 52.0, f = "e" },
-					{ t = "accept", quest = 10159, title = "Keep Thornfang Hill Clear!", npc = 16888, npcName = "Mahuram Stouthoof", x = 15.7, y = 52.0, f = "e" },
+					{ t = "accept", quest = 9912, title = "The Cenarion Expedition", npc = 16885, npcName = "Amythiel Mistwalker", map = 1944, x = 15.7, y = 52.0, f = "e" },
+					{ t = "accept", quest = 10159, title = "Keep Thornfang Hill Clear!", npc = 16888, npcName = "Mahuram Stouthoof", map = 1944, x = 15.7, y = 52.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 10159, target = "Thornfang Ravager", count = 8, oi = 1, x = 12.3, y = 49.9, f = "e" },
-					{ t = "kill", quest = 10159, target = "Thornfang Venomspitter", count = 8, oi = 2, x = 12.3, y = 49.9, f = "e" },
+					{ t = "kill", quest = 10159, target = "Thornfang Ravager", count = 8, oi = 1, map = 1944, x = 12.3, y = 49.9, f = "e" },
+					{ t = "kill", quest = 10159, target = "Thornfang Venomspitter", count = 8, oi = 2, map = 1944, x = 12.3, y = 49.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 10159, title = "Keep Thornfang Hill Clear!", npc = 16888, npcName = "Mahuram Stouthoof", x = 15.7, y = 52.0, f = "e" },
+					{ t = "turnin", quest = 10159, title = "Keep Thornfang Hill Clear!", npc = 16888, npcName = "Mahuram Stouthoof", map = 1944, x = 15.7, y = 52.0, f = "e" },
 				},
 			},
 			{
@@ -332,7 +332,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Telredor", map = 1946, x = 67.8, y = 51.5, f = "e" },
+					{ t = "getfp", location = "Telredor", text = "Telredor", map = 1946, x = 67.8, y = 51.5, f = "e" },
 				},
 			},
 			{
@@ -512,7 +512,7 @@ do
 		author = "TuWoW & Zygor",
 		minLevel = 62,
 		maxLevel = 64,
-		zone = 1946,
+		zone = 1944,
 		version = 1,
 		steps = {
 			{
@@ -566,7 +566,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Orebor Harborage", map = 1946, x = 41.3, y = 29.0, f = "e" },
+					{ t = "getfp", location = "Orebor Harborage", text = "Orebor Harborage", map = 1946, x = 41.3, y = 29.0, f = "e" },
 				},
 			},
 			{
@@ -629,7 +629,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Orebor Harborage", f = "e" },
+					{ t = "sethome", location = "Orebor Harborage", text = "Orebor Harborage", f = "e" },
 				},
 			},
 			{

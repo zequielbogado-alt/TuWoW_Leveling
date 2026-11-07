@@ -120,7 +120,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Zim'Torga", map = 121, x = 59.3, y = 57.3, f = "e" },
+					{ t = "sethome", location = "Zim'Torga", text = "Zim'Torga", map = 121, x = 59.3, y = 57.3, f = "e" },
 				},
 			},
 			{
@@ -481,7 +481,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Gundrak", map = 121, x = 70.5, y = 23.3, f = "e" },
+					{ t = "getfp", location = "Gundrak", text = "Gundrak", map = 121, x = 70.5, y = 23.3, f = "e" },
 				},
 			},
 		},

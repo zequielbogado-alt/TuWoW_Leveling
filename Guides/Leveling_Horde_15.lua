@@ -376,7 +376,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Sun Rock Retreat", map = 1442, x = 45.1, y = 59.8, f = "e" },
+					{ t = "getfp", location = "Sun Rock Retreat", text = "Sun Rock Retreat", map = 1442, x = 45.1, y = 59.8, f = "e" },
 				},
 			},
 			{
@@ -473,7 +473,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Splintertree Post", map = 1440, x = 73.2, y = 61.6, f = "e" },
+					{ t = "getfp", location = "Splintertree Post", text = "Splintertree Post", map = 1440, x = 73.2, y = 61.6, f = "e" },
 				},
 			},
 			{
@@ -483,7 +483,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Zoram'gar Outpost", map = 1440, x = 12.2, y = 33.8, f = "e" },
+					{ t = "getfp", location = "Zoram'gar Outpost", text = "Zoram'gar Outpost", map = 1440, x = 12.2, y = 33.8, f = "e" },
 				},
 			},
 			{

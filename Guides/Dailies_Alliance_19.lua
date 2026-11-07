@@ -48,7 +48,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Azure Watch", f = "e" },
+					{ t = "sethome", location = "Azure Watch", text = "Azure Watch", f = "e" },
 				},
 			},
 			{

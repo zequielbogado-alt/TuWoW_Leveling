@@ -68,7 +68,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Thelsamar", map = 1432, x = 33.9, y = 51.0, f = "e" },
+					{ t = "getfp", location = "Thelsamar", text = "Thelsamar", map = 1432, x = 33.9, y = 51.0, f = "e" },
 				},
 			},
 			{
@@ -80,7 +80,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Thelsamar", f = "e" },
+					{ t = "sethome", location = "Thelsamar", text = "Thelsamar", f = "e" },
 				},
 			},
 			{
@@ -178,7 +178,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Stormwind City", map = 1453, x = 71.0, y = 72.5, f = "e" },
+					{ t = "getfp", location = "Stormwind City", text = "Stormwind City", map = 1453, x = 71.0, y = 72.5, f = "e" },
 				},
 			},
 			{
@@ -194,12 +194,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Auberdine", f = "e" },
+					{ t = "sethome", location = "Auberdine", text = "Auberdine", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Auberdine", map = 1439, x = 36.3, y = 45.6, f = "e" },
+					{ t = "getfp", location = "Auberdine", text = "Auberdine", map = 1439, x = 36.3, y = 45.6, f = "e" },
 				},
 			},
 			{

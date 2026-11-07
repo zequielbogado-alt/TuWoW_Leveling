@@ -148,7 +148,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Goldshire", f = "e" },
+					{ t = "sethome", location = "Goldshire", text = "Goldshire", f = "e" },
 				},
 			},
 			{
@@ -469,7 +469,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Ironforge", map = 1455, x = 55.5, y = 47.7, f = "e" },
+					{ t = "getfp", location = "Ironforge", text = "Ironforge", map = 1455, x = 55.5, y = 47.7, f = "e" },
 				},
 			},
 			{

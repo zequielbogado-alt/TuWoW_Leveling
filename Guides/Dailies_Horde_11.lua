@@ -339,7 +339,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Falconwing Square", map = 1944, x = 48.1, y = 47.7, f = "e" },
+					{ t = "sethome", location = "Falconwing Square", text = "Falconwing Square", map = 1944, x = 48.1, y = 47.7, f = "e" },
 				},
 			},
 			{

@@ -12,7 +12,7 @@ do
 		author = "TuWoW & Zygor",
 		minLevel = 30,
 		maxLevel = 35,
-		zone = 1454,
+		zone = 1442,
 		version = 1,
 		steps = {
 			{
@@ -67,7 +67,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Orgrimmar", f = "e" },
+					{ t = "sethome", location = "Orgrimmar", text = "Orgrimmar", f = "e" },
 				},
 			},
 			{
@@ -82,7 +82,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Tarren Mill", map = 1424, x = 60.1, y = 18.6, f = "e" },
+					{ t = "getfp", location = "Tarren Mill", text = "Tarren Mill", map = 1424, x = 60.1, y = 18.6, f = "e" },
 				},
 			},
 			{
@@ -134,7 +134,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Hammerfall", map = 1417, x = 73.0, y = 32.7, f = "e" },
+					{ t = "getfp", location = "Hammerfall", text = "Hammerfall", map = 1417, x = 73.0, y = 32.7, f = "e" },
 				},
 			},
 			{
@@ -184,7 +184,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Grom'gol Base Camp", map = 1434, x = 32.5, y = 29.4, f = "e" },
+					{ t = "getfp", location = "Grom'gol Base Camp", text = "Grom'gol Base Camp", map = 1434, x = 32.5, y = 29.4, f = "e" },
 				},
 			},
 			{
@@ -317,7 +317,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Gadgetzan", map = 1446, x = 51.6, y = 25.4, f = "e" },
+					{ t = "getfp", location = "Gadgetzan", text = "Gadgetzan", map = 1446, x = 51.6, y = 25.4, f = "e" },
 				},
 			},
 			{

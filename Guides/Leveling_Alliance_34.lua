@@ -61,12 +61,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Allerian Stronghold", f = "e" },
+					{ t = "sethome", location = "Allerian Stronghold", text = "Allerian Stronghold", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Allerian Stronghold", map = 1952, x = 59.4, y = 55.4, f = "e" },
+					{ t = "getfp", location = "Allerian Stronghold", text = "Allerian Stronghold", map = 1952, x = 59.4, y = 55.4, f = "e" },
 				},
 			},
 			{

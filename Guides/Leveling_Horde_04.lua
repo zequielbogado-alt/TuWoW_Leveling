@@ -176,7 +176,7 @@ do
 			{
 				only = { races = { "Tauren" }, classes = { "DRUID" } },
 				goals = {
-					{ t = "fpath", text = "Camp Taurajo", map = 1413, x = 44.4, y = 59.2, f = "e" },
+					{ t = "getfp", location = "Camp Taurajo", text = "Camp Taurajo", map = 1413, x = 44.4, y = 59.2, f = "e" },
 				},
 			},
 			{
@@ -326,7 +326,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Camp Taurajo", map = 1413, x = 44.4, y = 59.2, f = "e" },
+					{ t = "getfp", location = "Camp Taurajo", text = "Camp Taurajo", map = 1413, x = 44.4, y = 59.2, f = "e" },
 				},
 			},
 			{
@@ -348,17 +348,17 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Crossroads", map = 1413, x = 51.5, y = 30.3, f = "e" },
+					{ t = "getfp", location = "Crossroads", text = "Crossroads", map = 1413, x = 51.5, y = 30.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "home", text = "the Crossroads", f = "e" },
+					{ t = "sethome", location = "the Crossroads", text = "the Crossroads", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Orgrimmar", map = 1454, x = 45.1, y = 63.9, f = "e" },
+					{ t = "getfp", location = "Orgrimmar", text = "Orgrimmar", map = 1454, x = 45.1, y = 63.9, f = "e" },
 				},
 			},
 			{
@@ -369,12 +369,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Undercity", map = 1458, x = 63.2, y = 48.6, f = "e" },
+					{ t = "getfp", location = "Undercity", text = "Undercity", map = 1458, x = 63.2, y = 48.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Sepulcher", map = 1421, x = 45.6, y = 42.6, f = "e" },
+					{ t = "getfp", location = "Sepulcher", text = "Sepulcher", map = 1421, x = 45.6, y = 42.6, f = "e" },
 				},
 			},
 			{

@@ -182,7 +182,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Bouldercrag's Refuge", f = "e" },
+					{ t = "sethome", location = "Bouldercrag's Refuge", text = "Bouldercrag's Refuge", f = "e" },
 				},
 			},
 			{

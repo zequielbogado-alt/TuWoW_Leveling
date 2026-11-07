@@ -280,7 +280,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Camp Oneqwah", map = 116, x = 65.0, y = 46.9, f = "e" },
+					{ t = "getfp", location = "Camp Oneqwah", text = "Camp Oneqwah", map = 116, x = 65.0, y = 46.9, f = "e" },
 				},
 			},
 			{
@@ -301,7 +301,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Camp Oneqwah", f = "e" },
+					{ t = "sethome", location = "Camp Oneqwah", text = "Camp Oneqwah", f = "e" },
 				},
 			},
 			{

@@ -244,7 +244,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Shattrath City", f = "e" },
+					{ t = "sethome", location = "Shattrath City", text = "Shattrath City", f = "e" },
 				},
 			},
 			{

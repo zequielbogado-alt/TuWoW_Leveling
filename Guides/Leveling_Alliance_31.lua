@@ -12,7 +12,7 @@ do
 		author = "TuWoW & Zygor",
 		minLevel = 60,
 		maxLevel = 62,
-		zone = 1944,
+		zone = 1419,
 		version = 1,
 		steps = {
 			{
@@ -23,7 +23,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 10119, title = "Through the Dark Portal", npc = 16841, npcName = "Watch Commander Relthorn Netherwane", x = 58.3, y = 55.9, f = "e" },
+					{ t = "accept", quest = 10119, title = "Through the Dark Portal", npc = 16841, npcName = "Watch Commander Relthorn Netherwane", map = 1419, x = 58.3, y = 55.9, f = "e" },
 				},
 			},
 			{
@@ -46,7 +46,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Honor Hold", f = "e" },
+					{ t = "sethome", location = "Honor Hold", text = "Honor Hold", f = "e" },
 				},
 			},
 			{
@@ -157,7 +157,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Shatter Point", map = 1944, x = 78.4, y = 34.9, f = "e" },
+					{ t = "getfp", location = "Shatter Point", text = "Shatter Point", map = 1944, x = 78.4, y = 34.9, f = "e" },
 				},
 			},
 			{
@@ -395,12 +395,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Temple of Telhamat", f = "e" },
+					{ t = "sethome", location = "Temple of Telhamat", text = "Temple of Telhamat", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Temple of Telhamat", map = 1944, x = 25.2, y = 37.2, f = "e" },
+					{ t = "getfp", location = "Temple of Telhamat", text = "Temple of Telhamat", map = 1944, x = 25.2, y = 37.2, f = "e" },
 				},
 			},
 			{
@@ -522,7 +522,7 @@ do
 		author = "TuWoW & Zygor",
 		minLevel = 60,
 		maxLevel = 62,
-		zone = 1944,
+		zone = 1419,
 		version = 1,
 		steps = {
 			{

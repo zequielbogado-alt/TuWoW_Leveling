@@ -255,7 +255,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Falconwing Square", f = "e" },
+					{ t = "sethome", location = "Falconwing Square", text = "Falconwing Square", f = "e" },
 				},
 			},
 			{
@@ -415,7 +415,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Fairbreeze Village", f = "e" },
+					{ t = "sethome", location = "Fairbreeze Village", text = "Fairbreeze Village", f = "e" },
 				},
 			},
 			{

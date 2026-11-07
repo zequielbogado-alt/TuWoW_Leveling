@@ -36,7 +36,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Sentinel Hill", map = 1436, x = 56.6, y = 52.6, f = "e" },
+					{ t = "getfp", location = "Sentinel Hill", text = "Sentinel Hill", map = 1436, x = 56.6, y = 52.6, f = "e" },
 				},
 			},
 			{
@@ -46,7 +46,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Sentinel Hill", f = "e" },
+					{ t = "sethome", location = "Sentinel Hill", text = "Sentinel Hill", f = "e" },
 				},
 			},
 			{

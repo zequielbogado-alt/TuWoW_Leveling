@@ -353,7 +353,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Razor Hill", f = "e" },
+					{ t = "sethome", location = "Razor Hill", text = "Razor Hill", f = "e" },
 				},
 			},
 			{

@@ -49,7 +49,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Nesingwary Base Camp", map = 119, x = 25.3, y = 58.5, f = "e" },
+					{ t = "getfp", location = "Nesingwary Base Camp", text = "Nesingwary Base Camp", map = 119, x = 25.3, y = 58.5, f = "e" },
 				},
 			},
 			{

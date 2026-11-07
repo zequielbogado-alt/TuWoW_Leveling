@@ -57,7 +57,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "The Sepulcher", map = 1421, x = 43.2, y = 41.3, f = "e" },
+					{ t = "sethome", location = "The Sepulcher", text = "The Sepulcher", map = 1421, x = 43.2, y = 41.3, f = "e" },
 				},
 			},
 			{
@@ -448,7 +448,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Tarren Mill", map = 1424, x = 62.8, y = 19.1, f = "e" },
+					{ t = "sethome", location = "Tarren Mill", text = "Tarren Mill", map = 1424, x = 62.8, y = 19.1, f = "e" },
 				},
 			},
 			{

@@ -155,7 +155,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Stonetalon Peak", map = 1442, x = 36.4, y = 7.2, f = "e" },
+					{ t = "getfp", location = "Stonetalon Peak", text = "Stonetalon Peak", map = 1442, x = 36.4, y = 7.2, f = "e" },
 				},
 			},
 			{
@@ -232,7 +232,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Menethil Harbor", map = 1432, x = 9.5, y = 59.7, f = "e" },
+					{ t = "getfp", location = "Menethil Harbor", text = "Menethil Harbor", map = 1432, x = 9.5, y = 59.7, f = "e" },
 				},
 			},
 			{
@@ -248,7 +248,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Menethil Harbor", f = "e" },
+					{ t = "sethome", location = "Menethil Harbor", text = "Menethil Harbor", f = "e" },
 				},
 			},
 			{

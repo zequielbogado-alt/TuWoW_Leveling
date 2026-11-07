@@ -45,12 +45,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Fizzcrank Airstrip", map = 114, x = 56.6, y = 20.1, f = "e" },
+					{ t = "getfp", location = "Fizzcrank Airstrip", text = "Fizzcrank Airstrip", map = 114, x = 56.6, y = 20.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "home", text = "Fizzcrank Airstrip", f = "e" },
+					{ t = "sethome", location = "Fizzcrank Airstrip", text = "Fizzcrank Airstrip", f = "e" },
 				},
 			},
 			{

@@ -12,30 +12,30 @@ do
 		author = "TuWoW & Zygor",
 		minLevel = 55,
 		maxLevel = 60,
-		zone = 1428,
+		zone = 1423,
 		version = 1,
 		steps = {
 			{
 				goals = {
-					{ t = "turnin", quest = 12779, title = "An End To All Things...", npc = 29110, npcName = "The Lich King", x = 53.6, y = 36.9, f = "e" },
-					{ t = "accept", quest = 12800, title = "The Lich King's Command", npc = 29110, npcName = "The Lich King", x = 53.6, y = 36.9, f = "e" },
+					{ t = "turnin", quest = 12779, title = "An End To All Things...", npc = 29110, npcName = "The Lich King", map = 1423, x = 53.6, y = 36.9, f = "e" },
+					{ t = "accept", quest = 12800, title = "The Lich King's Command", npc = 29110, npcName = "The Lich King", map = 1423, x = 53.6, y = 36.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", x = 50.4, y = 31.9, f = "e" },
+					{ t = "goto", map = 1423, x = 50.4, y = 31.9, f = "e" },
 				},
 			},
 			{
 				note = "Follow the path northwest to 33.9,30.4",
 				goals = {
-					{ t = "turnin", quest = 12800, title = "The Lich King's Command", npc = 31082, npcName = "Scourge Commander Thalanor", x = 33.9, y = 30.4, f = "e" },
-					{ t = "accept", quest = 12801, title = "The Light of Dawn", npc = 31082, npcName = "Scourge Commander Thalanor", x = 33.9, y = 30.4, f = "e" },
+					{ t = "turnin", quest = 12800, title = "The Lich King's Command", npc = 31082, npcName = "Scourge Commander Thalanor", map = 1423, x = 33.9, y = 30.4, f = "e" },
+					{ t = "accept", quest = 12801, title = "The Light of Dawn", npc = 31082, npcName = "Scourge Commander Thalanor", map = 1423, x = 33.9, y = 30.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 29173, npcName = "Highlord Darion Mograine", x = 34.4, y = 31.1, f = "e" },
+					{ t = "talk", npc = 29173, npcName = "Highlord Darion Mograine", map = 1423, x = 34.4, y = 31.1, f = "e" },
 				},
 			},
 			{
@@ -47,32 +47,32 @@ do
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 13165, title = "Taking Back Acherus", npc = 29173, npcName = "Highlord Darion Mograine", x = 83.4, y = 49.4, f = "e" },
-					{ t = "accept", quest = 13166, title = "The Battle For The Ebon Hold", npc = 29173, npcName = "Highlord Darion Mograine", x = 83.4, y = 49.4, f = "e" },
+					{ t = "turnin", quest = 13165, title = "Taking Back Acherus", npc = 29173, npcName = "Highlord Darion Mograine", map = 1423, x = 83.4, y = 49.4, f = "e" },
+					{ t = "accept", quest = 13166, title = "The Battle For The Ebon Hold", npc = 29173, npcName = "Highlord Darion Mograine", map = 1423, x = 83.4, y = 49.4, f = "e" },
 				},
 			},
 			{
 				note = "Stand on the purple circle to teleport upstairs,0.5|noway|c",
 				goals = {
-					{ t = "goto", x = 82.7, y = 47.8, f = "e" },
+					{ t = "goto", map = 1423, x = 82.7, y = 47.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 13166, target = "Scourge", count = 10, oi = 2, x = 83.0, y = 48.0, f = "e" },
-					{ t = "kill", quest = 13166, npc = 31099, target = "Patchwerk", count = 1, oi = 1, x = 83.0, y = 48.0, f = "e" },
+					{ t = "kill", quest = 13166, target = "Scourge", count = 10, oi = 2, map = 1423, x = 83.0, y = 48.0, f = "e" },
+					{ t = "kill", quest = 13166, npc = 31099, target = "Patchwerk", count = 1, oi = 1, map = 1423, x = 83.0, y = 48.0, f = "e" },
 				},
 			},
 			{
 				note = "Stand on the purple circle to teleport downstairs,0.5|noway|c",
 				goals = {
-					{ t = "goto", x = 83.0, y = 48.4, f = "e" },
+					{ t = "goto", map = 1423, x = 83.0, y = 48.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 13166, title = "The Battle For The Ebon Hold", npc = 31084, npcName = "Highlord Darion Mograine", x = 83.4, y = 49.4, f = "e" },
-					{ t = "accept", quest = 13188, title = "Where Kings Walk", npc = 31084, npcName = "Highlord Darion Mograine", x = 83.4, y = 49.4, f = "e" },
+					{ t = "turnin", quest = 13166, title = "The Battle For The Ebon Hold", npc = 31084, npcName = "Highlord Darion Mograine", map = 1423, x = 83.4, y = 49.4, f = "e" },
+					{ t = "accept", quest = 13188, title = "Where Kings Walk", npc = 31084, npcName = "Highlord Darion Mograine", map = 1423, x = 83.4, y = 49.4, f = "e" },
 				},
 			},
 			{
@@ -82,7 +82,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 13188, title = "Where Kings Walk", npc = 29611, npcName = "King Varian Wrynn", x = 80.0, y = 38.4, f = "e" },
+					{ t = "turnin", quest = 13188, title = "Where Kings Walk", npc = 29611, npcName = "King Varian Wrynn", map = 1423, x = 80.0, y = 38.4, f = "e" },
 				},
 			},
 			{
@@ -151,7 +151,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Cenarion Hold", f = "e" },
+					{ t = "sethome", location = "Cenarion Hold", text = "Cenarion Hold", f = "e" },
 				},
 			},
 			{
@@ -265,7 +265,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Ironforge", f = "e" },
+					{ t = "sethome", location = "Ironforge", text = "Ironforge", f = "e" },
 				},
 			},
 			{
@@ -518,7 +518,7 @@ do
 		author = "TuWoW & Zygor",
 		minLevel = 55,
 		maxLevel = 60,
-		zone = 1428,
+		zone = 1423,
 		version = 1,
 		steps = {
 			{

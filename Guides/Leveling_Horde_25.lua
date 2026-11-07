@@ -171,7 +171,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Booty Bay", f = "e" },
+					{ t = "sethome", location = "Booty Bay", text = "Booty Bay", f = "e" },
 				},
 			},
 			{
@@ -282,7 +282,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Camp Mojache", f = "e" },
+					{ t = "sethome", location = "Camp Mojache", text = "Camp Mojache", f = "e" },
 				},
 			},
 			{
@@ -399,7 +399,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Gadgetzan", f = "e" },
+					{ t = "sethome", location = "Gadgetzan", text = "Gadgetzan", f = "e" },
 				},
 			},
 			{

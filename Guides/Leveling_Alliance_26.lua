@@ -12,7 +12,7 @@ do
 		author = "TuWoW & Zygor",
 		minLevel = 45,
 		maxLevel = 50,
-		zone = 1444,
+		zone = 1446,
 		version = 1,
 		steps = {
 			{
@@ -28,7 +28,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Feathermoon Stronghold", f = "e" },
+					{ t = "sethome", location = "Feathermoon Stronghold", text = "Feathermoon Stronghold", f = "e" },
 				},
 			},
 			{
@@ -156,7 +156,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Gadgetzan", f = "e" },
+					{ t = "sethome", location = "Gadgetzan", text = "Gadgetzan", f = "e" },
 				},
 			},
 			{
@@ -367,7 +367,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Booty Bay", f = "e" },
+					{ t = "sethome", location = "Booty Bay", text = "Booty Bay", f = "e" },
 				},
 			},
 			{
@@ -510,7 +510,7 @@ do
 		author = "TuWoW & Zygor",
 		minLevel = 45,
 		maxLevel = 50,
-		zone = 1444,
+		zone = 1446,
 		version = 1,
 		steps = {
 			{

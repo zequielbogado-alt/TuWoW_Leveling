@@ -40,7 +40,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Marshal's Refuge", map = 1446, x = 45.2, y = 5.8, f = "e" },
+					{ t = "getfp", location = "Marshal's Refuge", text = "Marshal's Refuge", map = 1446, x = 45.2, y = 5.8, f = "e" },
 				},
 			},
 			{
@@ -233,7 +233,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Cenarion Hold", map = 1451, x = 50.6, y = 34.5, f = "e" },
+					{ t = "getfp", location = "Cenarion Hold", text = "Cenarion Hold", map = 1451, x = 50.6, y = 34.5, f = "e" },
 				},
 			},
 			{
@@ -268,7 +268,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Astranaar", f = "e" },
+					{ t = "sethome", location = "Astranaar", text = "Astranaar", f = "e" },
 				},
 			},
 			{
@@ -406,7 +406,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Emerald Sanctuary", map = 1448, x = 51.5, y = 82.2, f = "e" },
+					{ t = "getfp", location = "Emerald Sanctuary", text = "Emerald Sanctuary", map = 1448, x = 51.5, y = 82.2, f = "e" },
 				},
 			},
 			{
@@ -540,7 +540,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Talonbranch Glade", map = 1448, x = 62.5, y = 24.2, f = "e" },
+					{ t = "getfp", location = "Talonbranch Glade", text = "Talonbranch Glade", map = 1448, x = 62.5, y = 24.2, f = "e" },
 				},
 			},
 			{
@@ -579,7 +579,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Moonglade", map = 1450, x = 48.1, y = 67.4, f = "e" },
+					{ t = "getfp", location = "Moonglade", text = "Moonglade", map = 1450, x = 48.1, y = 67.4, f = "e" },
 				},
 			},
 			{

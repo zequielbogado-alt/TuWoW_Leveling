@@ -58,7 +58,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Stars' Rest", map = 115, x = 29.2, y = 55.3, f = "e" },
+					{ t = "getfp", location = "Stars' Rest", text = "Stars' Rest", map = 115, x = 29.2, y = 55.3, f = "e" },
 				},
 			},
 			{
@@ -68,7 +68,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Stars' Rest", f = "e" },
+					{ t = "sethome", location = "Stars' Rest", text = "Stars' Rest", f = "e" },
 				},
 			},
 			{
@@ -271,12 +271,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Moa'ki", map = 115, x = 48.5, y = 74.4, f = "e" },
+					{ t = "getfp", location = "Moa'ki", text = "Moa'ki", map = 115, x = 48.5, y = 74.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "home", text = "Moa'ki Harbor", f = "e" },
+					{ t = "sethome", location = "Moa'ki Harbor", text = "Moa'ki Harbor", f = "e" },
 				},
 			},
 			{
@@ -430,7 +430,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Wyrmrest Temple", f = "e" },
+					{ t = "sethome", location = "Wyrmrest Temple", text = "Wyrmrest Temple", f = "e" },
 				},
 			},
 			{
@@ -441,7 +441,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Wyrmrest Temple", map = 115, x = 60.3, y = 51.6, f = "e" },
+					{ t = "getfp", location = "Wyrmrest Temple", text = "Wyrmrest Temple", map = 115, x = 60.3, y = 51.6, f = "e" },
 				},
 			},
 			{

@@ -561,7 +561,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "The Stormspire", map = 1953, x = 45.3, y = 34.9, f = "e" },
+					{ t = "getfp", location = "The Stormspire", text = "The Stormspire", map = 1953, x = 45.3, y = 34.9, f = "e" },
 				},
 			},
 			{

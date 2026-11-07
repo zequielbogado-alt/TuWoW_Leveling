@@ -391,7 +391,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Marshal's Refuge", map = 1446, x = 45.2, y = 5.8, f = "e" },
+					{ t = "getfp", location = "Marshal's Refuge", text = "Marshal's Refuge", map = 1446, x = 45.2, y = 5.8, f = "e" },
 				},
 			},
 			{

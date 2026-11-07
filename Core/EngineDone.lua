@@ -308,9 +308,10 @@ goalDone = function(s, g, goal)
 		return (C.GetItemCount(goal.item) or 0) == 0
 	elseif t == "money" then
 		return C.GetMoney() >= (goal.money or 0)
-	elseif t == "sethome" then
+	elseif t == "sethome" or t == "home" then
 		-- `sethome nearest` has no location: binding during the step latches it.
-		if not goal.location then return false end
+		local targetLoc = goal.location or goal.text
+		if not targetLoc then return false end
 		-- Bound at the goal's inn (its innkeeper, else the inn its location
 		-- names, in Nav/Travel.lua's data) by any of: the inn Travel finds for
 		-- the bind location (the innkeeper learned at bind time, else the inn
@@ -318,11 +319,11 @@ goalDone = function(s, g, goal)
 		-- location reading as that inn's or the goal's area in the client's
 		-- language; last, as its English location.
 		local nav = ns.Nav
-		local want = nav and nav.FindInn and nav.FindInn(goal.npc, goal.location)
+		local want = nav and nav.FindInn and nav.FindInn(goal.npc, targetLoc)
 		if want and nav.BoundInn and nav.BoundInn() == want then return true end
 		local loc, areaName = C.GetBindLocation(), C.GetAreaName
 		if areaName and (same(loc, areaName(want and want.area)) or same(loc, areaName(goal.area))) then return true end
-		return same(loc, goal.location)
+		return same(loc, targetLoc)
 	elseif t == "enter" then
 		-- In the zone or area: its zone or subzone text (inPlace).
 		return inPlace(goal)
@@ -346,7 +347,7 @@ goalDone = function(s, g, goal)
 			end
 		end
 		return false
-	elseif t == "getfp" then
+	elseif t == "getfp" or t == "fpath" then
 		return fpKnown(goal)
 	elseif t == "level" then
 		return Own.levelReached(goal.level, goal.frac)

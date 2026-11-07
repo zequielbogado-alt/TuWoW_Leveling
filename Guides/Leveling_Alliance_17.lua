@@ -273,7 +273,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Lakeshire", f = "e" },
+					{ t = "sethome", location = "Lakeshire", text = "Lakeshire", f = "e" },
 				},
 			},
 			{
@@ -365,7 +365,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Darkshire", map = 1431, x = 77.5, y = 44.3, f = "e" },
+					{ t = "getfp", location = "Darkshire", text = "Darkshire", map = 1431, x = 77.5, y = 44.3, f = "e" },
 				},
 			},
 			{
@@ -400,7 +400,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Darkshire", f = "e" },
+					{ t = "sethome", location = "Darkshire", text = "Darkshire", f = "e" },
 				},
 			},
 			{

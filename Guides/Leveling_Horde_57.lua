@@ -394,7 +394,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "K3", f = "e" },
+					{ t = "sethome", location = "K3", text = "K3", f = "e" },
 				},
 			},
 			{
@@ -411,7 +411,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "K3", map = 120, x = 40.8, y = 84.5, f = "e" },
+					{ t = "getfp", location = "K3", text = "K3", map = 120, x = 40.8, y = 84.5, f = "e" },
 				},
 			},
 			{

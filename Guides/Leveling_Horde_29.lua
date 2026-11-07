@@ -147,7 +147,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Cenarion Hold", f = "e" },
+					{ t = "sethome", location = "Cenarion Hold", text = "Cenarion Hold", f = "e" },
 				},
 			},
 			{
@@ -162,7 +162,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Cenarion Hold", map = 1451, x = 48.7, y = 36.7, f = "e" },
+					{ t = "getfp", location = "Cenarion Hold", text = "Cenarion Hold", map = 1451, x = 48.7, y = 36.7, f = "e" },
 				},
 			},
 			{
@@ -258,12 +258,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Undercity", f = "e" },
+					{ t = "sethome", location = "Undercity", text = "Undercity", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "The Bulwark", map = 1420, x = 83.57, y = 69.95, f = "e" },
+					{ t = "getfp", location = "The Bulwark", text = "The Bulwark", map = 1420, x = 83.57, y = 69.95, f = "e" },
 				},
 			},
 			{
@@ -415,7 +415,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Light's Hope Chapel", map = 1420, x = 74.5, y = 51.2, f = "e" },
+					{ t = "getfp", location = "Light's Hope Chapel", text = "Light's Hope Chapel", map = 1420, x = 74.5, y = 51.2, f = "e" },
 				},
 			},
 			{

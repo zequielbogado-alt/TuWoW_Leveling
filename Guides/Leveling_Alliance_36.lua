@@ -38,7 +38,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Sylvanaar|goto 35.8,63.9", f = "e" },
+					{ t = "sethome", location = "Sylvanaar|goto 35.8,63.9", text = "Sylvanaar|goto 35.8,63.9", f = "e" },
 				},
 			},
 			{
@@ -53,7 +53,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Sylvanaar", map = 1949, x = 37.8, y = 61.4, f = "e" },
+					{ t = "getfp", location = "Sylvanaar", text = "Sylvanaar", map = 1949, x = 37.8, y = 61.4, f = "e" },
 				},
 			},
 			{
@@ -149,7 +149,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Toshley's Station", map = 1949, x = 61.2, y = 70.4, f = "e" },
+					{ t = "getfp", location = "Toshley's Station", text = "Toshley's Station", map = 1949, x = 61.2, y = 70.4, f = "e" },
 				},
 			},
 			{
@@ -258,7 +258,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Toshley's Station", f = "e" },
+					{ t = "sethome", location = "Toshley's Station", text = "Toshley's Station", f = "e" },
 				},
 			},
 			{
@@ -337,7 +337,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Sylvanaar", f = "e" },
+					{ t = "sethome", location = "Sylvanaar", text = "Sylvanaar", f = "e" },
 				},
 			},
 			{
@@ -430,7 +430,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Evergrove", map = 1949, x = 61.7, y = 39.6, f = "e" },
+					{ t = "getfp", location = "Evergrove", text = "Evergrove", map = 1949, x = 61.7, y = 39.6, f = "e" },
 				},
 			},
 			{

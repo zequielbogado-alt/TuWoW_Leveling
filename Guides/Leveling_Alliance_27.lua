@@ -55,7 +55,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Ironforge", f = "e" },
+					{ t = "sethome", location = "Ironforge", text = "Ironforge", f = "e" },
 				},
 			},
 			{
@@ -89,7 +89,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Thorium Point", map = 1427, x = 37.9, y = 30.9, f = "e" },
+					{ t = "getfp", location = "Thorium Point", text = "Thorium Point", map = 1427, x = 37.9, y = 30.9, f = "e" },
 				},
 			},
 			{

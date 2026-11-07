@@ -22,7 +22,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "The Crossroads", f = "e" },
+					{ t = "sethome", location = "The Crossroads", text = "The Crossroads", f = "e" },
 				},
 			},
 			{

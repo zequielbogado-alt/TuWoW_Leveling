@@ -137,7 +137,7 @@ do
 			{
 				note = "Go to the very top of Warsong Hold to 40.4,51.4",
 				goals = {
-					{ t = "fpath", text = "Warsong Hold", map = 114, x = 40.4, y = 51.4, f = "e" },
+					{ t = "getfp", location = "Warsong Hold", text = "Warsong Hold", map = 114, x = 40.4, y = 51.4, f = "e" },
 				},
 			},
 			{

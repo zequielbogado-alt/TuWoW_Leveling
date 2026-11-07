@@ -151,7 +151,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Thelsamar", f = "e" },
+					{ t = "sethome", location = "Thelsamar", text = "Thelsamar", f = "e" },
 				},
 			},
 			{
@@ -316,7 +316,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Nethergarde Keep", map = 1419, x = 65.5, y = 24.3, f = "e" },
+					{ t = "getfp", location = "Nethergarde Keep", text = "Nethergarde Keep", map = 1419, x = 65.5, y = 24.3, f = "e" },
 				},
 			},
 			{
@@ -336,7 +336,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Booty Bay", f = "e" },
+					{ t = "sethome", location = "Booty Bay", text = "Booty Bay", f = "e" },
 				},
 			},
 			{
@@ -467,7 +467,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Gadgetzan", f = "e" },
+					{ t = "sethome", location = "Gadgetzan", text = "Gadgetzan", f = "e" },
 				},
 			},
 			{

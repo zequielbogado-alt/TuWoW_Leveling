@@ -299,7 +299,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Dolanaar", f = "e" },
+					{ t = "sethome", location = "Dolanaar", text = "Dolanaar", f = "e" },
 				},
 			},
 			{

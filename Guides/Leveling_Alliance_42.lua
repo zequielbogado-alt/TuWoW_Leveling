@@ -277,12 +277,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Valgarde", map = 117, x = 59.8, y = 63.2, f = "e" },
+					{ t = "getfp", location = "Valgarde", text = "Valgarde", map = 117, x = 59.8, y = 63.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "home", text = "Valgarde", f = "e" },
+					{ t = "sethome", location = "Valgarde", text = "Valgarde", f = "e" },
 				},
 			},
 			{

@@ -10,6 +10,7 @@ do
 		folder = "Dragonblight",
 		faction = "Alliance",
 		author = "TuWoW & Zygor",
+		zone = 115,
 		version = 1,
 		steps = {
 			{
@@ -21,13 +22,13 @@ do
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12055, title = "A Strange Device", npc = 26673, npcName = "Image of Archmage Modera", x = 29.0, y = 55.5, f = "e" },
-					{ t = "accept", quest = 12060, title = "Projections and Plans", npc = 26673, npcName = "Image of Archmage Modera", x = 29.0, y = 55.5, f = "e" },
+					{ t = "turnin", quest = 12055, title = "A Strange Device", npc = 26673, npcName = "Image of Archmage Modera", map = 115, x = 29.0, y = 55.5, f = "e" },
+					{ t = "accept", quest = 12060, title = "Projections and Plans", npc = 26673, npcName = "Image of Archmage Modera", map = 115, x = 29.0, y = 55.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", x = 24.2, y = 55.6, f = "e" },
+					{ t = "goto", map = 115, x = 24.2, y = 55.6, f = "e" },
 				},
 			},
 			{
@@ -38,65 +39,65 @@ do
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12060, title = "Projections and Plans", npc = 26673, npcName = "Image of Archmage Modera", x = 29.0, y = 55.5, f = "e" },
-					{ t = "accept", quest = 12065, title = "The Focus on the Beach", npc = 26673, npcName = "Image of Archmage Modera", x = 29.0, y = 55.5, f = "e" },
+					{ t = "turnin", quest = 12060, title = "Projections and Plans", npc = 26673, npcName = "Image of Archmage Modera", map = 115, x = 29.0, y = 55.5, f = "e" },
+					{ t = "accept", quest = 12065, title = "The Focus on the Beach", npc = 26673, npcName = "Image of Archmage Modera", map = 115, x = 29.0, y = 55.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", itemName = "Ley Line Focus Control Ring", count = 1, x = 26.4, y = 65.0, f = "e" },
-					{ t = "collect", itemName = "Captain Malin's Letter", count = 1, x = 26.4, y = 65.0, f = "e" },
-					{ t = "accept", quest = 12067, title = "A Letter for Home", x = 26.4, y = 65.0, f = "e" },
+					{ t = "collect", itemName = "Ley Line Focus Control Ring", count = 1, map = 115, x = 26.4, y = 65.0, f = "e" },
+					{ t = "collect", itemName = "Captain Malin's Letter", count = 1, map = 115, x = 26.4, y = 65.0, f = "e" },
+					{ t = "accept", quest = 12067, title = "A Letter for Home", map = 115, x = 26.4, y = 65.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12065, title = "The Focus on the Beach", npc = 26673, npcName = "Image of Archmage Modera", x = 29.0, y = 55.5, f = "e" },
-					{ t = "accept", quest = 12083, title = "Atop the Woodlands", npc = 26673, npcName = "Image of Archmage Modera", x = 29.0, y = 55.5, f = "e" },
+					{ t = "turnin", quest = 12065, title = "The Focus on the Beach", npc = 26673, npcName = "Image of Archmage Modera", map = 115, x = 29.0, y = 55.5, f = "e" },
+					{ t = "accept", quest = 12083, title = "Atop the Woodlands", npc = 26673, npcName = "Image of Archmage Modera", map = 115, x = 29.0, y = 55.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 12083, item = 36779, itemName = "Ley Line Focus Control Amulet", count = 1, x = 32.2, y = 70.6, f = "e" },
+					{ t = "collect", quest = 12083, item = 36779, itemName = "Ley Line Focus Control Amulet", count = 1, map = 115, x = 32.2, y = 70.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", x = 32.2, y = 71.2, f = "e" },
+					{ t = "goto", map = 115, x = 32.2, y = 71.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12083, title = "Atop the Woodlands", npc = 26673, npcName = "Image of Archmage Modera", x = 29.0, y = 55.5, f = "e" },
-					{ t = "accept", quest = 12098, title = "Search Indu'le Village", npc = 26673, npcName = "Image of Archmage Modera", x = 29.0, y = 55.5, f = "e" },
+					{ t = "turnin", quest = 12083, title = "Atop the Woodlands", npc = 26673, npcName = "Image of Archmage Modera", map = 115, x = 29.0, y = 55.5, f = "e" },
+					{ t = "accept", quest = 12098, title = "Search Indu'le Village", npc = 26673, npcName = "Image of Archmage Modera", map = 115, x = 29.0, y = 55.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12098, title = "Search Indu'le Village", x = 40.3, y = 66.9, f = "e" },
-					{ t = "accept", quest = 12107, title = "The End of the Line", x = 40.3, y = 66.9, f = "e" },
+					{ t = "turnin", quest = 12098, title = "Search Indu'le Village", map = 115, x = 40.3, y = 66.9, f = "e" },
+					{ t = "accept", quest = 12107, title = "The End of the Line", map = 115, x = 40.3, y = 66.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", x = 39.8, y = 66.9, f = "e" },
+					{ t = "goto", map = 115, x = 39.8, y = 66.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", x = 53.0, y = 66.4, f = "e" },
+					{ t = "goto", map = 115, x = 53.0, y = 66.4, f = "e" },
 				},
 			},
 			{
 				note = "Fly to Star's Rest|goto Dragonblight,29.2,55.4,0.5|noway|c",
 				goals = {
-					{ t = "goto", x = 48.5, y = 74.4, f = "e" },
+					{ t = "goto", map = 115, x = 48.5, y = 74.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12107, title = "The End of the Line", npc = 26673, npcName = "Image of Archmage Modera", x = 29.0, y = 55.5, f = "e" },
-					{ t = "accept", quest = 12119, title = "Gaining an Audience", npc = 26673, npcName = "Image of Archmage Modera", x = 29.0, y = 55.5, f = "e" },
+					{ t = "turnin", quest = 12107, title = "The End of the Line", npc = 26673, npcName = "Image of Archmage Modera", map = 115, x = 29.0, y = 55.5, f = "e" },
+					{ t = "accept", quest = 12119, title = "Gaining an Audience", npc = 26673, npcName = "Image of Archmage Modera", map = 115, x = 29.0, y = 55.5, f = "e" },
 				},
 			},
 			{
@@ -107,115 +108,115 @@ do
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12119, title = "Gaining an Audience", npc = 26443, npcName = "Tariolstrasz", x = 57.9, y = 54.2, f = "e" },
-					{ t = "accept", quest = 12766, title = "Speak with your Ambassador", npc = 26443, npcName = "Tariolstrasz", x = 57.9, y = 54.2, f = "e" },
+					{ t = "turnin", quest = 12119, title = "Gaining an Audience", npc = 26443, npcName = "Tariolstrasz", map = 115, x = 57.9, y = 54.2, f = "e" },
+					{ t = "accept", quest = 12766, title = "Speak with your Ambassador", npc = 26443, npcName = "Tariolstrasz", map = 115, x = 57.9, y = 54.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "home", text = "Wyrmrest Temple", f = "e" },
+					{ t = "sethome", location = "Wyrmrest Temple", text = "Wyrmrest Temple", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12766, title = "Speak with your Ambassador", npc = 27803, npcName = "Lauriel Trueblade", x = 60.0, y = 55.1, f = "e" },
-					{ t = "accept", quest = 12460, title = "Report to the Ruby Dragonshrine", npc = 27803, npcName = "Lauriel Trueblade", x = 60.0, y = 55.1, f = "e" },
+					{ t = "turnin", quest = 12766, title = "Speak with your Ambassador", npc = 27803, npcName = "Lauriel Trueblade", map = 115, x = 60.0, y = 55.1, f = "e" },
+					{ t = "accept", quest = 12460, title = "Report to the Ruby Dragonshrine", npc = 27803, npcName = "Lauriel Trueblade", map = 115, x = 60.0, y = 55.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Wyrmrest Temple", x = 60.3, y = 51.6, f = "e" },
+					{ t = "getfp", location = "Wyrmrest Temple", text = "Wyrmrest Temple", map = 115, x = 60.3, y = 51.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12460, title = "Report to the Ruby Dragonshrine", npc = 27506, npcName = "Ceristrasz", x = 52.2, y = 50.0, f = "e" },
-					{ t = "accept", quest = 12416, title = "Heated Battle", npc = 27506, npcName = "Ceristrasz", x = 52.2, y = 50.0, f = "e" },
+					{ t = "turnin", quest = 12460, title = "Report to the Ruby Dragonshrine", npc = 27506, npcName = "Ceristrasz", map = 115, x = 52.2, y = 50.0, f = "e" },
+					{ t = "accept", quest = 12416, title = "Heated Battle", npc = 27506, npcName = "Ceristrasz", map = 115, x = 52.2, y = 50.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", x = 52.7, y = 46.2, f = "e" },
+					{ t = "goto", map = 115, x = 52.7, y = 46.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12416, title = "Heated Battle", npc = 27506, npcName = "Ceristrasz", x = 52.2, y = 50.0, f = "e" },
-					{ t = "accept", quest = 12417, title = "Return to the Earth", npc = 27506, npcName = "Ceristrasz", x = 52.2, y = 50.0, f = "e" },
+					{ t = "turnin", quest = 12416, title = "Heated Battle", npc = 27506, npcName = "Ceristrasz", map = 115, x = 52.2, y = 50.0, f = "e" },
+					{ t = "accept", quest = 12417, title = "Return to the Earth", npc = 27506, npcName = "Ceristrasz", map = 115, x = 52.2, y = 50.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", item = 37727, itemName = "Ruby Acorn", count = 6, x = 46.7, y = 52.8, f = "e" },
+					{ t = "collect", item = 37727, itemName = "Ruby Acorn", count = 6, map = 115, x = 46.7, y = 52.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12417, title = "Return to the Earth", npc = 27506, npcName = "Ceristrasz", x = 52.2, y = 50.0, f = "e" },
-					{ t = "accept", quest = 12418, title = "Through Fields of Flame", npc = 27506, npcName = "Ceristrasz", x = 52.2, y = 50.0, f = "e" },
+					{ t = "turnin", quest = 12417, title = "Return to the Earth", npc = 27506, npcName = "Ceristrasz", map = 115, x = 52.2, y = 50.0, f = "e" },
+					{ t = "accept", quest = 12418, title = "Through Fields of Flame", npc = 27506, npcName = "Ceristrasz", map = 115, x = 52.2, y = 50.0, f = "e" },
 				},
 			},
 			{
 				note = "Go into the valley to 48.2,47.8",
 				goals = {
-					{ t = "kill", quest = 12418, target = "Frigid Necromancer", count = 6, oi = 1, x = 48.2, y = 47.8, f = "e" },
+					{ t = "kill", quest = 12418, target = "Frigid Necromancer", count = 6, oi = 1, map = 115, x = 48.2, y = 47.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12418, title = "Through Fields of Flame", npc = 27506, npcName = "Ceristrasz", x = 52.2, y = 50.0, f = "e" },
-					{ t = "accept", quest = 12768, title = "The Steward of Wyrmrest Temple", npc = 27506, npcName = "Ceristrasz", x = 52.2, y = 50.0, f = "e" },
+					{ t = "turnin", quest = 12418, title = "Through Fields of Flame", npc = 27506, npcName = "Ceristrasz", map = 115, x = 52.2, y = 50.0, f = "e" },
+					{ t = "accept", quest = 12768, title = "The Steward of Wyrmrest Temple", npc = 27506, npcName = "Ceristrasz", map = 115, x = 52.2, y = 50.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12768, title = "The Steward of Wyrmrest Temple", npc = 26443, npcName = "Tariolstrasz", x = 57.9, y = 54.2, f = "e" },
-					{ t = "accept", quest = 12123, title = "Informing the Queen", npc = 26443, npcName = "Tariolstrasz", x = 57.9, y = 54.2, f = "e" },
+					{ t = "turnin", quest = 12768, title = "The Steward of Wyrmrest Temple", npc = 26443, npcName = "Tariolstrasz", map = 115, x = 57.9, y = 54.2, f = "e" },
+					{ t = "accept", quest = 12123, title = "Informing the Queen", npc = 26443, npcName = "Tariolstrasz", map = 115, x = 57.9, y = 54.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 26443, npcName = "Tariolstrasz", x = 57.9, y = 54.2, f = "e" },
+					{ t = "talk", npc = 26443, npcName = "Tariolstrasz", map = 115, x = 57.9, y = 54.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12123, title = "Informing the Queen", npc = 26917, npcName = "Alexstrasza the Life-Binder", x = 59.8, y = 54.7, f = "e" },
-					{ t = "accept", quest = 12435, title = "Report to Lord Afrasastrasz", npc = 26917, npcName = "Alexstrasza the Life-Binder", x = 59.8, y = 54.7, f = "e" },
+					{ t = "turnin", quest = 12123, title = "Informing the Queen", npc = 26917, npcName = "Alexstrasza the Life-Binder", map = 115, x = 59.8, y = 54.7, f = "e" },
+					{ t = "accept", quest = 12435, title = "Report to Lord Afrasastrasz", npc = 26917, npcName = "Alexstrasza the Life-Binder", map = 115, x = 59.8, y = 54.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 26949, npcName = "Torastrasza", x = 59.5, y = 53.3, f = "e" },
+					{ t = "talk", npc = 26949, npcName = "Torastrasza", map = 115, x = 59.5, y = 53.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12435, title = "Report to Lord Afrasastrasz", npc = 27575, npcName = "Lord Afrasastrasz", x = 59.2, y = 54.3, f = "e" },
-					{ t = "accept", quest = 12372, title = "Defending Wyrmrest Temple", npc = 27575, npcName = "Lord Afrasastrasz", x = 59.2, y = 54.3, f = "e" },
+					{ t = "turnin", quest = 12435, title = "Report to Lord Afrasastrasz", npc = 27575, npcName = "Lord Afrasastrasz", map = 115, x = 59.2, y = 54.3, f = "e" },
+					{ t = "accept", quest = 12372, title = "Defending Wyrmrest Temple", npc = 27575, npcName = "Lord Afrasastrasz", map = 115, x = 59.2, y = 54.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 12372, target = "Azure Dragon", count = 3, oi = 1, x = 58.3, y = 55.2, f = "e" },
-					{ t = "kill", quest = 12372, target = "Azure Drake", count = 5, oi = 2, x = 58.3, y = 55.2, f = "e" },
+					{ t = "kill", quest = 12372, target = "Azure Dragon", count = 3, oi = 1, map = 115, x = 58.3, y = 55.2, f = "e" },
+					{ t = "kill", quest = 12372, target = "Azure Drake", count = 5, oi = 2, map = 115, x = 58.3, y = 55.2, f = "e" },
 				},
 			},
 			{
 				note = "Fly southwest to 55.1,66.4",
 				goals = {
-					{ t = "goto", x = 55.1, y = 66.4, f = "e" },
+					{ t = "goto", map = 115, x = 55.1, y = 66.4, f = "e" },
 				},
 			},
 			{
 				note = "Click the red arrow to get off the dragon on the middle level of the temple|script VehicleExit()|outvehicle|c",
 				goals = {
-					{ t = "goto", x = 58.7, y = 54.5, f = "e" },
+					{ t = "goto", map = 115, x = 58.7, y = 54.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12372, title = "Defending Wyrmrest Temple", npc = 27575, npcName = "Lord Afrasastrasz", x = 59.2, y = 54.3, f = "e" },
+					{ t = "turnin", quest = 12372, title = "Defending Wyrmrest Temple", npc = 27575, npcName = "Lord Afrasastrasz", map = 115, x = 59.2, y = 54.3, f = "e" },
 				},
 			},
 		},

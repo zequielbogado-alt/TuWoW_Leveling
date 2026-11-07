@@ -12,7 +12,7 @@ do
 		author = "TuWoW & Zygor",
 		minLevel = 74,
 		maxLevel = 76,
-		zone = 1453,
+		zone = 115,
 		version = 1,
 		steps = {
 			{
@@ -61,7 +61,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Dalaran", map = 127, x = 72.2, y = 45.8, f = "e" },
+					{ t = "getfp", location = "Dalaran", text = "Dalaran", map = 127, x = 72.2, y = 45.8, f = "e" },
 				},
 			},
 			{
@@ -88,7 +88,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Amberpine Lodge", map = 116, x = 31.3, y = 59.1, f = "e" },
+					{ t = "getfp", location = "Amberpine Lodge", text = "Amberpine Lodge", map = 116, x = 31.3, y = 59.1, f = "e" },
 				},
 			},
 			{
@@ -112,7 +112,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Amberpine Lodge", f = "e" },
+					{ t = "sethome", location = "Amberpine Lodge", text = "Amberpine Lodge", f = "e" },
 				},
 			},
 			{

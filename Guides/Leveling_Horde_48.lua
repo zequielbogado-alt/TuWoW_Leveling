@@ -44,12 +44,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Agmar's Hammer", f = "e" },
+					{ t = "sethome", location = "Agmar's Hammer", text = "Agmar's Hammer", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Agmar's Hammer", map = 115, x = 37.5, y = 45.8, f = "e" },
+					{ t = "getfp", location = "Agmar's Hammer", text = "Agmar's Hammer", map = 115, x = 37.5, y = 45.8, f = "e" },
 				},
 			},
 			{

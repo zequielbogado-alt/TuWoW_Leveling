@@ -552,7 +552,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Silver Covenant Pavilion", map = 118, x = 76.2, y = 19.7, f = "e" },
+					{ t = "sethome", location = "Silver Covenant Pavilion", text = "Silver Covenant Pavilion", map = 118, x = 76.2, y = 19.7, f = "e" },
 				},
 			},
 			{

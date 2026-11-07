@@ -212,7 +212,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Emerald Sanctuary", map = 1448, x = 51.5, y = 82.2, f = "e" },
+					{ t = "getfp", location = "Emerald Sanctuary", text = "Emerald Sanctuary", map = 1448, x = 51.5, y = 82.2, f = "e" },
 				},
 			},
 			{
@@ -265,7 +265,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Bloodvenom Post", map = 1448, x = 34.5, y = 54.0, f = "e" },
+					{ t = "getfp", location = "Bloodvenom Post", text = "Bloodvenom Post", map = 1448, x = 34.5, y = 54.0, f = "e" },
 				},
 			},
 			{
@@ -321,12 +321,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Everlook", map = 1452, x = 60.5, y = 36.3, f = "e" },
+					{ t = "getfp", location = "Everlook", text = "Everlook", map = 1452, x = 60.5, y = 36.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Moonglade", map = 1450, x = 32.1, y = 66.6, f = "e" },
+					{ t = "getfp", location = "Moonglade", text = "Moonglade", map = 1450, x = 32.1, y = 66.6, f = "e" },
 				},
 			},
 			{
@@ -456,7 +456,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Everlook", f = "e" },
+					{ t = "sethome", location = "Everlook", text = "Everlook", f = "e" },
 				},
 			},
 			{

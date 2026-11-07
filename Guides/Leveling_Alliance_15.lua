@@ -134,7 +134,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Sentinel Hill", f = "e" },
+					{ t = "sethome", location = "Sentinel Hill", text = "Sentinel Hill", f = "e" },
 				},
 			},
 			{
@@ -194,7 +194,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Auberdine", f = "e" },
+					{ t = "sethome", location = "Auberdine", text = "Auberdine", f = "e" },
 				},
 			},
 			{
@@ -320,7 +320,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Astranaar", map = 1440, x = 34.4, y = 48.0, f = "e" },
+					{ t = "getfp", location = "Astranaar", text = "Astranaar", map = 1440, x = 34.4, y = 48.0, f = "e" },
 				},
 			},
 			{
@@ -421,7 +421,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Astranaar", f = "e" },
+					{ t = "sethome", location = "Astranaar", text = "Astranaar", f = "e" },
 				},
 			},
 			{

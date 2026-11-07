@@ -266,12 +266,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "The Shadow Vault", map = 118, x = 43.7, y = 24.4, f = "e" },
+					{ t = "getfp", location = "The Shadow Vault", text = "The Shadow Vault", map = 118, x = 43.7, y = 24.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "home", text = "The Shadow Vault", map = 118, x = 44.0, y = 22.2, f = "e" },
+					{ t = "sethome", location = "The Shadow Vault", text = "The Shadow Vault", map = 118, x = 44.0, y = 22.2, f = "e" },
 				},
 			},
 			{

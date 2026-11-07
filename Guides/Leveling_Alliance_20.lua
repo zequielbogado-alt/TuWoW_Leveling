@@ -39,12 +39,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Refuge Pointe", map = 1417, x = 45.8, y = 46.1, f = "e" },
+					{ t = "getfp", location = "Refuge Pointe", text = "Refuge Pointe", map = 1417, x = 45.8, y = 46.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Southshore", map = 1424, x = 49.3, y = 52.3, f = "e" },
+					{ t = "getfp", location = "Southshore", text = "Southshore", map = 1424, x = 49.3, y = 52.3, f = "e" },
 				},
 			},
 			{
@@ -69,7 +69,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Southshore", f = "e" },
+					{ t = "sethome", location = "Southshore", text = "Southshore", f = "e" },
 				},
 			},
 			{
@@ -250,7 +250,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Rebel Camp", map = 1434, x = 38.2, y = 4.0, f = "e" },
+					{ t = "getfp", location = "Rebel Camp", text = "Rebel Camp", map = 1434, x = 38.2, y = 4.0, f = "e" },
 				},
 			},
 			{
@@ -346,7 +346,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Booty Bay", map = 1434, x = 27.5, y = 77.8, f = "e" },
+					{ t = "getfp", location = "Booty Bay", text = "Booty Bay", map = 1434, x = 27.5, y = 77.8, f = "e" },
 				},
 			},
 			{
@@ -357,7 +357,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Ratchet", map = 1413, x = 63.1, y = 37.2, f = "e" },
+					{ t = "getfp", location = "Ratchet", text = "Ratchet", map = 1413, x = 63.1, y = 37.2, f = "e" },
 				},
 			},
 			{
@@ -367,7 +367,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Thalanaar", map = 1441, x = 7.8, y = 17.9, f = "e" },
+					{ t = "getfp", location = "Thalanaar", text = "Thalanaar", map = 1441, x = 7.8, y = 17.9, f = "e" },
 				},
 			},
 			{

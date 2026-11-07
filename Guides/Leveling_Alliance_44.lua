@@ -230,12 +230,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Westguard Keep", map = 117, x = 31.3, y = 44.0, f = "e" },
+					{ t = "getfp", location = "Westguard Keep", text = "Westguard Keep", map = 117, x = 31.3, y = 44.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "home", text = "Westguard Keep", f = "e" },
+					{ t = "sethome", location = "Westguard Keep", text = "Westguard Keep", f = "e" },
 				},
 			},
 			{

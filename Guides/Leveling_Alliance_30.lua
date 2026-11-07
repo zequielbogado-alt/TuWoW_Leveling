@@ -12,7 +12,7 @@ do
 		author = "TuWoW & Zygor",
 		minLevel = 55,
 		maxLevel = 60,
-		zone = 1413,
+		zone = 1448,
 		version = 1,
 		steps = {
 			{
@@ -55,7 +55,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Cenarion Hold", f = "e" },
+					{ t = "sethome", location = "Cenarion Hold", text = "Cenarion Hold", f = "e" },
 				},
 			},
 			{
@@ -160,7 +160,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Ironforge", f = "e" },
+					{ t = "sethome", location = "Ironforge", text = "Ironforge", f = "e" },
 				},
 			},
 			{
@@ -181,7 +181,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Chillwind Camp", map = 1422, x = 42.9, y = 85.1, f = "e" },
+					{ t = "getfp", location = "Chillwind Camp", text = "Chillwind Camp", map = 1422, x = 42.9, y = 85.1, f = "e" },
 				},
 			},
 			{
@@ -454,7 +454,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Thondroril River", map = 1422, x = 69.2, y = 49.6, f = "e" },
+					{ t = "getfp", location = "Thondroril River", text = "Thondroril River", map = 1422, x = 69.2, y = 49.6, f = "e" },
 				},
 			},
 			{
@@ -522,7 +522,7 @@ do
 		author = "TuWoW & Zygor",
 		minLevel = 55,
 		maxLevel = 60,
-		zone = 1413,
+		zone = 1448,
 		version = 1,
 		steps = {
 			{
@@ -543,7 +543,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Light's Hope Chapel", map = 1422, x = 75.9, y = 53.4, f = "e" },
+					{ t = "getfp", location = "Light's Hope Chapel", text = "Light's Hope Chapel", map = 1422, x = 75.9, y = 53.4, f = "e" },
 				},
 			},
 			{

@@ -299,12 +299,12 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "New Agamand", f = "e" },
+					{ t = "sethome", location = "New Agamand", text = "New Agamand", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "New Agamand", map = 117, x = 52.0, y = 67.4, f = "e" },
+					{ t = "getfp", location = "New Agamand", text = "New Agamand", map = 117, x = 52.0, y = 67.4, f = "e" },
 				},
 			},
 			{
@@ -474,7 +474,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Kamagua", map = 117, x = 24.7, y = 57.8, f = "e" },
+					{ t = "getfp", location = "Kamagua", text = "Kamagua", map = 117, x = 24.7, y = 57.8, f = "e" },
 				},
 			},
 			{

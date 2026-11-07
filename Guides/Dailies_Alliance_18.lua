@@ -74,7 +74,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Auberdine", f = "e" },
+					{ t = "sethome", location = "Auberdine", text = "Auberdine", f = "e" },
 				},
 			},
 			{
@@ -237,7 +237,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Auberdine", map = 1439, x = 36.3, y = 45.6, f = "e" },
+					{ t = "getfp", location = "Auberdine", text = "Auberdine", map = 1439, x = 36.3, y = 45.6, f = "e" },
 				},
 			},
 			{
@@ -252,7 +252,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Auberdine", f = "e" },
+					{ t = "sethome", location = "Auberdine", text = "Auberdine", f = "e" },
 				},
 			},
 			{

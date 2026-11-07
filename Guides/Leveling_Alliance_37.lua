@@ -298,7 +298,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Area 52", f = "e" },
+					{ t = "sethome", location = "Area 52", text = "Area 52", f = "e" },
 				},
 			},
 			{
@@ -314,7 +314,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Area 52", map = 1953, x = 33.7, y = 64.0, f = "e" },
+					{ t = "getfp", location = "Area 52", text = "Area 52", map = 1953, x = 33.7, y = 64.0, f = "e" },
 				},
 			},
 			{

@@ -257,7 +257,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Goldshire", f = "e" },
+					{ t = "sethome", location = "Goldshire", text = "Goldshire", f = "e" },
 				},
 			},
 			{

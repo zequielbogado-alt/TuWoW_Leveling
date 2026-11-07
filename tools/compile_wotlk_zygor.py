@@ -134,9 +134,40 @@ def parse_zygor_guide(full_title: str, body: str, faction: str, default_cat: str
     if m_next:
         guide["raw_next"] = m_next.group(1).strip().replace('\\\\', '\\')
 
-    raw_steps = re.split(r'^\s*step\b[^\n]*', body, flags=re.MULTILINE)[1:]
+    # Pre-detect initial zone map for this guide
     current_map = None
     current_zone_name = None
+    # 1. Search body for first zone goto
+    for zm in re.finditer(r'goto\s+([A-Za-z\s\'\-]+),', body):
+        zn = zm.group(1).strip()
+        if zn in ZONE_TO_UIMAP:
+            current_map = ZONE_TO_UIMAP[zn]
+            current_zone_name = zn
+            break
+    # 2. If not found, match against title and folder
+    if not current_map:
+        for zn, mid in ZONE_TO_UIMAP.items():
+            if len(zn) >= 4 and (zn.lower() in full_title.lower() or (folder and zn.lower() in folder.lower())):
+                current_map = mid
+                current_zone_name = zn
+                break
+    # 3. Special race starters fallback
+    if not current_map:
+        lt = full_title.lower()
+        if "tauren" in lt: current_map, current_zone_name = 1412, "Mulgore"
+        elif "orc" in lt or "troll" in lt: current_map, current_zone_name = 1411, "Durotar"
+        elif "undead" in lt: current_map, current_zone_name = 1420, "Tirisfal Glades"
+        elif "blood elf" in lt: current_map, current_zone_name = 1944, "Eversong Woods"
+        elif "death knight" in lt: current_map, current_zone_name = 124, "Scarlet Enclave"
+        elif "human" in lt: current_map, current_zone_name = 1429, "Elwynn Forest"
+        elif "dwarf" in lt or "gnome" in lt: current_map, current_zone_name = 1426, "Dun Morogh"
+        elif "night elf" in lt: current_map, current_zone_name = 1438, "Teldrassil"
+        elif "draenei" in lt: current_map, current_zone_name = 1941, "Azuremyst Isle"
+
+    if current_map:
+        guide["zone"] = current_map
+
+    raw_steps = re.split(r'^\s*step\b[^\n]*', body, flags=re.MULTILINE)[1:]
 
     for raw_st in raw_steps:
         st_obj: Dict[str, Any] = {"goals": []}
@@ -287,16 +318,20 @@ def parse_zygor_guide(full_title: str, body: str, faction: str, default_cat: str
 
             fm = re.search(r'^\.?\.?fpath\s+([^#\|]+)', line)
             if fm:
-                g = {"t": "fpath", "text": fm.group(1).strip()}
-                if last_coords: g["map"], g["x"], g["y"] = last_coords
+                loc = fm.group(1).strip()
+                g = {"t": "getfp", "location": loc, "text": loc}
+                mp = (last_coords and last_coords[0]) or current_map or guide.get("zone", 1411)
+                if last_coords: g["map"], g["x"], g["y"] = mp, last_coords[1], last_coords[2]
                 st_obj["goals"].append(g)
                 continue
 
             hm = re.search(r'^\.?\.?(?:home|hearth)\s*([^\n\r]*)', line)
             if hm:
-                action = "home" if "home" in line else "hearth"
-                g = {"t": action, "text": hm.group(1).strip() if hm.group(1) else "Hearthstone"}
-                if last_coords: g["map"], g["x"], g["y"] = last_coords
+                action = "sethome" if "home" in line else "hearth"
+                loc = hm.group(1).strip() if hm.group(1) else "Hearthstone"
+                g = {"t": action, "location": loc, "text": loc}
+                mp = (last_coords and last_coords[0]) or current_map or guide.get("zone", 1411)
+                if last_coords: g["map"], g["x"], g["y"] = mp, last_coords[1], last_coords[2]
                 st_obj["goals"].append(g)
                 continue
 
@@ -304,10 +339,13 @@ def parse_zygor_guide(full_title: str, body: str, faction: str, default_cat: str
             if last_npc:
                 g = {"t": "talk", "npcName": last_npc}
                 if last_npc_id: g["npc"] = last_npc_id
-                if last_coords: g["map"], g["x"], g["y"] = last_coords
+                if last_coords:
+                    mp = last_coords[0] or current_map or guide.get("zone", 1411)
+                    g["map"], g["x"], g["y"] = mp, last_coords[1], last_coords[2]
                 st_obj["goals"].append(g)
             elif last_coords:
-                st_obj["goals"].append({"t": "goto", "map": last_coords[0], "x": last_coords[1], "y": last_coords[2]})
+                mp = last_coords[0] or current_map or guide.get("zone", 1411)
+                st_obj["goals"].append({"t": "goto", "map": mp, "x": last_coords[1], "y": last_coords[2]})
 
         if notes:
             st_obj["note"] = " ".join(notes)
@@ -331,7 +369,9 @@ def parse_zygor_guide(full_title: str, body: str, faction: str, default_cat: str
 
     return guide
 
-def format_goal_lua(g: Dict[str, Any]) -> str:
+def format_goal_lua(g: Dict[str, Any], default_map: Optional[int] = None) -> str:
+    if ("x" in g or "y" in g) and ("map" not in g or g["map"] is None):
+        g["map"] = default_map or 1411
     order = [
         "t", "quest", "title", "npc", "npcName", "item", "itemName", "target",
         "object", "objName", "count", "oi", "level", "skill", "location",
@@ -378,6 +418,7 @@ def format_guide_lua(g: Dict[str, Any]) -> List[str]:
             arr = ", ".join(lua_str(x) for x in g[opt_list])
             lines.append(f"\t\t{opt_list} = {{ {arr} }},")
 
+    def_map = g.get("zone", 1411)
     lines.append("\t\tsteps = {")
     for st in g["steps"]:
         lines.append("\t\t\t{")
@@ -397,7 +438,7 @@ def format_guide_lua(g: Dict[str, Any]) -> List[str]:
                 lines.append(f"\t\t\t\tonly = {{ {', '.join(sub_parts)} }},")
         lines.append("\t\t\t\tgoals = {")
         for goal in st["goals"]:
-            lines.append(f"\t\t\t\t\t{format_goal_lua(goal)},")
+            lines.append(f"\t\t\t\t\t{format_goal_lua(goal, def_map)},")
         lines.append("\t\t\t\t},")
         lines.append("\t\t\t},")
     lines.append("\t\t},")
@@ -425,6 +466,8 @@ def split_large_guide(g: Dict[str, Any], max_steps_per_part: int = 85) -> List[D
         elif orig_next:
             part["next"] = orig_next
         part["steps"] = chunk
+        if g.get("zone"):
+            part["zone"] = g["zone"]
         parts.append(part)
     return parts
 

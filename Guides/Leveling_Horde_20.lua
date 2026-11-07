@@ -161,7 +161,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Hammerfall", f = "e" },
+					{ t = "sethome", location = "Hammerfall", text = "Hammerfall", f = "e" },
 				},
 			},
 			{

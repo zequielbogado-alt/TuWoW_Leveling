@@ -65,7 +65,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Dun Niffelem", map = 120, x = 62.6, y = 60.9, f = "e" },
+					{ t = "getfp", location = "Dun Niffelem", text = "Dun Niffelem", map = 120, x = 62.6, y = 60.9, f = "e" },
 				},
 			},
 			{
@@ -314,7 +314,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Frosthold", map = 120, x = 29.5, y = 74.3, f = "e" },
+					{ t = "getfp", location = "Frosthold", text = "Frosthold", map = 120, x = 29.5, y = 74.3, f = "e" },
 				},
 			},
 			{
@@ -335,7 +335,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "home", text = "Frosthold", map = 120, x = 28.7, y = 74.4, f = "e" },
+					{ t = "sethome", location = "Frosthold", text = "Frosthold", map = 120, x = 28.7, y = 74.4, f = "e" },
 				},
 			},
 			{
@@ -478,7 +478,7 @@ do
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Bouldercrag's Refuge", map = 120, x = 30.6, y = 36.3, f = "e" },
+					{ t = "getfp", location = "Bouldercrag's Refuge", text = "Bouldercrag's Refuge", map = 120, x = 30.6, y = 36.3, f = "e" },
 				},
 			},
 			{

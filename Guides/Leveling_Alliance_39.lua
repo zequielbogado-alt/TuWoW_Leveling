@@ -17,17 +17,17 @@ do
 		steps = {
 			{
 				goals = {
-					{ t = "goto", x = 18.2, y = 25.5, f = "e" },
+					{ t = "goto", map = 114, x = 18.2, y = 25.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "fpath", text = "Valiance Keep", map = 114, x = 59.0, y = 68.3, f = "e" },
+					{ t = "getfp", location = "Valiance Keep", text = "Valiance Keep", map = 114, x = 59.0, y = 68.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "home", text = "Valiance Keep", f = "e" },
+					{ t = "sethome", location = "Valiance Keep", text = "Valiance Keep", f = "e" },
 				},
 			},
 			{
