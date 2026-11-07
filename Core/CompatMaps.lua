@@ -46,53 +46,55 @@ end
 
 ns.MapFrames = ns.MapFrames or {}
 ns.MapFrames.era = ns.MapFrames.era or {
-	[1411] = makeBounds(1, 5287.4996, 3524.9999, 1802.0833, 1910.4166),
-	[1412] = makeBounds(1, 5137.5, 3425.0, 2991.6666, -429.1667),
-	[1413] = makeBounds(1, 10133.333, 6756.2499, 4831.2499, 1791.6666),
-	[1416] = makeBounds(0, 2799.9999, 1866.6667, 2133.3332, 1466.6667),
-	[1417] = makeBounds(0, 3600.0, 2400.0, 716.6667, -666.6667),
-	[1418] = makeBounds(0, 2487.5, 1658.3334, -1941.6667, -5870.8332),
-	[1419] = makeBounds(0, 3350.0, 2233.3339, -1241.6667, -10266.6664),
-	[1420] = makeBounds(0, 4518.7499, 3012.4999, 2983.3332, 3837.4999),
-	[1421] = makeBounds(0, 4199.9999, 2800.0, 3733.3332, 1666.6667),
-	[1422] = makeBounds(0, 4299.9999, 2866.6667, 1133.3333, 3466.6666),
-	[1423] = makeBounds(0, 3870.8333, 2581.2499, -2272.9166, 3741.6665),
-	[1424] = makeBounds(0, 3199.9999, 2133.3333, 1800.0, 1000.0),
-	[1425] = makeBounds(0, 3850.0, 2566.6666, -1616.6666, 1266.6666),
-	[1426] = makeBounds(0, 4925.0, 3283.3332, 2662.4999, -4100.0),
-	[1427] = makeBounds(0, 2231.2499, 1487.4996, -239.5833, -6100.0),
-	[1428] = makeBounds(0, 2929.1666, 1952.0835, -466.6667, -7031.2498),
-	[1429] = makeBounds(0, 3470.8332, 2314.583, 1535.4166, -7939.5831),
-	[1430] = makeBounds(0, 2499.9999, 1666.6669, -666.6666, -9866.6664),
-	[1431] = makeBounds(0, 2699.9999, 1800.0, 1666.6666, -9766.6664),
-	[1432] = makeBounds(0, 2758.3332, 1839.583, -512.5, -4445.8332),
-	[1433] = makeBounds(0, 2170.8333, 1447.916, -1575.0, -8522.9164),
-	[1434] = makeBounds(0, 6381.2498, 4254.1669, 3291.6666, -11168.7497),
-	[1435] = makeBounds(0, 2293.75, 1529.1669, -2156.25, -9629.1664),
-	[1436] = makeBounds(0, 3500.0, 2333.333, 3016.6666, -9400.0),
-	[1437] = makeBounds(0, 4135.4166, 2756.25, 847.9167, -1891.6666),
-	[1438] = makeBounds(1, 5091.6665, 3393.75, 4152.0832, 11524.9997),
-	[1439] = makeBounds(1, 6550.0, 4366.6665, 4416.6665, 8266.6664),
-	[1440] = makeBounds(1, 5766.6665, 3843.7499, 2999.9999, 4672.9165),
-	[1441] = makeBounds(1, 4399.9999, 2933.3333, 566.6666, -3933.3332),
-	[1442] = makeBounds(1, 4883.3332, 3256.2499, 5370.8332, 2852.0833),
-	[1443] = makeBounds(1, 4495.8332, 2997.9165, 4722.9165, 452.0833),
-	[1444] = makeBounds(1, 6949.9998, 4633.3332, 4816.6665, -2566.6666),
-	[1445] = makeBounds(1, 5250.0, 3499.9999, 975.0, -2033.3333),
-	[1446] = makeBounds(1, 6899.9998, 4600.0, 725.0, -5875.0),
-	[1447] = makeBounds(1, 6577.0831, 4385.4165, 197.9166, 6685.4165),
-	[1448] = makeBounds(1, 5749.9998, 3833.3332, 3741.6666, 7133.3331),
-	[1449] = makeBounds(1, 3700.0, 2466.6666, 1666.6666, -6133.3332),
-	[1450] = makeBounds(1, 2314.5833, 1543.75, -1404.1666, 8491.6664),
-	[1451] = makeBounds(1, 3483.3332, 2322.9166, 3199.9999, -5958.3332),
-	[1452] = makeBounds(1, 7099.9998, 4733.3332, 2233.3333, 8533.3331),
-	[1453] = makeBounds(0, 1343.7499, 895.833, 1235.4166, -8256.2498),
-	[1454] = makeBounds(1, 1402.6045, 935.4166, -3506.2499, 2281.2499),
-	[1455] = makeBounds(0, 790.6251, 527.6045, -713.5417, -4569.2707),
-	[1456] = makeBounds(1, 1043.7499, 695.8333, 537.5, -899.9999),
-	[1457] = makeBounds(1, 1058.3332, 705.7295, 2916.6666, 10268.2289),
-	[1458] = makeBounds(0, 959.375, 640.1041, 728.6459, 1877.6041),
-	[1459] = makeBounds(451, 3170.833, 2114.583, 16979.166, 16979.166),
+	[1411] = makeBounds(1, 5287.5, 3525.0, -1962.5, 1808.333),
+	[1412] = makeBounds(1, 5137.5, 3425.0, 2047.917, -272.917),
+	[1413] = makeBounds(1, 10133.334, 6756.25, 2622.917, 1612.5),
+	[1414] = makeBounds(1, 36799.811, 24533.2, 17066.6, 12799.9),
+	[1415] = makeBounds(0, 35199.9, 23466.6, 16000.0, 7466.6),
+	[1416] = makeBounds(0, 2800.0, 1866.667, 783.333, 1500.0),
+	[1417] = makeBounds(0, 3600.0, 2400.0, -866.667, -133.333),
+	[1418] = makeBounds(0, 2487.5, 1658.334, -2079.167, -5889.583),
+	[1419] = makeBounds(0, 3350.0, 2233.334, -1241.667, -10566.666),
+	[1420] = makeBounds(0, 4518.75, 3012.5, 3033.333, 3837.5),
+	[1421] = makeBounds(0, 4200.0, 2800.0, 3450.0, 1666.667),
+	[1422] = makeBounds(0, 4300.0, 2866.667, 416.667, 3366.667),
+	[1423] = makeBounds(0, 3870.833, 2581.25, -2185.417, 3800.0),
+	[1424] = makeBounds(0, 3200.0, 2133.333, 1066.667, 400.0),
+	[1425] = makeBounds(0, 3850.0, 2566.667, -1575.0, 1466.667),
+	[1426] = makeBounds(0, 4925.0, 3283.334, 1802.083, -3877.083),
+	[1427] = makeBounds(0, 2231.25, 1487.5, -322.917, -6100.0),
+	[1428] = makeBounds(0, 2929.166, 1952.083, -266.667, -7031.25),
+	[1429] = makeBounds(0, 3470.834, 2314.583, 1535.417, -7939.583),
+	[1430] = makeBounds(0, 2500.0, 1666.667, -833.333, -9866.666),
+	[1431] = makeBounds(0, 2700.0, 1800.0, 833.333, -9716.666),
+	[1432] = makeBounds(0, 2758.333, 1839.583, -1993.75, -4487.5),
+	[1433] = makeBounds(0, 2170.834, 1447.916, -1570.833, -8575.0),
+	[1434] = makeBounds(0, 6381.25, 4254.166, 2220.833, -11168.75),
+	[1435] = makeBounds(0, 2293.75, 1529.167, -2222.917, -9620.833),
+	[1436] = makeBounds(0, 3500.0, 2333.333, 3016.667, -9400.0),
+	[1437] = makeBounds(0, 4135.417, 2756.25, -389.583, -2147.917),
+	[1438] = makeBounds(1, 5091.666, 3393.75, 3814.583, 11831.25),
+	[1439] = makeBounds(1, 6550.0, 4366.666, 2941.667, 8333.333),
+	[1440] = makeBounds(1, 5766.667, 3843.75, 1700.0, 4672.917),
+	[1441] = makeBounds(1, 4400.0, 2933.333, -433.333, -3966.667),
+	[1442] = makeBounds(1, 4883.333, 3256.25, 3245.833, 2916.667),
+	[1443] = makeBounds(1, 4495.833, 2997.916, 4233.333, 452.083),
+	[1444] = makeBounds(1, 6950.0, 4633.333, 5441.667, -2366.667),
+	[1445] = makeBounds(1, 5250.0, 3500.0, -975.0, -2033.333),
+	[1446] = makeBounds(1, 6900.0, 4600.0, -218.75, -5875.0),
+	[1447] = makeBounds(1, 5070.833, 3381.25, -3277.083, 5341.667),
+	[1448] = makeBounds(1, 5750.0, 3833.333, 1641.667, 7133.333),
+	[1449] = makeBounds(1, 3700.0, 2466.666, 533.333, -5966.667),
+	[1450] = makeBounds(1, 2308.333, 1539.583, -1381.25, 8491.666),
+	[1451] = makeBounds(1, 3483.334, 2322.916, 2537.5, -5958.334),
+	[1452] = makeBounds(1, 7100.0, 4733.333, -316.667, 8533.333),
+	[1453] = makeBounds(0, 1344.27, 896.354, 1380.971, -8278.851),
+	[1454] = makeBounds(1, 1402.605, 935.416, -3680.601, 2273.877),
+	[1455] = makeBounds(0, 790.625, 527.605, -713.591, -4569.241),
+	[1456] = makeBounds(1, 1043.75, 695.833, 516.667, -850.0),
+	[1457] = makeBounds(1, 1058.333, 705.729, 2938.363, 10238.316),
+	[1458] = makeBounds(0, 959.375, 640.104, 873.193, 1877.945),
+	[1459] = makeBounds(30, 4237.5, 2825.0, 1781.25, 1085.417),
 	[1460] = makeBounds(1, 2070.8333, 1381.25, 2337.4999, 5616.6665),
 	[1461] = makeBounds(1, 2916.6666, 1943.75, -775.0, 6683.3331),
 	[1941] = makeBounds(530, 5262.4998, 3508.3332, -1399.9999, 10831.2497),
@@ -197,6 +199,106 @@ local zoneNameToUiMap = {}
 for id, name in pairs(mapNamesEN) do zoneNameToUiMap[name] = id end
 for id, name in pairs(mapNamesES) do zoneNameToUiMap[name] = id end
 
+local subZoneToParentUiMap = {
+	-- Mulgore (1412)
+	["Campamento Narache"] = 1412,
+	["Camp Narache"] = 1412,
+	["Mesa de la Nube Roja"] = 1412,
+	["Red Cloud Mesa"] = 1412,
+	["Poblado Pezuña de Sangre"] = 1412,
+	["Bloodhoof Village"] = 1412,
+	["Barranco Cortazarza"] = 1412,
+	["Bristleback Crag"] = 1412,
+	["Barranco Filozarza"] = 1412,
+	["Brambleblade Ravine"] = 1412,
+	["Cueva de la Melena Fría"] = 1412,
+	["Palemane Rock"] = 1412,
+	["Pozo de la Nube Roja"] = 1412,
+	["Red Cloud Water Well"] = 1412,
+	["Pozo de Pezuña de Sangre"] = 1412,
+	["Bloodhoof Water Well"] = 1412,
+
+	-- Durotar (1411)
+	["Valle de los Retos"] = 1411,
+	["Valle de las Pruebas"] = 1411,
+	["Valley of Trials"] = 1411,
+	["Cerrotajo"] = 1411,
+	["Razor Hill"] = 1411,
+	["Aldea Sen'jin"] = 1411,
+	["Sen'jin Village"] = 1411,
+	["Roca del Cráneo"] = 1411,
+	["Skull Rock"] = 1411,
+	["Barranco del Eco"] = 1411,
+	["Echo Ridge"] = 1411,
+
+	-- Bosque de Elwynn (1429)
+	["Villanorte"] = 1429,
+	["Northshire"] = 1429,
+	["Valle de Villanorte"] = 1429,
+	["Northshire Valley"] = 1429,
+	["Abadía de Villanorte"] = 1429,
+	["Northshire Abbey"] = 1429,
+	["Viñedos de Villanorte"] = 1429,
+	["Northshire Vineyards"] = 1429,
+	["Villadorada"] = 1429,
+	["Goldshire"] = 1429,
+	["Mina de Villanorte"] = 1429,
+	["Echo Ridge Mine"] = 1429,
+	["Mina Hondahonda"] = 1429,
+	["Fargodeep Mine"] = 1429,
+	["Mina de Jaspe"] = 1429,
+	["Jasperlode Mine"] = 1429,
+
+	-- Dun Morogh (1426)
+	["Valle Frío"] = 1426,
+	["Valle de Crestanevada"] = 1426,
+	["Coldridge Valley"] = 1426,
+	["Yunque de Hierro"] = 1426,
+	["Anvilmar"] = 1426,
+	["Kharanos"] = 1426,
+	["Cantera de Gol'Bolar"] = 1426,
+	["Gol'Bolar Quarry"] = 1426,
+
+	-- Teldrassil (1438)
+	["Cañada Umbría"] = 1438,
+	["Shadowglen"] = 1438,
+	["Aldrassil"] = 1438,
+	["Dolanaar"] = 1438,
+	["Túmulo de Ban'ethil"] = 1438,
+	["Ban'ethil Barrow Den"] = 1438,
+
+	-- Claros de Tirisfal (1420)
+	["Camposanto"] = 1420,
+	["Tañido de Muerte"] = 1420,
+	["Deathknell"] = 1420,
+	["Rémol"] = 1420,
+	["Brill"] = 1420,
+	["Granja de Solliden"] = 1420,
+	["Solliden Farmstead"] = 1420,
+	["Mina de Telasombría"] = 1420,
+	["Night Web's Hollow"] = 1420,
+
+	-- Bosque Canción Eterna (1941)
+	["Isla del Caminante del Sol"] = 1941,
+	["Sunstrider Isle"] = 1941,
+	["Aldea Brisaveloz"] = 1941,
+	["Fairbreeze Village"] = 1941,
+	["Plaza Alalcón"] = 1941,
+	["Falconwing Square"] = 1941,
+	["Santuario de Dath'Remar"] = 1941,
+	["Shrine of Dath'Remar"] = 1941,
+
+	-- Isla Bruma Azur (1943)
+	["Valle Ammen"] = 1943,
+	["Ammen Vale"] = 1943,
+	["Avanzada Azur"] = 1943,
+	["Azure Watch"] = 1943,
+	["Loma de Ammen"] = 1943,
+}
+for name, id in pairs(subZoneToParentUiMap) do
+	zoneNameToUiMap[name] = id
+end
+
 local mapContinentParent = {
 	[0] = 1415,   -- Eastern Kingdoms
 	[1] = 1414,   -- Kalimdor
@@ -233,6 +335,14 @@ function Compat.GetViewedMapID()
 	end
 	local cont = GetCurrentMapContinent and GetCurrentMapContinent()
 	local zone = GetCurrentMapZone and GetCurrentMapZone()
+	if cont and cont > 0 and zone and zone > 0 and GetMapZones then
+		local zones = { GetMapZones(cont) }
+		local zName = zones[zone]
+		if zName then
+			local mapped = subZoneToParentUiMap[zName] or zoneNameToUiMap[zName]
+			if mapped then return mapped end
+		end
+	end
 	if cont == 1 and (not zone or zone == 0) then return 1414 end
 	if cont == 2 and (not zone or zone == 0) then return 1415 end
 	if cont == 3 and (not zone or zone == 0) then return 1945 end
@@ -241,54 +351,106 @@ function Compat.GetViewedMapID()
 end
 
 local lastKnownMapID, lastKnownPx, lastKnownPy
+local lastSampleTime = 0
 
 function Compat.GetPlayerMapID()
-	if not (WorldMapFrame and WorldMapFrame:IsShown()) then
-		if SetMapToCurrentZone then SetMapToCurrentZone() end
-		local areaID = GetCurrentMapAreaID and GetCurrentMapAreaID()
-		if areaID and area335ToUiMap[areaID] then
-			lastKnownMapID = area335ToUiMap[areaID]
-			return lastKnownMapID
+	if WorldMapFrame and WorldMapFrame:IsShown() then
+		local viewedAreaID = GetCurrentMapAreaID and GetCurrentMapAreaID()
+		if viewedAreaID and area335ToUiMap[viewedAreaID] then
+			return area335ToUiMap[viewedAreaID]
 		end
 	end
+	local subText = GetSubZoneText and GetSubZoneText()
+	if subText and subText ~= "" and subZoneToParentUiMap[subText] then
+		return subZoneToParentUiMap[subText]
+	end
 	local zText = GetRealZoneText and GetRealZoneText()
-	if zText and zoneNameToUiMap[zText] then
-		return zoneNameToUiMap[zText]
+	if zText and zText ~= "" then
+		if subZoneToParentUiMap[zText] then return subZoneToParentUiMap[zText] end
+		if zoneNameToUiMap[zText] then return zoneNameToUiMap[zText] end
+	end
+	local zoneText = GetZoneText and GetZoneText()
+	if zoneText and zoneText ~= "" then
+		if subZoneToParentUiMap[zoneText] then return subZoneToParentUiMap[zoneText] end
+		if zoneNameToUiMap[zoneText] then return zoneNameToUiMap[zoneText] end
+	end
+	local areaID = GetCurrentMapAreaID and GetCurrentMapAreaID()
+	if areaID and area335ToUiMap[areaID] then
+		return area335ToUiMap[areaID]
 	end
 	return lastKnownMapID or Compat.GetViewedMapID()
 end
 
-function Compat.GetPlayerPosition()
+function Compat.GetPlayerPosition(preferUiMapID)
 	local mapShown = WorldMapFrame and WorldMapFrame:IsShown()
+	local playerMapID = preferUiMapID or Compat.GetPlayerMapID()
+	local targetArea335 = playerMapID and uiMapToArea335[playerMapID]
+
 	if not mapShown then
-		if SetMapToCurrentZone then SetMapToCurrentZone() end
-		local mapID = Compat.GetViewedMapID() or Compat.GetPlayerMapID()
-		local px, py = GetPlayerMapPosition("player")
-		if mapID and px and py and (px ~= 0 or py ~= 0) then
-			lastKnownMapID, lastKnownPx, lastKnownPy = mapID, px, py
-			return px, py, mapID
+		if targetArea335 and SetMapByID then
+			SetMapByID(targetArea335 - 1)
+		elseif SetMapToCurrentZone then
+			SetMapToCurrentZone()
 		end
-		return nil, nil, mapID
-	end
-	local viewedMapID = Compat.GetViewedMapID()
-	local playerMapID = Compat.GetPlayerMapID()
-	local px, py = GetPlayerMapPosition("player")
-	if viewedMapID and px and py and (px ~= 0 or py ~= 0) then
-		if viewedMapID == playerMapID then
-			lastKnownMapID, lastKnownPx, lastKnownPy = playerMapID, px, py
-			return px, py, playerMapID
-		elseif liveBoundsOf(viewedMapID) then
+		local px, py = GetPlayerMapPosition("player")
+		if px and py and (px ~= 0 or py ~= 0) then
+			lastKnownMapID = playerMapID or Compat.GetViewedMapID()
+			lastKnownPx, lastKnownPy = px, py
+			return px, py, lastKnownMapID
+		end
+		-- Fallback si SetMapByID dio (0, 0)
+		if SetMapToCurrentZone then SetMapToCurrentZone() end
+		px, py = GetPlayerMapPosition("player")
+		local currentArea = GetCurrentMapAreaID and GetCurrentMapAreaID()
+		local currentMapID = (currentArea and area335ToUiMap[currentArea]) or Compat.GetPlayerMapID()
+		if px and py and (px ~= 0 or py ~= 0) and currentMapID then
+			lastKnownMapID, lastKnownPx, lastKnownPy = currentMapID, px, py
+			return px, py, currentMapID
+		end
+		if lastKnownMapID and lastKnownPx and lastKnownPy then
+			return lastKnownPx, lastKnownPy, lastKnownMapID
+		end
+		return nil, nil, playerMapID
+	else
+		-- WorldMap está abierto
+		local viewedAreaID = GetCurrentMapAreaID and GetCurrentMapAreaID()
+		local viewedMapID = viewedAreaID and area335ToUiMap[viewedAreaID]
+		local px, py = GetPlayerMapPosition("player")
+
+		if viewedMapID and px and py and (px ~= 0 or py ~= 0) then
+			lastKnownMapID, lastKnownPx, lastKnownPy = viewedMapID, px, py
 			return px, py, viewedMapID
 		end
+
+		-- Si el mapa actual es una subzona personalizada o dio (0,0), actualiza desde la zona padre con throttled
+		local now = GetTime and GetTime() or 0
+		if targetArea335 and SetMapByID and (now - lastSampleTime >= 0.5) then
+			lastSampleTime = now
+			local restoreArea = viewedAreaID
+			local restoreLevel = GetCurrentMapDungeonLevel and GetCurrentMapDungeonLevel()
+			SetMapByID(targetArea335 - 1)
+			local sx, sy = GetPlayerMapPosition("player")
+			if restoreArea and restoreArea > 0 then
+				SetMapByID(restoreArea - 1)
+				if restoreLevel and restoreLevel > 0 and SetDungeonMapLevel then
+					SetDungeonMapLevel(restoreLevel)
+				end
+			end
+			if sx and sy and (sx ~= 0 or sy ~= 0) then
+				lastKnownMapID, lastKnownPx, lastKnownPy = playerMapID, sx, sy
+				return sx, sy, playerMapID
+			end
+		end
+
+		if lastKnownMapID and lastKnownPx and lastKnownPy then
+			return lastKnownPx, lastKnownPy, lastKnownMapID
+		end
+		return px, py, playerMapID
 	end
-	if lastKnownMapID and lastKnownPx and lastKnownPy then
-		return lastKnownPx, lastKnownPy, lastKnownMapID
-	end
-	return nil, nil, playerMapID
 end
 
-function Compat.GetPlayerMapPosition()
-	local px, py, mapID = Compat.GetPlayerPosition()
+function Compat.GetPlayerMapPosition(preferUiMapID)
+	local px, py, mapID = Compat.GetPlayerPosition(preferUiMapID)
 	if not px or not py or not mapID then return nil end
 	return mapID, px * 100, py * 100
 end
@@ -367,8 +529,8 @@ end
 
 Compat.MapFromWorld = Compat.WorldToMap
 
-function Compat.GetPlayerWorldPosition()
-	local map, x, y = Compat.GetPlayerMapPosition()
+function Compat.GetPlayerWorldPosition(preferUiMapID)
+	local map, x, y = Compat.GetPlayerMapPosition(preferUiMapID)
 	if not map then return nil end
 	return Compat.MapToWorld(map, x, y)
 end
@@ -381,8 +543,8 @@ function Compat.PlayerCont()
 	return b and (b.c or b.continent) or nil
 end
 
-function Compat.GetPlayerUnitPosition()
-	local c, wx, wy = Compat.GetPlayerWorldPosition()
+function Compat.GetPlayerUnitPosition(preferUiMapID)
+	local c, wx, wy = Compat.GetPlayerWorldPosition(preferUiMapID)
 	if not c then return nil end
 	return wx, wy, nil, c
 end
@@ -450,7 +612,7 @@ function C_Map.GetBestMapForUnit()
 end
 
 function C_Map.GetPlayerMapPosition(uiMapID)
-	local px, py, playerMapID = Compat.GetPlayerPosition()
+	local px, py, playerMapID = Compat.GetPlayerPosition(uiMapID)
 	if not px or not py then return nil end
 	if uiMapID and playerMapID and uiMapID ~= playerMapID then
 		local c, wx, wy = Compat.MapToWorld(playerMapID, px * 100, py * 100)

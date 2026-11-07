@@ -347,7 +347,7 @@ function Nav.Sample()
 		if not tC then return "unknown" end
 	end
 	local pc, px, py
-	if C.GetPlayerWorldPosition then pc, px, py = C.GetPlayerWorldPosition() end
+	if C.GetPlayerWorldPosition then pc, px, py = C.GetPlayerWorldPosition(target and target.map) end
 	if not pc then
 		-- No position, nothing to measure. A ride, flight or hearth on the
 		-- route is still what to do (the tram ride itself); else say so.
@@ -428,7 +428,7 @@ function Nav.TargetOffset()
 		resolve()
 		if not tC then return nil end
 	end
-	local pc, px, py = C.GetPlayerWorldPosition()
+	local pc, px, py = C.GetPlayerWorldPosition(target and target.map)
 	if pc ~= tC then return nil end
 	return tX - px, tY - py
 end
