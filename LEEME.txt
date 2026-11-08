@@ -1,0 +1,21 @@
+================================================================================
+                    TUWOW LEVELING (WoW 3.3.5a)
+================================================================================
+Addon de Leveo, Mazmorras, Raros, Dailies y Codex para el servidor TuWoW.
+
+INSTALACIÓN RÁPIDA:
+1. Extrae la carpeta 'TuWoW_Leveling' dentro de:
+   TuWoW-Client/Interface/AddOns/
+2. Verifica que la ruta final contenga:
+   TuWoW-Client/Interface/AddOns/TuWoW_Leveling/TuWoW_Leveling.toc
+3. En el juego escribe /reload o activa el addon desde la pantalla de personajes.
+
+COMANDOS EN EL CHAT:
+- /twl o /leveling : Abre y cierra la ventana principal de guías.
+- /zygor           : Muestra u oculta el widget flotante de seguimiento.
+- /arrow           : Muestra u oculta la flecha de navegación 3D.
+- /restock         : Configura auto-compra de suministros al comerciar.
+
+DESCARGA DIRECTA DE ACTUALIZACIONES:
+https://github.com/zequielbogado-alt/TuWoW_Leveling/releases/latest
+================================================================================
