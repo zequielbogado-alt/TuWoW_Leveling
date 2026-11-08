@@ -44,20 +44,45 @@ do
 				},
 			},
 			{
-				only = { races = { "BloodElf" } },
+				only = { races = { "BloodElf" }, classes = { "MAGE" } },
 				goals = {
-					{ t = "turnin", quest = 8328, title = "Mage Training", npc = 15279, npcName = "Julia Sunstriker", map = 1944, x = 39.2, y = 21.5, f = "e", only = { classes = { "MAGE" } } },
-					{ t = "accept", quest = 10068, title = "Well Watcher Solanian", npc = 15279, npcName = "Julia Sunstriker", map = 1944, x = 39.2, y = 21.5, f = "e", only = { classes = { "MAGE" } } },
-					{ t = "turnin", quest = 8563, title = "Warlock Training", npc = 15283, npcName = "Summoner Teli'Larien", map = 1944, x = 38.9, y = 21.4, f = "e", only = { classes = { "WARLOCK" } } },
-					{ t = "accept", quest = 10073, title = "Well Watcher Solanian", npc = 15283, npcName = "Summoner Teli'Larien", map = 1944, x = 38.9, y = 21.4, f = "e", only = { classes = { "WARLOCK" } } },
-					{ t = "turnin", quest = 9392, title = "Rogue Training", npc = 15285, npcName = "Pathstalker Kariel", map = 1944, x = 38.9, y = 20.0, f = "e", only = { classes = { "ROGUE" } } },
-					{ t = "accept", quest = 10071, title = "Well Watcher Solanian", npc = 15285, npcName = "Pathstalker Kariel", map = 1944, x = 38.9, y = 20.0, f = "e", only = { classes = { "ROGUE" } } },
-					{ t = "turnin", quest = 8564, title = "Priest Training", npc = 15284, npcName = "Matron Arena", map = 1944, x = 39.4, y = 20.4, f = "e", only = { classes = { "PRIEST" } } },
-					{ t = "accept", quest = 10072, title = "Well Watcher Solanian", npc = 15284, npcName = "Matron Arena", map = 1944, x = 39.4, y = 20.4, f = "e", only = { classes = { "PRIEST" } } },
-					{ t = "turnin", quest = 9676, title = "Paladin Training", npc = 15280, npcName = "Jesthenis Sunstriker", map = 1944, x = 39.5, y = 20.6, f = "e", only = { classes = { "PALADIN" } } },
-					{ t = "accept", quest = 10069, title = "Well Watcher Solanian", npc = 15280, npcName = "Jesthenis Sunstriker", map = 1944, x = 39.5, y = 20.6, f = "e", only = { classes = { "PALADIN" } } },
-					{ t = "turnin", quest = 9393, title = "Hunter Training", npc = 15513, npcName = "Ranger Sallina", map = 1944, x = 39.0, y = 20.0, f = "e", only = { classes = { "HUNTER" } } },
-					{ t = "accept", quest = 10070, title = "Well Watcher Solanian", npc = 15513, npcName = "Ranger Sallina", map = 1944, x = 39.0, y = 20.0, f = "e", only = { classes = { "HUNTER" } } },
+					{ t = "turnin", quest = 8328, title = "Mage Training", npc = 15279, npcName = "Julia Sunstriker", map = 1944, x = 39.2, y = 21.5, f = "e" },
+					{ t = "accept", quest = 10068, title = "Well Watcher Solanian", npc = 15279, npcName = "Julia Sunstriker", map = 1944, x = 39.2, y = 21.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "BloodElf" }, classes = { "WARLOCK" } },
+				goals = {
+					{ t = "turnin", quest = 8563, title = "Warlock Training", npc = 15283, npcName = "Summoner Teli'Larien", map = 1944, x = 38.9, y = 21.4, f = "e" },
+					{ t = "accept", quest = 10073, title = "Well Watcher Solanian", npc = 15283, npcName = "Summoner Teli'Larien", map = 1944, x = 38.9, y = 21.4, f = "e" },
+				},
+			},
+			{
+				only = { races = { "BloodElf" }, classes = { "ROGUE" } },
+				goals = {
+					{ t = "turnin", quest = 9392, title = "Rogue Training", npc = 15285, npcName = "Pathstalker Kariel", map = 1944, x = 38.9, y = 20.0, f = "e" },
+					{ t = "accept", quest = 10071, title = "Well Watcher Solanian", npc = 15285, npcName = "Pathstalker Kariel", map = 1944, x = 38.9, y = 20.0, f = "e" },
+				},
+			},
+			{
+				only = { races = { "BloodElf" }, classes = { "PRIEST" } },
+				goals = {
+					{ t = "turnin", quest = 8564, title = "Priest Training", npc = 15284, npcName = "Matron Arena", map = 1944, x = 39.4, y = 20.4, f = "e" },
+					{ t = "accept", quest = 10072, title = "Well Watcher Solanian", npc = 15284, npcName = "Matron Arena", map = 1944, x = 39.4, y = 20.4, f = "e" },
+				},
+			},
+			{
+				only = { races = { "BloodElf" }, classes = { "PALADIN" } },
+				goals = {
+					{ t = "turnin", quest = 9676, title = "Paladin Training", npc = 15280, npcName = "Jesthenis Sunstriker", map = 1944, x = 39.5, y = 20.6, f = "e" },
+					{ t = "accept", quest = 10069, title = "Well Watcher Solanian", npc = 15280, npcName = "Jesthenis Sunstriker", map = 1944, x = 39.5, y = 20.6, f = "e" },
+				},
+			},
+			{
+				only = { races = { "BloodElf" }, classes = { "HUNTER" } },
+				goals = {
+					{ t = "turnin", quest = 9393, title = "Hunter Training", npc = 15513, npcName = "Ranger Sallina", map = 1944, x = 39.0, y = 20.0, f = "e" },
+					{ t = "accept", quest = 10070, title = "Well Watcher Solanian", npc = 15513, npcName = "Ranger Sallina", map = 1944, x = 39.0, y = 20.0, f = "e" },
 				},
 			},
 			{
@@ -479,34 +504,6 @@ do
 			{
 				goals = {
 					{ t = "level", level = 9, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 9358, title = "Ranger Sareyn", npc = 15942, npcName = "Ranger Sareyn", map = 1944, x = 46.9, y = 71.8, f = "e" },
-					{ t = "accept", quest = 9252, title = "Defending Fairbreeze Village", npc = 15942, npcName = "Ranger Sareyn", map = 1944, x = 46.9, y = 71.8, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", quest = 9252, target = "Rotlimb Marauder", count = 4, oi = 1, map = 1944, x = 50.7, y = 75.5, f = "e" },
-					{ t = "kill", quest = 9252, target = "Darkwraith", count = 4, oi = 2, map = 1944, x = 50.7, y = 75.5, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 9252, title = "Defending Fairbreeze Village", npc = 15942, npcName = "Ranger Sareyn", map = 1944, x = 46.9, y = 71.8, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 9255, title = "Research Notes", npc = 16210, npcName = "Magistrix Landra Dawnstrider", map = 1944, x = 44.0, y = 70.8, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 9395, title = "Saltheril's Haven", npc = 16144, npcName = "Lord Saltheril", map = 1944, x = 38.1, y = 73.6, f = "e" },
-					{ t = "accept", quest = 9067, title = "The Party Never Ends", npc = 16144, npcName = "Lord Saltheril", map = 1944, x = 38.1, y = 73.6, f = "e" },
 				},
 			},
 		},

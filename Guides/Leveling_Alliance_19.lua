@@ -16,24 +16,82 @@ do
 		version = 1,
 		steps = {
 			{
-				note = "Ride the boat to Auberdine|goto Darkshore,32.4,43.7,1|noway|c",
+				only = { races = { "Human", "Dwarf", "NightElf", "Gnome", "Draenei" }, classes = { "WARRIOR" } },
 				goals = {
 					{ t = "accept", quest = 1718, title = "The Islander", npc = 5479, npcName = "Wu Shen", map = 1453, x = 80.6, y = 59.9, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Human", "Dwarf", "NightElf", "Gnome", "Draenei" }, classes = { "WARRIOR" } },
+				goals = {
+					{ t = "goto", map = 1453, x = 22.6, y = 56.1, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Human", "Dwarf", "NightElf", "Gnome", "Draenei" }, classes = { "WARRIOR" } },
+				goals = {
 					{ t = "turnin", quest = 1718, title = "The Islander", npc = 6236, npcName = "Klannoc Macleod", map = 1413, x = 68.6, y = 49.2, f = "e" },
 					{ t = "accept", quest = 1719, title = "The Affray", npc = 6236, npcName = "Klannoc Macleod", map = 1413, x = 68.6, y = 49.2, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Human", "Dwarf", "NightElf", "Gnome", "Draenei" }, classes = { "WARRIOR" } },
+				goals = {
 					{ t = "kill", quest = 1719, target = "Big Will", count = 1, oi = 2, map = 1413, x = 68.6, y = 48.7, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Human", "Dwarf", "NightElf", "Gnome", "Draenei" }, classes = { "WARRIOR" } },
+				goals = {
 					{ t = "turnin", quest = 1719, title = "The Affray", npc = 6236, npcName = "Klannoc Macleod", map = 1413, x = 68.6, y = 49.2, f = "e" },
+				},
+			},
+			{
+				note = "Ride the boat to Auberdine|goto Darkshore,32.4,43.7,1|noway|c",
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
+				goals = {
+					{ t = "goto", map = 1453, x = 22.6, y = 56.1, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
+				goals = {
 					{ t = "accept", quest = 9551, title = "Call of Air (1)", npc = 17219, npcName = "Sulaa", map = 1947, x = 32.3, y = 23.9, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
+				goals = {
 					{ t = "turnin", quest = 9551, title = "Call of Air (1)", npc = 17204, npcName = "Farseer Nobundo", map = 1947, x = 31.4, y = 27.7, f = "e" },
 					{ t = "accept", quest = 9552, title = "Call of Air (2)", npc = 17204, npcName = "Farseer Nobundo", map = 1947, x = 31.4, y = 27.7, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
+				goals = {
+					{ t = "goto", map = 1941, x = 26.8, y = 25.6, f = "e" },
+				},
+			},
+			{
+				note = "Go up the path to 24.6,35.6",
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
+				goals = {
 					{ t = "turnin", quest = 9552, title = "Call of Air (2)", npc = 17431, npcName = "Velaada", map = 1941, x = 24.6, y = 35.6, f = "e" },
 					{ t = "accept", quest = 9553, title = "Call of Air (3)", npc = 17431, npcName = "Velaada", map = 1941, x = 24.6, y = 35.6, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
+				goals = {
 					{ t = "turnin", quest = 9553, title = "Call of Air (3)", npc = 17435, npcName = "Susurrus", map = 1941, x = 22.6, y = 32.4, f = "e" },
 					{ t = "accept", quest = 9554, title = "Call of Air (4)", npc = 17435, npcName = "Susurrus", map = 1941, x = 22.6, y = 32.4, f = "e" },
+				},
+			},
+			{
+				note = "Go inside the Exodar to 31.4,27.7|goto The Exodar,31.4,27.7",
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
+				goals = {
 					{ t = "turnin", quest = 9554, title = "Call of Air (4)", npc = 17204, npcName = "Farseer Nobundo", f = "e" },
-					{ t = "goto", map = 1453, x = 22.6, y = 56.1, f = "e", only = { classes = { "WARRIOR" } } },
-					{ t = "goto", map = 1453, x = 22.6, y = 56.1, f = "e", only = { classes = { "SHAMAN" } } },
-					{ t = "goto", map = 1941, x = 26.8, y = 25.6, f = "e", only = { classes = { "SHAMAN" } } },
 				},
 			},
 			{
@@ -448,64 +506,6 @@ do
 				goals = {
 					{ t = "turnin", quest = 631, title = "The Thandol Span (1)", map = 1437, x = 51.3, y = 8.0, f = "e" },
 					{ t = "accept", quest = 632, title = "The Thandol Span (2)", map = 1437, x = 51.3, y = 8.0, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 632, title = "The Thandol Span (2)", npc = 1075, npcName = "Rhag Garmason", map = 1437, x = 49.8, y = 18.3, f = "e" },
-					{ t = "accept", quest = 633, title = "The Thandol Span (3)", npc = 1075, npcName = "Rhag Garmason", map = 1437, x = 49.8, y = 18.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 1417, x = 48.8, y = 88.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 633, title = "The Thandol Span (3)", npc = 1075, npcName = "Rhag Garmason", map = 1437, x = 49.8, y = 18.3, f = "e" },
-					{ t = "accept", quest = 634, title = "Plea To The Alliance", npc = 1075, npcName = "Rhag Garmason", map = 1437, x = 49.8, y = 18.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 634, title = "Plea To The Alliance", npc = 2700, npcName = "Captain Nials", map = 1417, x = 45.8, y = 47.6, f = "e" },
-					{ t = "accept", quest = 681, title = "Northfold Manor", npc = 2700, npcName = "Captain Nials", map = 1417, x = 45.8, y = 47.6, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "getfp", location = "Refuge Pointe", text = "Refuge Pointe", map = 1417, x = 45.8, y = 46.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "getfp", location = "Southshore", text = "Southshore", map = 1424, x = 49.3, y = 52.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 500, title = "Crushridge Bounty", npc = 2263, npcName = "Marshal Redpath", map = 1424, x = 49.5, y = 58.7, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 505, title = "Syndicate Assassins", npc = 2276, npcName = "Magistrate Henry Maleb", map = 1424, x = 48.1, y = 59.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 659, title = "Hints of a New Plague? (1)", npc = 2711, npcName = "Phin Odelic", map = 1424, x = 50.3, y = 59.0, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 9435, title = "Missing Crystals", npc = 17218, npcName = "Huraan", map = 1424, x = 51.0, y = 58.7, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "sethome", location = "Southshore", text = "Southshore", f = "e" },
 				},
 			},
 		},

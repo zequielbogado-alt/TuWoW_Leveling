@@ -5,16 +5,58 @@ do
 	Polestar.RegisterGuide({
 		id = "zygor/leveling/a-night-elf-1-13-part-2",
 		pack = "guides",
-		title = "Night Elf (1-13) (Parte 2/2)",
+		title = "Night Elf (1-13) (Parte 2/3)",
 		category = "Leveling",
 		faction = "Alliance",
+		next = "zygor/leveling/a-night-elf-1-13-part-3",
 		author = "TuWoW & Zygor",
-		minLevel = 10,
+		minLevel = 9,
 		maxLevel = 13,
 		zone = 1438,
 		version = 1,
 		races = { "NightElf" },
 		steps = {
+			{
+				goals = {
+					{ t = "accept", quest = 930, title = "The Glowing Fruit", map = 1438, x = 42.6, y = 76.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 930, title = "The Glowing Fruit", npc = 2080, npcName = "Denalan", map = 1438, x = 60.9, y = 68.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 933, title = "Crown of the Earth (4)", npc = 3515, npcName = "Corithras Moonrage", map = 1438, x = 56.1, y = 61.7, f = "e" },
+					{ t = "accept", quest = 7383, title = "Crown of the Earth (5)", npc = 3515, npcName = "Corithras Moonrage", map = 1438, x = 56.1, y = 61.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 487, title = "The Road to Darnassus", npc = 2151, npcName = "Moon Priestess Amara", map = 1438, x = 52.4, y = 56.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 937, title = "The Enchanted Glade", npc = 3519, npcName = "Sentinel Arynia Cloudsbreak", map = 1438, x = 38.3, y = 34.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 7383, itemName = "Filled Amethyst Phial", count = 1, oi = 1, map = 1438, x = 38.4, y = 34.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 937, itemName = "Bloodfeather Belt", count = 6, oi = 1, map = 1438, x = 37.4, y = 37.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 10, f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "turnin", quest = 937, title = "The Enchanted Glade", npc = 3519, npcName = "Sentinel Arynia Cloudsbreak", map = 1438, x = 38.3, y = 34.4, f = "e" },
@@ -38,40 +80,151 @@ do
 				},
 			},
 			{
-				note = "Follow the path up to 47.4,63.6",
-				only = { races = { "NightElf" } },
+				only = { races = { "NightElf" }, classes = { "WARRIOR" } },
 				goals = {
 					{ t = "accept", quest = 1684, title = "Elanaria", npc = 3598, npcName = "Kyra Windblade", map = 1438, x = 56.2, y = 59.2, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "WARRIOR" } },
+				goals = {
 					{ t = "turnin", quest = 1684, title = "Elanaria", npc = 4088, npcName = "Elanaria", map = 1457, x = 57.3, y = 34.6, f = "e" },
 					{ t = "accept", quest = 1683, title = "Vorlus Vilehoof", npc = 4088, npcName = "Elanaria", map = 1457, x = 57.3, y = 34.6, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "WARRIOR" } },
+				goals = {
+					{ t = "goto", map = 1457, x = 49.0, y = 62.0, f = "e" },
+				},
+			},
+			{
+				note = "Follow the path up to 47.4,63.6",
+				only = { races = { "NightElf" }, classes = { "WARRIOR" } },
+				goals = {
 					{ t = "collect", quest = 1683, itemName = "Horn of Vorlus", count = 1, oi = 1, map = 1457, x = 47.4, y = 63.6, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "WARRIOR" } },
+				goals = {
 					{ t = "turnin", quest = 1683, title = "Vorlus Vilehoof", npc = 4088, npcName = "Elanaria", map = 1457, x = 57.3, y = 34.6, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "HUNTER" } },
+				goals = {
 					{ t = "accept", quest = 6063, title = "Taming the Beast (1)", npc = 3601, npcName = "Dazalar", map = 1438, x = 56.7, y = 59.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "HUNTER" } },
+				goals = {
+					{ t = "goto", map = 1438, x = 59.0, y = 60.0, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "HUNTER" } },
+				goals = {
 					{ t = "turnin", quest = 6063, title = "Taming the Beast (1)", npc = 3601, npcName = "Dazalar", map = 1438, x = 56.7, y = 59.5, f = "e" },
 					{ t = "accept", quest = 6101, title = "Taming the Beast (2)", npc = 3601, npcName = "Dazalar", map = 1438, x = 56.7, y = 59.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "HUNTER" } },
+				goals = {
+					{ t = "goto", map = 1438, x = 56.0, y = 72.0, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "HUNTER" } },
+				goals = {
 					{ t = "turnin", quest = 6101, title = "Taming the Beast (2)", npc = 3601, npcName = "Dazalar", map = 1438, x = 56.7, y = 59.5, f = "e" },
 					{ t = "accept", quest = 6102, title = "Taming the Beast (3)", npc = 3601, npcName = "Dazalar", map = 1438, x = 56.7, y = 59.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "HUNTER" } },
+				goals = {
+					{ t = "goto", map = 1438, x = 38.9, y = 51.7, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "HUNTER" } },
+				goals = {
 					{ t = "turnin", quest = 6102, title = "Taming the Beast (3)", npc = 3601, npcName = "Dazalar", map = 1438, x = 56.7, y = 59.5, f = "e" },
 					{ t = "accept", quest = 6103, title = "Training the Beast", npc = 3601, npcName = "Dazalar", map = 1438, x = 56.7, y = 59.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "HUNTER" } },
+				goals = {
 					{ t = "turnin", quest = 6103, title = "Training the Beast", npc = 4146, npcName = "Jocaste", map = 1457, x = 40.4, y = 8.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "DRUID" } },
+				goals = {
 					{ t = "accept", quest = 5925, title = "Heeding the Call", npc = 3602, npcName = "Kal", map = 1438, x = 56.0, y = 61.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "DRUID" } },
+				goals = {
 					{ t = "turnin", quest = 5925, title = "Heeding the Call", npc = 4217, npcName = "Mathrengyl Bearwalker", map = 1457, x = 35.2, y = 8.1, f = "e" },
 					{ t = "accept", quest = 5921, title = "Moonglade", npc = 4217, npcName = "Mathrengyl Bearwalker", map = 1457, x = 35.2, y = 8.1, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "DRUID" } },
+				goals = {
 					{ t = "turnin", quest = 5921, title = "Moonglade", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.2, y = 30.5, f = "e" },
 					{ t = "accept", quest = 5929, title = "Great Bear Spirit", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.2, y = 30.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "talk", npc = 11956, npcName = "Great Bear Spirit", map = 1450, x = 39.1, y = 27.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "DRUID" } },
+				goals = {
 					{ t = "turnin", quest = 5929, title = "Great Bear Spirit", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.2, y = 30.5, f = "e" },
 					{ t = "accept", quest = 5931, title = "Back to Darnassus", npc = 11802, npcName = "Dendrite Starblaze", map = 1450, x = 56.2, y = 30.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "talk", npc = 11800, npcName = "Silva Fil'naveth", map = 1450, x = 44.2, y = 45.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "DRUID" } },
+				goals = {
 					{ t = "turnin", quest = 5931, title = "Back to Darnassus", npc = 4217, npcName = "Mathrengyl Bearwalker", map = 1457, x = 35.2, y = 8.1, f = "e" },
 					{ t = "accept", quest = 6001, title = "Body and Heart", npc = 4217, npcName = "Mathrengyl Bearwalker", map = 1457, x = 35.2, y = 8.1, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "goto", map = 1457, x = 31.0, y = 42.0, f = "e" },
+				},
+			},
+			{
+				note = "Go into the cave at 43,46|goto Darkshore,43,46",
+				only = { races = { "NightElf" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "talk", npc = 12144, npcName = "Lunaclaw Spirit", f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "DRUID" } },
+				goals = {
 					{ t = "turnin", quest = 6001, title = "Body and Heart", npc = 4217, npcName = "Mathrengyl Bearwalker", map = 1457, x = 35.2, y = 8.1, f = "e" },
-					{ t = "goto", map = 1457, x = 49.0, y = 62.0, f = "e", only = { classes = { "WARRIOR" } } },
-					{ t = "goto", map = 1438, x = 59.0, y = 60.0, f = "e", only = { classes = { "HUNTER" } } },
-					{ t = "goto", map = 1438, x = 56.0, y = 72.0, f = "e", only = { classes = { "HUNTER" } } },
-					{ t = "goto", map = 1438, x = 38.9, y = 51.7, f = "e", only = { classes = { "HUNTER" } } },
-					{ t = "talk", npc = 11956, npcName = "Great Bear Spirit", map = 1450, x = 39.1, y = 27.3, f = "e", only = { classes = { "DRUID" } } },
-					{ t = "talk", npc = 11800, npcName = "Silva Fil'naveth", map = 1450, x = 44.2, y = 45.3, f = "e", only = { classes = { "DRUID" } } },
-					{ t = "goto", map = 1457, x = 31.0, y = 42.0, f = "e", only = { classes = { "DRUID" } } },
-					{ t = "talk", npc = 12144, npcName = "Lunaclaw Spirit", f = "e", only = { classes = { "DRUID" } } },
 				},
 			},
 			{
@@ -342,6 +495,24 @@ do
 					{ t = "turnin", quest = 418, title = "Thelsamar Blood Sausages", npc = 1963, npcName = "Vidra Hearthstove", map = 1432, x = 34.8, y = 49.3, f = "e" },
 				},
 			},
+		},
+	})
+end
+
+do
+	Polestar.RegisterGuide({
+		id = "zygor/leveling/a-night-elf-1-13-part-3",
+		pack = "guides",
+		title = "Night Elf (1-13) (Parte 3/3)",
+		category = "Leveling",
+		faction = "Alliance",
+		author = "TuWoW & Zygor",
+		minLevel = 12,
+		maxLevel = 13,
+		zone = 1438,
+		version = 1,
+		races = { "NightElf" },
+		steps = {
 			{
 				goals = {
 					{ t = "turnin", quest = 416, title = "Rat Catching", npc = 1340, npcName = "Mountaineer Kadrell", map = 1432, x = 34.8, y = 47.1, f = "e" },

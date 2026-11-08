@@ -5,7 +5,7 @@ do
 	Polestar.RegisterGuide({
 		id = "zygor/leveling/a-draenei-1-13",
 		pack = "guides",
-		title = "Draenei (1-13) (Parte 1/2)",
+		title = "Draenei (1-13) (Parte 1/3)",
 		category = "Leveling",
 		faction = "Alliance",
 		next = "zygor/leveling/a-draenei-1-13-part-2",
@@ -63,14 +63,39 @@ do
 				},
 			},
 			{
-				only = { races = { "Draenei" } },
+				only = { races = { "Draenei" }, classes = { "MAGE" } },
 				goals = {
-					{ t = "accept", quest = 9290, title = "Mage Training", npc = 16500, npcName = "Valaatu", map = 1941, x = 79.6, y = 48.8, f = "e", only = { classes = { "MAGE" } } },
-					{ t = "accept", quest = 9289, title = "Warrior Training", npc = 16503, npcName = "Kore", map = 1941, x = 79.6, y = 49.4, f = "e", only = { classes = { "WARRIOR" } } },
-					{ t = "accept", quest = 9421, title = "Shaman Training", npc = 17089, npcName = "Firmanvaar", map = 1941, x = 79.3, y = 49.1, f = "e", only = { classes = { "SHAMAN" } } },
-					{ t = "accept", quest = 9291, title = "Priest Training", npc = 16502, npcName = "Zalduun", map = 1941, x = 80.1, y = 48.8, f = "e", only = { classes = { "PRIEST" } } },
-					{ t = "accept", quest = 9287, title = "Paladin Training", npc = 16501, npcName = "Aurelon", map = 1941, x = 79.7, y = 48.2, f = "e", only = { classes = { "PALADIN" } } },
-					{ t = "accept", quest = 9288, title = "Hunter Training", npc = 16499, npcName = "Keilnei", map = 1941, x = 79.9, y = 49.7, f = "e", only = { classes = { "HUNTER" } } },
+					{ t = "accept", quest = 9290, title = "Mage Training", npc = 16500, npcName = "Valaatu", map = 1941, x = 79.6, y = 48.8, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "WARRIOR" } },
+				goals = {
+					{ t = "accept", quest = 9289, title = "Warrior Training", npc = 16503, npcName = "Kore", map = 1941, x = 79.6, y = 49.4, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
+				goals = {
+					{ t = "accept", quest = 9421, title = "Shaman Training", npc = 17089, npcName = "Firmanvaar", map = 1941, x = 79.3, y = 49.1, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "PRIEST" } },
+				goals = {
+					{ t = "accept", quest = 9291, title = "Priest Training", npc = 16502, npcName = "Zalduun", map = 1941, x = 80.1, y = 48.8, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "PALADIN" } },
+				goals = {
+					{ t = "accept", quest = 9287, title = "Paladin Training", npc = 16501, npcName = "Aurelon", map = 1941, x = 79.7, y = 48.2, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "HUNTER" } },
+				goals = {
+					{ t = "accept", quest = 9288, title = "Hunter Training", npc = 16499, npcName = "Keilnei", map = 1941, x = 79.9, y = 49.7, f = "e" },
 				},
 			},
 			{
@@ -474,36 +499,6 @@ do
 				goals = {
 					{ t = "turnin", quest = 9540, title = "Totem of Tikti", f = "e" },
 					{ t = "accept", quest = 9541, title = "Totem of Yor", f = "e" },
-				},
-			},
-			{
-				note = "Follow the ghost furbolg to the river",
-				goals = {
-					{ t = "turnin", quest = 9541, title = "Totem of Yor", f = "e" },
-					{ t = "accept", quest = 9542, title = "Totem of Vark", f = "e" },
-				},
-			},
-			{
-				note = "Follow the ghost furbolg out of the water",
-				goals = {
-					{ t = "turnin", quest = 9542, title = "Totem of Vark", f = "e" },
-					{ t = "accept", quest = 9544, title = "The Prophecy of Akida", f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", item = 23801, itemName = "Bristlelimb Key", count = 8, map = 1941, x = 28.5, y = 66.4, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 1941, x = 27.0, y = 76.7, f = "e" },
-				},
-			},
-			{
-				note = "Follow the path to the bottom of the cave to 25.2,74.2",
-				goals = {
-					{ t = "kill", quest = 9515, target = "Warlord Sriss'tiz", count = 1, oi = 1, map = 1941, x = 25.2, y = 74.2, f = "e" },
 				},
 			},
 		},

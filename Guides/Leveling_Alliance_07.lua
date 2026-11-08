@@ -37,13 +37,48 @@ do
 					{ t = "turnin", quest = 179, title = "Dwarven Outfitters", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
 					{ t = "accept", quest = 233, title = "Coldridge Valley Mail Delivery (1)", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
 					{ t = "accept", quest = 170, title = "A New Threat", npc = 713, npcName = "Balir Frosthammer", map = 1426, x = 29.8, y = 71.3, f = "e" },
-					{ t = "accept", quest = 3114, title = "Glyphic Memorandum", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e", only = { classes = { "MAGE" } } },
-					{ t = "accept", quest = 3112, title = "Simple Memorandum", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e", only = { classes = { "WARRIOR" } } },
-					{ t = "accept", quest = 3115, title = "Tainted Memorandum", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e", only = { classes = { "WARLOCK" } } },
-					{ t = "accept", quest = 3113, title = "Encrypted Memorandum", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e", only = { classes = { "ROGUE" } } },
-					{ t = "accept", quest = 3108, title = "Etched Rune", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e", only = { classes = { "HUNTER" } } },
-					{ t = "accept", quest = 3110, title = "Hallowed Rune", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e", only = { classes = { "PRIEST" } } },
-					{ t = "accept", quest = 3107, title = "Consecrated Rune", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e", only = { classes = { "PALADIN" } } },
+				},
+			},
+			{
+				only = { races = { "Dwarf" }, classes = { "WARRIOR" } },
+				goals = {
+					{ t = "accept", quest = 3106, title = "Simple Rune", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Dwarf" }, classes = { "ROGUE" } },
+				goals = {
+					{ t = "accept", quest = 3109, title = "Encrypted Rune", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Dwarf" }, classes = { "PRIEST" } },
+				goals = {
+					{ t = "accept", quest = 3110, title = "Hallowed Rune", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Dwarf" }, classes = { "PALADIN" } },
+				goals = {
+					{ t = "accept", quest = 3107, title = "Consecrated Rune", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Dwarf" }, classes = { "HUNTER" } },
+				goals = {
+					{ t = "accept", quest = 3108, title = "Etched Rune", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "MAGE" } },
+				goals = {
+					{ t = "accept", quest = 3114, title = "Glyphic Memorandum", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "WARLOCK" } },
+				goals = {
+					{ t = "accept", quest = 3115, title = "Tainted Memorandum", npc = 658, npcName = "Sten Stoutarm", map = 1426, x = 29.8, y = 71.3, f = "e" },
 				},
 			},
 			{
@@ -68,17 +103,45 @@ do
 				},
 			},
 			{
-				only = { races = { "Dwarf" } },
+				only = { races = { "Dwarf" }, classes = { "WARRIOR" } },
 				goals = {
-					{ t = "turnin", quest = 3114, title = "Glyphic Memorandum", npc = 944, npcName = "Marryk Nurribit", map = 1426, x = 28.7, y = 66.4, f = "e", only = { classes = { "MAGE" } } },
-					{ t = "turnin", quest = 3112, title = "Simple Memorandum", npc = 912, npcName = "Thran Khorman", map = 1426, x = 28.8, y = 67.2, f = "e", only = { classes = { "WARRIOR" } } },
-					{ t = "turnin", quest = 3106, title = "Simple Rune", npc = 912, npcName = "Thran Khorman", map = 1426, x = 28.8, y = 67.2, f = "e", only = { classes = { "WARRIOR" } } },
-					{ t = "turnin", quest = 3115, title = "Tainted Memorandum", npc = 460, npcName = "Alamar Grimm", map = 1426, x = 28.7, y = 66.1, f = "e", only = { classes = { "WARLOCK" } } },
-					{ t = "turnin", quest = 3113, title = "Encrypted Memorandum", npc = 916, npcName = "Solm Hargrin", map = 1426, x = 28.4, y = 67.5, f = "e", only = { classes = { "ROGUE" } } },
-					{ t = "turnin", quest = 3109, title = "Encrypted Rune", npc = 916, npcName = "Solm Hargrin", map = 1426, x = 28.4, y = 67.5, f = "e", only = { classes = { "ROGUE" } } },
-					{ t = "turnin", quest = 3108, title = "Etched Rune", npc = 895, npcName = "Thorgas Grimson", map = 1426, x = 29.2, y = 67.5, f = "e", only = { classes = { "HUNTER" } } },
-					{ t = "turnin", quest = 3110, title = "Hallowed Rune", npc = 837, npcName = "Branstock Khalder", map = 1426, x = 28.6, y = 66.4, f = "e", only = { classes = { "PRIEST" } } },
-					{ t = "turnin", quest = 3107, title = "Consecrated Rune", npc = 926, npcName = "Bromos Grummner", map = 1426, x = 28.8, y = 68.3, f = "e", only = { classes = { "PALADIN" } } },
+					{ t = "turnin", quest = 3106, title = "Simple Rune", npc = 912, npcName = "Thran Khorman", map = 1426, x = 28.8, y = 67.2, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Dwarf" }, classes = { "ROGUE" } },
+				goals = {
+					{ t = "turnin", quest = 3109, title = "Encrypted Rune", npc = 916, npcName = "Solm Hargrin", map = 1426, x = 28.4, y = 67.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Dwarf" }, classes = { "PRIEST" } },
+				goals = {
+					{ t = "turnin", quest = 3110, title = "Hallowed Rune", npc = 837, npcName = "Branstock Khalder", map = 1426, x = 28.6, y = 66.4, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Dwarf" }, classes = { "PALADIN" } },
+				goals = {
+					{ t = "turnin", quest = 3107, title = "Consecrated Rune", npc = 926, npcName = "Bromos Grummner", map = 1426, x = 28.8, y = 68.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Dwarf" }, classes = { "HUNTER" } },
+				goals = {
+					{ t = "turnin", quest = 3108, title = "Etched Rune", npc = 895, npcName = "Thorgas Grimson", map = 1426, x = 29.2, y = 67.5, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "MAGE" } },
+				goals = {
+					{ t = "turnin", quest = 3114, title = "Glyphic Memorandum", npc = 944, npcName = "Marryk Nurribit", map = 1426, x = 28.7, y = 66.4, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "WARLOCK" } },
+				goals = {
+					{ t = "turnin", quest = 3115, title = "Tainted Memorandum", npc = 460, npcName = "Alamar Grimm", map = 1426, x = 28.7, y = 66.1, f = "e" },
 				},
 			},
 			{
@@ -428,94 +491,6 @@ do
 			{
 				goals = {
 					{ t = "level", level = 10, f = "e" },
-				},
-			},
-			{
-				only = { races = { "Dwarf" } },
-				goals = {
-					{ t = "accept", quest = 1679, title = "Muren Stormpike", npc = 1229, npcName = "Granis Swiftaxe", map = 1426, x = 47.4, y = 52.6, f = "e" },
-					{ t = "turnin", quest = 1679, title = "Muren Stormpike", npc = 6114, npcName = "Muren Stormpike", map = 1455, x = 70.8, y = 90.3, f = "e" },
-					{ t = "accept", quest = 1678, title = "Vejrek", npc = 6114, npcName = "Muren Stormpike", map = 1455, x = 70.8, y = 90.3, f = "e" },
-					{ t = "collect", quest = 1678, itemName = "Vejrek's Head", count = 1, oi = 1, map = 1426, x = 27.8, y = 58.0, f = "e" },
-					{ t = "turnin", quest = 1678, title = "Vejrek", npc = 6114, npcName = "Muren Stormpike", map = 1455, x = 70.8, y = 90.3, f = "e" },
-					{ t = "accept", quest = 6064, title = "Taming the Beast (1)", npc = 1231, npcName = "Grif Wildheart", map = 1426, x = 45.8, y = 53.0, f = "e" },
-					{ t = "turnin", quest = 6064, title = "Taming the Beast (1)", npc = 1231, npcName = "Grif Wildheart", map = 1426, x = 45.8, y = 53.0, f = "e" },
-					{ t = "accept", quest = 6084, title = "Taming the Beast (2)", npc = 1231, npcName = "Grif Wildheart", map = 1426, x = 45.8, y = 53.0, f = "e" },
-					{ t = "turnin", quest = 6084, title = "Taming the Beast (2)", npc = 1231, npcName = "Grif Wildheart", map = 1426, x = 45.8, y = 53.0, f = "e" },
-					{ t = "accept", quest = 6085, title = "Taming the Beast (3)", npc = 1231, npcName = "Grif Wildheart", map = 1426, x = 45.8, y = 53.0, f = "e" },
-					{ t = "turnin", quest = 6085, title = "Taming the Beast (3)", npc = 1231, npcName = "Grif Wildheart", map = 1426, x = 45.8, y = 53.0, f = "e" },
-					{ t = "accept", quest = 6086, title = "Training the Beast", npc = 1231, npcName = "Grif Wildheart", map = 1426, x = 45.8, y = 53.0, f = "e" },
-					{ t = "turnin", quest = 6086, title = "Training the Beast", npc = 10090, npcName = "Belia Thundergranite", map = 1455, x = 70.9, y = 85.8, f = "e" },
-					{ t = "goto", map = 1426, x = 47.9, y = 56.6, f = "e", only = { classes = { "HUNTER" } } },
-					{ t = "goto", map = 1426, x = 48.5, y = 56.4, f = "e", only = { classes = { "HUNTER" } } },
-					{ t = "goto", map = 1426, x = 49.3, y = 62.3, f = "e", only = { classes = { "HUNTER" } } },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 413, title = "Shimmer Stout", npc = 1959, npcName = "Mountaineer Barleybrew", map = 1426, x = 86.3, y = 48.8, f = "e" },
-					{ t = "accept", quest = 414, title = "Stout to Kadrell", npc = 1959, npcName = "Mountaineer Barleybrew", map = 1426, x = 86.3, y = 48.8, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "getfp", location = "Thelsamar", text = "Thelsamar", map = 1432, x = 33.9, y = 51.0, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 414, title = "Stout to Kadrell", npc = 1340, npcName = "Mountaineer Kadrell", map = 1432, x = 34.8, y = 47.1, f = "e" },
-					{ t = "accept", quest = 416, title = "Rat Catching", npc = 1340, npcName = "Mountaineer Kadrell", map = 1432, x = 34.8, y = 47.1, f = "e" },
-					{ t = "accept", quest = 1339, title = "Mountaineer Stormpike's Task", npc = 1340, npcName = "Mountaineer Kadrell", map = 1432, x = 34.8, y = 47.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "sethome", location = "Thelsamar", text = "Thelsamar", f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 418, title = "Thelsamar Blood Sausages", npc = 1963, npcName = "Vidra Hearthstove", map = 1432, x = 34.8, y = 49.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 418, itemName = "Boar Intestines", count = 3, oi = 1, map = 1432, x = 37.4, y = 38.9, f = "e" },
-					{ t = "collect", quest = 418, itemName = "Bear Meat", count = 3, oi = 2, map = 1432, x = 37.4, y = 38.9, f = "e" },
-					{ t = "collect", quest = 418, itemName = "Spider Ichor", count = 3, oi = 3, map = 1432, x = 37.4, y = 38.9, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 416, itemName = "Tunnel Rat Ear", count = 12, oi = 1, map = 1432, x = 24.5, y = 33.6, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "level", level = 11, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 1339, title = "Mountaineer Stormpike's Task", npc = 1343, npcName = "Mountaineer Stormpike", map = 1432, x = 24.8, y = 18.4, f = "e" },
-					{ t = "accept", quest = 1338, title = "Stormpike's Order", npc = 1343, npcName = "Mountaineer Stormpike", map = 1432, x = 24.8, y = 18.4, f = "e" },
-				},
-			},
-			{
-				note = "Hearth to Thelsamar|goto Loch Modan,35.5,48.3,0.5|use Hearthstone##6948|noway|c",
-				goals = {
-					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 418, title = "Thelsamar Blood Sausages", npc = 1963, npcName = "Vidra Hearthstove", map = 1432, x = 34.8, y = 49.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 416, title = "Rat Catching", npc = 1340, npcName = "Mountaineer Kadrell", map = 1432, x = 34.8, y = 47.1, f = "e" },
 				},
 			},
 		},

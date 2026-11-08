@@ -40,50 +40,183 @@ do
 				},
 			},
 			{
-				note = "Fly to Camp Taurajo|goto The Barrens,44.5,59.1,0.5|noway|c",
+				only = { classes = { "WARLOCK" } },
 				goals = {
 					{ t = "accept", quest = 1507, title = "Devourer of Souls", npc = 5875, npcName = "Gan'rul Bloodeye", map = 1454, x = 48.2, y = 45.3, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "WARLOCK" } },
+				goals = {
 					{ t = "turnin", quest = 1507, title = "Devourer of Souls", npc = 5909, npcName = "Cazul", map = 1454, x = 47.8, y = 46.9, f = "e" },
 					{ t = "accept", quest = 1508, title = "Blind Cazul", npc = 5909, npcName = "Cazul", map = 1454, x = 47.8, y = 46.9, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "WARLOCK" } },
+				goals = {
 					{ t = "turnin", quest = 1508, title = "Blind Cazul", npc = 5910, npcName = "Zankaja", map = 1454, x = 37.1, y = 59.4, f = "e" },
 					{ t = "accept", quest = 1509, title = "News of Dogran (1)", npc = 5910, npcName = "Zankaja", map = 1454, x = 37.1, y = 59.4, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "WARLOCK" } },
+				goals = {
 					{ t = "turnin", quest = 1509, title = "News of Dogran (1)", npc = 3464, npcName = "Gazrog", map = 1413, x = 51.9, y = 30.3, f = "e" },
 					{ t = "accept", quest = 1510, title = "News of Dogran (2)", npc = 3464, npcName = "Gazrog", map = 1413, x = 51.9, y = 30.3, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "WARLOCK" } },
+				goals = {
 					{ t = "turnin", quest = 1510, title = "News of Dogran (2)", npc = 4197, npcName = "Ken'zigla", map = 1442, x = 73.26, y = 95.14, f = "e" },
 					{ t = "accept", quest = 1511, title = "Ken'zigla's Draught", npc = 4197, npcName = "Ken'zigla", map = 1442, x = 73.26, y = 95.14, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "WARLOCK" } },
+				goals = {
 					{ t = "turnin", quest = 1511, title = "Ken'zigla's Draught", npc = 5911, npcName = "Grunt Logmar", map = 1442, x = 44.6, y = 59.3, f = "e" },
 					{ t = "accept", quest = 1515, title = "Dogran's Captivity", npc = 5911, npcName = "Grunt Logmar", map = 1442, x = 44.6, y = 59.3, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "WARLOCK" } },
+				goals = {
 					{ t = "turnin", quest = 1515, title = "Dogran's Captivity", npc = 5908, npcName = "Grunt Dogran", map = 1442, x = 43.3, y = 48.0, f = "e" },
 					{ t = "accept", quest = 1512, title = "Love's Gift", npc = 5908, npcName = "Grunt Dogran", map = 1442, x = 43.3, y = 48.0, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "WARLOCK" } },
+				goals = {
 					{ t = "turnin", quest = 1512, title = "Love's Gift", npc = 5875, npcName = "Gan'rul Bloodeye", map = 1454, x = 48.2, y = 45.3, f = "e" },
 					{ t = "accept", quest = 1513, title = "The Binding", npc = 5875, npcName = "Gan'rul Bloodeye", map = 1454, x = 48.2, y = 45.3, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "WARLOCK" } },
+				goals = {
 					{ t = "kill", quest = 1513, target = "Summoned Succubus", count = 1, oi = 1, map = 1454, x = 49.4, y = 50.1, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "WARLOCK" } },
+				goals = {
 					{ t = "turnin", quest = 1513, title = "The Binding", npc = 5875, npcName = "Gan'rul Bloodeye", map = 1454, x = 48.2, y = 45.3, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "SHAMAN" } },
+				goals = {
 					{ t = "accept", quest = 1528, title = "Call of Water (1)", npc = 5892, npcName = "Searn Firewarder", map = 1454, x = 38.0, y = 38.3, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "SHAMAN" } },
+				goals = {
 					{ t = "turnin", quest = 1528, title = "Call of Water (1)", npc = 5901, npcName = "Islen Waterseer", map = 1413, x = 65.8, y = 43.8, f = "e" },
 					{ t = "accept", quest = 1530, title = "Call of Water (2)", npc = 5901, npcName = "Islen Waterseer", map = 1413, x = 65.8, y = 43.8, f = "e" },
+				},
+			},
+			{
+				note = "Fly to Camp Taurajo|goto The Barrens,44.5,59.1,0.5|noway|c",
+				only = { classes = { "SHAMAN" } },
+				goals = {
+					{ t = "talk", npc = 16227, npcName = "Bragok", map = 1413, x = 63.1, y = 37.2, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "SHAMAN" } },
+				goals = {
 					{ t = "turnin", quest = 1530, title = "Call of Water (2)", npc = 5899, npcName = "Brine", map = 1413, x = 43.4, y = 77.4, f = "e" },
 					{ t = "accept", quest = 1535, title = "Call of Water (3)", npc = 5899, npcName = "Brine", map = 1413, x = 43.4, y = 77.4, f = "e" },
+				},
+			},
+			{
+				note = "Go down the hill to the pond at 44,77",
+				only = { classes = { "SHAMAN" } },
+				goals = {
 					{ t = "collect", quest = 1535, itemName = "Filled Brown Waterskin", count = 1, oi = 1, map = 1413, x = 44.2, y = 77.0, f = "e" },
+				},
+			},
+			{
+				note = "Go back up the hill to 43,77",
+				only = { classes = { "SHAMAN" } },
+				goals = {
 					{ t = "turnin", quest = 1535, title = "Call of Water (3)", npc = 5899, npcName = "Brine", map = 1413, x = 43.4, y = 77.4, f = "e" },
 					{ t = "accept", quest = 1536, title = "Call of Water (4)", npc = 5899, npcName = "Brine", map = 1413, x = 43.4, y = 77.4, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "SHAMAN" } },
+				goals = {
 					{ t = "collect", quest = 1536, itemName = "Filled Red Waterskin", count = 1, oi = 1, map = 1424, x = 62.2, y = 20.8, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "SHAMAN" } },
+				goals = {
+					{ t = "goto", map = 1420, x = 60.8, y = 58.8, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "SHAMAN" } },
+				goals = {
 					{ t = "turnin", quest = 1536, title = "Call of Water (4)", npc = 5899, npcName = "Brine", map = 1413, x = 43.4, y = 77.4, f = "e" },
 					{ t = "accept", quest = 1534, title = "Call of Water (5)", npc = 5899, npcName = "Brine", map = 1413, x = 43.4, y = 77.4, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "SHAMAN" } },
+				goals = {
 					{ t = "collect", quest = 1534, itemName = "Filled Blue Waterskin", count = 1, oi = 1, map = 1440, x = 33.6, y = 67.5, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "SHAMAN" } },
+				goals = {
 					{ t = "turnin", quest = 1534, title = "Call of Water (5)", npc = 5899, npcName = "Brine", map = 1413, x = 43.4, y = 77.4, f = "e" },
 					{ t = "accept", quest = 220, title = "Call of Water (6)", npc = 5899, npcName = "Brine", map = 1413, x = 43.4, y = 77.4, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "SHAMAN" } },
+				goals = {
 					{ t = "turnin", quest = 220, title = "Call of Water (6)", npc = 5901, npcName = "Islen Waterseer", map = 1413, x = 65.8, y = 43.8, f = "e" },
 					{ t = "accept", quest = 63, title = "Call of Water (7)", npc = 5901, npcName = "Islen Waterseer", map = 1413, x = 65.8, y = 43.8, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "SHAMAN" } },
+				goals = {
 					{ t = "collect", quest = 63, itemName = "Corrupt Manifestation's Bracers", count = 1, oi = 1, map = 1421, x = 38.8, y = 44.2, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "SHAMAN" } },
+				goals = {
 					{ t = "turnin", quest = 63, title = "Call of Water (7)", map = 1421, x = 38.3, y = 44.6, f = "e" },
 					{ t = "accept", quest = 100, title = "Call of Water (8)", map = 1421, x = 38.3, y = 44.6, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "SHAMAN" } },
+				goals = {
 					{ t = "turnin", quest = 100, title = "Call of Water (8)", npc = 5895, npcName = "the Minor Manifestation of Water", map = 1421, x = 38.8, y = 44.6, f = "e" },
 					{ t = "accept", quest = 96, title = "Call of Water (9)", npc = 5895, npcName = "the Minor Manifestation of Water", map = 1421, x = 38.8, y = 44.6, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "SHAMAN" } },
+				goals = {
+					{ t = "goto", map = 1420, x = 60.8, y = 58.8, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "SHAMAN" } },
+				goals = {
 					{ t = "turnin", quest = 96, title = "Call of Water (9)", npc = 5901, npcName = "Islen Waterseer", map = 1413, x = 65.8, y = 43.8, f = "e" },
-					{ t = "talk", npc = 16227, npcName = "Bragok", map = 1413, x = 63.1, y = 37.2, f = "e", only = { classes = { "SHAMAN" } } },
-					{ t = "goto", map = 1420, x = 60.8, y = 58.8, f = "e", only = { classes = { "SHAMAN" } } },
-					{ t = "goto", map = 1420, x = 60.8, y = 58.8, f = "e", only = { classes = { "SHAMAN" } } },
 				},
 			},
 			{
@@ -377,145 +510,6 @@ do
 				note = "Hearth to the Crossroads|goto The Barrens,52.0,29.9,0.1|use hearthstone##6948|noway|c",
 				goals = {
 					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 3261, title = "Jorn Skyseer", npc = 3387, npcName = "Jorn Skyseer", map = 1440, x = 44.9, y = 59.1, f = "e" },
-					{ t = "accept", quest = 882, title = "Ishamuhale", npc = 3387, npcName = "Jorn Skyseer", map = 1440, x = 44.9, y = 59.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "sethome", location = "Camp Taurajo", text = "Camp Taurajo", f = "e" },
-				},
-			},
-			{
-				note = "Click Chen's Empty Keg",
-				goals = {
-					{ t = "collect", itemName = "Chen's Empty Keg", count = 1, map = 1440, x = 45.0, y = 62.2, f = "e" },
-					{ t = "accept", quest = 819, title = "Chen's Empty Keg", map = 1440, x = 45.0, y = 62.2, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 868, itemName = "Silithid Egg", count = 12, oi = 1, map = 1440, x = 45.1, y = 69.2, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 843, title = "Gann's Reclamation", npc = 3341, npcName = "Gann Stonespire", map = 1440, x = 46.0, y = 79.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 879, itemName = "Kuz's Skull", count = 1, oi = 1, map = 1440, x = 43.4, y = 80.5, f = "e" },
-					{ t = "collect", quest = 893, itemName = "Razormane Backstabber", count = 1, oi = 1, map = 1440, x = 43.4, y = 80.5, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 893, itemName = "Charred Razormane Wand", count = 1, oi = 2, map = 1440, x = 42.0, y = 78.9, f = "e" },
-					{ t = "collect", quest = 893, itemName = "Razormane War Shield", count = 1, oi = 3, map = 1440, x = 42.0, y = 78.9, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 1440, x = 41.1, y = 80.6, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 879, itemName = "Lok's Skull", count = 1, oi = 3, map = 1440, x = 40.1, y = 80.6, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 879, itemName = "Nak's Skull", count = 1, oi = 2, map = 1440, x = 43.9, y = 83.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", quest = 843, target = "Bael'dun Excavator", count = 15, oi = 1, map = 1440, x = 46.5, y = 85.2, f = "e" },
-					{ t = "kill", quest = 843, target = "Bael'dun Foreman", count = 5, oi = 2, map = 1440, x = 46.5, y = 85.2, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 843, itemName = "Khazgorm's Journal", count = 1, oi = 3, map = 1440, x = 47.3, y = 84.9, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 843, title = "Gann's Reclamation", npc = 3341, npcName = "Gann Stonespire", map = 1440, x = 46.0, y = 79.1, f = "e" },
-					{ t = "accept", quest = 846, title = "Revenge of Gann (1)", npc = 3341, npcName = "Gann Stonespire", map = 1440, x = 46.0, y = 79.1, f = "e" },
-				},
-			},
-			{
-				note = "Hearth to Camp Taurajo|goto The Barrens,45.5,59.0,0.5|use hearthstone##6948|noway|c",
-				goals = {
-					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 893, title = "Weapons of Choice", npc = 3433, npcName = "Tatternack Steelforge", map = 1440, x = 45.1, y = 57.7, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 879, title = "Betrayal from Within (1)", npc = 3430, npcName = "Mangletooth", map = 1440, x = 44.6, y = 59.2, f = "e" },
-					{ t = "accept", quest = 906, title = "Betrayal from Within (2)", npc = 3430, npcName = "Mangletooth", map = 1440, x = 44.6, y = 59.2, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "level", level = 23, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 906, title = "Betrayal from Within (2)", npc = 3429, npcName = "Thork", map = 1440, x = 51.5, y = 30.9, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 868, title = "Egg Hunt", npc = 3428, npcName = "Korran", map = 1440, x = 51.1, y = 29.6, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 882, itemName = "Ishamuhale's Fang", count = 1, oi = 1, map = 1440, x = 59.8, y = 30.0, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 819, title = "Chen's Empty Keg", npc = 3292, npcName = "Brewmaster Drohn", map = 1440, x = 62.3, y = 38.4, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 5881, title = "Calling in the Reserves", npc = 11860, npcName = "Maggran Earthbinder", map = 1442, x = 47.2, y = 61.2, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "sethome", location = "Sun Rock Retreat", text = "Sun Rock Retreat", f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 6421, title = "Boulderslide Ravine", npc = 11861, npcName = "Mor'rogal", map = 1442, x = 47.2, y = 64.2, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 6301, itemName = "Gaea Seed", count = 10, oi = 1, map = 1442, x = 51.8, y = 42.6, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 1058, itemName = "Courser Eye", count = 30, oi = 3, map = 1442, x = 46.2, y = 26.5, f = "e" },
 				},
 			},
 		},

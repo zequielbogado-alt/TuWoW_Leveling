@@ -350,28 +350,109 @@ do
 		version = 1,
 		steps = {
 			{
-				note = "Click the red arrow on your hotbar to get off your mount|outvehicle |q 13861",
+				only = { classes = { "DEATHKNIGHT" } },
 				goals = {
 					{ t = "accept", quest = 13790, title = "Among the Champions", npc = 33771, npcName = "Luuri", map = 118, x = 69.9, y = 23.3, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "DEATHKNIGHT" } },
+				goals = {
 					{ t = "accept", quest = 13682, title = "Threat From Above", npc = 33759, npcName = "Eadric the Pure", map = 118, x = 70.0, y = 23.4, f = "e" },
 					{ t = "accept", quest = 13861, title = "Battle Before The Citadel", npc = 33759, npcName = "Eadric the Pure", map = 118, x = 70.0, y = 23.4, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "DEATHKNIGHT" } },
+				goals = {
 					{ t = "accept", quest = 13789, title = "Taking Battle To The Enemy", npc = 33763, npcName = "Cellian Daybreak", map = 118, x = 69.9, y = 23.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "WARRIOR", "PALADIN", "HUNTER", "PRIEST", "SHAMAN", "MAGE" } },
+				goals = {
+					{ t = "goto", map = 118, x = 71.7, y = 22.4, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Dwarf" }, classes = { "WARRIOR", "PALADIN", "HUNTER", "ROGUE", "PRIEST", "DEATHKNIGHT" } },
+				goals = {
+					{ t = "goto", map = 118, x = 71.8, y = 22.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Human" }, classes = { "WARRIOR", "PALADIN", "ROGUE", "PRIEST", "MAGE", "WARLOCK", "DEATHKNIGHT" } },
+				goals = {
+					{ t = "goto", map = 118, x = 71.6, y = 22.4, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "WARRIOR", "HUNTER", "ROGUE", "PRIEST", "DRUID", "DEATHKNIGHT" } },
+				goals = {
+					{ t = "goto", map = 118, x = 71.6, y = 22.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Gnome" }, classes = { "WARRIOR", "ROGUE", "MAGE", "WARLOCK", "DEATHKNIGHT" } },
+				goals = {
+					{ t = "goto", map = 118, x = 71.9, y = 22.5, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "DEATHKNIGHT" } },
+				goals = {
 					{ t = "collect", quest = 13790, itemName = "Mark of the Champion", count = 4, oi = 1, map = 118, x = 71.6, y = 23.8, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "DEATHKNIGHT" } },
+				goals = {
 					{ t = "kill", quest = 13789, target = "Cult of the Damned member", count = 15, oi = 1, map = 118, x = 64.3, y = 21.4, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "DEATHKNIGHT" } },
+				goals = {
 					{ t = "kill", quest = 13682, target = "Chillmaw", count = 1, oi = 1, map = 118, x = 44.1, y = 32.6, f = "e" },
 					{ t = "kill", quest = 13682, target = "Cultist Bombardier", count = 3, oi = 2, map = 118, x = 44.1, y = 32.6, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "DEATHKNIGHT" } },
+				goals = {
+					{ t = "goto", map = 118, x = 48.9, y = 71.4, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "DEATHKNIGHT" } },
+				goals = {
 					{ t = "kill", quest = 13861, target = "Boneguard Commander", count = 3, oi = 1, map = 118, x = 50.1, y = 74.8, f = "e" },
+				},
+			},
+			{
+				note = "Click the red arrow on your hotbar to get off your mount|outvehicle |q 13861",
+				only = { classes = { "DEATHKNIGHT" } },
+				goals = {
+					{ t = "goto", map = 118, x = 48.9, y = 71.4, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "DEATHKNIGHT" } },
+				goals = {
 					{ t = "turnin", quest = 13790, title = "Among the Champions", npc = 33771, npcName = "Luuri", map = 118, x = 69.9, y = 23.3, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "DEATHKNIGHT" } },
+				goals = {
 					{ t = "turnin", quest = 13682, title = "Threat From Above", npc = 33759, npcName = "Eadric the Pure", map = 118, x = 70.0, y = 23.4, f = "e" },
 					{ t = "turnin", quest = 13861, title = "Battle Before The Citadel", npc = 33759, npcName = "Eadric the Pure", map = 118, x = 70.0, y = 23.4, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "DEATHKNIGHT" } },
+				goals = {
 					{ t = "turnin", quest = 13789, title = "Taking Battle To The Enemy", npc = 33763, npcName = "Cellian Daybreak", map = 118, x = 69.9, y = 23.5, f = "e" },
-					{ t = "goto", map = 118, x = 71.7, y = 22.4, f = "e", only = { classes = { "WARRIOR", "PALADIN", "HUNTER", "PRIEST", "SHAMAN", "MAGE" } } },
-					{ t = "goto", map = 118, x = 71.8, y = 22.5, f = "e", only = { classes = { "WARRIOR", "PALADIN", "HUNTER", "ROGUE", "PRIEST", "DEATHKNIGHT" } } },
-					{ t = "goto", map = 118, x = 71.6, y = 22.4, f = "e", only = { classes = { "WARRIOR", "PALADIN", "ROGUE", "PRIEST", "MAGE", "WARLOCK", "DEATHKNIGHT" } } },
-					{ t = "goto", map = 118, x = 71.6, y = 22.5, f = "e", only = { classes = { "WARRIOR", "HUNTER", "ROGUE", "PRIEST", "DRUID", "DEATHKNIGHT" } } },
-					{ t = "goto", map = 118, x = 71.9, y = 22.5, f = "e", only = { classes = { "WARRIOR", "ROGUE", "MAGE", "WARLOCK", "DEATHKNIGHT" } } },
-					{ t = "goto", map = 118, x = 48.9, y = 71.4, f = "e", only = { classes = { "DEATHKNIGHT" } } },
-					{ t = "goto", map = 118, x = 48.9, y = 71.4, f = "e", only = { classes = { "DEATHKNIGHT" } } },
 				},
 			},
 		},

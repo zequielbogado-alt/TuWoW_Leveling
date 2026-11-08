@@ -3,12 +3,12 @@
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/h-northrend-74-76-part-2",
+		id = "zygor/leveling/h-northrend-74-76",
 		pack = "guides",
-		title = "Northrend (74-76) (Parte 2/4)",
+		title = "Northrend (74-76) (Parte 1/4)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-northrend-74-76-part-3",
+		next = "zygor/leveling/h-northrend-74-76-part-2",
 		author = "TuWoW & Zygor",
 		minLevel = 74,
 		maxLevel = 76,
@@ -17,485 +17,477 @@ do
 		steps = {
 			{
 				goals = {
-					{ t = "collect", itemName = "Ruby Brooch", count = 1, map = 115, x = 47.7, y = 49.1, f = "e" },
-					{ t = "accept", quest = 12419, title = "The Fate of the Ruby Dragonshrine", map = 115, x = 47.7, y = 49.1, f = "e" },
-					{ t = "collect", quest = 12102, itemName = "Ruby Lilac", count = 1, oi = 1, map = 115, x = 47.7, y = 49.1, f = "e" },
+					{ t = "turnin", quest = 12221, title = "The Forsaken Blight", npc = 26505, npcName = "Doctor Sintar Malefious", map = 115, x = 36.1, y = 48.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 12126, itemName = "Filled Unholy Gem", count = 1, oi = 1, map = 115, x = 46.9, y = 50.0, f = "e" },
+					{ t = "accept", quest = 12033, title = "Message from the West", npc = 26649, npcName = "Messenger Torvus", map = 115, x = 37.3, y = 46.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12122, title = "Gaining an Audience", npc = 26443, npcName = "Tariolstrasz", map = 115, x = 57.9, y = 54.2, f = "e" },
-					{ t = "accept", quest = 12767, title = "Speak with your Ambassador", npc = 26443, npcName = "Tariolstrasz", map = 115, x = 57.9, y = 54.2, f = "e" },
+					{ t = "goto", map = 115, x = 37.4, y = 46.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 26443, npcName = "Tariolstrasz", map = 115, x = 57.9, y = 54.2, f = "e" },
+					{ t = "turnin", quest = 12033, title = "Message from the West", npc = 26649, npcName = "Messenger Torvus", map = 115, x = 37.3, y = 46.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 12458, title = "Seeds of the Lashers", npc = 27785, npcName = "Lord Itharius", map = 115, x = 59.6, y = 54.4, f = "e" },
+					{ t = "turnin", quest = 11996, title = "Your Presence is Required at Agmar's Hammer", npc = 26471, npcName = "Image of Archmage Aethas Sunreaver", map = 115, x = 38.1, y = 46.2, f = "e" },
+					{ t = "accept", quest = 11999, title = "Rifle the Bodies", npc = 26471, npcName = "Image of Archmage Aethas Sunreaver", map = 115, x = 38.1, y = 46.2, f = "e" },
+					{ t = "accept", quest = 12791, title = "The Magical Kingdom of Dalaran", npc = 26471, npcName = "Image of Archmage Aethas Sunreaver", map = 115, x = 38.1, y = 46.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12419, title = "The Fate of the Ruby Dragonshrine", npc = 27990, npcName = "Krasus", map = 115, x = 59.8, y = 54.7, f = "e" },
+					{ t = "sethome", location = "Agmar's Hammer", text = "Agmar's Hammer", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 12470, title = "Mystery of the Infinite", npc = 27856, npcName = "Chromie", map = 115, x = 60.0, y = 54.5, f = "e" },
+					{ t = "getfp", location = "Agmar's Hammer", text = "Agmar's Hammer", map = 115, x = 37.5, y = 45.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 12447, title = "The Obsidian Dragonshrine", npc = 27765, npcName = "Nalice", map = 115, x = 60.1, y = 54.2, f = "e" },
+					{ t = "accept", quest = 11979, title = "The Taunka and the Tauren", npc = 26415, npcName = "Senior Sergeant Juktok", map = 115, x = 36.6, y = 46.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 26949, npcName = "Torastrasza", map = 115, x = 59.5, y = 53.3, f = "e" },
+					{ t = "accept", quest = 12040, title = "An Enemy in Arthas", npc = 26653, npcName = "Kilix the Unraveler", map = 115, x = 26.2, y = 50.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12767, title = "Speak with your Ambassador", npc = 27804, npcName = "Golluck Rockfist", map = 115, x = 58.0, y = 55.4, f = "e" },
-					{ t = "accept", quest = 12461, title = "Report to the Ruby Dragonshrine", npc = 27804, npcName = "Golluck Rockfist", map = 115, x = 58.0, y = 55.4, f = "e" },
+					{ t = "goto", map = 115, x = 26.1, y = 49.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "sethome", location = "Wyrmrest Temple", text = "Wyrmrest Temple", f = "e" },
+					{ t = "turnin", quest = 12040, title = "An Enemy in Arthas", npc = 26653, npcName = "Kilix the Unraveler", map = 115, x = 26.2, y = 50.8, f = "e" },
+					{ t = "accept", quest = 12041, title = "The Lost Empire", npc = 26653, npcName = "Kilix the Unraveler", map = 115, x = 26.2, y = 50.8, f = "e" },
 				},
 			},
 			{
+				note = "Go outside the cave and southwest to 22.3,54.1",
 				goals = {
-					{ t = "getfp", location = "Wyrmrest Temple", text = "Wyrmrest Temple", map = 115, x = 60.3, y = 51.6, f = "e" },
+					{ t = "collect", itemName = "Mage Hunter Personal Effects bags", count = 1, map = 115, x = 22.3, y = 54.1, f = "e" },
+					{ t = "collect", quest = 11999, itemName = "Moonrest Gardens Plans", count = 1, oi = 1, map = 115, x = 22.3, y = 54.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 12127, itemName = "Filled Frost Gem", count = 1, oi = 1, map = 115, x = 66.2, y = 52.9, f = "e" },
+					{ t = "turnin", quest = 12041, title = "The Lost Empire", npc = 26379, npcName = "Overlord Agmar", map = 115, x = 36.3, y = 45.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 115, x = 60.3, y = 51.6, f = "e" },
+					{ t = "turnin", quest = 11999, title = "Rifle the Bodies", npc = 26471, npcName = "Image of Archmage Aethas Sunreaver", map = 115, x = 38.1, y = 46.2, f = "e" },
+					{ t = "accept", quest = 12005, title = "Prevent the Accord", npc = 26471, npcName = "Image of Archmage Aethas Sunreaver", map = 115, x = 38.1, y = 46.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12126, title = "In Service of the Unholy", npc = 26581, npcName = "Koltira Deathweaver", map = 115, x = 37.1, y = 46.5, f = "e" },
-					{ t = "turnin", quest = 12127, title = "In Service of Frost", npc = 26581, npcName = "Koltira Deathweaver", map = 115, x = 37.1, y = 46.5, f = "e" },
-					{ t = "accept", quest = 12132, title = "The Power to Destroy", npc = 26581, npcName = "Koltira Deathweaver", map = 115, x = 37.1, y = 46.5, f = "e" },
+					{ t = "collect", quest = 12005, itemName = "Wind Trader Mu'fah's Remains", count = 1, oi = 1, map = 115, x = 18.4, y = 58.9, f = "e" },
 				},
 			},
 			{
-				note = "He puts you in the world of shadows",
+				note = "Go inside the building to 19.4,58.1",
 				goals = {
-					{ t = "kill", quest = 12132, target = "Shadowy Tormentor", count = 6, oi = 1, f = "e" },
+					{ t = "collect", quest = 12005, itemName = "The Scales of Goramosh", count = 1, oi = 2, map = 115, x = 19.4, y = 58.1, f = "e" },
+					{ t = "collect", itemName = "Goramosh's Strange Device", count = 1, map = 115, x = 19.4, y = 58.1, f = "e" },
+					{ t = "accept", quest = 12059, title = "A Strange Device", map = 115, x = 19.4, y = 58.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12132, title = "The Power to Destroy", npc = 26581, npcName = "Koltira Deathweaver", map = 115, x = 37.1, y = 46.5, f = "e" },
-					{ t = "accept", quest = 12136, title = "The Translated Tome", npc = 26581, npcName = "Koltira Deathweaver", map = 115, x = 37.1, y = 46.5, f = "e" },
+					{ t = "turnin", quest = 12005, title = "Prevent the Accord", npc = 26471, npcName = "Image of Archmage Aethas Sunreaver", map = 115, x = 38.1, y = 46.2, f = "e" },
+					{ t = "turnin", quest = 12059, title = "A Strange Device", npc = 26471, npcName = "Image of Archmage Aethas Sunreaver", map = 115, x = 38.1, y = 46.2, f = "e" },
+					{ t = "accept", quest = 12061, title = "Projections and Plans", npc = 26471, npcName = "Image of Archmage Aethas Sunreaver", map = 115, x = 38.1, y = 46.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12102, title = "In Search of the Ruby Lilac", npc = 26505, npcName = "Doctor Sintar Malefious", map = 115, x = 36.1, y = 48.9, f = "e" },
-					{ t = "accept", quest = 12104, title = "Return to Soar", npc = 26505, npcName = "Doctor Sintar Malefious", map = 115, x = 36.1, y = 48.9, f = "e" },
+					{ t = "goto", map = 115, x = 22.2, y = 54.8, f = "e" },
 				},
 			},
 			{
+				note = "Use your Surge Needle Teleporter to go back down to the ground,0.3|use Surge Needle Teleporter##36747|noway|c",
 				goals = {
-					{ t = "turnin", quest = 12136, title = "The Translated Tome", npc = 26618, npcName = "Captain Gort", map = 115, x = 35.8, y = 48.4, f = "e" },
+					{ t = "use", item = 36747, itemName = "Surge Needle Teleporter", map = 115, x = 22.6, y = 57.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12104, title = "Return to Soar", npc = 26504, npcName = "Soar Hawkfury", map = 115, x = 37.1, y = 48.6, f = "e" },
-					{ t = "accept", quest = 12111, title = "Where the Wild Things Roam", npc = 26504, npcName = "Soar Hawkfury", map = 115, x = 37.1, y = 48.6, f = "e" },
+					{ t = "turnin", quest = 12061, title = "Projections and Plans", npc = 26471, npcName = "Image of Archmage Aethas Sunreaver", map = 115, x = 38.1, y = 46.2, f = "e" },
+					{ t = "accept", quest = 12066, title = "The Focus on the Beach", npc = 26471, npcName = "Image of Archmage Aethas Sunreaver", map = 115, x = 38.1, y = 46.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 115, x = 38.4, y = 48.3, f = "e" },
+					{ t = "accept", quest = 12006, title = "Avenge this Atrocity!", npc = 26501, npcName = "Ethenial Moonshadow", map = 115, x = 24.2, y = 60.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12111, title = "Where the Wild Things Roam", npc = 26504, npcName = "Soar Hawkfury", map = 115, x = 37.1, y = 48.6, f = "e" },
+					{ t = "kill", target = "Blue Dragonflight forces at Moonrest Gardens", count = 15, map = 115, x = 20.9, y = 60.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12461, title = "Report to the Ruby Dragonshrine", npc = 27763, npcName = "Vargastrasz", map = 115, x = 43.0, y = 50.9, f = "e" },
-					{ t = "accept", quest = 12448, title = "Heated Battle", npc = 27763, npcName = "Vargastrasz", map = 115, x = 43.0, y = 50.9, f = "e" },
+					{ t = "turnin", quest = 12006, title = "Avenge this Atrocity!", npc = 26501, npcName = "Ethenial Moonshadow", map = 115, x = 24.2, y = 60.1, f = "e" },
+					{ t = "accept", quest = 12013, title = "End Arcanimus", npc = 26501, npcName = "Ethenial Moonshadow", map = 115, x = 24.2, y = 60.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 115, x = 42.8, y = 51.4, f = "e" },
+					{ t = "kill", quest = 12013, target = "Arcanimus", count = 1, oi = 1, map = 115, x = 20.0, y = 59.7, f = "e" },
 				},
 			},
 			{
-				note = "Go up the hill to 43,50.9",
 				goals = {
-					{ t = "turnin", quest = 12448, title = "Heated Battle", npc = 27763, npcName = "Vargastrasz", map = 115, x = 43.0, y = 50.9, f = "e" },
-					{ t = "accept", quest = 12449, title = "Return to the Earth", npc = 27763, npcName = "Vargastrasz", map = 115, x = 43.0, y = 50.9, f = "e" },
+					{ t = "turnin", quest = 12013, title = "End Arcanimus", npc = 26501, npcName = "Ethenial Moonshadow", map = 115, x = 24.2, y = 60.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", itemName = "Ruby Acorns", count = 1, map = 115, x = 46.7, y = 52.8, f = "e" },
+					{ t = "collect", itemName = "Ley Line Focus Control Ring", count = 1, map = 115, x = 26.4, y = 65.0, f = "e" },
 				},
 			},
 			{
-				note = "Go out of the valley to 43,50.9",
+				note = "Hearth to Agmar's Hammer,1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "turnin", quest = 12449, title = "Return to the Earth", npc = 27763, npcName = "Vargastrasz", map = 115, x = 43.0, y = 50.9, f = "e" },
-					{ t = "accept", quest = 12450, title = "Through Fields of Flame", npc = 27763, npcName = "Vargastrasz", map = 115, x = 43.0, y = 50.9, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 115, x = 38.1, y = 46.6, f = "e" },
 				},
 			},
 			{
-				note = "Go into the valley to 48.2,47.8",
 				goals = {
-					{ t = "kill", quest = 12450, target = "Frigid Necromancer", count = 6, oi = 1, map = 115, x = 48.2, y = 47.8, f = "e" },
+					{ t = "turnin", quest = 12066, title = "The Focus on the Beach", npc = 26471, npcName = "Image of Archmage Aethas Sunreaver", map = 115, x = 38.1, y = 46.2, f = "e" },
+					{ t = "accept", quest = 12084, title = "Atop the Woodlands", npc = 26471, npcName = "Image of Archmage Aethas Sunreaver", map = 115, x = 38.1, y = 46.2, f = "e" },
 				},
 			},
 			{
-				note = "Go into the tree trunk to 47.7,49.1",
 				goals = {
-					{ t = "goto", map = 115, x = 47.7, y = 49.1, f = "e" },
+					{ t = "accept", quest = 12096, title = "Strengthen the Ancients", npc = 26854, npcName = "Earthwarden Grife", map = 115, x = 36.5, y = 47.9, f = "e" },
 				},
 			},
 			{
-				note = "Go out of the valley to 43.0,50.9",
 				goals = {
-					{ t = "turnin", quest = 12450, title = "Through Fields of Flame", npc = 27763, npcName = "Vargastrasz", map = 115, x = 43.0, y = 50.9, f = "e" },
-					{ t = "accept", quest = 12769, title = "The Steward of Wyrmrest Temple", npc = 27763, npcName = "Vargastrasz", map = 115, x = 43.0, y = 50.9, f = "e" },
+					{ t = "collect", quest = 12096, item = 36786, itemName = "Bark of the Walkers", count = 3, map = 115, x = 31.2, y = 59.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12769, title = "The Steward of Wyrmrest Temple", npc = 26443, npcName = "Tariolstrasz", map = 115, x = 57.9, y = 54.2, f = "e" },
-					{ t = "accept", quest = 12124, title = "Informing the Queen", npc = 26443, npcName = "Tariolstrasz", map = 115, x = 57.9, y = 54.2, f = "e" },
+					{ t = "goto", map = 115, x = 30.6, y = 63.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 26443, npcName = "Tariolstrasz", map = 115, x = 57.9, y = 54.2, f = "e" },
+					{ t = "collect", itemName = "Ley Line Focus Amulet", count = 1, map = 115, x = 32.2, y = 70.6, f = "e" },
+					{ t = "collect", itemName = "Lieutenant Ta'zinni's Letter", count = 1, map = 115, x = 32.2, y = 70.6, f = "e" },
+					{ t = "accept", quest = 12085, title = "A Letter for Home", map = 115, x = 32.2, y = 70.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12124, title = "Informing the Queen", npc = 26917, npcName = "Alexstrasza the Life-Binder", map = 115, x = 59.8, y = 54.7, f = "e" },
-					{ t = "accept", quest = 12435, title = "Report to Lord Afrasastrasz", npc = 26917, npcName = "Alexstrasza the Life-Binder", map = 115, x = 59.8, y = 54.7, f = "e" },
+					{ t = "goto", map = 115, x = 32.2, y = 71.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 26949, npcName = "Torastrasza", map = 115, x = 59.5, y = 53.3, f = "e" },
+					{ t = "turnin", quest = 12096, title = "Strengthen the Ancients", npc = 26854, npcName = "Earthwarden Grife", map = 115, x = 36.5, y = 47.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12435, title = "Report to Lord Afrasastrasz", npc = 27575, npcName = "Lord Afrasastrasz", map = 115, x = 59.2, y = 54.3, f = "e" },
-					{ t = "accept", quest = 12372, title = "Defending Wyrmrest Temple", npc = 27575, npcName = "Lord Afrasastrasz", map = 115, x = 59.2, y = 54.3, f = "e" },
+					{ t = "turnin", quest = 12084, title = "Atop the Woodlands", npc = 26471, npcName = "Image of Archmage Aethas Sunreaver", map = 115, x = 38.1, y = 46.2, f = "e" },
+					{ t = "accept", quest = 12106, title = "Search Indu'le Village", npc = 26471, npcName = "Image of Archmage Aethas Sunreaver", map = 115, x = 38.1, y = 46.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "level", level = 75, f = "e" },
+					{ t = "turnin", quest = 12085, title = "A Letter for Home", npc = 26379, npcName = "Overlord Agmar", map = 115, x = 36.3, y = 45.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 12372, target = "Azure Dragon", count = 3, oi = 1, map = 115, x = 58.3, y = 55.2, f = "e" },
-					{ t = "kill", quest = 12372, target = "Azure Drake", count = 5, oi = 2, map = 115, x = 58.3, y = 55.2, f = "e" },
+					{ t = "turnin", quest = 12106, title = "Search Indu'le Village", map = 115, x = 40.3, y = 66.9, f = "e" },
+					{ t = "accept", quest = 12110, title = "The End of the Line", map = 115, x = 40.3, y = 66.9, f = "e" },
 				},
 			},
 			{
-				note = "Fly southwest to 55.1,66.4",
 				goals = {
-					{ t = "goto", map = 115, x = 55.1, y = 66.4, f = "e" },
+					{ t = "goto", map = 115, x = 39.8, y = 66.9, f = "e" },
 				},
 			},
 			{
-				note = "Click the red arrow to get off the dragon on the middle level of the temple|script VehicleExit()|outvehicle|c",
 				goals = {
-					{ t = "goto", map = 115, x = 58.7, y = 54.5, f = "e" },
+					{ t = "goto", map = 115, x = 53.0, y = 66.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12372, title = "Defending Wyrmrest Temple", npc = 27575, npcName = "Lord Afrasastrasz", map = 115, x = 59.2, y = 54.3, f = "e" },
+					{ t = "turnin", quest = 12110, title = "The End of the Line", npc = 26471, npcName = "Image of Archmage Aethas Sunreaver", map = 115, x = 38.1, y = 46.2, f = "e" },
+					{ t = "accept", quest = 12122, title = "Gaining an Audience", npc = 26471, npcName = "Image of Archmage Aethas Sunreaver", map = 115, x = 38.1, y = 46.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 27575, npcName = "Lord Afrasastrasz", map = 115, x = 59.2, y = 54.3, f = "e" },
+					{ t = "accept", quest = 11980, title = "Pride of the Horde", npc = 26180, npcName = "Blood Guard Roh'kill", map = 115, x = 14.2, y = 49.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", target = "Emerald Lashers", count = 1, map = 115, x = 63.3, y = 71.0, f = "e" },
-					{ t = "collect", quest = 12458, itemName = "Lasher Seed", count = 3, oi = 1, map = 115, x = 63.3, y = 71.0, f = "e" },
+					{ t = "turnin", quest = 11979, title = "The Taunka and the Tauren", npc = 26181, npcName = "Emissary Brighthoof", map = 115, x = 12.8, y = 48.5, f = "e" },
+					{ t = "accept", quest = 11978, title = "Into the Fold", npc = 26181, npcName = "Emissary Brighthoof", map = 115, x = 12.8, y = 48.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 26443, npcName = "Tariolstrasz", map = 115, x = 57.9, y = 54.2, f = "e" },
+					{ t = "kill", quest = 11980, target = "Anub'ar Ambusher", count = 15, oi = 1, map = 115, x = 15.5, y = 51.2, f = "e" },
+					{ t = "collect", quest = 11978, itemName = "Horde Armaments", count = 10, oi = 1, map = 115, x = 15.5, y = 51.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12458, title = "Seeds of the Lashers", npc = 27785, npcName = "Lord Itharius", map = 115, x = 59.6, y = 54.4, f = "e" },
-					{ t = "accept", quest = 12459, title = "That Which Creates Can Also Destroy", npc = 27785, npcName = "Lord Itharius", map = 115, x = 59.6, y = 54.4, f = "e" },
+					{ t = "turnin", quest = 11980, title = "Pride of the Horde", npc = 26180, npcName = "Blood Guard Roh'kill", map = 115, x = 14.2, y = 49.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 26949, npcName = "Torastrasza", map = 115, x = 59.5, y = 53.3, f = "e" },
+					{ t = "turnin", quest = 11978, title = "Into the Fold", npc = 26181, npcName = "Emissary Brighthoof", map = 115, x = 12.8, y = 48.5, f = "e" },
+					{ t = "accept", quest = 11983, title = "Blood Oath of the Horde", npc = 26181, npcName = "Emissary Brighthoof", map = 115, x = 12.8, y = 48.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 12459, target = "Weakened Reanimated Frost Wyrm", count = 1, oi = 1, map = 115, x = 55.2, y = 45.7, f = "e" },
+					{ t = "talk", npc = 26184, npcName = "Taunka'le Refugee", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 115, x = 60.3, y = 51.6, f = "e" },
+					{ t = "turnin", quest = 11983, title = "Blood Oath of the Horde", npc = 26181, npcName = "Emissary Brighthoof", map = 115, x = 12.8, y = 48.5, f = "e" },
+					{ t = "accept", quest = 12008, title = "Agmar's Hammer", npc = 26181, npcName = "Emissary Brighthoof", map = 115, x = 12.8, y = 48.5, f = "e" },
 				},
 			},
 			{
+				note = "Hearth to Agmar's Hammer,1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "accept", quest = 12542, title = "The Call Of The Crusade", npc = 27348, npcName = "Tilda Darathan", map = 115, x = 87.2, y = 57.4, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 115, x = 38.1, y = 46.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 12459, target = "Weakened Turgid the Vile", count = 1, oi = 2, map = 115, x = 86.2, y = 47.0, f = "e" },
+					{ t = "turnin", quest = 12008, title = "Agmar's Hammer", npc = 26379, npcName = "Overlord Agmar", map = 115, x = 36.3, y = 45.6, f = "e" },
+					{ t = "accept", quest = 12034, title = "Victory Nears...", npc = 26379, npcName = "Overlord Agmar", map = 115, x = 36.3, y = 45.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12542, title = "The Call Of The Crusade", npc = 28228, npcName = "Crusader Valus", map = 115, x = 84.0, y = 26.1, f = "e" },
-					{ t = "accept", quest = 12545, title = "The Cleansing Of Jintha'kalar", npc = 28228, npcName = "Crusader Valus", map = 115, x = 84.0, y = 26.1, f = "e" },
+					{ t = "turnin", quest = 12034, title = "Victory Nears...", npc = 26415, npcName = "Senior Sergeant Juktok", map = 115, x = 36.6, y = 46.6, f = "e" },
+					{ t = "accept", quest = 12036, title = "From the Depths of Azjol-Nerub", npc = 26415, npcName = "Senior Sergeant Juktok", map = 115, x = 36.6, y = 46.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 12459, target = "Weakened Overseer Deathgaze", count = 1, oi = 3, map = 115, x = 89.5, y = 19.1, f = "e" },
+					{ t = "accept", quest = 12039, title = "Black Blood of Yogg-Saron", npc = 26564, npcName = "Borus Ironbender", map = 115, x = 36.6, y = 47.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", target = "undead mobs", count = 1, map = 115, x = 86.8, y = 22.4, f = "e" },
+					{ t = "accept", quest = 12100, title = "Containing the Rot", npc = 26504, npcName = "Soar Hawkfury", map = 115, x = 37.1, y = 48.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12545, title = "The Cleansing Of Jintha'kalar", npc = 28228, npcName = "Crusader Valus", map = 115, x = 84.0, y = 26.1, f = "e" },
-					{ t = "accept", quest = 12789, title = "Into the Breach!", npc = 28228, npcName = "Crusader Valus", map = 115, x = 84.0, y = 26.1, f = "e" },
+					{ t = "accept", quest = 12056, title = "Marked for Death: High Cultist Zangus", npc = 26618, npcName = "Captain Gort", map = 115, x = 35.8, y = 48.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 115, x = 71.7, y = 38.9, f = "e" },
+					{ t = "kill", target = "Blighted Elk and Rabid Grizzlies", count = 1, map = 115, x = 29.0, y = 50.7, f = "e" },
+					{ t = "kill", quest = 12100, target = "Infected Wildlife", count = 15, oi = 1, map = 115, x = 29.0, y = 50.7, f = "e" },
+					{ t = "collect", quest = 12100, itemName = "Rot Resistant Organ", count = 1, oi = 2, map = 115, x = 29.0, y = 50.7, f = "e" },
 				},
 			},
 			{
-				note = "Hearth to Wyrmrest Temple,0.5|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "use", item = 6948, itemName = "hearthstone", map = 115, x = 59.7, y = 54.2, f = "e" },
+					{ t = "collect", quest = 12039, itemName = "Black Blood of Yogg-Saron Sample", count = 10, oi = 1, map = 115, x = 26.5, y = 49.6, f = "e" },
 				},
 			},
 			{
+				note = "Go down into the cave to 28.9,49.7",
 				goals = {
-					{ t = "talk", npc = 26443, npcName = "Tariolstrasz", map = 115, x = 57.9, y = 54.2, f = "e" },
+					{ t = "collect", quest = 12056, itemName = "Head of High Cultist Zangus", count = 1, oi = 1, map = 115, x = 28.9, y = 49.7, f = "e" },
 				},
 			},
 			{
+				note = "Inside the cave, go to 26.2,50.4",
 				goals = {
-					{ t = "turnin", quest = 12459, title = "That Which Creates Can Also Destroy", npc = 27785, npcName = "Lord Itharius", map = 115, x = 59.6, y = 54.4, f = "e" },
+					{ t = "goto", map = 115, x = 26.2, y = 50.4, f = "e" },
 				},
 			},
 			{
+				note = "Go outside the cave and east to 35.8,48.4",
 				goals = {
-					{ t = "turnin", quest = 12470, title = "Mystery of the Infinite", npc = 27856, npcName = "Chromie", map = 115, x = 60.0, y = 54.5, f = "e" },
+					{ t = "turnin", quest = 12056, title = "Marked for Death: High Cultist Zangus", npc = 26618, npcName = "Captain Gort", map = 115, x = 35.8, y = 48.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 26949, npcName = "Torastrasza", map = 115, x = 59.5, y = 53.3, f = "e" },
+					{ t = "turnin", quest = 12100, title = "Containing the Rot", npc = 26504, npcName = "Soar Hawkfury", map = 115, x = 37.1, y = 48.6, f = "e" },
+					{ t = "accept", quest = 12101, title = "The Good Doctor...", npc = 26504, npcName = "Soar Hawkfury", map = 115, x = 37.1, y = 48.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 12144, title = "Pest Control", npc = 26979, npcName = "Kontokanis", map = 115, x = 46.7, y = 33.5, f = "e" },
+					{ t = "turnin", quest = 12101, title = "The Good Doctor...", npc = 26505, npcName = "Doctor Sintar Malefious", map = 115, x = 36.1, y = 48.9, f = "e" },
+					{ t = "accept", quest = 12102, title = "In Search of the Ruby Lilac", npc = 26505, npcName = "Doctor Sintar Malefious", map = 115, x = 36.1, y = 48.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 115, x = 37.2, y = 31.8, f = "e" },
+					{ t = "turnin", quest = 12039, title = "Black Blood of Yogg-Saron", npc = 26564, npcName = "Borus Ironbender", map = 115, x = 36.6, y = 47.2, f = "e" },
+					{ t = "accept", quest = 12048, title = "Scourge Armaments", npc = 26564, npcName = "Borus Ironbender", map = 115, x = 36.6, y = 47.2, f = "e" },
 				},
 			},
 			{
-				note = "Go inside the cave to 35.2,30.0",
 				goals = {
-					{ t = "turnin", quest = 12447, title = "The Obsidian Dragonshrine", npc = 26593, npcName = "Serinar", map = 115, x = 35.2, y = 30.0, f = "e" },
-					{ t = "accept", quest = 12262, title = "No One to Save You", npc = 26593, npcName = "Serinar", map = 115, x = 35.2, y = 30.0, f = "e" },
-					{ t = "accept", quest = 12261, title = "No Place to Run", npc = 26593, npcName = "Serinar", map = 115, x = 35.2, y = 30.0, f = "e" },
+					{ t = "turnin", quest = 12036, title = "From the Depths of Azjol-Nerub", npc = 26415, npcName = "Senior Sergeant Juktok", map = 115, x = 36.6, y = 46.6, f = "e" },
+					{ t = "accept", quest = 12053, title = "The Might of the Horde", npc = 26415, npcName = "Senior Sergeant Juktok", map = 115, x = 36.6, y = 46.6, f = "e" },
 				},
 			},
 			{
-				note = "Go outside the cave to 37.9,32.0",
 				goals = {
-					{ t = "kill", quest = 12262, target = "Burning Depths Necrolyte", count = 6, oi = 1, map = 115, x = 37.9, y = 32.0, f = "e" },
-					{ t = "kill", quest = 12262, target = "Smoldering Skeleton", count = 10, oi = 2, map = 115, x = 37.9, y = 32.0, f = "e" },
+					{ t = "accept", quest = 12063, title = "Strength of Icemist", npc = 26652, npcName = "Greatmother Icemist", map = 115, x = 35.8, y = 46.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 115, x = 42.1, y = 32.0, f = "e" },
+					{ t = "kill", target = "Anub'ar mobs", count = 1, map = 115, x = 26.9, y = 43.3, f = "e" },
+					{ t = "collect", quest = 12048, itemName = "Scourge Armament", count = 8, oi = 1, map = 115, x = 26.9, y = 43.3, f = "e" },
+					{ t = "collect", itemName = "Flesh-bound Tome", count = 1, map = 115, x = 26.9, y = 43.3, f = "e" },
+					{ t = "accept", quest = 12057, title = "The Flesh-Bound Tome", map = 115, x = 26.9, y = 43.3, f = "e" },
 				},
 			},
 			{
-				note = "Go west into the cave to 35.2,30.0",
 				goals = {
-					{ t = "turnin", quest = 12262, title = "No One to Save You", npc = 26593, npcName = "Serinar", map = 115, x = 35.2, y = 30.0, f = "e" },
-					{ t = "turnin", quest = 12261, title = "No Place to Run", npc = 26593, npcName = "Serinar", map = 115, x = 35.2, y = 30.0, f = "e" },
-					{ t = "accept", quest = 12263, title = "The Best of Intentions", npc = 26593, npcName = "Serinar", map = 115, x = 35.2, y = 30.0, f = "e" },
+					{ t = "turnin", quest = 12063, title = "Strength of Icemist", npc = 26733, npcName = "Banthok Icemist", map = 115, x = 22.6, y = 41.7, f = "e" },
+					{ t = "accept", quest = 12064, title = "Chains of the Anub'ar", npc = 26733, npcName = "Banthok Icemist", map = 115, x = 22.6, y = 41.7, f = "e" },
 				},
 			},
 			{
-				note = "Follow the path in the cave while disguised as a cultist to 31.8,30.5",
 				goals = {
-					{ t = "goto", map = 115, x = 31.8, y = 30.5, f = "e" },
+					{ t = "goto", map = 115, x = 24.8, y = 41.2, f = "e" },
 				},
 			},
 			{
-				note = "Follow the path back down to 35.2,30.0",
 				goals = {
-					{ t = "turnin", quest = 12263, title = "The Best of Intentions", npc = 26593, npcName = "Serinar", map = 115, x = 35.2, y = 30.0, f = "e" },
-					{ t = "accept", quest = 12264, title = "Culling the Damned", npc = 26593, npcName = "Serinar", map = 115, x = 35.2, y = 30.0, f = "e" },
-					{ t = "accept", quest = 12265, title = "Defiling the Defilers", npc = 26593, npcName = "Serinar", map = 115, x = 35.2, y = 30.0, f = "e" },
+					{ t = "collect", quest = 12064, itemName = "Tivax's Key Fragment", count = 1, oi = 2, map = 115, x = 26.6, y = 39.2, f = "e" },
 				},
 			},
 			{
-				note = "Follow the path in the cave to 34.2,26.8",
 				goals = {
-					{ t = "kill", quest = 12264, target = "Burning Depths Necromancer", count = 3, oi = 1, map = 115, x = 34.2, y = 26.8, f = "e" },
-					{ t = "kill", quest = 12264, target = "Smoldering Construct", count = 6, oi = 2, map = 115, x = 34.2, y = 26.8, f = "e" },
-					{ t = "kill", quest = 12264, target = "Smoldering Geist", count = 6, oi = 3, map = 115, x = 34.2, y = 26.8, f = "e" },
+					{ t = "collect", quest = 12064, itemName = "Sinok's Key Fragment", count = 1, oi = 3, map = 115, x = 26.2, y = 44.5, f = "e" },
 				},
 			},
 			{
-				note = "Go back down in the cave to 35.2,30.0",
 				goals = {
-					{ t = "turnin", quest = 12264, title = "Culling the Damned", npc = 26593, npcName = "Serinar", map = 115, x = 35.2, y = 30.0, f = "e" },
-					{ t = "turnin", quest = 12265, title = "Defiling the Defilers", npc = 26593, npcName = "Serinar", map = 115, x = 35.2, y = 30.0, f = "e" },
-					{ t = "accept", quest = 12267, title = "Neltharion's Flame", npc = 26593, npcName = "Serinar", map = 115, x = 35.2, y = 30.0, f = "e" },
+					{ t = "collect", quest = 12064, itemName = "Anok'ra's Key Fragment", count = 1, oi = 1, map = 115, x = 24.9, y = 43.9, f = "e" },
 				},
 			},
 			{
-				note = "Follow the path in the cave to 31.6,31.2",
 				goals = {
-					{ t = "kill", quest = 12267, target = "Rothin the Decaying", count = 1, oi = 2, map = 115, x = 31.6, y = 31.2, f = "e" },
+					{ t = "turnin", quest = 12064, title = "Chains of the Anub'ar", npc = 26733, npcName = "Banthok Icemist", map = 115, x = 22.6, y = 41.7, f = "e" },
+					{ t = "accept", quest = 12069, title = "Return of the High Chief", npc = 26733, npcName = "Banthok Icemist", map = 115, x = 22.6, y = 41.7, f = "e" },
 				},
 			},
 			{
-				note = "Go back down in the cave to 35.2,30.0",
 				goals = {
-					{ t = "turnin", quest = 12267, title = "Neltharion's Flame", npc = 26593, npcName = "Serinar", map = 115, x = 35.2, y = 30.0, f = "e" },
-					{ t = "accept", quest = 12266, title = "Tales of Destruction", npc = 26593, npcName = "Serinar", map = 115, x = 35.2, y = 30.0, f = "e" },
+					{ t = "collect", quest = 12069, itemName = "Fragment of Anub'et'kan's Husk", count = 1, oi = 1, map = 115, x = 25.6, y = 40.9, f = "e" },
 				},
 			},
 			{
-				note = "Hearth to Wyrmrest Temple,0.3|use hearthstone##6948|noway|c",
+				note = "Hearth to Agmar's Hammer,1|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "use", item = 6948, itemName = "hearthstone", map = 115, x = 59.7, y = 54.2, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", map = 115, x = 38.1, y = 46.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 26443, npcName = "Tariolstrasz", map = 115, x = 57.9, y = 54.2, f = "e" },
+					{ t = "turnin", quest = 12069, title = "Return of the High Chief", npc = 26379, npcName = "Overlord Agmar", map = 115, x = 36.3, y = 45.6, f = "e" },
+					{ t = "accept", quest = 12140, title = "All Hail Roanauk!", npc = 26379, npcName = "Overlord Agmar", map = 115, x = 36.3, y = 45.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12266, title = "Tales of Destruction", npc = 27765, npcName = "Nalice", map = 115, x = 60.1, y = 54.2, f = "e" },
+					{ t = "turnin", quest = 12053, title = "The Might of the Horde", npc = 26415, npcName = "Senior Sergeant Juktok", map = 115, x = 36.6, y = 46.6, f = "e" },
+					{ t = "accept", quest = 12071, title = "Attack by Air!", npc = 26415, npcName = "Senior Sergeant Juktok", map = 115, x = 36.6, y = 46.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "talk", npc = 26949, npcName = "Torastrasza", map = 115, x = 59.5, y = 53.3, f = "e" },
+					{ t = "turnin", quest = 12048, title = "Scourge Armaments", npc = 26564, npcName = "Borus Ironbender", map = 115, x = 36.6, y = 47.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 115, x = 56.8, y = 56.3, f = "e" },
+					{ t = "turnin", quest = 12057, title = "The Flesh-Bound Tome", npc = 26618, npcName = "Captain Gort", map = 115, x = 35.8, y = 48.4, f = "e" },
+					{ t = "accept", quest = 12115, title = "Koltira and the Language of Death", npc = 26618, npcName = "Captain Gort", map = 115, x = 35.8, y = 48.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 115, x = 55.6, y = 52.8, f = "e" },
+					{ t = "turnin", quest = 12115, title = "Koltira and the Language of Death", npc = 26581, npcName = "Koltira Deathweaver", map = 115, x = 37.1, y = 46.5, f = "e" },
+					{ t = "accept", quest = 12125, title = "In Service of Blood", npc = 26581, npcName = "Koltira Deathweaver", map = 115, x = 37.1, y = 46.5, f = "e" },
+					{ t = "accept", quest = 12126, title = "In Service of the Unholy", npc = 26581, npcName = "Koltira Deathweaver", map = 115, x = 37.1, y = 46.5, f = "e" },
+					{ t = "accept", quest = 12127, title = "In Service of Frost", npc = 26581, npcName = "Koltira Deathweaver", map = 115, x = 37.1, y = 46.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12144, title = "Pest Control", npc = 26979, npcName = "Kontokanis", map = 115, x = 46.7, y = 33.5, f = "e" },
-					{ t = "accept", quest = 12145, title = "Canyon Chase", npc = 26979, npcName = "Kontokanis", map = 115, x = 46.7, y = 33.5, f = "e" },
+					{ t = "turnin", quest = 12071, title = "Attack by Air!", npc = 26574, npcName = "Valnok Windrager", map = 115, x = 37.2, y = 45.7, f = "e" },
+					{ t = "accept", quest = 12072, title = "Blightbeasts be Damned!", npc = 26574, npcName = "Valnok Windrager", map = 115, x = 37.2, y = 45.7, f = "e" },
 				},
 			},
 			{
-				note = "Follow the running kobols to 42.4,38.9",
 				goals = {
-					{ t = "kill", quest = 12145, target = "Icefist", count = 1, oi = 1, map = 115, x = 42.4, y = 38.9, f = "e" },
-					{ t = "collect", itemName = "Emblazoned Battle Horn", count = 1, map = 115, x = 42.4, y = 38.9, f = "e" },
-					{ t = "accept", quest = 12147, title = "Disturbing Implications", map = 115, x = 42.4, y = 38.9, f = "e" },
+					{ t = "talk", npc = 26810, npcName = "Roanauk Icemist", map = 115, x = 36.2, y = 45.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12145, title = "Canyon Chase", npc = 26979, npcName = "Kontokanis", map = 115, x = 46.7, y = 33.5, f = "e" },
+					{ t = "turnin", quest = 12140, title = "All Hail Roanauk!", npc = 26379, npcName = "Overlord Agmar", map = 115, x = 36.3, y = 45.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 12469, title = "Return to Sender", npc = 26896, npcName = "Nozzlerust Supply Runner", map = 115, x = 48.5, y = 24.1, f = "e" },
+					{ t = "collect", quest = 12125, itemName = "Filled Blood Gem", count = 1, oi = 1, map = 115, x = 37.5, y = 64.1, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 12043, title = "Nozzlerust Defense", npc = 26647, npcName = "Narf", map = 115, x = 54.5, y = 23.6, f = "e" },
+					{ t = "goto", map = 115, x = 27.5, y = 44.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 12045, title = "Shaved Ice", npc = 26661, npcName = "Zivlix", map = 115, x = 54.7, y = 23.2, f = "e" },
+					{ t = "kill", quest = 12072, target = "Anub'ar Blightbeast", count = 25, oi = 1, map = 115, x = 27.8, y = 38.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 12469, title = "Return to Sender", npc = 26660, npcName = "Xink", map = 115, x = 55.0, y = 23.4, f = "e" },
-					{ t = "accept", quest = 12044, title = "Stocking Up", npc = 26660, npcName = "Xink", map = 115, x = 55.0, y = 23.4, f = "e" },
+					{ t = "turnin", quest = 12125, title = "In Service of Blood", npc = 26581, npcName = "Koltira Deathweaver", map = 115, x = 37.1, y = 46.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", target = "Crystalline Ice Elementals", count = 1, map = 115, x = 53.7, y = 18.9, f = "e" },
-					{ t = "collect", quest = 12045, itemName = "Ice Shard Cluster", count = 4, oi = 1, map = 115, x = 53.7, y = 18.9, f = "e" },
+					{ t = "turnin", quest = 12072, title = "Blightbeasts be Damned!", npc = 26574, npcName = "Valnok Windrager", map = 115, x = 37.2, y = 45.7, f = "e" },
 				},
 			},
 		},

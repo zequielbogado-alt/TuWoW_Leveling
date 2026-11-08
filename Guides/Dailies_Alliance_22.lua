@@ -83,19 +83,75 @@ do
 				},
 			},
 			{
+				only = { races = { "Draenei" }, classes = { "WARRIOR", "PALADIN", "HUNTER", "PRIEST", "SHAMAN", "MAGE" } },
 				goals = {
-					{ t = "goto", map = 118, x = 71.7, y = 22.4, f = "e", only = { classes = { "WARRIOR", "PALADIN", "HUNTER", "PRIEST", "SHAMAN", "MAGE" } } },
-					{ t = "goto", map = 118, x = 71.8, y = 22.5, f = "e", only = { classes = { "WARRIOR", "PALADIN", "HUNTER", "ROGUE", "PRIEST", "DEATHKNIGHT" } } },
-					{ t = "goto", map = 118, x = 71.6, y = 22.4, f = "e", only = { classes = { "WARRIOR", "PALADIN", "ROGUE", "PRIEST", "MAGE", "WARLOCK", "DEATHKNIGHT" } } },
-					{ t = "goto", map = 118, x = 71.6, y = 22.5, f = "e", only = { classes = { "WARRIOR", "HUNTER", "ROGUE", "PRIEST", "DRUID", "DEATHKNIGHT" } } },
-					{ t = "goto", map = 118, x = 71.9, y = 22.5, f = "e", only = { classes = { "WARRIOR", "ROGUE", "MAGE", "WARLOCK", "DEATHKNIGHT" } } },
-					{ t = "collect", quest = 13790, itemName = "Mark of the Champion", count = 4, oi = 1, map = 118, x = 71.6, y = 23.8, f = "e", only = { classes = { "DEATHKNIGHT" } } },
-					{ t = "goto", map = 118, x = 71.7, y = 22.4, f = "e", only = { classes = { "DEATHKNIGHT" } } },
-					{ t = "goto", map = 118, x = 71.8, y = 22.5, f = "e", only = { classes = { "DEATHKNIGHT" } } },
-					{ t = "goto", map = 118, x = 71.6, y = 22.4, f = "e", only = { classes = { "DEATHKNIGHT" } } },
-					{ t = "goto", map = 118, x = 71.6, y = 22.5, f = "e", only = { classes = { "DEATHKNIGHT" } } },
-					{ t = "goto", map = 118, x = 71.9, y = 22.5, f = "e", only = { classes = { "DEATHKNIGHT" } } },
-					{ t = "collect", quest = 13793, itemName = "Mark of the Champion", count = 4, oi = 1, map = 118, x = 71.6, y = 23.8, f = "e", only = { classes = { "DEATHKNIGHT" } } },
+					{ t = "goto", map = 118, x = 71.7, y = 22.4, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Dwarf" }, classes = { "WARRIOR", "PALADIN", "HUNTER", "ROGUE", "PRIEST", "DEATHKNIGHT" } },
+				goals = {
+					{ t = "goto", map = 118, x = 71.8, y = 22.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Human" }, classes = { "WARRIOR", "PALADIN", "ROGUE", "PRIEST", "MAGE", "WARLOCK", "DEATHKNIGHT" } },
+				goals = {
+					{ t = "goto", map = 118, x = 71.6, y = 22.4, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "WARRIOR", "HUNTER", "ROGUE", "PRIEST", "DRUID", "DEATHKNIGHT" } },
+				goals = {
+					{ t = "goto", map = 118, x = 71.6, y = 22.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Gnome" }, classes = { "WARRIOR", "ROGUE", "MAGE", "WARLOCK", "DEATHKNIGHT" } },
+				goals = {
+					{ t = "goto", map = 118, x = 71.9, y = 22.5, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "DEATHKNIGHT" } },
+				goals = {
+					{ t = "collect", quest = 13790, itemName = "Mark of the Champion", count = 4, oi = 1, map = 118, x = 71.6, y = 23.8, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "DEATHKNIGHT" } },
+				goals = {
+					{ t = "goto", map = 118, x = 71.7, y = 22.4, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Dwarf" }, classes = { "DEATHKNIGHT" } },
+				goals = {
+					{ t = "goto", map = 118, x = 71.8, y = 22.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Human" }, classes = { "DEATHKNIGHT" } },
+				goals = {
+					{ t = "goto", map = 118, x = 71.6, y = 22.4, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "DEATHKNIGHT" } },
+				goals = {
+					{ t = "goto", map = 118, x = 71.6, y = 22.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Gnome" }, classes = { "DEATHKNIGHT" } },
+				goals = {
+					{ t = "goto", map = 118, x = 71.9, y = 22.5, f = "e" },
+				},
+			},
+			{
+				only = { classes = { "DEATHKNIGHT" } },
+				goals = {
+					{ t = "collect", quest = 13793, itemName = "Mark of the Champion", count = 4, oi = 1, map = 118, x = 71.6, y = 23.8, f = "e" },
 				},
 			},
 			{
@@ -441,6 +497,22 @@ do
 					{ t = "goto", map = 118, x = 48.9, y = 71.4, f = "e" },
 				},
 			},
+		},
+	})
+end
+
+do
+	Polestar.RegisterGuide({
+		id = "zygor/dailies/a-dai-speed-gold-runs-level-80-dailies-speed-gold-run-with-atg-dailies-part-2",
+		pack = "guides",
+		title = "Level 80 Dailies Speed Gold Run (With ATG Dailies) (Parte 2/2)",
+		category = "Dailies",
+		folder = "Speed Gold Runs",
+		faction = "Alliance",
+		author = "TuWoW & Zygor",
+		zone = 118,
+		version = 1,
+		steps = {
 			{
 				only = { classes = { "DEATHKNIGHT" } },
 				goals = {
@@ -513,22 +585,6 @@ do
 					{ t = "turnin", quest = 13322, title = "Retest Now", npc = 30345, npcName = "Chief Engineer Boltwrench", f = "e" },
 				},
 			},
-		},
-	})
-end
-
-do
-	Polestar.RegisterGuide({
-		id = "zygor/dailies/a-dai-speed-gold-runs-level-80-dailies-speed-gold-run-with-atg-dailies-part-2",
-		pack = "guides",
-		title = "Level 80 Dailies Speed Gold Run (With ATG Dailies) (Parte 2/2)",
-		category = "Dailies",
-		folder = "Speed Gold Runs",
-		faction = "Alliance",
-		author = "TuWoW & Zygor",
-		zone = 118,
-		version = 1,
-		steps = {
 			{
 				only = { classes = { "DEATHKNIGHT" } },
 				goals = {

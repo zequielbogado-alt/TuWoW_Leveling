@@ -5,9 +5,10 @@ do
 	Polestar.RegisterGuide({
 		id = "zygor/leveling/a-draenei-1-13-part-2",
 		pack = "guides",
-		title = "Draenei (1-13) (Parte 2/2)",
+		title = "Draenei (1-13) (Parte 2/3)",
 		category = "Leveling",
 		faction = "Alliance",
+		next = "zygor/leveling/a-draenei-1-13-part-3",
 		author = "TuWoW & Zygor",
 		minLevel = 9,
 		maxLevel = 13,
@@ -15,6 +16,36 @@ do
 		version = 1,
 		races = { "Draenei" },
 		steps = {
+			{
+				note = "Follow the ghost furbolg to the river",
+				goals = {
+					{ t = "turnin", quest = 9541, title = "Totem of Yor", f = "e" },
+					{ t = "accept", quest = 9542, title = "Totem of Vark", f = "e" },
+				},
+			},
+			{
+				note = "Follow the ghost furbolg out of the water",
+				goals = {
+					{ t = "turnin", quest = 9542, title = "Totem of Vark", f = "e" },
+					{ t = "accept", quest = 9544, title = "The Prophecy of Akida", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", item = 23801, itemName = "Bristlelimb Key", count = 8, map = 1941, x = 28.5, y = 66.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1941, x = 27.0, y = 76.7, f = "e" },
+				},
+			},
+			{
+				note = "Follow the path to the bottom of the cave to 25.2,74.2",
+				goals = {
+					{ t = "kill", quest = 9515, target = "Warlord Sriss'tiz", count = 1, oi = 1, map = 1941, x = 25.2, y = 74.2, f = "e" },
+				},
+			},
 			{
 				goals = {
 					{ t = "turnin", quest = 10428, title = "The Missing Fisherman", npc = 17311, npcName = "Cowlen", map = 1941, x = 16.6, y = 94.5, f = "e" },
@@ -54,43 +85,154 @@ do
 				},
 			},
 			{
-				note = "Go west into Stillpine Hold to 46.1,16.6",
-				only = { races = { "Draenei" } },
+				only = { races = { "Draenei" }, classes = { "WARRIOR" } },
 				goals = {
 					{ t = "accept", quest = 9582, title = "Strength of One", npc = 17480, npcName = "Ruada", map = 1941, x = 50.0, y = 50.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "WARRIOR" } },
+				goals = {
 					{ t = "kill", quest = 9582, target = "Death Ravager", count = 1, oi = 1, map = 1941, x = 53.9, y = 10.0, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "WARRIOR" } },
+				goals = {
 					{ t = "turnin", quest = 9582, title = "Strength of One", npc = 17480, npcName = "Ruada", map = 1941, x = 50.0, y = 50.5, f = "e" },
 					{ t = "accept", quest = 10350, title = "Behomat", npc = 17480, npcName = "Ruada", map = 1941, x = 50.0, y = 50.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "WARRIOR" } },
+				goals = {
 					{ t = "turnin", quest = 10350, title = "Behomat", npc = 17120, npcName = "Behomat", map = 1947, x = 55.6, y = 82.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
+				goals = {
 					{ t = "accept", quest = 9462, title = "Call of Fire (1)", npc = 17219, npcName = "Sulaa", map = 1947, x = 32.3, y = 23.9, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
+				goals = {
 					{ t = "turnin", quest = 9462, title = "Call of Fire (1)", npc = 17212, npcName = "Tuluun", map = 1941, x = 48.1, y = 50.4, f = "e" },
 					{ t = "accept", quest = 9464, title = "Call of Fire (2)", npc = 17212, npcName = "Tuluun", map = 1941, x = 48.1, y = 50.4, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
+				goals = {
 					{ t = "turnin", quest = 9464, title = "Call of Fire (2)", npc = 17205, npcName = "Temper", map = 1941, x = 59.5, y = 18.1, f = "e" },
 					{ t = "accept", quest = 9465, title = "Call of Fire (3)", npc = 17205, npcName = "Temper", map = 1941, x = 59.5, y = 18.1, f = "e" },
+				},
+			},
+			{
+				note = "Go west into Stillpine Hold to 46.1,16.6",
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
+				goals = {
 					{ t = "collect", quest = 9465, itemName = "Ritual Torch", count = 1, oi = 1, map = 1941, x = 46.1, y = 16.6, f = "e" },
+				},
+			},
+			{
+				note = "Leave the cave and go east to 59.5,18.1",
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
+				goals = {
 					{ t = "turnin", quest = 9465, title = "Call of Fire (3)", npc = 17205, npcName = "Temper", map = 1941, x = 59.5, y = 18.1, f = "e" },
 					{ t = "accept", quest = 9467, title = "Call of Fire (4)", npc = 17205, npcName = "Temper", map = 1941, x = 59.5, y = 18.1, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
+				goals = {
 					{ t = "collect", quest = 9467, itemName = "Hauteur's Ashes", count = 1, oi = 1, map = 1941, x = 11.4, y = 82.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
+				goals = {
 					{ t = "turnin", quest = 9467, title = "Call of Fire (4)", npc = 17205, npcName = "Temper", map = 1941, x = 59.5, y = 18.1, f = "e" },
 					{ t = "accept", quest = 9468, title = "Call of Fire (5)", npc = 17205, npcName = "Temper", map = 1941, x = 59.5, y = 18.1, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
+				goals = {
 					{ t = "turnin", quest = 9468, title = "Call of Fire (5)", npc = 17212, npcName = "Tuluun", map = 1941, x = 48.1, y = 50.4, f = "e" },
 					{ t = "accept", quest = 9461, title = "Call of Fire (6)", npc = 17212, npcName = "Tuluun", map = 1941, x = 48.1, y = 50.4, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
+				goals = {
 					{ t = "turnin", quest = 9461, title = "Call of Fire (6)", npc = 17468, npcName = "Prophet Velen", map = 1947, x = 32.8, y = 54.5, f = "e" },
 					{ t = "accept", quest = 9555, title = "Call of Fire (7)", npc = 17468, npcName = "Prophet Velen", map = 1947, x = 32.8, y = 54.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "SHAMAN" } },
+				goals = {
 					{ t = "turnin", quest = 9555, title = "Call of Fire (7)", npc = 17204, npcName = "Farseer Nobundo", map = 1947, x = 31.4, y = 27.7, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "HUNTER" } },
+				goals = {
 					{ t = "accept", quest = 9757, title = "Seek Huntress Kella Nightbow", npc = 17110, npcName = "Acteon", map = 1941, x = 49.8, y = 51.9, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "HUNTER" } },
+				goals = {
 					{ t = "turnin", quest = 9757, title = "Seek Huntress Kella Nightbow", npc = 17614, npcName = "Huntress Kella Nightbow", map = 1941, x = 24.2, y = 54.3, f = "e" },
 					{ t = "accept", quest = 9591, title = "Taming the Beast (1)", npc = 17614, npcName = "Huntress Kella Nightbow", map = 1941, x = 24.2, y = 54.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "HUNTER" } },
+				goals = {
+					{ t = "goto", map = 1941, x = 22.8, y = 75.0, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "HUNTER" } },
+				goals = {
 					{ t = "turnin", quest = 9591, title = "Taming the Beast (1)", npc = 17614, npcName = "Huntress Kella Nightbow", map = 1941, x = 24.2, y = 54.3, f = "e" },
 					{ t = "accept", quest = 9592, title = "Taming the Beast (2)", npc = 17614, npcName = "Huntress Kella Nightbow", map = 1941, x = 24.2, y = 54.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "HUNTER" } },
+				goals = {
+					{ t = "goto", map = 1941, x = 34.9, y = 35.1, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "HUNTER" } },
+				goals = {
 					{ t = "turnin", quest = 9592, title = "Taming the Beast (2)", npc = 17614, npcName = "Huntress Kella Nightbow", map = 1941, x = 24.2, y = 54.3, f = "e" },
 					{ t = "accept", quest = 9593, title = "Taming the Beast (3)", npc = 17614, npcName = "Huntress Kella Nightbow", map = 1941, x = 24.2, y = 54.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "HUNTER" } },
+				goals = {
+					{ t = "goto", map = 1941, x = 36.6, y = 40.8, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "HUNTER" } },
+				goals = {
 					{ t = "turnin", quest = 9593, title = "Taming the Beast (3)", npc = 17614, npcName = "Huntress Kella Nightbow", map = 1941, x = 24.2, y = 54.3, f = "e" },
 					{ t = "accept", quest = 9675, title = "Beast Training", npc = 17614, npcName = "Huntress Kella Nightbow", map = 1941, x = 24.2, y = 54.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Draenei" }, classes = { "HUNTER" } },
+				goals = {
 					{ t = "turnin", quest = 9675, title = "Beast Training", npc = 16712, npcName = "Ganaar", map = 1947, x = 44.0, y = 86.7, f = "e" },
-					{ t = "goto", map = 1941, x = 22.8, y = 75.0, f = "e", only = { classes = { "HUNTER" } } },
-					{ t = "goto", map = 1941, x = 34.9, y = 35.1, f = "e", only = { classes = { "HUNTER" } } },
-					{ t = "goto", map = 1941, x = 36.6, y = 40.8, f = "e", only = { classes = { "HUNTER" } } },
 				},
 			},
 			{
@@ -369,6 +511,24 @@ do
 					{ t = "getfp", location = "Stormwind City", text = "Stormwind City", map = 1453, x = 71.0, y = 72.5, f = "e" },
 				},
 			},
+		},
+	})
+end
+
+do
+	Polestar.RegisterGuide({
+		id = "zygor/leveling/a-draenei-1-13-part-3",
+		pack = "guides",
+		title = "Draenei (1-13) (Parte 3/3)",
+		category = "Leveling",
+		faction = "Alliance",
+		author = "TuWoW & Zygor",
+		minLevel = 12,
+		maxLevel = 13,
+		zone = 1941,
+		version = 1,
+		races = { "Draenei" },
+		steps = {
 			{
 				note = "Ride the train to Ironforge|goto Ironforge|noway|c",
 				goals = {

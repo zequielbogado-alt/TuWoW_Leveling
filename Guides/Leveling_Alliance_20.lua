@@ -16,6 +16,64 @@ do
 		steps = {
 			{
 				goals = {
+					{ t = "turnin", quest = 632, title = "The Thandol Span (2)", npc = 1075, npcName = "Rhag Garmason", map = 1437, x = 49.8, y = 18.3, f = "e" },
+					{ t = "accept", quest = 633, title = "The Thandol Span (3)", npc = 1075, npcName = "Rhag Garmason", map = 1437, x = 49.8, y = 18.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "goto", map = 1417, x = 48.8, y = 88.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 633, title = "The Thandol Span (3)", npc = 1075, npcName = "Rhag Garmason", map = 1437, x = 49.8, y = 18.3, f = "e" },
+					{ t = "accept", quest = 634, title = "Plea To The Alliance", npc = 1075, npcName = "Rhag Garmason", map = 1437, x = 49.8, y = 18.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 634, title = "Plea To The Alliance", npc = 2700, npcName = "Captain Nials", map = 1417, x = 45.8, y = 47.6, f = "e" },
+					{ t = "accept", quest = 681, title = "Northfold Manor", npc = 2700, npcName = "Captain Nials", map = 1417, x = 45.8, y = 47.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "getfp", location = "Refuge Pointe", text = "Refuge Pointe", map = 1417, x = 45.8, y = 46.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "getfp", location = "Southshore", text = "Southshore", map = 1424, x = 49.3, y = 52.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 500, title = "Crushridge Bounty", npc = 2263, npcName = "Marshal Redpath", map = 1424, x = 49.5, y = 58.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 505, title = "Syndicate Assassins", npc = 2276, npcName = "Magistrate Henry Maleb", map = 1424, x = 48.1, y = 59.1, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 659, title = "Hints of a New Plague? (1)", npc = 2711, npcName = "Phin Odelic", map = 1424, x = 50.3, y = 59.0, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 9435, title = "Missing Crystals", npc = 17218, npcName = "Huraan", map = 1424, x = 51.0, y = 58.7, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "sethome", location = "Southshore", text = "Southshore", f = "e" },
+				},
+			},
+			{
+				goals = {
 					{ t = "accept", quest = 536, title = "Down the Coast", npc = 2228, npcName = "Lieutenant Farren Orinelle", map = 1424, x = 51.5, y = 58.4, f = "e" },
 				},
 			},

@@ -376,8 +376,8 @@ def parse_zygor_guide(full_title: str, body: str, faction: str, default_cat: str
     if not guide["steps"]:
         return None
 
-    # Merge class split steps and enrich starter hubs
-    guide["steps"] = merge_class_steps(guide["steps"])
+    # Decouple class split steps and enrich starter hubs
+    guide["steps"] = decouple_class_steps(guide["steps"])
     enrich_starter_hub_steps(guide)
 
     # Detectar primera zona de la guía
@@ -391,103 +391,250 @@ def parse_zygor_guide(full_title: str, body: str, faction: str, default_cat: str
 
     return guide
 
-COLDRIDGE_ACCEPT_GOALS = [
-    {"t": "accept", "quest": 3114, "title": "Glyphic Memorandum", "npc": 658, "npcName": "Sten Stoutarm", "map": 1426, "x": 29.8, "y": 71.3, "f": "e", "only": {"classes": ["MAGE"]}},
-    {"t": "accept", "quest": 3112, "title": "Simple Memorandum", "npc": 658, "npcName": "Sten Stoutarm", "map": 1426, "x": 29.8, "y": 71.3, "f": "e", "only": {"classes": ["WARRIOR"]}},
-    {"t": "accept", "quest": 3115, "title": "Tainted Memorandum", "npc": 658, "npcName": "Sten Stoutarm", "map": 1426, "x": 29.8, "y": 71.3, "f": "e", "only": {"classes": ["WARLOCK"]}},
-    {"t": "accept", "quest": 3113, "title": "Encrypted Memorandum", "npc": 658, "npcName": "Sten Stoutarm", "map": 1426, "x": 29.8, "y": 71.3, "f": "e", "only": {"classes": ["ROGUE"]}},
-    {"t": "accept", "quest": 3108, "title": "Etched Rune", "npc": 658, "npcName": "Sten Stoutarm", "map": 1426, "x": 29.8, "y": 71.3, "f": "e", "only": {"classes": ["HUNTER"]}},
-    {"t": "accept", "quest": 3110, "title": "Hallowed Rune", "npc": 658, "npcName": "Sten Stoutarm", "map": 1426, "x": 29.8, "y": 71.3, "f": "e", "only": {"classes": ["PRIEST"]}},
-    {"t": "accept", "quest": 3107, "title": "Consecrated Rune", "npc": 658, "npcName": "Sten Stoutarm", "map": 1426, "x": 29.8, "y": 71.3, "f": "e", "only": {"classes": ["PALADIN"]}},
+COLDRIDGE_MISSING_ACCEPTS = [
+    {"class": "HUNTER", "quest": 3108, "title": "Etched Rune", "npc": 658, "npcName": "Sten Stoutarm", "map": 1426, "x": 29.8, "y": 71.3},
+    {"class": "PRIEST", "quest": 3110, "title": "Hallowed Rune", "npc": 658, "npcName": "Sten Stoutarm", "map": 1426, "x": 29.8, "y": 71.3},
+    {"class": "PALADIN", "quest": 3107, "title": "Consecrated Rune", "npc": 658, "npcName": "Sten Stoutarm", "map": 1426, "x": 29.8, "y": 71.3},
+    {"class": "MAGE", "quest": 3114, "title": "Glyphic Memorandum", "npc": 658, "npcName": "Sten Stoutarm", "map": 1426, "x": 29.8, "y": 71.3},
+    {"class": "WARLOCK", "quest": 3115, "title": "Tainted Memorandum", "npc": 658, "npcName": "Sten Stoutarm", "map": 1426, "x": 29.8, "y": 71.3},
 ]
 
-COLDRIDGE_TURNIN_GOALS = [
-    {"t": "turnin", "quest": 3114, "title": "Glyphic Memorandum", "npc": 944, "npcName": "Marryk Nurribit", "map": 1426, "x": 28.7, "y": 66.4, "f": "e", "only": {"classes": ["MAGE"]}},
-    {"t": "turnin", "quest": 3112, "title": "Simple Memorandum", "npc": 912, "npcName": "Thran Khorman", "map": 1426, "x": 28.8, "y": 67.2, "f": "e", "only": {"classes": ["WARRIOR"]}},
-    {"t": "turnin", "quest": 3106, "title": "Simple Rune", "npc": 912, "npcName": "Thran Khorman", "map": 1426, "x": 28.8, "y": 67.2, "f": "e", "only": {"classes": ["WARRIOR"]}},
-    {"t": "turnin", "quest": 3115, "title": "Tainted Memorandum", "npc": 460, "npcName": "Alamar Grimm", "map": 1426, "x": 28.7, "y": 66.1, "f": "e", "only": {"classes": ["WARLOCK"]}},
-    {"t": "turnin", "quest": 3113, "title": "Encrypted Memorandum", "npc": 916, "npcName": "Solm Hargrin", "map": 1426, "x": 28.4, "y": 67.5, "f": "e", "only": {"classes": ["ROGUE"]}},
-    {"t": "turnin", "quest": 3109, "title": "Encrypted Rune", "npc": 916, "npcName": "Solm Hargrin", "map": 1426, "x": 28.4, "y": 67.5, "f": "e", "only": {"classes": ["ROGUE"]}},
-    {"t": "turnin", "quest": 3108, "title": "Etched Rune", "npc": 895, "npcName": "Thorgas Grimson", "map": 1426, "x": 29.2, "y": 67.5, "f": "e", "only": {"classes": ["HUNTER"]}},
-    {"t": "turnin", "quest": 3110, "title": "Hallowed Rune", "npc": 837, "npcName": "Branstock Khalder", "map": 1426, "x": 28.6, "y": 66.4, "f": "e", "only": {"classes": ["PRIEST"]}},
-    {"t": "turnin", "quest": 3107, "title": "Consecrated Rune", "npc": 926, "npcName": "Bromos Grummner", "map": 1426, "x": 28.8, "y": 68.3, "f": "e", "only": {"classes": ["PALADIN"]}},
+COLDRIDGE_MISSING_TURNINS = [
+    {"class": "HUNTER", "quest": 3108, "title": "Etched Rune", "npc": 895, "npcName": "Thorgas Grimson", "map": 1426, "x": 29.2, "y": 67.5},
+    {"class": "PRIEST", "quest": 3110, "title": "Hallowed Rune", "npc": 837, "npcName": "Branstock Khalder", "map": 1426, "x": 28.6, "y": 66.4},
+    {"class": "PALADIN", "quest": 3107, "title": "Consecrated Rune", "npc": 926, "npcName": "Bromos Grummner", "map": 1426, "x": 28.8, "y": 68.3},
+    {"class": "MAGE", "quest": 3114, "title": "Glyphic Memorandum", "npc": 944, "npcName": "Marryk Nurribit", "map": 1426, "x": 28.7, "y": 66.4},
+    {"class": "WARLOCK", "quest": 3115, "title": "Tainted Memorandum", "npc": 460, "npcName": "Alamar Grimm", "map": 1426, "x": 28.7, "y": 66.1},
 ]
 
-VALLEY_OF_TRIALS_ACCEPT_GOALS = [
-    {"t": "accept", "quest": 2383, "title": "Simple Parchment", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["WARRIOR"]}},
-    {"t": "accept", "quest": 3065, "title": "Simple Tablet", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["WARRIOR"]}},
-    {"t": "accept", "quest": 3088, "title": "Encrypted Parchment", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["ROGUE"]}},
-    {"t": "accept", "quest": 3083, "title": "Encrypted Tablet", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["ROGUE"]}},
-    {"t": "accept", "quest": 3087, "title": "Etched Parchment", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["HUNTER"]}},
-    {"t": "accept", "quest": 3082, "title": "Etched Tablet", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["HUNTER"]}},
-    {"t": "accept", "quest": 3089, "title": "Rune-Inscribed Parchment", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["SHAMAN"]}},
-    {"t": "accept", "quest": 3084, "title": "Rune-Inscribed Tablet", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["SHAMAN"]}},
-    {"t": "accept", "quest": 3090, "title": "Tainted Parchment", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["WARLOCK"]}},
-    {"t": "accept", "quest": 3086, "title": "Glyphic Tablet", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["MAGE"]}},
-    {"t": "accept", "quest": 3085, "title": "Hallowed Tablet", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8, "f": "e", "only": {"classes": ["PRIEST"]}},
+VALLEY_OF_TRIALS_MISSING_ACCEPTS = [
+    {"class": "PRIEST", "quest": 3085, "title": "Hallowed Tablet", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8},
+    {"class": "MAGE", "quest": 3086, "title": "Glyphic Tablet", "npc": 3143, "npcName": "Kaltunk", "map": 1411, "x": 44.8, "y": 68.8},
 ]
 
-VALLEY_OF_TRIALS_TURNIN_GOALS = [
-    {"t": "turnin", "quest": 2383, "title": "Simple Parchment", "npc": 3169, "npcName": "Frang", "map": 1411, "x": 42.9, "y": 69.4, "f": "e", "only": {"classes": ["WARRIOR"]}},
-    {"t": "turnin", "quest": 3065, "title": "Simple Tablet", "npc": 3169, "npcName": "Frang", "map": 1411, "x": 42.9, "y": 69.4, "f": "e", "only": {"classes": ["WARRIOR"]}},
-    {"t": "turnin", "quest": 3088, "title": "Encrypted Parchment", "npc": 3170, "npcName": "Rwag", "map": 1411, "x": 42.4, "y": 69.1, "f": "e", "only": {"classes": ["ROGUE"]}},
-    {"t": "turnin", "quest": 3083, "title": "Encrypted Tablet", "npc": 3170, "npcName": "Rwag", "map": 1411, "x": 42.4, "y": 69.1, "f": "e", "only": {"classes": ["ROGUE"]}},
-    {"t": "turnin", "quest": 3087, "title": "Etched Parchment", "npc": 3171, "npcName": "Jen'shan", "map": 1411, "x": 42.7, "y": 69.1, "f": "e", "only": {"classes": ["HUNTER"]}},
-    {"t": "turnin", "quest": 3082, "title": "Etched Tablet", "npc": 3171, "npcName": "Jen'shan", "map": 1411, "x": 42.7, "y": 69.1, "f": "e", "only": {"classes": ["HUNTER"]}},
-    {"t": "turnin", "quest": 3089, "title": "Rune-Inscribed Parchment", "npc": 3173, "npcName": "Shikrik", "map": 1411, "x": 42.5, "y": 69.0, "f": "e", "only": {"classes": ["SHAMAN"]}},
-    {"t": "turnin", "quest": 3084, "title": "Rune-Inscribed Tablet", "npc": 3173, "npcName": "Shikrik", "map": 1411, "x": 42.5, "y": 69.0, "f": "e", "only": {"classes": ["SHAMAN"]}},
-    {"t": "turnin", "quest": 3090, "title": "Tainted Parchment", "npc": 3172, "npcName": "Nartok", "map": 1411, "x": 42.6, "y": 69.0, "f": "e", "only": {"classes": ["WARLOCK"]}},
-    {"t": "turnin", "quest": 3086, "title": "Glyphic Tablet", "npc": 5880, "npcName": "Mai'ah", "map": 1411, "x": 42.5, "y": 69.0, "f": "e", "only": {"classes": ["MAGE"]}},
-    {"t": "turnin", "quest": 3085, "title": "Hallowed Tablet", "npc": 3706, "npcName": "Tai'jin", "map": 1411, "x": 42.5, "y": 69.0, "f": "e", "only": {"classes": ["PRIEST"]}},
+VALLEY_OF_TRIALS_MISSING_TURNINS = [
+    {"class": "PRIEST", "quest": 3085, "title": "Hallowed Tablet", "npc": 3706, "npcName": "Tai'jin", "map": 1411, "x": 42.5, "y": 69.0},
+    {"class": "MAGE", "quest": 3086, "title": "Glyphic Tablet", "npc": 3707, "npcName": "Mai'ah", "map": 1411, "x": 42.6, "y": 69.0},
 ]
 
-def enrich_coldridge_steps(steps: List[Dict[str, Any]]):
-    for st in steps:
-        has_179 = any(gl.get("quest") == 179 for gl in st.get("goals", []))
-        has_233 = any(gl.get("quest") == 233 for gl in st.get("goals", []))
-        if has_179 and has_233:
-            new_goals = []
-            for gl in st["goals"]:
-                if gl.get("quest") in (179, 233, 170):
-                    new_goals.append(gl)
-            for cg in COLDRIDGE_ACCEPT_GOALS:
-                new_goals.append(copy.deepcopy(cg))
-            st["goals"] = new_goals
-            if st.get("only") and "classes" in st["only"]:
-                del st["only"]["classes"]
-                if not st["only"]: del st["only"]
+def step_loc_key(st: Dict[str, Any]):
+    for gl in st.get("goals", []):
+        if gl.get("npc"):
+            return ("npc", gl["npc"])
+        if gl.get("x") is not None and gl.get("y") is not None:
+            return ("coords", gl.get("map"), round(gl["x"], 1), round(gl["y"], 1))
+    return None
 
-        has_class_turnin = any(gl.get("quest") in (3114, 3112, 3106, 3115, 3113, 3109, 3108, 3110, 3107) for gl in st.get("goals", []))
-        is_only_turnins = all(gl.get("t") == "turnin" for gl in st.get("goals", []))
-        if has_class_turnin and is_only_turnins:
-            st["goals"] = [copy.deepcopy(cg) for cg in COLDRIDGE_TURNIN_GOALS]
-            if st.get("only") and "classes" in st["only"]:
-                del st["only"]["classes"]
-                if not st["only"]: del st["only"]
+def decouple_class_steps(steps: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    new_steps: List[Dict[str, Any]] = []
+    i = 0
+    while i < len(steps):
+        st = steps[i]
+        st_classes = st.get("only", {}).get("classes")
+        if not st_classes:
+            new_steps.append(st)
+            i += 1
+            continue
 
-def enrich_valley_of_trials_steps(steps: List[Dict[str, Any]]):
-    for st in steps:
-        has_788 = any(gl.get("quest") == 788 for gl in st.get("goals", []))
-        has_789 = any(gl.get("quest") == 789 for gl in st.get("goals", []))
-        if has_788 and has_789:
-            new_goals = []
-            for gl in st["goals"]:
-                if gl.get("quest") in (788, 789):
-                    new_goals.append(gl)
-            for vg in VALLEY_OF_TRIALS_ACCEPT_GOALS:
-                new_goals.append(copy.deepcopy(vg))
-            st["goals"] = new_goals
-            if st.get("only") and "classes" in st["only"]:
-                del st["only"]["classes"]
-                if not st["only"]: del st["only"]
+        loc_i = step_loc_key(st)
+        group = [st]
+        classes_seen = set(st_classes)
+        j = i + 1
+        while j < len(steps):
+            next_st = steps[j]
+            next_classes = next_st.get("only", {}).get("classes")
+            if not next_classes:
+                break
+            loc_j = step_loc_key(next_st)
+            if loc_i and loc_j and loc_i != loc_j:
+                break
+            group.append(next_st)
+            classes_seen.update(next_classes)
+            j += 1
 
-        has_vot_turnin = any(gl.get("quest") in (2383, 3065, 3088, 3083, 3087, 3082, 3089, 3084, 3090, 3086, 3085) for gl in st.get("goals", []))
-        is_only_turnins = all(gl.get("t") == "turnin" for gl in st.get("goals", []))
-        if has_vot_turnin and is_only_turnins:
-            st["goals"] = [copy.deepcopy(vg) for vg in VALLEY_OF_TRIALS_TURNIN_GOALS]
-            if st.get("only") and "classes" in st["only"]:
-                del st["only"]["classes"]
-                if not st["only"]: del st["only"]
+        if len(group) == 1:
+            new_steps.append(st)
+            i += 1
+            continue
+
+        goal_keys_count = {}
+        for s in group:
+            s_keys = set()
+            for gl in s.get("goals", []):
+                q = gl.get("quest")
+                if q:
+                    k = (gl.get("t"), q)
+                    s_keys.add(k)
+            for k in s_keys:
+                goal_keys_count[k] = goal_keys_count.get(k, 0) + 1
+
+        shared_keys = {k for k, count in goal_keys_count.items() if count > 1}
+
+        if shared_keys:
+            common_step: Dict[str, Any] = {"goals": []}
+            common_races = group[0].get("only", {}).get("races")
+            if common_races and all(s.get("only", {}).get("races") == common_races for s in group):
+                common_step["only"] = {"races": common_races}
+            
+            seen_common = set()
+            for s in group:
+                for gl in s.get("goals", []):
+                    k = (gl.get("t"), gl.get("quest"))
+                    if k in shared_keys and k not in seen_common:
+                        seen_common.add(k)
+                        gl_copy = copy.deepcopy(gl)
+                        if "only" in gl_copy and "classes" in gl_copy["only"]:
+                            del gl_copy["only"]["classes"]
+                            if not gl_copy["only"]: del gl_copy["only"]
+                        common_step["goals"].append(gl_copy)
+
+            if common_step["goals"]:
+                new_steps.append(common_step)
+
+            for s in group:
+                class_specific_goals = []
+                for gl in s.get("goals", []):
+                    k = (gl.get("t"), gl.get("quest"))
+                    if k not in shared_keys:
+                        class_specific_goals.append(gl)
+                if class_specific_goals:
+                    s_copy = copy.deepcopy(s)
+                    s_copy["goals"] = class_specific_goals
+                    new_steps.append(s_copy)
+
+            i = j
+        else:
+            for s in group:
+                new_steps.append(s)
+            i = j
+
+    return new_steps
+
+def enrich_coldridge_clean(steps: List[Dict[str, Any]]):
+    idx_accept = -1
+    existing_classes = set()
+    for i, st in enumerate(steps):
+        for gl in st.get("goals", []):
+            if gl.get("npc") == 658 and gl.get("t") == "accept":
+                idx_accept = i
+                cls_list = st.get("only", {}).get("classes", [])
+                existing_classes.update(cls_list)
+
+    if idx_accept != -1:
+        insert_steps = []
+        for cinfo in COLDRIDGE_MISSING_ACCEPTS:
+            if cinfo["class"] not in existing_classes:
+                st = {
+                    "only": {"classes": [cinfo["class"]]},
+                    "goals": [{
+                        "t": "accept",
+                        "quest": cinfo["quest"],
+                        "title": cinfo["title"],
+                        "npc": cinfo["npc"],
+                        "npcName": cinfo["npcName"],
+                        "map": cinfo["map"],
+                        "x": cinfo["x"],
+                        "y": cinfo["y"],
+                        "f": "e",
+                    }]
+                }
+                insert_steps.append(st)
+        for s in reversed(insert_steps):
+            steps.insert(idx_accept + 1, s)
+
+    idx_turnin = -1
+    existing_turnin_classes = set()
+    for i, st in enumerate(steps):
+        for gl in st.get("goals", []):
+            if gl.get("t") == "turnin" and gl.get("quest") in (3114, 3112, 3106, 3115, 3113, 3109, 3108, 3110, 3107):
+                idx_turnin = i
+                cls_list = st.get("only", {}).get("classes", [])
+                existing_turnin_classes.update(cls_list)
+
+    if idx_turnin != -1:
+        insert_turnins = []
+        for cinfo in COLDRIDGE_MISSING_TURNINS:
+            if cinfo["class"] not in existing_turnin_classes:
+                st = {
+                    "only": {"classes": [cinfo["class"]]},
+                    "goals": [{
+                        "t": "turnin",
+                        "quest": cinfo["quest"],
+                        "title": cinfo["title"],
+                        "npc": cinfo["npc"],
+                        "npcName": cinfo["npcName"],
+                        "map": cinfo["map"],
+                        "x": cinfo["x"],
+                        "y": cinfo["y"],
+                        "f": "e",
+                    }]
+                }
+                insert_turnins.append(st)
+        for s in reversed(insert_turnins):
+            steps.insert(idx_turnin + 1, s)
+
+def enrich_valley_of_trials_clean(steps: List[Dict[str, Any]]):
+    idx_accept = -1
+    existing_classes = set()
+    for i, st in enumerate(steps):
+        for gl in st.get("goals", []):
+            if gl.get("npc") == 3143 and gl.get("t") == "accept":
+                idx_accept = i
+                cls_list = st.get("only", {}).get("classes", [])
+                existing_classes.update(cls_list)
+
+    if idx_accept != -1:
+        insert_steps = []
+        for vinfo in VALLEY_OF_TRIALS_MISSING_ACCEPTS:
+            if vinfo["class"] not in existing_classes:
+                st = {
+                    "only": {"classes": [vinfo["class"]]},
+                    "goals": [{
+                        "t": "accept",
+                        "quest": vinfo["quest"],
+                        "title": vinfo["title"],
+                        "npc": vinfo["npc"],
+                        "npcName": vinfo["npcName"],
+                        "map": vinfo["map"],
+                        "x": vinfo["x"],
+                        "y": vinfo["y"],
+                        "f": "e",
+                    }]
+                }
+                insert_steps.append(st)
+        for s in reversed(insert_steps):
+            steps.insert(idx_accept + 1, s)
+
+    idx_turnin = -1
+    existing_turnin_classes = set()
+    for i, st in enumerate(steps):
+        for gl in st.get("goals", []):
+            if gl.get("t") == "turnin" and gl.get("quest") in (2383, 3065, 3088, 3083, 3087, 3082, 3089, 3084, 3090, 3086, 3085):
+                idx_turnin = i
+                cls_list = st.get("only", {}).get("classes", [])
+                existing_turnin_classes.update(cls_list)
+
+    if idx_turnin != -1:
+        insert_turnins = []
+        for vinfo in VALLEY_OF_TRIALS_MISSING_TURNINS:
+            if vinfo["class"] not in existing_turnin_classes:
+                st = {
+                    "only": {"classes": [vinfo["class"]]},
+                    "goals": [{
+                        "t": "turnin",
+                        "quest": vinfo["quest"],
+                        "title": vinfo["title"],
+                        "npc": vinfo["npc"],
+                        "npcName": vinfo["npcName"],
+                        "map": vinfo["map"],
+                        "x": vinfo["x"],
+                        "y": vinfo["y"],
+                        "f": "e",
+                    }]
+                }
+                insert_turnins.append(st)
+        for s in reversed(insert_turnins):
+            steps.insert(idx_turnin + 1, s)
 
 def enrich_starter_hub_steps(g: Dict[str, Any]):
     steps = g.get("steps", [])
@@ -498,90 +645,9 @@ def enrich_starter_hub_steps(g: Dict[str, Any]):
     is_vot = ("orc" in title or "troll" in title or "orc" in guide_id or "troll" in guide_id) and "1-13" in title
 
     if is_coldridge:
-        enrich_coldridge_steps(steps)
+        enrich_coldridge_clean(steps)
     elif is_vot:
-        enrich_valley_of_trials_steps(steps)
-
-def merge_class_steps(steps: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    new_steps = []
-    i = 0
-    while i < len(steps):
-        st = steps[i]
-        st_classes = st.get("only", {}).get("classes")
-        if not st_classes:
-            new_steps.append(st)
-            i += 1
-            continue
-
-        # Look ahead for consecutive steps that have different classes
-        group = [st]
-        classes_seen = set(st_classes)
-        j = i + 1
-        while j < len(steps):
-            next_st = steps[j]
-            next_classes = next_st.get("only", {}).get("classes")
-            if not next_classes:
-                break
-            group.append(next_st)
-            classes_seen.update(next_classes)
-            j += 1
-
-        if len(classes_seen) <= 1 or len(group) == 1:
-            new_steps.append(st)
-            i += 1
-            continue
-
-        all_quest_ids = [gl.get("quest") for s in group for gl in s["goals"] if gl.get("quest")]
-        quest_counts = {}
-        for q in all_quest_ids:
-            quest_counts[q] = quest_counts.get(q, 0) + 1
-        
-        has_shared = any(c > 1 for c in quest_counts.values())
-        same_hub = all(len(s["goals"]) <= 2 for s in group)
-
-        if has_shared or same_hub:
-            merged_step: Dict[str, Any] = {"goals": []}
-            
-            common_races = group[0].get("only", {}).get("races")
-            if common_races:
-                all_have_races = all(s.get("only", {}).get("races") == common_races for s in group)
-                if all_have_races:
-                    merged_step.setdefault("only", {})["races"] = common_races
-
-            for s in group:
-                if s.get("along"): merged_step["along"] = True
-                if s.get("note") and not merged_step.get("note"):
-                    merged_step["note"] = s["note"]
-
-            seen_common_keys = set()
-            class_goals = []
-
-            for s in group:
-                s_cls = s.get("only", {}).get("classes", [])
-                for gl in s["goals"]:
-                    q = gl.get("quest")
-                    if q and quest_counts.get(q, 0) > 1:
-                        key = (gl.get("t"), q, gl.get("npc"), gl.get("target"), gl.get("itemName"), gl.get("oi"))
-                        if key not in seen_common_keys:
-                            seen_common_keys.add(key)
-                            gl_copy = copy.deepcopy(gl)
-                            if "only" in gl_copy and "classes" in gl_copy["only"]:
-                                del gl_copy["only"]["classes"]
-                                if not gl_copy["only"]: del gl_copy["only"]
-                            merged_step["goals"].append(gl_copy)
-                    else:
-                        gl_copy = copy.deepcopy(gl)
-                        gl_copy.setdefault("only", {})["classes"] = copy.deepcopy(s_cls)
-                        class_goals.append(gl_copy)
-
-            merged_step["goals"].extend(class_goals)
-            new_steps.append(merged_step)
-            i = j
-        else:
-            new_steps.append(st)
-            i += 1
-
-    return new_steps
+        enrich_valley_of_trials_clean(steps)
 
 def format_goal_lua(g: Dict[str, Any], default_map: Optional[int] = None) -> str:
     if ("x" in g or "y" in g) and ("map" not in g or g["map"] is None):

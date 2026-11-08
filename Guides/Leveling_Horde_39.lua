@@ -3,512 +3,306 @@
 
 do
 	Polestar.RegisterGuide({
-		id = "zygor/leveling/h-northrend-70-72",
+		id = "zygor/leveling/h-outland-68-70-part-3",
 		pack = "guides",
-		title = "Northrend (70-72) (Parte 1/5)",
+		title = "Outland (68-70) (Parte 3/3)",
 		category = "Leveling",
 		faction = "Horde",
-		next = "zygor/leveling/h-northrend-70-72-part-2",
 		author = "TuWoW & Zygor",
-		minLevel = 70,
-		maxLevel = 72,
-		zone = 1411,
+		minLevel = 69,
+		maxLevel = 70,
+		zone = 1949,
 		version = 1,
 		steps = {
 			{
+				note = "Go inside Manaforge Coruu to 49,81.5",
 				goals = {
-					{ t = "goto", map = 1411, x = 41.4, y = 17.8, f = "e" },
+					{ t = "collect", quest = 10330, itemName = "Coruu Access Crystal", count = 1, oi = 1, map = 1953, x = 49.0, y = 81.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 11585, title = "Hellscream's Vigil", npc = 25273, npcName = "Warsong Recruitment Officer", map = 114, x = 41.6, y = 54.0, f = "e" },
+					{ t = "turnin", quest = 10330, title = "Shutting Down Manaforge Coruu", npc = 19840, npcName = "Caledis Brightdawn", f = "e" },
+					{ t = "accept", quest = 10200, title = "Return to Thalodien", npc = 19840, npcName = "Caledis Brightdawn", f = "e" },
 				},
 			},
 			{
-				note = "Go downstairs to 41.3,53.6",
 				goals = {
-					{ t = "turnin", quest = 11585, title = "Hellscream's Vigil", npc = 25237, npcName = "Garrosh Hellscream", map = 114, x = 41.3, y = 53.6, f = "e" },
+					{ t = "accept", quest = 10334, title = "Needs More Cowbell", npc = 20464, npcName = "Thadell", map = 1953, x = 57.7, y = 85.2, f = "e" },
+					{ t = "accept", quest = 10331, title = "Indispensable Tools", npc = 20463, npcName = "Apprentice Andrethan", map = 1953, x = 57.7, y = 85.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 11596, title = "The Defense of Warsong Hold", npc = 25256, npcName = "High Overlord Saurfang", map = 114, x = 41.3, y = 53.6, f = "e" },
+					{ t = "accept", quest = 10184, title = "Malevolent Remnants", npc = 19488, npcName = "Custodian Dieworth", map = 1953, x = 57.5, y = 86.3, f = "e" },
+					{ t = "turnin", quest = 10174, title = "Curse of the Violet Tower", npc = 19644, npcName = "Image of Archmage Vargoth", map = 1953, x = 57.5, y = 86.3, f = "e" },
+					{ t = "accept", quest = 10188, title = "The Sigil of Krasus", npc = 19644, npcName = "Image of Archmage Vargoth", map = 1953, x = 57.5, y = 86.3, f = "e" },
+					{ t = "accept", quest = 10185, title = "A Fate Worse Than Death", npc = 19488, npcName = "Custodian Dieworth", map = 1953, x = 57.5, y = 86.3, f = "e" },
+					{ t = "accept", quest = 10343, title = "The Unending Invasion", npc = 19489, npcName = "Lieutenant-Sorcerer Morran", map = 1953, x = 57.5, y = 86.3, f = "e" },
 				},
 			},
 			{
-				note = "Go outside to 43.2,55",
 				goals = {
-					{ t = "turnin", quest = 11596, title = "The Defense of Warsong Hold", npc = 25279, npcName = "Overlord Razgor", map = 114, x = 43.2, y = 55.0, f = "e" },
-					{ t = "accept", quest = 11598, title = "Taking Back Mightstone Quarry", npc = 25279, npcName = "Overlord Razgor", map = 114, x = 43.2, y = 55.0, f = "e" },
+					{ t = "turnin", quest = 10334, title = "Needs More Cowbell", npc = 20415, npcName = "Bessy", map = 1953, x = 59.1, y = 78.8, f = "e" },
+					{ t = "accept", quest = 10337, title = "When the Cows Come Home", npc = 20415, npcName = "Bessy", map = 1953, x = 59.1, y = 78.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 11606, title = "Patience is a Virtue that We Don't Need", npc = 25327, npcName = "Quartermaster Holgoth", map = 114, x = 43.3, y = 55.4, f = "e" },
+					{ t = "turnin", quest = 10337, title = "When the Cows Come Home", npc = 20464, npcName = "Thadell", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 11611, title = "Taken by the Scourge", npc = 25280, npcName = "Foreman Mortuus", map = 114, x = 42.2, y = 56.2, f = "e" },
+					{ t = "collect", itemName = "Belmara's Tome", count = 1, map = 1953, x = 58.4, y = 88.3, f = "e" },
+					{ t = "accept", quest = 10305, title = "Abjurist Belmara", map = 1953, x = 58.4, y = 88.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 11598, target = "Nerub'ar", count = 15, oi = 1, map = 114, x = 43.3, y = 57.9, f = "e" },
-					{ t = "collect", quest = 11606, itemName = "Warsong Munitions", count = 15, oi = 1, map = 114, x = 43.3, y = 57.9, f = "e" },
+					{ t = "collect", itemName = "Cohlien's Cap", count = 1, map = 1953, x = 59.6, y = 87.7, f = "e" },
+					{ t = "accept", quest = 10307, title = "Cohlien Frostweaver", map = 1953, x = 59.6, y = 87.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 114, x = 42.8, y = 58.1, f = "e" },
+					{ t = "collect", itemName = "Dathric's Blade", count = 1, map = 1953, x = 60.4, y = 88.0, f = "e" },
+					{ t = "accept", quest = 10182, title = "Battle-Mage Dathric", map = 1953, x = 60.4, y = 88.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11611, title = "Taken by the Scourge", npc = 25280, npcName = "Foreman Mortuus", map = 114, x = 42.2, y = 56.2, f = "e" },
+					{ t = "collect", itemName = "Luminrath's Mantle", count = 1, map = 1953, x = 59.9, y = 85.6, f = "e" },
+					{ t = "accept", quest = 10306, title = "Conjurer Luminrath", map = 1953, x = 59.9, y = 85.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11606, title = "Patience is a Virtue that We Don't Need", npc = 25327, npcName = "Quartermaster Holgoth", map = 114, x = 43.3, y = 55.4, f = "e" },
-					{ t = "accept", quest = 11608, title = "Bury Those Cockroaches!", npc = 25327, npcName = "Quartermaster Holgoth", map = 114, x = 43.3, y = 55.4, f = "e" },
+					{ t = "collect", quest = 10331, itemName = "Smithing Hammer", count = 1, oi = 1, map = 1953, x = 61.0, y = 85.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11598, title = "Taking Back Mightstone Quarry", npc = 25279, npcName = "Overlord Razgor", map = 114, x = 43.2, y = 55.0, f = "e" },
-					{ t = "accept", quest = 11602, title = "Cutting Off the Source", npc = 25279, npcName = "Overlord Razgor", map = 114, x = 43.2, y = 55.0, f = "e" },
-					{ t = "accept", quest = 11614, title = "Untold Truths", npc = 25394, npcName = "Shadowstalker Barthus", map = 114, x = 43.2, y = 55.0, f = "e" },
+					{ t = "turnin", quest = 10331, title = "Indispensable Tools", npc = 20463, npcName = "Apprentice Andrethan", map = 1953, x = 57.7, y = 85.2, f = "e" },
+					{ t = "accept", quest = 10332, title = "Master Smith Rhonsus", npc = 20463, npcName = "Apprentice Andrethan", map = 1953, x = 57.7, y = 85.2, f = "e" },
 				},
 			},
 			{
-				note = "Go south up the metal stairs to 44.6,59.3",
 				goals = {
-					{ t = "goto", map = 114, x = 44.6, y = 59.3, f = "e" },
+					{ t = "turnin", quest = 10184, title = "Malevolent Remnants", npc = 19488, npcName = "Custodian Dieworth", map = 1953, x = 57.5, y = 86.3, f = "e" },
+					{ t = "accept", quest = 10312, title = "The Annals of Kirin'Var", npc = 19488, npcName = "Custodian Dieworth", map = 1953, x = 57.5, y = 86.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 114, x = 44.3, y = 56.9, f = "e" },
+					{ t = "kill", quest = 10332, target = "Rhonsus", count = 1, oi = 1, map = 1953, x = 61.3, y = 85.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 114, x = 41.7, y = 58.3, f = "e" },
+					{ t = "turnin", quest = 10332, title = "Master Smith Rhonsus", npc = 20463, npcName = "Apprentice Andrethan", map = 1953, x = 57.7, y = 85.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 114, x = 39.8, y = 52.6, f = "e" },
+					{ t = "goto", map = 1953, x = 56.9, y = 86.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11614, title = "Untold Truths", npc = 25328, npcName = "Shadowstalker Luther", map = 114, x = 40.1, y = 52.1, f = "e" },
-					{ t = "accept", quest = 11615, title = "Nerub'ar Secrets", npc = 25328, npcName = "Shadowstalker Luther", map = 114, x = 40.1, y = 52.1, f = "e" },
+					{ t = "goto", map = 1953, x = 56.4, y = 87.8, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 114, x = 41.3, y = 50.4, f = "e" },
+					{ t = "collect", quest = 10343, itemName = "Mana Bomb Fragment", count = 1, oi = 1, map = 1953, x = 55.7, y = 87.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11608, title = "Bury Those Cockroaches!", npc = 25327, npcName = "Quartermaster Holgoth", map = 114, x = 43.3, y = 55.4, f = "e" },
+					{ t = "goto", map = 1953, x = 55.1, y = 87.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11602, title = "Cutting Off the Source", npc = 25279, npcName = "Overlord Razgor", map = 114, x = 43.2, y = 55.0, f = "e" },
-					{ t = "accept", quest = 11634, title = "Wind Master To'bor", npc = 25279, npcName = "Overlord Razgor", map = 114, x = 43.2, y = 55.0, f = "e" },
-					{ t = "turnin", quest = 11615, title = "Nerub'ar Secrets", npc = 25394, npcName = "Shadowstalker Barthus", map = 114, x = 43.2, y = 55.0, f = "e" },
-					{ t = "accept", quest = 11616, title = "Message to Hellscream", npc = 25394, npcName = "Shadowstalker Barthus", map = 114, x = 43.2, y = 55.0, f = "e" },
+					{ t = "goto", map = 1953, x = 55.5, y = 86.5, f = "e" },
 				},
 			},
 			{
-				note = "Go into Warsong Hold to 41.3,53.6",
 				goals = {
-					{ t = "turnin", quest = 11616, title = "Message to Hellscream", npc = 25237, npcName = "Garrosh Hellscream", map = 114, x = 41.3, y = 53.6, f = "e" },
-					{ t = "accept", quest = 11618, title = "Reinforcements Incoming...", npc = 25237, npcName = "Garrosh Hellscream", map = 114, x = 41.3, y = 53.6, f = "e" },
+					{ t = "kill", quest = 10185, target = "Mana Seeker", count = 10, oi = 1, map = 1953, x = 55.5, y = 86.7, f = "e" },
+					{ t = "kill", quest = 10185, target = "Mageslayer", count = 10, oi = 2, map = 1953, x = 55.5, y = 86.7, f = "e" },
 				},
 			},
 			{
-				note = "Go to the very top of Warsong Hold to 40.4,51.4",
 				goals = {
-					{ t = "getfp", location = "Warsong Hold", text = "Warsong Hold", map = 114, x = 40.4, y = 51.4, f = "e" },
+					{ t = "turnin", quest = 10305, title = "Abjurist Belmara", npc = 19488, npcName = "Custodian Dieworth", map = 1953, x = 57.5, y = 86.3, f = "e" },
+					{ t = "turnin", quest = 10185, title = "A Fate Worse Than Death", npc = 19488, npcName = "Custodian Dieworth", map = 1953, x = 57.5, y = 86.3, f = "e" },
+					{ t = "turnin", quest = 10307, title = "Cohlien Frostweaver", npc = 19488, npcName = "Custodian Dieworth", map = 1953, x = 57.5, y = 86.3, f = "e" },
+					{ t = "turnin", quest = 10182, title = "Battle-Mage Dathric", npc = 19488, npcName = "Custodian Dieworth", map = 1953, x = 57.5, y = 86.3, f = "e" },
+					{ t = "turnin", quest = 10306, title = "Conjurer Luminrath", npc = 19488, npcName = "Custodian Dieworth", map = 1953, x = 57.5, y = 86.3, f = "e" },
+					{ t = "turnin", quest = 10343, title = "The Unending Invasion", npc = 19489, npcName = "Lieutenant-Sorcerer Morran", map = 1953, x = 57.5, y = 86.3, f = "e" },
+					{ t = "accept", quest = 10239, title = "Potential Energy Source", npc = 19489, npcName = "Lieutenant-Sorcerer Morran", map = 1953, x = 57.5, y = 86.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11634, title = "Wind Master To'bor", npc = 25289, npcName = "Wind Master To'bor", map = 114, x = 42.3, y = 54.9, f = "e" },
-					{ t = "accept", quest = 11636, title = "Magic Carpet Ride", npc = 25289, npcName = "Wind Master To'bor", map = 114, x = 42.3, y = 54.9, f = "e" },
+					{ t = "collect", quest = 10312, itemName = "Annals of Kirin'Var", count = 1, oi = 1, map = 1953, x = 60.4, y = 88.0, f = "e" },
 				},
 			},
 			{
-				note = "Go northwest outside to 38.1,52.6",
 				goals = {
-					{ t = "turnin", quest = 11618, title = "Reinforcements Incoming...", npc = 25437, npcName = "Shadowstalker Ickoris", map = 114, x = 38.1, y = 52.6, f = "e" },
-					{ t = "accept", quest = 11686, title = "The Warsong Farms", npc = 25437, npcName = "Shadowstalker Ickoris", map = 114, x = 38.1, y = 52.6, f = "e" },
+					{ t = "turnin", quest = 10312, title = "The Annals of Kirin'Var", npc = 19488, npcName = "Custodian Dieworth", map = 1953, x = 57.5, y = 86.3, f = "e" },
+					{ t = "accept", quest = 10316, title = "Searching for Evidence", npc = 19488, npcName = "Custodian Dieworth", map = 1953, x = 57.5, y = 86.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 11676, title = "Merciful Freedom", npc = 25438, npcName = "Shadowstalker Canarius", map = 114, x = 37.9, y = 52.6, f = "e" },
+					{ t = "turnin", quest = 10316, title = "Searching for Evidence", map = 1953, x = 60.3, y = 78.0, f = "e" },
+					{ t = "accept", quest = 10314, title = "A Lingering Suspicion", map = 1953, x = 60.3, y = 78.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 11688, title = "Damned Filthy Swine", npc = 25607, npcName = "Farmer Torp", map = 114, x = 37.9, y = 52.3, f = "e" },
+					{ t = "collect", quest = 10314, itemName = "Loathsome Remnant", count = 10, oi = 1, map = 1953, x = 59.8, y = 79.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", quest = 11688, target = "Unliving Swine", count = 10, oi = 1, map = 114, x = 37.2, y = 51.4, f = "e" },
+					{ t = "turnin", quest = 10314, title = "A Lingering Suspicion", npc = 19488, npcName = "Custodian Dieworth", map = 1953, x = 57.5, y = 86.3, f = "e" },
+					{ t = "accept", quest = 10319, title = "Capturing the Phylactery", npc = 19488, npcName = "Custodian Dieworth", map = 1953, x = 57.5, y = 86.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 114, x = 39.5, y = 48.1, f = "e" },
+					{ t = "collect", quest = 10319, itemName = "Naberius's Phylactery", count = 1, oi = 1, map = 1953, x = 59.9, y = 80.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "kill", npc = 25609, target = "En'kilah Necrolord", count = 1, map = 114, x = 36.4, y = 48.1, f = "e" },
-					{ t = "collect", item = 34908, itemName = "Scourge Cage Key", count = 5, map = 114, x = 36.4, y = 48.1, f = "e" },
+					{ t = "turnin", quest = 10319, title = "Capturing the Phylactery", npc = 19488, npcName = "Custodian Dieworth", map = 1953, x = 57.5, y = 86.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 114, x = 36.7, y = 52.4, f = "e" },
+					{ t = "collect", quest = 10239, itemName = "Energy Isolation Cube", count = 10, oi = 1, map = 1953, x = 51.1, y = 82.5, f = "e" },
+					{ t = "collect", quest = 10188, itemName = "Sigil of Krasus", count = 1, oi = 1, map = 1953, x = 51.1, y = 82.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 114, x = 35.0, y = 54.7, f = "e" },
+					{ t = "turnin", quest = 10188, title = "The Sigil of Krasus", npc = 19644, npcName = "Image of Archmage Vargoth", map = 1953, x = 51.1, y = 80.7, f = "e" },
+					{ t = "accept", quest = 10192, title = "Krasus's Compendium", npc = 19644, npcName = "Image of Archmage Vargoth", map = 1953, x = 51.1, y = 80.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11676, title = "Merciful Freedom", npc = 25438, npcName = "Shadowstalker Canarius", map = 114, x = 37.9, y = 52.6, f = "e" },
-					{ t = "turnin", quest = 11686, title = "The Warsong Farms", npc = 25437, npcName = "Shadowstalker Ickoris", map = 114, x = 37.9, y = 52.6, f = "e" },
-					{ t = "accept", quest = 11703, title = "Get to Getry", npc = 25437, npcName = "Shadowstalker Ickoris", map = 114, x = 37.9, y = 52.6, f = "e" },
+					{ t = "turnin", quest = 10239, title = "Potential Energy Source", npc = 19489, npcName = "Lieutenant-Sorcerer Morran", map = 1953, x = 57.5, y = 86.3, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11688, title = "Damned Filthy Swine", npc = 25607, npcName = "Farmer Torp", map = 114, x = 37.9, y = 52.3, f = "e" },
-					{ t = "accept", quest = 11690, title = "Bring 'Em Back Alive", npc = 25607, npcName = "Farmer Torp", map = 114, x = 37.9, y = 52.3, f = "e" },
+					{ t = "collect", quest = 10192, itemName = "Krasus's Compendium - Chapter 2", count = 1, oi = 2, map = 1953, x = 57.6, y = 89.6, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11690, title = "Bring 'Em Back Alive", npc = 25607, npcName = "Farmer Torp", map = 114, x = 37.9, y = 52.3, f = "e" },
+					{ t = "collect", quest = 10192, itemName = "Krasus's Compendium - Chapter 1", count = 1, oi = 1, map = 1953, x = 58.6, y = 89.2, f = "e" },
 				},
 			},
 			{
-				note = "Go northwest to the top of the tower at 34.6,46.4",
 				goals = {
-					{ t = "turnin", quest = 11703, title = "Get to Getry", npc = 25729, npcName = "Shadowstalker Getry", map = 114, x = 34.6, y = 46.4, f = "e" },
-					{ t = "accept", quest = 11705, title = "Foolish Endeavors", npc = 25729, npcName = "Shadowstalker Getry", map = 114, x = 34.6, y = 46.4, f = "e" },
+					{ t = "collect", quest = 10192, itemName = "Krasus's Compendium - Chapter 3", count = 1, oi = 3, map = 1953, x = 58.8, y = 87.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11705, title = "Foolish Endeavors", npc = 25237, npcName = "Garrosh Hellscream", map = 114, x = 41.3, y = 53.6, f = "e" },
-					{ t = "accept", quest = 11709, title = "Nork Bloodfrenzy's Charge", npc = 25237, npcName = "Garrosh Hellscream", map = 114, x = 41.3, y = 53.6, f = "e" },
+					{ t = "turnin", quest = 10192, title = "Krasus's Compendium", npc = 19644, npcName = "Image of Archmage Vargoth", f = "e" },
 				},
 			},
 			{
-				note = "Go outside to 43.7,54.5",
+				note = "Hearth to Area 52|goto Netherstorm,32.3,65.5,3|use hearthstone##6948|noway|c",
 				goals = {
-					{ t = "turnin", quest = 11709, title = "Nork Bloodfrenzy's Charge", npc = 25379, npcName = "Warden Nork Bloodfrenzy", map = 114, x = 43.7, y = 54.5, f = "e" },
-					{ t = "accept", quest = 11711, title = "Coward Delivery... Under 30 Minutes or it's Free", npc = 25379, npcName = "Warden Nork Bloodfrenzy", map = 114, x = 43.7, y = 54.5, f = "e" },
+					{ t = "use", item = 6948, itemName = "hearthstone", f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "goto", map = 114, x = 55.3, y = 50.8, f = "e" },
+					{ t = "turnin", quest = 10200, title = "Return to Thalodien", npc = 19468, npcName = "Spymaster Thalodien", map = 1953, x = 32.0, y = 64.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11711, title = "Coward Delivery... Under 30 Minutes or it's Free", npc = 25440, npcName = "Scout Tungok", map = 114, x = 53.1, y = 51.6, f = "e" },
-					{ t = "accept", quest = 11714, title = "Vermin Extermination", npc = 25440, npcName = "Scout Tungok", map = 114, x = 53.1, y = 51.6, f = "e" },
+					{ t = "accept", quest = 10333, title = "Help Mama Wheeler", npc = 19645, npcName = "Papa Wheeler", map = 1953, x = 33.0, y = 64.7, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "accept", quest = 11716, title = "The Wondrous Bloodspore", npc = 25381, npcName = "Bloodmage Laurith", map = 114, x = 52.1, y = 52.5, f = "e" },
+					{ t = "turnin", quest = 10333, title = "Help Mama Wheeler", npc = 19728, npcName = "Mama Wheeler", map = 1953, x = 46.6, y = 56.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "collect", quest = 11716, itemName = "Bloodspore Carpel", count = 10, oi = 1, map = 114, x = 52.7, y = 52.7, f = "e" },
-					{ t = "kill", quest = 11714, target = "Bloodspore Harvester", count = 8, oi = 1, map = 114, x = 52.7, y = 52.7, f = "e" },
-					{ t = "kill", quest = 11714, target = "Bloodspore Firestarter", count = 5, oi = 2, map = 114, x = 52.7, y = 52.7, f = "e" },
-					{ t = "kill", quest = 11714, target = "Bloodspore Roaster", count = 2, oi = 3, map = 114, x = 52.7, y = 52.7, f = "e" },
+					{ t = "accept", quest = 10417, title = "Run a Diagnostic!", npc = 20810, npcName = "Mehrdad", map = 1953, x = 46.4, y = 56.4, f = "e" },
+					{ t = "accept", quest = 10348, title = "New Opportunities", npc = 20810, npcName = "Mehrdad", map = 1953, x = 46.4, y = 56.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11716, title = "The Wondrous Bloodspore", npc = 25381, npcName = "Bloodmage Laurith", map = 114, x = 52.1, y = 52.5, f = "e" },
-					{ t = "accept", quest = 11717, title = "Pollen from the Source", npc = 25381, npcName = "Bloodmage Laurith", map = 114, x = 52.1, y = 52.5, f = "e" },
+					{ t = "accept", quest = 10433, title = "Keeping Up Appearances", npc = 20921, npcName = "Shauly Pore", map = 1953, x = 46.5, y = 56.0, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11714, title = "Vermin Extermination", npc = 25440, npcName = "Scout Tungok", map = 114, x = 53.1, y = 51.6, f = "e" },
+					{ t = "collect", quest = 10417, itemName = "Diagnostic Results", count = 1, oi = 1, map = 1953, x = 48.2, y = 55.0, f = "e" },
 				},
 			},
 			{
-				note = "Kill Bloodspore Moths all around this area",
 				goals = {
-					{ t = "collect", quest = 11717, itemName = "Bloodspore Moth Pollen", count = 5, oi = 1, f = "e" },
+					{ t = "collect", quest = 10348, itemName = "Ivory Bell", count = 15, oi = 1, map = 1953, x = 48.2, y = 53.9, f = "e" },
+					{ t = "collect", quest = 10433, itemName = "Ripfang Lynx Pelt", count = 10, oi = 1, map = 1953, x = 48.2, y = 53.9, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11717, title = "Pollen from the Source", npc = 25381, npcName = "Bloodmage Laurith", map = 114, x = 52.1, y = 52.5, f = "e" },
-					{ t = "accept", quest = 11719, title = "A Suitable Test Subject", npc = 25381, npcName = "Bloodmage Laurith", map = 114, x = 52.1, y = 52.5, f = "e" },
-					{ t = "turnin", quest = 11719, title = "A Suitable Test Subject", npc = 25381, npcName = "Bloodmage Laurith", map = 114, x = 52.1, y = 52.5, f = "e" },
-					{ t = "accept", quest = 11720, title = "The Invasion of Gammoth", npc = 25381, npcName = "Bloodmage Laurith", map = 114, x = 52.1, y = 52.5, f = "e" },
+					{ t = "turnin", quest = 10348, title = "New Opportunities", npc = 20810, npcName = "Mehrdad", map = 1953, x = 46.4, y = 56.4, f = "e" },
+					{ t = "turnin", quest = 10417, title = "Run a Diagnostic!", npc = 20810, npcName = "Mehrdad", map = 1953, x = 46.4, y = 56.4, f = "e" },
+					{ t = "accept", quest = 10418, title = "Deal With the Saboteurs", npc = 20810, npcName = "Mehrdad", map = 1953, x = 46.4, y = 56.4, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11720, title = "The Invasion of Gammoth", npc = 25380, npcName = "Primal Mighthorn", map = 114, x = 52.2, y = 52.8, f = "e" },
-					{ t = "accept", quest = 11721, title = "Gammothra the Tormentor", npc = 25380, npcName = "Primal Mighthorn", map = 114, x = 52.2, y = 52.8, f = "e" },
+					{ t = "turnin", quest = 10433, title = "Keeping Up Appearances", npc = 20921, npcName = "Shauly Pore", map = 1953, x = 46.5, y = 56.0, f = "e" },
 				},
 			},
 			{
-				note = "Follow the path all the way down to 46.1,62.1",
 				goals = {
-					{ t = "collect", quest = 11721, itemName = "Head of Gammothra", count = 1, oi = 1, map = 114, x = 46.1, y = 62.1, f = "e" },
+					{ t = "kill", quest = 10418, target = "Barbscale Crocolisk", count = 8, oi = 1, map = 1953, x = 46.8, y = 53.9, f = "e" },
 				},
 			},
 			{
-				note = "Leave the cave and go southeast to 49.4,65.6|n",
 				goals = {
-					{ t = "goto", map = 114, x = 49.4, y = 65.6, f = "e" },
+					{ t = "turnin", quest = 10418, title = "Deal With the Saboteurs", npc = 20810, npcName = "Mehrdad", map = 1953, x = 46.4, y = 56.4, f = "e" },
 				},
 			},
 			{
-				note = "Follow the path up and jump down to 48.5,59.1",
 				goals = {
-					{ t = "accept", quest = 11724, title = "Massive Moth Omelet?", map = 114, x = 48.5, y = 59.1, f = "e" },
+					{ t = "accept", quest = 10234, title = "One Demon's Trash...", npc = 19728, npcName = "Mama Wheeler", map = 1953, x = 46.6, y = 56.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11721, title = "Gammothra the Tormentor", npc = 25380, npcName = "Primal Mighthorn", map = 114, x = 52.2, y = 52.8, f = "e" },
-					{ t = "accept", quest = 11722, title = "Trophies of Gammoth", npc = 25380, npcName = "Primal Mighthorn", map = 114, x = 52.2, y = 52.8, f = "e" },
+					{ t = "collect", quest = 10234, itemName = "Fel Reaver Part", count = 10, oi = 1, map = 1953, x = 49.0, y = 59.2, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11724, title = "Massive Moth Omelet?", npc = 25381, npcName = "Bloodmage Laurith", map = 114, x = 52.2, y = 52.8, f = "e" },
+					{ t = "turnin", quest = 10234, title = "One Demon's Trash...", npc = 19728, npcName = "Mama Wheeler", map = 1953, x = 46.6, y = 56.5, f = "e" },
 				},
 			},
 			{
 				goals = {
-					{ t = "turnin", quest = 11722, title = "Trophies of Gammoth", npc = 25237, npcName = "Garrosh Hellscream", map = 114, x = 41.3, y = 53.6, f = "e" },
-				},
-			},
-			{
-				note = "Go to the top of Warsong Hold to 42.3,55.7",
-				goals = {
-					{ t = "talk", npc = 25459, npcName = "Yanni", map = 114, x = 42.3, y = 55.7, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 11636, title = "Magic Carpet Ride", npc = 25329, npcName = "Gorge the Corpsegrinder", map = 114, x = 32.2, y = 54.1, f = "e" },
-					{ t = "accept", quest = 11642, title = "Tank Ain't Gonna Fix Itself", npc = 25329, npcName = "Gorge the Corpsegrinder", map = 114, x = 32.2, y = 54.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 11642, title = "Tank Ain't Gonna Fix Itself", npc = 25475, npcName = "Mobu", map = 114, x = 32.1, y = 54.3, f = "e" },
-					{ t = "accept", quest = 11643, title = "Mobu's Pneumatic Tank Transjigamarig", npc = 25475, npcName = "Mobu", map = 114, x = 32.1, y = 54.3, f = "e" },
-					{ t = "accept", quest = 11644, title = "Super Strong Metal Plates!", npc = 25475, npcName = "Mobu", map = 114, x = 32.1, y = 54.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 11655, title = "Into the Mist", npc = 25476, npcName = "Waltor of Pal'ea", map = 114, x = 32.3, y = 54.3, f = "e" },
-					{ t = "accept", quest = 11660, title = "Horn of the Ancient Mariner", npc = 25476, npcName = "Waltor of Pal'ea", map = 114, x = 32.3, y = 54.3, f = "e" },
-				},
-			},
-			{
-				note = "Go north to the top of the tower to 31.9,52.3",
-				goals = {
-					{ t = "accept", quest = 11664, title = "Escaping the Mist", npc = 25504, npcName = "Mootoo the Younger", map = 114, x = 31.9, y = 52.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 11664, title = "Escaping the Mist", npc = 25503, npcName = "Elder Mootoo", map = 114, x = 31.7, y = 54.4, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 11644, itemName = "Super Strong Metal Plate", count = 10, oi = 1, map = 114, x = 29.9, y = 54.4, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", target = "Kvaldir mobs", count = 1, map = 114, x = 30.4, y = 53.5, f = "e" },
-					{ t = "collect", quest = 11655, itemName = "Tuskarr Relic", count = 8, oi = 1, map = 114, x = 30.4, y = 53.5, f = "e" },
-					{ t = "kill", target = "Kvaldir Mistweavers", count = 1, map = 114, x = 30.4, y = 53.5, f = "e" },
-					{ t = "collect", quest = 11660, itemName = "Horn of the Ancient Mariner", count = 1, oi = 1, map = 114, x = 30.4, y = 53.5, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 11643, itemName = "Pneumatic Tank Transjigamarig", count = 1, oi = 1, map = 114, x = 32.4, y = 49.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 11643, title = "Mobu's Pneumatic Tank Transjigamarig", npc = 25475, npcName = "Mobu", map = 114, x = 32.1, y = 54.3, f = "e" },
-					{ t = "turnin", quest = 11644, title = "Super Strong Metal Plates!", npc = 25475, npcName = "Mobu", map = 114, x = 32.1, y = 54.3, f = "e" },
-					{ t = "accept", quest = 11651, title = "Tanks a lot...", npc = 25475, npcName = "Mobu", map = 114, x = 32.1, y = 54.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 11651, title = "Tanks a lot...", npc = 25329, npcName = "Gorge the Corpsegrinder", map = 114, x = 32.2, y = 54.1, f = "e" },
-					{ t = "accept", quest = 11652, title = "The Plains of Nasam", npc = 25329, npcName = "Gorge the Corpsegrinder", map = 114, x = 32.2, y = 54.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 11655, title = "Into the Mist", npc = 25476, npcName = "Waltor of Pal'ea", map = 114, x = 32.3, y = 54.3, f = "e" },
-					{ t = "accept", quest = 11656, title = "Burn in Effigy", npc = 25476, npcName = "Waltor of Pal'ea", map = 114, x = 32.3, y = 54.3, f = "e" },
-					{ t = "turnin", quest = 11660, title = "Horn of the Ancient Mariner", npc = 25476, npcName = "Waltor of Pal'ea", map = 114, x = 32.3, y = 54.3, f = "e" },
-					{ t = "accept", quest = 11661, title = "Orabus the Helmsman", npc = 25476, npcName = "Waltor of Pal'ea", map = 114, x = 32.3, y = 54.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 114, x = 29.8, y = 52.6, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 114, x = 31.0, y = 49.0, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 114, x = 31.7, y = 48.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", quest = 11661, target = "Orabus the Helmsman", count = 1, oi = 1, map = 114, x = 26.8, y = 54.7, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 114, x = 30.1, y = 61.7, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 11656, title = "Burn in Effigy", npc = 25476, npcName = "Waltor of Pal'ea", map = 114, x = 32.3, y = 54.3, f = "e" },
-					{ t = "turnin", quest = 11661, title = "Orabus the Helmsman", npc = 25476, npcName = "Waltor of Pal'ea", map = 114, x = 32.3, y = 54.3, f = "e" },
-					{ t = "accept", quest = 11662, title = "Seek Out Karuk!", npc = 25476, npcName = "Waltor of Pal'ea", map = 114, x = 32.3, y = 54.3, f = "e" },
-				},
-			},
-			{
-				note = "Ride south to 34,61.6|n",
-				goals = {
-					{ t = "goto", map = 114, x = 34.0, y = 61.6, f = "e" },
-				},
-			},
-			{
-				note = "Exit the tank in a safe spot and go to Warsong Hold",
-				goals = {
-					{ t = "turnin", quest = 11652, title = "The Plains of Nasam", npc = 25237, npcName = "Garrosh Hellscream", map = 114, x = 41.3, y = 53.6, f = "e" },
-					{ t = "accept", quest = 11916, title = "Hellscream's Champion", npc = 25237, npcName = "Garrosh Hellscream", map = 114, x = 41.3, y = 53.6, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 11574, title = "Too Close For Comfort", npc = 25247, npcName = "Endorah", map = 114, x = 41.7, y = 54.7, f = "e" },
-				},
-			},
-			{
-				note = "Go southeast outside to 47.1,75.5",
-				goals = {
-					{ t = "turnin", quest = 11662, title = "Seek Out Karuk!", npc = 25435, npcName = "Karuk", map = 114, x = 47.1, y = 75.5, f = "e" },
-					{ t = "accept", quest = 11613, title = "Karuk's Oath", npc = 25435, npcName = "Karuk", map = 114, x = 47.1, y = 75.5, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", quest = 11613, target = "Skadir Raider", count = 6, oi = 1, map = 114, x = 46.5, y = 77.2, f = "e" },
-					{ t = "kill", quest = 11613, target = "Skadir Longboatsman", count = 5, oi = 2, map = 114, x = 46.5, y = 77.2, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 12471, title = "Cruelty of the Kvaldir", npc = 25636, npcName = "Captured Tuskarr Prisoner", map = 114, x = 44.2, y = 77.8, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 11613, title = "Karuk's Oath", npc = 25435, npcName = "Karuk", map = 114, x = 47.1, y = 75.5, f = "e" },
-					{ t = "accept", quest = 11619, title = "Gamel the Cruel", npc = 25435, npcName = "Karuk", map = 114, x = 47.1, y = 75.5, f = "e" },
-					{ t = "turnin", quest = 12471, title = "Cruelty of the Kvaldir", npc = 25435, npcName = "Karuk", map = 114, x = 47.1, y = 75.5, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 114, x = 46.4, y = 78.2, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 11619, title = "Gamel the Cruel", npc = 25435, npcName = "Karuk", map = 114, x = 47.1, y = 75.5, f = "e" },
-					{ t = "accept", quest = 11620, title = "A Father's Words", npc = 25435, npcName = "Karuk", map = 114, x = 47.1, y = 75.5, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 11620, title = "A Father's Words", npc = 25450, npcName = "Veehja", map = 114, x = 43.6, y = 80.5, f = "e" },
-					{ t = "accept", quest = 11625, title = "The Trident of Naz'jan", npc = 25450, npcName = "Veehja", map = 114, x = 43.6, y = 80.5, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 11625, itemName = "Trident of Naz'jan", count = 1, oi = 1, map = 114, x = 54.7, y = 89.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 11625, title = "The Trident of Naz'jan", npc = 25450, npcName = "Veehja", map = 114, x = 43.6, y = 80.5, f = "e" },
-					{ t = "accept", quest = 11626, title = "The Emissary", npc = 25450, npcName = "Veehja", map = 114, x = 43.6, y = 80.5, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", quest = 11626, target = "Leviroth", count = 1, oi = 1, map = 114, x = 52.2, y = 88.2, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 11626, title = "The Emissary", npc = 25435, npcName = "Karuk", map = 114, x = 47.1, y = 75.5, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 11864, title = "A Mission Statement", npc = 25809, npcName = "Arch Druid Lathorius", map = 114, x = 57.0, y = 44.3, f = "e" },
-					{ t = "accept", quest = 11866, title = "Ears of Our Enemies", npc = 25809, npcName = "Arch Druid Lathorius", map = 114, x = 57.0, y = 44.3, f = "e" },
-					{ t = "accept", quest = 11876, title = "Help Those That Cannot Help Themselves", npc = 25809, npcName = "Arch Druid Lathorius", map = 114, x = 57.0, y = 44.3, f = "e" },
+					{ t = "level", level = 70, f = "e" },
 				},
 			},
 		},

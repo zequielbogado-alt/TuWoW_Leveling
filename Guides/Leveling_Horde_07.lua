@@ -44,22 +44,82 @@ do
 				},
 			},
 			{
-				note = "Go into the cave to 42.1,68.3",
 				only = { races = { "Troll" } },
 				goals = {
 					{ t = "turnin", quest = 788, title = "Cutting Teeth", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
 					{ t = "accept", quest = 789, title = "Sting of the Scorpid", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
-					{ t = "accept", quest = 2383, title = "Simple Parchment", npc = 3143, npcName = "Kaltunk", map = 1411, x = 44.8, y = 68.8, f = "e", only = { classes = { "WARRIOR" } } },
-					{ t = "accept", quest = 3065, title = "Simple Tablet", npc = 3143, npcName = "Kaltunk", map = 1411, x = 44.8, y = 68.8, f = "e", only = { classes = { "WARRIOR" } } },
-					{ t = "accept", quest = 3088, title = "Encrypted Parchment", npc = 3143, npcName = "Kaltunk", map = 1411, x = 44.8, y = 68.8, f = "e", only = { classes = { "ROGUE" } } },
-					{ t = "accept", quest = 3083, title = "Encrypted Tablet", npc = 3143, npcName = "Kaltunk", map = 1411, x = 44.8, y = 68.8, f = "e", only = { classes = { "ROGUE" } } },
-					{ t = "accept", quest = 3087, title = "Etched Parchment", npc = 3143, npcName = "Kaltunk", map = 1411, x = 44.8, y = 68.8, f = "e", only = { classes = { "HUNTER" } } },
-					{ t = "accept", quest = 3082, title = "Etched Tablet", npc = 3143, npcName = "Kaltunk", map = 1411, x = 44.8, y = 68.8, f = "e", only = { classes = { "HUNTER" } } },
-					{ t = "accept", quest = 3089, title = "Rune-Inscribed Parchment", npc = 3143, npcName = "Kaltunk", map = 1411, x = 44.8, y = 68.8, f = "e", only = { classes = { "SHAMAN" } } },
-					{ t = "accept", quest = 3084, title = "Rune-Inscribed Tablet", npc = 3143, npcName = "Kaltunk", map = 1411, x = 44.8, y = 68.8, f = "e", only = { classes = { "SHAMAN" } } },
-					{ t = "accept", quest = 3090, title = "Tainted Parchment", npc = 3143, npcName = "Kaltunk", map = 1411, x = 44.8, y = 68.8, f = "e", only = { classes = { "WARLOCK" } } },
-					{ t = "accept", quest = 3086, title = "Glyphic Tablet", npc = 3143, npcName = "Kaltunk", map = 1411, x = 44.8, y = 68.8, f = "e", only = { classes = { "MAGE" } } },
-					{ t = "accept", quest = 3085, title = "Hallowed Tablet", npc = 3143, npcName = "Kaltunk", map = 1411, x = 44.8, y = 68.8, f = "e", only = { classes = { "PRIEST" } } },
+				},
+			},
+			{
+				note = "Go into the cave to 42.1,68.3",
+				only = { races = { "Troll" }, classes = { "MAGE" } },
+				goals = {
+					{ t = "accept", quest = 3086, title = "Glyphic Tablet", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
+				},
+			},
+			{
+				note = "Go into the cave to 42.1,68.3",
+				only = { races = { "Troll" }, classes = { "WARRIOR" } },
+				goals = {
+					{ t = "accept", quest = 3065, title = "Simple Tablet", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
+				},
+			},
+			{
+				note = "Go into the cave to 42.1,68.3",
+				only = { races = { "Troll" }, classes = { "SHAMAN" } },
+				goals = {
+					{ t = "accept", quest = 3084, title = "Rune-Inscribed Tablet", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
+				},
+			},
+			{
+				note = "Go into the cave to 42.1,68.3",
+				only = { races = { "Troll" }, classes = { "ROGUE" } },
+				goals = {
+					{ t = "accept", quest = 3083, title = "Encrypted Tablet", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
+				},
+			},
+			{
+				note = "Go into the cave to 42.1,68.3",
+				only = { races = { "Troll" }, classes = { "PRIEST" } },
+				goals = {
+					{ t = "accept", quest = 3085, title = "Hallowed Tablet", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
+				},
+			},
+			{
+				note = "Go into the cave to 42.1,68.3",
+				only = { races = { "Troll" }, classes = { "HUNTER" } },
+				goals = {
+					{ t = "accept", quest = 3082, title = "Etched Tablet", npc = 3143, npcName = "Gornek", map = 1411, x = 42.1, y = 68.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Troll" }, classes = { "MAGE" } },
+				goals = {
+					{ t = "turnin", quest = 3086, title = "Glyphic Tablet", npc = 5884, npcName = "Mai'ah", map = 1411, x = 42.5, y = 69.0, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Troll" }, classes = { "WARRIOR" } },
+				goals = {
+					{ t = "turnin", quest = 3065, title = "Simple Tablet", npc = 3153, npcName = "Frang", map = 1411, x = 42.9, y = 69.4, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Troll" }, classes = { "SHAMAN" } },
+				goals = {
+					{ t = "turnin", quest = 3084, title = "Rune-Inscribed Tablet", npc = 3157, npcName = "Shikrik", map = 1411, x = 42.4, y = 69.0, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Troll" }, classes = { "ROGUE" } },
+				goals = {
+					{ t = "turnin", quest = 3083, title = "Encrypted Tablet", npc = 3155, npcName = "Rwag", map = 1411, x = 41.3, y = 68.0, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Troll" }, classes = { "PRIEST" } },
+				goals = {
+					{ t = "turnin", quest = 3085, title = "Hallowed Tablet", npc = 3707, npcName = "Ken'jai", map = 1411, x = 42.4, y = 68.8, f = "e" },
 				},
 			},
 			{
@@ -68,19 +128,9 @@ do
 				},
 			},
 			{
-				only = { races = { "Troll" } },
+				only = { races = { "Troll" }, classes = { "HUNTER" } },
 				goals = {
-					{ t = "turnin", quest = 2383, title = "Simple Parchment", npc = 3169, npcName = "Frang", map = 1411, x = 42.9, y = 69.4, f = "e", only = { classes = { "WARRIOR" } } },
-					{ t = "turnin", quest = 3065, title = "Simple Tablet", npc = 3169, npcName = "Frang", map = 1411, x = 42.9, y = 69.4, f = "e", only = { classes = { "WARRIOR" } } },
-					{ t = "turnin", quest = 3088, title = "Encrypted Parchment", npc = 3170, npcName = "Rwag", map = 1411, x = 42.4, y = 69.1, f = "e", only = { classes = { "ROGUE" } } },
-					{ t = "turnin", quest = 3083, title = "Encrypted Tablet", npc = 3170, npcName = "Rwag", map = 1411, x = 42.4, y = 69.1, f = "e", only = { classes = { "ROGUE" } } },
-					{ t = "turnin", quest = 3087, title = "Etched Parchment", npc = 3171, npcName = "Jen'shan", map = 1411, x = 42.7, y = 69.1, f = "e", only = { classes = { "HUNTER" } } },
-					{ t = "turnin", quest = 3082, title = "Etched Tablet", npc = 3171, npcName = "Jen'shan", map = 1411, x = 42.7, y = 69.1, f = "e", only = { classes = { "HUNTER" } } },
-					{ t = "turnin", quest = 3089, title = "Rune-Inscribed Parchment", npc = 3173, npcName = "Shikrik", map = 1411, x = 42.5, y = 69.0, f = "e", only = { classes = { "SHAMAN" } } },
-					{ t = "turnin", quest = 3084, title = "Rune-Inscribed Tablet", npc = 3173, npcName = "Shikrik", map = 1411, x = 42.5, y = 69.0, f = "e", only = { classes = { "SHAMAN" } } },
-					{ t = "turnin", quest = 3090, title = "Tainted Parchment", npc = 3172, npcName = "Nartok", map = 1411, x = 42.6, y = 69.0, f = "e", only = { classes = { "WARLOCK" } } },
-					{ t = "turnin", quest = 3086, title = "Glyphic Tablet", npc = 5880, npcName = "Mai'ah", map = 1411, x = 42.5, y = 69.0, f = "e", only = { classes = { "MAGE" } } },
-					{ t = "turnin", quest = 3085, title = "Hallowed Tablet", npc = 3706, npcName = "Tai'jin", map = 1411, x = 42.5, y = 69.0, f = "e", only = { classes = { "PRIEST" } } },
+					{ t = "turnin", quest = 3082, title = "Etched Tablet", npc = 3154, npcName = "Jen'shan", map = 1411, x = 42.8, y = 69.3, f = "e" },
 				},
 			},
 			{
@@ -449,65 +499,6 @@ do
 			{
 				goals = {
 					{ t = "level", level = 9, f = "e" },
-				},
-			},
-			{
-				note = "Hearth to Razor Hill,0.1|use hearthstone##6948|noway|c",
-				goals = {
-					{ t = "use", item = 6948, itemName = "hearthstone", map = 1411, x = 51.5, y = 41.7, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 815, title = "Break a Few Eggs", npc = 3191, npcName = "Cook Torka", map = 1411, x = 51.1, y = 42.4, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", quest = 837, target = "Razormane Dustrunner", count = 4, oi = 3, map = 1411, x = 44.5, y = 41.0, f = "e" },
-					{ t = "kill", quest = 837, target = "Razormane Battleguard", count = 4, oi = 4, map = 1411, x = 44.5, y = 41.0, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 816, title = "Lost But Not Forgotten", npc = 3193, npcName = "Misha Tor'kren", map = 1411, x = 43.1, y = 30.2, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 834, title = "Winds in the Desert", npc = 3293, npcName = "Rezlak", map = 1411, x = 46.4, y = 22.9, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 1411, x = 50.8, y = 31.6, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 834, itemName = "Sack of Supplies", count = 5, oi = 1, map = 1411, x = 48.6, y = 33.5, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 834, title = "Winds in the Desert", npc = 3293, npcName = "Rezlak", map = 1411, x = 46.4, y = 22.9, f = "e" },
-					{ t = "accept", quest = 835, title = "Securing the Lines", npc = 3293, npcName = "Rezlak", map = 1411, x = 46.4, y = 22.9, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "goto", map = 1411, x = 51.7, y = 27.4, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "kill", quest = 835, target = "Dustwind Savage", count = 12, oi = 1, map = 1411, x = 54.1, y = 26.9, f = "e" },
-					{ t = "kill", quest = 835, target = "Dustwind Storm Witch", count = 8, oi = 2, map = 1411, x = 54.1, y = 26.9, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 835, title = "Securing the Lines", npc = 3293, npcName = "Rezlak", map = 1411, x = 46.4, y = 22.9, f = "e" },
 				},
 			},
 		},

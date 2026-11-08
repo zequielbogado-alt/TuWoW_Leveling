@@ -16,6 +16,89 @@ do
 		races = { "Gnome" },
 		steps = {
 			{
+				only = { races = { "Gnome" }, classes = { "WARRIOR" } },
+				goals = {
+					{ t = "accept", quest = 1679, title = "Muren Stormpike", npc = 1229, npcName = "Granis Swiftaxe", map = 1426, x = 47.4, y = 52.6, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Gnome" }, classes = { "WARRIOR" } },
+				goals = {
+					{ t = "turnin", quest = 1679, title = "Muren Stormpike", npc = 6114, npcName = "Muren Stormpike", map = 1455, x = 70.8, y = 90.3, f = "e" },
+					{ t = "accept", quest = 1678, title = "Vejrek", npc = 6114, npcName = "Muren Stormpike", map = 1455, x = 70.8, y = 90.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Gnome" }, classes = { "WARRIOR" } },
+				goals = {
+					{ t = "collect", quest = 1678, itemName = "Vejrek's Head", count = 1, oi = 1, map = 1426, x = 27.8, y = 58.0, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Gnome" }, classes = { "WARRIOR" } },
+				goals = {
+					{ t = "turnin", quest = 1678, title = "Vejrek", npc = 6114, npcName = "Muren Stormpike", map = 1455, x = 70.8, y = 90.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 413, title = "Shimmer Stout", npc = 1959, npcName = "Mountaineer Barleybrew", map = 1426, x = 86.3, y = 48.8, f = "e" },
+					{ t = "accept", quest = 414, title = "Stout to Kadrell", npc = 1959, npcName = "Mountaineer Barleybrew", map = 1426, x = 86.3, y = 48.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "getfp", location = "Thelsamar", text = "Thelsamar", map = 1432, x = 33.9, y = 51.0, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
+				goals = {
+					{ t = "accept", quest = 1715, title = "The Slaughtered Lamb", npc = 6120, npcName = "Lago Blackwrench", map = 1455, x = 47.6, y = 9.3, f = "e" },
+				},
+			},
+			{
+				note = "Ride the tram to Stormwind City|goto Stormwind City|noway|c",
+				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
+				goals = {
+					{ t = "goto", map = 1455, x = 76.9, y = 51.2, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
+				goals = {
+					{ t = "turnin", quest = 1715, title = "The Slaughtered Lamb", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.2, y = 85.3, f = "e" },
+					{ t = "accept", quest = 1688, title = "Surena Caledon", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.2, y = 85.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
+				goals = {
+					{ t = "collect", quest = 1688, itemName = "Surena's Choker", count = 1, oi = 1, map = 1429, x = 71.0, y = 80.8, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
+				goals = {
+					{ t = "turnin", quest = 1688, title = "Surena Caledon", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.2, y = 85.3, f = "e" },
+					{ t = "accept", quest = 1689, title = "The Binding", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.2, y = 85.3, f = "e" },
+				},
+			},
+			{
+				note = "Go downstairs into the catacombs to 39.1,84.3",
+				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
+				goals = {
+					{ t = "kill", quest = 1689, target = "Summoned Voidwalker", count = 1, oi = 1, map = 1453, x = 39.1, y = 84.3, f = "e" },
+				},
+			},
+			{
+				note = "Go upstairs to 39.2,85.3",
+				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
+				goals = {
+					{ t = "turnin", quest = 1689, title = "The Binding", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.2, y = 85.3, f = "e" },
+				},
+			},
+			{
 				note = "Ride the train to Ironforge|goto Ironforge|noway|c",
 				only = { races = { "Gnome" }, classes = { "WARLOCK" } },
 				goals = {

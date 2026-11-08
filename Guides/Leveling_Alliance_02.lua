@@ -9,30 +9,138 @@ do
 		category = "Leveling",
 		faction = "Alliance",
 		author = "TuWoW & Zygor",
-		minLevel = 10,
+		minLevel = 9,
 		maxLevel = 13,
 		zone = 1429,
 		version = 1,
 		races = { "Human" },
 		steps = {
 			{
-				note = "Go downstairs into the catacombs to 39.1,84.3",
-				only = { races = { "Human" } },
+				note = "Hearth to Goldshire|goto Elwynn Forest,42.4,65.8,2|use Hearthstone##6948|noway|c",
 				goals = {
+					{ t = "use", item = 6948, itemName = "Hearthstone", f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 76, title = "The Jasperlode Mine", npc = 240, npcName = "Marshal Dughan", map = 1429, x = 42.1, y = 65.9, f = "e" },
+					{ t = "turnin", quest = 39, title = "Deliver Thomas' Report", npc = 240, npcName = "Marshal Dughan", map = 1429, x = 42.1, y = 65.9, f = "e" },
+					{ t = "accept", quest = 239, title = "Westbrook Garrison Needs Help!", npc = 240, npcName = "Marshal Dughan", map = 1429, x = 42.1, y = 65.9, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "accept", quest = 1097, title = "Elmore's Task", npc = 514, npcName = "Smith Argus", map = 1429, x = 41.7, y = 65.6, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 88, title = "Princess Must Die!", npc = 244, npcName = "Ma Stonefield", map = 1429, x = 34.6, y = 84.5, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 239, title = "Westbrook Garrison Needs Help!", npc = 963, npcName = "Deputy Rainer", map = 1429, x = 24.3, y = 74.8, f = "e" },
+					{ t = "accept", quest = 11, title = "Riverpaw Gnoll Bounty", npc = 963, npcName = "Deputy Rainer", map = 1429, x = 24.3, y = 74.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "collect", quest = 11, itemName = "Painted Gnoll Armband", count = 8, oi = 1, map = 1429, x = 26.8, y = 86.3, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 11, title = "Riverpaw Gnoll Bounty", npc = 963, npcName = "Deputy Rainer", map = 1429, x = 24.3, y = 74.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "level", level = 10, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Human" }, classes = { "WARLOCK" } },
+				goals = {
+					{ t = "accept", quest = 1685, title = "Gakin's Summons", npc = 6121, npcName = "Remen Marcot", map = 1429, x = 44.5, y = 66.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Human" }, classes = { "WARRIOR" } },
+				goals = {
+					{ t = "accept", quest = 1638, title = "A Warrior's Training", npc = 913, npcName = "Lyria Du Lac", map = 1429, x = 41.1, y = 65.8, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 61, title = "Shipment to Stormwind", npc = 279, npcName = "Morgan Pestle", map = 1453, x = 63.2, y = 74.4, f = "e" },
+				},
+			},
+			{
+				goals = {
+					{ t = "turnin", quest = 1097, title = "Elmore's Task", npc = 1416, npcName = "Grimand Elmore", map = 1453, x = 59.7, y = 33.8, f = "e" },
+					{ t = "accept", quest = 353, title = "Stormpike's Delivery", npc = 1416, npcName = "Grimand Elmore", map = 1453, x = 59.7, y = 33.8, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Human" }, classes = { "WARRIOR" } },
+				goals = {
+					{ t = "turnin", quest = 1638, title = "A Warrior's Training", npc = 6089, npcName = "Harry Burlguard", map = 1453, x = 77.1, y = 53.3, f = "e" },
 					{ t = "accept", quest = 1639, title = "Bartleby the Drunk", npc = 6089, npcName = "Harry Burlguard", map = 1453, x = 77.1, y = 53.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Human" }, classes = { "WARRIOR" } },
+				goals = {
 					{ t = "turnin", quest = 1639, title = "Bartleby the Drunk", npc = 6090, npcName = "Bartleby", map = 1453, x = 76.8, y = 52.5, f = "e" },
 					{ t = "accept", quest = 1640, title = "Beat Bartleby", npc = 6090, npcName = "Bartleby", map = 1453, x = 76.8, y = 52.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Human" }, classes = { "WARRIOR" } },
+				goals = {
 					{ t = "turnin", quest = 1640, title = "Beat Bartleby", npc = 6090, npcName = "Bartleby", map = 1453, x = 76.8, y = 52.5, f = "e" },
 					{ t = "accept", quest = 1665, title = "Bartleby's Mug", npc = 6090, npcName = "Bartleby", map = 1453, x = 76.8, y = 52.5, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Human" }, classes = { "WARRIOR" } },
+				goals = {
 					{ t = "turnin", quest = 1665, title = "Bartleby's Mug", npc = 6089, npcName = "Harry Burlguard", map = 1453, x = 77.1, y = 53.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Human" }, classes = { "WARLOCK" } },
+				goals = {
+					{ t = "turnin", quest = 1685, title = "Gakin's Summons", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.2, y = 85.3, f = "e" },
 					{ t = "accept", quest = 1688, title = "Surena Caledon", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.2, y = 85.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Human" }, classes = { "WARLOCK" } },
+				goals = {
 					{ t = "collect", quest = 1688, itemName = "Surena's Choker", count = 1, oi = 1, map = 1429, x = 71.0, y = 80.8, f = "e" },
+				},
+			},
+			{
+				only = { races = { "Human" }, classes = { "WARLOCK" } },
+				goals = {
 					{ t = "turnin", quest = 1688, title = "Surena Caledon", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.2, y = 85.3, f = "e" },
 					{ t = "accept", quest = 1689, title = "The Binding", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.2, y = 85.3, f = "e" },
+				},
+			},
+			{
+				note = "Go downstairs into the catacombs to 39.1,84.3",
+				only = { races = { "Human" }, classes = { "WARLOCK" } },
+				goals = {
 					{ t = "kill", quest = 1689, target = "Summoned Voidwalker", count = 1, oi = 1, map = 1453, x = 39.1, y = 84.3, f = "e" },
+				},
+			},
+			{
+				note = "Go upstairs to 39.2,85.3",
+				only = { races = { "Human" }, classes = { "WARLOCK" } },
+				goals = {
 					{ t = "turnin", quest = 1689, title = "The Binding", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.2, y = 85.3, f = "e" },
-					{ t = "turnin", quest = 1638, title = "A Warrior's Training", npc = 6089, npcName = "Harry Burlguard", map = 1453, x = 77.1, y = 53.3, f = "e", only = { classes = { "WARRIOR" } } },
-					{ t = "turnin", quest = 1685, title = "Gakin's Summons", npc = 6122, npcName = "Gakin the Darkbinder", map = 1453, x = 39.2, y = 85.3, f = "e", only = { classes = { "WARLOCK" } } },
 				},
 			},
 			{

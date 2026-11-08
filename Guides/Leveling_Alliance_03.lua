@@ -5,7 +5,7 @@ do
 	Polestar.RegisterGuide({
 		id = "zygor/leveling/a-night-elf-1-13",
 		pack = "guides",
-		title = "Night Elf (1-13) (Parte 1/2)",
+		title = "Night Elf (1-13) (Parte 1/3)",
 		category = "Leveling",
 		faction = "Alliance",
 		next = "zygor/leveling/a-night-elf-1-13-part-2",
@@ -37,11 +37,36 @@ do
 				goals = {
 					{ t = "turnin", quest = 456, title = "The Balance of Nature (1)", npc = 2079, npcName = "Conservator Ilthalaine", map = 1438, x = 58.7, y = 44.3, f = "e" },
 					{ t = "accept", quest = 457, title = "The Balance of Nature (2)", npc = 2079, npcName = "Conservator Ilthalaine", map = 1438, x = 58.7, y = 44.3, f = "e" },
-					{ t = "accept", quest = 3116, title = "Simple Sigil", npc = 2079, npcName = "Conservator Ilthalaine", map = 1438, x = 58.7, y = 44.3, f = "e", only = { classes = { "WARRIOR" } } },
-					{ t = "accept", quest = 3118, title = "Encrypted Sigil", npc = 2079, npcName = "Conservator Ilthalaine", map = 1438, x = 58.7, y = 44.3, f = "e", only = { classes = { "ROGUE" } } },
-					{ t = "accept", quest = 3119, title = "Hallowed Sigil", npc = 2079, npcName = "Conservator Ilthalaine", map = 1438, x = 58.7, y = 44.3, f = "e", only = { classes = { "PRIEST" } } },
-					{ t = "accept", quest = 3117, title = "Etched Sigil", npc = 2079, npcName = "Conservator Ilthalaine", map = 1438, x = 58.7, y = 44.3, f = "e", only = { classes = { "HUNTER" } } },
-					{ t = "accept", quest = 3120, title = "Verdant Sigil", npc = 2079, npcName = "Conservator Ilthalaine", map = 1438, x = 58.7, y = 44.3, f = "e", only = { classes = { "DRUID" } } },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "WARRIOR" } },
+				goals = {
+					{ t = "accept", quest = 3116, title = "Simple Sigil", npc = 2079, npcName = "Conservator Ilthalaine", map = 1438, x = 58.7, y = 44.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "ROGUE" } },
+				goals = {
+					{ t = "accept", quest = 3118, title = "Encrypted Sigil", npc = 2079, npcName = "Conservator Ilthalaine", map = 1438, x = 58.7, y = 44.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "PRIEST" } },
+				goals = {
+					{ t = "accept", quest = 3119, title = "Hallowed Sigil", npc = 2079, npcName = "Conservator Ilthalaine", map = 1438, x = 58.7, y = 44.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "HUNTER" } },
+				goals = {
+					{ t = "accept", quest = 3117, title = "Etched Sigil", npc = 2079, npcName = "Conservator Ilthalaine", map = 1438, x = 58.7, y = 44.3, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "accept", quest = 3120, title = "Verdant Sigil", npc = 2079, npcName = "Conservator Ilthalaine", map = 1438, x = 58.7, y = 44.3, f = "e" },
 				},
 			},
 			{
@@ -50,11 +75,21 @@ do
 				},
 			},
 			{
-				only = { races = { "NightElf" } },
+				only = { races = { "NightElf" }, classes = { "WARRIOR" } },
 				goals = {
-					{ t = "turnin", quest = 3116, title = "Simple Sigil", npc = 3593, npcName = "Alyissia", map = 1438, x = 59.6, y = 38.4, f = "e", only = { classes = { "WARRIOR" } } },
-					{ t = "turnin", quest = 3118, title = "Encrypted Sigil", npc = 3594, npcName = "Frahun Shadewhisper", map = 1438, x = 59.6, y = 38.7, f = "e", only = { classes = { "ROGUE" } } },
-					{ t = "turnin", quest = 3119, title = "Hallowed Sigil", npc = 3595, npcName = "Shanda", map = 1438, x = 59.2, y = 40.4, f = "e", only = { classes = { "PRIEST" } } },
+					{ t = "turnin", quest = 3116, title = "Simple Sigil", npc = 3593, npcName = "Alyissia", map = 1438, x = 59.6, y = 38.4, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "ROGUE" } },
+				goals = {
+					{ t = "turnin", quest = 3118, title = "Encrypted Sigil", npc = 3594, npcName = "Frahun Shadewhisper", map = 1438, x = 59.6, y = 38.7, f = "e" },
+				},
+			},
+			{
+				only = { races = { "NightElf" }, classes = { "PRIEST" } },
+				goals = {
+					{ t = "turnin", quest = 3119, title = "Hallowed Sigil", npc = 3595, npcName = "Shanda", map = 1438, x = 59.2, y = 40.4, f = "e" },
 				},
 			},
 			{
@@ -90,10 +125,16 @@ do
 			},
 			{
 				note = "Go up the huge spiral ramp to 58.7,40.5",
-				only = { races = { "NightElf" } },
+				only = { races = { "NightElf" }, classes = { "HUNTER" } },
 				goals = {
-					{ t = "turnin", quest = 3117, title = "Etched Sigil", npc = 3596, npcName = "Ayanna Everstride", map = 1438, x = 58.7, y = 40.5, f = "e", only = { classes = { "HUNTER" } } },
-					{ t = "turnin", quest = 3120, title = "Verdant Sigil", npc = 3597, npcName = "Mardant Strongoak", map = 1438, x = 58.6, y = 40.3, f = "e", only = { classes = { "DRUID" } } },
+					{ t = "turnin", quest = 3117, title = "Etched Sigil", npc = 3596, npcName = "Ayanna Everstride", map = 1438, x = 58.7, y = 40.5, f = "e" },
+				},
+			},
+			{
+				note = "Go up the huge spiral ramp to 58.6,40.3",
+				only = { races = { "NightElf" }, classes = { "DRUID" } },
+				goals = {
+					{ t = "turnin", quest = 3120, title = "Verdant Sigil", npc = 3597, npcName = "Mardant Strongoak", map = 1438, x = 58.6, y = 40.3, f = "e" },
 				},
 			},
 			{
@@ -447,47 +488,6 @@ do
 			{
 				goals = {
 					{ t = "collect", quest = 933, itemName = "Filled Tourmaline Phial", count = 1, oi = 1, map = 1438, x = 42.4, y = 67.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 930, title = "The Glowing Fruit", map = 1438, x = 42.6, y = 76.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 930, title = "The Glowing Fruit", npc = 2080, npcName = "Denalan", map = 1438, x = 60.9, y = 68.5, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 933, title = "Crown of the Earth (4)", npc = 3515, npcName = "Corithras Moonrage", map = 1438, x = 56.1, y = 61.7, f = "e" },
-					{ t = "accept", quest = 7383, title = "Crown of the Earth (5)", npc = 3515, npcName = "Corithras Moonrage", map = 1438, x = 56.1, y = 61.7, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "turnin", quest = 487, title = "The Road to Darnassus", npc = 2151, npcName = "Moon Priestess Amara", map = 1438, x = 52.4, y = 56.5, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "accept", quest = 937, title = "The Enchanted Glade", npc = 3519, npcName = "Sentinel Arynia Cloudsbreak", map = 1438, x = 38.3, y = 34.4, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 7383, itemName = "Filled Amethyst Phial", count = 1, oi = 1, map = 1438, x = 38.4, y = 34.1, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "collect", quest = 937, itemName = "Bloodfeather Belt", count = 6, oi = 1, map = 1438, x = 37.4, y = 37.3, f = "e" },
-				},
-			},
-			{
-				goals = {
-					{ t = "level", level = 10, f = "e" },
 				},
 			},
 		},
